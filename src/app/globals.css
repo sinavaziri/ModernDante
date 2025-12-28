@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  line-height: 1.8;
+}
+
+.poetry {
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  white-space: pre-wrap;
+  line-height: 1.9;
+}
