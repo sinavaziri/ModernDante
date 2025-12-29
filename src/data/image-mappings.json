@@ -1,0 +1,2292 @@
+{
+  "images": [
+    {
+      "imageNumber": 1,
+      "title": "THE FOREST",
+      "quote": "Midway upon the journey of our life / I found myself within a forest dark, / For the straightforward pathway had been lost",
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": "1\u20133",
+      "filename": "1.png"
+    },
+    {
+      "imageNumber": 2,
+      "title": "THE PANTHER",
+      "quote": "And lo! almost where the ascent began, / A panther light and swift exceedingly, / Which with a spotted skin was covered o'er!",
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": "31\u201333",
+      "filename": "2.png"
+    },
+    {
+      "imageNumber": 3,
+      "title": "THE LION",
+      "quote": "He seemed as if against me he were coming / With head uplifted, and with ravenous hunger",
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": "46, 47",
+      "filename": "3.png"
+    },
+    {
+      "imageNumber": 4,
+      "title": "THE SHE-WOLF",
+      "quote": "\"Behold the beast, for which I have turned back; / Do thou protect me from her, famous Sage\"",
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": "88, 89",
+      "filename": "4.png"
+    },
+    {
+      "imageNumber": 5,
+      "title": "VIRGIL AND DANTE",
+      "quote": "Then he moved on, and I behind him followed",
+      "cantica": "inferno",
+      "canto": 1,
+      "lines": "136",
+      "filename": "5.png"
+    },
+    {
+      "imageNumber": 6,
+      "title": "VIRGIL AND DANTE",
+      "quote": "Day was departing",
+      "cantica": "inferno",
+      "canto": 2,
+      "lines": "1",
+      "filename": "6.png"
+    },
+    {
+      "imageNumber": 7,
+      "title": "BEATRICE AND VIRGIL",
+      "quote": "\"Beatrice am I, who do bid thee go\"",
+      "cantica": "inferno",
+      "canto": 2,
+      "lines": "70",
+      "filename": "7.png"
+    },
+    {
+      "imageNumber": 8,
+      "title": "THE GATE OF HELL",
+      "quote": "\"All hope abandon, ye who enter in!\"",
+      "cantica": "inferno",
+      "canto": 3,
+      "lines": "9",
+      "filename": "8.png"
+    },
+    {
+      "imageNumber": 9,
+      "title": "CHARON AND THE RIVER ACHERON",
+      "quote": "And lo! towards us coming in a boat / An old man, hoary with the hair of eld, / Crying: \"Woe unto you, ye souls depraved!\"",
+      "cantica": "inferno",
+      "canto": 3,
+      "lines": "82\u201384",
+      "filename": "9.png"
+    },
+    {
+      "imageNumber": 10,
+      "title": "THE EMBARKATION OF THE SOULS",
+      "quote": "Charon the demon, with the eyes of glede, / Beckoning to them, collects them all together, / Beats with his oar whoever lags behind",
+      "cantica": "inferno",
+      "canto": 3,
+      "lines": "109\u2013111",
+      "filename": "10.png"
+    },
+    {
+      "imageNumber": 11,
+      "title": "LIMBO\u2014THE INNOCENT SOULS",
+      "quote": "\"Lost are we, and are only so far punished, / That without hope we live on in desire\"",
+      "cantica": "inferno",
+      "canto": 4,
+      "lines": "41, 42",
+      "filename": "11.png"
+    },
+    {
+      "imageNumber": 12,
+      "title": "LIMBO\u2014POETS AND HEROES",
+      "quote": "Thus I beheld assemble the fair school / Of that lord of the song pre-eminent, / Who o'er the others like an eagle soars",
+      "cantica": "inferno",
+      "canto": 4,
+      "lines": "94\u201396",
+      "filename": "12.png"
+    },
+    {
+      "imageNumber": 13,
+      "title": "MINOS",
+      "quote": "There standeth Minos horribly, and snarls; / Examines the transgressions at the entrance; / Judges, and sends according as he girds him",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "4\u20136",
+      "filename": "13.png"
+    },
+    {
+      "imageNumber": 14,
+      "title": "THE LUSTFUL",
+      "quote": "The infernal hurricane that never rests / Hurtles the spirits onward in its rapine",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "31, 32",
+      "filename": "14.png"
+    },
+    {
+      "imageNumber": 15,
+      "title": "PAOLO AND FRANCESCA",
+      "quote": "\"O Poet, willingly / Speak would I to those two, who go together, / And seem upon the wind to be so light\"",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "73\u201375",
+      "filename": "15.png"
+    },
+    {
+      "imageNumber": 16,
+      "title": "PAOLO AND FRANCESCA",
+      "quote": "\"Love has conducted us unto one death; / Ca\u00efna waiteth him who quenched our life!\"",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "106, 107",
+      "filename": "16.png"
+    },
+    {
+      "imageNumber": 17,
+      "title": "PAOLO AND FRANCESCA",
+      "quote": "\"That day no farther did we read therein\"",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "138",
+      "filename": "17.png"
+    },
+    {
+      "imageNumber": 18,
+      "title": "PAOLO AND FRANCESCA",
+      "quote": "I swooned away as if I had been dying, / And fell, even as a dead body falls",
+      "cantica": "inferno",
+      "canto": 5,
+      "lines": "141, 142",
+      "filename": "18.png"
+    },
+    {
+      "imageNumber": 19,
+      "title": "CERBERUS",
+      "quote": "And my Conductor, with his spans extended, / Took of the earth, and with his fists well filled, / He threw it into those rapacious gullets",
+      "cantica": "inferno",
+      "canto": 6,
+      "lines": "25\u201327",
+      "filename": "19.png"
+    },
+    {
+      "imageNumber": 20,
+      "title": "THE GLUTTONS\u2014CIACCO",
+      "quote": "\"For the pernicious sin of gluttony / I, as thou seest, am battered by this rain\"",
+      "cantica": "inferno",
+      "canto": 6,
+      "lines": "53, 54",
+      "filename": "20.png"
+    },
+    {
+      "imageNumber": 21,
+      "title": "PLUTO AND VIRGIL",
+      "quote": "\"Be silent thou accursed wolf; / Consume within thyself with thine own rage\"",
+      "cantica": "inferno",
+      "canto": 7,
+      "lines": "8, 9",
+      "filename": "21.png"
+    },
+    {
+      "imageNumber": 22,
+      "title": "THE AVARICIOUS AND PRODIGAL",
+      "quote": "\"For all the gold that is beneath the moon, / Or ever has been, of these weary souls / Could never make a single one repose\"",
+      "cantica": "inferno",
+      "canto": 7,
+      "lines": "64\u201366",
+      "filename": "22.png"
+    },
+    {
+      "imageNumber": 23,
+      "title": "THE STYX\u2014THE IRASCIBLE",
+      "quote": "\"Son, thou now beholdest / The souls of those whom anger overcame\"",
+      "cantica": "inferno",
+      "canto": 7,
+      "lines": "115, 116",
+      "filename": "23.png"
+    },
+    {
+      "imageNumber": 24,
+      "title": "THE STYX\u2014PHLEGYAS",
+      "quote": "The antique prow goes on its way, dividing / More of the water than't is wont with others",
+      "cantica": "inferno",
+      "canto": 8,
+      "lines": "29, 30",
+      "filename": "24.png"
+    },
+    {
+      "imageNumber": 25,
+      "title": "THE STYX\u2014PHILIPPO ARGENTI",
+      "quote": "Then stretched he both his hands unto the boat; / Whereat my wary Master thrust him back",
+      "cantica": "inferno",
+      "canto": 8,
+      "lines": "40, 41",
+      "filename": "25.png"
+    },
+    {
+      "imageNumber": 26,
+      "title": "THE PORTALS OF DIS",
+      "quote": "I could not hear what he proposed to them; / But with them there he did not linger long, / Ere each within in rivalry ran back",
+      "cantica": "inferno",
+      "canto": 8,
+      "lines": "112\u2013114",
+      "filename": "26.png"
+    },
+    {
+      "imageNumber": 27,
+      "title": "THE ERINNYS",
+      "quote": "\"This is Megaera, on the left-hand side; / She who is weeping on the right, Alecto; / Tisiphone is between\"",
+      "cantica": "inferno",
+      "canto": 9,
+      "lines": "46\u201348",
+      "filename": "27.png"
+    },
+    {
+      "imageNumber": 28,
+      "title": "THE ANGEL",
+      "quote": "He reached the gate, and with a little rod / He opened it, for there was no resistance",
+      "cantica": "inferno",
+      "canto": 9,
+      "lines": "89, 90",
+      "filename": "28.png"
+    },
+    {
+      "imageNumber": 29,
+      "title": "BURNING GRAVES\u2014THE HERESIARCHS",
+      "quote": "\"My Master, what are all those people / Who, having sepulture within those tombs, / Make themselves audible by doleful sighs?\"",
+      "cantica": "inferno",
+      "canto": 9,
+      "lines": "124\u2013126",
+      "filename": "29.png"
+    },
+    {
+      "imageNumber": 30,
+      "title": "FARINATA",
+      "quote": "As soon as I was at the foot of his tomb, / Somewhat he eyed me, and, as if disdainful, / Then asked of me, \"Who were thine ancestors?\"",
+      "cantica": "inferno",
+      "canto": 10,
+      "lines": "40\u201342",
+      "filename": "30.png"
+    },
+    {
+      "imageNumber": 31,
+      "title": "THE TOMB OF ANASTASIUS",
+      "quote": "We drew ourselves aside behind the cover / Of a great tomb, whereon I saw a writing, / Which said: \"Pope Anastasius I hold\"",
+      "cantica": "inferno",
+      "canto": 11,
+      "lines": "6\u20138",
+      "filename": "31.png"
+    },
+    {
+      "imageNumber": 32,
+      "title": "THE MINOTAUR",
+      "quote": "And on the border of the broken chasm / The infamy of Crete was stretched along, / Who was conceived in the fictitious cow",
+      "cantica": "inferno",
+      "canto": 12,
+      "lines": "11\u201313",
+      "filename": "32.png"
+    },
+    {
+      "imageNumber": 33,
+      "title": "THE CENTAURS\u2014NESSUS",
+      "quote": "Beholding us descend, each one stood still, / And from the squadron three detached themselves, / With bows and arrows in advance selected",
+      "cantica": "inferno",
+      "canto": 12,
+      "lines": "58\u201360",
+      "filename": "33.png"
+    },
+    {
+      "imageNumber": 34,
+      "title": "CHIRON",
+      "quote": "Chiron an arrow took, and with the notch / Backward upon his jaws he put his beard",
+      "cantica": "inferno",
+      "canto": 12,
+      "lines": "77, 78",
+      "filename": "34.png"
+    },
+    {
+      "imageNumber": 35,
+      "title": "THE HARPIES' WOOD",
+      "quote": "They make laments upon the wondrous trees",
+      "cantica": "inferno",
+      "canto": 13,
+      "lines": "15",
+      "filename": "35.png"
+    },
+    {
+      "imageNumber": 36,
+      "title": "THE SUICIDES",
+      "quote": "Then stretched I forth my hand a little forward, / And plucked a branchlet off from a great thorn; / And the trunk cried, \"Why dost thou mangle me?\"",
+      "cantica": "inferno",
+      "canto": 13,
+      "lines": "31\u201333",
+      "filename": "36.png"
+    },
+    {
+      "imageNumber": 37,
+      "title": "THE SUICIDES",
+      "quote": "And two behold! upon our left-hand side, / Naked and scratched, fleeing so furiously, / That of the forest every fan they broke",
+      "cantica": "inferno",
+      "canto": 13,
+      "lines": "115\u2013117",
+      "filename": "37.png"
+    },
+    {
+      "imageNumber": 38,
+      "title": "THE BLASPHEMERS\u2014CAPANEUS",
+      "quote": "O'er all the sand-waste, with a gradual fall, / Raining down dilated flakes of fire",
+      "cantica": "inferno",
+      "canto": 14,
+      "lines": "28, 29",
+      "filename": "38.png"
+    },
+    {
+      "imageNumber": 39,
+      "title": "BRUNETTO LATINI",
+      "quote": "\"Are you here, Ser Brunetto?\"",
+      "cantica": "inferno",
+      "canto": 15,
+      "lines": "30",
+      "filename": "39.png"
+    },
+    {
+      "imageNumber": 40,
+      "title": "GERYON\u2014SYMBOL OF DECEIT",
+      "quote": "And that uncleanly image of deceit / Came up and thrust ashore its head and bust",
+      "cantica": "inferno",
+      "canto": 17,
+      "lines": "7, 8",
+      "filename": "40.png"
+    },
+    {
+      "imageNumber": 41,
+      "title": "THE DESCENT ON THE MONSTER",
+      "quote": "Onward he goeth, swimming slowly, slowly; / Wheels and descends",
+      "cantica": "inferno",
+      "canto": 17,
+      "lines": "115, 116",
+      "filename": "41.png"
+    },
+    {
+      "imageNumber": 42,
+      "title": "DEVILS AND SEDUCERS",
+      "quote": "Ah me! how they did make them lift their legs / At the first blows!",
+      "cantica": "inferno",
+      "canto": 18,
+      "lines": "37, 38",
+      "filename": "42.png"
+    },
+    {
+      "imageNumber": 43,
+      "title": "PARAMOURS AND FLATTERERS",
+      "quote": "I saw a people smothered in a filth / That out of human privies seemed to flow",
+      "cantica": "inferno",
+      "canto": 18,
+      "lines": "113, 114",
+      "filename": "43.png"
+    },
+    {
+      "imageNumber": 44,
+      "title": "THA\u00cfS",
+      "quote": "\"Tha\u00efs the harlot is it, who replied / Unto her paramour, when he said, 'Have I / Great gratitude from thee?'\u2014'Nay, marvellous'\"",
+      "cantica": "inferno",
+      "canto": 18,
+      "lines": "133\u2013135",
+      "filename": "44.png"
+    },
+    {
+      "imageNumber": 45,
+      "title": "THE SIMONISTS",
+      "quote": "\"O doleful soul, implanted like a stake,\" / To say began I, \"if thou canst, speak out\"",
+      "cantica": "inferno",
+      "canto": 19,
+      "lines": "47, 48",
+      "filename": "45.png"
+    },
+    {
+      "imageNumber": 46,
+      "title": "DEVILS AND BARRATORS",
+      "quote": "They seized him then with more than a hundred rakes",
+      "cantica": "inferno",
+      "canto": 21,
+      "lines": "52",
+      "filename": "46.png"
+    },
+    {
+      "imageNumber": 47,
+      "title": "DEVILS AND VIRGIL",
+      "quote": "But he cried out: \"Be none of you malignant!\"",
+      "cantica": "inferno",
+      "canto": 21,
+      "lines": "72",
+      "filename": "47.png"
+    },
+    {
+      "imageNumber": 48,
+      "title": "BARRATORS\u2014GIAMPOLO",
+      "quote": "Therefore he moved, and cried: \"Thou art o'ertaken\"",
+      "cantica": "inferno",
+      "canto": 22,
+      "lines": "126",
+      "filename": "48.png"
+    },
+    {
+      "imageNumber": 49,
+      "title": "ALICHINO AND CALCABRINA",
+      "quote": "But sooth the other was a doughty sparhawk / To clapperclaw him well; and both of them / Fell in the middle of the boiling pond",
+      "cantica": "inferno",
+      "canto": 22,
+      "lines": "139\u2013141",
+      "filename": "49.png"
+    },
+    {
+      "imageNumber": 50,
+      "title": "TUMULT AND ESCAPE",
+      "quote": "Hardly the bed of the ravine below / His feet had reached, ere they had reached the hill / Right over us",
+      "cantica": "inferno",
+      "canto": 23,
+      "lines": "52\u201354",
+      "filename": "50.png"
+    },
+    {
+      "imageNumber": 51,
+      "title": "THE HYPOCRITES",
+      "quote": "They had on mantles with the hoods low down / Before their eyes",
+      "cantica": "inferno",
+      "canto": 23,
+      "lines": "61, 62",
+      "filename": "51.png"
+    },
+    {
+      "imageNumber": 52,
+      "title": "THE HYPOCRITES\u2014CRUCIFIED PHARISEE",
+      "quote": "\"This transfixed one, whom thou seest, / Counselled the Pharisees that it was meet / To put one man to torture for the people\"",
+      "cantica": "inferno",
+      "canto": 23,
+      "lines": "115\u2013117",
+      "filename": "52.png"
+    },
+    {
+      "imageNumber": 53,
+      "title": "THIEVES",
+      "quote": "Among this cruel and most dismal throng / People were running naked and affrighted",
+      "cantica": "inferno",
+      "canto": 24,
+      "lines": "91, 92",
+      "filename": "53.png"
+    },
+    {
+      "imageNumber": 54,
+      "title": "TRANSFORMATION INTO SNAKES",
+      "quote": "\"O me, Agnello, how thou changest! / Behold, thou now art neither two nor one\"",
+      "cantica": "inferno",
+      "canto": 25,
+      "lines": "68, 69",
+      "filename": "54.png"
+    },
+    {
+      "imageNumber": 55,
+      "title": "EVIL COUNSELLORS",
+      "quote": "\"Within the fires the spirits are; / Each swathes himself with that wherewith he burns\"",
+      "cantica": "inferno",
+      "canto": 26,
+      "lines": "47, 48",
+      "filename": "55.png"
+    },
+    {
+      "imageNumber": 56,
+      "title": "SCHISMATICS\u2014MAHOMET",
+      "quote": "He looked at me, and opened with his hands / His bosom, saying: \"See now how I rend me\"",
+      "cantica": "inferno",
+      "canto": 28,
+      "lines": "29, 30",
+      "filename": "56.png"
+    },
+    {
+      "imageNumber": 57,
+      "title": "SOWER OF DISCORD",
+      "quote": "\"Call to remembrance Pier da Medicina\"",
+      "cantica": "inferno",
+      "canto": 28,
+      "lines": "73",
+      "filename": "57.png"
+    },
+    {
+      "imageNumber": 58,
+      "title": "BERTRAM DE BORN",
+      "quote": "By the hair it held the head dissevered, / Hung from the hand in fashion of a lantern, / And that upon us gazed and said: \"O me!\"",
+      "cantica": "inferno",
+      "canto": 28,
+      "lines": "121\u2013123",
+      "filename": "58.png"
+    },
+    {
+      "imageNumber": 59,
+      "title": "GERI DEL BELLO",
+      "quote": "But said Virgilius: \"What dost thou still gaze at? / Why is thy sight still riveted down there / Among the mournful, mutilated shades?\"",
+      "cantica": "inferno",
+      "canto": 29,
+      "lines": "4\u20136",
+      "filename": "59.png"
+    },
+    {
+      "imageNumber": 60,
+      "title": "FORGERS",
+      "quote": "Such a stench came from it / As from putrescent limbs is wont to issue",
+      "cantica": "inferno",
+      "canto": 29,
+      "lines": "50, 51",
+      "filename": "60.png"
+    },
+    {
+      "imageNumber": 61,
+      "title": "FORGERS",
+      "quote": "Every one was plying fast the bite / Of nails upon himself, for the great rage / Of itching which no other succour had",
+      "cantica": "inferno",
+      "canto": 29,
+      "lines": "79\u201381",
+      "filename": "61.png"
+    },
+    {
+      "imageNumber": 62,
+      "title": "FORGERS",
+      "quote": "\"That mad sprite is Gianni Schicchi, / And raving goes thus harrying other people\"",
+      "cantica": "inferno",
+      "canto": 30,
+      "lines": "32, 33",
+      "filename": "62.png"
+    },
+    {
+      "imageNumber": 63,
+      "title": "MYRRHA",
+      "quote": "\"That is the ancient ghost / Of the nefarious Myrrha, who became / Beyond all rightful love her father's lover\"",
+      "cantica": "inferno",
+      "canto": 30,
+      "lines": "37\u201339",
+      "filename": "63.png"
+    },
+    {
+      "imageNumber": 64,
+      "title": "THE GIANTS\u2014NIMROD",
+      "quote": "\"Soul idiotic, / Keep to thy horn, and vent thyself with that, / When wrath or other passion touches thee\"",
+      "cantica": "inferno",
+      "canto": 31,
+      "lines": "70\u201372",
+      "filename": "64.png"
+    },
+    {
+      "imageNumber": 65,
+      "title": "EPHIALTES",
+      "quote": "\"This proud one wished to make experiment / Of his own power against the Supreme Jove\"",
+      "cantica": "inferno",
+      "canto": 31,
+      "lines": "91, 92",
+      "filename": "65.png"
+    },
+    {
+      "imageNumber": 66,
+      "title": "ANTAEUS\u2014DESCENT TO THE LAST CIRCLE",
+      "quote": "But lightly in the abyss, which swallows up / Judas with Lucifer, he put us down",
+      "cantica": "inferno",
+      "canto": 31,
+      "lines": "142, 143",
+      "filename": "66.png"
+    },
+    {
+      "imageNumber": 67,
+      "title": "COCYTUS\u2014TRAITORS",
+      "quote": "\"Look how thou steppest! / Take heed thou do not trample with thy feet / The heads of the tired, miserable brothers!\"",
+      "cantica": "inferno",
+      "canto": 32,
+      "lines": "19\u201321",
+      "filename": "67.png"
+    },
+    {
+      "imageNumber": 68,
+      "title": "TRAITORS\u2014BOCCA DEGLI ABATI",
+      "quote": "Then by the scalp behind I seized upon him, / And said: \"It must needs be thou name thyself, / Or not a hair remain upon thee here\"",
+      "cantica": "inferno",
+      "canto": 32,
+      "lines": "97\u201399",
+      "filename": "68.png"
+    },
+    {
+      "imageNumber": 69,
+      "title": "UGOLINO AND ARCHBISHOP RUGGIERI",
+      "quote": "The uppermost on the other set his teeth, / There where the brain is to the nape united",
+      "cantica": "inferno",
+      "canto": 32,
+      "lines": "128, 129",
+      "filename": "69.png"
+    },
+    {
+      "imageNumber": 70,
+      "title": "UGOLINO",
+      "quote": "\"I calmed me then, not to make them more sad\"",
+      "cantica": "inferno",
+      "canto": 33,
+      "lines": "64",
+      "filename": "70.png"
+    },
+    {
+      "imageNumber": 71,
+      "title": "UGOLINO AND GADDO",
+      "quote": "\"Gaddo / Threw himself down outstretched before my feet, / Saying, 'My father, why dost thou not help me?'\"",
+      "cantica": "inferno",
+      "canto": 33,
+      "lines": "67\u201369",
+      "filename": "71.png"
+    },
+    {
+      "imageNumber": 72,
+      "title": "UGOLINO",
+      "quote": "\"Then hunger did what sorrow could not do\"",
+      "cantica": "inferno",
+      "canto": 33,
+      "lines": "75",
+      "filename": "72.png"
+    },
+    {
+      "imageNumber": 73,
+      "title": "THE JUDECCA\u2014LUCIFER",
+      "quote": "\"Behold Dis, and behold the place / Where thou with fortitude must arm thyself\"",
+      "cantica": "inferno",
+      "canto": 34,
+      "lines": "20, 21",
+      "filename": "73.png"
+    },
+    {
+      "imageNumber": 74,
+      "title": "THE WAY TO THE UPPER WORLD",
+      "quote": "The Guide and I into that hidden road / Now entered, to return to the bright world",
+      "cantica": "inferno",
+      "canto": 34,
+      "lines": "133, 134",
+      "filename": "74.png"
+    },
+    {
+      "imageNumber": 75,
+      "title": "THE POETS EMERGE FROM HELL",
+      "quote": "Thence we came forth to rebehold the stars",
+      "cantica": "inferno",
+      "canto": 34,
+      "lines": "139",
+      "filename": "75.png"
+    },
+    {
+      "imageNumber": 76,
+      "title": "VENUS",
+      "quote": "The beauteous planet, that to love incites, / Was making all the orient to laugh, / Veiling the Fishes that were in her escort",
+      "cantica": "purgatorio",
+      "canto": 1,
+      "lines": "19\u201321",
+      "filename": "76.png"
+    },
+    {
+      "imageNumber": 77,
+      "title": "CATO OF UTICA",
+      "quote": "I saw beside me an old man alone, / Worthy of so much reverence in his look, / That more owes not to father any son",
+      "cantica": "purgatorio",
+      "canto": 1,
+      "lines": "31\u201333",
+      "filename": "77.png"
+    },
+    {
+      "imageNumber": 78,
+      "title": "THE VESSEL",
+      "quote": "But when he clearly recognized the pilot, / He cried: \"Make haste, make haste to bow the knee! / Behold the Angel of God!\"",
+      "cantica": "purgatorio",
+      "canto": 2,
+      "lines": "27\u201329",
+      "filename": "78.png"
+    },
+    {
+      "imageNumber": 79,
+      "title": "THE CELESTIAL PILOT",
+      "quote": "Beatitude seemed written in his face",
+      "cantica": "purgatorio",
+      "canto": 2,
+      "lines": "44",
+      "filename": "79.png"
+    },
+    {
+      "imageNumber": 80,
+      "title": "THE MOUNTAIN'S FOOT",
+      "quote": "On the left hand appeared to me a throng / Of souls, that moved their feet in our direction, / And did not seem to move",
+      "cantica": "purgatorio",
+      "canto": 3,
+      "lines": "58\u201360",
+      "filename": "80.png"
+    },
+    {
+      "imageNumber": 81,
+      "title": "THE ASCENT",
+      "quote": "We mounted upward through the rifted rock, / And on each side the border pressed upon us",
+      "cantica": "purgatorio",
+      "canto": 4,
+      "lines": "31, 32",
+      "filename": "81.png"
+    },
+    {
+      "imageNumber": 82,
+      "title": "THE LATE REPENTERS",
+      "quote": "There were persons there / Who in the shadow stood behind the rock, / As one through indolence is wont to stand",
+      "cantica": "purgatorio",
+      "canto": 4,
+      "lines": "103\u2013105",
+      "filename": "82.png"
+    },
+    {
+      "imageNumber": 83,
+      "title": "THE LATE REPENTERS",
+      "quote": "Meanwhile along the mountain-side across / Came people in advance of us a little, / Singing the Miserere verse by verse",
+      "cantica": "purgatorio",
+      "canto": 5,
+      "lines": "22\u201324",
+      "filename": "83.png"
+    },
+    {
+      "imageNumber": 84,
+      "title": "BUONCONTE DA MONTEFELTRO",
+      "quote": "\"God's Angel took me up, and he of hell / Shouted: 'O thou from heaven, why dost thou rob me?'\"",
+      "cantica": "purgatorio",
+      "canto": 5,
+      "lines": "104, 105",
+      "filename": "84.png"
+    },
+    {
+      "imageNumber": 85,
+      "title": "PIA",
+      "quote": "\"Do thou remember me who am the Pia; / Siena made me, unmade me Maremma\"",
+      "cantica": "purgatorio",
+      "canto": 5,
+      "lines": "133, 134",
+      "filename": "85.png"
+    },
+    {
+      "imageNumber": 86,
+      "title": "SORDELLO AND VIRGIL",
+      "quote": "So he appeared; and then bowed down his brow, / And with humility returned towards him, / And, where inferiors embrace, embraced him",
+      "cantica": "purgatorio",
+      "canto": 7,
+      "lines": "13\u201315",
+      "filename": "86.png"
+    },
+    {
+      "imageNumber": 87,
+      "title": "THE DELL",
+      "quote": "\"Salve Regina,\" on the green and flowers / There seated, singing, spirits I beheld",
+      "cantica": "purgatorio",
+      "canto": 7,
+      "lines": "82, 83",
+      "filename": "87.png"
+    },
+    {
+      "imageNumber": 88,
+      "title": "THE SERPENT",
+      "quote": "Hearing the air cleft by their verdant wings, / The serpent fled, and round the Angels wheeled",
+      "cantica": "purgatorio",
+      "canto": 8,
+      "lines": "106, 107",
+      "filename": "88.png"
+    },
+    {
+      "imageNumber": 89,
+      "title": "TWILIGHT",
+      "quote": "The concubine of old Tithonus now / Gleamed white upon the eastern balcony",
+      "cantica": "purgatorio",
+      "canto": 9,
+      "lines": "1, 2",
+      "filename": "89.png"
+    },
+    {
+      "imageNumber": 90,
+      "title": "THE EAGLE",
+      "quote": "Terrible as the lightning he descended, / And snatched me upward even to the fire",
+      "cantica": "purgatorio",
+      "canto": 9,
+      "lines": "29, 30",
+      "filename": "90.png"
+    },
+    {
+      "imageNumber": 91,
+      "title": "THE PORTALS OF PURGATORY",
+      "quote": "I saw him seated on the highest stair, / Such in the face that I endured it not. / And in his hand he held a naked sword",
+      "cantica": "purgatorio",
+      "canto": 9,
+      "lines": "80\u201382",
+      "filename": "91.png"
+    },
+    {
+      "imageNumber": 92,
+      "title": "THE SCULPTURES",
+      "quote": "The wretched woman in the midst of these / Seemed to be saying: \"Give me vengeance, Lord, / For my dead son\"",
+      "cantica": "purgatorio",
+      "canto": 10,
+      "lines": "82\u201384",
+      "filename": "92.png"
+    },
+    {
+      "imageNumber": 93,
+      "title": "THE PRIDEFUL\u2014ODERISI",
+      "quote": "Abreast, like oxen going in a yoke, / I with that heavy-laden soul went on",
+      "cantica": "purgatorio",
+      "canto": 12,
+      "lines": "1, 2",
+      "filename": "93.png"
+    },
+    {
+      "imageNumber": 94,
+      "title": "ARACHNE",
+      "quote": "O mad Arachne! so I thee beheld / E'en then half spider",
+      "cantica": "purgatorio",
+      "canto": 12,
+      "lines": "43, 44",
+      "filename": "94.png"
+    },
+    {
+      "imageNumber": 95,
+      "title": "THE ENVIOUS",
+      "quote": "Covered with sackcloth vile they seemed to me, / And one sustained the other with his shoulder, / And all of them were by the bank sustained",
+      "cantica": "purgatorio",
+      "canto": 13,
+      "lines": "58\u201360",
+      "filename": "95.png"
+    },
+    {
+      "imageNumber": 96,
+      "title": "SAPIA",
+      "quote": "\"Sienese was I,\" it replied, \"and with / The others here recleanse my guilty life\"",
+      "cantica": "purgatorio",
+      "canto": 13,
+      "lines": "106, 107",
+      "filename": "96.png"
+    },
+    {
+      "imageNumber": 97,
+      "title": "THE STONING OF STEPHEN",
+      "quote": "Then saw I people hot in fire of wrath, / With stones a young man slaying, clamorously / Still crying to each other, \"Kill him! kill him!\"",
+      "cantica": "purgatorio",
+      "canto": 15,
+      "lines": "106\u2013108",
+      "filename": "97.png"
+    },
+    {
+      "imageNumber": 98,
+      "title": "MARCO THE LOMBARD",
+      "quote": "\"Now who art thou, that cleavest through our smoke, / And art discoursing of us even as though / Thou didst by calends still divide the time?\"",
+      "cantica": "purgatorio",
+      "canto": 16,
+      "lines": "25\u201327",
+      "filename": "98.png"
+    },
+    {
+      "imageNumber": 99,
+      "title": "MARCO THE LOMBARD",
+      "quote": "\"Thee will I follow far as is allowed me,\" / He answered; \"and if smoke prevent our seeing, / Hearing shall keep us joined instead thereof\"",
+      "cantica": "purgatorio",
+      "canto": 16,
+      "lines": "34\u201336",
+      "filename": "99.png"
+    },
+    {
+      "imageNumber": 100,
+      "title": "THE SLOTHFUL",
+      "quote": "But taken from me was this drowsiness / Suddenly by a people, that behind / Our backs already had come round to us",
+      "cantica": "purgatorio",
+      "canto": 18,
+      "lines": "88\u201390",
+      "filename": "100.png"
+    },
+    {
+      "imageNumber": 101,
+      "title": "ASCENT TO THE FIFTH CIRCLE",
+      "quote": "\"What aileth thee, that aye to earth thou gazest?\" / To me my Guide began to say, we both / Somewhat beyond the Angel having mounted",
+      "cantica": "purgatorio",
+      "canto": 19,
+      "lines": "52\u201354",
+      "filename": "101.png"
+    },
+    {
+      "imageNumber": 102,
+      "title": "THE AVARICIOUS\u2014ADRIAN V",
+      "quote": "\"What cause,\" he said, \"has downward bent thee thus?\" / And I to him: \"For your own dignity, / Standing, my conscience stung me with remorse\"",
+      "cantica": "purgatorio",
+      "canto": 19,
+      "lines": "130\u2013132",
+      "filename": "102.png"
+    },
+    {
+      "imageNumber": 103,
+      "title": "THE AVARICIOUS",
+      "quote": "Onward we went with footsteps slow and scarce, / And I attentive to the shades I heard / Piteously weeping and bemoaning them",
+      "cantica": "purgatorio",
+      "canto": 20,
+      "lines": "16\u201318",
+      "filename": "103.png"
+    },
+    {
+      "imageNumber": 104,
+      "title": "THE GLUTTONS\u2014FORESE",
+      "quote": "\"Ah, do not look at this dry leprosy,\" / Entreated he, \"which doth my skin discolor, / Nor at default of flesh that I may have\"",
+      "cantica": "purgatorio",
+      "canto": 23,
+      "lines": "49\u201351",
+      "filename": "104.png"
+    },
+    {
+      "imageNumber": 105,
+      "title": "THE GLUTTONS",
+      "quote": "And shadows, that appeared things doubly dead, / From out the sepulchres of their eyes betrayed / Wonder at me, aware that I was living",
+      "cantica": "purgatorio",
+      "canto": 24,
+      "lines": "4\u20136",
+      "filename": "105.png"
+    },
+    {
+      "imageNumber": 106,
+      "title": "THE TREE",
+      "quote": "People I saw beneath it lift their hands, / And cry I know not what towards the leaves",
+      "cantica": "purgatorio",
+      "canto": 24,
+      "lines": "106, 107",
+      "filename": "106.png"
+    },
+    {
+      "imageNumber": 107,
+      "title": "THE SEVENTH CIRCLE",
+      "quote": "There the embankment shoots forth flames of fire, / And upward doth the cornice breathe a blast / That drives them back, and from itself sequesters",
+      "cantica": "purgatorio",
+      "canto": 25,
+      "lines": "112\u2013114",
+      "filename": "107.png"
+    },
+    {
+      "imageNumber": 108,
+      "title": "THE SEVENTH CIRCLE",
+      "quote": "\"Summae Deus clementiae,\" in the bosom / Of the great burning chanted then I heard, / Which made me no less eager to turn round",
+      "cantica": "purgatorio",
+      "canto": 25,
+      "lines": "121\u2013123",
+      "filename": "108.png"
+    },
+    {
+      "imageNumber": 109,
+      "title": "THE SEVENTH CIRCLE\u2014THE LUSTFUL",
+      "quote": "And spirits saw I walking through the flame; / Wherefore I looked, to my own steps and theirs / Apportioning my sight from time to time",
+      "cantica": "purgatorio",
+      "canto": 25,
+      "lines": "124\u2013126",
+      "filename": "109.png"
+    },
+    {
+      "imageNumber": 110,
+      "title": "LEAH",
+      "quote": "Youthful and beautiful in dreams methought / I saw a lady walking in a meadow, / Gathering flowers",
+      "cantica": "purgatorio",
+      "canto": 27,
+      "lines": "97\u201399",
+      "filename": "110.png"
+    },
+    {
+      "imageNumber": 111,
+      "title": "TERRESTRIAL PARADISE",
+      "quote": "Already my slow steps had carried me / Into the ancient wood so far, that I / Could not perceive where I had entered it",
+      "cantica": "purgatorio",
+      "canto": 28,
+      "lines": "22\u201324",
+      "filename": "111.png"
+    },
+    {
+      "imageNumber": 112,
+      "title": "APOCALYPTIC PROCESSION",
+      "quote": "The four and twenty Elders, two by two, / Came on incoronate with flower-de-luce",
+      "cantica": "purgatorio",
+      "canto": 29,
+      "lines": "83, 84",
+      "filename": "112.png"
+    },
+    {
+      "imageNumber": 113,
+      "title": "CHARITY, HOPE AND FAITH",
+      "quote": "One so very red / That in the fire she hardly had been noted. / The second was as if her flesh and bones / Had all been fashioned out of emerald; / The third appeared as snow but newly fallen",
+      "cantica": "purgatorio",
+      "canto": 29,
+      "lines": "122\u2013126",
+      "filename": "113.png"
+    },
+    {
+      "imageNumber": 114,
+      "title": "BEATRICE",
+      "quote": "Appeared a lady under a green mantle, / Vested in color of the living flame",
+      "cantica": "purgatorio",
+      "canto": 30,
+      "lines": "32, 33",
+      "filename": "114.png"
+    },
+    {
+      "imageNumber": 115,
+      "title": "SUBMERSION IN LETHE",
+      "quote": "The beautiful lady opened wide her arms, / Embraced my head, and plunged me underneath, / Where I was forced to swallow the water",
+      "cantica": "purgatorio",
+      "canto": 31,
+      "lines": "100\u2013102",
+      "filename": "115.png"
+    },
+    {
+      "imageNumber": 116,
+      "title": "THE WHORE AND THE GIANT",
+      "quote": "Upright beside her I beheld a giant; / And ever and anon they kissed each other",
+      "cantica": "purgatorio",
+      "canto": 32,
+      "lines": "152, 153",
+      "filename": "116.png"
+    },
+    {
+      "imageNumber": 117,
+      "title": "THE EUNO\u00cb",
+      "quote": "If, Reader, I possessed a longer space / For writing it, I yet would sing in part / Of the sweet draught that ne'er would satiate me",
+      "cantica": "purgatorio",
+      "canto": 33,
+      "lines": "136\u2013138",
+      "filename": "117.png"
+    },
+    {
+      "imageNumber": 118,
+      "title": "THE MOON",
+      "quote": "Saw I many faces prompt to speak",
+      "cantica": "paradiso",
+      "canto": 3,
+      "lines": "16",
+      "filename": "118.png"
+    },
+    {
+      "imageNumber": 119,
+      "title": "MERCURY",
+      "quote": "So I beheld more than a thousand splendors / Drawing towards us",
+      "cantica": "paradiso",
+      "canto": 5,
+      "lines": "103, 104",
+      "filename": "119.png"
+    },
+    {
+      "imageNumber": 120,
+      "title": "VENUS\u2014CHARLES MARTEL",
+      "quote": "\"That left-hand margin, which did bathe itself / In Rhone, when it is mingled with the Sorgue, / Me for its lord awaited in due time\"",
+      "cantica": "paradiso",
+      "canto": 8,
+      "lines": "58\u201360",
+      "filename": "120.png"
+    },
+    {
+      "imageNumber": 121,
+      "title": "THE SUN\u2014GLORIFIED SOULS",
+      "quote": "In such wise of those sempiternal roses / The garlands twain encompassed us about, / And thus the outer to the inner answered",
+      "cantica": "paradiso",
+      "canto": 12,
+      "lines": "19\u201321",
+      "filename": "121.png"
+    },
+    {
+      "imageNumber": 122,
+      "title": "MARS",
+      "quote": "Well was I ware that I was more uplifted / By the enkindled smiling of the star, / That seemed to me more ruddy than its wont",
+      "cantica": "paradiso",
+      "canto": 14,
+      "lines": "85\u201387",
+      "filename": "122.png"
+    },
+    {
+      "imageNumber": 123,
+      "title": "THE CROSS",
+      "quote": "Here doth my memory overcome my genius; / For on that cross as levin gleamed forth Christ, / So that I cannot find ensample worthy",
+      "cantica": "paradiso",
+      "canto": 14,
+      "lines": "103\u2013105",
+      "filename": "123.png"
+    },
+    {
+      "imageNumber": 124,
+      "title": "CACCIAGUIDA",
+      "quote": "\"You are my ancestor, / You give to me all hardihood to speak, / You lift me so that I am more than I\"",
+      "cantica": "paradiso",
+      "canto": 16,
+      "lines": "16\u201318",
+      "filename": "124.png"
+    },
+    {
+      "imageNumber": 125,
+      "title": "JUPITER",
+      "quote": "The holy creatures / Sang flying to and fro",
+      "cantica": "paradiso",
+      "canto": 18,
+      "lines": "76, 77",
+      "filename": "125.png"
+    },
+    {
+      "imageNumber": 126,
+      "title": "JUPITER",
+      "quote": "O soldiery of heaven, whom I contemplate, / Implore for those who are upon the earth / All gone astray after the bad example!",
+      "cantica": "paradiso",
+      "canto": 18,
+      "lines": "124\u2013126",
+      "filename": "126.png"
+    },
+    {
+      "imageNumber": 127,
+      "title": "THE EAGLE",
+      "quote": "Appeared before me with its wings outspread / The beautiful image that in sweet fruition / Made jubilant the interwoven souls",
+      "cantica": "paradiso",
+      "canto": 19,
+      "lines": "1\u20133",
+      "filename": "127.png"
+    },
+    {
+      "imageNumber": 128,
+      "title": "THE EAGLE",
+      "quote": "Those living luminaries all, / By far more luminous, did songs begin / Lapsing and falling from my memory",
+      "cantica": "paradiso",
+      "canto": 20,
+      "lines": "10\u201312",
+      "filename": "128.png"
+    },
+    {
+      "imageNumber": 129,
+      "title": "BEATRICE",
+      "quote": "Already on my Lady's face mine eyes / Again were fastened",
+      "cantica": "paradiso",
+      "canto": 21,
+      "lines": "1, 2",
+      "filename": "129.png"
+    },
+    {
+      "imageNumber": 130,
+      "title": "SATURN",
+      "quote": "A stairway I beheld to such height / Uplifted, that mine eye pursued it not",
+      "cantica": "paradiso",
+      "canto": 21,
+      "lines": "29, 30",
+      "filename": "130.png"
+    },
+    {
+      "imageNumber": 131,
+      "title": "THE HEAVEN OF THE FIXED STARS",
+      "quote": "\"Begin then, and declare to what thy soul / Is aimed, and count it for a certainty, / Sight is in thee bewildered and not dead\"",
+      "cantica": "paradiso",
+      "canto": 26,
+      "lines": "7\u20139",
+      "filename": "131.png"
+    },
+    {
+      "imageNumber": 132,
+      "title": "THE HEAVEN OF THE FIXED STARS",
+      "quote": "\"Glory be to the Father, to the Son, / And Holy Ghost!\" all Paradise began, / So that the melody inebriate made me",
+      "cantica": "paradiso",
+      "canto": 27,
+      "lines": "1\u20133",
+      "filename": "132.png"
+    },
+    {
+      "imageNumber": 133,
+      "title": "CRYSTALLINE HEAVEN",
+      "quote": "Not otherwise does iron scintillate / When molten, than those circles scintillated",
+      "cantica": "paradiso",
+      "canto": 28,
+      "lines": "89, 90",
+      "filename": "133.png"
+    },
+    {
+      "imageNumber": 134,
+      "title": "THE EMPYREAN",
+      "quote": "In fashion then as of a snow-white rose / Displayed itself to me the saintly host",
+      "cantica": "paradiso",
+      "canto": 31,
+      "lines": "1, 2",
+      "filename": "134.png"
+    }
+  ],
+  "cantoMapping": {
+    "inferno-1": [
+      {
+        "imageNumber": 1,
+        "filename": "1.png",
+        "title": "THE FOREST",
+        "quote": "Midway upon the journey of our life / I found myself within a forest dark, / For the straightforward pathway had been lost",
+        "lines": "1\u20133"
+      },
+      {
+        "imageNumber": 2,
+        "filename": "2.png",
+        "title": "THE PANTHER",
+        "quote": "And lo! almost where the ascent began, / A panther light and swift exceedingly, / Which with a spotted skin was covered o'er!",
+        "lines": "31\u201333"
+      },
+      {
+        "imageNumber": 3,
+        "filename": "3.png",
+        "title": "THE LION",
+        "quote": "He seemed as if against me he were coming / With head uplifted, and with ravenous hunger",
+        "lines": "46, 47"
+      },
+      {
+        "imageNumber": 4,
+        "filename": "4.png",
+        "title": "THE SHE-WOLF",
+        "quote": "\"Behold the beast, for which I have turned back; / Do thou protect me from her, famous Sage\"",
+        "lines": "88, 89"
+      },
+      {
+        "imageNumber": 5,
+        "filename": "5.png",
+        "title": "VIRGIL AND DANTE",
+        "quote": "Then he moved on, and I behind him followed",
+        "lines": "136"
+      }
+    ],
+    "inferno-2": [
+      {
+        "imageNumber": 6,
+        "filename": "6.png",
+        "title": "VIRGIL AND DANTE",
+        "quote": "Day was departing",
+        "lines": "1"
+      },
+      {
+        "imageNumber": 7,
+        "filename": "7.png",
+        "title": "BEATRICE AND VIRGIL",
+        "quote": "\"Beatrice am I, who do bid thee go\"",
+        "lines": "70"
+      }
+    ],
+    "inferno-3": [
+      {
+        "imageNumber": 8,
+        "filename": "8.png",
+        "title": "THE GATE OF HELL",
+        "quote": "\"All hope abandon, ye who enter in!\"",
+        "lines": "9"
+      },
+      {
+        "imageNumber": 9,
+        "filename": "9.png",
+        "title": "CHARON AND THE RIVER ACHERON",
+        "quote": "And lo! towards us coming in a boat / An old man, hoary with the hair of eld, / Crying: \"Woe unto you, ye souls depraved!\"",
+        "lines": "82\u201384"
+      },
+      {
+        "imageNumber": 10,
+        "filename": "10.png",
+        "title": "THE EMBARKATION OF THE SOULS",
+        "quote": "Charon the demon, with the eyes of glede, / Beckoning to them, collects them all together, / Beats with his oar whoever lags behind",
+        "lines": "109\u2013111"
+      }
+    ],
+    "inferno-4": [
+      {
+        "imageNumber": 11,
+        "filename": "11.png",
+        "title": "LIMBO\u2014THE INNOCENT SOULS",
+        "quote": "\"Lost are we, and are only so far punished, / That without hope we live on in desire\"",
+        "lines": "41, 42"
+      },
+      {
+        "imageNumber": 12,
+        "filename": "12.png",
+        "title": "LIMBO\u2014POETS AND HEROES",
+        "quote": "Thus I beheld assemble the fair school / Of that lord of the song pre-eminent, / Who o'er the others like an eagle soars",
+        "lines": "94\u201396"
+      }
+    ],
+    "inferno-5": [
+      {
+        "imageNumber": 13,
+        "filename": "13.png",
+        "title": "MINOS",
+        "quote": "There standeth Minos horribly, and snarls; / Examines the transgressions at the entrance; / Judges, and sends according as he girds him",
+        "lines": "4\u20136"
+      },
+      {
+        "imageNumber": 14,
+        "filename": "14.png",
+        "title": "THE LUSTFUL",
+        "quote": "The infernal hurricane that never rests / Hurtles the spirits onward in its rapine",
+        "lines": "31, 32"
+      },
+      {
+        "imageNumber": 15,
+        "filename": "15.png",
+        "title": "PAOLO AND FRANCESCA",
+        "quote": "\"O Poet, willingly / Speak would I to those two, who go together, / And seem upon the wind to be so light\"",
+        "lines": "73\u201375"
+      },
+      {
+        "imageNumber": 16,
+        "filename": "16.png",
+        "title": "PAOLO AND FRANCESCA",
+        "quote": "\"Love has conducted us unto one death; / Ca\u00efna waiteth him who quenched our life!\"",
+        "lines": "106, 107"
+      },
+      {
+        "imageNumber": 17,
+        "filename": "17.png",
+        "title": "PAOLO AND FRANCESCA",
+        "quote": "\"That day no farther did we read therein\"",
+        "lines": "138"
+      },
+      {
+        "imageNumber": 18,
+        "filename": "18.png",
+        "title": "PAOLO AND FRANCESCA",
+        "quote": "I swooned away as if I had been dying, / And fell, even as a dead body falls",
+        "lines": "141, 142"
+      }
+    ],
+    "inferno-6": [
+      {
+        "imageNumber": 19,
+        "filename": "19.png",
+        "title": "CERBERUS",
+        "quote": "And my Conductor, with his spans extended, / Took of the earth, and with his fists well filled, / He threw it into those rapacious gullets",
+        "lines": "25\u201327"
+      },
+      {
+        "imageNumber": 20,
+        "filename": "20.png",
+        "title": "THE GLUTTONS\u2014CIACCO",
+        "quote": "\"For the pernicious sin of gluttony / I, as thou seest, am battered by this rain\"",
+        "lines": "53, 54"
+      }
+    ],
+    "inferno-7": [
+      {
+        "imageNumber": 21,
+        "filename": "21.png",
+        "title": "PLUTO AND VIRGIL",
+        "quote": "\"Be silent thou accursed wolf; / Consume within thyself with thine own rage\"",
+        "lines": "8, 9"
+      },
+      {
+        "imageNumber": 22,
+        "filename": "22.png",
+        "title": "THE AVARICIOUS AND PRODIGAL",
+        "quote": "\"For all the gold that is beneath the moon, / Or ever has been, of these weary souls / Could never make a single one repose\"",
+        "lines": "64\u201366"
+      },
+      {
+        "imageNumber": 23,
+        "filename": "23.png",
+        "title": "THE STYX\u2014THE IRASCIBLE",
+        "quote": "\"Son, thou now beholdest / The souls of those whom anger overcame\"",
+        "lines": "115, 116"
+      }
+    ],
+    "inferno-8": [
+      {
+        "imageNumber": 24,
+        "filename": "24.png",
+        "title": "THE STYX\u2014PHLEGYAS",
+        "quote": "The antique prow goes on its way, dividing / More of the water than't is wont with others",
+        "lines": "29, 30"
+      },
+      {
+        "imageNumber": 25,
+        "filename": "25.png",
+        "title": "THE STYX\u2014PHILIPPO ARGENTI",
+        "quote": "Then stretched he both his hands unto the boat; / Whereat my wary Master thrust him back",
+        "lines": "40, 41"
+      },
+      {
+        "imageNumber": 26,
+        "filename": "26.png",
+        "title": "THE PORTALS OF DIS",
+        "quote": "I could not hear what he proposed to them; / But with them there he did not linger long, / Ere each within in rivalry ran back",
+        "lines": "112\u2013114"
+      }
+    ],
+    "inferno-9": [
+      {
+        "imageNumber": 27,
+        "filename": "27.png",
+        "title": "THE ERINNYS",
+        "quote": "\"This is Megaera, on the left-hand side; / She who is weeping on the right, Alecto; / Tisiphone is between\"",
+        "lines": "46\u201348"
+      },
+      {
+        "imageNumber": 28,
+        "filename": "28.png",
+        "title": "THE ANGEL",
+        "quote": "He reached the gate, and with a little rod / He opened it, for there was no resistance",
+        "lines": "89, 90"
+      },
+      {
+        "imageNumber": 29,
+        "filename": "29.png",
+        "title": "BURNING GRAVES\u2014THE HERESIARCHS",
+        "quote": "\"My Master, what are all those people / Who, having sepulture within those tombs, / Make themselves audible by doleful sighs?\"",
+        "lines": "124\u2013126"
+      }
+    ],
+    "inferno-10": [
+      {
+        "imageNumber": 30,
+        "filename": "30.png",
+        "title": "FARINATA",
+        "quote": "As soon as I was at the foot of his tomb, / Somewhat he eyed me, and, as if disdainful, / Then asked of me, \"Who were thine ancestors?\"",
+        "lines": "40\u201342"
+      }
+    ],
+    "inferno-11": [
+      {
+        "imageNumber": 31,
+        "filename": "31.png",
+        "title": "THE TOMB OF ANASTASIUS",
+        "quote": "We drew ourselves aside behind the cover / Of a great tomb, whereon I saw a writing, / Which said: \"Pope Anastasius I hold\"",
+        "lines": "6\u20138"
+      }
+    ],
+    "inferno-12": [
+      {
+        "imageNumber": 32,
+        "filename": "32.png",
+        "title": "THE MINOTAUR",
+        "quote": "And on the border of the broken chasm / The infamy of Crete was stretched along, / Who was conceived in the fictitious cow",
+        "lines": "11\u201313"
+      },
+      {
+        "imageNumber": 33,
+        "filename": "33.png",
+        "title": "THE CENTAURS\u2014NESSUS",
+        "quote": "Beholding us descend, each one stood still, / And from the squadron three detached themselves, / With bows and arrows in advance selected",
+        "lines": "58\u201360"
+      },
+      {
+        "imageNumber": 34,
+        "filename": "34.png",
+        "title": "CHIRON",
+        "quote": "Chiron an arrow took, and with the notch / Backward upon his jaws he put his beard",
+        "lines": "77, 78"
+      }
+    ],
+    "inferno-13": [
+      {
+        "imageNumber": 35,
+        "filename": "35.png",
+        "title": "THE HARPIES' WOOD",
+        "quote": "They make laments upon the wondrous trees",
+        "lines": "15"
+      },
+      {
+        "imageNumber": 36,
+        "filename": "36.png",
+        "title": "THE SUICIDES",
+        "quote": "Then stretched I forth my hand a little forward, / And plucked a branchlet off from a great thorn; / And the trunk cried, \"Why dost thou mangle me?\"",
+        "lines": "31\u201333"
+      },
+      {
+        "imageNumber": 37,
+        "filename": "37.png",
+        "title": "THE SUICIDES",
+        "quote": "And two behold! upon our left-hand side, / Naked and scratched, fleeing so furiously, / That of the forest every fan they broke",
+        "lines": "115\u2013117"
+      }
+    ],
+    "inferno-14": [
+      {
+        "imageNumber": 38,
+        "filename": "38.png",
+        "title": "THE BLASPHEMERS\u2014CAPANEUS",
+        "quote": "O'er all the sand-waste, with a gradual fall, / Raining down dilated flakes of fire",
+        "lines": "28, 29"
+      }
+    ],
+    "inferno-15": [
+      {
+        "imageNumber": 39,
+        "filename": "39.png",
+        "title": "BRUNETTO LATINI",
+        "quote": "\"Are you here, Ser Brunetto?\"",
+        "lines": "30"
+      }
+    ],
+    "inferno-17": [
+      {
+        "imageNumber": 40,
+        "filename": "40.png",
+        "title": "GERYON\u2014SYMBOL OF DECEIT",
+        "quote": "And that uncleanly image of deceit / Came up and thrust ashore its head and bust",
+        "lines": "7, 8"
+      },
+      {
+        "imageNumber": 41,
+        "filename": "41.png",
+        "title": "THE DESCENT ON THE MONSTER",
+        "quote": "Onward he goeth, swimming slowly, slowly; / Wheels and descends",
+        "lines": "115, 116"
+      }
+    ],
+    "inferno-18": [
+      {
+        "imageNumber": 42,
+        "filename": "42.png",
+        "title": "DEVILS AND SEDUCERS",
+        "quote": "Ah me! how they did make them lift their legs / At the first blows!",
+        "lines": "37, 38"
+      },
+      {
+        "imageNumber": 43,
+        "filename": "43.png",
+        "title": "PARAMOURS AND FLATTERERS",
+        "quote": "I saw a people smothered in a filth / That out of human privies seemed to flow",
+        "lines": "113, 114"
+      },
+      {
+        "imageNumber": 44,
+        "filename": "44.png",
+        "title": "THA\u00cfS",
+        "quote": "\"Tha\u00efs the harlot is it, who replied / Unto her paramour, when he said, 'Have I / Great gratitude from thee?'\u2014'Nay, marvellous'\"",
+        "lines": "133\u2013135"
+      }
+    ],
+    "inferno-19": [
+      {
+        "imageNumber": 45,
+        "filename": "45.png",
+        "title": "THE SIMONISTS",
+        "quote": "\"O doleful soul, implanted like a stake,\" / To say began I, \"if thou canst, speak out\"",
+        "lines": "47, 48"
+      }
+    ],
+    "inferno-21": [
+      {
+        "imageNumber": 46,
+        "filename": "46.png",
+        "title": "DEVILS AND BARRATORS",
+        "quote": "They seized him then with more than a hundred rakes",
+        "lines": "52"
+      },
+      {
+        "imageNumber": 47,
+        "filename": "47.png",
+        "title": "DEVILS AND VIRGIL",
+        "quote": "But he cried out: \"Be none of you malignant!\"",
+        "lines": "72"
+      }
+    ],
+    "inferno-22": [
+      {
+        "imageNumber": 48,
+        "filename": "48.png",
+        "title": "BARRATORS\u2014GIAMPOLO",
+        "quote": "Therefore he moved, and cried: \"Thou art o'ertaken\"",
+        "lines": "126"
+      },
+      {
+        "imageNumber": 49,
+        "filename": "49.png",
+        "title": "ALICHINO AND CALCABRINA",
+        "quote": "But sooth the other was a doughty sparhawk / To clapperclaw him well; and both of them / Fell in the middle of the boiling pond",
+        "lines": "139\u2013141"
+      }
+    ],
+    "inferno-23": [
+      {
+        "imageNumber": 50,
+        "filename": "50.png",
+        "title": "TUMULT AND ESCAPE",
+        "quote": "Hardly the bed of the ravine below / His feet had reached, ere they had reached the hill / Right over us",
+        "lines": "52\u201354"
+      },
+      {
+        "imageNumber": 51,
+        "filename": "51.png",
+        "title": "THE HYPOCRITES",
+        "quote": "They had on mantles with the hoods low down / Before their eyes",
+        "lines": "61, 62"
+      },
+      {
+        "imageNumber": 52,
+        "filename": "52.png",
+        "title": "THE HYPOCRITES\u2014CRUCIFIED PHARISEE",
+        "quote": "\"This transfixed one, whom thou seest, / Counselled the Pharisees that it was meet / To put one man to torture for the people\"",
+        "lines": "115\u2013117"
+      }
+    ],
+    "inferno-24": [
+      {
+        "imageNumber": 53,
+        "filename": "53.png",
+        "title": "THIEVES",
+        "quote": "Among this cruel and most dismal throng / People were running naked and affrighted",
+        "lines": "91, 92"
+      }
+    ],
+    "inferno-25": [
+      {
+        "imageNumber": 54,
+        "filename": "54.png",
+        "title": "TRANSFORMATION INTO SNAKES",
+        "quote": "\"O me, Agnello, how thou changest! / Behold, thou now art neither two nor one\"",
+        "lines": "68, 69"
+      }
+    ],
+    "inferno-26": [
+      {
+        "imageNumber": 55,
+        "filename": "55.png",
+        "title": "EVIL COUNSELLORS",
+        "quote": "\"Within the fires the spirits are; / Each swathes himself with that wherewith he burns\"",
+        "lines": "47, 48"
+      }
+    ],
+    "inferno-28": [
+      {
+        "imageNumber": 56,
+        "filename": "56.png",
+        "title": "SCHISMATICS\u2014MAHOMET",
+        "quote": "He looked at me, and opened with his hands / His bosom, saying: \"See now how I rend me\"",
+        "lines": "29, 30"
+      },
+      {
+        "imageNumber": 57,
+        "filename": "57.png",
+        "title": "SOWER OF DISCORD",
+        "quote": "\"Call to remembrance Pier da Medicina\"",
+        "lines": "73"
+      },
+      {
+        "imageNumber": 58,
+        "filename": "58.png",
+        "title": "BERTRAM DE BORN",
+        "quote": "By the hair it held the head dissevered, / Hung from the hand in fashion of a lantern, / And that upon us gazed and said: \"O me!\"",
+        "lines": "121\u2013123"
+      }
+    ],
+    "inferno-29": [
+      {
+        "imageNumber": 59,
+        "filename": "59.png",
+        "title": "GERI DEL BELLO",
+        "quote": "But said Virgilius: \"What dost thou still gaze at? / Why is thy sight still riveted down there / Among the mournful, mutilated shades?\"",
+        "lines": "4\u20136"
+      },
+      {
+        "imageNumber": 60,
+        "filename": "60.png",
+        "title": "FORGERS",
+        "quote": "Such a stench came from it / As from putrescent limbs is wont to issue",
+        "lines": "50, 51"
+      },
+      {
+        "imageNumber": 61,
+        "filename": "61.png",
+        "title": "FORGERS",
+        "quote": "Every one was plying fast the bite / Of nails upon himself, for the great rage / Of itching which no other succour had",
+        "lines": "79\u201381"
+      }
+    ],
+    "inferno-30": [
+      {
+        "imageNumber": 62,
+        "filename": "62.png",
+        "title": "FORGERS",
+        "quote": "\"That mad sprite is Gianni Schicchi, / And raving goes thus harrying other people\"",
+        "lines": "32, 33"
+      },
+      {
+        "imageNumber": 63,
+        "filename": "63.png",
+        "title": "MYRRHA",
+        "quote": "\"That is the ancient ghost / Of the nefarious Myrrha, who became / Beyond all rightful love her father's lover\"",
+        "lines": "37\u201339"
+      }
+    ],
+    "inferno-31": [
+      {
+        "imageNumber": 64,
+        "filename": "64.png",
+        "title": "THE GIANTS\u2014NIMROD",
+        "quote": "\"Soul idiotic, / Keep to thy horn, and vent thyself with that, / When wrath or other passion touches thee\"",
+        "lines": "70\u201372"
+      },
+      {
+        "imageNumber": 65,
+        "filename": "65.png",
+        "title": "EPHIALTES",
+        "quote": "\"This proud one wished to make experiment / Of his own power against the Supreme Jove\"",
+        "lines": "91, 92"
+      },
+      {
+        "imageNumber": 66,
+        "filename": "66.png",
+        "title": "ANTAEUS\u2014DESCENT TO THE LAST CIRCLE",
+        "quote": "But lightly in the abyss, which swallows up / Judas with Lucifer, he put us down",
+        "lines": "142, 143"
+      }
+    ],
+    "inferno-32": [
+      {
+        "imageNumber": 67,
+        "filename": "67.png",
+        "title": "COCYTUS\u2014TRAITORS",
+        "quote": "\"Look how thou steppest! / Take heed thou do not trample with thy feet / The heads of the tired, miserable brothers!\"",
+        "lines": "19\u201321"
+      },
+      {
+        "imageNumber": 68,
+        "filename": "68.png",
+        "title": "TRAITORS\u2014BOCCA DEGLI ABATI",
+        "quote": "Then by the scalp behind I seized upon him, / And said: \"It must needs be thou name thyself, / Or not a hair remain upon thee here\"",
+        "lines": "97\u201399"
+      },
+      {
+        "imageNumber": 69,
+        "filename": "69.png",
+        "title": "UGOLINO AND ARCHBISHOP RUGGIERI",
+        "quote": "The uppermost on the other set his teeth, / There where the brain is to the nape united",
+        "lines": "128, 129"
+      }
+    ],
+    "inferno-33": [
+      {
+        "imageNumber": 70,
+        "filename": "70.png",
+        "title": "UGOLINO",
+        "quote": "\"I calmed me then, not to make them more sad\"",
+        "lines": "64"
+      },
+      {
+        "imageNumber": 71,
+        "filename": "71.png",
+        "title": "UGOLINO AND GADDO",
+        "quote": "\"Gaddo / Threw himself down outstretched before my feet, / Saying, 'My father, why dost thou not help me?'\"",
+        "lines": "67\u201369"
+      },
+      {
+        "imageNumber": 72,
+        "filename": "72.png",
+        "title": "UGOLINO",
+        "quote": "\"Then hunger did what sorrow could not do\"",
+        "lines": "75"
+      }
+    ],
+    "inferno-34": [
+      {
+        "imageNumber": 73,
+        "filename": "73.png",
+        "title": "THE JUDECCA\u2014LUCIFER",
+        "quote": "\"Behold Dis, and behold the place / Where thou with fortitude must arm thyself\"",
+        "lines": "20, 21"
+      },
+      {
+        "imageNumber": 74,
+        "filename": "74.png",
+        "title": "THE WAY TO THE UPPER WORLD",
+        "quote": "The Guide and I into that hidden road / Now entered, to return to the bright world",
+        "lines": "133, 134"
+      },
+      {
+        "imageNumber": 75,
+        "filename": "75.png",
+        "title": "THE POETS EMERGE FROM HELL",
+        "quote": "Thence we came forth to rebehold the stars",
+        "lines": "139"
+      }
+    ],
+    "purgatorio-1": [
+      {
+        "imageNumber": 76,
+        "filename": "76.png",
+        "title": "VENUS",
+        "quote": "The beauteous planet, that to love incites, / Was making all the orient to laugh, / Veiling the Fishes that were in her escort",
+        "lines": "19\u201321"
+      },
+      {
+        "imageNumber": 77,
+        "filename": "77.png",
+        "title": "CATO OF UTICA",
+        "quote": "I saw beside me an old man alone, / Worthy of so much reverence in his look, / That more owes not to father any son",
+        "lines": "31\u201333"
+      }
+    ],
+    "purgatorio-2": [
+      {
+        "imageNumber": 78,
+        "filename": "78.png",
+        "title": "THE VESSEL",
+        "quote": "But when he clearly recognized the pilot, / He cried: \"Make haste, make haste to bow the knee! / Behold the Angel of God!\"",
+        "lines": "27\u201329"
+      },
+      {
+        "imageNumber": 79,
+        "filename": "79.png",
+        "title": "THE CELESTIAL PILOT",
+        "quote": "Beatitude seemed written in his face",
+        "lines": "44"
+      }
+    ],
+    "purgatorio-3": [
+      {
+        "imageNumber": 80,
+        "filename": "80.png",
+        "title": "THE MOUNTAIN'S FOOT",
+        "quote": "On the left hand appeared to me a throng / Of souls, that moved their feet in our direction, / And did not seem to move",
+        "lines": "58\u201360"
+      }
+    ],
+    "purgatorio-4": [
+      {
+        "imageNumber": 81,
+        "filename": "81.png",
+        "title": "THE ASCENT",
+        "quote": "We mounted upward through the rifted rock, / And on each side the border pressed upon us",
+        "lines": "31, 32"
+      },
+      {
+        "imageNumber": 82,
+        "filename": "82.png",
+        "title": "THE LATE REPENTERS",
+        "quote": "There were persons there / Who in the shadow stood behind the rock, / As one through indolence is wont to stand",
+        "lines": "103\u2013105"
+      }
+    ],
+    "purgatorio-5": [
+      {
+        "imageNumber": 83,
+        "filename": "83.png",
+        "title": "THE LATE REPENTERS",
+        "quote": "Meanwhile along the mountain-side across / Came people in advance of us a little, / Singing the Miserere verse by verse",
+        "lines": "22\u201324"
+      },
+      {
+        "imageNumber": 84,
+        "filename": "84.png",
+        "title": "BUONCONTE DA MONTEFELTRO",
+        "quote": "\"God's Angel took me up, and he of hell / Shouted: 'O thou from heaven, why dost thou rob me?'\"",
+        "lines": "104, 105"
+      },
+      {
+        "imageNumber": 85,
+        "filename": "85.png",
+        "title": "PIA",
+        "quote": "\"Do thou remember me who am the Pia; / Siena made me, unmade me Maremma\"",
+        "lines": "133, 134"
+      }
+    ],
+    "purgatorio-7": [
+      {
+        "imageNumber": 86,
+        "filename": "86.png",
+        "title": "SORDELLO AND VIRGIL",
+        "quote": "So he appeared; and then bowed down his brow, / And with humility returned towards him, / And, where inferiors embrace, embraced him",
+        "lines": "13\u201315"
+      },
+      {
+        "imageNumber": 87,
+        "filename": "87.png",
+        "title": "THE DELL",
+        "quote": "\"Salve Regina,\" on the green and flowers / There seated, singing, spirits I beheld",
+        "lines": "82, 83"
+      }
+    ],
+    "purgatorio-8": [
+      {
+        "imageNumber": 88,
+        "filename": "88.png",
+        "title": "THE SERPENT",
+        "quote": "Hearing the air cleft by their verdant wings, / The serpent fled, and round the Angels wheeled",
+        "lines": "106, 107"
+      }
+    ],
+    "purgatorio-9": [
+      {
+        "imageNumber": 89,
+        "filename": "89.png",
+        "title": "TWILIGHT",
+        "quote": "The concubine of old Tithonus now / Gleamed white upon the eastern balcony",
+        "lines": "1, 2"
+      },
+      {
+        "imageNumber": 90,
+        "filename": "90.png",
+        "title": "THE EAGLE",
+        "quote": "Terrible as the lightning he descended, / And snatched me upward even to the fire",
+        "lines": "29, 30"
+      },
+      {
+        "imageNumber": 91,
+        "filename": "91.png",
+        "title": "THE PORTALS OF PURGATORY",
+        "quote": "I saw him seated on the highest stair, / Such in the face that I endured it not. / And in his hand he held a naked sword",
+        "lines": "80\u201382"
+      }
+    ],
+    "purgatorio-10": [
+      {
+        "imageNumber": 92,
+        "filename": "92.png",
+        "title": "THE SCULPTURES",
+        "quote": "The wretched woman in the midst of these / Seemed to be saying: \"Give me vengeance, Lord, / For my dead son\"",
+        "lines": "82\u201384"
+      }
+    ],
+    "purgatorio-12": [
+      {
+        "imageNumber": 93,
+        "filename": "93.png",
+        "title": "THE PRIDEFUL\u2014ODERISI",
+        "quote": "Abreast, like oxen going in a yoke, / I with that heavy-laden soul went on",
+        "lines": "1, 2"
+      },
+      {
+        "imageNumber": 94,
+        "filename": "94.png",
+        "title": "ARACHNE",
+        "quote": "O mad Arachne! so I thee beheld / E'en then half spider",
+        "lines": "43, 44"
+      }
+    ],
+    "purgatorio-13": [
+      {
+        "imageNumber": 95,
+        "filename": "95.png",
+        "title": "THE ENVIOUS",
+        "quote": "Covered with sackcloth vile they seemed to me, / And one sustained the other with his shoulder, / And all of them were by the bank sustained",
+        "lines": "58\u201360"
+      },
+      {
+        "imageNumber": 96,
+        "filename": "96.png",
+        "title": "SAPIA",
+        "quote": "\"Sienese was I,\" it replied, \"and with / The others here recleanse my guilty life\"",
+        "lines": "106, 107"
+      }
+    ],
+    "purgatorio-15": [
+      {
+        "imageNumber": 97,
+        "filename": "97.png",
+        "title": "THE STONING OF STEPHEN",
+        "quote": "Then saw I people hot in fire of wrath, / With stones a young man slaying, clamorously / Still crying to each other, \"Kill him! kill him!\"",
+        "lines": "106\u2013108"
+      }
+    ],
+    "purgatorio-16": [
+      {
+        "imageNumber": 98,
+        "filename": "98.png",
+        "title": "MARCO THE LOMBARD",
+        "quote": "\"Now who art thou, that cleavest through our smoke, / And art discoursing of us even as though / Thou didst by calends still divide the time?\"",
+        "lines": "25\u201327"
+      },
+      {
+        "imageNumber": 99,
+        "filename": "99.png",
+        "title": "MARCO THE LOMBARD",
+        "quote": "\"Thee will I follow far as is allowed me,\" / He answered; \"and if smoke prevent our seeing, / Hearing shall keep us joined instead thereof\"",
+        "lines": "34\u201336"
+      }
+    ],
+    "purgatorio-18": [
+      {
+        "imageNumber": 100,
+        "filename": "100.png",
+        "title": "THE SLOTHFUL",
+        "quote": "But taken from me was this drowsiness / Suddenly by a people, that behind / Our backs already had come round to us",
+        "lines": "88\u201390"
+      }
+    ],
+    "purgatorio-19": [
+      {
+        "imageNumber": 101,
+        "filename": "101.png",
+        "title": "ASCENT TO THE FIFTH CIRCLE",
+        "quote": "\"What aileth thee, that aye to earth thou gazest?\" / To me my Guide began to say, we both / Somewhat beyond the Angel having mounted",
+        "lines": "52\u201354"
+      },
+      {
+        "imageNumber": 102,
+        "filename": "102.png",
+        "title": "THE AVARICIOUS\u2014ADRIAN V",
+        "quote": "\"What cause,\" he said, \"has downward bent thee thus?\" / And I to him: \"For your own dignity, / Standing, my conscience stung me with remorse\"",
+        "lines": "130\u2013132"
+      }
+    ],
+    "purgatorio-20": [
+      {
+        "imageNumber": 103,
+        "filename": "103.png",
+        "title": "THE AVARICIOUS",
+        "quote": "Onward we went with footsteps slow and scarce, / And I attentive to the shades I heard / Piteously weeping and bemoaning them",
+        "lines": "16\u201318"
+      }
+    ],
+    "purgatorio-23": [
+      {
+        "imageNumber": 104,
+        "filename": "104.png",
+        "title": "THE GLUTTONS\u2014FORESE",
+        "quote": "\"Ah, do not look at this dry leprosy,\" / Entreated he, \"which doth my skin discolor, / Nor at default of flesh that I may have\"",
+        "lines": "49\u201351"
+      }
+    ],
+    "purgatorio-24": [
+      {
+        "imageNumber": 105,
+        "filename": "105.png",
+        "title": "THE GLUTTONS",
+        "quote": "And shadows, that appeared things doubly dead, / From out the sepulchres of their eyes betrayed / Wonder at me, aware that I was living",
+        "lines": "4\u20136"
+      },
+      {
+        "imageNumber": 106,
+        "filename": "106.png",
+        "title": "THE TREE",
+        "quote": "People I saw beneath it lift their hands, / And cry I know not what towards the leaves",
+        "lines": "106, 107"
+      }
+    ],
+    "purgatorio-25": [
+      {
+        "imageNumber": 107,
+        "filename": "107.png",
+        "title": "THE SEVENTH CIRCLE",
+        "quote": "There the embankment shoots forth flames of fire, / And upward doth the cornice breathe a blast / That drives them back, and from itself sequesters",
+        "lines": "112\u2013114"
+      },
+      {
+        "imageNumber": 108,
+        "filename": "108.png",
+        "title": "THE SEVENTH CIRCLE",
+        "quote": "\"Summae Deus clementiae,\" in the bosom / Of the great burning chanted then I heard, / Which made me no less eager to turn round",
+        "lines": "121\u2013123"
+      },
+      {
+        "imageNumber": 109,
+        "filename": "109.png",
+        "title": "THE SEVENTH CIRCLE\u2014THE LUSTFUL",
+        "quote": "And spirits saw I walking through the flame; / Wherefore I looked, to my own steps and theirs / Apportioning my sight from time to time",
+        "lines": "124\u2013126"
+      }
+    ],
+    "purgatorio-27": [
+      {
+        "imageNumber": 110,
+        "filename": "110.png",
+        "title": "LEAH",
+        "quote": "Youthful and beautiful in dreams methought / I saw a lady walking in a meadow, / Gathering flowers",
+        "lines": "97\u201399"
+      }
+    ],
+    "purgatorio-28": [
+      {
+        "imageNumber": 111,
+        "filename": "111.png",
+        "title": "TERRESTRIAL PARADISE",
+        "quote": "Already my slow steps had carried me / Into the ancient wood so far, that I / Could not perceive where I had entered it",
+        "lines": "22\u201324"
+      }
+    ],
+    "purgatorio-29": [
+      {
+        "imageNumber": 112,
+        "filename": "112.png",
+        "title": "APOCALYPTIC PROCESSION",
+        "quote": "The four and twenty Elders, two by two, / Came on incoronate with flower-de-luce",
+        "lines": "83, 84"
+      },
+      {
+        "imageNumber": 113,
+        "filename": "113.png",
+        "title": "CHARITY, HOPE AND FAITH",
+        "quote": "One so very red / That in the fire she hardly had been noted. / The second was as if her flesh and bones / Had all been fashioned out of emerald; / The third appeared as snow but newly fallen",
+        "lines": "122\u2013126"
+      }
+    ],
+    "purgatorio-30": [
+      {
+        "imageNumber": 114,
+        "filename": "114.png",
+        "title": "BEATRICE",
+        "quote": "Appeared a lady under a green mantle, / Vested in color of the living flame",
+        "lines": "32, 33"
+      }
+    ],
+    "purgatorio-31": [
+      {
+        "imageNumber": 115,
+        "filename": "115.png",
+        "title": "SUBMERSION IN LETHE",
+        "quote": "The beautiful lady opened wide her arms, / Embraced my head, and plunged me underneath, / Where I was forced to swallow the water",
+        "lines": "100\u2013102"
+      }
+    ],
+    "purgatorio-32": [
+      {
+        "imageNumber": 116,
+        "filename": "116.png",
+        "title": "THE WHORE AND THE GIANT",
+        "quote": "Upright beside her I beheld a giant; / And ever and anon they kissed each other",
+        "lines": "152, 153"
+      }
+    ],
+    "purgatorio-33": [
+      {
+        "imageNumber": 117,
+        "filename": "117.png",
+        "title": "THE EUNO\u00cb",
+        "quote": "If, Reader, I possessed a longer space / For writing it, I yet would sing in part / Of the sweet draught that ne'er would satiate me",
+        "lines": "136\u2013138"
+      }
+    ],
+    "paradiso-3": [
+      {
+        "imageNumber": 118,
+        "filename": "118.png",
+        "title": "THE MOON",
+        "quote": "Saw I many faces prompt to speak",
+        "lines": "16"
+      }
+    ],
+    "paradiso-5": [
+      {
+        "imageNumber": 119,
+        "filename": "119.png",
+        "title": "MERCURY",
+        "quote": "So I beheld more than a thousand splendors / Drawing towards us",
+        "lines": "103, 104"
+      }
+    ],
+    "paradiso-8": [
+      {
+        "imageNumber": 120,
+        "filename": "120.png",
+        "title": "VENUS\u2014CHARLES MARTEL",
+        "quote": "\"That left-hand margin, which did bathe itself / In Rhone, when it is mingled with the Sorgue, / Me for its lord awaited in due time\"",
+        "lines": "58\u201360"
+      }
+    ],
+    "paradiso-12": [
+      {
+        "imageNumber": 121,
+        "filename": "121.png",
+        "title": "THE SUN\u2014GLORIFIED SOULS",
+        "quote": "In such wise of those sempiternal roses / The garlands twain encompassed us about, / And thus the outer to the inner answered",
+        "lines": "19\u201321"
+      }
+    ],
+    "paradiso-14": [
+      {
+        "imageNumber": 122,
+        "filename": "122.png",
+        "title": "MARS",
+        "quote": "Well was I ware that I was more uplifted / By the enkindled smiling of the star, / That seemed to me more ruddy than its wont",
+        "lines": "85\u201387"
+      },
+      {
+        "imageNumber": 123,
+        "filename": "123.png",
+        "title": "THE CROSS",
+        "quote": "Here doth my memory overcome my genius; / For on that cross as levin gleamed forth Christ, / So that I cannot find ensample worthy",
+        "lines": "103\u2013105"
+      }
+    ],
+    "paradiso-16": [
+      {
+        "imageNumber": 124,
+        "filename": "124.png",
+        "title": "CACCIAGUIDA",
+        "quote": "\"You are my ancestor, / You give to me all hardihood to speak, / You lift me so that I am more than I\"",
+        "lines": "16\u201318"
+      }
+    ],
+    "paradiso-18": [
+      {
+        "imageNumber": 125,
+        "filename": "125.png",
+        "title": "JUPITER",
+        "quote": "The holy creatures / Sang flying to and fro",
+        "lines": "76, 77"
+      },
+      {
+        "imageNumber": 126,
+        "filename": "126.png",
+        "title": "JUPITER",
+        "quote": "O soldiery of heaven, whom I contemplate, / Implore for those who are upon the earth / All gone astray after the bad example!",
+        "lines": "124\u2013126"
+      }
+    ],
+    "paradiso-19": [
+      {
+        "imageNumber": 127,
+        "filename": "127.png",
+        "title": "THE EAGLE",
+        "quote": "Appeared before me with its wings outspread / The beautiful image that in sweet fruition / Made jubilant the interwoven souls",
+        "lines": "1\u20133"
+      }
+    ],
+    "paradiso-20": [
+      {
+        "imageNumber": 128,
+        "filename": "128.png",
+        "title": "THE EAGLE",
+        "quote": "Those living luminaries all, / By far more luminous, did songs begin / Lapsing and falling from my memory",
+        "lines": "10\u201312"
+      }
+    ],
+    "paradiso-21": [
+      {
+        "imageNumber": 129,
+        "filename": "129.png",
+        "title": "BEATRICE",
+        "quote": "Already on my Lady's face mine eyes / Again were fastened",
+        "lines": "1, 2"
+      },
+      {
+        "imageNumber": 130,
+        "filename": "130.png",
+        "title": "SATURN",
+        "quote": "A stairway I beheld to such height / Uplifted, that mine eye pursued it not",
+        "lines": "29, 30"
+      }
+    ],
+    "paradiso-26": [
+      {
+        "imageNumber": 131,
+        "filename": "131.png",
+        "title": "THE HEAVEN OF THE FIXED STARS",
+        "quote": "\"Begin then, and declare to what thy soul / Is aimed, and count it for a certainty, / Sight is in thee bewildered and not dead\"",
+        "lines": "7\u20139"
+      }
+    ],
+    "paradiso-27": [
+      {
+        "imageNumber": 132,
+        "filename": "132.png",
+        "title": "THE HEAVEN OF THE FIXED STARS",
+        "quote": "\"Glory be to the Father, to the Son, / And Holy Ghost!\" all Paradise began, / So that the melody inebriate made me",
+        "lines": "1\u20133"
+      }
+    ],
+    "paradiso-28": [
+      {
+        "imageNumber": 133,
+        "filename": "133.png",
+        "title": "CRYSTALLINE HEAVEN",
+        "quote": "Not otherwise does iron scintillate / When molten, than those circles scintillated",
+        "lines": "89, 90"
+      }
+    ],
+    "paradiso-31": [
+      {
+        "imageNumber": 134,
+        "filename": "134.png",
+        "title": "THE EMPYREAN",
+        "quote": "In fashion then as of a snow-white rose / Displayed itself to me the saintly host",
+        "lines": "1, 2"
+      }
+    ]
+  }
+}

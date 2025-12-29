@@ -75,13 +75,14 @@ ${canto.original}
 ---
 
 Please create a modern English version that:
-1. Is clear and accessible to contemporary readers
-2. Faithfully preserves the original meaning and narrative
+1. Is clear, compelling, and accessible to contemporary readers
+2. Faithfully preserves the original meaning, imagery, and narrative
 3. Uses natural, modern English (avoid archaic words like "thee", "thou", "doth")
-4. Incorporates rhyme where it flows naturally (aim for couplets or tercets when possible)
-5. Prioritizes readability and clarity over perfect meter
-6. Maintains the poetic and dramatic tone
-7. Preserves the structure with line breaks for readability
+4. Flows naturally without forcing rhymes - use prose-poetry style
+5. Maintains vivid, evocative language that captures the power of the original
+6. Preserves the poetic and dramatic tone
+7. Uses line breaks and paragraph structure for readability
+8. Feels like a contemporary literary translation, not a simplified paraphrase
 
 Return ONLY the modern rewrite, without any preamble, explanation, or commentary.`;
 

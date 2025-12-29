@@ -54,11 +54,39 @@ function splitCantos() {
   // Helper to extract canto content
   function extractCanto(match, i, allMatches, text) {
     const chapterNum = parseInt(match[1]);
-    const title = match[2].trim();
+    const fullTitle = match[2].trim();
+
+    // The chapter line often contains both the descriptive title AND the start of the poem
+    // Try to separate them by finding where verse content begins
+    // Look for common patterns: capital letter starting a poetic line
+    const versePatterns = [
+      /\b(Midway|When|In|The time|As|If|From|Upon|Through|Not|One|O|And then|Then|There|Now)\b/i
+    ];
+
+    let title = fullTitle;
+    let verseFromTitle = '';
+
+    // Try to find where verse begins in the title line
+    for (const pattern of versePatterns) {
+      const verseMatch = fullTitle.match(pattern);
+      if (verseMatch && verseMatch.index > 20) { // Must be reasonably far into the title
+        title = fullTitle.substring(0, verseMatch.index).trim();
+        verseFromTitle = fullTitle.substring(verseMatch.index).trim();
+        break;
+      }
+    }
+
+    // Extract content from subsequent lines
     const startPos = match.index + match[0].length;
     const endPos = i < allMatches.length - 1 ? allMatches[i + 1].index : text.length;
-    const content = text.substring(startPos, endPos).trim();
-    const lines = content.split('\n').filter(line => line.trim().length > 0);
+    const subsequentContent = text.substring(startPos, endPos).trim();
+
+    // Combine verse from title line with subsequent content
+    const fullContent = verseFromTitle
+      ? verseFromTitle + ' ' + subsequentContent
+      : subsequentContent;
+
+    const lines = fullContent.split('\n').filter(line => line.trim().length > 0);
 
     return {
       chapterNum,

@@ -1,0 +1,371 @@
+[
+  {
+    "canto": 1,
+    "lines": "1-30",
+    "title": "Dante Lost in the Dark Wood",
+    "description": "A solitary robed figure (Dante) stands in a dark, forbidding forest with twisted trees and rocky terrain. The scene depicts the opening of the Inferno where Dante finds himself lost in the selva oscura (dark wood) at the midpoint of his life.",
+    "confidence": "high",
+    "original_filename": "inferno-page-11.png",
+    "suggested_filename": "canto-01_lines-1-30_dante-lost-in-the-dark-wood.png"
+  },
+  {
+    "canto": 1,
+    "lines": "1-3",
+    "title": "Dante Lost in the Dark Forest",
+    "description": "A lone figure (Dante) stands in a dark, dense forest with tall trees surrounding him. The scene depicts the opening of the Inferno where Dante finds himself lost in the selva oscura (dark wood) at the midpoint of his life. The forest appears threatening and maze-like, with no clear path visible.",
+    "confidence": "high",
+    "original_filename": "inferno-page-12.png",
+    "suggested_filename": "canto-01_lines-1-3_dante-lost-in-the-dark-forest.png"
+  },
+  {
+    "canto": 1,
+    "lines": "31-33",
+    "title": "The Panther in the Dark Wood",
+    "description": "A mountainous, rocky landscape with dense forest vegetation. In the foreground, a spotted panther (leopard) is visible among the rocky terrain. Two human figures can be seen in the middle distance against the dramatic landscape backdrop.",
+    "confidence": "high",
+    "original_filename": "inferno-page-13.png",
+    "suggested_filename": "canto-01_lines-31-33_the-panther-in-the-dark-wood.png"
+  },
+  {
+    "canto": 1,
+    "lines": "46-47",
+    "title": "The Lion",
+    "description": "Dante encounters the lion in the dark wood, with the beast appearing menacing with head uplifted and ravenous hunger as described in the text above the illustration",
+    "confidence": "high",
+    "original_filename": "inferno-page-14.png",
+    "suggested_filename": "canto-01_lines-46-47_the-lion.png"
+  },
+  {
+    "canto": 1,
+    "lines": "88-89",
+    "title": "The She-Wolf",
+    "description": "A dark, foreboding forest scene with two small figures (Dante and Virgil) at the bottom of the composition, dominated by twisted trees and rocky terrain. The illustration depicts the moment when Virgil appears to protect Dante from the she-wolf, one of the three beasts blocking his path.",
+    "confidence": "high",
+    "original_filename": "inferno-page-15.png",
+    "suggested_filename": "canto-01_lines-88-89_the-she-wolf.png"
+  },
+  {
+    "canto": 1,
+    "lines": "130-136",
+    "title": "Dante follows Virgil from the Dark Wood",
+    "description": "Two robed figures walking along a path under a starry night sky, with one figure leading the other away from a wooded area. The scene depicts the moment when Virgil begins to guide Dante on their journey.",
+    "confidence": "high",
+    "original_filename": "inferno-page-16.png",
+    "suggested_filename": "canto-01_lines-130-136_dante-follows-virgil-from-the-.png"
+  },
+  {
+    "canto": 1,
+    "lines": "122-136",
+    "title": "Dante meets Virgil in the dark wood",
+    "description": "Two robed figures stand in a forest clearing with divine light radiating from one figure who has a halo, representing Virgil appearing to Dante in the dark wood. The scene shows the moment when Virgil reveals himself as Dante's guide, with supernatural illumination emphasizing the significance of their meeting.",
+    "confidence": "high",
+    "original_filename": "inferno-page-17.png",
+    "suggested_filename": "canto-01_lines-122-136_dante-meets-virgil-in-the-dark.png"
+  },
+  {
+    "canto": 1,
+    "lines": "70-78",
+    "title": "Dante meets Virgil in the dark valley",
+    "description": "Two robed figures standing in a rocky, mountainous landscape with steep cliffs and a distant bright opening. One figure appears to be addressing the other in what looks like the dark valley where Dante first encounters Virgil after fleeing from the three beasts.",
+    "confidence": "medium",
+    "original_filename": "inferno-page-18.png",
+    "suggested_filename": "canto-01_lines-70-78_dante-meets-virgil-in-the-dark.png"
+  },
+  {
+    "canto": 3,
+    "lines": "78-129",
+    "title": "Charon ferrying souls across Acheron",
+    "description": "A muscular, bearded figure (Charon) stands in a boat on dark waters, holding an oar. He appears to be the ferryman transporting souls across the river Acheron at the entrance to Hell. The setting is a dark, cavernous landscape with rocky cliffs.",
+    "confidence": "high",
+    "original_filename": "inferno-page-19.png",
+    "suggested_filename": "canto-03_lines-78-129_charon-ferrying-souls-across-a.png"
+  },
+  {
+    "canto": 3,
+    "lines": "82-84",
+    "title": "Charon and the River Acheron",
+    "description": "A boat filled with damned souls crossing the river Acheron, with the ferryman Charon wielding an oar. The souls appear distressed and crowded together in the vessel, while Charon guides them across the dark waters.",
+    "confidence": "high",
+    "original_filename": "inferno-page-20.png",
+    "suggested_filename": "canto-03_lines-82-84_charon-and-the-river-acheron.png"
+  },
+  {
+    "canto": 3,
+    "lines": "109-111",
+    "title": "Charon Ferrying Souls Across Acheron",
+    "description": "Charon, the demonic ferryman with glowing eyes, stands in his boat on the river Acheron, gathering damned souls. The souls are shown huddled together on the shore and in the boat, while Charon appears to be striking at lagging souls with his oar. The scene is set in a dark, rocky landscape typical of Hell's entrance.",
+    "confidence": "high",
+    "original_filename": "inferno-page-21.png",
+    "suggested_filename": "canto-03_lines-109-111_charon-ferrying-souls-across-a.png"
+  },
+  {
+    "canto": 4,
+    "lines": "25-63",
+    "title": "Limbo - The Noble Pagans",
+    "description": "A group of classical philosophers and poets gathered in a luminous area within Limbo, including what appears to be Homer, Aristotle, and other ancient sages in robes, standing in dignified poses in a brightened clearing surrounded by the darker landscape of the first circle of Hell",
+    "confidence": "high",
+    "original_filename": "inferno-page-23.png",
+    "suggested_filename": "canto-04_lines-25-63_limbo---the-noble-pagans.png"
+  },
+  {
+    "canto": 25,
+    "lines": "34-78",
+    "title": "Metamorphosis of Thieves - Serpent Transformation",
+    "description": "A muscular human figure is shown in the process of transformation, with serpentine coils wrapped around the body. The figure appears to be merging or changing form with a serpent in a dark, rocky environment, depicting the grotesque metamorphosis punishment of the thieves.",
+    "confidence": "high",
+    "original_filename": "inferno-page-24.png",
+    "suggested_filename": "canto-25_lines-34-78_metamorphosis-of-thieves---ser.png"
+  },
+  {
+    "canto": 5,
+    "lines": "25-45",
+    "title": "Minos Judging the Damned",
+    "description": "A robed figure (likely Dante) stands observing while souls are swept in a whirling motion through a cavernous space, with Minos (partially visible) directing souls to their punishments in Hell's second circle",
+    "confidence": "high",
+    "original_filename": "inferno-page-25.png",
+    "suggested_filename": "canto-05_lines-25-45_minos-judging-the-damned.png"
+  },
+  {
+    "canto": 5,
+    "lines": "25-45",
+    "title": "Paolo and Francesca in the Whirlwind of the Lustful",
+    "description": "Two embracing figures caught in the eternal whirlwind that carries the lustful souls, with flowing drapery and hair streaming in the infernal wind, set against a dark rocky landscape",
+    "confidence": "high",
+    "original_filename": "inferno-page-26.png",
+    "suggested_filename": "canto-05_lines-25-45_paolo-and-francesca-in-the-whi.png"
+  },
+  {
+    "canto": 5,
+    "lines": "73-75",
+    "title": "Paolo and Francesca",
+    "description": "Two figures embracing while being swept through a dark, windy landscape. The lovers Paolo and Francesca are caught in the whirlwind of the lustful, with dramatic flowing robes and hair showing the force of the eternal winds that carry them.",
+    "confidence": "high",
+    "original_filename": "inferno-page-28.png",
+    "suggested_filename": "canto-05_lines-73-75_paolo-and-francesca.png"
+  },
+  {
+    "canto": 5,
+    "lines": "127-138",
+    "title": "Paolo and Francesca's Fatal Kiss",
+    "description": "An intimate scene showing Paolo and Francesca in an ornate chamber with heavy curtains and luxurious furnishings. The two lovers are seated together, with Paolo leaning toward Francesca in what appears to be the moment of their forbidden kiss while reading the tale of Lancelot. The setting emphasizes the courtly, aristocratic environment that led to their downfall.",
+    "confidence": "high",
+    "original_filename": "inferno-page-29.png",
+    "suggested_filename": "canto-05_lines-127-138_paolo-and-francescas-fatal-kis.png"
+  },
+  {
+    "canto": 5,
+    "lines": "127-138",
+    "title": "Paolo and Francesca",
+    "description": "Two souls embracing in flowing robes are swept through the air by infernal winds in the second circle of Hell, depicting the famous lovers Paolo and Francesca among the lustful who are eternally buffeted by the tempest of their passion",
+    "confidence": "high",
+    "original_filename": "inferno-page-31.png",
+    "suggested_filename": "canto-05_lines-127-138_paolo-and-francesca.png"
+  },
+  {
+    "canto": 5,
+    "lines": "127-142",
+    "title": "Paolo and Francesca",
+    "description": "Two figures embracing or floating together in a dark, cavernous setting, likely depicting the tragic lovers Paolo and Francesca condemned to the second circle of Hell among the lustful",
+    "confidence": "high",
+    "original_filename": "inferno-page-32.png",
+    "suggested_filename": "canto-05_lines-127-142_paolo-and-francesca.png"
+  },
+  {
+    "canto": 14,
+    "lines": "16-24",
+    "title": "The Rain of Fire on the Burning Sand",
+    "description": "Naked souls lying, sitting, and wandering on burning sand while flakes of fire fall from above like snow. The figures are in various poses of agony and torment, with bodies twisted in pain from the eternal rain of fire.",
+    "confidence": "high",
+    "original_filename": "inferno-page-33.png",
+    "suggested_filename": "canto-14_lines-16-24_the-rain-of-fire-on-the-burnin.png"
+  },
+  {
+    "canto": 6,
+    "lines": "13-18",
+    "title": "The Gluttons and Cerberus",
+    "description": "A three-headed beast (Cerberus) guards over naked souls lying in putrid mud under eternal rain. One figure appears to be cowering or crouched while robed figures (likely Dante and Virgil) observe from above.",
+    "confidence": "high",
+    "original_filename": "inferno-page-34.png",
+    "suggested_filename": "canto-06_lines-13-18_the-gluttons-and-cerberus.png"
+  },
+  {
+    "canto": 7,
+    "lines": "1-60",
+    "title": "The Avaricious and Prodigal in the Fourth Circle",
+    "description": "Muscular figures engaged in eternal conflict, pushing heavy weights or boulders in opposite directions. The composition shows the circular nature of their punishment as they clash and separate in an endless cycle of opposition.",
+    "confidence": "medium",
+    "original_filename": "inferno-page-35.png",
+    "suggested_filename": "canto-07_lines-1-60_the-avaricious-and-prodigal-in.png"
+  },
+  {
+    "canto": 7,
+    "lines": "1-66",
+    "title": "The Avaricious and Prodigal",
+    "description": "Souls pushing heavy weights in opposite directions, clashing together in eternal punishment. The figures appear to be straining against massive burdens in a rocky, cavernous setting, representing the fourth circle where the greedy and wasteful are condemned to push weights against each other.",
+    "confidence": "high",
+    "original_filename": "inferno-page-36.png",
+    "suggested_filename": "canto-07_lines-1-66_the-avaricious-and-prodigal.png"
+  },
+  {
+    "canto": 7,
+    "lines": "100-130",
+    "title": "The Wrathful Fighting in the River Styx",
+    "description": "Violent souls engaged in brutal combat in the muddy waters of the river Styx, with figures grappling, fighting, and tearing at each other in the dark marsh, while Dante and Virgil observe from their boat",
+    "confidence": "high",
+    "original_filename": "inferno-page-37.png",
+    "suggested_filename": "canto-07_lines-100-130_the-wrathful-fighting-in-the-r.png"
+  },
+  {
+    "canto": 8,
+    "lines": "13-30",
+    "title": "Crossing the River Styx with Phlegyas",
+    "description": "Dante and Virgil are being ferried across the muddy waters of the River Styx by Phlegyas. The boat carries the two travelers while wrathful souls emerge from and struggle in the dark waters around them. The scene shows the journey through the fifth circle of Hell where the angry are punished.",
+    "confidence": "high",
+    "original_filename": "inferno-page-38.png",
+    "suggested_filename": "canto-08_lines-13-30_crossing-the-river-styx-with-p.png"
+  },
+  {
+    "canto": 8,
+    "lines": "40-41",
+    "title": "Charon ferrying souls across the Styx",
+    "description": "A large demonic figure with horns (Charon) wielding an oar stands in a boat filled with damned souls. The scene shows the ferryman transporting the dead across the dark waters of the river Styx, with dramatic clouds and a hellish atmosphere surrounding the vessel.",
+    "confidence": "high",
+    "original_filename": "inferno-page-39.png",
+    "suggested_filename": "canto-08_lines-40-41_charon-ferrying-souls-across-t.png"
+  },
+  {
+    "canto": 5,
+    "lines": "73-142",
+    "title": "Paolo and Francesca",
+    "description": "Two winged demons or spirits embracing in flight above a cloaked figure (likely Dante) who covers his face in grief or shock. The scene depicts the famous lovers Paolo and Francesca being swept by the winds of lust in the second circle of Hell.",
+    "confidence": "high",
+    "original_filename": "inferno-page-40.png",
+    "suggested_filename": "canto-05_lines-73-142_paolo-and-francesca.png"
+  },
+  {
+    "canto": 9,
+    "lines": "40-105",
+    "title": "The Furies and the Angel at the Gate of Dis",
+    "description": "An angel descends with divine light and authority to open the gates of the infernal city of Dis, while the three Furies (Megaera, Alecto, and Tisiphone) recoil in the upper right. Dante and Virgil are shown observing this divine intervention that allows them passage into lower Hell.",
+    "confidence": "high",
+    "original_filename": "inferno-page-41.png",
+    "suggested_filename": "canto-09_lines-40-105_the-furies-and-the-angel-at-th.png"
+  },
+  {
+    "canto": 9,
+    "lines": "76-105",
+    "title": "The Angel Opens the Gate of Dis",
+    "description": "Two robed figures (Dante and Virgil) stand before an angel who has just opened the gate to the City of Dis. The scene shows tombs and sepulchers scattered across the landscape with flames rising from them, representing the entrance to the circle of heretics. The angel appears as a divine figure bringing light to dispel the darkness and opposition of the demons.",
+    "confidence": "high",
+    "original_filename": "inferno-page-42.png",
+    "suggested_filename": "canto-09_lines-76-105_the-angel-opens-the-gate-of-di.png"
+  },
+  {
+    "canto": 10,
+    "lines": "52-72",
+    "title": "Farinata and Cavalcante in the Burning Tombs",
+    "description": "Two figures stand observing flaming tombs with heretics emerging from sarcophagi. The scene shows the burning sepulchres of the heretics in the sixth circle, with dramatic lighting effects typical of Dor\u00e9's style.",
+    "confidence": "high",
+    "original_filename": "inferno-page-43.png",
+    "suggested_filename": "canto-10_lines-52-72_farinata-and-cavalcante-in-the.png"
+  },
+  {
+    "canto": 15,
+    "lines": "13-21",
+    "title": "Meeting Brunetto Latini on the burning sand",
+    "description": "A robed figure gestures upward while standing on what appears to be burning sand or desert ground, with clouds or smoke around. This depicts the encounter with Brunetto Latini in the third ring of the seventh circle, where sodomites run eternally on burning sand under a rain of fire.",
+    "confidence": "medium",
+    "original_filename": "inferno-page-44.png",
+    "suggested_filename": "canto-15_lines-13-21_meeting-brunetto-latini-on-the.png"
+  },
+  {
+    "canto": 11,
+    "lines": "6-8",
+    "title": "The Tomb of Anastasius",
+    "description": "A robed figure (likely Dante) kneeling or crouching near a rocky outcrop while another figure (Virgil) gestures upward from above, depicting the scene where they take shelter behind Pope Anastasius's tomb in the sixth circle",
+    "confidence": "high",
+    "original_filename": "inferno-page-45.png",
+    "suggested_filename": "canto-11_lines-6-8_the-tomb-of-anastasius.png"
+  },
+  {
+    "canto": 25,
+    "lines": "34-78",
+    "title": "The Minotaur",
+    "description": "A beast-like creature (the Minotaur) rages and writhes on rocky terrain while two robed figures (Dante and Virgil) observe from a safe distance. The creature appears to be in a violent fury, biting itself, while the travelers navigate the treacherous rocky landscape of the seventh circle.",
+    "confidence": "high",
+    "original_filename": "inferno-page-46.png",
+    "suggested_filename": "canto-25_lines-34-78_the-minotaur.png"
+  },
+  {
+    "canto": 12,
+    "lines": "55-75",
+    "title": "The Centaurs and the River of Boiling Blood",
+    "description": "Centaurs with bows and arrows patrolling the river of boiling blood (Phlegethon) where violent souls are punished. The centaurs are shown as guardians, with their human torsos and horse bodies clearly depicted, positioned along the riverbank ready to shoot any souls who try to rise above their assigned level in the boiling blood.",
+    "confidence": "high",
+    "original_filename": "inferno-page-47.png",
+    "suggested_filename": "canto-12_lines-55-75_the-centaurs-and-the-river-of-.png"
+  },
+  {
+    "canto": 13,
+    "lines": "31-45",
+    "title": "The Wood of Suicides",
+    "description": "A dark forest scene with gnarled, twisted trees containing human forms and faces embedded in their bark. Harpies with bird-like bodies and human faces perch among the branches. Two robed figures (Dante and Virgil) stand in the center foreground observing the tormented souls transformed into trees. The overall atmosphere is haunting and supernatural, with the trees appearing to suffer as they house the souls of those who committed suicide.",
+    "confidence": "high",
+    "original_filename": "inferno-page-48.png",
+    "suggested_filename": "canto-13_lines-31-45_the-wood-of-suicides.png"
+  },
+  {
+    "canto": 13,
+    "lines": "10-15",
+    "title": "The Wood of the Suicides",
+    "description": "A dark forest scene showing Dante and Virgil among twisted, gnarled trees that are actually the souls of suicides transformed into thorny plants. The harpies can be seen perched in the branches, feeding on the leaves and creating wounds that cause the trees to bleed and speak. The atmosphere is dense and foreboding with intricate detail showing the tortured forms of the tree-souls.",
+    "confidence": "high",
+    "original_filename": "inferno-page-49.png",
+    "suggested_filename": "canto-13_lines-10-15_the-wood-of-the-suicides.png"
+  },
+  {
+    "canto": 13,
+    "lines": "31-45",
+    "title": "The Wood of Suicides - Pier delle Vigne",
+    "description": "A gnarled, twisted tree-like figure with human features embedded in bark and branches, representing souls transformed into trees in the wood of suicides. The figure appears to be speaking or crying out, with thorny branches and a dark, foreboding forest environment surrounding it.",
+    "confidence": "high",
+    "original_filename": "inferno-page-50.png",
+    "suggested_filename": "canto-13_lines-31-45_the-wood-of-suicides---pier-de.png"
+  },
+  {
+    "canto": 13,
+    "lines": "115-117",
+    "title": "The Suicides",
+    "description": "Naked and scratched souls fleeing furiously through the dark forest of suicide, being pursued and tormented, with gnarled trees and twisted branches surrounding them in the wood of self-violence",
+    "confidence": "high",
+    "original_filename": "inferno-page-51.png",
+    "suggested_filename": "canto-13_lines-115-117_the-suicides.png"
+  },
+  {
+    "canto": 28,
+    "lines": "22-42",
+    "title": "The Blasphemers in the Rain of Fire",
+    "description": "Figures lying prostrate on burning sand under a rain of fire flakes, depicting the punishment of blasphemers in the seventh circle of Hell. The scene shows souls stretched out on the ground being tormented by eternal flames falling from above.",
+    "confidence": "high",
+    "original_filename": "inferno-page-52.png",
+    "suggested_filename": "canto-28_lines-22-42_the-blasphemers-in-the-rain-of.png"
+  },
+  {
+    "canto": 17,
+    "lines": "1-27",
+    "title": "Geryon Emerges from the Abyss",
+    "description": "The monstrous fraud beast Geryon rises from the depths with his human face, serpentine body, and scorpion tail. Two figures (Dante and Virgil) stand on a rocky ledge observing the creature as smoke and vapors swirl around the cavern walls.",
+    "confidence": "high",
+    "original_filename": "inferno-page-53.png",
+    "suggested_filename": "canto-17_lines-1-27_geryon-emerges-from-the-abyss.png"
+  },
+  {
+    "canto": 17,
+    "lines": "1-27",
+    "title": "Geryon - Symbol of Deceit",
+    "description": "A monstrous creature with a human head and torso, bat-like wings, and a long serpentine tail with a stinger, perched on rocky cliffs in a dark chasm. This is Geryon, the embodiment of fraud and deceit.",
+    "confidence": "high",
+    "original_filename": "inferno-page-54.png",
+    "suggested_filename": "canto-17_lines-1-27_geryon---symbol-of-deceit.png"
+  }
+]

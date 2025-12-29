@@ -1,0 +1,36 @@
+{
+  "source": "The Doré Illustrations for Dante's Divine Comedy (Dover Fine Art, History of Art)",
+  "artist": "Gustave Doré",
+  "illustrations": [
+    {
+      "filename": "canto-01_lines1-3a.jpg",
+      "title": "The Forest",
+      "caption": "Midway upon the journey of our life / I found myself within a forest dark, / For the straightforward pathway had been lost",
+      "reference": "Inferno I, 1-3"
+    },
+    {
+      "filename": "canto-01_lines1-3b.jpg",
+      "title": "The Forest",
+      "caption": "Midway upon the journey of our life / I found myself within a forest dark, / For the straightforward pathway had been lost",
+      "reference": "Inferno I, 1-3"
+    },
+    {
+      "filename": "canto-01_lines31-33.jpg",
+      "title": "The Panther",
+      "caption": "And lo! almost where the ascent began, / A panther light and swift exceedingly, / Which with a spotted skin was covered o'er!",
+      "reference": "Inferno I, 31-33"
+    },
+    {
+      "filename": "canto-01_lines46-47.jpg",
+      "title": "The Lion",
+      "caption": "He seemed as if against me he were coming / With head uplifted, and with ravenous hunger",
+      "reference": "Inferno I, 46-47"
+    },
+    {
+      "filename": "canto-01_lines88-89.jpg",
+      "title": "The She-Wolf",
+      "caption": "Behold the beast, for which I have turned back; / Do thou protect me from her, famous Sage",
+      "reference": "Inferno I, 88-89"
+    }
+  ]
+}
