@@ -1,0 +1,60 @@
+{
+  "narrator": {
+    "success": true,
+    "voice_id": "ceRvMsBhZbUSQgH59yxg",
+    "voice_name": "Dante - The Narrator (steady, literary)",
+    "model_id": "eleven_multilingual_v2",
+    "voice_settings": {
+      "stability": 0.50,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "previews_count": 3
+  },
+  "dante_pilgrim": {
+    "success": true,
+    "voice_id": "ceRvMsBhZbUSQgH59yxg",
+    "voice_name": "Dante - The Pilgrim (human, volatile)",
+    "model_id": "eleven_multilingual_v2",
+    "voice_settings": {
+      "stability": 0.52,
+      "similarity_boost": 0.72,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 1.02
+    },
+    "previews_count": 3
+  },
+  "virgil": {
+    "success": true,
+    "voice_id": "gboKmrCOkZe6tMznPb9w",
+    "voice_name": "Virgil - The Ancient Guide",
+    "model_id": "eleven_multilingual_v2",
+    "voice_settings": {
+      "stability": 0.50,
+      "similarity_boost": 0.75,
+      "style": 0.0,
+      "use_speaker_boost": true,
+      "speed": 1.0
+    },
+    "previews_count": 3
+  },
+  "beatrice": {
+    "success": true,
+    "voice_id": "GWCqHHEfELBpqFWDsdhK",
+    "voice_name": "Beatrice - Divine Love",
+    "model_id": "eleven_multilingual_v2",
+    "previews_count": 3
+  },
+  "souls": {
+    "success": true,
+    "voice_id": "lPoFhC6uDtaciSWzm2sI",
+    "voice_name": "Souls of the Afterlife",
+    "model_id": "eleven_multilingual_v2",
+    "previews_count": 3
+  }
+}
+
+
