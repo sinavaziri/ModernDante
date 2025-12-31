@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getCanto, getAllCanticas, getAllCantos, getCanticaInfo, type Cantica } from '@/lib/cantos';
 import Navigation from '@/components/Navigation';
 import CantoSelector from '@/components/CantoSelector';
-import CantoDisplay from '@/components/CantoDisplay';
+import CantoDisplay from '@/components/CantoDisplayWithAudio';
 
 interface PageProps {
   params: Promise<{
