@@ -84,7 +84,7 @@ function ImageLightbox({
               "{image.quote}"
             </blockquote>
             <p className="text-sm font-sans tracking-widest text-white/50 uppercase">
-              Lines {image.lines}
+              {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}
             </p>
           </div>
         </div>
@@ -105,21 +105,21 @@ function FloatingImage({
 }) {
   return (
     <figure
-      className="group cursor-pointer transition-all duration-300 float-right ml-8 mb-6 w-64 md:w-80 lg:w-96 clear-right"
+      className="group cursor-pointer transition-all duration-300 my-10 md:my-12 md:float-right md:ml-10 md:mb-8 w-full md:w-[50%] lg:w-[55%] clear-right"
       onClick={onClick}
     >
-      <div className="relative overflow-hidden rounded-lg shadow-lg group-hover:shadow-xl transition-shadow duration-300 bg-muted/20">
+      <div className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50">
         <Image
           src={`/images/${cantica}/${image.filename}`}
           alt={image.title}
-          width={400}
-          height={533}
-          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
-          sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+          width={600}
+          height={800}
+          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 55vw"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
-          <span className="text-white text-sm font-medium flex items-center gap-2">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+          <span className="text-white text-sm font-medium flex items-center gap-2 bg-black/30 px-4 py-2 rounded-full backdrop-blur-sm">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
             </svg>
@@ -128,11 +128,11 @@ function FloatingImage({
         </div>
       </div>
 
-      <figcaption className="mt-3 space-y-1">
-        <p className="text-xs font-sans tracking-wide text-muted-foreground/70 uppercase">
+      <figcaption className="mt-4 space-y-2 text-center md:text-left">
+        <p className="text-sm font-sans tracking-wide text-muted-foreground/80 uppercase">
           {image.title}
         </p>
-        <p className="text-xs font-serif italic text-muted-foreground/50 line-clamp-2">
+        <p className="text-sm font-serif italic text-muted-foreground/60 leading-relaxed">
           &ldquo;{image.quote}&rdquo;
         </p>
       </figcaption>
@@ -166,6 +166,25 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     }
     loadTimingData();
   }, [cantica, canto.number]);
+
+  // Create a merged segment with all words from all segments for highlighting
+  const mergedSegment = useMemo(() => {
+    if (!timingData?.segments?.length) return null;
+
+    // Combine all words from all segments into one
+    const allWords = timingData.segments.flatMap(seg => seg.words || []);
+    const allText = timingData.segments.map(seg => seg.text).join('\n\n');
+
+    return {
+      id: 0,
+      speaker: 'narrator',
+      text: allText,
+      startTime: timingData.segments[0].startTime,
+      endTime: timingData.segments[timingData.segments.length - 1].endTime,
+      duration: timingData.totalDuration,
+      words: allWords,
+    };
+  }, [timingData]);
 
   // Update active segment based on current time
   useEffect(() => {
@@ -304,7 +323,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
               <div className="w-12 h-12 md:w-14 md:h-14" />
             )}
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-foreground tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight">
               {canto.title}
             </h1>
             
@@ -348,8 +367,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
               }
 
               const textContent = block.content.join('\n');
-              // Get the first segment (contains all words) for word-level highlighting
-              const allWordsSegment = timingData?.segments?.[0] || null;
 
               return (
                 <div
@@ -358,7 +375,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
                 >
                   <TextWithWordHighlighting
                     text={textContent}
-                    segment={allWordsSegment}
+                    segment={mergedSegment}
                     currentTime={currentTime}
                     isActive={true}
                     stanzaStartLine={block.startLine}
