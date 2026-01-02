@@ -1,0 +1,782 @@
+{
+  "narrator": {
+    "voiceId": "ceRvMsBhZbUSQgH59yxg",
+    "label": "Narrator",
+    "description": "Dante as narrator",
+    "color": "#6b7280",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0,
+    "speed": 1
+  },
+  "dante": {
+    "voiceId": "ceRvMsBhZbUSQgH59yxg",
+    "label": "Dante",
+    "description": "Dante the Pilgrim",
+    "color": "#3b82f6",
+    "stability": 0.2,
+    "similarity": 0.72,
+    "style": 0.8,
+    "speed": 1.05
+  },
+  "virgil": {
+    "voiceId": "gboKmrCOkZe6tMznPb9w",
+    "label": "Virgil",
+    "description": "The Ancient Guide",
+    "color": "#f59e0b",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0,
+    "speed": 1
+  },
+  "beatrice": {
+    "voiceId": "ctchwNfHTCRKIQdDzY3J",
+    "label": "Beatrice",
+    "description": "Divine Love",
+    "color": "#ec4899",
+    "stability": 0.45,
+    "similarity": 0.75,
+    "style": 0.5,
+    "speed": 0.95
+  },
+  "lucia": {
+    "voiceId": "pFZP5JQG7iQjIQuC4Bku",
+    "label": "Lucia",
+    "description": "Saint Lucia",
+    "color": "#6366f1",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0.4,
+    "speed": 0.95
+  },
+  "character": {
+    "voiceId": "twUwFnpNJ2G0x7FlsmI5",
+    "label": "Character",
+    "description": "Generic character",
+    "color": "#a855f7",
+    "stability": 0.55,
+    "similarity": 0.7,
+    "style": 0,
+    "speed": 0.98
+  },
+  "gate_inscription": {
+    "voiceId": "Zp3wsYfVfi3BCNHzkseK",
+    "label": "Gate Inscription",
+    "description": "Hell Gate inscription",
+    "color": "#7f1d1d",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0,
+    "speed": 1
+  },
+  "classical_poets": {
+    "voiceId": "twUwFnpNJ2G0x7FlsmI5",
+    "label": "Classical Poets",
+    "description": "Homer, Horace, Ovid, Lucan",
+    "color": "#0e7490",
+    "stability": 0.55,
+    "similarity": 0.7,
+    "style": 0,
+    "speed": 0.98
+  },
+  "charon": {
+    "voiceId": "",
+    "label": "Charon",
+    "description": "Ancient ferryman of the dead. Gruff, impatient, menacing. White-haired demon with eyes like burning coals.",
+    "color": "#ef4444",
+    "stability": 0.35,
+    "similarity": 0.65,
+    "style": 0.4,
+    "speed": 0.92
+  },
+  "minos": {
+    "voiceId": "",
+    "label": "Minos",
+    "description": "Judge of the damned. Monstrous figure who wraps his tail to indicate which circle souls descend to.",
+    "color": "#ef4444",
+    "stability": 0.45,
+    "similarity": 0.7,
+    "style": 0.3,
+    "speed": 0.88
+  },
+  "francesca": {
+    "voiceId": "",
+    "label": "Francesca da Rimini",
+    "description": "Tragic lover condemned for adultery with Paolo. Speaks with elegance and sorrow about their fatal love.",
+    "color": "#ef4444",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.5,
+    "speed": 0.95
+  },
+  "ciacco": {
+    "voiceId": "",
+    "label": "Ciacco",
+    "description": "Florentine glutton lying in foul rain. Prophesies about Florence's political future.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.65,
+    "style": 0.25,
+    "speed": 0.94
+  },
+  "plutus": {
+    "voiceId": "",
+    "label": "Plutus",
+    "description": "Demon of wealth guarding the fourth circle. Speaks in garbled, incomprehensible rage.",
+    "color": "#ef4444",
+    "stability": 0.25,
+    "similarity": 0.55,
+    "style": 0.7,
+    "speed": 1.1
+  },
+  "phlegyas": {
+    "voiceId": "",
+    "label": "Phlegyas",
+    "description": "Boatman of the Styx, consumed by perpetual rage. Father who burned Apollo's temple.",
+    "color": "#ef4444",
+    "stability": 0.3,
+    "similarity": 0.6,
+    "style": 0.5,
+    "speed": 1.05
+  },
+  "filippo_argenti": {
+    "voiceId": "",
+    "label": "Filippo Argenti",
+    "description": "Florentine aristocrat known for violent temper. Wallows in the Styx, attacks Dante.",
+    "color": "#ef4444",
+    "stability": 0.35,
+    "similarity": 0.65,
+    "style": 0.45,
+    "speed": 1.02
+  },
+  "fallen_angels": {
+    "voiceId": "",
+    "label": "Fallen Angels at Dis",
+    "description": "Rebel angels guarding the gates of Dis. Defiant, proud, refusing entry.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.7,
+    "style": 0.35,
+    "speed": 0.9
+  },
+  "furies": {
+    "voiceId": "",
+    "label": "The Furies (Erinyes)",
+    "description": "Three hellish goddesses of vengeance - Megaera, Alecto, Tisiphone. Blood-stained, serpent-haired.",
+    "color": "#ef4444",
+    "stability": 0.2,
+    "similarity": 0.55,
+    "style": 0.8,
+    "speed": 1.15
+  },
+  "heavenly_messenger": {
+    "voiceId": "",
+    "label": "Heavenly Messenger",
+    "description": "Angel sent to open the gates of Dis. Walks on water, scatters demons with a touch.",
+    "color": "#ef4444",
+    "stability": 0.7,
+    "similarity": 0.8,
+    "style": 0.15,
+    "speed": 0.92
+  },
+  "farinata": {
+    "voiceId": "",
+    "label": "Farinata degli Uberti",
+    "description": "Great Ghibelline leader, rises from burning tomb with proud contempt. Speaks of Florence's factions.",
+    "color": "#ef4444",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.9
+  },
+  "cavalcante": {
+    "voiceId": "",
+    "label": "Cavalcante de' Cavalcanti",
+    "description": "Father of Dante's friend Guido. Rises anxiously to ask about his son, collapses in despair.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.7,
+    "style": 0.5,
+    "speed": 1.05
+  },
+  "chiron": {
+    "voiceId": "",
+    "label": "Chiron",
+    "description": "Wise centaur, tutor of Achilles. Leader of the centaur guards. Observant and thoughtful.",
+    "color": "#ef4444",
+    "stability": 0.6,
+    "similarity": 0.75,
+    "style": 0.2,
+    "speed": 0.94
+  },
+  "nessus": {
+    "voiceId": "",
+    "label": "Nessus",
+    "description": "Centaur who guides Dante through the river of blood. Killed by Hercules, killed Hercules in turn.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.25,
+    "speed": 0.96
+  },
+  "pier_della_vigna": {
+    "voiceId": "",
+    "label": "Pier della Vigna",
+    "description": "Chancellor to Emperor Frederick II, falsely accused, suicide. Now a bleeding tree. Speaks in elaborate rhetoric.",
+    "color": "#ef4444",
+    "stability": 0.45,
+    "similarity": 0.75,
+    "style": 0.35,
+    "speed": 0.88
+  },
+  "capaneus": {
+    "voiceId": "",
+    "label": "Capaneus",
+    "description": "Giant who defied Zeus at Thebes. Lies on burning sand still blaspheming, unrepentant.",
+    "color": "#ef4444",
+    "stability": 0.3,
+    "similarity": 0.65,
+    "style": 0.55,
+    "speed": 0.95
+  },
+  "brunetto_latini": {
+    "voiceId": "",
+    "label": "Brunetto Latini",
+    "description": "Dante's beloved teacher, scholar and statesman. Runs on burning sand but speaks with dignity and affection.",
+    "color": "#ef4444",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.25,
+    "speed": 0.92
+  },
+  "three_florentines": {
+    "voiceId": "",
+    "label": "Guido Guerra, Tegghiaio, Jacopo Rusticucci",
+    "description": "Three notable Florentine sodomites who run in a circle. Ask about Florence's state.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.3,
+    "speed": 0.96
+  },
+  "malacoda": {
+    "voiceId": "",
+    "label": "Malacoda",
+    "description": "Leader of the Malebranche demons. Cunning, deceptive, gives false directions.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.65,
+    "style": 0.45,
+    "speed": 1
+  },
+  "ciampolo": {
+    "voiceId": "",
+    "label": "Ciampolo of Navarre",
+    "description": "Grafter from Navarre, hooked by demons. Clever trickster who escapes by outwitting them.",
+    "color": "#ef4444",
+    "stability": 0.45,
+    "similarity": 0.65,
+    "style": 0.4,
+    "speed": 1.08
+  },
+  "catalano_loderingo": {
+    "voiceId": "",
+    "label": "Catalano and Loderingo",
+    "description": "Two hypocritical friars from Bologna, founders of a corrupt religious order. Wear gilded lead cloaks.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.25,
+    "speed": 0.88
+  },
+  "vanni_fucci": {
+    "voiceId": "",
+    "label": "Vanni Fucci",
+    "description": "Violent thief from Pistoia. Blasphemes God with obscene gesture. Consumed and reformed by serpents.",
+    "color": "#ef4444",
+    "stability": 0.25,
+    "similarity": 0.6,
+    "style": 0.6,
+    "speed": 1.05
+  },
+  "ulysses": {
+    "voiceId": "",
+    "label": "Ulysses",
+    "description": "Greek hero consumed by flame. Tells of his final fatal voyage beyond the known world.",
+    "color": "#ef4444",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.9
+  },
+  "guido_montefeltro": {
+    "voiceId": "",
+    "label": "Guido da Montefeltro",
+    "description": "Military strategist turned friar. Deceived by Pope Boniface into giving evil counsel.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.3,
+    "speed": 0.92
+  },
+  "muhammad": {
+    "voiceId": "",
+    "label": "Muhammad",
+    "description": "In Dante's view, a sower of religious schism. Horribly mutilated, split from chin to bottom.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.65,
+    "style": 0.45,
+    "speed": 0.98
+  },
+  "bertran_de_born": {
+    "voiceId": "",
+    "label": "Bertran de Born",
+    "description": "Troubadour who divided father and son. Carries his severed head like a lantern.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.35,
+    "speed": 0.94
+  },
+  "master_adam": {
+    "voiceId": "",
+    "label": "Master Adam",
+    "description": "Counterfeiter swollen with dropsy. Argues viciously with Sinon the Greek.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.65,
+    "style": 0.4,
+    "speed": 0.9
+  },
+  "sinon": {
+    "voiceId": "",
+    "label": "Sinon",
+    "description": "Greek who deceived Troy with the wooden horse. Burning with fever, trades insults with Master Adam.",
+    "color": "#ef4444",
+    "stability": 0.35,
+    "similarity": 0.65,
+    "style": 0.45,
+    "speed": 1.02
+  },
+  "nimrod": {
+    "voiceId": "",
+    "label": "Nimrod",
+    "description": "Biblical giant who built Tower of Babel. Speaks incomprehensible gibberish.",
+    "color": "#ef4444",
+    "stability": 0.25,
+    "similarity": 0.55,
+    "style": 0.6,
+    "speed": 0.85
+  },
+  "antaeus": {
+    "voiceId": "",
+    "label": "Antaeus",
+    "description": "Giant who never fought the gods. Lowers Dante and Virgil into the final pit.",
+    "color": "#ef4444",
+    "stability": 0.5,
+    "similarity": 0.65,
+    "style": 0.25,
+    "speed": 0.85
+  },
+  "bocca_degli_abati": {
+    "voiceId": "",
+    "label": "Bocca degli Abati",
+    "description": "Florentine traitor frozen in ice. Refuses to give his name, Dante tears out his hair.",
+    "color": "#ef4444",
+    "stability": 0.35,
+    "similarity": 0.6,
+    "style": 0.35,
+    "speed": 0.92
+  },
+  "ugolino": {
+    "voiceId": "",
+    "label": "Count Ugolino",
+    "description": "Count who gnaws his enemy's skull. Tells horrifying story of being starved with his children.",
+    "color": "#ef4444",
+    "stability": 0.4,
+    "similarity": 0.75,
+    "style": 0.45,
+    "speed": 0.88
+  },
+  "frate_alberigo": {
+    "voiceId": "",
+    "label": "Frate Alberigo",
+    "description": "Friar whose body lives while soul is in Hell. Murdered guests at his own feast.",
+    "color": "#ef4444",
+    "stability": 0.45,
+    "similarity": 0.65,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "cato": {
+    "voiceId": "",
+    "label": "Cato of Utica",
+    "description": "Roman republican who chose death over tyranny. Guardian of Purgatory's shore. Stern but just.",
+    "color": "#22c55e",
+    "stability": 0.6,
+    "similarity": 0.75,
+    "style": 0.2,
+    "speed": 0.92
+  },
+  "casella": {
+    "voiceId": "",
+    "label": "Casella",
+    "description": "Musician and Dante's friend. Sings one of Dante's poems, enchanting the newly arrived souls.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.4,
+    "speed": 0.95
+  },
+  "manfred": {
+    "voiceId": "",
+    "label": "Manfred",
+    "description": "Illegitimate son of Emperor Frederick II. Beautiful, wounded, excommunicated but saved at death.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "belacqua": {
+    "voiceId": "",
+    "label": "Belacqua",
+    "description": "Lazy friend of Dante, sits in shade doing nothing. Gently mocks Dante's climbing efforts.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.7,
+    "style": 0.35,
+    "speed": 0.88
+  },
+  "pia": {
+    "voiceId": "",
+    "label": "Pia de' Tolomei",
+    "description": "Murdered wife who speaks briefly and poignantly. 'Siena made me, Maremma unmade me.'",
+    "color": "#22c55e",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.35,
+    "speed": 0.9
+  },
+  "sordello": {
+    "voiceId": "",
+    "label": "Sordello",
+    "description": "Mantuan troubadour poet. Embraces Virgil as fellow Mantuan. Guide to Valley of Princes.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "nino_visconti": {
+    "voiceId": "",
+    "label": "Nino Visconti",
+    "description": "Sardinian judge, friend of Dante. Speaks sadly of his widow's remarriage.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "angel": {
+    "voiceId": "",
+    "label": "Angels of Purgatory",
+    "description": "Various angels who guard the terraces and erase sins. Speak blessings and guidance.",
+    "color": "#22c55e",
+    "stability": 0.7,
+    "similarity": 0.85,
+    "style": 0.15,
+    "speed": 0.92
+  },
+  "oderisi": {
+    "voiceId": "",
+    "label": "Oderisi of Gubbio",
+    "description": "Famous illuminator bent under stone. Speaks of the vanity of earthly fame.",
+    "color": "#22c55e",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.25,
+    "speed": 0.9
+  },
+  "sapia": {
+    "voiceId": "",
+    "label": "Sapia of Siena",
+    "description": "Sienese woman who rejoiced at her city's defeat. Eyes sewn shut, purging envy.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "guido_del_duca": {
+    "voiceId": "",
+    "label": "Guido del Duca",
+    "description": "Romagnol nobleman purging envy. Laments the moral decay of Romagna and Tuscany.",
+    "color": "#22c55e",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.35,
+    "speed": 0.92
+  },
+  "marco_lombardo": {
+    "voiceId": "",
+    "label": "Marco Lombardo",
+    "description": "Courtier in thick smoke of wrath. Gives important discourse on free will and corrupt Church.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.25,
+    "speed": 0.94
+  },
+  "pope_adrian_v": {
+    "voiceId": "",
+    "label": "Pope Adrian V",
+    "description": "Pope lying face-down purging avarice. Tells Dante not to kneel to him.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.25,
+    "speed": 0.9
+  },
+  "statius": {
+    "voiceId": "",
+    "label": "Statius",
+    "description": "Roman poet, secret Christian. Completed purgation, joins Dante and Virgil. Reveres Virgil deeply.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.95
+  },
+  "forese_donati": {
+    "voiceId": "",
+    "label": "Forese Donati",
+    "description": "Dante's friend, wasted by hunger on gluttony terrace. Exchanges memories and prophecies.",
+    "color": "#22c55e",
+    "stability": 0.45,
+    "similarity": 0.7,
+    "style": 0.35,
+    "speed": 0.96
+  },
+  "bonagiunta": {
+    "voiceId": "",
+    "label": "Bonagiunta da Lucca",
+    "description": "Poet who recognizes Dante's new style. Asks about the 'sweet new style' of poetry.",
+    "color": "#22c55e",
+    "stability": 0.5,
+    "similarity": 0.7,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "guido_guinizelli": {
+    "voiceId": "",
+    "label": "Guido Guinizelli",
+    "description": "Father of the sweet new style, Dante's poetic master. Purging lust in flames.",
+    "color": "#22c55e",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.92
+  },
+  "arnaut_daniel": {
+    "voiceId": "",
+    "label": "Arnaut Daniel",
+    "description": "Greatest Provençal troubadour. Speaks in his native Occitan, weeping and singing.",
+    "color": "#22c55e",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0.35,
+    "speed": 0.94
+  },
+  "matelda": {
+    "voiceId": "",
+    "label": "Matelda",
+    "description": "Beautiful woman tending the Earthly Paradise. Guides Dante through Lethe and Eunoe.",
+    "color": "#22c55e",
+    "stability": 0.6,
+    "similarity": 0.85,
+    "style": 0.35,
+    "speed": 0.95
+  },
+  "piccarda": {
+    "voiceId": "",
+    "label": "Piccarda Donati",
+    "description": "Nun forcibly removed from convent. First soul Dante meets in Paradise. Speaks of willing God's will.",
+    "color": "#3b82f6",
+    "stability": 0.65,
+    "similarity": 0.85,
+    "style": 0.25,
+    "speed": 0.92
+  },
+  "justinian": {
+    "voiceId": "",
+    "label": "Emperor Justinian",
+    "description": "Byzantine emperor who codified Roman law. Tells history of the Roman Eagle.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.2,
+    "speed": 0.92
+  },
+  "charles_martel": {
+    "voiceId": "",
+    "label": "Charles Martel",
+    "description": "Young prince who died before inheriting kingdoms. Speaks of providence and heredity.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.96
+  },
+  "cunizza": {
+    "voiceId": "",
+    "label": "Cunizza da Romano",
+    "description": "Much-married noblewoman known for love affairs. Now in Venus, speaks of her region's fate.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "folquet": {
+    "voiceId": "",
+    "label": "Folquet of Marseille",
+    "description": "Troubadour turned bishop. Speaks of earthly love transformed to divine.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.3,
+    "speed": 0.94
+  },
+  "thomas_aquinas": {
+    "voiceId": "",
+    "label": "Thomas Aquinas",
+    "description": "Greatest theologian, Dominican friar. Praises Francis, explains theological points.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.2,
+    "speed": 0.92
+  },
+  "bonaventure": {
+    "voiceId": "",
+    "label": "St. Bonaventure",
+    "description": "Franciscan theologian. Praises Dominic in return for Aquinas praising Francis.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.25,
+    "speed": 0.94
+  },
+  "solomon": {
+    "voiceId": "",
+    "label": "King Solomon",
+    "description": "Wisest of Hebrew kings. Speaks of the resurrection of the body.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.2,
+    "speed": 0.9
+  },
+  "cacciaguida": {
+    "voiceId": "",
+    "label": "Cacciaguida",
+    "description": "Dante's great-great-grandfather, crusader knight. Prophecies Dante's exile with paternal love.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.25,
+    "speed": 0.9
+  },
+  "eagle": {
+    "voiceId": "",
+    "label": "The Eagle of Justice",
+    "description": "Collective voice of just rulers forming an eagle shape. Speaks of divine justice.",
+    "color": "#3b82f6",
+    "stability": 0.65,
+    "similarity": 0.75,
+    "style": 0.2,
+    "speed": 0.88
+  },
+  "peter_damian": {
+    "voiceId": "",
+    "label": "St. Peter Damian",
+    "description": "Reforming cardinal and hermit. Denounces corrupt prelates from contemplative sphere.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.75,
+    "style": 0.25,
+    "speed": 0.92
+  },
+  "st_benedict": {
+    "voiceId": "",
+    "label": "St. Benedict",
+    "description": "Founder of Western monasticism. Laments corruption of his order.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.2,
+    "speed": 0.9
+  },
+  "st_peter": {
+    "voiceId": "",
+    "label": "St. Peter",
+    "description": "First pope, examines Dante on Faith. Later turns red with anger denouncing corrupt popes.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.3,
+    "speed": 0.92
+  },
+  "st_james": {
+    "voiceId": "",
+    "label": "St. James",
+    "description": "Apostle of Hope. Examines Dante on the virtue of hope.",
+    "color": "#3b82f6",
+    "stability": 0.55,
+    "similarity": 0.8,
+    "style": 0.25,
+    "speed": 0.94
+  },
+  "st_john": {
+    "voiceId": "",
+    "label": "St. John the Evangelist",
+    "description": "Beloved disciple. Examines Dante on Love. So bright Dante is temporarily blinded.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.85,
+    "style": 0.25,
+    "speed": 0.92
+  },
+  "adam": {
+    "voiceId": "",
+    "label": "Adam",
+    "description": "First man. Answers Dante's questions about Eden, the first language, and original sin.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.8,
+    "style": 0.2,
+    "speed": 0.88
+  },
+  "st_bernard": {
+    "voiceId": "",
+    "label": "St. Bernard of Clairvaux",
+    "description": "Mystical doctor, devotee of Mary. Replaces Beatrice as final guide, prays to Virgin.",
+    "color": "#3b82f6",
+    "stability": 0.6,
+    "similarity": 0.85,
+    "style": 0.25,
+    "speed": 0.9
+  },
+  "homer": {
+    "voiceId": "Rwyaq4BOCfdHv7tL6TIj",
+    "label": "Homer",
+    "description": "",
+    "color": "#6b7280",
+    "stability": 0.5,
+    "similarity": 0.75,
+    "style": 0,
+    "speed": 1
+  }
+}

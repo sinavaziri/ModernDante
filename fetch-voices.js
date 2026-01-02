@@ -1,6 +1,13 @@
 const https = require('https');
+require('dotenv').config({ path: '.env.local' });
 
-const API_KEY = 'sk_ea4cb7bdd09c8d290fc6ba2759cc2a1af5620fde5fcace05';
+const API_KEY = process.env.ELEVENLABS_API_KEY;
+
+if (!API_KEY) {
+  console.error('❌ Error: ELEVENLABS_API_KEY not found in environment variables');
+  console.error('   Please set it in .env.local or export ELEVENLABS_API_KEY="your-api-key"');
+  process.exit(1);
+}
 
 // Fetch available voices
 function fetchVoices() {

@@ -7,6 +7,7 @@ import type { AudioTimingData } from '@/types/audio';
 interface AudioPlayerProps {
   cantica: string;
   cantoNumber: number;
+  timingData: AudioTimingData | null;
   onTimeUpdate?: (currentTime: number) => void;
   isNarrationVisible?: boolean;
   onScrollToNarration?: (() => void) | null;
@@ -15,6 +16,7 @@ interface AudioPlayerProps {
 export default function AudioPlayerWordLevel({
   cantica,
   cantoNumber,
+  timingData,
   onTimeUpdate,
   isNarrationVisible = true,
   onScrollToNarration,
@@ -23,38 +25,12 @@ export default function AudioPlayerWordLevel({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [currentSegment, setCurrentSegment] = useState<{ id: number; speaker: string; text: string } | null>(null);
-  const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasAudio, setHasAudio] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(1);
 
   const audioRef = useRef<HTMLAudioElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
 
-  // Load word-level timing data
-  useEffect(() => {
-    async function loadTimingData() {
-      try {
-        const response = await fetch('/audio-word-timings.json');
-        const data = await response.json();
-        const cantoData = data[cantica]?.[cantoNumber];
-
-        if (cantoData) {
-          setTimingData(cantoData);
-          setHasAudio(true);
-        } else {
-          setHasAudio(false);
-        }
-      } catch (error) {
-        console.error('Failed to load word timing data:', error);
-        setHasAudio(false);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    loadTimingData();
-  }, [cantica, cantoNumber]);
+  const hasAudio = !!timingData;
 
   // Update current segment based on playback time
   useEffect(() => {
@@ -111,7 +87,8 @@ export default function AudioPlayerWordLevel({
 
     audioRef.current.currentTime = newTime;
     setCurrentTime(newTime);
-  }, [duration]);
+    onTimeUpdate?.(newTime);
+  }, [duration, onTimeUpdate]);
 
   // Skip forward
   const skipForward = useCallback(() => {
@@ -119,7 +96,8 @@ export default function AudioPlayerWordLevel({
     const newTime = Math.min(audioRef.current.currentTime + AUDIO.SKIP_DURATION, duration);
     audioRef.current.currentTime = newTime;
     setCurrentTime(newTime);
-  }, [duration]);
+    onTimeUpdate?.(newTime);
+  }, [duration, onTimeUpdate]);
 
   // Skip backward
   const skipBackward = useCallback(() => {
@@ -127,7 +105,8 @@ export default function AudioPlayerWordLevel({
     const newTime = Math.max(audioRef.current.currentTime - AUDIO.SKIP_DURATION, 0);
     audioRef.current.currentTime = newTime;
     setCurrentTime(newTime);
-  }, []);
+    onTimeUpdate?.(newTime);
+  }, [onTimeUpdate]);
 
   // Cycle playback rate
   const cyclePlaybackRate = useCallback(() => {
@@ -152,10 +131,6 @@ export default function AudioPlayerWordLevel({
     return speaker.charAt(0).toUpperCase() + speaker.slice(1).replace(/_/g, ' ');
   };
 
-  if (isLoading) {
-    return null;
-  }
-
   if (!hasAudio) {
     return null;
   }
@@ -170,6 +145,7 @@ export default function AudioPlayerWordLevel({
         src={audioSrc}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
+        onSeeked={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
@@ -222,12 +198,13 @@ export default function AudioPlayerWordLevel({
               {!isNarrationVisible && isPlaying && onScrollToNarration && (
                 <button
                   onClick={onScrollToNarration}
-                  className="w-9 h-9 flex items-center justify-center rounded-full hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary/20 text-primary transition-colors animate-pulse"
                   aria-label="Scroll to current narration"
-                  title="Jump to narration"
+                  title="Follow along"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    <circle cx="17" cy="17" r="3" fill="currentColor" />
                   </svg>
                 </button>
               )}

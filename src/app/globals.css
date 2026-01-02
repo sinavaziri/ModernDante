@@ -62,7 +62,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-serif), 'Bembo', 'Cardo', Georgia, 'Times New Roman', serif;
+    font-family: var(--font-serif), 'Sabon', Georgia, 'Times New Roman', serif;
     line-height: 1.7;
     min-height: 100vh;
     font-size: 1.0625rem; /* 17px base for better readability */
@@ -70,7 +70,7 @@
 
   /* Headings use elegant serif for classical academic feel */
   h1, h2, h3 {
-    font-family: var(--font-serif), 'Bembo', 'Cardo', Georgia, serif;
+    font-family: var(--font-serif), 'Sabon', Georgia, serif;
     font-weight: 500;
     letter-spacing: -0.01em;
   }
@@ -82,8 +82,15 @@
     letter-spacing: 0.02em;
   }
 
-  /* Navigation and UI elements use sans-serif */
-  nav, button, .ui-text {
+  /* Navigation uses classic Libre Franklin */
+  nav {
+    font-family: var(--font-nav), 'Libre Franklin', system-ui, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+  }
+  
+  /* Buttons and UI elements use sans-serif */
+  button, .ui-text {
     font-family: var(--font-sans), 'Source Sans 3', system-ui, sans-serif;
   }
 
@@ -101,7 +108,7 @@
 
 /* Typography enhancements */
 .poetry {
-  font-family: var(--font-serif), 'Bembo', 'Cardo', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif), 'Sabon', Georgia, 'Times New Roman', serif;
   white-space: pre-wrap;
   line-height: 1.85;
   font-size: 1.1875rem; /* 19px for elegant readability */
@@ -180,4 +187,29 @@
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Gallery Grid Animation */
+@keyframes galleryItemIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.gallery-grid > * {
+  animation: galleryItemIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Masonry-like visual effect for gallery */
+@supports (grid-template-rows: masonry) {
+  .gallery-masonry {
+    display: grid;
+    grid-template-rows: masonry;
+  }
 }

@@ -10,43 +10,48 @@ export default function HomePage() {
       <Navigation />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <div className="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24">
-          {/* Background Image */}
-          <div 
-            className="absolute inset-0 opacity-30 pointer-events-none"
-            style={{
-              backgroundImage: 'url(/images/inferno/20.png)',
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background pointer-events-none" />
-          
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight tracking-tight">
-              The Divine <br className="hidden md:block"/>Comedy
-            </h1>
+        <div className="relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-20 lg:pt-28 lg:pb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-8 items-center min-h-[70vh]">
+              {/* Left side - Text content */}
+              <div className="space-y-6 animate-fade-in order-2 lg:order-1">
+                <h1 className="text-left text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-[1.1] tracking-tight">
+                  The Divine<br/>Comedy
+                </h1>
 
-            <p className="text-2xl md:text-3xl text-muted-foreground font-serif italic">
-              by Dante Alighieri
-            </p>
+                <p className="text-xl md:text-2xl text-muted-foreground font-serif italic">
+                  by Dante Alighieri
+                </p>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Experience Dante's masterpiece with a modern reading interface,
-              featuring classic illustrations by Gustave Doré.
-            </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
+                  Experience Dante's masterpiece in modern and approachable English with an elegant reading interface,
+                  featuring classic illustrations by Gustave Doré.
+                </p>
 
-            <div className="pt-8">
-              <Link
-                href="/inferno/1"
-                className="group px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-sm shadow-sm transition-all duration-300 inline-flex items-center space-x-2"
-              >
-                <span>Begin the Journey</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
+                <div className="pt-2">
+                  <Link
+                    href="/inferno/1"
+                    className="group px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-sm shadow-sm transition-all duration-300 inline-flex items-center space-x-2"
+                  >
+                    <span>Begin Your Journey</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right side - Image */}
+              <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
+                <div className="relative w-full">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 rounded-sm blur-2xl" />
+                  <img 
+                    src="/images/inferno/38.png" 
+                    alt="Gustave Doré illustration from Dante's Inferno"
+                    className="relative w-full h-auto object-contain shadow-2xl rounded-sm border border-border/20"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -86,7 +91,38 @@ export default function HomePage() {
                 href={`/${cantica.name}/1`}
                 className="group relative overflow-hidden bg-card hover:bg-muted/30 transition-all duration-500 border border-border hover:border-primary/30"
               >
-                <div className="p-8 md:p-10 space-y-6">
+                {/* Background images for canticas */}
+                {cantica.name === 'inferno' && (
+                  <div 
+                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                    style={{
+                      backgroundImage: 'url(/images/inferno/30.png)',
+                      backgroundSize: '130%',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                )}
+                {cantica.name === 'purgatorio' && (
+                  <div 
+                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                    style={{
+                      backgroundImage: 'url(/images/purgatorio/91.png)',
+                      backgroundSize: '130%',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                )}
+                {cantica.name === 'paradiso' && (
+                  <div 
+                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                    style={{
+                      backgroundImage: 'url(/images/paradiso/128.png)',
+                      backgroundSize: '130%',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                )}
+                <div className="relative p-8 md:p-10 space-y-6">
                   <div className="flex items-center justify-between">
                     <span className="text-6xl font-serif text-muted-foreground/20 font-bold group-hover:text-primary/20 transition-colors">
                       {index + 1}

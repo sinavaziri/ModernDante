@@ -40,3 +40,32 @@ next-env.d.ts
 
 # intermediate data files
 /data/raw-text.txt
+/data/*-backup*.json
+/data/*-analysis*.json
+/data/*-log.json
+
+# scripts and tools (not needed for deployment)
+/deprecated-scripts/
+/scripts/
+/narrations/
+
+# voice experiment folders
+/dante-voice-experiments/
+/dante-contrast-test/
+/voice-style-debug/
+/character-previews/
+/character-voices-added/
+/character-voices-created/
+/inferno-character-voices/
+/virgil-previews/
+/sabon/
+/assets/
+
+# IDE
+.cursor/
+
+# misc generated files
+*.mp3
+!public/**/*.mp3
+*.html
+!public/**/*.html

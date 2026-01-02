@@ -1,8 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+require('dotenv').config({ path: '.env.local' });
 
-const API_KEY = 'sk_ea4cb7bdd09c8d290fc6ba2759cc2a1af5620fde5fcace05';
+const API_KEY = process.env.ELEVENLABS_API_KEY;
+
+if (!API_KEY) {
+  console.error('❌ Error: ELEVENLABS_API_KEY not found in environment variables');
+  console.error('   Please set it in .env.local or export it:');
+  console.error('   export ELEVENLABS_API_KEY="your-api-key"');
+  process.exit(1);
+}
 
 // Voice configuration - Updated from generated-voices.json
 const VOICE_CONFIG = {
@@ -19,15 +27,15 @@ const VOICE_CONFIG = {
     }
   },
   dante: {
-    voiceId: 'ceRvMsBhZbUSQgH59yxg',   // Dante - The Pilgrim
+    voiceId: 'ceRvMsBhZbUSQgH59yxg',   // Dante - The Pilgrim (dialogue - more expressive)
     volume: 1.0,
     model_id: 'eleven_multilingual_v2',
     voice_settings: {
-      stability: 0.52,
+      stability: 0.20,
       similarity_boost: 0.72,
-      style: 0.0,
+      style: 0.80,
       use_speaker_boost: true,
-      speed: 1.02
+      speed: 1.05
     }
   },
   virgil: {
@@ -43,12 +51,101 @@ const VOICE_CONFIG = {
     }
   },
   beatrice: {
-    voiceId: 'GWCqHHEfELBpqFWDsdhK',   // Beatrice - Divine Love (generated)
-    volume: 1.0
+    voiceId: 'ctchwNfHTCRKIQdDzY3J',   // Beatrice - Divine Love (generated)
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.45,
+      similarity_boost: 0.75,
+      style: 0.50,
+      use_speaker_boost: true,
+      speed: 0.95
+    }
+  },
+  lucia: {
+    voiceId: 'pFZP5JQG7iQjIQuC4Bku',   // Lily - Saint Lucia (divine messenger)
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.50,
+      similarity_boost: 0.75,
+      style: 0.40,
+      use_speaker_boost: true,
+      speed: 0.95
+    }
   },
   character: {
-    voiceId: 'lPoFhC6uDtaciSWzm2sI',   // Souls of the Afterlife (generated)
-    volume: 1.0
+    voiceId: 'twUwFnpNJ2G0x7FlsmI5',   // Francesca da Rimini (for Canto 5)
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.55,
+      similarity_boost: 0.70,
+      style: 0.0,
+      use_speaker_boost: true,
+      speed: 0.98
+    }
+  },
+  // Inferno-specific character voices
+  ciacco: {
+    voiceId: 'NKL1pZFuTPMRH2qbxXPa',   // Ciacco - Florentine glutton
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.50,
+      similarity_boost: 0.65,
+      style: 0.25,
+      use_speaker_boost: true,
+      speed: 0.94
+    }
+  },
+  charon: {
+    voiceId: 'YQMlHwsBtm3nMiSqx4cp',   // Charon - Ferryman of the dead
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.35,
+      similarity_boost: 0.65,
+      style: 0.4,
+      use_speaker_boost: true,
+      speed: 0.92
+    }
+  },
+  minos: {
+    voiceId: 'SO1p7GQGvKBDbOZGBg2P',   // Minos - Judge of the Damned
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.40,
+      similarity_boost: 0.70,
+      style: 0.3,
+      use_speaker_boost: true,
+      speed: 0.95
+    }
+  },
+  homer: {
+    voiceId: 'Rwyaq4BOCfdHv7tL6TIj',   // Homer - Supreme Poet
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.55,
+      similarity_boost: 0.80,
+      style: 0.25,
+      use_speaker_boost: true,
+      speed: 0.92
+    }
+  },
+  brunetto_latini: {
+    voiceId: 'MThwYKL9zvv4oDI3Yax3',   // Brunetto Latini - Dante's teacher
+    volume: 1.0,
+    model_id: 'eleven_multilingual_v2',
+    voice_settings: {
+      stability: 0.55,
+      similarity_boost: 0.75,
+      style: 0.25,
+      use_speaker_boost: true,
+      speed: 0.92
+    }
   }
 };
 
@@ -202,18 +299,21 @@ async function generateCantoAudio(cantica, cantoNumber, outputDir) {
   // Process each segment
   for (let i = 0; i < canto.segments.length; i++) {
     const segment = canto.segments[i];
-    const voiceConfig = VOICE_CONFIG[segment.speaker];
+    let voiceConfig = VOICE_CONFIG[segment.speaker];
 
+    // Fall back to 'character' voice for unrecognized speakers (e.g., charon, francesca, etc.)
     if (!voiceConfig) {
-      console.warn(`⚠️  No voice configured for speaker: ${segment.speaker}`);
-      continue;
+      console.log(`ℹ️  Using 'character' voice for: ${segment.speaker}`);
+      voiceConfig = VOICE_CONFIG.character;
     }
 
-    const voiceId = voiceConfig.voiceId;
+    // Check for per-segment voiceId override
+    const voiceId = segment.voiceId || voiceConfig.voiceId;
+    const usingCustomVoice = segment.voiceId ? ` [custom: ${segment.voiceId.slice(0, 8)}...]` : '';
 
     const progress = `[${(i + 1).toString().padStart(3)}/${canto.totalSegments}]`;
     const speaker = segment.speaker.padEnd(10);
-    process.stdout.write(`${progress} ${speaker} Generating... `);
+    process.stdout.write(`${progress} ${speaker}${usingCustomVoice} Generating... `);
 
     try {
       const result = await generateTTSWithTimestamps(segment.text, voiceId, segment.id, voiceConfig);
@@ -294,6 +394,22 @@ async function generateCantoAudio(cantica, cantoNumber, outputDir) {
       path.join(publicCantoDir, file)
     );
   });
+
+  // Update consolidated audio-word-timings.json for the web app
+  const wordTimingsPath = path.join(__dirname, 'public', 'audio-word-timings.json');
+  let wordTimings = {};
+  if (fs.existsSync(wordTimingsPath)) {
+    wordTimings = JSON.parse(fs.readFileSync(wordTimingsPath, 'utf-8'));
+  }
+  if (!wordTimings[cantica]) wordTimings[cantica] = {};
+  wordTimings[cantica][cantoNumber] = {
+    cantica,
+    cantoNumber,
+    title: canto.title,
+    totalDuration: currentTime,
+    segments: segmentTimingData
+  };
+  fs.writeFileSync(wordTimingsPath, JSON.stringify(wordTimings, null, 2));
 
   console.log(`\n✅ Complete!`);
   console.log(`📁 Audio: ${outputFile}`);

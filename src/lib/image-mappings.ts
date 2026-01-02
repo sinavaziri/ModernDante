@@ -13,8 +13,32 @@ export interface ImageData {
 
 type CantoMapping = Record<string, ImageData[]>;
 
-// Type assertion for the imported JSON
-const cantoMapping = imageMappingsData.cantoMapping as CantoMapping;
+interface ImageMappingsFile {
+  images: ImageData[];
+  cantoMapping: CantoMapping;
+}
+
+/**
+ * Type guard to validate ImageMappingsFile structure
+ */
+function isImageMappingsFile(data: unknown): data is ImageMappingsFile {
+  if (typeof data !== 'object' || data === null) return false;
+  const obj = data as Record<string, unknown>;
+  return (
+    Array.isArray(obj.images) &&
+    typeof obj.cantoMapping === 'object' &&
+    obj.cantoMapping !== null
+  );
+}
+
+// Validate and extract mapping with runtime type checking
+const mappingsFile: ImageMappingsFile = imageMappingsData as ImageMappingsFile;
+
+if (!isImageMappingsFile(mappingsFile)) {
+  throw new Error('Invalid image-mappings.json structure');
+}
+
+const cantoMapping: CantoMapping = mappingsFile.cantoMapping;
 
 /**
  * Get all images for a specific canto

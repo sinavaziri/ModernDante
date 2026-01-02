@@ -93,8 +93,8 @@ function ImageLightbox({
   );
 }
 
-// Floating Image Component
-function FloatingImage({
+// Inline Image Component
+function InlineImage({
   image,
   cantica,
   onClick
@@ -105,17 +105,17 @@ function FloatingImage({
 }) {
   return (
     <figure
-      className="group cursor-pointer transition-all duration-300 my-10 md:my-12 md:float-right md:ml-10 md:mb-8 w-full md:w-[50%] lg:w-[55%] clear-right"
+      className="group cursor-pointer transition-all duration-300 my-12 md:my-16 mx-auto max-w-2xl"
       onClick={onClick}
     >
       <div className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50">
         <Image
           src={`/images/${cantica}/${image.filename}`}
           alt={image.title}
-          width={600}
-          height={800}
+          width={800}
+          height={1067}
           className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 55vw"
+          sizes="(max-width: 768px) 100vw, 672px"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
@@ -128,7 +128,7 @@ function FloatingImage({
         </div>
       </div>
 
-      <figcaption className="mt-4 space-y-2 text-center md:text-left">
+      <figcaption className="mt-4 space-y-2 text-center">
         <p className="text-sm font-sans tracking-wide text-muted-foreground/80 uppercase">
           {image.title}
         </p>
@@ -357,7 +357,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
             {modernContent.map((block, idx) => {
               if (block.type === 'image') {
                 return (
-                  <FloatingImage
+                  <InlineImage
                     key={`img-${idx}`}
                     image={block.data}
                     cantica={cantica}
@@ -378,7 +378,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
                     segment={mergedSegment}
                     currentTime={currentTime}
                     isActive={true}
-                    stanzaStartLine={block.startLine}
                     onActiveWordVisibilityChange={handleActiveWordVisibilityChange}
                   />
                   <div className="text-[10px] text-muted-foreground/30 text-right select-none" aria-hidden="true">
@@ -401,6 +400,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       <AudioPlayerWordLevel
         cantica={cantica}
         cantoNumber={canto.number}
+        timingData={timingData}
         onTimeUpdate={handleTimeUpdate}
         isNarrationVisible={isActiveWordVisible}
         onScrollToNarration={scrollToNarration}

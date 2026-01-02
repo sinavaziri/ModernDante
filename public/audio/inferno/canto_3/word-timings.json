@@ -1,0 +1,6796 @@
+{
+  "cantica": "inferno",
+  "cantoNumber": 3,
+  "title": "Canto III",
+  "totalDuration": 371.843,
+  "segments": [
+    {
+      "id": 1,
+      "speaker": "gate_inscription",
+      "text": "Through me lies the path to the city of suffering;\nThrough me lies the path to eternal sorrow;\nThrough me lies the path among the lost souls.\nJustice moved my sublime Creator to make me;\nDivine power shaped me,\nThe highest Wisdom and primordial Love.\nBefore me, nothing was created\nExcept eternal things, and I endure forever.\nAbandon all hope, you who enter here!",
+      "startTime": 0,
+      "endTime": 30.232,
+      "duration": 30.232,
+      "words": [
+        {
+          "word": "Through",
+          "start": 0,
+          "end": 0.418,
+          "charStart": 0,
+          "charEnd": 7
+        },
+        {
+          "word": "me",
+          "start": 0.418,
+          "end": 0.708,
+          "charStart": 8,
+          "charEnd": 10
+        },
+        {
+          "word": "lies",
+          "start": 0.708,
+          "end": 1.289,
+          "charStart": 11,
+          "charEnd": 15
+        },
+        {
+          "word": "the",
+          "start": 1.289,
+          "end": 1.44,
+          "charStart": 16,
+          "charEnd": 19
+        },
+        {
+          "word": "path",
+          "start": 1.44,
+          "end": 1.846,
+          "charStart": 20,
+          "charEnd": 24
+        },
+        {
+          "word": "to",
+          "start": 1.846,
+          "end": 2.009,
+          "charStart": 25,
+          "charEnd": 27
+        },
+        {
+          "word": "the",
+          "start": 2.009,
+          "end": 2.148,
+          "charStart": 28,
+          "charEnd": 31
+        },
+        {
+          "word": "city",
+          "start": 2.148,
+          "end": 2.519,
+          "charStart": 32,
+          "charEnd": 36
+        },
+        {
+          "word": "of",
+          "start": 2.519,
+          "end": 2.659,
+          "charStart": 37,
+          "charEnd": 39
+        },
+        {
+          "word": "suffering;",
+          "start": 2.659,
+          "end": 3.413,
+          "charStart": 40,
+          "charEnd": 50
+        },
+        {
+          "word": "Through",
+          "start": 3.413,
+          "end": 3.773,
+          "charStart": 51,
+          "charEnd": 58
+        },
+        {
+          "word": "me",
+          "start": 3.773,
+          "end": 4.04,
+          "charStart": 59,
+          "charEnd": 61
+        },
+        {
+          "word": "lies",
+          "start": 4.04,
+          "end": 4.574,
+          "charStart": 62,
+          "charEnd": 66
+        },
+        {
+          "word": "the",
+          "start": 4.574,
+          "end": 4.714,
+          "charStart": 67,
+          "charEnd": 70
+        },
+        {
+          "word": "path",
+          "start": 4.714,
+          "end": 5.132,
+          "charStart": 71,
+          "charEnd": 75
+        },
+        {
+          "word": "to",
+          "start": 5.132,
+          "end": 5.341,
+          "charStart": 76,
+          "charEnd": 78
+        },
+        {
+          "word": "eternal",
+          "start": 5.341,
+          "end": 5.817,
+          "charStart": 79,
+          "charEnd": 86
+        },
+        {
+          "word": "sorrow;",
+          "start": 5.817,
+          "end": 6.548,
+          "charStart": 87,
+          "charEnd": 94
+        },
+        {
+          "word": "Through",
+          "start": 6.548,
+          "end": 6.943,
+          "charStart": 95,
+          "charEnd": 102
+        },
+        {
+          "word": "me",
+          "start": 6.943,
+          "end": 7.384,
+          "charStart": 103,
+          "charEnd": 105
+        },
+        {
+          "word": "lies",
+          "start": 7.384,
+          "end": 7.86,
+          "charStart": 106,
+          "charEnd": 110
+        },
+        {
+          "word": "the",
+          "start": 7.86,
+          "end": 7.999,
+          "charStart": 111,
+          "charEnd": 114
+        },
+        {
+          "word": "path",
+          "start": 7.999,
+          "end": 8.522,
+          "charStart": 115,
+          "charEnd": 119
+        },
+        {
+          "word": "among",
+          "start": 8.522,
+          "end": 8.928,
+          "charStart": 120,
+          "charEnd": 125
+        },
+        {
+          "word": "the",
+          "start": 8.928,
+          "end": 9.067,
+          "charStart": 126,
+          "charEnd": 129
+        },
+        {
+          "word": "lost",
+          "start": 9.067,
+          "end": 9.509,
+          "charStart": 130,
+          "charEnd": 134
+        },
+        {
+          "word": "souls.",
+          "start": 9.509,
+          "end": 10.553,
+          "charStart": 135,
+          "charEnd": 141
+        },
+        {
+          "word": "Justice",
+          "start": 10.553,
+          "end": 11.192,
+          "charStart": 142,
+          "charEnd": 149
+        },
+        {
+          "word": "moved",
+          "start": 11.192,
+          "end": 11.761,
+          "charStart": 150,
+          "charEnd": 155
+        },
+        {
+          "word": "my",
+          "start": 11.761,
+          "end": 12.098,
+          "charStart": 156,
+          "charEnd": 158
+        },
+        {
+          "word": "sublime",
+          "start": 12.098,
+          "end": 12.748,
+          "charStart": 159,
+          "charEnd": 166
+        },
+        {
+          "word": "Creator",
+          "start": 12.748,
+          "end": 13.41,
+          "charStart": 167,
+          "charEnd": 174
+        },
+        {
+          "word": "to",
+          "start": 13.41,
+          "end": 13.642,
+          "charStart": 175,
+          "charEnd": 177
+        },
+        {
+          "word": "make",
+          "start": 13.642,
+          "end": 13.955,
+          "charStart": 178,
+          "charEnd": 182
+        },
+        {
+          "word": "me;",
+          "start": 13.955,
+          "end": 14.443,
+          "charStart": 183,
+          "charEnd": 186
+        },
+        {
+          "word": "Divine",
+          "start": 14.443,
+          "end": 15.07,
+          "charStart": 187,
+          "charEnd": 193
+        },
+        {
+          "word": "power",
+          "start": 15.07,
+          "end": 15.534,
+          "charStart": 194,
+          "charEnd": 199
+        },
+        {
+          "word": "shaped",
+          "start": 15.534,
+          "end": 15.964,
+          "charStart": 200,
+          "charEnd": 206
+        },
+        {
+          "word": "me,",
+          "start": 15.964,
+          "end": 16.393,
+          "charStart": 207,
+          "charEnd": 210
+        },
+        {
+          "word": "The",
+          "start": 16.393,
+          "end": 16.591,
+          "charStart": 211,
+          "charEnd": 214
+        },
+        {
+          "word": "highest",
+          "start": 16.591,
+          "end": 17.101,
+          "charStart": 215,
+          "charEnd": 222
+        },
+        {
+          "word": "Wisdom",
+          "start": 17.101,
+          "end": 17.74,
+          "charStart": 223,
+          "charEnd": 229
+        },
+        {
+          "word": "and",
+          "start": 17.74,
+          "end": 17.995,
+          "charStart": 230,
+          "charEnd": 233
+        },
+        {
+          "word": "primordial",
+          "start": 17.995,
+          "end": 18.854,
+          "charStart": 234,
+          "charEnd": 244
+        },
+        {
+          "word": "Love.",
+          "start": 18.854,
+          "end": 19.574,
+          "charStart": 245,
+          "charEnd": 250
+        },
+        {
+          "word": "Before",
+          "start": 19.574,
+          "end": 20.05,
+          "charStart": 251,
+          "charEnd": 257
+        },
+        {
+          "word": "me,",
+          "start": 20.05,
+          "end": 20.596,
+          "charStart": 258,
+          "charEnd": 261
+        },
+        {
+          "word": "nothing",
+          "start": 20.596,
+          "end": 21.06,
+          "charStart": 262,
+          "charEnd": 269
+        },
+        {
+          "word": "was",
+          "start": 21.06,
+          "end": 21.304,
+          "charStart": 270,
+          "charEnd": 273
+        },
+        {
+          "word": "created",
+          "start": 21.304,
+          "end": 21.919,
+          "charStart": 274,
+          "charEnd": 281
+        },
+        {
+          "word": "Except",
+          "start": 21.919,
+          "end": 22.442,
+          "charStart": 282,
+          "charEnd": 288
+        },
+        {
+          "word": "eternal",
+          "start": 22.442,
+          "end": 23.069,
+          "charStart": 289,
+          "charEnd": 296
+        },
+        {
+          "word": "things,",
+          "start": 23.069,
+          "end": 23.87,
+          "charStart": 297,
+          "charEnd": 304
+        },
+        {
+          "word": "and",
+          "start": 23.87,
+          "end": 24.207,
+          "charStart": 305,
+          "charEnd": 308
+        },
+        {
+          "word": "I",
+          "start": 24.207,
+          "end": 24.59,
+          "charStart": 309,
+          "charEnd": 310
+        },
+        {
+          "word": "endure",
+          "start": 24.59,
+          "end": 25.402,
+          "charStart": 311,
+          "charEnd": 317
+        },
+        {
+          "word": "forever.",
+          "start": 25.402,
+          "end": 26.262,
+          "charStart": 318,
+          "charEnd": 326
+        },
+        {
+          "word": "Abandon",
+          "start": 26.262,
+          "end": 27.167,
+          "charStart": 327,
+          "charEnd": 334
+        },
+        {
+          "word": "all",
+          "start": 27.167,
+          "end": 27.62,
+          "charStart": 335,
+          "charEnd": 338
+        },
+        {
+          "word": "hope,",
+          "start": 27.62,
+          "end": 28.317,
+          "charStart": 339,
+          "charEnd": 344
+        },
+        {
+          "word": "you",
+          "start": 28.317,
+          "end": 28.932,
+          "charStart": 345,
+          "charEnd": 348
+        },
+        {
+          "word": "who",
+          "start": 28.932,
+          "end": 29.269,
+          "charStart": 349,
+          "charEnd": 352
+        },
+        {
+          "word": "enter",
+          "start": 29.269,
+          "end": 29.745,
+          "charStart": 353,
+          "charEnd": 358
+        },
+        {
+          "word": "here!",
+          "start": 29.745,
+          "end": 30.232,
+          "charStart": 359,
+          "charEnd": 363
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "narrator",
+      "text": "These words, written in dark lettering,\nI saw inscribed above a gate.",
+      "startTime": 30.232,
+      "endTime": 34.597,
+      "duration": 4.365,
+      "words": [
+        {
+          "word": "These",
+          "start": 30.232,
+          "end": 30.534,
+          "charStart": 0,
+          "charEnd": 5
+        },
+        {
+          "word": "words,",
+          "start": 30.534,
+          "end": 31.160999999999998,
+          "charStart": 6,
+          "charEnd": 12
+        },
+        {
+          "word": "written",
+          "start": 31.160999999999998,
+          "end": 31.486,
+          "charStart": 13,
+          "charEnd": 20
+        },
+        {
+          "word": "in",
+          "start": 31.486,
+          "end": 31.625,
+          "charStart": 21,
+          "charEnd": 23
+        },
+        {
+          "word": "dark",
+          "start": 31.625,
+          "end": 31.915,
+          "charStart": 24,
+          "charEnd": 28
+        },
+        {
+          "word": "lettering,",
+          "start": 31.915,
+          "end": 32.658,
+          "charStart": 29,
+          "charEnd": 39
+        },
+        {
+          "word": "I",
+          "start": 32.658,
+          "end": 32.833,
+          "charStart": 40,
+          "charEnd": 41
+        },
+        {
+          "word": "saw",
+          "start": 32.833,
+          "end": 33.123,
+          "charStart": 42,
+          "charEnd": 45
+        },
+        {
+          "word": "inscribed",
+          "start": 33.123,
+          "end": 33.727,
+          "charStart": 46,
+          "charEnd": 55
+        },
+        {
+          "word": "above",
+          "start": 33.727,
+          "end": 33.958999999999996,
+          "charStart": 56,
+          "charEnd": 61
+        },
+        {
+          "word": "a",
+          "start": 33.958999999999996,
+          "end": 34.028,
+          "charStart": 62,
+          "charEnd": 63
+        },
+        {
+          "word": "gate.",
+          "start": 34.028,
+          "end": 34.597,
+          "charStart": 64,
+          "charEnd": 68
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "dante",
+      "text": "Master,\" I said, \"their meaning troubles me.",
+      "startTime": 34.597,
+      "endTime": 37.291000000000004,
+      "duration": 2.694,
+      "words": [
+        {
+          "word": "Master,\"",
+          "start": 34.597,
+          "end": 35.363,
+          "charStart": 0,
+          "charEnd": 8
+        },
+        {
+          "word": "I",
+          "start": 35.363,
+          "end": 35.503,
+          "charStart": 9,
+          "charEnd": 10
+        },
+        {
+          "word": "said,",
+          "start": 35.503,
+          "end": 35.886,
+          "charStart": 11,
+          "charEnd": 16
+        },
+        {
+          "word": "\"their",
+          "start": 35.886,
+          "end": 36.269,
+          "charStart": 17,
+          "charEnd": 23
+        },
+        {
+          "word": "meaning",
+          "start": 36.269,
+          "end": 36.606,
+          "charStart": 24,
+          "charEnd": 31
+        },
+        {
+          "word": "troubles",
+          "start": 36.606,
+          "end": 37.047000000000004,
+          "charStart": 32,
+          "charEnd": 40
+        },
+        {
+          "word": "me.",
+          "start": 37.047000000000004,
+          "end": 37.291000000000004,
+          "charStart": 41,
+          "charEnd": 43
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "narrator",
+      "text": "And he answered, like one who understands:",
+      "startTime": 37.291000000000004,
+      "endTime": 39.659000000000006,
+      "duration": 2.368,
+      "words": [
+        {
+          "word": "And",
+          "start": 37.291000000000004,
+          "end": 37.604000000000006,
+          "charStart": 0,
+          "charEnd": 3
+        },
+        {
+          "word": "he",
+          "start": 37.604000000000006,
+          "end": 37.721000000000004,
+          "charStart": 4,
+          "charEnd": 6
+        },
+        {
+          "word": "answered,",
+          "start": 37.721000000000004,
+          "end": 38.289,
+          "charStart": 7,
+          "charEnd": 16
+        },
+        {
+          "word": "like",
+          "start": 38.289,
+          "end": 38.522000000000006,
+          "charStart": 17,
+          "charEnd": 21
+        },
+        {
+          "word": "one",
+          "start": 38.522000000000006,
+          "end": 38.661,
+          "charStart": 22,
+          "charEnd": 25
+        },
+        {
+          "word": "who",
+          "start": 38.661,
+          "end": 38.812000000000005,
+          "charStart": 26,
+          "charEnd": 29
+        },
+        {
+          "word": "understands:",
+          "start": 38.812000000000005,
+          "end": 39.659000000000006,
+          "charStart": 30,
+          "charEnd": 41
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "virgil",
+      "text": "Here you must leave behind all hesitation,\nHere cowardice must die within you.\nWe have reached the place I told you of,\nWhere you will see the wretched people\nWho have lost the good of reason.",
+      "startTime": 39.659000000000006,
+      "endTime": 52.894000000000005,
+      "duration": 13.235,
+      "words": [
+        {
+          "word": "Here",
+          "start": 39.659000000000006,
+          "end": 40.089000000000006,
+          "charStart": 0,
+          "charEnd": 4
+        },
+        {
+          "word": "you",
+          "start": 40.089000000000006,
+          "end": 40.239000000000004,
+          "charStart": 5,
+          "charEnd": 8
+        },
+        {
+          "word": "must",
+          "start": 40.239000000000004,
+          "end": 40.495000000000005,
+          "charStart": 9,
+          "charEnd": 13
+        },
+        {
+          "word": "leave",
+          "start": 40.495000000000005,
+          "end": 40.785000000000004,
+          "charStart": 14,
+          "charEnd": 19
+        },
+        {
+          "word": "behind",
+          "start": 40.785000000000004,
+          "end": 41.354000000000006,
+          "charStart": 20,
+          "charEnd": 26
+        },
+        {
+          "word": "all",
+          "start": 41.354000000000006,
+          "end": 41.702000000000005,
+          "charStart": 27,
+          "charEnd": 30
+        },
+        {
+          "word": "hesitation,",
+          "start": 41.702000000000005,
+          "end": 42.910000000000004,
+          "charStart": 31,
+          "charEnd": 42
+        },
+        {
+          "word": "Here",
+          "start": 42.910000000000004,
+          "end": 43.25800000000001,
+          "charStart": 43,
+          "charEnd": 47
+        },
+        {
+          "word": "cowardice",
+          "start": 43.25800000000001,
+          "end": 43.90800000000001,
+          "charStart": 48,
+          "charEnd": 57
+        },
+        {
+          "word": "must",
+          "start": 43.90800000000001,
+          "end": 44.199000000000005,
+          "charStart": 58,
+          "charEnd": 62
+        },
+        {
+          "word": "die",
+          "start": 44.199000000000005,
+          "end": 44.535000000000004,
+          "charStart": 63,
+          "charEnd": 66
+        },
+        {
+          "word": "within",
+          "start": 44.535000000000004,
+          "end": 44.895,
+          "charStart": 67,
+          "charEnd": 73
+        },
+        {
+          "word": "you.",
+          "start": 44.895,
+          "end": 45.78900000000001,
+          "charStart": 74,
+          "charEnd": 78
+        },
+        {
+          "word": "We",
+          "start": 45.78900000000001,
+          "end": 45.998000000000005,
+          "charStart": 79,
+          "charEnd": 81
+        },
+        {
+          "word": "have",
+          "start": 45.998000000000005,
+          "end": 46.20700000000001,
+          "charStart": 82,
+          "charEnd": 86
+        },
+        {
+          "word": "reached",
+          "start": 46.20700000000001,
+          "end": 46.56700000000001,
+          "charStart": 87,
+          "charEnd": 94
+        },
+        {
+          "word": "the",
+          "start": 46.56700000000001,
+          "end": 46.69500000000001,
+          "charStart": 95,
+          "charEnd": 98
+        },
+        {
+          "word": "place",
+          "start": 46.69500000000001,
+          "end": 47.182,
+          "charStart": 99,
+          "charEnd": 104
+        },
+        {
+          "word": "I",
+          "start": 47.182,
+          "end": 47.42600000000001,
+          "charStart": 105,
+          "charEnd": 106
+        },
+        {
+          "word": "told",
+          "start": 47.42600000000001,
+          "end": 47.809000000000005,
+          "charStart": 107,
+          "charEnd": 111
+        },
+        {
+          "word": "you",
+          "start": 47.809000000000005,
+          "end": 48.041000000000004,
+          "charStart": 112,
+          "charEnd": 115
+        },
+        {
+          "word": "of,",
+          "start": 48.041000000000004,
+          "end": 48.50600000000001,
+          "charStart": 116,
+          "charEnd": 119
+        },
+        {
+          "word": "Where",
+          "start": 48.50600000000001,
+          "end": 48.76100000000001,
+          "charStart": 120,
+          "charEnd": 125
+        },
+        {
+          "word": "you",
+          "start": 48.76100000000001,
+          "end": 48.88900000000001,
+          "charStart": 126,
+          "charEnd": 129
+        },
+        {
+          "word": "will",
+          "start": 48.88900000000001,
+          "end": 49.11000000000001,
+          "charStart": 130,
+          "charEnd": 134
+        },
+        {
+          "word": "see",
+          "start": 49.11000000000001,
+          "end": 49.458000000000006,
+          "charStart": 135,
+          "charEnd": 138
+        },
+        {
+          "word": "the",
+          "start": 49.458000000000006,
+          "end": 49.60900000000001,
+          "charStart": 139,
+          "charEnd": 142
+        },
+        {
+          "word": "wretched",
+          "start": 49.60900000000001,
+          "end": 50.062000000000005,
+          "charStart": 143,
+          "charEnd": 151
+        },
+        {
+          "word": "people",
+          "start": 50.062000000000005,
+          "end": 50.723000000000006,
+          "charStart": 152,
+          "charEnd": 158
+        },
+        {
+          "word": "Who",
+          "start": 50.723000000000006,
+          "end": 50.944,
+          "charStart": 159,
+          "charEnd": 162
+        },
+        {
+          "word": "have",
+          "start": 50.944,
+          "end": 51.13000000000001,
+          "charStart": 163,
+          "charEnd": 167
+        },
+        {
+          "word": "lost",
+          "start": 51.13000000000001,
+          "end": 51.513000000000005,
+          "charStart": 168,
+          "charEnd": 172
+        },
+        {
+          "word": "the",
+          "start": 51.513000000000005,
+          "end": 51.675000000000004,
+          "charStart": 173,
+          "charEnd": 176
+        },
+        {
+          "word": "good",
+          "start": 51.675000000000004,
+          "end": 51.989000000000004,
+          "charStart": 177,
+          "charEnd": 181
+        },
+        {
+          "word": "of",
+          "start": 51.989000000000004,
+          "end": 52.175000000000004,
+          "charStart": 182,
+          "charEnd": 184
+        },
+        {
+          "word": "reason.",
+          "start": 52.175000000000004,
+          "end": 52.894000000000005,
+          "charStart": 185,
+          "charEnd": 191
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "narrator",
+      "text": "After he placed his hand on mine\nWith such a joyful expression that I felt comforted,\nHe led me into the secret realm.\nHere sighs, lamentations, and piercing screams\nEchoed through the starless air,\nSo that at first I wept to hear them.\nDiverse languages, horrible pronunciations,\nWords of pain, accents of anger,\nHigh voices and hoarse ones, the sound of striking hands—\nAll this made a tumult that swirls on\nForever in that timeless black air,\nLike sand spinning in a whirlwind.\nAnd I, my head wrapped in horror, said:",
+      "startTime": 52.894000000000005,
+      "endTime": 93.947,
+      "duration": 41.053,
+      "words": [
+        {
+          "word": "After",
+          "start": 52.894000000000005,
+          "end": 53.254000000000005,
+          "charStart": 0,
+          "charEnd": 5
+        },
+        {
+          "word": "he",
+          "start": 53.254000000000005,
+          "end": 53.382000000000005,
+          "charStart": 6,
+          "charEnd": 8
+        },
+        {
+          "word": "placed",
+          "start": 53.382000000000005,
+          "end": 53.730000000000004,
+          "charStart": 9,
+          "charEnd": 15
+        },
+        {
+          "word": "his",
+          "start": 53.730000000000004,
+          "end": 53.892,
+          "charStart": 16,
+          "charEnd": 19
+        },
+        {
+          "word": "hand",
+          "start": 53.892,
+          "end": 54.218,
+          "charStart": 20,
+          "charEnd": 24
+        },
+        {
+          "word": "on",
+          "start": 54.218,
+          "end": 54.392,
+          "charStart": 25,
+          "charEnd": 27
+        },
+        {
+          "word": "mine",
+          "start": 54.392,
+          "end": 54.682,
+          "charStart": 28,
+          "charEnd": 32
+        },
+        {
+          "word": "With",
+          "start": 54.682,
+          "end": 54.879000000000005,
+          "charStart": 33,
+          "charEnd": 37
+        },
+        {
+          "word": "such",
+          "start": 54.879000000000005,
+          "end": 55.135000000000005,
+          "charStart": 38,
+          "charEnd": 42
+        },
+        {
+          "word": "a",
+          "start": 55.135000000000005,
+          "end": 55.26200000000001,
+          "charStart": 43,
+          "charEnd": 44
+        },
+        {
+          "word": "joyful",
+          "start": 55.26200000000001,
+          "end": 55.79600000000001,
+          "charStart": 45,
+          "charEnd": 51
+        },
+        {
+          "word": "expression",
+          "start": 55.79600000000001,
+          "end": 56.400000000000006,
+          "charStart": 52,
+          "charEnd": 62
+        },
+        {
+          "word": "that",
+          "start": 56.400000000000006,
+          "end": 56.563,
+          "charStart": 63,
+          "charEnd": 67
+        },
+        {
+          "word": "I",
+          "start": 56.563,
+          "end": 56.66700000000001,
+          "charStart": 68,
+          "charEnd": 69
+        },
+        {
+          "word": "felt",
+          "start": 56.66700000000001,
+          "end": 56.946000000000005,
+          "charStart": 70,
+          "charEnd": 74
+        },
+        {
+          "word": "comforted,",
+          "start": 56.946000000000005,
+          "end": 58.258,
+          "charStart": 75,
+          "charEnd": 85
+        },
+        {
+          "word": "He",
+          "start": 58.258,
+          "end": 58.455000000000005,
+          "charStart": 86,
+          "charEnd": 88
+        },
+        {
+          "word": "led",
+          "start": 58.455000000000005,
+          "end": 58.699000000000005,
+          "charStart": 89,
+          "charEnd": 92
+        },
+        {
+          "word": "me",
+          "start": 58.699000000000005,
+          "end": 58.86200000000001,
+          "charStart": 93,
+          "charEnd": 95
+        },
+        {
+          "word": "into",
+          "start": 58.86200000000001,
+          "end": 59.117000000000004,
+          "charStart": 96,
+          "charEnd": 100
+        },
+        {
+          "word": "the",
+          "start": 59.117000000000004,
+          "end": 59.25600000000001,
+          "charStart": 101,
+          "charEnd": 104
+        },
+        {
+          "word": "secret",
+          "start": 59.25600000000001,
+          "end": 59.755,
+          "charStart": 105,
+          "charEnd": 111
+        },
+        {
+          "word": "realm.",
+          "start": 59.755,
+          "end": 61.09100000000001,
+          "charStart": 112,
+          "charEnd": 118
+        },
+        {
+          "word": "Here",
+          "start": 61.09100000000001,
+          "end": 61.543000000000006,
+          "charStart": 119,
+          "charEnd": 123
+        },
+        {
+          "word": "sighs,",
+          "start": 61.543000000000006,
+          "end": 62.437000000000005,
+          "charStart": 124,
+          "charEnd": 130
+        },
+        {
+          "word": "lamentations,",
+          "start": 62.437000000000005,
+          "end": 63.86500000000001,
+          "charStart": 131,
+          "charEnd": 144
+        },
+        {
+          "word": "and",
+          "start": 63.86500000000001,
+          "end": 64.156,
+          "charStart": 145,
+          "charEnd": 148
+        },
+        {
+          "word": "piercing",
+          "start": 64.156,
+          "end": 64.79400000000001,
+          "charStart": 149,
+          "charEnd": 157
+        },
+        {
+          "word": "screams",
+          "start": 64.79400000000001,
+          "end": 65.50200000000001,
+          "charStart": 158,
+          "charEnd": 165
+        },
+        {
+          "word": "Echoed",
+          "start": 65.50200000000001,
+          "end": 65.92,
+          "charStart": 166,
+          "charEnd": 172
+        },
+        {
+          "word": "through",
+          "start": 65.92,
+          "end": 66.18700000000001,
+          "charStart": 173,
+          "charEnd": 180
+        },
+        {
+          "word": "the",
+          "start": 66.18700000000001,
+          "end": 66.304,
+          "charStart": 181,
+          "charEnd": 184
+        },
+        {
+          "word": "starless",
+          "start": 66.304,
+          "end": 66.884,
+          "charStart": 185,
+          "charEnd": 193
+        },
+        {
+          "word": "air,",
+          "start": 66.884,
+          "end": 68.057,
+          "charStart": 194,
+          "charEnd": 198
+        },
+        {
+          "word": "So",
+          "start": 68.057,
+          "end": 68.266,
+          "charStart": 199,
+          "charEnd": 201
+        },
+        {
+          "word": "that",
+          "start": 68.266,
+          "end": 68.44,
+          "charStart": 202,
+          "charEnd": 206
+        },
+        {
+          "word": "at",
+          "start": 68.44,
+          "end": 68.602,
+          "charStart": 207,
+          "charEnd": 209
+        },
+        {
+          "word": "first",
+          "start": 68.602,
+          "end": 69.078,
+          "charStart": 210,
+          "charEnd": 215
+        },
+        {
+          "word": "I",
+          "start": 69.078,
+          "end": 69.27600000000001,
+          "charStart": 216,
+          "charEnd": 217
+        },
+        {
+          "word": "wept",
+          "start": 69.27600000000001,
+          "end": 69.81,
+          "charStart": 218,
+          "charEnd": 222
+        },
+        {
+          "word": "to",
+          "start": 69.81,
+          "end": 70.042,
+          "charStart": 223,
+          "charEnd": 225
+        },
+        {
+          "word": "hear",
+          "start": 70.042,
+          "end": 70.275,
+          "charStart": 226,
+          "charEnd": 230
+        },
+        {
+          "word": "them.",
+          "start": 70.275,
+          "end": 71.807,
+          "charStart": 231,
+          "charEnd": 236
+        },
+        {
+          "word": "Diverse",
+          "start": 71.807,
+          "end": 72.364,
+          "charStart": 237,
+          "charEnd": 244
+        },
+        {
+          "word": "languages,",
+          "start": 72.364,
+          "end": 73.39800000000001,
+          "charStart": 245,
+          "charEnd": 255
+        },
+        {
+          "word": "horrible",
+          "start": 73.39800000000001,
+          "end": 73.897,
+          "charStart": 256,
+          "charEnd": 264
+        },
+        {
+          "word": "pronunciations,",
+          "start": 73.897,
+          "end": 75.162,
+          "charStart": 265,
+          "charEnd": 280
+        },
+        {
+          "word": "Words",
+          "start": 75.162,
+          "end": 75.534,
+          "charStart": 281,
+          "charEnd": 286
+        },
+        {
+          "word": "of",
+          "start": 75.534,
+          "end": 75.685,
+          "charStart": 287,
+          "charEnd": 289
+        },
+        {
+          "word": "pain,",
+          "start": 75.685,
+          "end": 76.43900000000001,
+          "charStart": 290,
+          "charEnd": 295
+        },
+        {
+          "word": "accents",
+          "start": 76.43900000000001,
+          "end": 77.02000000000001,
+          "charStart": 296,
+          "charEnd": 303
+        },
+        {
+          "word": "of",
+          "start": 77.02000000000001,
+          "end": 77.194,
+          "charStart": 304,
+          "charEnd": 306
+        },
+        {
+          "word": "anger,",
+          "start": 77.194,
+          "end": 77.92500000000001,
+          "charStart": 307,
+          "charEnd": 313
+        },
+        {
+          "word": "High",
+          "start": 77.92500000000001,
+          "end": 78.239,
+          "charStart": 314,
+          "charEnd": 318
+        },
+        {
+          "word": "voices",
+          "start": 78.239,
+          "end": 78.785,
+          "charStart": 319,
+          "charEnd": 325
+        },
+        {
+          "word": "and",
+          "start": 78.785,
+          "end": 78.994,
+          "charStart": 326,
+          "charEnd": 329
+        },
+        {
+          "word": "hoarse",
+          "start": 78.994,
+          "end": 79.34200000000001,
+          "charStart": 330,
+          "charEnd": 336
+        },
+        {
+          "word": "ones,",
+          "start": 79.34200000000001,
+          "end": 80.06200000000001,
+          "charStart": 337,
+          "charEnd": 342
+        },
+        {
+          "word": "the",
+          "start": 80.06200000000001,
+          "end": 80.224,
+          "charStart": 343,
+          "charEnd": 346
+        },
+        {
+          "word": "sound",
+          "start": 80.224,
+          "end": 80.584,
+          "charStart": 347,
+          "charEnd": 352
+        },
+        {
+          "word": "of",
+          "start": 80.584,
+          "end": 80.74700000000001,
+          "charStart": 353,
+          "charEnd": 355
+        },
+        {
+          "word": "striking",
+          "start": 80.74700000000001,
+          "end": 81.339,
+          "charStart": 356,
+          "charEnd": 364
+        },
+        {
+          "word": "hands—",
+          "start": 81.339,
+          "end": 83.08000000000001,
+          "charStart": 365,
+          "charEnd": 371
+        },
+        {
+          "word": "All",
+          "start": 83.08000000000001,
+          "end": 83.35900000000001,
+          "charStart": 372,
+          "charEnd": 375
+        },
+        {
+          "word": "this",
+          "start": 83.35900000000001,
+          "end": 83.614,
+          "charStart": 376,
+          "charEnd": 380
+        },
+        {
+          "word": "made",
+          "start": 83.614,
+          "end": 83.82300000000001,
+          "charStart": 381,
+          "charEnd": 385
+        },
+        {
+          "word": "a",
+          "start": 83.82300000000001,
+          "end": 83.905,
+          "charStart": 386,
+          "charEnd": 387
+        },
+        {
+          "word": "tumult",
+          "start": 83.905,
+          "end": 84.462,
+          "charStart": 388,
+          "charEnd": 394
+        },
+        {
+          "word": "that",
+          "start": 84.462,
+          "end": 84.694,
+          "charStart": 395,
+          "charEnd": 399
+        },
+        {
+          "word": "swirls",
+          "start": 84.694,
+          "end": 85.22800000000001,
+          "charStart": 400,
+          "charEnd": 406
+        },
+        {
+          "word": "on",
+          "start": 85.22800000000001,
+          "end": 85.426,
+          "charStart": 407,
+          "charEnd": 409
+        },
+        {
+          "word": "Forever",
+          "start": 85.426,
+          "end": 85.92500000000001,
+          "charStart": 410,
+          "charEnd": 417
+        },
+        {
+          "word": "in",
+          "start": 85.92500000000001,
+          "end": 86.041,
+          "charStart": 418,
+          "charEnd": 420
+        },
+        {
+          "word": "that",
+          "start": 86.041,
+          "end": 86.238,
+          "charStart": 421,
+          "charEnd": 425
+        },
+        {
+          "word": "timeless",
+          "start": 86.238,
+          "end": 86.772,
+          "charStart": 426,
+          "charEnd": 434
+        },
+        {
+          "word": "black",
+          "start": 86.772,
+          "end": 87.132,
+          "charStart": 435,
+          "charEnd": 440
+        },
+        {
+          "word": "air,",
+          "start": 87.132,
+          "end": 87.887,
+          "charStart": 441,
+          "charEnd": 445
+        },
+        {
+          "word": "Like",
+          "start": 87.887,
+          "end": 88.142,
+          "charStart": 446,
+          "charEnd": 450
+        },
+        {
+          "word": "sand",
+          "start": 88.142,
+          "end": 88.653,
+          "charStart": 451,
+          "charEnd": 455
+        },
+        {
+          "word": "spinning",
+          "start": 88.653,
+          "end": 89.059,
+          "charStart": 456,
+          "charEnd": 464
+        },
+        {
+          "word": "in",
+          "start": 89.059,
+          "end": 89.15200000000002,
+          "charStart": 465,
+          "charEnd": 467
+        },
+        {
+          "word": "a",
+          "start": 89.15200000000002,
+          "end": 89.233,
+          "charStart": 468,
+          "charEnd": 469
+        },
+        {
+          "word": "whirlwind.",
+          "start": 89.233,
+          "end": 90.905,
+          "charStart": 470,
+          "charEnd": 480
+        },
+        {
+          "word": "And",
+          "start": 90.905,
+          "end": 91.149,
+          "charStart": 481,
+          "charEnd": 484
+        },
+        {
+          "word": "I,",
+          "start": 91.149,
+          "end": 91.72900000000001,
+          "charStart": 485,
+          "charEnd": 487
+        },
+        {
+          "word": "my",
+          "start": 91.72900000000001,
+          "end": 91.915,
+          "charStart": 488,
+          "charEnd": 490
+        },
+        {
+          "word": "head",
+          "start": 91.915,
+          "end": 92.101,
+          "charStart": 491,
+          "charEnd": 495
+        },
+        {
+          "word": "wrapped",
+          "start": 92.101,
+          "end": 92.44900000000001,
+          "charStart": 496,
+          "charEnd": 503
+        },
+        {
+          "word": "in",
+          "start": 92.44900000000001,
+          "end": 92.589,
+          "charStart": 504,
+          "charEnd": 506
+        },
+        {
+          "word": "horror,",
+          "start": 92.589,
+          "end": 92.92500000000001,
+          "charStart": 507,
+          "charEnd": 514
+        },
+        {
+          "word": "said:",
+          "start": 92.92500000000001,
+          "end": 93.947,
+          "charStart": 515,
+          "charEnd": 519
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speaker": "dante",
+      "text": "Master, what is this I'm hearing?\nWhat people are these, so conquered by pain?",
+      "startTime": 93.947,
+      "endTime": 100.031,
+      "duration": 6.084,
+      "words": [
+        {
+          "word": "Master,",
+          "start": 93.947,
+          "end": 94.85300000000001,
+          "charStart": 0,
+          "charEnd": 7
+        },
+        {
+          "word": "what",
+          "start": 94.85300000000001,
+          "end": 95.12,
+          "charStart": 8,
+          "charEnd": 12
+        },
+        {
+          "word": "is",
+          "start": 95.12,
+          "end": 95.294,
+          "charStart": 13,
+          "charEnd": 15
+        },
+        {
+          "word": "this",
+          "start": 95.294,
+          "end": 95.63000000000001,
+          "charStart": 16,
+          "charEnd": 20
+        },
+        {
+          "word": "I'm",
+          "start": 95.63000000000001,
+          "end": 95.851,
+          "charStart": 21,
+          "charEnd": 24
+        },
+        {
+          "word": "hearing?",
+          "start": 95.851,
+          "end": 96.896,
+          "charStart": 25,
+          "charEnd": 33
+        },
+        {
+          "word": "What",
+          "start": 96.896,
+          "end": 97.14,
+          "charStart": 34,
+          "charEnd": 38
+        },
+        {
+          "word": "people",
+          "start": 97.14,
+          "end": 97.465,
+          "charStart": 39,
+          "charEnd": 45
+        },
+        {
+          "word": "are",
+          "start": 97.465,
+          "end": 97.651,
+          "charStart": 46,
+          "charEnd": 49
+        },
+        {
+          "word": "these,",
+          "start": 97.651,
+          "end": 98.161,
+          "charStart": 50,
+          "charEnd": 56
+        },
+        {
+          "word": "so",
+          "start": 98.161,
+          "end": 98.568,
+          "charStart": 57,
+          "charEnd": 59
+        },
+        {
+          "word": "conquered",
+          "start": 98.568,
+          "end": 99.137,
+          "charStart": 60,
+          "charEnd": 69
+        },
+        {
+          "word": "by",
+          "start": 99.137,
+          "end": 99.357,
+          "charStart": 70,
+          "charEnd": 72
+        },
+        {
+          "word": "pain?",
+          "start": 99.357,
+          "end": 100.031,
+          "charStart": 73,
+          "charEnd": 77
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "dante",
+      "text": "He answered:",
+      "startTime": 100.031,
+      "endTime": 101.099,
+      "duration": 1.068,
+      "words": [
+        {
+          "word": "He",
+          "start": 100.031,
+          "end": 100.33300000000001,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "answered:",
+          "start": 100.33300000000001,
+          "end": 101.099,
+          "charStart": 3,
+          "charEnd": 11
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "speaker": "virgil",
+      "text": "This is the miserable way\nOf those sorry souls who lived\nWithout disgrace and without praise.\nThey are mixed with that cowardly choir\nOf angels who were neither rebellious\nNor faithful to God, but served only themselves.\nHeaven cast them out to preserve its beauty;\nThe depths of Hell won't receive them either,\nFor even the damned would gain glory over them.",
+      "startTime": 101.099,
+      "endTime": 127.059,
+      "duration": 25.96,
+      "words": [
+        {
+          "word": "This",
+          "start": 101.099,
+          "end": 101.784,
+          "charStart": 0,
+          "charEnd": 4
+        },
+        {
+          "word": "is",
+          "start": 101.784,
+          "end": 102.086,
+          "charStart": 5,
+          "charEnd": 7
+        },
+        {
+          "word": "the",
+          "start": 102.086,
+          "end": 102.26,
+          "charStart": 8,
+          "charEnd": 11
+        },
+        {
+          "word": "miserable",
+          "start": 102.26,
+          "end": 102.81700000000001,
+          "charStart": 12,
+          "charEnd": 21
+        },
+        {
+          "word": "way",
+          "start": 102.81700000000001,
+          "end": 103.28200000000001,
+          "charStart": 22,
+          "charEnd": 25
+        },
+        {
+          "word": "Of",
+          "start": 103.28200000000001,
+          "end": 103.444,
+          "charStart": 26,
+          "charEnd": 28
+        },
+        {
+          "word": "those",
+          "start": 103.444,
+          "end": 103.74600000000001,
+          "charStart": 29,
+          "charEnd": 34
+        },
+        {
+          "word": "sorry",
+          "start": 103.74600000000001,
+          "end": 104.21000000000001,
+          "charStart": 35,
+          "charEnd": 40
+        },
+        {
+          "word": "souls",
+          "start": 104.21000000000001,
+          "end": 104.71000000000001,
+          "charStart": 41,
+          "charEnd": 46
+        },
+        {
+          "word": "who",
+          "start": 104.71000000000001,
+          "end": 104.977,
+          "charStart": 47,
+          "charEnd": 50
+        },
+        {
+          "word": "lived",
+          "start": 104.977,
+          "end": 105.36,
+          "charStart": 51,
+          "charEnd": 56
+        },
+        {
+          "word": "Without",
+          "start": 105.36,
+          "end": 105.789,
+          "charStart": 57,
+          "charEnd": 64
+        },
+        {
+          "word": "disgrace",
+          "start": 105.789,
+          "end": 106.56700000000001,
+          "charStart": 65,
+          "charEnd": 73
+        },
+        {
+          "word": "and",
+          "start": 106.56700000000001,
+          "end": 106.811,
+          "charStart": 74,
+          "charEnd": 77
+        },
+        {
+          "word": "without",
+          "start": 106.811,
+          "end": 107.217,
+          "charStart": 78,
+          "charEnd": 85
+        },
+        {
+          "word": "praise.",
+          "start": 107.217,
+          "end": 108.622,
+          "charStart": 86,
+          "charEnd": 93
+        },
+        {
+          "word": "They",
+          "start": 108.622,
+          "end": 108.843,
+          "charStart": 94,
+          "charEnd": 98
+        },
+        {
+          "word": "are",
+          "start": 108.843,
+          "end": 109.01700000000001,
+          "charStart": 99,
+          "charEnd": 102
+        },
+        {
+          "word": "mixed",
+          "start": 109.01700000000001,
+          "end": 109.656,
+          "charStart": 103,
+          "charEnd": 108
+        },
+        {
+          "word": "with",
+          "start": 109.656,
+          "end": 109.888,
+          "charStart": 109,
+          "charEnd": 113
+        },
+        {
+          "word": "that",
+          "start": 109.888,
+          "end": 110.143,
+          "charStart": 114,
+          "charEnd": 118
+        },
+        {
+          "word": "cowardly",
+          "start": 110.143,
+          "end": 110.75800000000001,
+          "charStart": 119,
+          "charEnd": 127
+        },
+        {
+          "word": "choir",
+          "start": 110.75800000000001,
+          "end": 111.47800000000001,
+          "charStart": 128,
+          "charEnd": 133
+        },
+        {
+          "word": "Of",
+          "start": 111.47800000000001,
+          "end": 111.769,
+          "charStart": 134,
+          "charEnd": 136
+        },
+        {
+          "word": "angels",
+          "start": 111.769,
+          "end": 112.581,
+          "charStart": 137,
+          "charEnd": 143
+        },
+        {
+          "word": "who",
+          "start": 112.581,
+          "end": 112.79,
+          "charStart": 144,
+          "charEnd": 147
+        },
+        {
+          "word": "were",
+          "start": 112.79,
+          "end": 112.964,
+          "charStart": 148,
+          "charEnd": 152
+        },
+        {
+          "word": "neither",
+          "start": 112.964,
+          "end": 113.266,
+          "charStart": 153,
+          "charEnd": 160
+        },
+        {
+          "word": "rebellious",
+          "start": 113.266,
+          "end": 114.102,
+          "charStart": 161,
+          "charEnd": 171
+        },
+        {
+          "word": "Nor",
+          "start": 114.102,
+          "end": 114.369,
+          "charStart": 172,
+          "charEnd": 175
+        },
+        {
+          "word": "faithful",
+          "start": 114.369,
+          "end": 114.88000000000001,
+          "charStart": 176,
+          "charEnd": 184
+        },
+        {
+          "word": "to",
+          "start": 114.88000000000001,
+          "end": 115.019,
+          "charStart": 185,
+          "charEnd": 187
+        },
+        {
+          "word": "God,",
+          "start": 115.019,
+          "end": 115.809,
+          "charStart": 188,
+          "charEnd": 192
+        },
+        {
+          "word": "but",
+          "start": 115.809,
+          "end": 116.087,
+          "charStart": 193,
+          "charEnd": 196
+        },
+        {
+          "word": "served",
+          "start": 116.087,
+          "end": 116.64500000000001,
+          "charStart": 197,
+          "charEnd": 203
+        },
+        {
+          "word": "only",
+          "start": 116.64500000000001,
+          "end": 117.028,
+          "charStart": 204,
+          "charEnd": 208
+        },
+        {
+          "word": "themselves.",
+          "start": 117.028,
+          "end": 118.688,
+          "charStart": 209,
+          "charEnd": 220
+        },
+        {
+          "word": "Heaven",
+          "start": 118.688,
+          "end": 119.129,
+          "charStart": 221,
+          "charEnd": 227
+        },
+        {
+          "word": "cast",
+          "start": 119.129,
+          "end": 119.5,
+          "charStart": 228,
+          "charEnd": 232
+        },
+        {
+          "word": "them",
+          "start": 119.5,
+          "end": 119.686,
+          "charStart": 233,
+          "charEnd": 237
+        },
+        {
+          "word": "out",
+          "start": 119.686,
+          "end": 119.884,
+          "charStart": 238,
+          "charEnd": 241
+        },
+        {
+          "word": "to",
+          "start": 119.884,
+          "end": 120.035,
+          "charStart": 242,
+          "charEnd": 244
+        },
+        {
+          "word": "preserve",
+          "start": 120.035,
+          "end": 120.58000000000001,
+          "charStart": 245,
+          "charEnd": 253
+        },
+        {
+          "word": "its",
+          "start": 120.58000000000001,
+          "end": 120.778,
+          "charStart": 254,
+          "charEnd": 257
+        },
+        {
+          "word": "beauty;",
+          "start": 120.778,
+          "end": 121.602,
+          "charStart": 258,
+          "charEnd": 265
+        },
+        {
+          "word": "The",
+          "start": 121.602,
+          "end": 121.78800000000001,
+          "charStart": 266,
+          "charEnd": 269
+        },
+        {
+          "word": "depths",
+          "start": 121.78800000000001,
+          "end": 122.182,
+          "charStart": 270,
+          "charEnd": 276
+        },
+        {
+          "word": "of",
+          "start": 122.182,
+          "end": 122.333,
+          "charStart": 277,
+          "charEnd": 279
+        },
+        {
+          "word": "Hell",
+          "start": 122.333,
+          "end": 122.682,
+          "charStart": 280,
+          "charEnd": 284
+        },
+        {
+          "word": "won't",
+          "start": 122.682,
+          "end": 122.983,
+          "charStart": 285,
+          "charEnd": 290
+        },
+        {
+          "word": "receive",
+          "start": 122.983,
+          "end": 123.436,
+          "charStart": 291,
+          "charEnd": 298
+        },
+        {
+          "word": "them",
+          "start": 123.436,
+          "end": 123.634,
+          "charStart": 299,
+          "charEnd": 303
+        },
+        {
+          "word": "either,",
+          "start": 123.634,
+          "end": 124.13300000000001,
+          "charStart": 304,
+          "charEnd": 311
+        },
+        {
+          "word": "For",
+          "start": 124.13300000000001,
+          "end": 124.37700000000001,
+          "charStart": 312,
+          "charEnd": 315
+        },
+        {
+          "word": "even",
+          "start": 124.37700000000001,
+          "end": 124.644,
+          "charStart": 316,
+          "charEnd": 320
+        },
+        {
+          "word": "the",
+          "start": 124.644,
+          "end": 124.783,
+          "charStart": 321,
+          "charEnd": 324
+        },
+        {
+          "word": "damned",
+          "start": 124.783,
+          "end": 125.247,
+          "charStart": 325,
+          "charEnd": 331
+        },
+        {
+          "word": "would",
+          "start": 125.247,
+          "end": 125.48,
+          "charStart": 332,
+          "charEnd": 337
+        },
+        {
+          "word": "gain",
+          "start": 125.48,
+          "end": 125.816,
+          "charStart": 338,
+          "charEnd": 342
+        },
+        {
+          "word": "glory",
+          "start": 125.816,
+          "end": 126.36200000000001,
+          "charStart": 343,
+          "charEnd": 348
+        },
+        {
+          "word": "over",
+          "start": 126.36200000000001,
+          "end": 126.617,
+          "charStart": 349,
+          "charEnd": 353
+        },
+        {
+          "word": "them.",
+          "start": 126.617,
+          "end": 127.059,
+          "charStart": 354,
+          "charEnd": 358
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "speaker": "dante",
+      "text": "Master,\" I said, \"what weighs so heavily on them\nThat makes them wail so desperately?",
+      "startTime": 127.059,
+      "endTime": 131.982,
+      "duration": 4.923,
+      "words": [
+        {
+          "word": "Master,\"",
+          "start": 127.059,
+          "end": 127.767,
+          "charStart": 0,
+          "charEnd": 8
+        },
+        {
+          "word": "I",
+          "start": 127.767,
+          "end": 127.907,
+          "charStart": 9,
+          "charEnd": 10
+        },
+        {
+          "word": "said,",
+          "start": 127.907,
+          "end": 128.301,
+          "charStart": 11,
+          "charEnd": 16
+        },
+        {
+          "word": "\"what",
+          "start": 128.301,
+          "end": 128.673,
+          "charStart": 17,
+          "charEnd": 22
+        },
+        {
+          "word": "weighs",
+          "start": 128.673,
+          "end": 128.975,
+          "charStart": 23,
+          "charEnd": 29
+        },
+        {
+          "word": "so",
+          "start": 128.975,
+          "end": 129.207,
+          "charStart": 30,
+          "charEnd": 32
+        },
+        {
+          "word": "heavily",
+          "start": 129.207,
+          "end": 129.59,
+          "charStart": 33,
+          "charEnd": 40
+        },
+        {
+          "word": "on",
+          "start": 129.59,
+          "end": 129.718,
+          "charStart": 41,
+          "charEnd": 43
+        },
+        {
+          "word": "them",
+          "start": 129.718,
+          "end": 129.892,
+          "charStart": 44,
+          "charEnd": 48
+        },
+        {
+          "word": "That",
+          "start": 129.892,
+          "end": 130.078,
+          "charStart": 49,
+          "charEnd": 53
+        },
+        {
+          "word": "makes",
+          "start": 130.078,
+          "end": 130.298,
+          "charStart": 54,
+          "charEnd": 59
+        },
+        {
+          "word": "them",
+          "start": 130.298,
+          "end": 130.554,
+          "charStart": 60,
+          "charEnd": 64
+        },
+        {
+          "word": "wail",
+          "start": 130.554,
+          "end": 130.937,
+          "charStart": 65,
+          "charEnd": 69
+        },
+        {
+          "word": "so",
+          "start": 130.937,
+          "end": 131.157,
+          "charStart": 70,
+          "charEnd": 72
+        },
+        {
+          "word": "desperately?",
+          "start": 131.157,
+          "end": 131.982,
+          "charStart": 73,
+          "charEnd": 84
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "speaker": "dante",
+      "text": "He replied:",
+      "startTime": 131.982,
+      "endTime": 133.05,
+      "duration": 1.068,
+      "words": [
+        {
+          "word": "He",
+          "start": 131.982,
+          "end": 132.284,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "replied:",
+          "start": 132.284,
+          "end": 133.05,
+          "charStart": 3,
+          "charEnd": 10
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "speaker": "virgil",
+      "text": "I'll tell you briefly.\nThese souls no longer hope for death,\nAnd their blind life is so degraded\nThey envy every other fate.\nThe world allows no memory of them;\nBoth mercy and justice scorn them.\nLet's not speak of them—just look and pass on.",
+      "startTime": 133.05,
+      "endTime": 151.76500000000001,
+      "duration": 18.715,
+      "words": [
+        {
+          "word": "I'll",
+          "start": 133.05,
+          "end": 133.43300000000002,
+          "charStart": 0,
+          "charEnd": 4
+        },
+        {
+          "word": "tell",
+          "start": 133.43300000000002,
+          "end": 133.64200000000002,
+          "charStart": 5,
+          "charEnd": 9
+        },
+        {
+          "word": "you",
+          "start": 133.64200000000002,
+          "end": 133.781,
+          "charStart": 10,
+          "charEnd": 13
+        },
+        {
+          "word": "briefly.",
+          "start": 133.781,
+          "end": 135.12800000000001,
+          "charStart": 14,
+          "charEnd": 22
+        },
+        {
+          "word": "These",
+          "start": 135.12800000000001,
+          "end": 135.453,
+          "charStart": 23,
+          "charEnd": 28
+        },
+        {
+          "word": "souls",
+          "start": 135.453,
+          "end": 135.918,
+          "charStart": 29,
+          "charEnd": 34
+        },
+        {
+          "word": "no",
+          "start": 135.918,
+          "end": 136.103,
+          "charStart": 35,
+          "charEnd": 37
+        },
+        {
+          "word": "longer",
+          "start": 136.103,
+          "end": 136.46300000000002,
+          "charStart": 38,
+          "charEnd": 44
+        },
+        {
+          "word": "hope",
+          "start": 136.46300000000002,
+          "end": 136.71900000000002,
+          "charStart": 45,
+          "charEnd": 49
+        },
+        {
+          "word": "for",
+          "start": 136.71900000000002,
+          "end": 136.91600000000003,
+          "charStart": 50,
+          "charEnd": 53
+        },
+        {
+          "word": "death,",
+          "start": 136.91600000000003,
+          "end": 137.65900000000002,
+          "charStart": 54,
+          "charEnd": 60
+        },
+        {
+          "word": "And",
+          "start": 137.65900000000002,
+          "end": 137.845,
+          "charStart": 61,
+          "charEnd": 64
+        },
+        {
+          "word": "their",
+          "start": 137.845,
+          "end": 138.042,
+          "charStart": 65,
+          "charEnd": 70
+        },
+        {
+          "word": "blind",
+          "start": 138.042,
+          "end": 138.449,
+          "charStart": 71,
+          "charEnd": 76
+        },
+        {
+          "word": "life",
+          "start": 138.449,
+          "end": 138.79700000000003,
+          "charStart": 77,
+          "charEnd": 81
+        },
+        {
+          "word": "is",
+          "start": 138.79700000000003,
+          "end": 138.959,
+          "charStart": 82,
+          "charEnd": 84
+        },
+        {
+          "word": "so",
+          "start": 138.959,
+          "end": 139.215,
+          "charStart": 85,
+          "charEnd": 87
+        },
+        {
+          "word": "degraded",
+          "start": 139.215,
+          "end": 139.83,
+          "charStart": 88,
+          "charEnd": 96
+        },
+        {
+          "word": "They",
+          "start": 139.83,
+          "end": 140.062,
+          "charStart": 97,
+          "charEnd": 101
+        },
+        {
+          "word": "envy",
+          "start": 140.062,
+          "end": 140.50400000000002,
+          "charStart": 102,
+          "charEnd": 106
+        },
+        {
+          "word": "every",
+          "start": 140.50400000000002,
+          "end": 140.887,
+          "charStart": 107,
+          "charEnd": 112
+        },
+        {
+          "word": "other",
+          "start": 140.887,
+          "end": 141.16500000000002,
+          "charStart": 113,
+          "charEnd": 118
+        },
+        {
+          "word": "fate.",
+          "start": 141.16500000000002,
+          "end": 142.175,
+          "charStart": 119,
+          "charEnd": 124
+        },
+        {
+          "word": "The",
+          "start": 142.175,
+          "end": 142.36100000000002,
+          "charStart": 125,
+          "charEnd": 128
+        },
+        {
+          "word": "world",
+          "start": 142.36100000000002,
+          "end": 142.698,
+          "charStart": 129,
+          "charEnd": 134
+        },
+        {
+          "word": "allows",
+          "start": 142.698,
+          "end": 143.209,
+          "charStart": 135,
+          "charEnd": 141
+        },
+        {
+          "word": "no",
+          "start": 143.209,
+          "end": 143.51100000000002,
+          "charStart": 142,
+          "charEnd": 144
+        },
+        {
+          "word": "memory",
+          "start": 143.51100000000002,
+          "end": 143.96300000000002,
+          "charStart": 145,
+          "charEnd": 151
+        },
+        {
+          "word": "of",
+          "start": 143.96300000000002,
+          "end": 144.103,
+          "charStart": 152,
+          "charEnd": 154
+        },
+        {
+          "word": "them;",
+          "start": 144.103,
+          "end": 144.823,
+          "charStart": 155,
+          "charEnd": 160
+        },
+        {
+          "word": "Both",
+          "start": 144.823,
+          "end": 145.14800000000002,
+          "charStart": 161,
+          "charEnd": 165
+        },
+        {
+          "word": "mercy",
+          "start": 145.14800000000002,
+          "end": 145.64700000000002,
+          "charStart": 166,
+          "charEnd": 171
+        },
+        {
+          "word": "and",
+          "start": 145.64700000000002,
+          "end": 145.87900000000002,
+          "charStart": 172,
+          "charEnd": 175
+        },
+        {
+          "word": "justice",
+          "start": 145.87900000000002,
+          "end": 146.436,
+          "charStart": 176,
+          "charEnd": 183
+        },
+        {
+          "word": "scorn",
+          "start": 146.436,
+          "end": 146.866,
+          "charStart": 184,
+          "charEnd": 189
+        },
+        {
+          "word": "them.",
+          "start": 146.866,
+          "end": 147.74800000000002,
+          "charStart": 190,
+          "charEnd": 195
+        },
+        {
+          "word": "Let's",
+          "start": 147.74800000000002,
+          "end": 148.01500000000001,
+          "charStart": 196,
+          "charEnd": 201
+        },
+        {
+          "word": "not",
+          "start": 148.01500000000001,
+          "end": 148.21300000000002,
+          "charStart": 202,
+          "charEnd": 205
+        },
+        {
+          "word": "speak",
+          "start": 148.21300000000002,
+          "end": 148.538,
+          "charStart": 206,
+          "charEnd": 211
+        },
+        {
+          "word": "of",
+          "start": 148.538,
+          "end": 148.654,
+          "charStart": 212,
+          "charEnd": 214
+        },
+        {
+          "word": "them—just",
+          "start": 148.654,
+          "end": 149.60600000000002,
+          "charStart": 215,
+          "charEnd": 224
+        },
+        {
+          "word": "look",
+          "start": 149.60600000000002,
+          "end": 150.151,
+          "charStart": 225,
+          "charEnd": 229
+        },
+        {
+          "word": "and",
+          "start": 150.151,
+          "end": 150.5,
+          "charStart": 230,
+          "charEnd": 233
+        },
+        {
+          "word": "pass",
+          "start": 150.5,
+          "end": 150.895,
+          "charStart": 234,
+          "charEnd": 238
+        },
+        {
+          "word": "on.",
+          "start": 150.895,
+          "end": 151.76500000000001,
+          "charStart": 239,
+          "charEnd": 241
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "narrator",
+      "text": "Looking again, I saw a banner\nWhirling and racing forward so rapidly\nIt seemed to scorn all rest.\nBehind it came such a long procession\nOf people that I never would have believed\nDeath had undone so many.\nAfter I recognized some among them,\nI saw and knew the shadow of the one\nWho made the great refusal through cowardice.\nAt once I understood and was certain\nThis was the sect of worthless wretches\nHateful to God and to his enemies.\nThese miserable souls, who were never truly alive,\nWere naked and constantly stung\nBy wasps and hornets.\nThe insects streaked their faces with blood\nWhich, mixed with tears, fell to their feet\nWhere disgusting worms gathered it up.\nWhen I looked farther ahead,\nI saw people on the bank of a great river.",
+      "startTime": 151.76500000000001,
+      "endTime": 198.71500000000003,
+      "duration": 46.95,
+      "words": [
+        {
+          "word": "Looking",
+          "start": 151.76500000000001,
+          "end": 152.14800000000002,
+          "charStart": 0,
+          "charEnd": 7
+        },
+        {
+          "word": "again,",
+          "start": 152.14800000000002,
+          "end": 152.81,
+          "charStart": 8,
+          "charEnd": 14
+        },
+        {
+          "word": "I",
+          "start": 152.81,
+          "end": 152.961,
+          "charStart": 15,
+          "charEnd": 16
+        },
+        {
+          "word": "saw",
+          "start": 152.961,
+          "end": 153.205,
+          "charStart": 17,
+          "charEnd": 20
+        },
+        {
+          "word": "a",
+          "start": 153.205,
+          "end": 153.286,
+          "charStart": 21,
+          "charEnd": 22
+        },
+        {
+          "word": "banner",
+          "start": 153.286,
+          "end": 153.64600000000002,
+          "charStart": 23,
+          "charEnd": 29
+        },
+        {
+          "word": "Whirling",
+          "start": 153.64600000000002,
+          "end": 154.07500000000002,
+          "charStart": 30,
+          "charEnd": 38
+        },
+        {
+          "word": "and",
+          "start": 154.07500000000002,
+          "end": 154.22600000000003,
+          "charStart": 39,
+          "charEnd": 42
+        },
+        {
+          "word": "racing",
+          "start": 154.22600000000003,
+          "end": 154.621,
+          "charStart": 43,
+          "charEnd": 49
+        },
+        {
+          "word": "forward",
+          "start": 154.621,
+          "end": 155.00400000000002,
+          "charStart": 50,
+          "charEnd": 57
+        },
+        {
+          "word": "so",
+          "start": 155.00400000000002,
+          "end": 155.24800000000002,
+          "charStart": 58,
+          "charEnd": 60
+        },
+        {
+          "word": "rapidly",
+          "start": 155.24800000000002,
+          "end": 155.75900000000001,
+          "charStart": 61,
+          "charEnd": 68
+        },
+        {
+          "word": "It",
+          "start": 155.75900000000001,
+          "end": 155.87500000000003,
+          "charStart": 69,
+          "charEnd": 71
+        },
+        {
+          "word": "seemed",
+          "start": 155.87500000000003,
+          "end": 156.14200000000002,
+          "charStart": 72,
+          "charEnd": 78
+        },
+        {
+          "word": "to",
+          "start": 156.14200000000002,
+          "end": 156.246,
+          "charStart": 79,
+          "charEnd": 81
+        },
+        {
+          "word": "scorn",
+          "start": 156.246,
+          "end": 156.64100000000002,
+          "charStart": 82,
+          "charEnd": 87
+        },
+        {
+          "word": "all",
+          "start": 156.64100000000002,
+          "end": 156.85000000000002,
+          "charStart": 88,
+          "charEnd": 91
+        },
+        {
+          "word": "rest.",
+          "start": 156.85000000000002,
+          "end": 157.84900000000002,
+          "charStart": 92,
+          "charEnd": 97
+        },
+        {
+          "word": "Behind",
+          "start": 157.84900000000002,
+          "end": 158.27800000000002,
+          "charStart": 98,
+          "charEnd": 104
+        },
+        {
+          "word": "it",
+          "start": 158.27800000000002,
+          "end": 158.406,
+          "charStart": 105,
+          "charEnd": 107
+        },
+        {
+          "word": "came",
+          "start": 158.406,
+          "end": 158.661,
+          "charStart": 108,
+          "charEnd": 112
+        },
+        {
+          "word": "such",
+          "start": 158.661,
+          "end": 158.882,
+          "charStart": 113,
+          "charEnd": 117
+        },
+        {
+          "word": "a",
+          "start": 158.882,
+          "end": 158.97500000000002,
+          "charStart": 118,
+          "charEnd": 119
+        },
+        {
+          "word": "long",
+          "start": 158.97500000000002,
+          "end": 159.26500000000001,
+          "charStart": 120,
+          "charEnd": 124
+        },
+        {
+          "word": "procession",
+          "start": 159.26500000000001,
+          "end": 159.764,
+          "charStart": 125,
+          "charEnd": 135
+        },
+        {
+          "word": "Of",
+          "start": 159.764,
+          "end": 159.88000000000002,
+          "charStart": 136,
+          "charEnd": 138
+        },
+        {
+          "word": "people",
+          "start": 159.88000000000002,
+          "end": 160.217,
+          "charStart": 139,
+          "charEnd": 145
+        },
+        {
+          "word": "that",
+          "start": 160.217,
+          "end": 160.38000000000002,
+          "charStart": 146,
+          "charEnd": 150
+        },
+        {
+          "word": "I",
+          "start": 160.38000000000002,
+          "end": 160.519,
+          "charStart": 151,
+          "charEnd": 152
+        },
+        {
+          "word": "never",
+          "start": 160.519,
+          "end": 160.751,
+          "charStart": 153,
+          "charEnd": 158
+        },
+        {
+          "word": "would",
+          "start": 160.751,
+          "end": 160.90200000000002,
+          "charStart": 159,
+          "charEnd": 164
+        },
+        {
+          "word": "have",
+          "start": 160.90200000000002,
+          "end": 161.01800000000003,
+          "charStart": 165,
+          "charEnd": 169
+        },
+        {
+          "word": "believed",
+          "start": 161.01800000000003,
+          "end": 161.448,
+          "charStart": 170,
+          "charEnd": 178
+        },
+        {
+          "word": "Death",
+          "start": 161.448,
+          "end": 161.72600000000003,
+          "charStart": 179,
+          "charEnd": 184
+        },
+        {
+          "word": "had",
+          "start": 161.72600000000003,
+          "end": 161.889,
+          "charStart": 185,
+          "charEnd": 188
+        },
+        {
+          "word": "undone",
+          "start": 161.889,
+          "end": 162.26000000000002,
+          "charStart": 189,
+          "charEnd": 195
+        },
+        {
+          "word": "so",
+          "start": 162.26000000000002,
+          "end": 162.45800000000003,
+          "charStart": 196,
+          "charEnd": 198
+        },
+        {
+          "word": "many.",
+          "start": 162.45800000000003,
+          "end": 163.22400000000002,
+          "charStart": 199,
+          "charEnd": 204
+        },
+        {
+          "word": "After",
+          "start": 163.22400000000002,
+          "end": 163.538,
+          "charStart": 205,
+          "charEnd": 210
+        },
+        {
+          "word": "I",
+          "start": 163.538,
+          "end": 163.67700000000002,
+          "charStart": 211,
+          "charEnd": 212
+        },
+        {
+          "word": "recognized",
+          "start": 163.67700000000002,
+          "end": 164.269,
+          "charStart": 213,
+          "charEnd": 223
+        },
+        {
+          "word": "some",
+          "start": 164.269,
+          "end": 164.501,
+          "charStart": 224,
+          "charEnd": 228
+        },
+        {
+          "word": "among",
+          "start": 164.501,
+          "end": 164.77900000000002,
+          "charStart": 229,
+          "charEnd": 234
+        },
+        {
+          "word": "them,",
+          "start": 164.77900000000002,
+          "end": 165.03500000000003,
+          "charStart": 235,
+          "charEnd": 240
+        },
+        {
+          "word": "I",
+          "start": 165.03500000000003,
+          "end": 165.197,
+          "charStart": 241,
+          "charEnd": 242
+        },
+        {
+          "word": "saw",
+          "start": 165.197,
+          "end": 165.58,
+          "charStart": 243,
+          "charEnd": 246
+        },
+        {
+          "word": "and",
+          "start": 165.58,
+          "end": 165.75500000000002,
+          "charStart": 247,
+          "charEnd": 250
+        },
+        {
+          "word": "knew",
+          "start": 165.75500000000002,
+          "end": 166.18400000000003,
+          "charStart": 251,
+          "charEnd": 255
+        },
+        {
+          "word": "the",
+          "start": 166.18400000000003,
+          "end": 166.347,
+          "charStart": 256,
+          "charEnd": 259
+        },
+        {
+          "word": "shadow",
+          "start": 166.347,
+          "end": 166.776,
+          "charStart": 260,
+          "charEnd": 266
+        },
+        {
+          "word": "of",
+          "start": 166.776,
+          "end": 166.89200000000002,
+          "charStart": 267,
+          "charEnd": 269
+        },
+        {
+          "word": "the",
+          "start": 166.89200000000002,
+          "end": 167.043,
+          "charStart": 270,
+          "charEnd": 273
+        },
+        {
+          "word": "one",
+          "start": 167.043,
+          "end": 167.31,
+          "charStart": 274,
+          "charEnd": 277
+        },
+        {
+          "word": "Who",
+          "start": 167.31,
+          "end": 167.473,
+          "charStart": 278,
+          "charEnd": 281
+        },
+        {
+          "word": "made",
+          "start": 167.473,
+          "end": 167.67000000000002,
+          "charStart": 282,
+          "charEnd": 286
+        },
+        {
+          "word": "the",
+          "start": 167.67000000000002,
+          "end": 167.786,
+          "charStart": 287,
+          "charEnd": 290
+        },
+        {
+          "word": "great",
+          "start": 167.786,
+          "end": 168.07700000000003,
+          "charStart": 291,
+          "charEnd": 296
+        },
+        {
+          "word": "refusal",
+          "start": 168.07700000000003,
+          "end": 168.68,
+          "charStart": 297,
+          "charEnd": 304
+        },
+        {
+          "word": "through",
+          "start": 168.68,
+          "end": 168.971,
+          "charStart": 305,
+          "charEnd": 312
+        },
+        {
+          "word": "cowardice.",
+          "start": 168.971,
+          "end": 170.364,
+          "charStart": 313,
+          "charEnd": 323
+        },
+        {
+          "word": "At",
+          "start": 170.364,
+          "end": 170.584,
+          "charStart": 324,
+          "charEnd": 326
+        },
+        {
+          "word": "once",
+          "start": 170.584,
+          "end": 170.94400000000002,
+          "charStart": 327,
+          "charEnd": 331
+        },
+        {
+          "word": "I",
+          "start": 170.94400000000002,
+          "end": 171.10700000000003,
+          "charStart": 332,
+          "charEnd": 333
+        },
+        {
+          "word": "understood",
+          "start": 171.10700000000003,
+          "end": 171.687,
+          "charStart": 334,
+          "charEnd": 344
+        },
+        {
+          "word": "and",
+          "start": 171.687,
+          "end": 171.82700000000003,
+          "charStart": 345,
+          "charEnd": 348
+        },
+        {
+          "word": "was",
+          "start": 171.82700000000003,
+          "end": 172.012,
+          "charStart": 349,
+          "charEnd": 352
+        },
+        {
+          "word": "certain",
+          "start": 172.012,
+          "end": 172.512,
+          "charStart": 353,
+          "charEnd": 360
+        },
+        {
+          "word": "This",
+          "start": 172.512,
+          "end": 172.80200000000002,
+          "charStart": 361,
+          "charEnd": 365
+        },
+        {
+          "word": "was",
+          "start": 172.80200000000002,
+          "end": 173.05700000000002,
+          "charStart": 366,
+          "charEnd": 369
+        },
+        {
+          "word": "the",
+          "start": 173.05700000000002,
+          "end": 173.20800000000003,
+          "charStart": 370,
+          "charEnd": 373
+        },
+        {
+          "word": "sect",
+          "start": 173.20800000000003,
+          "end": 173.556,
+          "charStart": 374,
+          "charEnd": 378
+        },
+        {
+          "word": "of",
+          "start": 173.556,
+          "end": 173.71900000000002,
+          "charStart": 379,
+          "charEnd": 381
+        },
+        {
+          "word": "worthless",
+          "start": 173.71900000000002,
+          "end": 174.25300000000001,
+          "charStart": 382,
+          "charEnd": 391
+        },
+        {
+          "word": "wretches",
+          "start": 174.25300000000001,
+          "end": 174.91500000000002,
+          "charStart": 392,
+          "charEnd": 400
+        },
+        {
+          "word": "Hateful",
+          "start": 174.91500000000002,
+          "end": 175.40200000000002,
+          "charStart": 401,
+          "charEnd": 408
+        },
+        {
+          "word": "to",
+          "start": 175.40200000000002,
+          "end": 175.54200000000003,
+          "charStart": 409,
+          "charEnd": 411
+        },
+        {
+          "word": "God",
+          "start": 175.54200000000003,
+          "end": 175.87800000000001,
+          "charStart": 412,
+          "charEnd": 415
+        },
+        {
+          "word": "and",
+          "start": 175.87800000000001,
+          "end": 176.01800000000003,
+          "charStart": 416,
+          "charEnd": 419
+        },
+        {
+          "word": "to",
+          "start": 176.01800000000003,
+          "end": 176.18,
+          "charStart": 420,
+          "charEnd": 422
+        },
+        {
+          "word": "his",
+          "start": 176.18,
+          "end": 176.34300000000002,
+          "charStart": 423,
+          "charEnd": 426
+        },
+        {
+          "word": "enemies.",
+          "start": 176.34300000000002,
+          "end": 177.597,
+          "charStart": 427,
+          "charEnd": 435
+        },
+        {
+          "word": "These",
+          "start": 177.597,
+          "end": 177.93300000000002,
+          "charStart": 436,
+          "charEnd": 441
+        },
+        {
+          "word": "miserable",
+          "start": 177.93300000000002,
+          "end": 178.467,
+          "charStart": 442,
+          "charEnd": 451
+        },
+        {
+          "word": "souls,",
+          "start": 178.467,
+          "end": 178.93200000000002,
+          "charStart": 452,
+          "charEnd": 458
+        },
+        {
+          "word": "who",
+          "start": 178.93200000000002,
+          "end": 179.09400000000002,
+          "charStart": 459,
+          "charEnd": 462
+        },
+        {
+          "word": "were",
+          "start": 179.09400000000002,
+          "end": 179.28000000000003,
+          "charStart": 463,
+          "charEnd": 467
+        },
+        {
+          "word": "never",
+          "start": 179.28000000000003,
+          "end": 179.61700000000002,
+          "charStart": 468,
+          "charEnd": 473
+        },
+        {
+          "word": "truly",
+          "start": 179.61700000000002,
+          "end": 180.08100000000002,
+          "charStart": 474,
+          "charEnd": 479
+        },
+        {
+          "word": "alive,",
+          "start": 180.08100000000002,
+          "end": 181.02200000000002,
+          "charStart": 480,
+          "charEnd": 486
+        },
+        {
+          "word": "Were",
+          "start": 181.02200000000002,
+          "end": 181.25400000000002,
+          "charStart": 487,
+          "charEnd": 491
+        },
+        {
+          "word": "naked",
+          "start": 181.25400000000002,
+          "end": 181.788,
+          "charStart": 492,
+          "charEnd": 497
+        },
+        {
+          "word": "and",
+          "start": 181.788,
+          "end": 182.055,
+          "charStart": 498,
+          "charEnd": 501
+        },
+        {
+          "word": "constantly",
+          "start": 182.055,
+          "end": 182.74,
+          "charStart": 502,
+          "charEnd": 512
+        },
+        {
+          "word": "stung",
+          "start": 182.74,
+          "end": 183.29700000000003,
+          "charStart": 513,
+          "charEnd": 518
+        },
+        {
+          "word": "By",
+          "start": 183.29700000000003,
+          "end": 183.57600000000002,
+          "charStart": 519,
+          "charEnd": 521
+        },
+        {
+          "word": "wasps",
+          "start": 183.57600000000002,
+          "end": 184.26100000000002,
+          "charStart": 522,
+          "charEnd": 527
+        },
+        {
+          "word": "and",
+          "start": 184.26100000000002,
+          "end": 184.48100000000002,
+          "charStart": 528,
+          "charEnd": 531
+        },
+        {
+          "word": "hornets.",
+          "start": 184.48100000000002,
+          "end": 185.93300000000002,
+          "charStart": 532,
+          "charEnd": 540
+        },
+        {
+          "word": "The",
+          "start": 185.93300000000002,
+          "end": 186.16500000000002,
+          "charStart": 541,
+          "charEnd": 544
+        },
+        {
+          "word": "insects",
+          "start": 186.16500000000002,
+          "end": 186.85000000000002,
+          "charStart": 545,
+          "charEnd": 552
+        },
+        {
+          "word": "streaked",
+          "start": 186.85000000000002,
+          "end": 187.29100000000003,
+          "charStart": 553,
+          "charEnd": 561
+        },
+        {
+          "word": "their",
+          "start": 187.29100000000003,
+          "end": 187.5,
+          "charStart": 562,
+          "charEnd": 567
+        },
+        {
+          "word": "faces",
+          "start": 187.5,
+          "end": 187.95300000000003,
+          "charStart": 568,
+          "charEnd": 573
+        },
+        {
+          "word": "with",
+          "start": 187.95300000000003,
+          "end": 188.139,
+          "charStart": 574,
+          "charEnd": 578
+        },
+        {
+          "word": "blood",
+          "start": 188.139,
+          "end": 188.661,
+          "charStart": 579,
+          "charEnd": 584
+        },
+        {
+          "word": "Which,",
+          "start": 188.661,
+          "end": 188.97400000000002,
+          "charStart": 585,
+          "charEnd": 591
+        },
+        {
+          "word": "mixed",
+          "start": 188.97400000000002,
+          "end": 189.276,
+          "charStart": 592,
+          "charEnd": 597
+        },
+        {
+          "word": "with",
+          "start": 189.276,
+          "end": 189.47400000000002,
+          "charStart": 598,
+          "charEnd": 602
+        },
+        {
+          "word": "tears,",
+          "start": 189.47400000000002,
+          "end": 190.275,
+          "charStart": 603,
+          "charEnd": 609
+        },
+        {
+          "word": "fell",
+          "start": 190.275,
+          "end": 190.553,
+          "charStart": 610,
+          "charEnd": 614
+        },
+        {
+          "word": "to",
+          "start": 190.553,
+          "end": 190.67000000000002,
+          "charStart": 615,
+          "charEnd": 617
+        },
+        {
+          "word": "their",
+          "start": 190.67000000000002,
+          "end": 190.86700000000002,
+          "charStart": 618,
+          "charEnd": 623
+        },
+        {
+          "word": "feet",
+          "start": 190.86700000000002,
+          "end": 191.30800000000002,
+          "charStart": 624,
+          "charEnd": 628
+        },
+        {
+          "word": "Where",
+          "start": 191.30800000000002,
+          "end": 191.55200000000002,
+          "charStart": 629,
+          "charEnd": 634
+        },
+        {
+          "word": "disgusting",
+          "start": 191.55200000000002,
+          "end": 192.24800000000002,
+          "charStart": 635,
+          "charEnd": 645
+        },
+        {
+          "word": "worms",
+          "start": 192.24800000000002,
+          "end": 192.817,
+          "charStart": 646,
+          "charEnd": 651
+        },
+        {
+          "word": "gathered",
+          "start": 192.817,
+          "end": 193.235,
+          "charStart": 652,
+          "charEnd": 660
+        },
+        {
+          "word": "it",
+          "start": 193.235,
+          "end": 193.375,
+          "charStart": 661,
+          "charEnd": 663
+        },
+        {
+          "word": "up.",
+          "start": 193.375,
+          "end": 194.58200000000002,
+          "charStart": 664,
+          "charEnd": 667
+        },
+        {
+          "word": "When",
+          "start": 194.58200000000002,
+          "end": 194.803,
+          "charStart": 668,
+          "charEnd": 672
+        },
+        {
+          "word": "I",
+          "start": 194.803,
+          "end": 194.907,
+          "charStart": 673,
+          "charEnd": 674
+        },
+        {
+          "word": "looked",
+          "start": 194.907,
+          "end": 195.186,
+          "charStart": 675,
+          "charEnd": 681
+        },
+        {
+          "word": "farther",
+          "start": 195.186,
+          "end": 195.615,
+          "charStart": 682,
+          "charEnd": 689
+        },
+        {
+          "word": "ahead,",
+          "start": 195.615,
+          "end": 196.47500000000002,
+          "charStart": 690,
+          "charEnd": 696
+        },
+        {
+          "word": "I",
+          "start": 196.47500000000002,
+          "end": 196.614,
+          "charStart": 697,
+          "charEnd": 698
+        },
+        {
+          "word": "saw",
+          "start": 196.614,
+          "end": 196.858,
+          "charStart": 699,
+          "charEnd": 702
+        },
+        {
+          "word": "people",
+          "start": 196.858,
+          "end": 197.18300000000002,
+          "charStart": 703,
+          "charEnd": 709
+        },
+        {
+          "word": "on",
+          "start": 197.18300000000002,
+          "end": 197.287,
+          "charStart": 710,
+          "charEnd": 712
+        },
+        {
+          "word": "the",
+          "start": 197.287,
+          "end": 197.40300000000002,
+          "charStart": 713,
+          "charEnd": 716
+        },
+        {
+          "word": "bank",
+          "start": 197.40300000000002,
+          "end": 197.67000000000002,
+          "charStart": 717,
+          "charEnd": 721
+        },
+        {
+          "word": "of",
+          "start": 197.67000000000002,
+          "end": 197.775,
+          "charStart": 722,
+          "charEnd": 724
+        },
+        {
+          "word": "a",
+          "start": 197.775,
+          "end": 197.85600000000002,
+          "charStart": 725,
+          "charEnd": 726
+        },
+        {
+          "word": "great",
+          "start": 197.85600000000002,
+          "end": 198.17000000000002,
+          "charStart": 727,
+          "charEnd": 732
+        },
+        {
+          "word": "river.",
+          "start": 198.17000000000002,
+          "end": 198.71500000000003,
+          "charStart": 733,
+          "charEnd": 738
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "speaker": "dante",
+      "text": "Master,\" I said, \"please grant me this—\nLet me know who these are, and what law\nMakes them seem so eager to cross over,\nAs I can see in this dim light.",
+      "startTime": 198.71500000000003,
+      "endTime": 208.42100000000002,
+      "duration": 9.706,
+      "words": [
+        {
+          "word": "Master,\"",
+          "start": 198.71500000000003,
+          "end": 199.47000000000003,
+          "charStart": 0,
+          "charEnd": 8
+        },
+        {
+          "word": "I",
+          "start": 199.47000000000003,
+          "end": 199.63200000000003,
+          "charStart": 9,
+          "charEnd": 10
+        },
+        {
+          "word": "said,",
+          "start": 199.63200000000003,
+          "end": 199.98000000000002,
+          "charStart": 11,
+          "charEnd": 16
+        },
+        {
+          "word": "\"please",
+          "start": 199.98000000000002,
+          "end": 200.42200000000003,
+          "charStart": 17,
+          "charEnd": 24
+        },
+        {
+          "word": "grant",
+          "start": 200.42200000000003,
+          "end": 200.70000000000005,
+          "charStart": 25,
+          "charEnd": 30
+        },
+        {
+          "word": "me",
+          "start": 200.70000000000005,
+          "end": 200.85100000000003,
+          "charStart": 31,
+          "charEnd": 33
+        },
+        {
+          "word": "this—",
+          "start": 200.85100000000003,
+          "end": 201.49000000000004,
+          "charStart": 34,
+          "charEnd": 39
+        },
+        {
+          "word": "Let",
+          "start": 201.49000000000004,
+          "end": 201.72200000000004,
+          "charStart": 40,
+          "charEnd": 43
+        },
+        {
+          "word": "me",
+          "start": 201.72200000000004,
+          "end": 201.88500000000002,
+          "charStart": 44,
+          "charEnd": 46
+        },
+        {
+          "word": "know",
+          "start": 201.88500000000002,
+          "end": 202.14000000000004,
+          "charStart": 47,
+          "charEnd": 51
+        },
+        {
+          "word": "who",
+          "start": 202.14000000000004,
+          "end": 202.39500000000004,
+          "charStart": 52,
+          "charEnd": 55
+        },
+        {
+          "word": "these",
+          "start": 202.39500000000004,
+          "end": 202.68600000000004,
+          "charStart": 56,
+          "charEnd": 61
+        },
+        {
+          "word": "are,",
+          "start": 202.68600000000004,
+          "end": 203.06900000000005,
+          "charStart": 62,
+          "charEnd": 66
+        },
+        {
+          "word": "and",
+          "start": 203.06900000000005,
+          "end": 203.30100000000004,
+          "charStart": 67,
+          "charEnd": 70
+        },
+        {
+          "word": "what",
+          "start": 203.30100000000004,
+          "end": 203.59100000000004,
+          "charStart": 71,
+          "charEnd": 75
+        },
+        {
+          "word": "law",
+          "start": 203.59100000000004,
+          "end": 203.97400000000005,
+          "charStart": 76,
+          "charEnd": 79
+        },
+        {
+          "word": "Makes",
+          "start": 203.97400000000005,
+          "end": 204.25300000000004,
+          "charStart": 80,
+          "charEnd": 85
+        },
+        {
+          "word": "them",
+          "start": 204.25300000000004,
+          "end": 204.47400000000005,
+          "charStart": 86,
+          "charEnd": 90
+        },
+        {
+          "word": "seem",
+          "start": 204.47400000000005,
+          "end": 204.77500000000003,
+          "charStart": 91,
+          "charEnd": 95
+        },
+        {
+          "word": "so",
+          "start": 204.77500000000003,
+          "end": 205.03100000000003,
+          "charStart": 96,
+          "charEnd": 98
+        },
+        {
+          "word": "eager",
+          "start": 205.03100000000003,
+          "end": 205.36800000000002,
+          "charStart": 99,
+          "charEnd": 104
+        },
+        {
+          "word": "to",
+          "start": 205.36800000000002,
+          "end": 205.47200000000004,
+          "charStart": 105,
+          "charEnd": 107
+        },
+        {
+          "word": "cross",
+          "start": 205.47200000000004,
+          "end": 205.84400000000002,
+          "charStart": 108,
+          "charEnd": 113
+        },
+        {
+          "word": "over,",
+          "start": 205.84400000000002,
+          "end": 206.22700000000003,
+          "charStart": 114,
+          "charEnd": 119
+        },
+        {
+          "word": "As",
+          "start": 206.22700000000003,
+          "end": 206.43600000000004,
+          "charStart": 120,
+          "charEnd": 122
+        },
+        {
+          "word": "I",
+          "start": 206.43600000000004,
+          "end": 206.52900000000002,
+          "charStart": 123,
+          "charEnd": 124
+        },
+        {
+          "word": "can",
+          "start": 206.52900000000002,
+          "end": 206.74900000000002,
+          "charStart": 125,
+          "charEnd": 128
+        },
+        {
+          "word": "see",
+          "start": 206.74900000000002,
+          "end": 207.16700000000003,
+          "charStart": 129,
+          "charEnd": 132
+        },
+        {
+          "word": "in",
+          "start": 207.16700000000003,
+          "end": 207.41100000000003,
+          "charStart": 133,
+          "charEnd": 135
+        },
+        {
+          "word": "this",
+          "start": 207.41100000000003,
+          "end": 207.63100000000003,
+          "charStart": 136,
+          "charEnd": 140
+        },
+        {
+          "word": "dim",
+          "start": 207.63100000000003,
+          "end": 207.92200000000003,
+          "charStart": 141,
+          "charEnd": 144
+        },
+        {
+          "word": "light.",
+          "start": 207.92200000000003,
+          "end": 208.42100000000002,
+          "charStart": 145,
+          "charEnd": 150
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "speaker": "dante",
+      "text": "He answered:",
+      "startTime": 208.42100000000002,
+      "endTime": 209.675,
+      "duration": 1.254,
+      "words": [
+        {
+          "word": "He",
+          "start": 208.42100000000002,
+          "end": 208.734,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "answered:",
+          "start": 208.734,
+          "end": 209.675,
+          "charStart": 3,
+          "charEnd": 11
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "speaker": "virgil",
+      "text": "These things will all be revealed\nWhen we stop walking\nOn the sorrowful shore of Acheron.",
+      "startTime": 209.675,
+      "endTime": 215.573,
+      "duration": 5.898,
+      "words": [
+        {
+          "word": "These",
+          "start": 209.675,
+          "end": 209.988,
+          "charStart": 0,
+          "charEnd": 5
+        },
+        {
+          "word": "things",
+          "start": 209.988,
+          "end": 210.33700000000002,
+          "charStart": 6,
+          "charEnd": 12
+        },
+        {
+          "word": "will",
+          "start": 210.33700000000002,
+          "end": 210.56900000000002,
+          "charStart": 13,
+          "charEnd": 17
+        },
+        {
+          "word": "all",
+          "start": 210.56900000000002,
+          "end": 210.859,
+          "charStart": 18,
+          "charEnd": 21
+        },
+        {
+          "word": "be",
+          "start": 210.859,
+          "end": 211.02200000000002,
+          "charStart": 22,
+          "charEnd": 24
+        },
+        {
+          "word": "revealed",
+          "start": 211.02200000000002,
+          "end": 211.71800000000002,
+          "charStart": 25,
+          "charEnd": 33
+        },
+        {
+          "word": "When",
+          "start": 211.71800000000002,
+          "end": 211.97400000000002,
+          "charStart": 34,
+          "charEnd": 38
+        },
+        {
+          "word": "we",
+          "start": 211.97400000000002,
+          "end": 212.125,
+          "charStart": 39,
+          "charEnd": 41
+        },
+        {
+          "word": "stop",
+          "start": 212.125,
+          "end": 212.519,
+          "charStart": 42,
+          "charEnd": 46
+        },
+        {
+          "word": "walking",
+          "start": 212.519,
+          "end": 213.065,
+          "charStart": 47,
+          "charEnd": 54
+        },
+        {
+          "word": "On",
+          "start": 213.065,
+          "end": 213.251,
+          "charStart": 55,
+          "charEnd": 57
+        },
+        {
+          "word": "the",
+          "start": 213.251,
+          "end": 213.40200000000002,
+          "charStart": 58,
+          "charEnd": 61
+        },
+        {
+          "word": "sorrowful",
+          "start": 213.40200000000002,
+          "end": 214.006,
+          "charStart": 62,
+          "charEnd": 71
+        },
+        {
+          "word": "shore",
+          "start": 214.006,
+          "end": 214.50500000000002,
+          "charStart": 72,
+          "charEnd": 77
+        },
+        {
+          "word": "of",
+          "start": 214.50500000000002,
+          "end": 214.74900000000002,
+          "charStart": 78,
+          "charEnd": 80
+        },
+        {
+          "word": "Acheron.",
+          "start": 214.74900000000002,
+          "end": 215.573,
+          "charStart": 81,
+          "charEnd": 88
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "speaker": "narrator",
+      "text": "Then, my eyes cast down in shame,\nFearing my words had annoyed him,\nI kept silent until we reached the river.\nAnd look! Coming toward us in a boat\nWas an old man, his hair white with age,\nShouting:",
+      "startTime": 215.573,
+      "endTime": 230.01600000000002,
+      "duration": 14.443,
+      "words": [
+        {
+          "word": "Then,",
+          "start": 215.573,
+          "end": 216.39700000000002,
+          "charStart": 0,
+          "charEnd": 5
+        },
+        {
+          "word": "my",
+          "start": 216.39700000000002,
+          "end": 216.606,
+          "charStart": 6,
+          "charEnd": 8
+        },
+        {
+          "word": "eyes",
+          "start": 216.606,
+          "end": 216.943,
+          "charStart": 9,
+          "charEnd": 13
+        },
+        {
+          "word": "cast",
+          "start": 216.943,
+          "end": 217.31400000000002,
+          "charStart": 14,
+          "charEnd": 18
+        },
+        {
+          "word": "down",
+          "start": 217.31400000000002,
+          "end": 217.616,
+          "charStart": 19,
+          "charEnd": 23
+        },
+        {
+          "word": "in",
+          "start": 217.616,
+          "end": 217.791,
+          "charStart": 24,
+          "charEnd": 26
+        },
+        {
+          "word": "shame,",
+          "start": 217.791,
+          "end": 218.65,
+          "charStart": 27,
+          "charEnd": 33
+        },
+        {
+          "word": "Fearing",
+          "start": 218.65,
+          "end": 219.079,
+          "charStart": 34,
+          "charEnd": 41
+        },
+        {
+          "word": "my",
+          "start": 219.079,
+          "end": 219.26500000000001,
+          "charStart": 42,
+          "charEnd": 44
+        },
+        {
+          "word": "words",
+          "start": 219.26500000000001,
+          "end": 219.625,
+          "charStart": 45,
+          "charEnd": 50
+        },
+        {
+          "word": "had",
+          "start": 219.625,
+          "end": 219.764,
+          "charStart": 51,
+          "charEnd": 54
+        },
+        {
+          "word": "annoyed",
+          "start": 219.764,
+          "end": 220.14700000000002,
+          "charStart": 55,
+          "charEnd": 62
+        },
+        {
+          "word": "him,",
+          "start": 220.14700000000002,
+          "end": 220.821,
+          "charStart": 63,
+          "charEnd": 67
+        },
+        {
+          "word": "I",
+          "start": 220.821,
+          "end": 220.96,
+          "charStart": 68,
+          "charEnd": 69
+        },
+        {
+          "word": "kept",
+          "start": 220.96,
+          "end": 221.215,
+          "charStart": 70,
+          "charEnd": 74
+        },
+        {
+          "word": "silent",
+          "start": 221.215,
+          "end": 221.75,
+          "charStart": 75,
+          "charEnd": 81
+        },
+        {
+          "word": "until",
+          "start": 221.75,
+          "end": 222.04000000000002,
+          "charStart": 82,
+          "charEnd": 87
+        },
+        {
+          "word": "we",
+          "start": 222.04000000000002,
+          "end": 222.202,
+          "charStart": 88,
+          "charEnd": 90
+        },
+        {
+          "word": "reached",
+          "start": 222.202,
+          "end": 222.52700000000002,
+          "charStart": 91,
+          "charEnd": 98
+        },
+        {
+          "word": "the",
+          "start": 222.52700000000002,
+          "end": 222.643,
+          "charStart": 99,
+          "charEnd": 102
+        },
+        {
+          "word": "river.",
+          "start": 222.643,
+          "end": 223.735,
+          "charStart": 103,
+          "charEnd": 109
+        },
+        {
+          "word": "And",
+          "start": 223.735,
+          "end": 223.955,
+          "charStart": 110,
+          "charEnd": 113
+        },
+        {
+          "word": "look!",
+          "start": 223.955,
+          "end": 224.606,
+          "charStart": 114,
+          "charEnd": 119
+        },
+        {
+          "word": "Coming",
+          "start": 224.606,
+          "end": 224.942,
+          "charStart": 120,
+          "charEnd": 126
+        },
+        {
+          "word": "toward",
+          "start": 224.942,
+          "end": 225.244,
+          "charStart": 127,
+          "charEnd": 133
+        },
+        {
+          "word": "us",
+          "start": 225.244,
+          "end": 225.372,
+          "charStart": 134,
+          "charEnd": 136
+        },
+        {
+          "word": "in",
+          "start": 225.372,
+          "end": 225.476,
+          "charStart": 137,
+          "charEnd": 139
+        },
+        {
+          "word": "a",
+          "start": 225.476,
+          "end": 225.56900000000002,
+          "charStart": 140,
+          "charEnd": 141
+        },
+        {
+          "word": "boat",
+          "start": 225.56900000000002,
+          "end": 225.859,
+          "charStart": 142,
+          "charEnd": 146
+        },
+        {
+          "word": "Was",
+          "start": 225.859,
+          "end": 226.02200000000002,
+          "charStart": 147,
+          "charEnd": 150
+        },
+        {
+          "word": "an",
+          "start": 226.02200000000002,
+          "end": 226.126,
+          "charStart": 151,
+          "charEnd": 153
+        },
+        {
+          "word": "old",
+          "start": 226.126,
+          "end": 226.37,
+          "charStart": 154,
+          "charEnd": 157
+        },
+        {
+          "word": "man,",
+          "start": 226.37,
+          "end": 227.17100000000002,
+          "charStart": 158,
+          "charEnd": 162
+        },
+        {
+          "word": "his",
+          "start": 227.17100000000002,
+          "end": 227.38,
+          "charStart": 163,
+          "charEnd": 166
+        },
+        {
+          "word": "hair",
+          "start": 227.38,
+          "end": 227.717,
+          "charStart": 167,
+          "charEnd": 171
+        },
+        {
+          "word": "white",
+          "start": 227.717,
+          "end": 228.065,
+          "charStart": 172,
+          "charEnd": 177
+        },
+        {
+          "word": "with",
+          "start": 228.065,
+          "end": 228.274,
+          "charStart": 178,
+          "charEnd": 182
+        },
+        {
+          "word": "age,",
+          "start": 228.274,
+          "end": 228.948,
+          "charStart": 183,
+          "charEnd": 187
+        },
+        {
+          "word": "Shouting:",
+          "start": 228.948,
+          "end": 230.01600000000002,
+          "charStart": 188,
+          "charEnd": 196
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "speaker": "charon",
+      "text": "\"Woe to you, you corrupt souls!\nNever hope to see the heavens again!\nI come to ferry you to the other shore,\nInto eternal darkness, fire, and ice.\nAnd you there—you living soul—\nGet away from these dead ones!\"",
+      "startTime": 230.01600000000002,
+      "endTime": 249.567,
+      "duration": 19.551,
+      "words": [
+        {
+          "word": "\"Woe",
+          "start": 230.01600000000002,
+          "end": 230.88700000000003,
+          "charStart": 0,
+          "charEnd": 4
+        },
+        {
+          "word": "to",
+          "start": 230.88700000000003,
+          "end": 231.34000000000003,
+          "charStart": 5,
+          "charEnd": 7
+        },
+        {
+          "word": "you,",
+          "start": 231.34000000000003,
+          "end": 232.15200000000002,
+          "charStart": 8,
+          "charEnd": 12
+        },
+        {
+          "word": "you",
+          "start": 232.15200000000002,
+          "end": 232.40800000000002,
+          "charStart": 13,
+          "charEnd": 16
+        },
+        {
+          "word": "corrupt",
+          "start": 232.40800000000002,
+          "end": 233.05800000000002,
+          "charStart": 17,
+          "charEnd": 24
+        },
+        {
+          "word": "souls!",
+          "start": 233.05800000000002,
+          "end": 233.824,
+          "charStart": 25,
+          "charEnd": 31
+        },
+        {
+          "word": "Never",
+          "start": 233.824,
+          "end": 234.21900000000002,
+          "charStart": 32,
+          "charEnd": 37
+        },
+        {
+          "word": "hope",
+          "start": 234.21900000000002,
+          "end": 234.544,
+          "charStart": 38,
+          "charEnd": 42
+        },
+        {
+          "word": "to",
+          "start": 234.544,
+          "end": 234.741,
+          "charStart": 43,
+          "charEnd": 45
+        },
+        {
+          "word": "see",
+          "start": 234.741,
+          "end": 235.252,
+          "charStart": 46,
+          "charEnd": 49
+        },
+        {
+          "word": "the",
+          "start": 235.252,
+          "end": 235.496,
+          "charStart": 50,
+          "charEnd": 53
+        },
+        {
+          "word": "heavens",
+          "start": 235.496,
+          "end": 236.27400000000003,
+          "charStart": 54,
+          "charEnd": 61
+        },
+        {
+          "word": "again!",
+          "start": 236.27400000000003,
+          "end": 237.30700000000002,
+          "charStart": 62,
+          "charEnd": 68
+        },
+        {
+          "word": "I",
+          "start": 237.30700000000002,
+          "end": 237.52800000000002,
+          "charStart": 69,
+          "charEnd": 70
+        },
+        {
+          "word": "come",
+          "start": 237.52800000000002,
+          "end": 237.83,
+          "charStart": 71,
+          "charEnd": 75
+        },
+        {
+          "word": "to",
+          "start": 237.83,
+          "end": 238.02700000000002,
+          "charStart": 76,
+          "charEnd": 78
+        },
+        {
+          "word": "ferry",
+          "start": 238.02700000000002,
+          "end": 238.573,
+          "charStart": 79,
+          "charEnd": 84
+        },
+        {
+          "word": "you",
+          "start": 238.573,
+          "end": 239.06000000000003,
+          "charStart": 85,
+          "charEnd": 88
+        },
+        {
+          "word": "to",
+          "start": 239.06000000000003,
+          "end": 239.32700000000003,
+          "charStart": 89,
+          "charEnd": 91
+        },
+        {
+          "word": "the",
+          "start": 239.32700000000003,
+          "end": 239.50100000000003,
+          "charStart": 92,
+          "charEnd": 95
+        },
+        {
+          "word": "other",
+          "start": 239.50100000000003,
+          "end": 239.85000000000002,
+          "charStart": 96,
+          "charEnd": 101
+        },
+        {
+          "word": "shore,",
+          "start": 239.85000000000002,
+          "end": 240.69700000000003,
+          "charStart": 102,
+          "charEnd": 108
+        },
+        {
+          "word": "Into",
+          "start": 240.69700000000003,
+          "end": 241.127,
+          "charStart": 109,
+          "charEnd": 113
+        },
+        {
+          "word": "eternal",
+          "start": 241.127,
+          "end": 241.812,
+          "charStart": 114,
+          "charEnd": 121
+        },
+        {
+          "word": "darkness,",
+          "start": 241.812,
+          "end": 242.59000000000003,
+          "charStart": 122,
+          "charEnd": 131
+        },
+        {
+          "word": "fire,",
+          "start": 242.59000000000003,
+          "end": 243.228,
+          "charStart": 132,
+          "charEnd": 137
+        },
+        {
+          "word": "and",
+          "start": 243.228,
+          "end": 243.55300000000003,
+          "charStart": 138,
+          "charEnd": 141
+        },
+        {
+          "word": "ice.",
+          "start": 243.55300000000003,
+          "end": 244.18,
+          "charStart": 142,
+          "charEnd": 146
+        },
+        {
+          "word": "And",
+          "start": 244.18,
+          "end": 244.48200000000003,
+          "charStart": 147,
+          "charEnd": 150
+        },
+        {
+          "word": "you",
+          "start": 244.48200000000003,
+          "end": 244.72600000000003,
+          "charStart": 151,
+          "charEnd": 154
+        },
+        {
+          "word": "there—you",
+          "start": 244.72600000000003,
+          "end": 245.817,
+          "charStart": 155,
+          "charEnd": 164
+        },
+        {
+          "word": "living",
+          "start": 245.817,
+          "end": 246.293,
+          "charStart": 165,
+          "charEnd": 171
+        },
+        {
+          "word": "soul—",
+          "start": 246.293,
+          "end": 247.02500000000003,
+          "charStart": 172,
+          "charEnd": 177
+        },
+        {
+          "word": "Get",
+          "start": 247.02500000000003,
+          "end": 247.35000000000002,
+          "charStart": 178,
+          "charEnd": 181
+        },
+        {
+          "word": "away",
+          "start": 247.35000000000002,
+          "end": 247.942,
+          "charStart": 182,
+          "charEnd": 186
+        },
+        {
+          "word": "from",
+          "start": 247.942,
+          "end": 248.25500000000002,
+          "charStart": 187,
+          "charEnd": 191
+        },
+        {
+          "word": "these",
+          "start": 248.25500000000002,
+          "end": 248.58,
+          "charStart": 192,
+          "charEnd": 197
+        },
+        {
+          "word": "dead",
+          "start": 248.58,
+          "end": 248.92900000000003,
+          "charStart": 198,
+          "charEnd": 202
+        },
+        {
+          "word": "ones!\"",
+          "start": 248.92900000000003,
+          "end": 249.567,
+          "charStart": 203,
+          "charEnd": 208
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "speaker": "narrator",
+      "text": "But when he saw I didn't move,\nHe said:",
+      "startTime": 249.567,
+      "endTime": 252.02800000000002,
+      "duration": 2.461,
+      "words": [
+        {
+          "word": "But",
+          "start": 249.567,
+          "end": 249.892,
+          "charStart": 0,
+          "charEnd": 3
+        },
+        {
+          "word": "when",
+          "start": 249.892,
+          "end": 250.089,
+          "charStart": 4,
+          "charEnd": 8
+        },
+        {
+          "word": "he",
+          "start": 250.089,
+          "end": 250.217,
+          "charStart": 9,
+          "charEnd": 11
+        },
+        {
+          "word": "saw",
+          "start": 250.217,
+          "end": 250.496,
+          "charStart": 12,
+          "charEnd": 15
+        },
+        {
+          "word": "I",
+          "start": 250.496,
+          "end": 250.577,
+          "charStart": 16,
+          "charEnd": 17
+        },
+        {
+          "word": "didn't",
+          "start": 250.577,
+          "end": 250.856,
+          "charStart": 18,
+          "charEnd": 24
+        },
+        {
+          "word": "move,",
+          "start": 250.856,
+          "end": 251.216,
+          "charStart": 25,
+          "charEnd": 30
+        },
+        {
+          "word": "He",
+          "start": 251.216,
+          "end": 251.34300000000002,
+          "charStart": 31,
+          "charEnd": 33
+        },
+        {
+          "word": "said:",
+          "start": 251.34300000000002,
+          "end": 252.02800000000002,
+          "charStart": 34,
+          "charEnd": 38
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "speaker": "charon",
+      "text": "\"By other routes, through other gates\nYou'll reach the shore, not here.\nA lighter boat must carry you.\"",
+      "startTime": 252.02800000000002,
+      "endTime": 261.78000000000003,
+      "duration": 9.752,
+      "words": [
+        {
+          "word": "\"By",
+          "start": 252.02800000000002,
+          "end": 253.05,
+          "charStart": 0,
+          "charEnd": 3
+        },
+        {
+          "word": "other",
+          "start": 253.05,
+          "end": 253.64200000000002,
+          "charStart": 4,
+          "charEnd": 9
+        },
+        {
+          "word": "routes,",
+          "start": 253.64200000000002,
+          "end": 254.37300000000002,
+          "charStart": 10,
+          "charEnd": 17
+        },
+        {
+          "word": "through",
+          "start": 254.37300000000002,
+          "end": 254.82600000000002,
+          "charStart": 18,
+          "charEnd": 25
+        },
+        {
+          "word": "other",
+          "start": 254.82600000000002,
+          "end": 255.24400000000003,
+          "charStart": 26,
+          "charEnd": 31
+        },
+        {
+          "word": "gates",
+          "start": 255.24400000000003,
+          "end": 255.73200000000003,
+          "charStart": 32,
+          "charEnd": 37
+        },
+        {
+          "word": "You'll",
+          "start": 255.73200000000003,
+          "end": 256.13800000000003,
+          "charStart": 38,
+          "charEnd": 44
+        },
+        {
+          "word": "reach",
+          "start": 256.13800000000003,
+          "end": 256.48600000000005,
+          "charStart": 45,
+          "charEnd": 50
+        },
+        {
+          "word": "the",
+          "start": 256.48600000000005,
+          "end": 256.672,
+          "charStart": 51,
+          "charEnd": 54
+        },
+        {
+          "word": "shore,",
+          "start": 256.672,
+          "end": 257.392,
+          "charStart": 55,
+          "charEnd": 61
+        },
+        {
+          "word": "not",
+          "start": 257.392,
+          "end": 257.752,
+          "charStart": 62,
+          "charEnd": 65
+        },
+        {
+          "word": "here.",
+          "start": 257.752,
+          "end": 258.379,
+          "charStart": 66,
+          "charEnd": 71
+        },
+        {
+          "word": "A",
+          "start": 258.379,
+          "end": 258.59900000000005,
+          "charStart": 72,
+          "charEnd": 73
+        },
+        {
+          "word": "lighter",
+          "start": 258.59900000000005,
+          "end": 259.20300000000003,
+          "charStart": 74,
+          "charEnd": 81
+        },
+        {
+          "word": "boat",
+          "start": 259.20300000000003,
+          "end": 259.656,
+          "charStart": 82,
+          "charEnd": 86
+        },
+        {
+          "word": "must",
+          "start": 259.656,
+          "end": 260.02700000000004,
+          "charStart": 87,
+          "charEnd": 91
+        },
+        {
+          "word": "carry",
+          "start": 260.02700000000004,
+          "end": 260.56100000000004,
+          "charStart": 92,
+          "charEnd": 97
+        },
+        {
+          "word": "you.\"",
+          "start": 260.56100000000004,
+          "end": 261.78000000000003,
+          "charStart": 98,
+          "charEnd": 102
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "speaker": "dante",
+      "text": "My guide answered him:",
+      "startTime": 261.78000000000003,
+      "endTime": 263.173,
+      "duration": 1.393,
+      "words": [
+        {
+          "word": "My",
+          "start": 261.78000000000003,
+          "end": 262.117,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "guide",
+          "start": 262.117,
+          "end": 262.45300000000003,
+          "charStart": 3,
+          "charEnd": 8
+        },
+        {
+          "word": "answered",
+          "start": 262.45300000000003,
+          "end": 262.79,
+          "charStart": 9,
+          "charEnd": 17
+        },
+        {
+          "word": "him:",
+          "start": 262.79,
+          "end": 263.173,
+          "charStart": 18,
+          "charEnd": 21
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "speaker": "virgil",
+      "text": "Don't torment yourself, Charon.\nThis is willed where there is power\nTo do what is willed. Ask no more questions.",
+      "startTime": 263.173,
+      "endTime": 270.65,
+      "duration": 7.477,
+      "words": [
+        {
+          "word": "Don't",
+          "start": 263.173,
+          "end": 263.498,
+          "charStart": 0,
+          "charEnd": 5
+        },
+        {
+          "word": "torment",
+          "start": 263.498,
+          "end": 263.951,
+          "charStart": 6,
+          "charEnd": 13
+        },
+        {
+          "word": "yourself,",
+          "start": 263.951,
+          "end": 264.404,
+          "charStart": 14,
+          "charEnd": 23
+        },
+        {
+          "word": "Charon.",
+          "start": 264.404,
+          "end": 265.193,
+          "charStart": 24,
+          "charEnd": 31
+        },
+        {
+          "word": "This",
+          "start": 265.193,
+          "end": 265.46,
+          "charStart": 32,
+          "charEnd": 36
+        },
+        {
+          "word": "is",
+          "start": 265.46,
+          "end": 265.634,
+          "charStart": 37,
+          "charEnd": 39
+        },
+        {
+          "word": "willed",
+          "start": 265.634,
+          "end": 266.099,
+          "charStart": 40,
+          "charEnd": 46
+        },
+        {
+          "word": "where",
+          "start": 266.099,
+          "end": 266.343,
+          "charStart": 47,
+          "charEnd": 52
+        },
+        {
+          "word": "there",
+          "start": 266.343,
+          "end": 266.54,
+          "charStart": 53,
+          "charEnd": 58
+        },
+        {
+          "word": "is",
+          "start": 266.54,
+          "end": 266.691,
+          "charStart": 59,
+          "charEnd": 61
+        },
+        {
+          "word": "power",
+          "start": 266.691,
+          "end": 267.109,
+          "charStart": 62,
+          "charEnd": 67
+        },
+        {
+          "word": "To",
+          "start": 267.109,
+          "end": 267.271,
+          "charStart": 68,
+          "charEnd": 70
+        },
+        {
+          "word": "do",
+          "start": 267.271,
+          "end": 267.608,
+          "charStart": 71,
+          "charEnd": 73
+        },
+        {
+          "word": "what",
+          "start": 267.608,
+          "end": 267.863,
+          "charStart": 74,
+          "charEnd": 78
+        },
+        {
+          "word": "is",
+          "start": 267.863,
+          "end": 268.014,
+          "charStart": 79,
+          "charEnd": 81
+        },
+        {
+          "word": "willed.",
+          "start": 268.014,
+          "end": 268.769,
+          "charStart": 82,
+          "charEnd": 89
+        },
+        {
+          "word": "Ask",
+          "start": 268.769,
+          "end": 269.26800000000003,
+          "charStart": 90,
+          "charEnd": 93
+        },
+        {
+          "word": "no",
+          "start": 269.26800000000003,
+          "end": 269.524,
+          "charStart": 94,
+          "charEnd": 96
+        },
+        {
+          "word": "more",
+          "start": 269.524,
+          "end": 269.779,
+          "charStart": 97,
+          "charEnd": 101
+        },
+        {
+          "word": "questions.",
+          "start": 269.779,
+          "end": 270.65,
+          "charStart": 102,
+          "charEnd": 111
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "speaker": "narrator",
+      "text": "At this, the woolly cheeks fell silent\nOn the ferryman of the livid marsh,\nWho had wheels of flame around his eyes.\nBut all those weary, naked souls\nChanged color and gnashed their teeth\nAs soon as they heard his cruel words.\nThey cursed God and their parents,\nThe human race, the place, the time,\nThe seed of their conception and their birth.\nThen, weeping bitterly, they all gathered together\nOn the accursed shore\nThat awaits everyone who doesn't fear God.\nCharon the demon, with glowing eyes,\nSignals and collects them all,\nStrikes with his oar anyone who lingers.\nAs autumn leaves fall away,\nFirst one, then another, until the branch\nGives all its spoils to the earth,\nSo the evil seed of Adam\nThrows itself from that shore one by one\nAt his signals, like a bird to its call.\nThey depart across the dark water,\nAnd before they land on the other side,\nA new crowd assembles here again.",
+      "startTime": 270.65,
+      "endTime": 332.601,
+      "duration": 61.951,
+      "words": [
+        {
+          "word": "At",
+          "start": 270.65,
+          "end": 270.83599999999996,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "this,",
+          "start": 270.83599999999996,
+          "end": 271.50899999999996,
+          "charStart": 3,
+          "charEnd": 8
+        },
+        {
+          "word": "the",
+          "start": 271.50899999999996,
+          "end": 271.67199999999997,
+          "charStart": 9,
+          "charEnd": 12
+        },
+        {
+          "word": "woolly",
+          "start": 271.67199999999997,
+          "end": 271.99699999999996,
+          "charStart": 13,
+          "charEnd": 19
+        },
+        {
+          "word": "cheeks",
+          "start": 271.99699999999996,
+          "end": 272.41499999999996,
+          "charStart": 20,
+          "charEnd": 26
+        },
+        {
+          "word": "fell",
+          "start": 272.41499999999996,
+          "end": 272.705,
+          "charStart": 27,
+          "charEnd": 31
+        },
+        {
+          "word": "silent",
+          "start": 272.705,
+          "end": 273.332,
+          "charStart": 32,
+          "charEnd": 38
+        },
+        {
+          "word": "On",
+          "start": 273.332,
+          "end": 273.541,
+          "charStart": 39,
+          "charEnd": 41
+        },
+        {
+          "word": "the",
+          "start": 273.541,
+          "end": 273.67999999999995,
+          "charStart": 42,
+          "charEnd": 45
+        },
+        {
+          "word": "ferryman",
+          "start": 273.67999999999995,
+          "end": 274.284,
+          "charStart": 46,
+          "charEnd": 54
+        },
+        {
+          "word": "of",
+          "start": 274.284,
+          "end": 274.423,
+          "charStart": 55,
+          "charEnd": 57
+        },
+        {
+          "word": "the",
+          "start": 274.423,
+          "end": 274.57399999999996,
+          "charStart": 58,
+          "charEnd": 61
+        },
+        {
+          "word": "livid",
+          "start": 274.57399999999996,
+          "end": 274.93399999999997,
+          "charStart": 62,
+          "charEnd": 67
+        },
+        {
+          "word": "marsh,",
+          "start": 274.93399999999997,
+          "end": 275.88599999999997,
+          "charStart": 68,
+          "charEnd": 74
+        },
+        {
+          "word": "Who",
+          "start": 275.88599999999997,
+          "end": 276.10699999999997,
+          "charStart": 75,
+          "charEnd": 78
+        },
+        {
+          "word": "had",
+          "start": 276.10699999999997,
+          "end": 276.304,
+          "charStart": 79,
+          "charEnd": 82
+        },
+        {
+          "word": "wheels",
+          "start": 276.304,
+          "end": 276.745,
+          "charStart": 83,
+          "charEnd": 89
+        },
+        {
+          "word": "of",
+          "start": 276.745,
+          "end": 276.885,
+          "charStart": 90,
+          "charEnd": 92
+        },
+        {
+          "word": "flame",
+          "start": 276.885,
+          "end": 277.233,
+          "charStart": 93,
+          "charEnd": 98
+        },
+        {
+          "word": "around",
+          "start": 277.233,
+          "end": 277.558,
+          "charStart": 99,
+          "charEnd": 105
+        },
+        {
+          "word": "his",
+          "start": 277.558,
+          "end": 277.74399999999997,
+          "charStart": 106,
+          "charEnd": 109
+        },
+        {
+          "word": "eyes.",
+          "start": 277.74399999999997,
+          "end": 278.95099999999996,
+          "charStart": 110,
+          "charEnd": 115
+        },
+        {
+          "word": "But",
+          "start": 278.95099999999996,
+          "end": 279.15999999999997,
+          "charStart": 116,
+          "charEnd": 119
+        },
+        {
+          "word": "all",
+          "start": 279.15999999999997,
+          "end": 279.392,
+          "charStart": 120,
+          "charEnd": 123
+        },
+        {
+          "word": "those",
+          "start": 279.392,
+          "end": 279.717,
+          "charStart": 124,
+          "charEnd": 129
+        },
+        {
+          "word": "weary,",
+          "start": 279.717,
+          "end": 280.344,
+          "charStart": 130,
+          "charEnd": 136
+        },
+        {
+          "word": "naked",
+          "start": 280.344,
+          "end": 280.786,
+          "charStart": 137,
+          "charEnd": 142
+        },
+        {
+          "word": "souls",
+          "start": 280.786,
+          "end": 281.38899999999995,
+          "charStart": 143,
+          "charEnd": 148
+        },
+        {
+          "word": "Changed",
+          "start": 281.38899999999995,
+          "end": 281.947,
+          "charStart": 149,
+          "charEnd": 156
+        },
+        {
+          "word": "color",
+          "start": 281.947,
+          "end": 282.364,
+          "charStart": 157,
+          "charEnd": 162
+        },
+        {
+          "word": "and",
+          "start": 282.364,
+          "end": 282.56199999999995,
+          "charStart": 163,
+          "charEnd": 166
+        },
+        {
+          "word": "gnashed",
+          "start": 282.56199999999995,
+          "end": 283.03799999999995,
+          "charStart": 167,
+          "charEnd": 174
+        },
+        {
+          "word": "their",
+          "start": 283.03799999999995,
+          "end": 283.316,
+          "charStart": 175,
+          "charEnd": 180
+        },
+        {
+          "word": "teeth",
+          "start": 283.316,
+          "end": 284.118,
+          "charStart": 181,
+          "charEnd": 186
+        },
+        {
+          "word": "As",
+          "start": 284.118,
+          "end": 284.40799999999996,
+          "charStart": 187,
+          "charEnd": 189
+        },
+        {
+          "word": "soon",
+          "start": 284.40799999999996,
+          "end": 284.768,
+          "charStart": 190,
+          "charEnd": 194
+        },
+        {
+          "word": "as",
+          "start": 284.768,
+          "end": 284.907,
+          "charStart": 195,
+          "charEnd": 197
+        },
+        {
+          "word": "they",
+          "start": 284.907,
+          "end": 285.104,
+          "charStart": 198,
+          "charEnd": 202
+        },
+        {
+          "word": "heard",
+          "start": 285.104,
+          "end": 285.395,
+          "charStart": 203,
+          "charEnd": 208
+        },
+        {
+          "word": "his",
+          "start": 285.395,
+          "end": 285.58,
+          "charStart": 209,
+          "charEnd": 212
+        },
+        {
+          "word": "cruel",
+          "start": 285.58,
+          "end": 285.952,
+          "charStart": 213,
+          "charEnd": 218
+        },
+        {
+          "word": "words.",
+          "start": 285.952,
+          "end": 286.98499999999996,
+          "charStart": 219,
+          "charEnd": 225
+        },
+        {
+          "word": "They",
+          "start": 286.98499999999996,
+          "end": 287.21799999999996,
+          "charStart": 226,
+          "charEnd": 230
+        },
+        {
+          "word": "cursed",
+          "start": 287.21799999999996,
+          "end": 287.647,
+          "charStart": 231,
+          "charEnd": 237
+        },
+        {
+          "word": "God",
+          "start": 287.647,
+          "end": 288.08799999999997,
+          "charStart": 238,
+          "charEnd": 241
+        },
+        {
+          "word": "and",
+          "start": 288.08799999999997,
+          "end": 288.21599999999995,
+          "charStart": 242,
+          "charEnd": 245
+        },
+        {
+          "word": "their",
+          "start": 288.21599999999995,
+          "end": 288.42499999999995,
+          "charStart": 246,
+          "charEnd": 251
+        },
+        {
+          "word": "parents,",
+          "start": 288.42499999999995,
+          "end": 289.09799999999996,
+          "charStart": 252,
+          "charEnd": 260
+        },
+        {
+          "word": "The",
+          "start": 289.09799999999996,
+          "end": 289.272,
+          "charStart": 261,
+          "charEnd": 264
+        },
+        {
+          "word": "human",
+          "start": 289.272,
+          "end": 289.621,
+          "charStart": 265,
+          "charEnd": 270
+        },
+        {
+          "word": "race,",
+          "start": 289.621,
+          "end": 290.178,
+          "charStart": 271,
+          "charEnd": 276
+        },
+        {
+          "word": "the",
+          "start": 290.178,
+          "end": 290.34099999999995,
+          "charStart": 277,
+          "charEnd": 280
+        },
+        {
+          "word": "place,",
+          "start": 290.34099999999995,
+          "end": 290.782,
+          "charStart": 281,
+          "charEnd": 287
+        },
+        {
+          "word": "the",
+          "start": 290.782,
+          "end": 290.95599999999996,
+          "charStart": 288,
+          "charEnd": 291
+        },
+        {
+          "word": "time,",
+          "start": 290.95599999999996,
+          "end": 291.58299999999997,
+          "charStart": 292,
+          "charEnd": 297
+        },
+        {
+          "word": "The",
+          "start": 291.58299999999997,
+          "end": 291.792,
+          "charStart": 298,
+          "charEnd": 301
+        },
+        {
+          "word": "seed",
+          "start": 291.792,
+          "end": 292.16299999999995,
+          "charStart": 302,
+          "charEnd": 306
+        },
+        {
+          "word": "of",
+          "start": 292.16299999999995,
+          "end": 292.268,
+          "charStart": 307,
+          "charEnd": 309
+        },
+        {
+          "word": "their",
+          "start": 292.268,
+          "end": 292.45399999999995,
+          "charStart": 310,
+          "charEnd": 315
+        },
+        {
+          "word": "conception",
+          "start": 292.45399999999995,
+          "end": 293.08099999999996,
+          "charStart": 316,
+          "charEnd": 326
+        },
+        {
+          "word": "and",
+          "start": 293.08099999999996,
+          "end": 293.197,
+          "charStart": 327,
+          "charEnd": 330
+        },
+        {
+          "word": "their",
+          "start": 293.197,
+          "end": 293.394,
+          "charStart": 331,
+          "charEnd": 336
+        },
+        {
+          "word": "birth.",
+          "start": 293.394,
+          "end": 294.70599999999996,
+          "charStart": 337,
+          "charEnd": 343
+        },
+        {
+          "word": "Then,",
+          "start": 294.70599999999996,
+          "end": 295.40299999999996,
+          "charStart": 344,
+          "charEnd": 349
+        },
+        {
+          "word": "weeping",
+          "start": 295.40299999999996,
+          "end": 295.92499999999995,
+          "charStart": 350,
+          "charEnd": 357
+        },
+        {
+          "word": "bitterly,",
+          "start": 295.92499999999995,
+          "end": 296.59799999999996,
+          "charStart": 358,
+          "charEnd": 367
+        },
+        {
+          "word": "they",
+          "start": 296.59799999999996,
+          "end": 296.796,
+          "charStart": 368,
+          "charEnd": 372
+        },
+        {
+          "word": "all",
+          "start": 296.796,
+          "end": 296.96999999999997,
+          "charStart": 373,
+          "charEnd": 376
+        },
+        {
+          "word": "gathered",
+          "start": 296.96999999999997,
+          "end": 297.376,
+          "charStart": 377,
+          "charEnd": 385
+        },
+        {
+          "word": "together",
+          "start": 297.376,
+          "end": 297.82899999999995,
+          "charStart": 386,
+          "charEnd": 394
+        },
+        {
+          "word": "On",
+          "start": 297.82899999999995,
+          "end": 297.945,
+          "charStart": 395,
+          "charEnd": 397
+        },
+        {
+          "word": "the",
+          "start": 297.945,
+          "end": 298.073,
+          "charStart": 398,
+          "charEnd": 401
+        },
+        {
+          "word": "accursed",
+          "start": 298.073,
+          "end": 298.65299999999996,
+          "charStart": 402,
+          "charEnd": 410
+        },
+        {
+          "word": "shore",
+          "start": 298.65299999999996,
+          "end": 299.08299999999997,
+          "charStart": 411,
+          "charEnd": 416
+        },
+        {
+          "word": "That",
+          "start": 299.08299999999997,
+          "end": 299.269,
+          "charStart": 417,
+          "charEnd": 421
+        },
+        {
+          "word": "awaits",
+          "start": 299.269,
+          "end": 299.698,
+          "charStart": 422,
+          "charEnd": 428
+        },
+        {
+          "word": "everyone",
+          "start": 299.698,
+          "end": 300.209,
+          "charStart": 429,
+          "charEnd": 437
+        },
+        {
+          "word": "who",
+          "start": 300.209,
+          "end": 300.37199999999996,
+          "charStart": 438,
+          "charEnd": 441
+        },
+        {
+          "word": "doesn't",
+          "start": 300.37199999999996,
+          "end": 300.73199999999997,
+          "charStart": 442,
+          "charEnd": 449
+        },
+        {
+          "word": "fear",
+          "start": 300.73199999999997,
+          "end": 301.08,
+          "charStart": 450,
+          "charEnd": 454
+        },
+        {
+          "word": "God.",
+          "start": 301.08,
+          "end": 302.62399999999997,
+          "charStart": 455,
+          "charEnd": 459
+        },
+        {
+          "word": "Charon",
+          "start": 302.62399999999997,
+          "end": 303.123,
+          "charStart": 460,
+          "charEnd": 466
+        },
+        {
+          "word": "the",
+          "start": 303.123,
+          "end": 303.251,
+          "charStart": 467,
+          "charEnd": 470
+        },
+        {
+          "word": "demon,",
+          "start": 303.251,
+          "end": 303.808,
+          "charStart": 471,
+          "charEnd": 477
+        },
+        {
+          "word": "with",
+          "start": 303.808,
+          "end": 304.063,
+          "charStart": 478,
+          "charEnd": 482
+        },
+        {
+          "word": "glowing",
+          "start": 304.063,
+          "end": 304.52799999999996,
+          "charStart": 483,
+          "charEnd": 490
+        },
+        {
+          "word": "eyes,",
+          "start": 304.52799999999996,
+          "end": 305.28299999999996,
+          "charStart": 491,
+          "charEnd": 496
+        },
+        {
+          "word": "Signals",
+          "start": 305.28299999999996,
+          "end": 305.875,
+          "charStart": 497,
+          "charEnd": 504
+        },
+        {
+          "word": "and",
+          "start": 305.875,
+          "end": 306.02599999999995,
+          "charStart": 505,
+          "charEnd": 508
+        },
+        {
+          "word": "collects",
+          "start": 306.02599999999995,
+          "end": 306.47799999999995,
+          "charStart": 509,
+          "charEnd": 517
+        },
+        {
+          "word": "them",
+          "start": 306.47799999999995,
+          "end": 306.652,
+          "charStart": 518,
+          "charEnd": 522
+        },
+        {
+          "word": "all,",
+          "start": 306.652,
+          "end": 307.256,
+          "charStart": 523,
+          "charEnd": 527
+        },
+        {
+          "word": "Strikes",
+          "start": 307.256,
+          "end": 307.73199999999997,
+          "charStart": 528,
+          "charEnd": 535
+        },
+        {
+          "word": "with",
+          "start": 307.73199999999997,
+          "end": 307.918,
+          "charStart": 536,
+          "charEnd": 540
+        },
+        {
+          "word": "his",
+          "start": 307.918,
+          "end": 308.092,
+          "charStart": 541,
+          "charEnd": 544
+        },
+        {
+          "word": "oar",
+          "start": 308.092,
+          "end": 308.417,
+          "charStart": 545,
+          "charEnd": 548
+        },
+        {
+          "word": "anyone",
+          "start": 308.417,
+          "end": 308.835,
+          "charStart": 549,
+          "charEnd": 555
+        },
+        {
+          "word": "who",
+          "start": 308.835,
+          "end": 309.00899999999996,
+          "charStart": 556,
+          "charEnd": 559
+        },
+        {
+          "word": "lingers.",
+          "start": 309.00899999999996,
+          "end": 310.79699999999997,
+          "charStart": 560,
+          "charEnd": 568
+        },
+        {
+          "word": "As",
+          "start": 310.79699999999997,
+          "end": 311.053,
+          "charStart": 569,
+          "charEnd": 571
+        },
+        {
+          "word": "autumn",
+          "start": 311.053,
+          "end": 311.45899999999995,
+          "charStart": 572,
+          "charEnd": 578
+        },
+        {
+          "word": "leaves",
+          "start": 311.45899999999995,
+          "end": 311.854,
+          "charStart": 579,
+          "charEnd": 585
+        },
+        {
+          "word": "fall",
+          "start": 311.854,
+          "end": 312.144,
+          "charStart": 586,
+          "charEnd": 590
+        },
+        {
+          "word": "away,",
+          "start": 312.144,
+          "end": 312.78299999999996,
+          "charStart": 591,
+          "charEnd": 596
+        },
+        {
+          "word": "First",
+          "start": 312.78299999999996,
+          "end": 313.17699999999996,
+          "charStart": 597,
+          "charEnd": 602
+        },
+        {
+          "word": "one,",
+          "start": 313.17699999999996,
+          "end": 313.73499999999996,
+          "charStart": 603,
+          "charEnd": 607
+        },
+        {
+          "word": "then",
+          "start": 313.73499999999996,
+          "end": 313.97799999999995,
+          "charStart": 608,
+          "charEnd": 612
+        },
+        {
+          "word": "another,",
+          "start": 313.97799999999995,
+          "end": 314.698,
+          "charStart": 613,
+          "charEnd": 621
+        },
+        {
+          "word": "until",
+          "start": 314.698,
+          "end": 315,
+          "charStart": 622,
+          "charEnd": 627
+        },
+        {
+          "word": "the",
+          "start": 315,
+          "end": 315.10499999999996,
+          "charStart": 628,
+          "charEnd": 631
+        },
+        {
+          "word": "branch",
+          "start": 315.10499999999996,
+          "end": 315.51099999999997,
+          "charStart": 632,
+          "charEnd": 638
+        },
+        {
+          "word": "Gives",
+          "start": 315.51099999999997,
+          "end": 315.801,
+          "charStart": 639,
+          "charEnd": 644
+        },
+        {
+          "word": "all",
+          "start": 315.801,
+          "end": 316.068,
+          "charStart": 645,
+          "charEnd": 648
+        },
+        {
+          "word": "its",
+          "start": 316.068,
+          "end": 316.25399999999996,
+          "charStart": 649,
+          "charEnd": 652
+        },
+        {
+          "word": "spoils",
+          "start": 316.25399999999996,
+          "end": 316.77599999999995,
+          "charStart": 653,
+          "charEnd": 659
+        },
+        {
+          "word": "to",
+          "start": 316.77599999999995,
+          "end": 316.916,
+          "charStart": 660,
+          "charEnd": 662
+        },
+        {
+          "word": "the",
+          "start": 316.916,
+          "end": 317.05499999999995,
+          "charStart": 663,
+          "charEnd": 666
+        },
+        {
+          "word": "earth,",
+          "start": 317.05499999999995,
+          "end": 318.00699999999995,
+          "charStart": 667,
+          "charEnd": 673
+        },
+        {
+          "word": "So",
+          "start": 318.00699999999995,
+          "end": 318.216,
+          "charStart": 674,
+          "charEnd": 676
+        },
+        {
+          "word": "the",
+          "start": 318.216,
+          "end": 318.36699999999996,
+          "charStart": 677,
+          "charEnd": 680
+        },
+        {
+          "word": "evil",
+          "start": 318.36699999999996,
+          "end": 318.738,
+          "charStart": 681,
+          "charEnd": 685
+        },
+        {
+          "word": "seed",
+          "start": 318.738,
+          "end": 318.99399999999997,
+          "charStart": 686,
+          "charEnd": 690
+        },
+        {
+          "word": "of",
+          "start": 318.99399999999997,
+          "end": 319.133,
+          "charStart": 691,
+          "charEnd": 693
+        },
+        {
+          "word": "Adam",
+          "start": 319.133,
+          "end": 319.551,
+          "charStart": 694,
+          "charEnd": 698
+        },
+        {
+          "word": "Throws",
+          "start": 319.551,
+          "end": 319.93399999999997,
+          "charStart": 699,
+          "charEnd": 705
+        },
+        {
+          "word": "itself",
+          "start": 319.93399999999997,
+          "end": 320.317,
+          "charStart": 706,
+          "charEnd": 712
+        },
+        {
+          "word": "from",
+          "start": 320.317,
+          "end": 320.503,
+          "charStart": 713,
+          "charEnd": 717
+        },
+        {
+          "word": "that",
+          "start": 320.503,
+          "end": 320.712,
+          "charStart": 718,
+          "charEnd": 722
+        },
+        {
+          "word": "shore",
+          "start": 320.712,
+          "end": 321.08299999999997,
+          "charStart": 723,
+          "charEnd": 728
+        },
+        {
+          "word": "one",
+          "start": 321.08299999999997,
+          "end": 321.34999999999997,
+          "charStart": 729,
+          "charEnd": 732
+        },
+        {
+          "word": "by",
+          "start": 321.34999999999997,
+          "end": 321.57099999999997,
+          "charStart": 733,
+          "charEnd": 735
+        },
+        {
+          "word": "one",
+          "start": 321.57099999999997,
+          "end": 321.83799999999997,
+          "charStart": 736,
+          "charEnd": 739
+        },
+        {
+          "word": "At",
+          "start": 321.83799999999997,
+          "end": 321.966,
+          "charStart": 740,
+          "charEnd": 742
+        },
+        {
+          "word": "his",
+          "start": 321.966,
+          "end": 322.10499999999996,
+          "charStart": 743,
+          "charEnd": 746
+        },
+        {
+          "word": "signals,",
+          "start": 322.10499999999996,
+          "end": 322.813,
+          "charStart": 747,
+          "charEnd": 755
+        },
+        {
+          "word": "like",
+          "start": 322.813,
+          "end": 323.022,
+          "charStart": 756,
+          "charEnd": 760
+        },
+        {
+          "word": "a",
+          "start": 323.022,
+          "end": 323.115,
+          "charStart": 761,
+          "charEnd": 762
+        },
+        {
+          "word": "bird",
+          "start": 323.115,
+          "end": 323.46299999999997,
+          "charStart": 763,
+          "charEnd": 767
+        },
+        {
+          "word": "to",
+          "start": 323.46299999999997,
+          "end": 323.638,
+          "charStart": 768,
+          "charEnd": 770
+        },
+        {
+          "word": "its",
+          "start": 323.638,
+          "end": 323.81199999999995,
+          "charStart": 771,
+          "charEnd": 774
+        },
+        {
+          "word": "call.",
+          "start": 323.81199999999995,
+          "end": 325.681,
+          "charStart": 775,
+          "charEnd": 780
+        },
+        {
+          "word": "They",
+          "start": 325.681,
+          "end": 325.89,
+          "charStart": 781,
+          "charEnd": 785
+        },
+        {
+          "word": "depart",
+          "start": 325.89,
+          "end": 326.354,
+          "charStart": 786,
+          "charEnd": 792
+        },
+        {
+          "word": "across",
+          "start": 326.354,
+          "end": 326.772,
+          "charStart": 793,
+          "charEnd": 799
+        },
+        {
+          "word": "the",
+          "start": 326.772,
+          "end": 326.888,
+          "charStart": 800,
+          "charEnd": 803
+        },
+        {
+          "word": "dark",
+          "start": 326.888,
+          "end": 327.19,
+          "charStart": 804,
+          "charEnd": 808
+        },
+        {
+          "word": "water,",
+          "start": 327.19,
+          "end": 327.82899999999995,
+          "charStart": 809,
+          "charEnd": 815
+        },
+        {
+          "word": "And",
+          "start": 327.82899999999995,
+          "end": 328.03799999999995,
+          "charStart": 816,
+          "charEnd": 819
+        },
+        {
+          "word": "before",
+          "start": 328.03799999999995,
+          "end": 328.363,
+          "charStart": 820,
+          "charEnd": 826
+        },
+        {
+          "word": "they",
+          "start": 328.363,
+          "end": 328.55999999999995,
+          "charStart": 827,
+          "charEnd": 831
+        },
+        {
+          "word": "land",
+          "start": 328.55999999999995,
+          "end": 328.86199999999997,
+          "charStart": 832,
+          "charEnd": 836
+        },
+        {
+          "word": "on",
+          "start": 328.86199999999997,
+          "end": 328.967,
+          "charStart": 837,
+          "charEnd": 839
+        },
+        {
+          "word": "the",
+          "start": 328.967,
+          "end": 329.07099999999997,
+          "charStart": 840,
+          "charEnd": 843
+        },
+        {
+          "word": "other",
+          "start": 329.07099999999997,
+          "end": 329.303,
+          "charStart": 844,
+          "charEnd": 849
+        },
+        {
+          "word": "side,",
+          "start": 329.303,
+          "end": 329.87199999999996,
+          "charStart": 850,
+          "charEnd": 855
+        },
+        {
+          "word": "A",
+          "start": 329.87199999999996,
+          "end": 330.02299999999997,
+          "charStart": 856,
+          "charEnd": 857
+        },
+        {
+          "word": "new",
+          "start": 330.02299999999997,
+          "end": 330.23199999999997,
+          "charStart": 858,
+          "charEnd": 861
+        },
+        {
+          "word": "crowd",
+          "start": 330.23199999999997,
+          "end": 330.592,
+          "charStart": 862,
+          "charEnd": 867
+        },
+        {
+          "word": "assembles",
+          "start": 330.592,
+          "end": 331.08,
+          "charStart": 868,
+          "charEnd": 877
+        },
+        {
+          "word": "here",
+          "start": 331.08,
+          "end": 331.289,
+          "charStart": 878,
+          "charEnd": 882
+        },
+        {
+          "word": "again.",
+          "start": 331.289,
+          "end": 332.601,
+          "charStart": 883,
+          "charEnd": 888
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "speaker": "virgil",
+      "text": "My son,\" my courteous master said,\n\"All those who die in God's anger\nGather here from every country.\nThey are ready to cross the river\nBecause divine justice spurs them on,\nSo their fear transforms into desire.\nNo good soul ever passes this way,\nSo if Charon objects to you,\nNow you understand what he means.",
+      "startTime": 332.601,
+      "endTime": 355.589,
+      "duration": 22.988,
+      "words": [
+        {
+          "word": "My",
+          "start": 332.601,
+          "end": 332.88,
+          "charStart": 0,
+          "charEnd": 2
+        },
+        {
+          "word": "son,\"",
+          "start": 332.88,
+          "end": 333.623,
+          "charStart": 3,
+          "charEnd": 8
+        },
+        {
+          "word": "my",
+          "start": 333.623,
+          "end": 333.82,
+          "charStart": 9,
+          "charEnd": 11
+        },
+        {
+          "word": "courteous",
+          "start": 333.82,
+          "end": 334.308,
+          "charStart": 12,
+          "charEnd": 21
+        },
+        {
+          "word": "master",
+          "start": 334.308,
+          "end": 334.714,
+          "charStart": 22,
+          "charEnd": 28
+        },
+        {
+          "word": "said,",
+          "start": 334.714,
+          "end": 335.469,
+          "charStart": 29,
+          "charEnd": 34
+        },
+        {
+          "word": "\"All",
+          "start": 335.469,
+          "end": 335.852,
+          "charStart": 35,
+          "charEnd": 39
+        },
+        {
+          "word": "those",
+          "start": 335.852,
+          "end": 336.258,
+          "charStart": 40,
+          "charEnd": 45
+        },
+        {
+          "word": "who",
+          "start": 336.258,
+          "end": 336.479,
+          "charStart": 46,
+          "charEnd": 49
+        },
+        {
+          "word": "die",
+          "start": 336.479,
+          "end": 336.862,
+          "charStart": 50,
+          "charEnd": 53
+        },
+        {
+          "word": "in",
+          "start": 336.862,
+          "end": 337.013,
+          "charStart": 54,
+          "charEnd": 56
+        },
+        {
+          "word": "God's",
+          "start": 337.013,
+          "end": 337.408,
+          "charStart": 57,
+          "charEnd": 62
+        },
+        {
+          "word": "anger",
+          "start": 337.408,
+          "end": 338,
+          "charStart": 63,
+          "charEnd": 68
+        },
+        {
+          "word": "Gather",
+          "start": 338,
+          "end": 338.545,
+          "charStart": 69,
+          "charEnd": 75
+        },
+        {
+          "word": "here",
+          "start": 338.545,
+          "end": 338.928,
+          "charStart": 76,
+          "charEnd": 80
+        },
+        {
+          "word": "from",
+          "start": 338.928,
+          "end": 339.195,
+          "charStart": 81,
+          "charEnd": 85
+        },
+        {
+          "word": "every",
+          "start": 339.195,
+          "end": 339.497,
+          "charStart": 86,
+          "charEnd": 91
+        },
+        {
+          "word": "country.",
+          "start": 339.497,
+          "end": 340.484,
+          "charStart": 92,
+          "charEnd": 100
+        },
+        {
+          "word": "They",
+          "start": 340.484,
+          "end": 340.705,
+          "charStart": 101,
+          "charEnd": 105
+        },
+        {
+          "word": "are",
+          "start": 340.705,
+          "end": 340.867,
+          "charStart": 106,
+          "charEnd": 109
+        },
+        {
+          "word": "ready",
+          "start": 340.867,
+          "end": 341.169,
+          "charStart": 110,
+          "charEnd": 115
+        },
+        {
+          "word": "to",
+          "start": 341.169,
+          "end": 341.32,
+          "charStart": 116,
+          "charEnd": 118
+        },
+        {
+          "word": "cross",
+          "start": 341.32,
+          "end": 341.692,
+          "charStart": 119,
+          "charEnd": 124
+        },
+        {
+          "word": "the",
+          "start": 341.692,
+          "end": 341.819,
+          "charStart": 125,
+          "charEnd": 128
+        },
+        {
+          "word": "river",
+          "start": 341.819,
+          "end": 342.168,
+          "charStart": 129,
+          "charEnd": 134
+        },
+        {
+          "word": "Because",
+          "start": 342.168,
+          "end": 342.597,
+          "charStart": 135,
+          "charEnd": 142
+        },
+        {
+          "word": "divine",
+          "start": 342.597,
+          "end": 343.154,
+          "charStart": 143,
+          "charEnd": 149
+        },
+        {
+          "word": "justice",
+          "start": 343.154,
+          "end": 343.677,
+          "charStart": 150,
+          "charEnd": 157
+        },
+        {
+          "word": "spurs",
+          "start": 343.677,
+          "end": 344.211,
+          "charStart": 158,
+          "charEnd": 163
+        },
+        {
+          "word": "them",
+          "start": 344.211,
+          "end": 344.42,
+          "charStart": 164,
+          "charEnd": 168
+        },
+        {
+          "word": "on,",
+          "start": 344.42,
+          "end": 345.012,
+          "charStart": 169,
+          "charEnd": 172
+        },
+        {
+          "word": "So",
+          "start": 345.012,
+          "end": 345.244,
+          "charStart": 173,
+          "charEnd": 175
+        },
+        {
+          "word": "their",
+          "start": 345.244,
+          "end": 345.5,
+          "charStart": 176,
+          "charEnd": 181
+        },
+        {
+          "word": "fear",
+          "start": 345.5,
+          "end": 345.86,
+          "charStart": 182,
+          "charEnd": 186
+        },
+        {
+          "word": "transforms",
+          "start": 345.86,
+          "end": 346.73,
+          "charStart": 187,
+          "charEnd": 197
+        },
+        {
+          "word": "into",
+          "start": 346.73,
+          "end": 346.997,
+          "charStart": 198,
+          "charEnd": 202
+        },
+        {
+          "word": "desire.",
+          "start": 346.997,
+          "end": 348.1,
+          "charStart": 203,
+          "charEnd": 210
+        },
+        {
+          "word": "No",
+          "start": 348.1,
+          "end": 348.379,
+          "charStart": 211,
+          "charEnd": 213
+        },
+        {
+          "word": "good",
+          "start": 348.379,
+          "end": 348.646,
+          "charStart": 214,
+          "charEnd": 218
+        },
+        {
+          "word": "soul",
+          "start": 348.646,
+          "end": 349.157,
+          "charStart": 219,
+          "charEnd": 223
+        },
+        {
+          "word": "ever",
+          "start": 349.157,
+          "end": 349.48199999999997,
+          "charStart": 224,
+          "charEnd": 228
+        },
+        {
+          "word": "passes",
+          "start": 349.48199999999997,
+          "end": 350.016,
+          "charStart": 229,
+          "charEnd": 235
+        },
+        {
+          "word": "this",
+          "start": 350.016,
+          "end": 350.271,
+          "charStart": 236,
+          "charEnd": 240
+        },
+        {
+          "word": "way,",
+          "start": 350.271,
+          "end": 351.13,
+          "charStart": 241,
+          "charEnd": 245
+        },
+        {
+          "word": "So",
+          "start": 351.13,
+          "end": 351.351,
+          "charStart": 246,
+          "charEnd": 248
+        },
+        {
+          "word": "if",
+          "start": 351.351,
+          "end": 351.49,
+          "charStart": 249,
+          "charEnd": 251
+        },
+        {
+          "word": "Charon",
+          "start": 351.49,
+          "end": 351.955,
+          "charStart": 252,
+          "charEnd": 258
+        },
+        {
+          "word": "objects",
+          "start": 351.955,
+          "end": 352.454,
+          "charStart": 259,
+          "charEnd": 266
+        },
+        {
+          "word": "to",
+          "start": 352.454,
+          "end": 352.616,
+          "charStart": 267,
+          "charEnd": 269
+        },
+        {
+          "word": "you,",
+          "start": 352.616,
+          "end": 353.464,
+          "charStart": 270,
+          "charEnd": 274
+        },
+        {
+          "word": "Now",
+          "start": 353.464,
+          "end": 353.673,
+          "charStart": 275,
+          "charEnd": 278
+        },
+        {
+          "word": "you",
+          "start": 353.673,
+          "end": 353.847,
+          "charStart": 279,
+          "charEnd": 282
+        },
+        {
+          "word": "understand",
+          "start": 353.847,
+          "end": 354.486,
+          "charStart": 283,
+          "charEnd": 293
+        },
+        {
+          "word": "what",
+          "start": 354.486,
+          "end": 354.683,
+          "charStart": 294,
+          "charEnd": 298
+        },
+        {
+          "word": "he",
+          "start": 354.683,
+          "end": 354.822,
+          "charStart": 299,
+          "charEnd": 301
+        },
+        {
+          "word": "means.",
+          "start": 354.822,
+          "end": 355.589,
+          "charStart": 302,
+          "charEnd": 307
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "speaker": "narrator",
+      "text": "When he finished speaking, the dark plain\nTrembled so violently that the memory\nOf that terror still bathes me in sweat.\nThe land of tears sent forth a wind\nAnd flashed a crimson light\nThat overwhelmed all my senses,\nAnd I fell like someone seized by sleep.",
+      "startTime": 355.589,
+      "endTime": 371.843,
+      "duration": 16.254,
+      "words": [
+        {
+          "word": "When",
+          "start": 355.589,
+          "end": 355.914,
+          "charStart": 0,
+          "charEnd": 4
+        },
+        {
+          "word": "he",
+          "start": 355.914,
+          "end": 356.042,
+          "charStart": 5,
+          "charEnd": 7
+        },
+        {
+          "word": "finished",
+          "start": 356.042,
+          "end": 356.471,
+          "charStart": 8,
+          "charEnd": 16
+        },
+        {
+          "word": "speaking,",
+          "start": 356.471,
+          "end": 357.168,
+          "charStart": 17,
+          "charEnd": 26
+        },
+        {
+          "word": "the",
+          "start": 357.168,
+          "end": 357.354,
+          "charStart": 27,
+          "charEnd": 30
+        },
+        {
+          "word": "dark",
+          "start": 357.354,
+          "end": 357.667,
+          "charStart": 31,
+          "charEnd": 35
+        },
+        {
+          "word": "plain",
+          "start": 357.667,
+          "end": 358.05,
+          "charStart": 36,
+          "charEnd": 41
+        },
+        {
+          "word": "Trembled",
+          "start": 358.05,
+          "end": 358.596,
+          "charStart": 42,
+          "charEnd": 50
+        },
+        {
+          "word": "so",
+          "start": 358.596,
+          "end": 358.886,
+          "charStart": 51,
+          "charEnd": 53
+        },
+        {
+          "word": "violently",
+          "start": 358.886,
+          "end": 359.502,
+          "charStart": 54,
+          "charEnd": 63
+        },
+        {
+          "word": "that",
+          "start": 359.502,
+          "end": 359.676,
+          "charStart": 64,
+          "charEnd": 68
+        },
+        {
+          "word": "the",
+          "start": 359.676,
+          "end": 359.803,
+          "charStart": 69,
+          "charEnd": 72
+        },
+        {
+          "word": "memory",
+          "start": 359.803,
+          "end": 360.198,
+          "charStart": 73,
+          "charEnd": 79
+        },
+        {
+          "word": "Of",
+          "start": 360.198,
+          "end": 360.314,
+          "charStart": 80,
+          "charEnd": 82
+        },
+        {
+          "word": "that",
+          "start": 360.314,
+          "end": 360.523,
+          "charStart": 83,
+          "charEnd": 87
+        },
+        {
+          "word": "terror",
+          "start": 360.523,
+          "end": 360.964,
+          "charStart": 88,
+          "charEnd": 94
+        },
+        {
+          "word": "still",
+          "start": 360.964,
+          "end": 361.313,
+          "charStart": 95,
+          "charEnd": 100
+        },
+        {
+          "word": "bathes",
+          "start": 361.313,
+          "end": 361.766,
+          "charStart": 101,
+          "charEnd": 107
+        },
+        {
+          "word": "me",
+          "start": 361.766,
+          "end": 361.916,
+          "charStart": 108,
+          "charEnd": 110
+        },
+        {
+          "word": "in",
+          "start": 361.916,
+          "end": 362.067,
+          "charStart": 111,
+          "charEnd": 113
+        },
+        {
+          "word": "sweat.",
+          "start": 362.067,
+          "end": 363.286,
+          "charStart": 114,
+          "charEnd": 120
+        },
+        {
+          "word": "The",
+          "start": 363.286,
+          "end": 363.472,
+          "charStart": 121,
+          "charEnd": 124
+        },
+        {
+          "word": "land",
+          "start": 363.472,
+          "end": 363.751,
+          "charStart": 125,
+          "charEnd": 129
+        },
+        {
+          "word": "of",
+          "start": 363.751,
+          "end": 363.879,
+          "charStart": 130,
+          "charEnd": 132
+        },
+        {
+          "word": "tears",
+          "start": 363.879,
+          "end": 364.331,
+          "charStart": 133,
+          "charEnd": 138
+        },
+        {
+          "word": "sent",
+          "start": 364.331,
+          "end": 364.564,
+          "charStart": 139,
+          "charEnd": 143
+        },
+        {
+          "word": "forth",
+          "start": 364.564,
+          "end": 364.842,
+          "charStart": 144,
+          "charEnd": 149
+        },
+        {
+          "word": "a",
+          "start": 364.842,
+          "end": 364.935,
+          "charStart": 150,
+          "charEnd": 151
+        },
+        {
+          "word": "wind",
+          "start": 364.935,
+          "end": 365.295,
+          "charStart": 152,
+          "charEnd": 156
+        },
+        {
+          "word": "And",
+          "start": 365.295,
+          "end": 365.446,
+          "charStart": 157,
+          "charEnd": 160
+        },
+        {
+          "word": "flashed",
+          "start": 365.446,
+          "end": 365.852,
+          "charStart": 161,
+          "charEnd": 168
+        },
+        {
+          "word": "a",
+          "start": 365.852,
+          "end": 365.945,
+          "charStart": 169,
+          "charEnd": 170
+        },
+        {
+          "word": "crimson",
+          "start": 365.945,
+          "end": 366.444,
+          "charStart": 171,
+          "charEnd": 178
+        },
+        {
+          "word": "light",
+          "start": 366.444,
+          "end": 366.735,
+          "charStart": 179,
+          "charEnd": 184
+        },
+        {
+          "word": "That",
+          "start": 366.735,
+          "end": 366.932,
+          "charStart": 185,
+          "charEnd": 189
+        },
+        {
+          "word": "overwhelmed",
+          "start": 366.932,
+          "end": 367.617,
+          "charStart": 190,
+          "charEnd": 201
+        },
+        {
+          "word": "all",
+          "start": 367.617,
+          "end": 367.814,
+          "charStart": 202,
+          "charEnd": 205
+        },
+        {
+          "word": "my",
+          "start": 367.814,
+          "end": 368,
+          "charStart": 206,
+          "charEnd": 208
+        },
+        {
+          "word": "senses,",
+          "start": 368,
+          "end": 368.743,
+          "charStart": 209,
+          "charEnd": 216
+        },
+        {
+          "word": "And",
+          "start": 368.743,
+          "end": 368.952,
+          "charStart": 217,
+          "charEnd": 220
+        },
+        {
+          "word": "I",
+          "start": 368.952,
+          "end": 369.126,
+          "charStart": 221,
+          "charEnd": 222
+        },
+        {
+          "word": "fell",
+          "start": 369.126,
+          "end": 369.451,
+          "charStart": 223,
+          "charEnd": 227
+        },
+        {
+          "word": "like",
+          "start": 369.451,
+          "end": 369.695,
+          "charStart": 228,
+          "charEnd": 232
+        },
+        {
+          "word": "someone",
+          "start": 369.695,
+          "end": 370.09,
+          "charStart": 233,
+          "charEnd": 240
+        },
+        {
+          "word": "seized",
+          "start": 370.09,
+          "end": 370.519,
+          "charStart": 241,
+          "charEnd": 247
+        },
+        {
+          "word": "by",
+          "start": 370.519,
+          "end": 370.717,
+          "charStart": 248,
+          "charEnd": 250
+        },
+        {
+          "word": "sleep.",
+          "start": 370.717,
+          "end": 371.843,
+          "charStart": 251,
+          "charEnd": 256
+        }
+      ]
+    }
+  ]
+}

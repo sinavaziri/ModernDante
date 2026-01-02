@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { getAllCanticas, getNextCanto, getPreviousCanto, type Cantica } from '@/lib/cantos';
+import { getAllCanticas, type Cantica } from '@/lib/cantos';
 import { useState } from 'react';
 
 interface NavigationProps {
@@ -15,9 +15,6 @@ export default function Navigation({ cantica, cantoNumber }: NavigationProps) {
   const pathname = usePathname();
   const canticas = getAllCanticas();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const prevCanto = cantica && cantoNumber ? getPreviousCanto(cantica, cantoNumber) : null;
-  const nextCanto = cantica && cantoNumber ? getNextCanto(cantica, cantoNumber) : null;
 
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
@@ -60,44 +57,18 @@ export default function Navigation({ cantica, cantoNumber }: NavigationProps) {
                 {c.displayName}
               </Link>
             ))}
+            {/* Illustrations Link */}
+            <Link
+              href="/gallery"
+              className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
+                pathname === '/gallery'
+                  ? 'text-foreground font-bold border-b-2 border-primary'
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+              }`}
+            >
+              Illustrations
+            </Link>
           </div>
-
-          {/* Prev/Next Navigation - Desktop */}
-          {cantica && cantoNumber && (
-            <div className="hidden md:flex items-center space-x-3">
-              {prevCanto ? (
-                <Link
-                  href={`/${prevCanto.cantica}/${prevCanto.number}`}
-                  className="group flex items-center space-x-2 px-4 py-2 text-sm border border-border rounded-sm hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
-                >
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-                  </svg>
-                  <span>Prev</span>
-                </Link>
-              ) : (
-                <div className="px-4 py-2 text-sm border border-transparent text-muted-foreground/30 cursor-not-allowed">
-                   <span>Prev</span>
-                </div>
-              )}
-
-              {nextCanto ? (
-                <Link
-                  href={`/${nextCanto.cantica}/${nextCanto.number}`}
-                  className="group flex items-center space-x-2 px-4 py-2 text-sm bg-primary text-primary-foreground rounded-sm hover:bg-primary/90 transition-colors shadow-sm"
-                >
-                  <span>Next</span>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              ) : (
-                <div className="px-4 py-2 text-sm border border-transparent text-muted-foreground/30 cursor-not-allowed">
-                  <span>Next</span>
-                </div>
-              )}
-            </div>
-          )}
 
           {/* Mobile Menu Button */}
           <button
@@ -133,32 +104,20 @@ export default function Navigation({ cantica, cantoNumber }: NavigationProps) {
                   {c.displayName}
                 </Link>
               ))}
+              {/* Illustrations Link */}
+              <Link
+                href="/gallery"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block px-4 py-3 rounded-sm font-medium transition-all ${
+                  pathname === '/gallery'
+                    ? 'bg-muted text-foreground'
+                    : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                }`}
+              >
+                Illustrations
+              </Link>
             </div>
 
-            {/* Mobile Prev/Next */}
-            {cantica && cantoNumber && (
-              <div className="pt-4 flex items-center space-x-2 border-t border-border mt-2">
-                {prevCanto ? (
-                  <Link
-                    href={`/${prevCanto.cantica}/${prevCanto.number}`}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex-1 px-4 py-3 bg-muted rounded-sm text-center font-medium text-foreground text-sm"
-                  >
-                    ← Previous
-                  </Link>
-                ) : null}
-
-                {nextCanto ? (
-                  <Link
-                    href={`/${nextCanto.cantica}/${nextCanto.number}`}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex-1 px-4 py-3 bg-primary text-primary-foreground rounded-sm text-center font-medium text-sm"
-                  >
-                    Next →
-                  </Link>
-                ) : null}
-              </div>
-            )}
           </div>
         )}
       </div>

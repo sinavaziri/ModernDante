@@ -27,7 +27,7 @@ export default function CantoSelector({ currentCantica, currentCanto }: CantoSel
     <div className="bg-muted/30 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          
+
           {/* Controls Group */}
           <div className="flex flex-1 gap-4 w-full sm:w-auto">
             {/* Cantica Selector */}

@@ -1,21 +1,50 @@
 import type { Metadata } from "next";
-import { Cardo, Source_Sans_3 } from "next/font/google";
+import { Source_Sans_3, Libre_Franklin } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-// Classical serif - Cardo is a Bembo-like Renaissance typeface
-const cardo = Cardo({
-  subsets: ["latin"],
+// Sabon - elegant Renaissance serif for body text
+const sabon = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Sabon.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SabonItalic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/SabonBold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/SabonBoldItalic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
   variable: "--font-serif",
   display: "swap",
-  weight: ["400", "700"],
 });
 
-// Clean humanist sans-serif for navigation and UI elements
+// Clean humanist sans-serif for UI elements
 const sourceSans = Source_Sans_3({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
   weight: ["400", "500", "600", "700"],
+});
+
+// Classic professional sans-serif for navigation
+const libreFranklin = Libre_Franklin({
+  subsets: ["latin"],
+  variable: "--font-nav",
+  display: "swap",
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -29,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sourceSans.variable} ${cardo.variable}`}>
+    <html lang="en" className={`${sourceSans.variable} ${sabon.variable} ${libreFranklin.variable}`}>
       <body className="antialiased min-h-screen bg-background text-foreground">
         {children}
       </body>
