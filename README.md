@@ -1,12 +1,11 @@
 # The Divine Comedy - Modern Translation
 
-A web application that presents Dante's Divine Comedy with side-by-side classic and modern English translations.
+A web application that presents Dante's Divine Comedy with modern approachable English
 
 ## Features
 
-- **Side-by-side comparison**: Original Longfellow translation alongside AI-generated modern versions
 - **Complete work**: All 100 cantos (Inferno, Purgatorio, Paradiso)
-- **Modern rewrites**: Clear, accessible English with natural rhyming
+- **Modern rewrites**: Clear, accessible English
 - **Easy navigation**: Browse by cantica and canto with prev/next buttons
 - **Static site**: Fast, deployable anywhere (Vercel, GitHub Pages, etc.)
 
