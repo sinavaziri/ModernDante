@@ -36,6 +36,9 @@ export const AUDIO = {
 
   /** Audio loading timeout in milliseconds */
   LOAD_TIMEOUT: 30000,
+
+  /** Character limit for text preview in player bar */
+  TEXT_PREVIEW_LENGTH: 60,
 } as const;
 
 // ============================================================================
