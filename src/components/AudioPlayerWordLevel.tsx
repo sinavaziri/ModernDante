@@ -26,6 +26,7 @@ export default function AudioPlayerWordLevel({
   const [duration, setDuration] = useState(0);
   const [currentSegment, setCurrentSegment] = useState<{ id: number; speaker: string; text: string } | null>(null);
   const [playbackRate, setPlaybackRate] = useState(1);
+  const [audioError, setAudioError] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
@@ -62,7 +63,14 @@ export default function AudioPlayerWordLevel({
   const handleLoadedMetadata = useCallback(() => {
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
+      setAudioError(null); // Clear any previous error on successful load
     }
+  }, []);
+
+  // Handle audio loading errors
+  const handleAudioError = useCallback(() => {
+    setAudioError('Unable to load audio. Please try again later.');
+    setIsPlaying(false);
   }, []);
 
   // Play/pause toggle
@@ -149,6 +157,7 @@ export default function AudioPlayerWordLevel({
         onEnded={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
+        onError={handleAudioError}
       />
 
       {/* Sticky Bottom Bar */}
@@ -176,13 +185,17 @@ export default function AudioPlayerWordLevel({
 
             {/* Left: Current Speaker & Text */}
             <div className="flex-1 min-w-0 hidden sm:block">
-              {currentSegment && isPlaying ? (
+              {audioError ? (
+                <p className="text-sm text-red-500">
+                  {audioError}
+                </p>
+              ) : currentSegment && isPlaying ? (
                 <div className="flex items-center gap-3">
                   <span className="flex-shrink-0 px-2 py-0.5 text-xs font-medium bg-primary/10 text-primary rounded-full">
                     {formatSpeaker(currentSegment.speaker)}
                   </span>
                   <p className="text-sm text-muted-foreground truncate italic">
-                    &ldquo;{currentSegment.text.substring(0, 60)}{currentSegment.text.length > 60 ? '...' : ''}&rdquo;
+                    &ldquo;{currentSegment.text.substring(0, AUDIO.TEXT_PREVIEW_LENGTH)}{currentSegment.text.length > AUDIO.TEXT_PREVIEW_LENGTH ? '...' : ''}&rdquo;
                   </p>
                 </div>
               ) : (
