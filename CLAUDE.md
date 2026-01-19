@@ -274,9 +274,30 @@ Enables synchronized text highlighting during playback:
 
 ## Audio Generation
 
+### Complete Audio Deployment Workflow
+
+Use this workflow when regenerating audio after editing speaker segments:
+
+```bash
+# 1. Edit speaker segments using the visual editor
+node scripts/review-server.js  # Opens at http://localhost:3456
+
+# 2. Deploy audio (generates, copies, updates timings, verifies)
+node scripts/deploy-canto-audio.js inferno 1
+
+# 3. Test in browser at http://localhost:3000/inferno/1
+#    Verify:
+#    - Audio plays correctly
+#    - Word highlighting syncs with audio
+#    - Audio player shows correct duration
+#    - All speaker voices are correct
+```
+
+### Individual Commands
+
 ```bash
 # Generate audio for a specific canto
-node scripts/generate-narration-with-timestamps.js --cantica inferno --canto 1
+node scripts/generate-narration-with-timestamps.js inferno 1
 
 # Preview character voices
 node scripts/generate-character-previews.js

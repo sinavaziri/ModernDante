@@ -20,7 +20,7 @@
         "number": 1,
         "title": "Canto I",
         "subtitle": "The Dark Forest. The Hill of Difficulty. The Panther, the Lion, and the Wolf. Virgil.",
-        "totalSegments": 8,
+        "totalSegments": 10,
         "segments": [
           {
             "id": 1,
@@ -65,13 +65,26 @@
           {
             "id": 6,
             "speaker": "virgil",
-            "text": "You must take another road,\" he replied\nwhen he saw me weeping,\n\"if you want to escape this savage place.\nThis beast that makes you cry out\nlets no one pass along her way\nbut harasses them until she destroys them.\nHer nature is so vicious and depraved\nthat she never satisfies her greedy appetite—\nafter feeding she hungers more than before.\nMany are the creatures she mates with,\nand there will be more, until the Greyhound comes\nwho will make her die in agony.\nHe will not feed on land or treasure\nbut on wisdom, love, and virtue.\nBetween Feltro and Feltro his birth shall be.\nHe will be the salvation of that humble Italy\nfor which the virgin Camilla died,\nand Euryalus, Turnus, and Nisus fell wounded.\nHe will hunt her through every city\nuntil he drives her back to Hell,\nfrom where envy first released her.\nTherefore I think it best for you\nto follow me. I will be your guide\nand lead you from here through the eternal realm\nwhere you will hear the hopeless lamentations\nand see the ancient suffering souls\nwho each cry out for a second death.\nAnd you will see those who are content\nwithin the fire, because they hope to join\nthe blessed people, whenever that may be.\nIf you then wish to ascend to them,\nthere will be a soul worthier than I\nto guide you—I will leave you with her.\nFor that Emperor who reigns above,\nbecause I rebelled against his law,\nwill not let anyone enter his city through me.\nEverywhere he governs, but there he reigns.\nThere is his city and his high throne—\nblessed is the one he chooses for that place!",
+            "text": "You must take another road,\"",
             "isDialogue": true,
-            "words": 286,
-            "estimatedSeconds": 115
+            "words": 5
           },
           {
             "id": 7,
+            "speaker": "dante",
+            "text": "he replied when he saw me weeping,",
+            "isDialogue": false,
+            "words": 7
+          },
+          {
+            "id": 8,
+            "speaker": "virgil",
+            "text": "\n\"if you want to escape this savage place.\nThis beast that makes you cry out\nlets no one pass along her way\nbut harasses them until she destroys them.\nHer nature is so vicious and depraved\nthat she never satisfies her greedy appetite—\nafter feeding she hungers more than before.\nMany are the creatures she mates with,\nand there will be more, until the Greyhound comes\nwho will make her die in agony.\nHe will not feed on land or treasure\nbut on wisdom, love, and virtue.\nBetween Feltro and Feltro his birth shall be.\nHe will be the salvation of that humble Italy\nfor which the virgin Camilla died,\nand Euryalus, Turnus, and Nisus fell wounded.\nHe will hunt her through every city\nuntil he drives her back to Hell,\nfrom where envy first released her.\nTherefore I think it best for you\nto follow me. I will be your guide\nand lead you from here through the eternal realm\nwhere you will hear the hopeless lamentations\nand see the ancient suffering souls\nwho each cry out for a second death.\nAnd you will see those who are content\nwithin the fire, because they hope to join\nthe blessed people, whenever that may be.\nIf you then wish to ascend to them,\nthere will be a soul worthier than I\nto guide you—I will leave you with her.\nFor that Emperor who reigns above,\nbecause I rebelled against his law,\nwill not let anyone enter his city through me.\nEverywhere he governs, but there he reigns.\nThere is his city and his high throne—\nblessed is the one he chooses for that place!",
+            "isDialogue": true,
+            "words": 274
+          },
+          {
+            "id": 9,
             "speaker": "dante",
             "text": "Poet, I beg you\nby that same God you never knew,\nso that I may escape this suffering and worse,\nlead me where you have promised,\nso I may see the gate of Saint Peter\nand those you describe as so afflicted.",
             "isDialogue": true,
@@ -79,7 +92,7 @@
             "estimatedSeconds": 17
           },
           {
-            "id": 8,
+            "id": 10,
             "speaker": "narrator",
             "text": "Then he moved forward, and I followed behind him.",
             "isDialogue": false,
