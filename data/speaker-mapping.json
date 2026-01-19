@@ -890,14 +890,15 @@
         "number": 6,
         "title": "Canto VI",
         "subtitle": "The Third Circle: The Gluttonous. Cerberus. The Eternal Rain. Ciacco. Florence.",
-        "totalSegments": 17,
+        "totalSegments": 25,
         "segments": [
           {
             "id": 1,
             "speaker": "narrator",
             "text": "When consciousness returned—\nit had fled before the pity I felt\nfor those two lovers,\nleaving me overwhelmed with grief—\n\nI see new torments and new sufferers\nall around me,\nwherever I move,\nwherever I turn and look.",
             "isDialogue": false,
-            "characterName": null
+            "characterName": null,
+            "words": 38
           },
           {
             "id": 2,
@@ -918,35 +919,62 @@
           {
             "id": 4,
             "speaker": "narrator",
-            "text": "he said to me, \"remember me if you can.\nYou were created before I was destroyed.\"",
+            "text": "he said to me,",
             "isDialogue": false,
-            "words": 16,
-            "estimatedSeconds": 7
+            "words": 4
           },
           {
             "id": 5,
-            "speaker": "dante",
-            "text": "Your suffering,\" I answered him,\n\"may have erased you from my memory—\nI don't think I've ever seen you before.\nBut tell me who you are, placed in this miserable place\nwith such punishment that, though others may be worse,\nnone could be more disgusting.",
-            "isDialogue": true,
-            "words": 45,
-            "estimatedSeconds": 18
+            "speaker": "ciacco",
+            "text": "\"remember me if you can.\nYou were created before I was destroyed.\"",
+            "isDialogue": false,
+            "words": 12
           },
           {
             "id": 6,
-            "speaker": "ciacco",
-            "text": "Your city, so full of envy\nthat the sack overflows, held me in the peaceful life above.\nYou citizens used to call me Ciacco.\nFor the destructive sin of gluttony,\nas you can see, I'm battered by this rain.\nAnd I'm not the only miserable soul here—\nall these others suffer the same penalty\nfor the same sin.\" Then he said no more.",
+            "speaker": "dante",
+            "text": "Your suffering,\"",
             "isDialogue": true,
-            "characterName": null
+            "words": 2
           },
           {
             "id": 7,
             "speaker": "dante",
-            "text": "\"Ciacco,\" I answered, \"your wretchedness\nweighs on me so heavily it makes me want to weep.\nBut tell me, if you know—what will happen\nto the citizens of our divided city?\nIs there anyone just there? And tell me\nwhy so much discord has torn it apart.",
-            "isDialogue": true,
-            "characterName": null
+            "text": "I answered him,",
+            "isDialogue": false,
+            "words": 3
           },
           {
             "id": 8,
+            "speaker": "dante",
+            "text": "\"may have erased you from my memory—\nI don't think I've ever seen you before.\nBut tell me who you are, placed in this miserable place\nwith such punishment that, though others may be worse,\nnone could be more disgusting.",
+            "isDialogue": true,
+            "words": 40
+          },
+          {
+            "id": 9,
+            "speaker": "ciacco",
+            "text": "Your city, so full of envy\nthat the sack overflows, held me in the peaceful life above.\nYou citizens used to call me Ciacco.\nFor the destructive sin of gluttony,\nas you can see, I'm battered by this rain.\nAnd I'm not the only miserable soul here—\nall these others suffer the same penalty\nfor the same sin.\"",
+            "isDialogue": true,
+            "words": 58
+          },
+          {
+            "id": 10,
+            "speaker": "dante",
+            "text": "Then he said no more.",
+            "isDialogue": false,
+            "words": 5
+          },
+          {
+            "id": 11,
+            "speaker": "dante",
+            "text": "\"Ciacco,\" I answered, \"your wretchedness\nweighs on me so heavily it makes me want to weep.\nBut tell me, if you know—what will happen\nto the citizens of our divided city?\nIs there anyone just there? And tell me\nwhy so much discord has torn it apart.",
+            "isDialogue": true,
+            "characterName": null,
+            "words": 47
+          },
+          {
+            "id": 12,
             "speaker": "ciacco",
             "text": "After long struggle, they'll come to bloodshed. The country party\nwill drive out the other with great violence.\nBut then within three years that side will fall,\nand the other will rise again\nthrough the power of one who now waits on the sidelines.\nThey'll hold their heads high for a long time,\nkeeping their enemies under heavy burdens,\nno matter how much the others weep and rage.\nOnly two men are just, and no one listens to them.\nEnvy and pride and greed—\nthese are the three sparks that have set every heart on fire.",
             "isDialogue": true,
@@ -954,7 +982,7 @@
             "estimatedSeconds": 39
           },
           {
-            "id": 9,
+            "id": 13,
             "speaker": "narrator",
             "text": "Here he ended his tearful speech.",
             "isDialogue": false,
@@ -962,7 +990,7 @@
             "estimatedSeconds": 3
           },
           {
-            "id": 10,
+            "id": 14,
             "speaker": "dante",
             "text": "I want you to teach me more,\" I said,\n\"and give me the gift of further words.\nFarinata and Tegghiaio, who were so worthy,\nJacopo Rusticucci, Arrigo, and Mosca,\nand the others who set their minds on doing good—\ntell me where they are, help me to know them.\nI'm desperate to learn whether Heaven sweetens them\nor Hell poisons them.",
             "isDialogue": true,
@@ -970,7 +998,7 @@
             "estimatedSeconds": 25
           },
           {
-            "id": 11,
+            "id": 15,
             "speaker": "ciacco",
             "text": "They're among the blacker souls,\" he said.\n\"Different sins drag them down to the bottom.\nIf you descend that far, you can see them.\nBut when you return to the sweet world,\nplease bring me back to others' memory.\nI'll tell you no more and answer nothing else.",
             "isDialogue": true,
@@ -978,7 +1006,7 @@
             "estimatedSeconds": 20
           },
           {
-            "id": 12,
+            "id": 16,
             "speaker": "narrator",
             "text": "His eyes, which had looked straight at me, turned aside.\nHe glanced at me briefly, then bowed his head\nand fell face-down like all the other blind souls.",
             "isDialogue": false,
@@ -986,31 +1014,58 @@
             "estimatedSeconds": 12
           },
           {
-            "id": 13,
+            "id": 17,
             "speaker": "virgil",
-            "text": "He won't wake again,\" my guide said,\n\"until the angel's trumpet sounds,\nwhen the hostile Judge approaches.\nEach soul will find his wretched tomb again,\ntake back his flesh and human shape,\nand hear what echoes through eternity.",
+            "text": "He won't wake again,\"",
             "isDialogue": true,
-            "words": 38,
-            "estimatedSeconds": 16
+            "words": 4
           },
           {
-            "id": 14,
+            "id": 18,
+            "speaker": "dante",
+            "text": "my guide said,",
+            "isDialogue": false,
+            "words": 3
+          },
+          {
+            "id": 19,
+            "speaker": "virgil",
+            "text": "\"until the angel's trumpet sounds,\nwhen the hostile Judge approaches.\nEach soul will find his wretched tomb again,\ntake back his flesh and human shape,\nand hear what echoes through eternity.",
+            "isDialogue": true,
+            "words": 31
+          },
+          {
+            "id": 20,
             "speaker": "narrator",
             "text": "We moved on across that filthy mixture\nof shadows and rain with slow steps,\ntalking a little about the life to come.",
             "isDialogue": false,
-            "words": 22,
-            "estimatedSeconds": 9
+            "words": 22
           },
           {
-            "id": 15,
+            "id": 21,
             "speaker": "dante",
             "text": "Master,\" I said, \"will these torments\nincrease after the great judgment,\nor lessen, or stay just as intense?",
             "isDialogue": true,
-            "words": 18,
+            "words": 18
+          },
+          {
+            "id": 22,
+            "speaker": "virgil",
+            "text": "Go back to your philosophy, which teaches that the more perfect something is,\nthe more it feels both pleasure and pain.\nThough these cursed people can never reach\ntrue perfection, they'll be more complete\nafter that day than they are now.",
+            "isDialogue": true,
+            "words": 41,
+            "estimatedSeconds": 9
+          },
+          {
+            "id": 23,
+            "speaker": "narrator",
+            "text": "We walked in a circle along that path,\nsaying much more than I won't repeat here,\nuntil we came to the place of descent.\nThere we found Plutus, the great enemy.",
+            "isDialogue": false,
+            "words": 31,
             "estimatedSeconds": 8
           },
           {
-            "id": 16,
+            "id": 24,
             "speaker": "virgil",
             "text": "Go back to your philosophy, which teaches that the more perfect something is,\nthe more it feels both pleasure and pain.\nThough these cursed people can never reach\ntrue perfection, they'll be more complete\nafter that day than they are now.",
             "isDialogue": true,
@@ -1018,7 +1073,7 @@
             "estimatedSeconds": 17
           },
           {
-            "id": 17,
+            "id": 25,
             "speaker": "narrator",
             "text": "We walked in a circle along that path,\nsaying much more than I won't repeat here,\nuntil we came to the place of descent.\nThere we found Plutus, the great enemy.",
             "isDialogue": false,
