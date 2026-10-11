@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback, useEffect } from 'react';
+import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { type Canto, type Cantica, getNextCanto, getPreviousCanto } from '@/lib/cantos';
@@ -8,6 +8,8 @@ import { getImagesForCanto, type ImageData } from '@/lib/image-mappings';
 import type { AudioTimingData, AudioTimingsRoot } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
+import { alignNarration, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
+import { useNarrationHighlight } from '@/lib/useNarrationHighlight';
 
 interface CantoDisplayProps {
   canto: Canto;
@@ -16,7 +18,7 @@ interface CantoDisplayProps {
 }
 
 type ContentBlock =
-  | { type: 'text'; content: string[]; startLine: number; endLine: number; segmentId?: number }
+  | { type: 'text'; content: string[]; lines: TokenizedLine[]; startLine: number; endLine: number; segmentId?: number }
   | { type: 'image'; data: ImageData };
 
 // Lightbox Modal Component (same as before)
@@ -142,10 +144,11 @@ function InlineImage({
 
 export default function CantoDisplay({ canto, canticaName, cantica }: CantoDisplayProps) {
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
-  const [currentTime, setCurrentTime] = useState(0);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
   const [isActiveWordVisible, setIsActiveWordVisible] = useState(true);
   const [scrollToNarration, setScrollToNarration] = useState<(() => void) | null>(null);
+  const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
+  const narrationRef = useRef<HTMLDivElement>(null);
 
   const images = getImagesForCanto(cantica, canto.number);
   const prevCanto = getPreviousCanto(cantica as Cantica, canto.number);
@@ -166,25 +169,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     loadTimingData();
   }, [cantica, canto.number]);
 
-  // Create a merged segment with all words from all segments for highlighting
-  const mergedSegment = useMemo(() => {
-    if (!timingData?.segments?.length) return null;
-
-    // Combine all words from all segments into one
-    const allWords = timingData.segments.flatMap(seg => seg.words || []);
-    const allText = timingData.segments.map(seg => seg.text).join('\n\n');
-
-    return {
-      id: 0,
-      speaker: 'narrator',
-      text: allText,
-      startTime: timingData.segments[0].startTime,
-      endTime: timingData.segments[timingData.segments.length - 1].endTime,
-      duration: timingData.totalDuration,
-      words: allWords,
-    };
-  }, [timingData]);
-
   // Handle visibility changes from the text highlighting component
   const handleActiveWordVisibilityChange = useCallback((isVisible: boolean, scrollFn: () => void) => {
     setIsActiveWordVisible(isVisible);
@@ -197,10 +181,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
 
   const handleCloseLightbox = useCallback(() => {
     setSelectedImage(null);
-  }, []);
-
-  const handleTimeUpdate = useCallback((time: number) => {
-    setCurrentTime(time);
   }, []);
 
   // Map text to segments
@@ -237,6 +217,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       blocks.push({
         type: 'text',
         content: lines,
+        lines: [],
         startLine,
         endLine,
         segmentId: matchedSegmentId
@@ -267,8 +248,22 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       currentLine += lines.length;
     });
 
+    const textBlocks = blocks.filter(b => b.type === 'text');
+    tokenizeStanzas(textBlocks.map(b => b.content)).forEach((lines, i) => {
+      textBlocks[i].lines = lines;
+    });
+
     return blocks;
   }, [canto.modern, images, timingData]);
+
+  // Match each spoken word to its word in the displayed text
+  const timedTokens = useMemo(() => {
+    if (!timingData) return [];
+    const stanzas = modernContent.flatMap(b => (b.type === 'text' ? [b.lines] : []));
+    return alignNarration(stanzas, timingData);
+  }, [modernContent, timingData]);
+
+  useNarrationHighlight(narrationRef, audioElement, timedTokens, handleActiveWordVisibilityChange);
 
 
   return (
@@ -334,7 +329,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
 
         {/* Main Content */}
         <div className="max-w-3xl mx-auto px-4 md:px-8 py-12">
-          <div className="space-y-8">
+          <div ref={narrationRef} className={`space-y-8${timedTokens.length ? ' has-narration' : ''}`}>
 
             {modernContent.map((block, idx) => {
               if (block.type === 'image') {
@@ -348,20 +343,12 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
                 );
               }
 
-              const textContent = block.content.join('\n');
-
               return (
                 <div
                   key={`stanza-${idx}`}
                   className="poetry text-lg md:text-xl leading-relaxed text-foreground/90"
                 >
-                  <TextWithWordHighlighting
-                    text={textContent}
-                    segment={mergedSegment}
-                    currentTime={currentTime}
-                    isActive={true}
-                    onActiveWordVisibilityChange={handleActiveWordVisibilityChange}
-                  />
+                  <TextWithWordHighlighting lines={block.lines} />
                   <div className="text-[10px] text-muted-foreground/30 text-right select-none" aria-hidden="true">
                     {block.endLine}
                   </div>
@@ -383,7 +370,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
         cantica={cantica}
         cantoNumber={canto.number}
         timingData={timingData}
-        onTimeUpdate={handleTimeUpdate}
+        onAudioElement={setAudioElement}
         isNarrationVisible={isActiveWordVisible}
         onScrollToNarration={scrollToNarration}
       />

@@ -9,6 +9,8 @@ interface AudioPlayerProps {
   cantoNumber: number;
   timingData: AudioTimingData | null;
   onTimeUpdate?: (currentTime: number) => void;
+  /** Receives the underlying audio element, for frame-accurate sync */
+  onAudioElement?: (audio: HTMLAudioElement | null) => void;
   isNarrationVisible?: boolean;
   onScrollToNarration?: (() => void) | null;
 }
@@ -18,6 +20,7 @@ export default function AudioPlayerWordLevel({
   cantoNumber,
   timingData,
   onTimeUpdate,
+  onAudioElement,
   isNarrationVisible = true,
   onScrollToNarration,
 }: AudioPlayerProps) {
@@ -28,6 +31,10 @@ export default function AudioPlayerWordLevel({
   const [audioError, setAudioError] = useState<string | null>(null);
 
   const audioRef = useRef<HTMLAudioElement>(null);
+  const setAudioRef = useCallback((audio: HTMLAudioElement | null) => {
+    audioRef.current = audio;
+    onAudioElement?.(audio);
+  }, [onAudioElement]);
   const progressRef = useRef<HTMLDivElement>(null);
 
   const hasAudio = !!timingData;
@@ -137,7 +144,7 @@ export default function AudioPlayerWordLevel({
   return (
     <>
       <audio
-        ref={audioRef}
+        ref={setAudioRef}
         src={audioSrc}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}

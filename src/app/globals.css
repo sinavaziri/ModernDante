@@ -213,3 +213,31 @@
     grid-template-rows: masonry;
   }
 }
+
+/* Narration highlighting (driven by useNarrationHighlight) */
+.has-narration .narration-line {
+  opacity: 0.6;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.has-narration .narration-line.is-active {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
+.narration-word {
+  border-radius: 3px;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.narration-word.is-current {
+  background-color: color-mix(in srgb, var(--color-primary) 14%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 14%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-narration .narration-line,
+  .narration-word {
+    transition: none;
+  }
+}
