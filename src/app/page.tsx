@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import { getAllCanticas } from '@/lib/cantos';
+import { getImageSrc } from '@/lib/image-mappings';
 
 export default function HomePage() {
   const canticas = getAllCanticas();
@@ -46,7 +47,7 @@ export default function HomePage() {
                 <div className="relative w-full">
                   <div className="absolute -inset-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 rounded-sm blur-2xl" />
                   <img 
-                    src="/images/inferno/38.png" 
+                    src={getImageSrc('inferno', '38.png')}
                     alt="Gustave Doré illustration from Dante's Inferno"
                     className="relative w-full h-auto object-contain shadow-2xl rounded-sm border border-border/20"
                   />
@@ -96,7 +97,7 @@ export default function HomePage() {
                   <div 
                     className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
                     style={{
-                      backgroundImage: 'url(/images/inferno/30.png)',
+                      backgroundImage: `url(${getImageSrc('inferno', '30.png')})`,
                       backgroundSize: '130%',
                       backgroundPosition: 'center',
                     }}
@@ -106,7 +107,7 @@ export default function HomePage() {
                   <div 
                     className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
                     style={{
-                      backgroundImage: 'url(/images/purgatorio/91.png)',
+                      backgroundImage: `url(${getImageSrc('purgatorio', '91.png')})`,
                       backgroundSize: '130%',
                       backgroundPosition: 'center',
                     }}
@@ -116,7 +117,7 @@ export default function HomePage() {
                   <div 
                     className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
                     style={{
-                      backgroundImage: 'url(/images/paradiso/128.png)',
+                      backgroundImage: `url(${getImageSrc('paradiso', '128.png')})`,
                       backgroundSize: '130%',
                       backgroundPosition: 'center',
                     }}

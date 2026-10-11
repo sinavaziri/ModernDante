@@ -4,7 +4,7 @@ import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { type Canto, type Cantica, getNextCanto, getPreviousCanto } from '@/lib/cantos';
-import { getImagesForCanto, type ImageData } from '@/lib/image-mappings';
+import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
 import type { AudioTimingData, AudioTimingsRoot } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
@@ -67,7 +67,7 @@ function ImageLightbox({
       >
         <div className="relative flex-shrink-0 w-full lg:w-auto lg:max-w-[60%] max-h-[70vh] lg:max-h-[85vh]">
           <Image
-            src={`/images/${cantica}/${image.filename}`}
+            src={getImageSrc(cantica, image.filename)}
             alt={image.title}
             width={1200}
             height={1600}
@@ -112,7 +112,7 @@ function InlineImage({
     >
       <div className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50">
         <Image
-          src={`/images/${cantica}/${image.filename}`}
+          src={getImageSrc(cantica, image.filename)}
           alt={image.title}
           width={800}
           height={1067}

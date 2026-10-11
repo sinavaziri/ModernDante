@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { ANIMATION } from '@/lib/constants';
+import { getImageSrc } from '@/lib/image-mappings';
 
 // Generate all 135 image paths
 function getAllImages(): string[] {
@@ -9,17 +10,17 @@ function getAllImages(): string[] {
   
   // Inferno: 1-75
   for (let i = 1; i <= 75; i++) {
-    images.push(`/images/inferno/${i}.png`);
+    images.push(getImageSrc('inferno', `${i}.png`));
   }
   
   // Purgatorio: 76-117
   for (let i = 76; i <= 117; i++) {
-    images.push(`/images/purgatorio/${i}.png`);
+    images.push(getImageSrc('purgatorio', `${i}.png`));
   }
   
   // Paradiso: 118-135
   for (let i = 118; i <= 135; i++) {
-    images.push(`/images/paradiso/${i}.png`);
+    images.push(getImageSrc('paradiso', `${i}.png`));
   }
   
   return images;

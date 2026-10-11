@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import { getImageSrc } from '@/lib/image-mappings';
 import imageMappingsData from '@/data/image-mappings.json';
 
 type Cantica = 'all' | 'inferno' | 'purgatorio' | 'paradiso';
@@ -160,7 +161,7 @@ export default function GalleryPage() {
                   )}
                   
                   <Image
-                    src={`/images/${image.cantica}/${image.filename}`}
+                    src={getImageSrc(image.cantica, image.filename)}
                     alt={image.title}
                     fill
                     className={`object-cover transition-all duration-700 group-hover:scale-105 ${
@@ -217,7 +218,7 @@ export default function GalleryPage() {
                 <div className="relative flex-1 min-h-0">
                   <div className="relative h-[50vh] lg:h-[80vh] w-full">
                     <Image
-                      src={`/images/${selectedImage.cantica}/${selectedImage.filename}`}
+                      src={getImageSrc(selectedImage.cantica, selectedImage.filename)}
                       alt={selectedImage.title}
                       fill
                       className="object-contain"

@@ -2,6 +2,7 @@
 // Generated from imagecaptions.md
 
 import imageMappingsData from '@/data/image-mappings.json';
+import colorizedImages from '@/data/colorized-images.json';
 
 export interface ImageData {
   imageNumber: number;
@@ -67,4 +68,17 @@ export function getImageForCanto(cantica: string, cantoNumber: number): string |
  */
 export function getAllImageData() {
   return imageMappingsData;
+}
+
+const colorized = new Set<string>(colorizedImages);
+
+/**
+ * Public URL for an illustration: the colorized version when one exists,
+ * otherwise the original black-and-white engraving
+ * @param cantica - The cantica name
+ * @param filename - The image filename, e.g. "1.png"
+ */
+export function getImageSrc(cantica: string, filename: string): string {
+  const key = `${cantica}/${filename}`;
+  return colorized.has(key) ? `/images-color/${key}` : `/images/${key}`;
 }
