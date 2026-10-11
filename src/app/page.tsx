@@ -24,7 +24,7 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  Experience Dante's masterpiece in modern and approachable English with an elegant reading interface,
+                  Experience Dante&apos;s masterpiece in modern and approachable English with an elegant reading interface,
                   featuring classic illustrations by Gustave Doré.
                 </p>
 

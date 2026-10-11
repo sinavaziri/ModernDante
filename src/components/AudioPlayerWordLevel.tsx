@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useCallback, useMemo } from 'react';
 import { AUDIO } from '@/lib/constants';
 import type { AudioTimingData } from '@/types/audio';
 
@@ -24,7 +24,6 @@ export default function AudioPlayerWordLevel({
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [currentSegment, setCurrentSegment] = useState<{ id: number; speaker: string; text: string } | null>(null);
   const [playbackRate, setPlaybackRate] = useState(1);
   const [audioError, setAudioError] = useState<string | null>(null);
 
@@ -33,22 +32,11 @@ export default function AudioPlayerWordLevel({
 
   const hasAudio = !!timingData;
 
-  // Update current segment based on playback time
-  useEffect(() => {
-    if (!timingData) return;
-
-    const segment = timingData.segments.find(
-      seg => currentTime >= seg.startTime && currentTime < seg.endTime
-    );
-
-    if (segment && segment.id !== currentSegment?.id) {
-      setCurrentSegment({
-        id: segment.id,
-        speaker: segment.speaker,
-        text: segment.text
-      });
-    }
-  }, [currentTime, timingData, currentSegment?.id]);
+  // Current segment for playback time; holds the last started segment through gaps
+  const currentSegment = useMemo(() => {
+    if (!timingData) return null;
+    return timingData.segments.findLast(seg => currentTime >= seg.startTime) ?? null;
+  }, [currentTime, timingData]);
 
   // Handle time updates - notify parent component
   const handleTimeUpdate = useCallback(() => {

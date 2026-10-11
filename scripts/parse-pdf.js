@@ -22,7 +22,7 @@ async function parsePDF() {
 
         // Extract text from all pages
         let fullText = '';
-        pdfData.Pages.forEach((page, pageIndex) => {
+        pdfData.Pages.forEach((page) => {
           page.Texts.forEach(text => {
             text.R.forEach(r => {
               const decoded = decodeURIComponent(r.T);

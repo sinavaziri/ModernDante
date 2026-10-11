@@ -11,7 +11,7 @@ interface NavigationProps {
   cantoNumber?: number;
 }
 
-export default function Navigation({ cantica, cantoNumber }: NavigationProps) {
+export default function Navigation({ cantica }: NavigationProps) {
   const pathname = usePathname();
   const canticas = getAllCanticas();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

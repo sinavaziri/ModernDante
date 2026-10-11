@@ -112,7 +112,7 @@ export default function GalleryPage() {
               Doré Gallery
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Browse all {counts.all} engravings by Gustave Doré, created for Dante's Divine Comedy between 1857–1868.
+              Browse all {counts.all} engravings by Gustave Doré, created for Dante&apos;s Divine Comedy between 1857–1868.
             </p>
           </div>
         </div>
@@ -256,7 +256,7 @@ export default function GalleryPage() {
                   {/* Quote */}
                   <blockquote className="relative pl-4 border-l-2 border-primary/50">
                     <p className="text-foreground/90 italic text-sm lg:text-base leading-relaxed">
-                      "{selectedImage.quote}"
+                      &quot;{selectedImage.quote}&quot;
                     </p>
                   </blockquote>
 

@@ -81,7 +81,7 @@ function ImageLightbox({
             </h3>
             <div className="w-16 h-px bg-gradient-to-r from-rose-400/60 to-transparent mx-auto lg:mx-0" />
             <blockquote className="text-lg md:text-xl font-serif italic text-white/80 leading-relaxed">
-              "{image.quote}"
+              &quot;{image.quote}&quot;
             </blockquote>
             <p className="text-sm font-sans tracking-widest text-white/50 uppercase">
               {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}
@@ -142,7 +142,6 @@ function InlineImage({
 
 export default function CantoDisplay({ canto, canticaName, cantica }: CantoDisplayProps) {
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
-  const [activeSegmentId, setActiveSegmentId] = useState<number | null>(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
   const [isActiveWordVisible, setIsActiveWordVisible] = useState(true);
@@ -185,20 +184,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       words: allWords,
     };
   }, [timingData]);
-
-  // Update active segment based on current time
-  useEffect(() => {
-    if (!timingData) return;
-
-    const segment = timingData.segments.find(
-      (seg) => currentTime >= seg.startTime && currentTime < seg.endTime
-    );
-
-    const newSegmentId = segment?.id || null;
-    if (newSegmentId !== activeSegmentId) {
-      setActiveSegmentId(newSegmentId);
-    }
-  }, [currentTime, timingData, activeSegmentId]);
 
   // Handle visibility changes from the text highlighting component
   const handleActiveWordVisibilityChange = useCallback((isVisible: boolean, scrollFn: () => void) => {
@@ -260,19 +245,16 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       // Check for images
       const relevantImages = images.filter(img => {
         const linesStr = img.lines;
-        let imgStart: number;
         let imgEnd: number;
 
         if (linesStr.includes('–')) {
           const parts = linesStr.split('–').map(s => parseInt(s.trim(), 10));
-          imgStart = parts[0];
           imgEnd = parts[1] ?? parts[0];
         } else if (linesStr.includes(',')) {
           const parts = linesStr.split(',').map(s => parseInt(s.trim(), 10));
-          imgStart = parts[0];
           imgEnd = parts[parts.length - 1];
         } else {
-          imgStart = imgEnd = parseInt(linesStr.trim(), 10);
+          imgEnd = parseInt(linesStr.trim(), 10);
         }
 
         return imgEnd >= startLine && imgEnd <= endLine;
