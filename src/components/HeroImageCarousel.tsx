@@ -4,13 +4,12 @@ import { useState, useEffect, useCallback, useRef } from 'react';
 import { ANIMATION } from '@/lib/constants';
 import { getImageSrc } from '@/lib/image-mappings';
 
-// Generate all 133 image paths (Inferno 38 and 47 are duplicate files of 20 and 43)
+// Generate all 135 image paths
 function getAllImages(): string[] {
   const images: string[] = [];
   
   // Inferno: 1-75
   for (let i = 1; i <= 75; i++) {
-    if (i === 38 || i === 47) continue;
     images.push(getImageSrc('inferno', `${i}.png`));
   }
   

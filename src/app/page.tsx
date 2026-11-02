@@ -69,7 +69,7 @@ export default function HomePage() {
               </div>
               <div className="space-y-2 py-4 md:py-0">
                 <div className="text-4xl md:text-5xl font-bold text-foreground">
-                  133
+                  135
                 </div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider">Doré Illustrations</div>
               </div>

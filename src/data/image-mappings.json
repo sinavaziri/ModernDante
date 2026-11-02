@@ -408,10 +408,19 @@
     {
       "imageNumber": 46,
       "title": "DEVILS AND BARRATORS",
-      "quote": "If you don't want to feel our hooks,",
+      "quote": "They struck him with a hundred prongs,",
       "cantica": "inferno",
       "canto": 21,
-      "lines": "52",
+      "lines": "54",
+      "filename": "47.png"
+    },
+    {
+      "imageNumber": 47,
+      "title": "DEVILS AND VIRGIL",
+      "quote": "But he cried: \"Let none of you attack!",
+      "cantica": "inferno",
+      "canto": 21,
+      "lines": "74",
       "filename": "48.png"
     },
     {
@@ -476,6 +485,15 @@
       "canto": 25,
       "lines": "68, 69",
       "filename": "55.png"
+    },
+    {
+      "imageNumber": 55,
+      "title": "EVIL COUNSELLORS",
+      "quote": "said: \"The spirits are within those fires— / each wraps himself in what burns him.\"",
+      "cantica": "inferno",
+      "canto": 26,
+      "lines": "46, 47",
+      "filename": "38.png"
     },
     {
       "imageNumber": 56,
@@ -1553,10 +1571,17 @@
     "inferno-21": [
       {
         "imageNumber": 46,
-        "filename": "48.png",
+        "filename": "47.png",
         "title": "DEVILS AND BARRATORS",
-        "quote": "If you don't want to feel our hooks,",
-        "lines": "52"
+        "quote": "They struck him with a hundred prongs,",
+        "lines": "54"
+      },
+      {
+        "imageNumber": 47,
+        "filename": "48.png",
+        "title": "DEVILS AND VIRGIL",
+        "quote": "But he cried: \"Let none of you attack!",
+        "lines": "74"
       }
     ],
     "inferno-22": [
@@ -1614,6 +1639,15 @@
         "title": "TRANSFORMATION INTO SNAKES",
         "quote": "\"Agnello! Look how you transform! / You are neither two beings nor one!\"",
         "lines": "68, 69"
+      }
+    ],
+    "inferno-26": [
+      {
+        "imageNumber": 55,
+        "filename": "38.png",
+        "title": "EVIL COUNSELLORS",
+        "quote": "said: \"The spirits are within those fires— / each wraps himself in what burns him.\"",
+        "lines": "46, 47"
       }
     ],
     "inferno-28": [
