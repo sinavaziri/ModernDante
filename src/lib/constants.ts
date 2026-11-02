@@ -73,7 +73,7 @@ export const IMAGES = {
   PARADISO_RANGE: { start: 118, end: 135 },
 
   /** Total number of images */
-  TOTAL_COUNT: 135,
+  TOTAL_COUNT: 133,
 } as const;
 
 // ============================================================================

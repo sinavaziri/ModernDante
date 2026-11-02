@@ -340,7 +340,7 @@
       "cantica": "inferno",
       "canto": 14,
       "lines": "28, 29",
-      "filename": "38.png"
+      "filename": "39.png"
     },
     {
       "imageNumber": 39,
@@ -349,7 +349,7 @@
       "cantica": "inferno",
       "canto": 15,
       "lines": "30",
-      "filename": "39.png"
+      "filename": "40.png"
     },
     {
       "imageNumber": 40,
@@ -358,7 +358,7 @@
       "cantica": "inferno",
       "canto": 17,
       "lines": "7, 8",
-      "filename": "40.png"
+      "filename": "41.png"
     },
     {
       "imageNumber": 41,
@@ -367,7 +367,7 @@
       "cantica": "inferno",
       "canto": 17,
       "lines": "115, 116",
-      "filename": "41.png"
+      "filename": "42.png"
     },
     {
       "imageNumber": 42,
@@ -376,7 +376,7 @@
       "cantica": "inferno",
       "canto": 18,
       "lines": "37, 38",
-      "filename": "42.png"
+      "filename": "43.png"
     },
     {
       "imageNumber": 43,
@@ -385,7 +385,7 @@
       "cantica": "inferno",
       "canto": 18,
       "lines": "113, 114",
-      "filename": "43.png"
+      "filename": "44.png"
     },
     {
       "imageNumber": 44,
@@ -394,7 +394,7 @@
       "cantica": "inferno",
       "canto": 18,
       "lines": "133–135",
-      "filename": "44.png"
+      "filename": "45.png"
     },
     {
       "imageNumber": 45,
@@ -403,7 +403,7 @@
       "cantica": "inferno",
       "canto": 19,
       "lines": "47, 48",
-      "filename": "45.png"
+      "filename": "46.png"
     },
     {
       "imageNumber": 46,
@@ -412,16 +412,7 @@
       "cantica": "inferno",
       "canto": 21,
       "lines": "52",
-      "filename": "46.png"
-    },
-    {
-      "imageNumber": 47,
-      "title": "DEVILS AND VIRGIL",
-      "quote": "the demons burst from beneath the bridge",
-      "cantica": "inferno",
-      "canto": 21,
-      "lines": "72",
-      "filename": "47.png"
+      "filename": "48.png"
     },
     {
       "imageNumber": 48,
@@ -430,7 +421,7 @@
       "cantica": "inferno",
       "canto": 22,
       "lines": "126",
-      "filename": "48.png"
+      "filename": "49.png"
     },
     {
       "imageNumber": 49,
@@ -439,7 +430,7 @@
       "cantica": "inferno",
       "canto": 22,
       "lines": "139–141",
-      "filename": "49.png"
+      "filename": "50.png"
     },
     {
       "imageNumber": 50,
@@ -448,7 +439,7 @@
       "cantica": "inferno",
       "canto": 23,
       "lines": "52–54",
-      "filename": "50.png"
+      "filename": "51.png"
     },
     {
       "imageNumber": 51,
@@ -457,7 +448,7 @@
       "cantica": "inferno",
       "canto": 23,
       "lines": "61, 62",
-      "filename": "51.png"
+      "filename": "52.png"
     },
     {
       "imageNumber": 52,
@@ -466,7 +457,7 @@
       "cantica": "inferno",
       "canto": 23,
       "lines": "115–117",
-      "filename": "52.png"
+      "filename": "53.png"
     },
     {
       "imageNumber": 53,
@@ -475,7 +466,7 @@
       "cantica": "inferno",
       "canto": 24,
       "lines": "91, 92",
-      "filename": "53.png"
+      "filename": "54.png"
     },
     {
       "imageNumber": 54,
@@ -484,15 +475,6 @@
       "cantica": "inferno",
       "canto": 25,
       "lines": "68, 69",
-      "filename": "54.png"
-    },
-    {
-      "imageNumber": 55,
-      "title": "EVIL COUNSELLORS",
-      "quote": "each wraps himself in what burns him.\" / \"Master,\" I replied, \"hearing you say it",
-      "cantica": "inferno",
-      "canto": 26,
-      "lines": "47, 48",
       "filename": "55.png"
     },
     {
@@ -1505,7 +1487,7 @@
     "inferno-14": [
       {
         "imageNumber": 38,
-        "filename": "38.png",
+        "filename": "39.png",
         "title": "THE BLASPHEMERS—CAPANEUS",
         "quote": "Over the entire wasteland, falling slowly, / dilated flakes of fire rained down",
         "lines": "28, 29"
@@ -1514,7 +1496,7 @@
     "inferno-15": [
       {
         "imageNumber": 39,
-        "filename": "39.png",
+        "filename": "40.png",
         "title": "BRUNETTO LATINI",
         "quote": "\"Are you here, Master Brunetto?\"",
         "lines": "30"
@@ -1523,14 +1505,14 @@
     "inferno-17": [
       {
         "imageNumber": 40,
-        "filename": "40.png",
+        "filename": "41.png",
         "title": "GERYON—SYMBOL OF DECEIT",
         "quote": "And that filthy embodiment of fraud / rose up and pushed its head and chest onto land,",
         "lines": "7, 8"
       },
       {
         "imageNumber": 41,
-        "filename": "41.png",
+        "filename": "42.png",
         "title": "THE DESCENT ON THE MONSTER",
         "quote": "seeing nothing but the monster. / Onward he goes, swimming slowly, slowly,",
         "lines": "115, 116"
@@ -1539,21 +1521,21 @@
     "inferno-18": [
       {
         "imageNumber": 42,
-        "filename": "42.png",
+        "filename": "43.png",
         "title": "DEVILS AND SEDUCERS",
         "quote": "God, how they made those legs fly up / at the first stroke! Not one of them",
         "lines": "37, 38"
       },
       {
         "imageNumber": 43,
-        "filename": "43.png",
+        "filename": "44.png",
         "title": "PARAMOURS AND FLATTERERS",
         "quote": "We climbed up there, and looking down / into the ditch, I saw people submerged",
         "lines": "113, 114"
       },
       {
         "imageNumber": 44,
-        "filename": "44.png",
+        "filename": "45.png",
         "title": "THAÏS",
         "quote": "now crouching, now standing on her feet. / That's Thaïs the prostitute, who answered / her lover when he asked, 'Am I",
         "lines": "133–135"
@@ -1562,7 +1544,7 @@
     "inferno-19": [
       {
         "imageNumber": 45,
-        "filename": "45.png",
+        "filename": "46.png",
         "title": "THE SIMONISTS",
         "quote": "planted upside down like a stake,\" / I began to say, \"speak if you can.\"",
         "lines": "47, 48"
@@ -1571,30 +1553,23 @@
     "inferno-21": [
       {
         "imageNumber": 46,
-        "filename": "46.png",
+        "filename": "48.png",
         "title": "DEVILS AND BARRATORS",
         "quote": "If you don't want to feel our hooks,",
         "lines": "52"
-      },
-      {
-        "imageNumber": 47,
-        "filename": "47.png",
-        "title": "DEVILS AND VIRGIL",
-        "quote": "the demons burst from beneath the bridge",
-        "lines": "72"
       }
     ],
     "inferno-22": [
       {
         "imageNumber": 48,
-        "filename": "48.png",
+        "filename": "49.png",
         "title": "BARRATORS—GIAMPOLO",
         "quote": "Suddenly every demon stung with shame,",
         "lines": "126"
       },
       {
         "imageNumber": 49,
-        "filename": "49.png",
+        "filename": "50.png",
         "title": "ALICHINO AND CALCABRINA",
         "quote": "he turned his talons on his fellow demon / and grappled with him right above the moat. / But Alichino proved a fierce hawk himself,",
         "lines": "139–141"
@@ -1603,21 +1578,21 @@
     "inferno-23": [
       {
         "imageNumber": 50,
-        "filename": "50.png",
+        "filename": "51.png",
         "title": "TUMULT AND ESCAPE",
         "quote": "to turn the wheel of a riverside mill / when it rushes closest to the paddles / as my master raced down that slope,",
         "lines": "52–54"
       },
       {
         "imageNumber": 51,
-        "filename": "51.png",
+        "filename": "52.png",
         "title": "THE HYPOCRITES",
         "quote": "of the fifth ditch, strips from all of them / the power to leave their post.",
         "lines": "61, 62"
       },
       {
         "imageNumber": 52,
-        "filename": "52.png",
+        "filename": "53.png",
         "title": "THE HYPOCRITES—CRUCIFIED PHARISEE",
         "quote": "But I said no more, for my eyes fell upon / one crucified to the ground with three stakes. / When he saw me, he writhed all over,",
         "lines": "115–117"
@@ -1626,7 +1601,7 @@
     "inferno-24": [
       {
         "imageNumber": 53,
-        "filename": "53.png",
+        "filename": "54.png",
         "title": "THIEVES",
         "quote": "nor whatever lands border the Red Sea. / Through this cruel and wretched multitude",
         "lines": "91, 92"
@@ -1635,19 +1610,10 @@
     "inferno-25": [
       {
         "imageNumber": 54,
-        "filename": "54.png",
+        "filename": "55.png",
         "title": "TRANSFORMATION INTO SNAKES",
         "quote": "\"Agnello! Look how you transform! / You are neither two beings nor one!\"",
         "lines": "68, 69"
-      }
-    ],
-    "inferno-26": [
-      {
-        "imageNumber": 55,
-        "filename": "55.png",
-        "title": "EVIL COUNSELLORS",
-        "quote": "each wraps himself in what burns him.\" / \"Master,\" I replied, \"hearing you say it",
-        "lines": "47, 48"
       }
     ],
     "inferno-28": [

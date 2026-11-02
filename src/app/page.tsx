@@ -47,7 +47,7 @@ export default function HomePage() {
                 <div className="relative w-full">
                   <div className="absolute -inset-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 rounded-sm blur-2xl" />
                   <img 
-                    src={getImageSrc('inferno', '38.png')}
+                    src={getImageSrc('inferno', '39.png')}
                     alt="Gustave Doré illustration from Dante's Inferno"
                     className="relative w-full h-auto object-contain shadow-2xl rounded-sm border border-border/20"
                   />
@@ -69,7 +69,7 @@ export default function HomePage() {
               </div>
               <div className="space-y-2 py-4 md:py-0">
                 <div className="text-4xl md:text-5xl font-bold text-foreground">
-                  135
+                  133
                 </div>
                 <div className="text-muted-foreground text-sm uppercase tracking-wider">Doré Illustrations</div>
               </div>
