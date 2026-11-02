@@ -147,4 +147,4 @@
 132. **THE HEAVEN OF THE FIXED STARS** — _"Glory be to the Father, to the Son, / And Holy Ghost!" all Paradise began, / So that the melody inebriate made me (Par. XXVII, 1–3)._
 133. **CRYSTALLINE HEAVEN** — _Not otherwise does iron scintillate / When molten, than those circles scintillated (Par. XXVIII, 89, 90)._
 134. **THE EMPYREAN** — _In fashion then as of a snow-white rose / Displayed itself to me the saintly host (Par. XXXI, 1, 2)._
-135. **THE QUEEN OF HEAVEN** — _"Thou shalt behold enthroned the Queen / To whom this realm is subject and devoted" (Par. XXXI, 116, 117).
+135. **THE QUEEN OF HEAVEN** — _"Thou shalt behold enthroned the Queen / To whom this realm is subject and devoted" (Par. XXXI, 116, 117)._

@@ -1205,6 +1205,15 @@
       "canto": 31,
       "lines": "1–3",
       "filename": "134.png"
+    },
+    {
+      "imageNumber": 135,
+      "title": "THE QUEEN OF HEAVEN",
+      "quote": "until you see the Queen enthroned / to whom this realm is subject and devoted.",
+      "cantica": "paradiso",
+      "canto": 31,
+      "lines": "145, 146",
+      "filename": "135.png"
     }
   ],
   "cantoMapping": {
@@ -2286,6 +2295,13 @@
         "title": "THE EMPYREAN",
         "quote": "In form, then, of a pure white rose / the sacred host appeared to me— / those whom Christ made his bride with his own blood.",
         "lines": "1–3"
+      },
+      {
+        "imageNumber": 135,
+        "filename": "135.png",
+        "title": "THE QUEEN OF HEAVEN",
+        "quote": "until you see the Queen enthroned / to whom this realm is subject and devoted.",
+        "lines": "145, 146"
       }
     ]
   }
