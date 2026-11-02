@@ -1613,40 +1613,39 @@
             "characterName": null
           },
           {
+            "id": 6,
+            "speaker": "farinata",
+            "text": "O Tuscan, you who pass alive\nthrough this city of fire,\nspeaking so courteously,\nplease stop your steps in this place.\nYour way of speaking reveals you\nas native to that noble homeland\nto which perhaps I brought too much harm.",
+            "isDialogue": true,
+            "characterName": null
+          },
+          {
             "speaker": "narrator",
             "text": "Suddenly this voice burst forth\nfrom one of the tombs, and I pressed closer\nto my Leader in fear.",
-            "id": 6,
+            "id": 7,
             "isDialogue": false,
             "characterName": null
           },
           {
             "speaker": "virgil",
             "text": "He said to me: \"Turn around—what are you doing?\nLook, there's Farinata rising up;\nyou'll see him completely\nfrom the waist up.\"\nI had already fixed my eyes on his,\nand he rose upright with chest and brow\nas if he held Hell itself\nin utter contempt.\nMy Leader's bold and ready hands\npushed me toward him between the sepulchers,\nsaying, \"Let your words be clear.\"",
-            "id": 7,
+            "id": 8,
             "isDialogue": true,
             "characterName": null
           },
           {
             "speaker": "narrator",
             "text": "When I reached the foot of his tomb,\nhe studied me for a moment, then,\nas if disdainful, asked: \"Who were your ancestors?\"\nEager to obey, I concealed nothing\nbut revealed everything to him.\nAt this he raised his eyebrows slightly.",
-            "id": 8,
+            "id": 9,
             "isDialogue": false,
             "characterName": null
           },
           {
             "speaker": "farinata",
             "text": "Then he said: \"They were fierce enemies\nto me, my fathers, and my party,\nso I scattered them twice.\"",
-            "id": 9,
+            "id": 10,
             "isDialogue": true,
             "characterName": null
-          },
-          {
-            "id": 10,
-            "speaker": "narrator",
-            "text": "Suddenly this voice burst forth\nfrom one of the tombs, and I pressed closer\nto my Leader in fear.\nHe said to me: \"Turn around—what are you doing?\nLook, there's Farinata rising up;\nyou'll see him completely\nfrom the waist up.\"\nI had already fixed my eyes on his,\nand he rose upright with chest and brow\nas if he held Hell itself\nin utter contempt.\nMy Leader's bold and ready hands\npushed me toward him between the sepulchers,\nsaying, \"Let your words be clear.\"\nWhen I reached the foot of his tomb,\nhe studied me for a moment, then,\nas if disdainful, asked: \"Who were your ancestors?\"\nEager to obey, I concealed nothing\nbut revealed everything to him.\nAt this he raised his eyebrows slightly.\nThen he said: \"They were fierce enemies\nto me, my fathers, and my party,\nso I scattered them twice.\"",
-            "isDialogue": false,
-            "words": 145,
-            "estimatedSeconds": 58
           },
           {
             "id": 11,
