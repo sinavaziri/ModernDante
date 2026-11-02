@@ -11,6 +11,8 @@ const path = require('path');
 
 const MODEL = process.env.MODEL || 'gpt-image-2.5-sunburst';
 const QUALITY = process.env.QUALITY || 'high';
+// The default filter ('auto') refused most of the classical nudes; 'low' is OpenAI's documented alternative.
+const MODERATION = process.env.MODERATION || 'low';
 const IMAGES_DIR = path.join(__dirname, '..', 'public', 'images');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'images-color');
 const MAPPINGS_PATH = path.join(__dirname, '..', 'src', 'data', 'image-mappings.json');
@@ -53,6 +55,7 @@ async function colorize(relPath, reference, titles) {
   form.append('prompt', buildPrompt(cantica, titles[relPath], !!reference));
   form.append('size', 'auto');
   form.append('quality', QUALITY);
+  form.append('moderation', MODERATION);
   form.append('image[]', new Blob([fs.readFileSync(path.join(IMAGES_DIR, relPath))], { type: 'image/png' }), filename);
   if (reference) {
     form.append('image[]', new Blob([fs.readFileSync(path.join(OUTPUT_DIR, reference))], { type: 'image/png' }), 'reference.png');
