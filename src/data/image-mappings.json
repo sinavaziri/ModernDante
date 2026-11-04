@@ -699,7 +699,7 @@
       "quote": "through morning's thick vapors, / low in the western sky above the sea— / I saw a light racing across the water,",
       "cantica": "purgatorio",
       "canto": 2,
-      "lines": "27–29",
+      "lines": "11–13",
       "filename": "78.png"
     },
     {
@@ -708,7 +708,7 @@
       "quote": "no oars, no sails except his own wings",
       "cantica": "purgatorio",
       "canto": 2,
-      "lines": "44",
+      "lines": "28",
       "filename": "79.png"
     },
     {
@@ -852,7 +852,7 @@
       "quote": "heavy grief drained from my eyes. / They seemed covered in coarse sackcloth, / each one supported by another's shoulder,",
       "cantica": "purgatorio",
       "canto": 13,
-      "lines": "58–60",
+      "lines": "56–58",
       "filename": "95.png"
     },
     {
@@ -861,7 +861,7 @@
       "quote": "make yourself known by place or name.\" / \"I was from Siena,\" it replied, \"and with",
       "cantica": "purgatorio",
       "canto": 13,
-      "lines": "106, 107",
+      "lines": "104, 105",
       "filename": "96.png"
     },
     {
@@ -1041,7 +1041,7 @@
       "quote": "I saw a giant standing upright beside her, / and they kissed each other again and again.",
       "cantica": "purgatorio",
       "canto": 32,
-      "lines": "152, 153",
+      "lines": "150, 151",
       "filename": "116.png"
     },
     {
@@ -1155,7 +1155,7 @@
     {
       "imageNumber": 129,
       "title": "BEATRICE",
-      "quote": "I notice the passage you've provided appears to be incomplete - it cuts off mid-sentence with \"Already on my Lady's face mine eyes Again were fastened, and with these my mind, And\" / Could you please provide the complete passage from Paradiso Canto 21 that you'd like me to translate? I'd be happy to render it into modern, accessible English once I have the full text to work with.",
+      "quote": "Already my eyes were fixed again on my Lady's face, / and my mind with them,",
       "cantica": "paradiso",
       "canto": 21,
       "lines": "1, 2",
@@ -1182,7 +1182,7 @@
     {
       "imageNumber": 132,
       "title": "THE HEAVEN OF THE FIXED STARS",
-      "quote": "What I saw seemed to me like / the universe itself smiling— / my intoxication found its way in",
+      "quote": "\"Glory to the Father, to the Son, and to the Holy Spirit!\" / all of Paradise began to sing, / so sweetly that the melody left me drunk.",
       "cantica": "paradiso",
       "canto": 27,
       "lines": "1–3",
@@ -1200,7 +1200,7 @@
     {
       "imageNumber": 134,
       "title": "THE EMPYREAN",
-      "quote": "In form, then, of a pure white rose / the sacred host appeared to me— / those whom Christ made his bride with his own blood.",
+      "quote": "Like a snow-white rose unfolding, / the blessed host displayed itself before me— / those whom Christ claimed as his bride with his own blood.",
       "cantica": "paradiso",
       "canto": 31,
       "lines": "1–3",
@@ -1212,7 +1212,7 @@
       "quote": "until you see the Queen enthroned / to whom this realm is subject and devoted.",
       "cantica": "paradiso",
       "canto": 31,
-      "lines": "145, 146",
+      "lines": "126, 127",
       "filename": "135.png"
     }
   ],
@@ -1826,14 +1826,14 @@
         "filename": "78.png",
         "title": "THE VESSEL",
         "quote": "through morning's thick vapors, / low in the western sky above the sea— / I saw a light racing across the water,",
-        "lines": "27–29"
+        "lines": "11–13"
       },
       {
         "imageNumber": 79,
         "filename": "79.png",
         "title": "THE CELESTIAL PILOT",
         "quote": "no oars, no sails except his own wings",
-        "lines": "44"
+        "lines": "28"
       }
     ],
     "purgatorio-3": [
@@ -1963,14 +1963,14 @@
         "filename": "95.png",
         "title": "THE ENVIOUS",
         "quote": "heavy grief drained from my eyes. / They seemed covered in coarse sackcloth, / each one supported by another's shoulder,",
-        "lines": "58–60"
+        "lines": "56–58"
       },
       {
         "imageNumber": 96,
         "filename": "96.png",
         "title": "SAPIA",
         "quote": "make yourself known by place or name.\" / \"I was from Siena,\" it replied, \"and with",
-        "lines": "106, 107"
+        "lines": "104, 105"
       }
     ],
     "purgatorio-15": [
@@ -2138,7 +2138,7 @@
         "filename": "116.png",
         "title": "THE WHORE AND THE GIANT",
         "quote": "I saw a giant standing upright beside her, / and they kissed each other again and again.",
-        "lines": "152, 153"
+        "lines": "150, 151"
       }
     ],
     "purgatorio-33": [
@@ -2250,7 +2250,7 @@
         "imageNumber": 129,
         "filename": "129.png",
         "title": "BEATRICE",
-        "quote": "I notice the passage you've provided appears to be incomplete - it cuts off mid-sentence with \"Already on my Lady's face mine eyes Again were fastened, and with these my mind, And\" / Could you please provide the complete passage from Paradiso Canto 21 that you'd like me to translate? I'd be happy to render it into modern, accessible English once I have the full text to work with.",
+        "quote": "Already my eyes were fixed again on my Lady's face, / and my mind with them,",
         "lines": "1, 2"
       },
       {
@@ -2275,7 +2275,7 @@
         "imageNumber": 132,
         "filename": "132.png",
         "title": "THE HEAVEN OF THE FIXED STARS",
-        "quote": "What I saw seemed to me like / the universe itself smiling— / my intoxication found its way in",
+        "quote": "\"Glory to the Father, to the Son, and to the Holy Spirit!\" / all of Paradise began to sing, / so sweetly that the melody left me drunk.",
         "lines": "1–3"
       }
     ],
@@ -2293,7 +2293,7 @@
         "imageNumber": 134,
         "filename": "134.png",
         "title": "THE EMPYREAN",
-        "quote": "In form, then, of a pure white rose / the sacred host appeared to me— / those whom Christ made his bride with his own blood.",
+        "quote": "Like a snow-white rose unfolding, / the blessed host displayed itself before me— / those whom Christ claimed as his bride with his own blood.",
         "lines": "1–3"
       },
       {
@@ -2301,7 +2301,7 @@
         "filename": "135.png",
         "title": "THE QUEEN OF HEAVEN",
         "quote": "until you see the Queen enthroned / to whom this realm is subject and devoted.",
-        "lines": "145, 146"
+        "lines": "126, 127"
       }
     ]
   }

@@ -890,7 +890,7 @@
         "number": 6,
         "title": "Canto VI",
         "subtitle": "The Third Circle: The Gluttonous. Cerberus. The Eternal Rain. Ciacco. Florence.",
-        "totalSegments": 25,
+        "totalSegments": 23,
         "segments": [
           {
             "id": 1,
@@ -1063,22 +1063,6 @@
             "isDialogue": false,
             "words": 31,
             "estimatedSeconds": 8
-          },
-          {
-            "id": 24,
-            "speaker": "virgil",
-            "text": "Go back to your philosophy, which teaches that the more perfect something is,\nthe more it feels both pleasure and pain.\nThough these cursed people can never reach\ntrue perfection, they'll be more complete\nafter that day than they are now.",
-            "isDialogue": true,
-            "words": 41,
-            "estimatedSeconds": 17
-          },
-          {
-            "id": 25,
-            "speaker": "narrator",
-            "text": "We walked in a circle along that path,\nsaying much more than I won't repeat here,\nuntil we came to the place of descent.\nThere we found Plutus, the great enemy.",
-            "isDialogue": false,
-            "words": 31,
-            "estimatedSeconds": 13
           }
         ]
       },
@@ -4112,15 +4096,8 @@
         "number": 2,
         "title": "Canto II",
         "subtitle": "The Celestial Pilot. Casella. The Departure. Already had the sun the horizon reached Whose circle of meridian covers",
-        "totalSegments": 16,
+        "totalSegments": 15,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "The sun had already reached the horizon\nwhose meridian circle covers\nJerusalem with its highest point,\nand night, which circles opposite to the sun,\nwas rising from the Ganges\nwith the scales that fall from her hands\nwhen she grows longer than the day—\n\nso that where I stood,\nthe white and red cheeks\nof beautiful Aurora\nwere turning orange\nas she grew older.\n\nWe were still beside the sea,\nlike people thinking about their journey,\nwho go forward in their hearts\nbut stay behind in body.",
-            "isDialogue": false,
-            "characterName": null
-          },
           {
             "id": 2,
             "speaker": "narrator",
@@ -5136,16 +5113,8 @@
         "number": 11,
         "title": "Canto XI",
         "subtitle": "The Humble Prayer. Omberto di Santafiore. Oderisi d' Agobbio. Provenzan Salvani. \"Our Father, thou who dwellest",
-        "totalSegments": 11,
+        "totalSegments": 10,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "**Canto XI**",
-            "isDialogue": false,
-            "words": 2,
-            "estimatedSeconds": 1
-          },
           {
             "id": 2,
             "speaker": "oderisi",
@@ -5280,15 +5249,8 @@
         "number": 13,
         "title": "Canto XIII",
         "subtitle": "The Second Circle: The Envious. Sapia of Siena. We were",
-        "totalSegments": 17,
+        "totalSegments": 16,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "I notice the passage you've provided appears to be incomplete - it looks like just a heading or caption (\"The Second Circle: The Envious. Sapia of Siena. We were\") rather than the actual verse text from Purgatorio Canto 13.\n\nCould you please provide the full Longfellow verse passage you'd like me to translate? I'd be happy to render it into modern, accessible English once I have the complete text to work with.",
-            "isDialogue": false,
-            "characterName": null
-          },
           {
             "id": 2,
             "speaker": "narrator",
@@ -7264,15 +7226,8 @@
         "number": 32,
         "title": "Canto XXXII",
         "subtitle": "The Tree of Knowledge. Allegory of the Chariot. So steadfast and attentive were mine eyes",
-        "totalSegments": 12,
+        "totalSegments": 11,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "I notice you've only provided the canto title and the very beginning of a line from Longfellow's translation of Purgatorio Canto 32. To provide you with a proper modern translation, I would need the complete passage you'd like me to work with.\n\nCould you please provide the full text from Longfellow that you'd like me to translate into contemporary English? Once I have the complete passage, I'll be happy to render it in the modern, accessible style you've described while preserving Dante's meaning and imagery.",
-            "isDialogue": false,
-            "characterName": null
-          },
           {
             "id": 2,
             "speaker": "narrator",
@@ -8109,10 +8064,10 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "**Canto XI**\nO blind obsession of mortal minds!\nHow flawed the reasoning that sends you\nspiraling downward on desperate wings!\nOne chased after law, another after clever sayings,\none pursued the priesthood, another sought to rule\nthrough force or cunning arguments.\nOne lost himself in theft, another in politics,\none exhausted himself in pleasures of the flesh,\nwhile another surrendered to lazy comfort.\nBut I—freed from all these things—\nwas received with Beatrice here in the heavens\nwith such overwhelming glory!\nWhen each soul had returned to its place\nwithin the circle where it was before,\nit stood like a candle in its holder.\nAnd from within that radiance\nwhich had first spoken to me,\nI heard a voice begin, smiling\nas it grew more luminous:",
+            "text": "O blind obsession of mortal minds!\nHow flawed the reasoning that sends you\nspiraling downward on desperate wings!\nOne chased after law, another after clever sayings,\none pursued the priesthood, another sought to rule\nthrough force or cunning arguments.\nOne lost himself in theft, another in politics,\none exhausted himself in pleasures of the flesh,\nwhile another surrendered to lazy comfort.\nBut I—freed from all these things—\nwas received with Beatrice here in the heavens\nwith such overwhelming glory!\nWhen each soul had returned to its place\nwithin the circle where it was before,\nit stood like a candle in its holder.\nAnd from within that radiance\nwhich had first spoken to me,\nI heard a voice begin, smiling\nas it grew more luminous:",
             "isDialogue": false,
-            "words": 126,
-            "estimatedSeconds": 51
+            "words": 124,
+            "estimatedSeconds": 51.0
           },
           {
             "id": 2,
@@ -8144,15 +8099,8 @@
         "number": 13,
         "title": "Canto XIII",
         "subtitle": "Of the Wisdom of Solomon. St. Thomas reproaches Dante's Judgement. Let him imagine, who would well conceive What",
-        "totalSegments": 3,
+        "totalSegments": 2,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "Let me complete that passage. Here's the modern translation of the opening of Paradiso Canto 13:\n\nLet anyone who wants to truly understand\nwhat I saw next\nimagine fifteen of the brightest stars\nthat bring life to the night sky\nscattered across different regions of heaven,\nimagine that constellation we call the Great Bear\nthat stays within our northern sky\nboth day and night,\nso that it never disappears\nas our world turns on its axis,\nimagine the bright mouth of the horn\nthat begins at the tip of the axle\naround which the first sphere revolves—\n\nimagine all of these stars\nforming themselves into two circles,\nlike the crown that Ariadne made\nwhen she felt the chill of death,\none ring of light spinning within the other,\nboth turning in perfect harmony,\none circle moving clockwise,\nthe other counter-clockwise—\n\nand even then you'd have only a pale shadow\nof the true constellation\nand the double dance\nI witnessed there,\nas far beyond our earthly experience\nas the swiftest heaven\nis beyond the slow movement\nof the river Chiana.",
-            "isDialogue": false,
-            "characterName": null
-          },
           {
             "id": 2,
             "speaker": "narrator",
@@ -8499,17 +8447,17 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "I notice the passage you've provided appears to be incomplete - it cuts off mid-sentence with \"Already on my Lady's face mine eyes Again were fastened, and with these my mind, And\"\n\nCould you please provide the complete passage from Paradiso Canto 21 that you'd like me to translate? I'd be happy to render it into modern, accessible English once I have the full text to work with.",
+            "text": "Already my eyes were fixed again on my Lady's face,\nand my mind with them,\nwithdrawn from every other purpose.\nAnd she did not smile.",
             "isDialogue": false,
             "characterName": null
           },
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "She had withdrawn from all other purpose,\nand she did not smile. \"If I were to smile,\"\nshe began, \"you would become\nlike Semele when she turned to ash.\nMy beauty kindles more intensely\nalong the stairs of the eternal palace\nthe higher we ascend, as you have seen.\nIf it were not tempered, it shines so brilliantly\nthat all your mortal power would seem,\nin its radiance, like a leaf crushed by thunder.\nWe have risen to the seventh splendor,\nwhich now radiates downward from beneath\nthe burning Lion's breast, mingled with his power.\nDirect your mind toward your eyes\nand make them mirrors for the vision\nthat will appear to you in this mirror.\"\nAnyone who could know what pasture\nmy sight found in that blessed face,\nwhen I turned to another care,\nwould understand how grateful I was\nfor obedience to my celestial guide,\nweighing one joy against the other.\nWithin the crystal sphere that revolves\naround the world and bears the name\nof its dear leader, under whom\nall wickedness lay dead,\nI saw a stairway rising to such heights,\ncolored like gold struck by sunlight,\nthat my eyes could not follow it.\nI also saw descending down the steps\nso many splendors that I thought\nevery light that appears in heaven\nhad been scattered there.\nAs rooks gather together at daybreak\naccording to their natural custom,\nstirring themselves to warm their cold feathers—\nsome flying away never to return,\nothers circling back to where they started,\nand still others wheeling around their home—\nsuch was the pattern I saw there\nwithin the sparkling lights that came together\nas soon as they struck a certain step.\nThe one that remained nearest to us\nbecame so bright that in my mind I said,",
+            "text": "\"If I were to smile,\"\nshe began, \"you would become\nlike Semele when she turned to ash.\nMy beauty kindles more intensely\nalong the stairs of the eternal palace\nthe higher we ascend, as you have seen.\nIf it were not tempered, it shines so brilliantly\nthat all your mortal power would seem,\nin its radiance, like a leaf crushed by thunder.\nWe have risen to the seventh splendor,\nwhich now radiates downward from beneath\nthe burning Lion's breast, mingled with his power.\nDirect your mind toward your eyes\nand make them mirrors for the vision\nthat will appear to you in this mirror.\"\nAnyone who could know what pasture\nmy sight found in that blessed face,\nwhen I turned to another care,\nwould understand how grateful I was\nfor obedience to my celestial guide,\nweighing one joy against the other.\nWithin the crystal sphere that revolves\naround the world and bears the name\nof its dear leader, under whom\nall wickedness lay dead,\nI saw a stairway rising to such heights,\ncolored like gold struck by sunlight,\nthat my eyes could not follow it.\nI also saw descending down the steps\nso many splendors that I thought\nevery light that appears in heaven\nhad been scattered there.\nAs rooks gather together at daybreak\naccording to their natural custom,\nstirring themselves to warm their cold feathers—\nsome flying away never to return,\nothers circling back to where they started,\nand still others wheeling around their home—\nsuch was the pattern I saw there\nwithin the sparkling lights that came together\nas soon as they struck a certain step.\nThe one that remained nearest to us\nbecame so bright that in my mind I said,",
             "isDialogue": false,
-            "words": 296,
-            "estimatedSeconds": 119
+            "words": 284,
+            "estimatedSeconds": 119.0
           },
           {
             "id": 3,
@@ -9040,17 +8988,17 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "What I saw seemed to me like\nthe universe itself smiling—\nmy intoxication found its way in",
+            "text": "\"Glory to the Father, to the Son, and to the Holy Spirit!\"\nall of Paradise began to sing,\nso sweetly that the melody left me drunk.\nWhat I saw seemed to me like\nthe universe itself smiling—\nmy intoxication found its way in",
             "isDialogue": false,
             "characterName": null
           },
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "**Canto XXVII**\nThrough hearing and through sight—O joy! O inexpressible gladness!\nO perfect life of love and peace! O riches secure, without longing!\nBefore my eyes stood the four torches ablaze,\nand the one that had come first\nbegan to glow more luminous still,\nbecoming in appearance what Jupiter would be\nif he and Mars were birds\nexchanging their bright feathers.\nThat Providence which here assigns\nboth season and service to the blessed choir\nhad imposed silence on every side,\nwhen I heard these words:",
+            "text": "Through hearing and through sight—O joy! O inexpressible gladness!\nO perfect life of love and peace! O riches secure, without longing!\nBefore my eyes stood the four torches ablaze,\nand the one that had come first\nbegan to glow more luminous still,\nbecoming in appearance what Jupiter would be\nif he and Mars were birds\nexchanging their bright feathers.\nThat Providence which here assigns\nboth season and service to the blessed choir\nhad imposed silence on every side,\nwhen I heard these words:",
             "isDialogue": false,
-            "words": 85,
-            "estimatedSeconds": 34
+            "words": 83,
+            "estimatedSeconds": 34.0
           },
           {
             "id": 3,
@@ -9279,15 +9227,8 @@
         "number": 31,
         "title": "Canto XXXI",
         "subtitle": "The Glory of Paradise. Departure of Beatrice. St. Bernard.",
-        "totalSegments": 8,
+        "totalSegments": 7,
         "segments": [
-          {
-            "id": 1,
-            "speaker": "narrator",
-            "text": "**The Glory of Paradise. Beatrice Departs. Saint Bernard Appears.**\n\nIn form, then, of a pure white rose\nthe sacred host appeared to me—\nthose whom Christ made his bride with his own blood.\n\nBut the other host, which sees and sings\nthe glory of the One who fills them with love,\nand the goodness that made them so noble,\n\nlike a swarm of bees that one moment\nsettles on the flowers, and the next\nreturns to where their work grows sweet,\n\ndescended into the great flower\nadorned with so many petals,\nthen rose again to where their love dwells always.\n\nTheir faces were all living flame,\ntheir wings were gold, and the rest of them\nso white that no snow could match it.\n\nWhen they descended into the flower,\nfrom tier to tier they shared\nthe peace and fervor they had gained with their wings.",
-            "isDialogue": false,
-            "characterName": null
-          },
           {
             "id": 2,
             "speaker": "narrator",
@@ -9410,10 +9351,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "**Canto XXXIII: The Vision of God**\nYou gave such nobility to human nature\nthat its Creator did not disdain\nto make himself its creature.\nWithin your womb was rekindled the love\nby whose warmth, in the eternal peace,\nthis flower has bloomed.\nHere you are our blazing torch of charity,\nand below among mortals\nyou are the living wellspring of hope.\nLady, you are so great and powerful\nthat whoever desires grace but does not turn to you\ntries to make his longings fly without wings.\nYour kindness not only helps\nthose who ask for it,\nbut often runs ahead of the asking itself.\nIn you is compassion, in you is mercy,\nin you magnificence—in you is gathered\nwhatever goodness exists in any creature.\nNow this man, who from the deepest pit\nof the universe to here has witnessed\nthe spiritual lives one by one,\nbegs you for grace to gain such power\nthat he may lift his eyes still higher\ntoward the ultimate salvation.\nAnd I, who never burned more for my own vision\nthan I do for his, offer you all my prayers—\nand pray they prove sufficient—\nthat you would scatter from him every cloud\nof mortality with your prayers,\nso that the Supreme Joy might be revealed to him.\nI pray further, Queen, you who can do\nwhatever you will, that you preserve\nhis heart's devotion after so great a vision.\nLet your protection overcome human frailty.\nSee how Beatrice and all the blessed ones\nclasp their hands together, joining my prayers to you!\nThe eyes beloved and revered by God,\nfixed upon the one who spoke,\nshowed us how welcome devout prayers are to her.\nThen they turned toward the Eternal Light—\nthat Light on which no creature\ncould believably focus such a clear gaze.\nAnd I, who was approaching\nthe end of all desires,\nfelt the fire of longing within me reach its peak, as it should.\nBernard smiled and gestured for me to look upward,\nbut I was already doing\nexactly what he wanted,\nbecause my sight, becoming purified,\nwas entering deeper and deeper\ninto the ray of that High Light which is truth itself.\nFrom that moment on, what I saw\nwas greater than our language can express—\nspeech fails before such vision,\nand memory surrenders to such overwhelming experience.\nLike someone who sees something in a dream,\nand after waking the feeling remains\nbut nothing else returns to mind,\nso am I now—my vision has almost entirely\nfaded away, yet still distilling\nin my heart is the sweetness born from it.\nSo snow melts under the sun's touch,\nso the Sibyl's prophecies written on light leaves\nwere lost upon the wind.\nO Supreme Light, you who rise so far\nabove mortal understanding,\nlend back to my mind a little of what you appeared to be,\nand give my tongue such power\nthat it might leave just one spark of your glory\nfor future generations.\nBy returning somewhat to my memory\nand sounding even faintly in these verses,\nmore of your victory will be grasped.\nI believe the intensity of the living ray\nI endured would have overwhelmed me\nif I had turned my eyes away from it.\nI remember I grew bolder\nbecause of this, so much that I joined\nmy gaze with the Infinite Glory.\nO abundant grace, through which I dared\nto fix my sight upon the Eternal Light\nuntil my vision was consumed in it!\nIn its depths I saw gathered together,\nbound by love into a single volume,\neverything that is scattered in pages throughout the universe—\nsubstance and accidents and their workings,\nall fused together in such a way\nthat what I'm describing is one simple light.\nI believe I saw the universal form\nof this great knot,\nbecause as I say this I feel my joy expand.\nA single moment brings me more forgetfulness\nthan twenty-five centuries brought to the voyage\nthat made Neptune marvel at the Argo's shadow.\nMy mind, completely suspended this way,\ngazed steadfast, motionless, attentive,\nand grew more inflamed the more it watched.\nIn the presence of that light, one becomes such\nthat it's impossible to ever consent\nto turn away from it toward any other sight,\nbecause the good that is the object of the will\nis gathered completely there,\nand outside it, what is perfect there becomes defective.\nMy words will fall shorter now\nin describing what I still remember\nthan an infant's whose tongue still seeks the breast.\nNot because the living light I gazed upon\ncontained more than one pure image—\nit is always what it was before—\nbut because my sight grew stronger\nby looking, that one appearance\nkept transforming as I myself changed.\nWithin the deep, luminous substance\nof the High Light, three circles appeared to me\nof three colors but one size,\nand one seemed reflected by the second\nlike rainbow reflected in rainbow,\nand the third seemed fire breathed equally from both.\nHow feeble all speech is, how it falls short\nof my conception! And compared to what I saw,\ncalling this inadequate is not enough.\nO Eternal Light, existing in yourself alone,\nalone understanding yourself, and understood\nby yourself and understanding, you love and smile upon yourself!\nThat circle which appeared in you\nas reflected light,\nwhen my eyes contemplated it awhile,\nseemed painted within itself, in its own color,\nwith our human image—\nand so my sight was completely absorbed in it.\nLike a mathematician struggling\nto square the circle, who cannot discover\nthrough thought the principle he needs,\nso was I faced with that new vision.\nI wanted to see how the image fit the circle,\nhow it found its place there,\nbut my own wings were not sufficient for this—\nexcept that then my mind was struck\nby a flash of lightning that fulfilled its wish.\nHere my high imagination lost its power,\nbut already my desire and will were turning,\nlike a wheel that spins with perfect balance,\nmoved by the Love that moves the sun and all the stars.",
+            "text": "Your kindness not only helps\nthose who ask for it,\nbut often runs ahead of the asking itself.\nIn you is compassion, in you is mercy,\nin you magnificence—in you is gathered\nwhatever goodness exists in any creature.\nNow this man, who from the deepest pit\nof the universe to here has witnessed\nthe spiritual lives one by one,\nbegs you for grace to gain such power\nthat he may lift his eyes still higher\ntoward the ultimate salvation.\nAnd I, who never burned more for my own vision\nthan I do for his, offer you all my prayers—\nand pray they prove sufficient—\nthat you would scatter from him every cloud\nof mortality with your prayers,\nso that the Supreme Joy might be revealed to him.\nI pray further, Queen, you who can do\nwhatever you will, that you preserve\nhis heart's devotion after so great a vision.\nLet your protection overcome human frailty.\nSee how Beatrice and all the blessed ones\nclasp their hands together, joining my prayers to you!\nThe eyes beloved and revered by God,\nfixed upon the one who spoke,\nshowed us how welcome devout prayers are to her.\nThen they turned toward the Eternal Light—\nthat Light on which no creature\ncould believably focus such a clear gaze.\nAnd I, who was approaching\nthe end of all desires,\nfelt the fire of longing within me reach its peak, as it should.\nBernard smiled and gestured for me to look upward,\nbut I was already doing\nexactly what he wanted,\nbecause my sight, becoming purified,\nwas entering deeper and deeper\ninto the ray of that High Light which is truth itself.\nFrom that moment on, what I saw\nwas greater than our language can express—\nspeech fails before such vision,\nand memory surrenders to such overwhelming experience.\nLike someone who sees something in a dream,\nand after waking the feeling remains\nbut nothing else returns to mind,\nso am I now—my vision has almost entirely\nfaded away, yet still distilling\nin my heart is the sweetness born from it.\nSo snow melts under the sun's touch,\nso the Sibyl's prophecies written on light leaves\nwere lost upon the wind.\nO Supreme Light, you who rise so far\nabove mortal understanding,\nlend back to my mind a little of what you appeared to be,\nand give my tongue such power\nthat it might leave just one spark of your glory\nfor future generations.\nBy returning somewhat to my memory\nand sounding even faintly in these verses,\nmore of your victory will be grasped.\nI believe the intensity of the living ray\nI endured would have overwhelmed me\nif I had turned my eyes away from it.\nI remember I grew bolder\nbecause of this, so much that I joined\nmy gaze with the Infinite Glory.\nO abundant grace, through which I dared\nto fix my sight upon the Eternal Light\nuntil my vision was consumed in it!\nIn its depths I saw gathered together,\nbound by love into a single volume,\neverything that is scattered in pages throughout the universe—\nsubstance and accidents and their workings,\nall fused together in such a way\nthat what I'm describing is one simple light.\nI believe I saw the universal form\nof this great knot,\nbecause as I say this I feel my joy expand.\nA single moment brings me more forgetfulness\nthan twenty-five centuries brought to the voyage\nthat made Neptune marvel at the Argo's shadow.\nMy mind, completely suspended this way,\ngazed steadfast, motionless, attentive,\nand grew more inflamed the more it watched.\nIn the presence of that light, one becomes such\nthat it's impossible to ever consent\nto turn away from it toward any other sight,\nbecause the good that is the object of the will\nis gathered completely there,\nand outside it, what is perfect there becomes defective.\nMy words will fall shorter now\nin describing what I still remember\nthan an infant's whose tongue still seeks the breast.\nNot because the living light I gazed upon\ncontained more than one pure image—\nit is always what it was before—\nbut because my sight grew stronger\nby looking, that one appearance\nkept transforming as I myself changed.\nWithin the deep, luminous substance\nof the High Light, three circles appeared to me\nof three colors but one size,\nand one seemed reflected by the second\nlike rainbow reflected in rainbow,\nand the third seemed fire breathed equally from both.\nHow feeble all speech is, how it falls short\nof my conception! And compared to what I saw,\ncalling this inadequate is not enough.\nO Eternal Light, existing in yourself alone,\nalone understanding yourself, and understood\nby yourself and understanding, you love and smile upon yourself!\nThat circle which appeared in you\nas reflected light,\nwhen my eyes contemplated it awhile,\nseemed painted within itself, in its own color,\nwith our human image—\nand so my sight was completely absorbed in it.\nLike a mathematician struggling\nto square the circle, who cannot discover\nthrough thought the principle he needs,\nso was I faced with that new vision.\nI wanted to see how the image fit the circle,\nhow it found its place there,\nbut my own wings were not sufficient for this—\nexcept that then my mind was struck\nby a flash of lightning that fulfilled its wish.\nHere my high imagination lost its power,\nbut already my desire and will were turning,\nlike a wheel that spins with perfect balance,\nmoved by the Love that moves the sun and all the stars.",
             "isDialogue": false,
-            "words": 1012,
-            "estimatedSeconds": 405
+            "words": 926,
+            "estimatedSeconds": 405.0
           }
         ]
       }
