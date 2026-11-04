@@ -1,105 +1,52 @@
 ---
 name: review-canto-audio
-description: Review generated canto audio for quality assurance. Use after generating audio to verify word-level highlighting sync, audio duration accuracy, speaker voice assignments, and text alignment. Catches sync issues, duration mismatches, and voice assignment errors.
+description: Review generated canto audio before or after publishing. Runs the tools/audio check for text, timing and sound problems, reads the speaker assignments against the poem, and publishes only with approval. Use after generating audio, or to audit what is live.
 allowed-tools: Read, Bash, Glob, Grep
 user-invocable: true
 ---
 
 # Review Canto Audio
 
-Complete quality assurance review for generated Divine Comedy canto audio.
+Takes a canto or list of cantos, for example "inferno 1", or "all". In commands, write them as `inferno:1,purgatorio:33`, or use `--all`. `tools/audio/README.md` has the details.
 
-## When to Use
-
-Run this skill after generating audio for any canto to verify:
-- Word-level highlighting synchronizes with audio playback
-- Audio duration matches timing data
-- Speaker segments are assigned to correct characters
-- Text in speaker mapping matches canto text
-
-## Required Parameters
-
-Provide the cantica and canto number:
-- Example: "inferno 1" or "purgatorio 33"
-
-## Review Checklist
-
-### 1. Audio File Verification
-- [ ] File exists at `public/audio/{cantica}/{cantica}_canto_{number}.mp3`
-- [ ] File size is reasonable (not 0 bytes, not corrupted)
-- [ ] Get actual duration using ffprobe
-
-### 2. Timing Data Verification
-- [ ] Entry exists in `public/audio-word-timings.json` for `{cantica}.{canto}`
-- [ ] `totalDuration` matches ffprobe duration (within 1 second tolerance)
-- [ ] All segments have word-level timing arrays
-- [ ] Word timing `end` values don't exceed `totalDuration`
-- [ ] No negative durations (start > end)
-
-### 3. Speaker Segment Verification
-- [ ] Entry exists in `data/speaker-mapping.json` for `{cantica}.{canto}`
-- [ ] All speakers have valid voice profiles in `data/character-voice-profiles.json`
-- [ ] Speaker assignments make sense (narrator for narration, named characters for dialogue)
-- [ ] No orphan segments or missing speakers
-
-### 4. Text Alignment Verification
-- [ ] Modern text in `data/cantos.json` matches combined speaker segment text
-- [ ] No text drift between sources
-- [ ] Quotation marks preserved correctly for dialogue
-
-## Verification Commands
+## 1. Run the check
 
 ```bash
-# 1. Check audio file exists and get duration
-ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "public/audio/{cantica}/{cantica}_canto_{number}.mp3"
-
-# 2. Check file size
-ls -lh "public/audio/{cantica}/{cantica}_canto_{number}.mp3"
-
-# 3. Validate JSON files are well-formed
-python3 -c "import json; json.load(open('public/audio-word-timings.json'))"
-python3 -c "import json; json.load(open('data/speaker-mapping.json'))"
+npm run audio:check -- --only <cantos>          # what is built locally
+npm run audio:check -- --only <cantos> --live   # what is on the site
 ```
 
-## Common Issues
+A failure blocks publishing. Warnings are for judgment: a faint tick may be inaudible, but a volume jump near the limit deserves a listen. Limits are at the top of `tools/audio/check.mjs`. Don't loosen one to get a canto through.
 
-| Issue | Symptom | Fix |
-|-------|---------|-----|
-| Duration mismatch | Highlighting ends early/late | Regenerate with ffmpeg concat |
-| Text drift | Highlighting tracks wrong words | Sync cantos.json with speaker-mapping |
-| Missing speaker | Segment plays with wrong voice | Add speaker to character-voice-profiles |
-| Corrupted MP3 | Plays longer than reported duration | Re-encode with ffmpeg |
+## 2. Read the speakers
 
-## Output Report Format
+The check can't tell who should be speaking. Read the canto's segments in `data/speaker-mapping.json` against the poem, and look for:
 
-After running all checks, provide:
+- Narration read by a character, such as Virgil saying "I had already fixed my eyes on his"
+- Speech read by the narrator, or by the wrong character
+- A voice that changes in the middle of a speech
+- The wrong gender. Speakers with no voice of their own share one for each gender, set in `data/voices.json`
 
-```
-## Audio Review: {Cantica} Canto {Number}
+Corrections go in `data/voice-fix-plans.json`. Quotation marks in segments are unreliable, so go by the poem.
 
-### Summary
-- Status: PASS/FAIL
-- Audio Duration: X:XX (ffprobe) vs X:XX (timing data)
-- Segments: N segments, M speakers
-- Word Count: N words with timestamps
+## 3. Listen
 
-### Checks
-- [x] Audio file exists (X.X MB)
-- [x] Duration matches (+/- N.N seconds)
-- [x] All speakers have voice profiles
-- [x] Text alignment verified
-- [ ] ISSUE: Description of any problems
-
-### Recommendations
-- List any fixes needed
+```bash
+npm run audio:listen -- <canto> <canto>
 ```
 
-## File Locations
+You can't hear audio, so tell the user plainly what still needs their ears. Don't call audio good on measurements alone.
 
-| File | Purpose |
-|------|---------|
-| `public/audio/{cantica}/{cantica}_canto_{n}.mp3` | Generated audio |
-| `public/audio-word-timings.json` | Word-level timestamps |
-| `data/speaker-mapping.json` | Character-to-segment mapping |
-| `data/character-voice-profiles.json` | Voice configurations |
-| `data/cantos.json` | Source text (original + modern) |
+## 4. Publish, only when the user approves
+
+```bash
+npm run audio:publish -- --only <cantos> --dry-run   # what would be committed
+npm run audio:publish -- --only <cantos> --push      # commit and deploy these cantos only
+npm run audio:publish -- --only <cantos> --verify    # after Vercel finishes, confirm the live files
+```
+
+Then play a canto on the live page and confirm the highlight follows the words.
+
+## Report
+
+For each canto, give pass or fail with the reasons, what you read, what still needs listening, and whether it is live.

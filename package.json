@@ -10,7 +10,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "audio:generate": "node tools/audio/generate.mjs",
+    "audio:check": "node --experimental-strip-types --no-warnings tools/audio/check.mjs",
+    "audio:split": "node tools/audio/split-voices.mjs",
+    "audio:listen": "node tools/audio/listen.mjs",
+    "audio:publish": "node tools/audio/publish.mjs",
+    "audio:backup": "node tools/audio/backup.mjs"
   },
   "keywords": [],
   "author": "",

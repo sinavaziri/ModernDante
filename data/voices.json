@@ -1,0 +1,40 @@
+{
+  "model": "eleven_v4",
+  "creditsPerCharacter": 0.44,
+  "tags": {
+    "narrator": "[measured, reflective storytelling]",
+    "dante": "[conversational, speaking directly to someone]"
+  },
+  "fallback": {
+    "male": "character",
+    "female": "lucia"
+  },
+  "femaleSpeakers": [
+    "piccarda", "sapia", "matelda", "cunizza", "pia", "leah", "siren", "furies", "aglauros",
+    "cardinal_virtues", "holy_lady", "lavinia", "mary", "pisistratus_wife", "seven_maidens",
+    "theological_virtues", "tomyris", "widow"
+  ],
+  "narrationOverrides": [
+    "inferno:1:7", "inferno:3:8", "inferno:3:11", "inferno:3:15", "inferno:3:21", "inferno:6:7",
+    "inferno:6:10", "inferno:6:18", "inferno:10:3", "inferno:21:11", "inferno:26:6", "inferno:28:4"
+  ],
+  "voices": {
+    "narrator": { "voiceId": "ceRvMsBhZbUSQgH59yxg", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": true, "speed": 1.0 } },
+    "dante": { "voiceId": "ceRvMsBhZbUSQgH59yxg", "voice_settings": { "stability": 0.2, "similarity_boost": 0.72, "style": 0.8, "use_speaker_boost": true, "speed": 1.05 } },
+    "virgil": { "voiceId": "gboKmrCOkZe6tMznPb9w", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.0, "use_speaker_boost": true, "speed": 1.0 } },
+    "beatrice": { "voiceId": "ctchwNfHTCRKIQdDzY3J", "voice_settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 0.95 } },
+    "lucia": { "voiceId": "pFZP5JQG7iQjIQuC4Bku", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.4, "use_speaker_boost": true, "speed": 0.95 } },
+    "character": { "voiceId": "lPoFhC6uDtaciSWzm2sI", "voice_settings": { "stability": 0.55, "similarity_boost": 0.7, "style": 0.0, "use_speaker_boost": true, "speed": 0.98 } },
+    "gate_inscription": { "voiceId": "Zp3wsYfVfi3BCNHzkseK", "voice_settings": { "stability": 0.55, "similarity_boost": 0.7, "style": 0.0, "use_speaker_boost": true, "speed": 0.98 } },
+    "charon": { "voiceId": "YQMlHwsBtm3nMiSqx4cp", "voice_settings": { "stability": 0.35, "similarity_boost": 0.65, "style": 0.4, "use_speaker_boost": true, "speed": 0.92 } },
+    "minos": { "voiceId": "SO1p7GQGvKBDbOZGBg2P", "voice_settings": { "stability": 0.4, "similarity_boost": 0.7, "style": 0.3, "use_speaker_boost": true, "speed": 0.95 } },
+    "homer": { "voiceId": "Rwyaq4BOCfdHv7tL6TIj", "voice_settings": { "stability": 0.55, "similarity_boost": 0.8, "style": 0.25, "use_speaker_boost": true, "speed": 0.92 } },
+    "francesca": { "voiceId": "twUwFnpNJ2G0x7FlsmI5", "voice_settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 0.95 } },
+    "ciacco": { "voiceId": "NKL1pZFuTPMRH2qbxXPa", "voice_settings": { "stability": 0.5, "similarity_boost": 0.65, "style": 0.25, "use_speaker_boost": true, "speed": 0.94 } },
+    "farinata": { "voiceId": "1qlJVxGJmVxF8yPJ6I1z", "voice_settings": { "stability": 0.55, "similarity_boost": 0.7, "style": 0.2, "use_speaker_boost": true, "speed": 0.92 } },
+    "pier_della_vigna": { "voiceId": "ynXmEJ8HaSccgtd5f0yK", "voice_settings": { "stability": 0.5, "similarity_boost": 0.7, "style": 0.3, "use_speaker_boost": true, "speed": 0.9 } },
+    "brunetto_latini": { "voiceId": "MThwYKL9zvv4oDI3Yax3", "voice_settings": { "stability": 0.55, "similarity_boost": 0.75, "style": 0.25, "use_speaker_boost": true, "speed": 0.92 } },
+    "ulysses": { "voiceId": "s2jm16YR9pS20We1LlB1", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.3, "use_speaker_boost": true, "speed": 0.95 } },
+    "ugolino": { "voiceId": "gI6zx6QabLOv9KycvLFI", "voice_settings": { "stability": 0.4, "similarity_boost": 0.7, "style": 0.4, "use_speaker_boost": true, "speed": 0.88 } }
+  }
+}
