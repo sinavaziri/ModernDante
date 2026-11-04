@@ -13,10 +13,6 @@ export interface WordTiming {
   start: number;
   /** End time in seconds */
   end: number;
-  /** Character start position in the segment text */
-  charStart: number;
-  /** Character end position in the segment text */
-  charEnd: number;
 }
 
 /**
@@ -33,14 +29,13 @@ export interface AudioSegment {
   startTime: number;
   /** Segment end time in seconds relative to full audio */
   endTime: number;
-  /** Segment duration in seconds */
-  duration: number;
   /** Word-level timing data for this segment */
   words: WordTiming[];
 }
 
 /**
- * Complete audio timing data for a canto
+ * Complete audio timing data for a canto, served from
+ * /audio-timings/{cantica}/{cantoNumber}.json
  */
 export interface AudioTimingData {
   /** Cantica name (inferno, purgatorio, paradiso) */
@@ -53,13 +48,4 @@ export interface AudioTimingData {
   totalDuration: number;
   /** Array of audio segments with timing data */
   segments: AudioSegment[];
-}
-
-/**
- * Root structure of audio-word-timings.json
- */
-export interface AudioTimingsRoot {
-  [cantica: string]: {
-    [cantoNumber: string]: AudioTimingData;
-  };
 }

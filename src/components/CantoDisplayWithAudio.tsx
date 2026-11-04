@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { type Canto, type Cantica, getNextCanto, getPreviousCanto } from '@/lib/cantos';
 import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
-import type { AudioTimingData, AudioTimingsRoot } from '@/types/audio';
+import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
 import { alignNarration, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
@@ -154,14 +154,12 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
   const prevCanto = getPreviousCanto(cantica as Cantica, canto.number);
   const nextCanto = getNextCanto(cantica as Cantica, canto.number);
 
-  // Load word-level timing data
+  // Load this canto's word-level timing data. A canto without a file has no audio.
   useEffect(() => {
     async function loadTimingData() {
       try {
-        const response = await fetch('/audio-word-timings.json');
-        const data: AudioTimingsRoot = await response.json();
-        const cantoData = data[cantica]?.[canto.number];
-        setTimingData(cantoData || null);
+        const response = await fetch(`/audio-timings/${cantica}/${canto.number}.json`);
+        setTimingData(response.ok ? ((await response.json()) as AudioTimingData) : null);
       } catch (error) {
         console.error('Failed to load word timing data:', error);
       }
