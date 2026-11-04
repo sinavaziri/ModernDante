@@ -2,6 +2,7 @@
 
 import { useState, useRef, useCallback, useMemo } from 'react';
 import { AUDIO } from '@/lib/constants';
+import { speakerLabel } from '@/lib/speaker-label';
 import type { AudioTimingData } from '@/types/audio';
 
 interface AudioPlayerProps {
@@ -129,11 +130,6 @@ export default function AudioPlayerWordLevel({
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // Format speaker name
-  const formatSpeaker = (speaker: string) => {
-    return speaker.charAt(0).toUpperCase() + speaker.slice(1).replace(/_/g, ' ');
-  };
-
   if (!hasAudio) {
     return null;
   }
@@ -187,7 +183,7 @@ export default function AudioPlayerWordLevel({
               ) : currentSegment && isPlaying ? (
                 <div className="flex items-center gap-3">
                   <span className="flex-shrink-0 px-2 py-0.5 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                    {formatSpeaker(currentSegment.speaker)}
+                    {speakerLabel(currentSegment.speaker)}
                   </span>
                   <p className="text-sm text-muted-foreground truncate italic">
                     &ldquo;{currentSegment.text.substring(0, AUDIO.TEXT_PREVIEW_LENGTH)}{currentSegment.text.length > AUDIO.TEXT_PREVIEW_LENGTH ? '...' : ''}&rdquo;
