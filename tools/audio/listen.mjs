@@ -18,7 +18,7 @@ const clock = t => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(
 const label = speaker => speaker.split('_').map(part => part[0].toUpperCase() + part.slice(1)).join(' ');
 const relative = file => path.relative(OUT_DIR, file).split(path.sep).join('/');
 
-const items = process.argv.slice(2);
+const items = process.argv.slice(2).filter(arg => !arg.startsWith('--'));
 if (!items.length) {
   console.error('Name the cantos, for example: node tools/audio/listen.mjs inferno:10 purgatorio:9@290.2');
   process.exit(1);
