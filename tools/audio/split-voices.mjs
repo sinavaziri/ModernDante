@@ -15,7 +15,7 @@
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import {
-  CANTICAS, CREDITS_PER_CHARACTER, CUT_LIMITS, PLANS_PATH, cantoPaths, decode, fingerprint, loadMapping, log, pausesNear,
+  CANTICAS, CREDITS_PER_CHARACTER, CUT_LIMITS, PLANS_PATH, cantoPaths, decode, fingerprint, loadMapping, log, pauseBetweenWords,
   readJson, saveMapping, segmentBase, spokenTimes, tagFor, voiceFor,
 } from './lib.mjs';
 
@@ -24,10 +24,6 @@ const SAME_VOICE = new Set(['narrator', 'dante']);
 // How much of a pause to keep on the side facing the neighbouring voice.
 const KEEP_PAUSE = 0.25;
 const WORD_MARGIN = 0.04;
-// Below this the speaker ran straight into the next word, so there is nothing clean to cut in.
-const MIN_PAUSE = 0.06;
-// How far alignment can be off. A pause further away than this belongs between other words, and cutting there loses them.
-const BOUNDARY_TOLERANCE = 0.12;
 
 const sameConfig = (a, b) => JSON.stringify([voiceFor(a), tagFor(a)]) === JSON.stringify([voiceFor(b), tagFor(b)]);
 
@@ -80,8 +76,7 @@ const startInPause = ([a, b]) => Math.max(a, b - KEEP_PAUSE);
 function pauseBetween(meta, samples, left, right) {
   const before = spokenTimes(meta, left.charStart, left.charEnd);
   const after = spokenTimes(meta, right.charStart, right.charEnd);
-  const pause = pausesNear(samples, (before.end + after.start) / 2).find(([a, b]) =>
-    b - a >= MIN_PAUSE && b >= before.end - BOUNDARY_TOLERANCE && a <= after.start + BOUNDARY_TOLERANCE);
+  const pause = pauseBetweenWords(samples, before, after);
   if (!pause) return null;
   const end = endInPause(pause);
   const start = startInPause(pause);
@@ -229,7 +224,7 @@ function recut(cantos) {
       const meta = readJson(file);
       if (meta.reusedFrom === undefined) continue;
       if (!groups.has(meta.reusedFrom)) groups.set(meta.reusedFrom, []);
-      groups.get(meta.reusedFrom).push({ id: segment.id, speaker: meta.speaker, text: meta.text });
+      groups.get(meta.reusedFrom).push({ id: segment.id, speaker: meta.speaker, text: meta.text, charStart: meta.sourceCharStart });
     }
     let recutCount = 0;
     const problems = [];
@@ -238,7 +233,8 @@ function recut(cantos) {
       const samples = decode(`${segmentBase(dir, sourceId)}.mp3`);
       let cursor = 0;
       for (const piece of pieces) {
-        piece.charStart = source.text.indexOf(piece.text, cursor);
+        // Searching can find the same words earlier in the recording, so the stored position comes first.
+        piece.charStart ??= source.text.indexOf(piece.text, cursor);
         if (piece.charStart < 0) throw new Error(`${cantica} ${number} piece ${piece.id}: text not found in segment ${sourceId}`);
         piece.charEnd = piece.charStart + piece.text.length;
         cursor = piece.charEnd;

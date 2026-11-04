@@ -24,6 +24,8 @@ import {
 const API = 'https://api.elevenlabs.io/v1';
 const CONCURRENCY = 3;
 const MAX_ATTEMPTS = 6;
+// A request that got no answer may still have been billed in full, so these get far fewer tries than a refusal.
+const MAX_UNANSWERED = 3;
 const QUOTA_MARGIN = 2000;
 const DEFAULT_CREDIT_CAP = 1000;
 
@@ -50,7 +52,9 @@ async function getQuota() {
   return { used: body.character_count, limit: body.character_limit, remaining: body.character_limit - body.character_count };
 }
 
-async function recordSegment(plan, dir, label) {
+async function recordSegment(plan, dir, label, budget) {
+  const estimate = Math.ceil(plan.sent.length * CREDITS_PER_CHARACTER);
+  let unanswered = 0;
   for (let attempt = 1; ; attempt++) {
     let failure;
     try {
@@ -89,26 +93,33 @@ async function recordSegment(plan, dir, label) {
     } catch (error) {
       if (error instanceof StopError || /^HTTP 4/.test(error.message)) throw error;
       failure = error.message;
+      unanswered++;
+      budget.possiblyBilled += estimate;
     }
-    // A request that timed out may still have been billed, which is why failures go in the ledger too.
     record({ canto: label, segment: plan.id, characters: plan.sent.length, attempt, ok: false, error: failure.slice(0, 200) });
+    if (unanswered >= MAX_UNANSWERED) {
+      throw new StopError(`Segment ${plan.id} got no answer ${unanswered} times, and each may have been billed about ${estimate} credits. Rerun once the connection or the service has recovered.`);
+    }
     if (attempt >= MAX_ATTEMPTS) throw new Error(`Segment ${plan.id} failed after ${attempt} attempts: ${failure}`);
+    if (budget.spent + budget.possiblyBilled + estimate > budget.cap) {
+      throw new StopError(`Stopped retrying segment ${plan.id}: ${budget.spent} credits recorded and about ${budget.possiblyBilled} possibly billed for no audio, so another try could pass the ${budget.cap} credit cap.`);
+    }
     const wait = 2000 * 2 ** (attempt - 1);
     log(`  segment ${plan.id}: ${failure.slice(0, 120)}. Retrying in ${wait / 1000}s`);
     await sleep(wait);
   }
 }
 
-async function recordMissing(plans, dir, label) {
+async function recordMissing(plans, dir, label, budget) {
   const queue = [...plans];
-  let spent = 0;
   let firstError = null;
   const worker = async () => {
     while (queue.length && !firstError) {
       const plan = queue.shift();
       try {
-        const cost = await recordSegment(plan, dir, label);
-        spent += cost;
+        // Awaited first: "spent += await" would read the total before the wait and lose other workers' costs.
+        const cost = await recordSegment(plan, dir, label, budget);
+        budget.spent += cost;
       } catch (error) {
         firstError = firstError || error;
       }
@@ -116,7 +127,6 @@ async function recordMissing(plans, dir, label) {
   };
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   if (firstError) throw firstError;
-  return spent;
 }
 
 /** Word timings from the alignment, skipping the tag so it never appears in highlighting. */
@@ -256,7 +266,7 @@ async function main() {
 
   const mapping = loadMapping();
   const before = dryRun ? null : await getQuota();
-  const totals = { spent: 0, characters: 0, segments: 0, assembled: 0, wouldRecord: 0, wouldCost: 0, wouldAssemble: 0 };
+  const totals = { cap: creditCap, spent: 0, possiblyBilled: 0, characters: 0, segments: 0, assembled: 0, wouldRecord: 0, wouldCost: 0, wouldAssemble: 0 };
   const flagged = [];
 
   for (const [cantica, cantoNumber] of cantos) {
@@ -282,15 +292,15 @@ async function main() {
     }
 
     if (missing.length) {
-      if (totals.spent + estimate > creditCap) {
-        throw new StopError(`Stopped before ${cantica} ${cantoNumber}: about ${estimate} credits more would pass the ${creditCap} credit cap, with ${totals.spent} spent. Raise it with --max-credits.`);
+      if (totals.spent + totals.possiblyBilled + estimate > creditCap) {
+        throw new StopError(`Stopped before ${cantica} ${cantoNumber}: about ${estimate} credits more would pass the ${creditCap} credit cap, with ${totals.spent} recorded and about ${totals.possiblyBilled} possibly billed for no audio. Raise it with --max-credits.`);
       }
       const quota = await getQuota();
       if (quota.remaining < estimate + QUOTA_MARGIN) {
         throw new StopError(`Stopped before ${cantica} ${cantoNumber}: needs about ${estimate} credits, ${quota.remaining} of ${quota.limit} left.`);
       }
       fs.mkdirSync(dir, { recursive: true });
-      totals.spent += await recordMissing(missing, dir, `${cantica} ${cantoNumber}`);
+      await recordMissing(missing, dir, `${cantica} ${cantoNumber}`, totals);
       totals.characters += characters;
       totals.segments += missing.length;
     }
@@ -311,7 +321,7 @@ async function main() {
   }
   const after = await getQuota();
   log(`Recorded ${totals.segments} segments, ${totals.characters} characters, ${totals.spent} credits. Rebuilt ${totals.assembled} MP3s.`);
-  log(`Account: ${after.used} of ${after.limit} used, up ${after.used - before.used} this run. It can lag by a minute, and can exceed the count above if a timed-out request was billed.`);
+  log(`Account: ${after.used} of ${after.limit} used, up ${after.used - before.used} this run. It can lag by a minute. About ${totals.possiblyBilled} credits of requests got no answer and may have been billed.`);
   log(`QA flags: ${flagged.length}. Next: npm run audio:check -- --only <cantos>`);
 }
 

@@ -51,8 +51,8 @@ Nothing reaches the site until step 5, and step 5 refuses audio that fails the c
 
 - **Model and cost:** `eleven_v4` through `POST /v1/text-to-speech/{voice_id}/with-timestamps`. It really bills about 0.44 credits per character, read from the `character-cost` response header. `/v1/models` lists 1.0.
 - **Delivery tags:** narrator and Dante share a voice, and an audio tag at the start of the text separates them. Alignment times include the tag, but it isn't spoken, and `generate.mjs` removes it from the word timings.
-- **Cuts:** alignment times drift on long recordings, so they only locate a cut roughly. It is then moved into the real pause measured in the audio. Without a pause, the words are recorded fresh rather than clipped.
+- **Cuts:** alignment times drift on long recordings, so they only locate a cut roughly. It is then moved into the real pause that best covers the gap between the two words. The nearest pause can be a dip inside a word, which moves that word to the wrong side of the cut. Without a pause, the words are recorded fresh rather than clipped.
 - **Assembly:** every segment gets a short fade at each end, which removes the ticks recordings can end on. Segments are levelled towards -21.5 dB, and the MP3 is encoded once at 128 kbps.
-- **Timed-out requests:** these can still be billed. They are in the ledger, and the end of a run compares its count with the account's.
+- **Requests with no answer:** a timeout or dropped connection can still be billed in full, even though no audio comes back. Paradiso 12 lost about 4,100 credits this way in one run. Each one counts against the credit cap, and a segment stops the run after 3 of them. They are in the ledger, and the end of a run compares its count with the account's.
 - **Repo size:** the MP3s are in git, so republishing a canto adds about 6 MB to the history permanently. Only publish what changed.
 - **What the check can't do:** it can't tell whether the right character is speaking or how a line was performed. Nothing checks speech against text either, so listening is a required step.

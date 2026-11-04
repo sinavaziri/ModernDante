@@ -10,8 +10,8 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {
-  CREDITS_PER_CHARACTER, CUT_LIMITS, MODEL, OUT_DIR, RATE, ROOT, cantoPaths, decode, isRecorded, levelAt, loadMapping, peakDb,
-  planSegment, probeDuration, rangeDb, readJson, segmentBase, selectCantos, speechLevel, spokenTimes, voiceFor,
+  CREDITS_PER_CHARACTER, CUT_LIMITS, MODEL, OUT_DIR, RATE, ROOT, cantoPaths, decode, isRecorded, levelAt, loadMapping, pauseBetweenWords,
+  peakDb, planSegment, probeDuration, rangeDb, readJson, segmentBase, selectCantos, speechLevel, speechPastPause, spokenTimes, voiceFor,
 } from './lib.mjs';
 
 const LIMITS = {
@@ -22,6 +22,8 @@ const LIMITS = {
   tickFail: -40,
   tickWarn: -55,
   cutMax: -40,
+  strayPause: 0.1, // seconds of quiet that separate a cut piece's own words from another line's
+  straySpeech: 0.03,
   jumpFail: 8,
   jumpWarn: 6,
   peakMax: -0.1,
@@ -158,6 +160,24 @@ function checkRecordings(cantica, n, timing, mapping, fail, warn) {
       const late = meta.cutTo - lastWord;
       if (early > CUT_LIMITS.insideWord) fail.push(`segment ${plan.id} ends ${early.toFixed(2)}s before its last letter: "${meta.text.slice(-30)}"`);
       if (late > CUT_LIMITS.beyondWord) fail.push(`segment ${plan.id} ends ${late.toFixed(2)}s after its last word: "${meta.text.slice(-30)}"`);
+    }
+
+    // A short dip inside a word can pass everything above, so the cut must be in the pause that belongs to this gap.
+    const sourceSamples = decode(`${segmentBase(dir, meta.reusedFrom)}.mp3`);
+    const textEnd = at + meta.text.length;
+    const outside = (cut, pause) => pause && (cut < pause[0] - 0.01 || cut > pause[1] + 0.01);
+    if (meta.cutFrom > 0 && at > 0 && outside(meta.cutFrom, pauseBetweenWords(sourceSamples, spokenTimes(source, 0, at), spokenTimes(source, at, textEnd)))) {
+      fail.push(`segment ${plan.id} starts outside the pause before its first word: "${meta.text.slice(0, 30)}"`);
+    }
+    if (meta.cutTo !== null && textEnd < source.text.length && outside(meta.cutTo, pauseBetweenWords(sourceSamples, spokenTimes(source, at, textEnd), spokenTimes(source, textEnd, source.text.length)))) {
+      fail.push(`segment ${plan.id} ends outside the pause after its last word: "${meta.text.slice(-30)}"`);
+    }
+    // Speech on the far side of a pause, before its first word or after its last, is another line's word.
+    if (meta.cutFrom > 0 && speechPastPause(piece, firstWord - meta.cutFrom, 0, LIMITS.strayPause) >= LIMITS.straySpeech) {
+      fail.push(`segment ${plan.id} has stray speech before its first word: "${meta.text.slice(0, 30)}"`);
+    }
+    if (meta.cutTo !== null && speechPastPause(piece, lastLetterStart - meta.cutFrom - 0.1, duration, LIMITS.strayPause) >= LIMITS.straySpeech) {
+      fail.push(`segment ${plan.id} has stray speech after its last word: "${meta.text.slice(-30)}"`);
     }
   }
   if (fs.existsSync(qa)) for (const flag of readJson(qa).flags || []) warn.push(`generator: ${flag}`);

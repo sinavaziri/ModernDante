@@ -149,6 +149,11 @@ export const RATE = 16000;
 // One this far outside them has picked up a neighbour's. Shared so the splitter and the check can't disagree.
 export const CUT_LIMITS = { insideWord: 0.12, beyondWord: 0.6 };
 export const SILENCE_DB = -45;
+const CUT_SPEECH_DB = -40;
+// Below this the speaker ran straight into the next word, so there is nothing clean to cut in.
+const MIN_CUT_PAUSE = 0.06;
+// How far alignment can be off. A pause further away than this belongs between other words, and cutting there loses them.
+const BOUNDARY_TOLERANCE = 0.12;
 
 export function decode(file) {
   const raw = execFileSync('ffmpeg', ['-v', 'error', '-i', file, '-f', 's16le', '-ac', '1', '-ar', String(RATE), '-'], { maxBuffer: 1 << 30 });
@@ -189,6 +194,36 @@ export function speechLevel(samples, from = 0, to = samples.length) {
 }
 
 /** Quiet stretches of at least 30 ms within reach of t, as [start, end], nearest first. */
+/**
+ * The pause that best covers the gap between two aligned words, or null. The nearest pause won't do: a short dip inside
+ * the next word can sit closer than the real pause, and cutting there moves that word to the wrong side of the cut.
+ */
+export function pauseBetweenWords(samples, before, after) {
+  const covered = ([a, b]) => Math.min(b, after.start) - Math.max(a, before.lastLetterStart);
+  return pausesNear(samples, (before.end + after.start) / 2)
+    .filter(([a, b]) => b - a >= MIN_CUT_PAUSE && b >= before.end - BOUNDARY_TOLERANCE && a <= after.start + BOUNDARY_TOLERANCE)
+    .sort((x, y) => covered(y) - covered(x))[0] || null;
+}
+
+/** Seconds of speech reached after crossing a real pause, scanning from one time towards another in either direction. */
+export function speechPastPause(samples, from, to, minPause) {
+  const step = to >= from ? 0.005 : -0.005;
+  let quiet = 0;
+  let crossed = false;
+  let speech = 0;
+  for (let t = from; step > 0 ? t < to : t > to; t += step) {
+    const level = levelAt(samples, t);
+    if (level < SILENCE_DB) {
+      quiet += 0.005;
+      if (quiet >= minPause) crossed = true;
+    } else {
+      quiet = 0;
+      if (crossed && level > CUT_SPEECH_DB) speech += 0.005;
+    }
+  }
+  return speech;
+}
+
 export function pausesNear(samples, t, reach = 0.6) {
   const step = 0.005;
   const found = [];
