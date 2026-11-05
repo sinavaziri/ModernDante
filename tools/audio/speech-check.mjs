@@ -3,6 +3,7 @@
 // Speech-to-text mishears names and old words, so a finding is a place to listen to, not proof.
 //   npm run audio:speech -- --all
 //   npm run audio:speech -- --only inferno:10
+//   npm run audio:speech -- --only inferno:10 --built     check the local build before it is published
 // Needs `uv` and an Apple Silicon Mac. Costs no credits. The first run downloads a 1.6 GB model.
 
 import fs from 'fs';
@@ -10,7 +11,12 @@ import path from 'path';
 import { spawnSync } from 'child_process';
 import { RATE, ROOT, SILENCE_DB, cantoPaths, decode, log, rangeDb, readJson, selectCantos } from './lib.mjs';
 
-const TRANSCRIPTS = path.join(ROOT, 'scripts', 'transcripts');
+const BUILT = process.argv.includes('--built');
+const audioFile = (cantica, n) => (BUILT ? cantoPaths(cantica, n).mp3 : cantoPaths(cantica, n).liveMp3);
+const timingFile = (cantica, n) => (BUILT ? cantoPaths(cantica, n).timings : cantoPaths(cantica, n).liveTimings);
+
+// Kept apart, so a local build's words are never mistaken for what is live.
+const TRANSCRIPTS = path.join(ROOT, 'scripts', 'transcripts', ...(BUILT ? ['built'] : []));
 const CLIPS = path.join(TRANSCRIPTS, 'clips');
 const REPORT = path.join(TRANSCRIPTS, 'report.json');
 const CLIP_REACH = 8; // seconds either side of a finding to listen to again
@@ -241,7 +247,7 @@ function recheck(findings) {
     const words = (finding.script || finding.speech).split(' ').length;
     const cut = spawnSync('ffmpeg', [
       '-y', '-loglevel', 'error', '-ss', String(Math.max(0, finding.time - CLIP_REACH)), '-t', String(CLIP_REACH * 2 + words * CLIP_SECONDS_PER_WORD),
-      '-i', cantoPaths(cantica, Number(n)).liveMp3, '-ar', '16000', '-ac', '1', finding.clip,
+      '-i', audioFile(cantica, Number(n)), '-ar', '16000', '-ac', '1', finding.clip,
     ]);
     if (cut.status !== 0) throw new Error(`Could not cut a clip for ${finding.canto} at ${finding.time}s`);
     return [finding.clip, `${finding.clip}.json`];
@@ -265,20 +271,20 @@ fs.mkdirSync(TRANSCRIPTS, { recursive: true });
 const transcriptPath = (cantica, n) => path.join(TRANSCRIPTS, `${cantica}_canto_${n}.json`);
 const stale = cantos.filter(([cantica, n]) => {
   const file = transcriptPath(cantica, n);
-  return !fs.existsSync(file) || fs.statSync(file).mtimeMs < fs.statSync(cantoPaths(cantica, n).liveMp3).mtimeMs;
+  return !fs.existsSync(file) || fs.statSync(file).mtimeMs < fs.statSync(audioFile(cantica, n)).mtimeMs;
 });
 
 if (stale.length) {
   log(`Transcribing ${stale.length} canto(s)`);
-  transcribe(stale.flatMap(([cantica, n]) => [cantoPaths(cantica, n).liveMp3, transcriptPath(cantica, n)]));
+  transcribe(stale.flatMap(([cantica, n]) => [audioFile(cantica, n), transcriptPath(cantica, n)]));
 }
 
 const results = cantos.map(([cantica, n]) => compareCanto(
   cantica,
   n,
   readJson(transcriptPath(cantica, n)),
-  readJson(cantoPaths(cantica, n).liveTimings),
-  decode(cantoPaths(cantica, n).liveMp3),
+  readJson(timingFile(cantica, n)),
+  decode(audioFile(cantica, n)),
 ));
 
 const firstPass = results.flatMap(result => result.findings);

@@ -88,7 +88,8 @@ async function recordSegment(plan, dir, label, budget) {
       }
       const detail = (await res.text()).slice(0, 400);
       if (detail.includes('quota_exceeded')) throw new StopError(detail);
-      if (res.status !== 429 && res.status < 500) throw new Error(`HTTP ${res.status}: ${detail}`);
+      // 409 means a library voice is still being set up by another request for it, on first use. It isn't billed.
+      if (res.status !== 429 && res.status !== 409 && res.status < 500) throw new Error(`HTTP ${res.status}: ${detail}`);
       failure = `HTTP ${res.status}: ${detail}`;
     } catch (error) {
       if (error instanceof StopError || /^HTTP 4/.test(error.message)) throw error;
