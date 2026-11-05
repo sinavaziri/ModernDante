@@ -75,23 +75,21 @@
     letter-spacing: -0.01em;
   }
 
-  /* Smaller headings and UI use sans-serif */
+  /* Smaller headings, navigation and buttons share the one sans-serif, Libre Franklin */
   h4, h5, h6 {
-    font-family: var(--font-sans), 'Source Sans 3', system-ui, sans-serif;
+    font-family: var(--font-sans), 'Libre Franklin', system-ui, sans-serif;
     font-weight: 600;
     letter-spacing: 0.02em;
   }
 
-  /* Navigation uses classic Libre Franklin */
   nav {
-    font-family: var(--font-nav), 'Libre Franklin', system-ui, sans-serif;
+    font-family: var(--font-sans), 'Libre Franklin', system-ui, sans-serif;
     letter-spacing: 0.02em;
     font-weight: 500;
   }
-  
-  /* Buttons and UI elements use sans-serif */
+
   button, .ui-text {
-    font-family: var(--font-sans), 'Source Sans 3', system-ui, sans-serif;
+    font-family: var(--font-sans), 'Libre Franklin', system-ui, sans-serif;
   }
 
   /* Links get the maroon color */

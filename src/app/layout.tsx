@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Source_Sans_3, Libre_Franklin } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -31,20 +31,12 @@ const sabon = localFont({
   display: "swap",
 });
 
-// Clean humanist sans-serif for UI elements
-const sourceSans = Source_Sans_3({
+// The one sans-serif, for navigation, buttons and small interface text. Everything else is Sabon.
+const libreFranklin = Libre_Franklin({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
-
-// Classic professional sans-serif for navigation
-const libreFranklin = Libre_Franklin({
-  subsets: ["latin"],
-  variable: "--font-nav",
-  display: "swap",
-  weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -58,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sourceSans.variable} ${sabon.variable} ${libreFranklin.variable}`}>
+    <html lang="en" className={`${sabon.variable} ${libreFranklin.variable}`}>
       <body className="antialiased min-h-screen bg-background text-foreground">
         {children}
       </body>

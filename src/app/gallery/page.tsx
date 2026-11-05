@@ -94,27 +94,12 @@ export default function GalleryPage() {
       <Navigation />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <div className="relative overflow-hidden pt-24 pb-16 border-b border-border">
-          {/* Decorative background */}
-          <div className="absolute inset-0 opacity-5">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              }}
-            />
-          </div>
-
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
-              <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
+        <div className="pt-24 pb-12 border-b border-border">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight">
-              Doré Gallery
+              Illustrations
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
               Gustave Doré&apos;s {counts.all} engravings for the Divine Comedy, made between 1857 and 1868, shown here in color.
             </p>
           </div>
@@ -123,7 +108,7 @@ export default function GalleryPage() {
         {/* Filter Tabs */}
         <div className="sticky top-20 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-center py-4 gap-2 overflow-x-auto">
+            <div className="flex items-center py-4 gap-2 overflow-x-auto">
               {(['all', 'inferno', 'purgatorio', 'paradiso'] as const).map((filter) => (
                 <button
                   key={filter}
@@ -134,7 +119,7 @@ export default function GalleryPage() {
                       : 'bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground'
                   }`}
                 >
-                  {filter === 'all' ? 'All Illustrations' : canticaLabels[filter]}
+                  {filter === 'all' ? 'All' : canticaLabels[filter]}
                   <span className={`ml-2 ${activeFilter === filter ? 'opacity-80' : 'opacity-60'}`}>
                     ({counts[filter]})
                   </span>
