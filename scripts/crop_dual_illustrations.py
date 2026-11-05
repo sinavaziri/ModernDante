@@ -130,7 +130,7 @@ if __name__ == "__main__":
     success_count = 0
     for filename in dual_files:
         base_name = filename.replace('.png', '')
-        input_file = f'{base_dir}/images_original/paradiso/{filename}'
+        input_file = f'/Users/Sina/ModernDante/archive/images_original/paradiso/{filename}'
         output_left = f'{base_dir}/images/paradiso/{base_name}.png'
         output_right = f'{base_dir}/images/paradiso/{base_name}-right.png'
 
