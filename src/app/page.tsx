@@ -26,19 +26,16 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  Experience Dante&apos;s masterpiece in modern and approachable English with an elegant reading interface,
-                  featuring classic illustrations by Gustave Doré.
+                  Dante&apos;s poem in plain modern English, read aloud with a different voice for each character,
+                  alongside Gustave Doré&apos;s engravings in color.
                 </p>
 
                 <div className="pt-2">
                   <Link
                     href="/inferno/1"
-                    className="group px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold rounded-sm shadow-sm transition-all duration-300 inline-flex items-center space-x-2"
+                    className="inline-block px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground hover:text-primary-foreground text-base font-semibold rounded-sm shadow-sm transition-colors"
                   >
-                    <span>Begin Your Journey</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    Start with Inferno I
                   </Link>
                 </div>
               </div>
