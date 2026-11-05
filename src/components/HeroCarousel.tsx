@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
+import { toRoman } from '@/lib/canticas';
 import type { CarouselSlide } from '@/lib/image-mappings';
 
 const ADVANCE_MS = 7000;
@@ -89,7 +90,7 @@ export default function HeroCarousel({ slides }: { slides: CarouselSlide[] }) {
         <div aria-live={advancing ? 'off' : 'polite'} className="min-w-0">
           <Link href={slide.href} className="group block min-w-0 rounded-sm">
             <span className="block text-xs uppercase tracking-widest text-muted-foreground">
-              {slide.canticaName} {slide.canto}
+              {slide.canticaName}, Canto {toRoman(slide.canto)}
             </span>
             <span className="block truncate font-serif italic text-foreground group-hover:text-primary transition-colors">
               {slide.title}

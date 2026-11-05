@@ -1,7 +1,8 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { getAllCanticas, type Cantica } from '@/lib/canticas';
+import { getAllCanticas, getCanticaInfo, getNextCanto, getPreviousCanto, toRoman, type Cantica } from '@/lib/canticas';
 import type { CantoListItem } from '@/lib/cantos';
 
 interface CantoSelectorProps {
@@ -10,9 +11,20 @@ interface CantoSelectorProps {
   cantos: CantoListItem[];
 }
 
+/** "Canto II", or "Purgatorio I" when the link crosses into another cantica */
+function cantoLabel(from: Cantica, to: { cantica: Cantica; number: number }): string {
+  const name = to.cantica === from ? 'Canto' : getCanticaInfo(to.cantica)?.displayName;
+  return `${name} ${toRoman(to.number)}`;
+}
+
+const STEP_LINK =
+  'inline-flex h-10 items-center gap-1 rounded-sm border border-border bg-background px-2 sm:px-3 text-sm text-foreground hover:border-primary/50 hover:text-primary transition-colors';
+
 export default function CantoSelector({ currentCantica, currentCanto, cantos }: CantoSelectorProps) {
   const router = useRouter();
   const canticas = getAllCanticas();
+  const previous = getPreviousCanto(currentCantica, currentCanto);
+  const next = getNextCanto(currentCantica, currentCanto);
 
   const handleCanticaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newCantica = e.target.value as Cantica;
@@ -27,12 +39,12 @@ export default function CantoSelector({ currentCantica, currentCanto, cantos }: 
   return (
     <div className="bg-muted/30 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
 
           {/* Controls Group */}
-          <div className="flex flex-1 gap-4 w-full sm:w-auto">
+          <div className="flex flex-1 min-w-0 gap-2 sm:gap-4">
             {/* Cantica Selector */}
-            <div className="flex-1 sm:flex-initial min-w-[140px]">
+            <div className="flex-1 min-w-0 sm:flex-initial sm:min-w-[140px]">
               <label htmlFor="cantica-select" className="sr-only">
                 Select Cantica
               </label>
@@ -41,7 +53,7 @@ export default function CantoSelector({ currentCantica, currentCanto, cantos }: 
                   id="cantica-select"
                   value={currentCantica}
                   onChange={handleCanticaChange}
-                  className="w-full appearance-none px-3 py-2 pr-8 bg-background border border-border rounded-sm text-sm font-medium text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors cursor-pointer"
+                  className="w-full h-10 appearance-none px-3 py-2 pr-8 bg-background border border-border rounded-sm text-sm font-medium text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors cursor-pointer"
                 >
                   {canticas.map((c) => (
                     <option key={c.name} value={c.name}>
@@ -58,7 +70,7 @@ export default function CantoSelector({ currentCantica, currentCanto, cantos }: 
             </div>
 
             {/* Canto Selector */}
-            <div className="flex-1 sm:flex-initial min-w-[140px]">
+            <div className="flex-1 min-w-0 sm:flex-initial sm:min-w-[140px]">
               <label htmlFor="canto-select" className="sr-only">
                 Select Canto
               </label>
@@ -67,7 +79,7 @@ export default function CantoSelector({ currentCantica, currentCanto, cantos }: 
                   id="canto-select"
                   value={currentCanto}
                   onChange={handleCantoChange}
-                  className="w-full appearance-none px-3 py-2 pr-8 bg-background border border-border rounded-sm text-sm font-medium text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors cursor-pointer"
+                  className="w-full h-10 appearance-none px-3 py-2 pr-8 bg-background border border-border rounded-sm text-sm font-medium text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary transition-colors cursor-pointer"
                 >
                   {cantos.map((canto) => (
                     <option key={canto.number} value={canto.number}>
@@ -84,12 +96,33 @@ export default function CantoSelector({ currentCantica, currentCanto, cantos }: 
             </div>
           </div>
 
-          {/* Current Selection Info */}
-          <div className="hidden sm:flex items-center space-x-2 px-3 py-1.5 bg-background border border-border rounded-sm">
-            <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-              Canto {currentCanto} / {cantos.length}
-            </span>
-          </div>
+          {/* Previous and next canto. Phones show only the chevrons. */}
+          <nav aria-label="Previous and next canto" className="flex shrink-0 items-center gap-2">
+            {previous && (
+              <Link
+                href={`/${previous.cantica}/${previous.number}`}
+                aria-label={`Previous: ${cantoLabel(currentCantica, previous)}`}
+                className={STEP_LINK}
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
+                </svg>
+                <span className="hidden sm:inline">{cantoLabel(currentCantica, previous)}</span>
+              </Link>
+            )}
+            {next && (
+              <Link
+                href={`/${next.cantica}/${next.number}`}
+                aria-label={`Next: ${cantoLabel(currentCantica, next)}`}
+                className={STEP_LINK}
+              >
+                <span className="hidden sm:inline">{cantoLabel(currentCantica, next)}</span>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            )}
+          </nav>
         </div>
       </div>
     </div>

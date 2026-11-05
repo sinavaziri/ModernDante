@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useCallback, useMemo } from 'react';
+import { toRoman } from '@/lib/canticas';
 import { AUDIO } from '@/lib/constants';
 import { speakerLabel } from '@/lib/speaker-label';
 import type { AudioTimingData } from '@/types/audio';
@@ -218,7 +219,7 @@ export default function AudioPlayerWordLevel({
                 </div>
               ) : (
                 <p className="text-sm text-muted-foreground">
-                  {cantica.charAt(0).toUpperCase() + cantica.slice(1)} &middot; Canto {cantoNumber}
+                  {cantica.charAt(0).toUpperCase() + cantica.slice(1)}, Canto {toRoman(cantoNumber)}
                 </p>
               )}
             </div>

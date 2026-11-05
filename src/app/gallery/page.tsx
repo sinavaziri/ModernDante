@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import { toRoman } from '@/lib/canticas';
 import { getImageSrc } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import imageMappingsData from '@/data/image-mappings.json';
@@ -188,7 +189,7 @@ export default function GalleryPage() {
                   <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
                     <div className="text-white space-y-1">
                       <span className="text-xs font-semibold uppercase tracking-wider opacity-80">
-                        {canticaLabels[image.cantica as keyof typeof canticaLabels]} · Canto {image.canto}
+                        {canticaLabels[image.cantica as keyof typeof canticaLabels]}, Canto {toRoman(image.canto)}
                       </span>
                       <h3 className="text-lg font-bold leading-tight line-clamp-2">
                         {image.title}
@@ -265,7 +266,7 @@ export default function GalleryPage() {
                       {selectedImage.title}
                     </h2>
                     <p className="text-muted-foreground mt-1">
-                      Canto {selectedImage.canto}, Lines {selectedImage.lines}
+                      Canto {toRoman(selectedImage.canto)}, lines {selectedImage.lines}
                     </p>
                   </div>
 

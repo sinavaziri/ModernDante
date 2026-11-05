@@ -2,8 +2,6 @@
 
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { type Cantica, getNextCanto, getPreviousCanto } from '@/lib/canticas';
 import type { Canto } from '@/lib/cantos';
 import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
@@ -172,8 +170,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
   const narrationRef = useRef<HTMLDivElement>(null);
 
   const images = getImagesForCanto(cantica, canto.number);
-  const prevCanto = getPreviousCanto(cantica as Cantica, canto.number);
-  const nextCanto = getNextCanto(cantica as Cantica, canto.number);
 
   // Load this canto's word-level timing data. A canto without a file has no audio.
   useEffect(() => {
@@ -283,42 +279,10 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
             {canticaName}
           </span>
           
-          {/* Title with Navigation Arrows */}
-          <div className="flex items-center justify-center gap-4 md:gap-8 mb-6">
-            {/* Previous Button */}
-            {prevCanto ? (
-              <Link
-                href={`/${prevCanto.cantica}/${prevCanto.number}`}
-                className="group flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-muted-foreground hover:text-foreground"
-                aria-label="Previous canto"
-              >
-                <svg className="w-5 h-5 md:w-6 md:h-6 group-hover:-translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-                </svg>
-              </Link>
-            ) : (
-              <div className="w-12 h-12 md:w-14 md:h-14" />
-            )}
-            
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight">
-              {canto.title}
-            </h1>
-            
-            {/* Next Button */}
-            {nextCanto ? (
-              <Link
-                href={`/${nextCanto.cantica}/${nextCanto.number}`}
-                className="group flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 text-muted-foreground hover:text-foreground"
-                aria-label="Next canto"
-              >
-                <svg className="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            ) : (
-              <div className="w-12 h-12 md:w-14 md:h-14" />
-            )}
-          </div>
+          {/* Previous and next cantos are in the bar under the menu, so the title can sit centered */}
+          <h1 className="mb-6 text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-tight">
+            {canto.title}
+          </h1>
           
           {canto.subtitle && (
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-serif italic leading-relaxed">
