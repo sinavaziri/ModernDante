@@ -80,11 +80,14 @@ export function useNarrationHighlight(
       update();
       frame = requestAnimationFrame(loop);
     };
+    // While playing, the other lines fade back so the spoken one stands out
     const start = () => {
+      root.classList.add('is-playing');
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(loop);
     };
     const stop = () => {
+      root.classList.remove('is-playing');
       cancelAnimationFrame(frame);
       update();
     };
@@ -105,6 +108,7 @@ export function useNarrationHighlight(
       audio.removeEventListener('ended', stop);
       audio.removeEventListener('seeked', update);
       window.removeEventListener('scroll', checkVisibility);
+      root.classList.remove('is-playing');
       wordEl?.classList.remove('is-current');
       lineEl?.classList.remove('is-active');
     };

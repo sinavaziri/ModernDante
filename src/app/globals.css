@@ -16,7 +16,7 @@
   --color-secondary-foreground: hsl(30 10% 18%);
   
   --color-muted: hsl(40 12% 88%);
-  --color-muted-foreground: hsl(30 8% 45%);
+  --color-muted-foreground: hsl(30 8% 42%);
   
   /* Deep Maroon for accents */
   --color-accent: hsl(355 45% 38%);
@@ -214,10 +214,14 @@
   }
 }
 
-/* Narration highlighting (driven by useNarrationHighlight) */
+/* Narration highlighting (driven by useNarrationHighlight). Other lines fade only while
+   narration plays, and only to 75%, which keeps them above 4.5:1 contrast. */
 .has-narration .narration-line {
-  opacity: 0.6;
   transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.has-narration.is-playing .narration-line {
+  opacity: 0.75;
 }
 
 .has-narration .narration-line.is-active {
