@@ -59,7 +59,6 @@ export default function AudioPlayerWordLevel({
   const handleLoadedMetadata = useCallback(() => {
     if (audioRef.current) {
       setDuration(audioRef.current.duration);
-      setAudioError(null); // Clear any previous error on successful load
     }
   }, []);
 
@@ -69,17 +68,30 @@ export default function AudioPlayerWordLevel({
     setIsPlaying(false);
   }, []);
 
-  // Play/pause toggle
-  const togglePlay = useCallback(() => {
-    if (!audioRef.current) return;
+  // Play/pause toggle. isPlaying follows the element's play and pause events,
+  // so a refused play() can't leave the button showing Pause over silence.
+  const togglePlay = useCallback(async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
 
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
+    // WebKit reports an element whose file failed to load as not paused.
+    if (!audio.paused && !audio.error) {
+      audio.pause();
+      return;
     }
-    setIsPlaying(!isPlaying);
-  }, [isPlaying]);
+
+    try {
+      // A failed file stays failed until it's told to load again.
+      if (audio.error) audio.load();
+      await audio.play();
+      setAudioError(null);
+    } catch (error) {
+      // AbortError only means a pause arrived before playback started.
+      if (!(error instanceof DOMException && error.name === 'AbortError')) {
+        setAudioError('Unable to play audio. Please try again.');
+      }
+    }
+  }, []);
 
   // Seek to position
   const handleSeek = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
@@ -172,6 +184,13 @@ export default function AudioPlayerWordLevel({
 
         {/* Controls */}
         <div className="max-w-4xl mx-auto px-4 py-3">
+          {/* The status area below is hidden on phones, where errors would otherwise never show */}
+          {audioError && (
+            <p className="sm:hidden pb-2 text-sm text-red-500">
+              {audioError}
+            </p>
+          )}
+
           <div className="flex items-center gap-4">
 
             {/* Left: Current Speaker & Text */}
