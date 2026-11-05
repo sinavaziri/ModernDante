@@ -3,6 +3,8 @@
 
 import imageMappingsData from '@/data/image-mappings.json';
 import colorizedImages from '@/data/colorized-images.json';
+import homeCarousel from '@/data/home-carousel.json';
+import { getAllCanticas } from '@/lib/canticas';
 
 export interface ImageData {
   imageNumber: number;
@@ -66,4 +68,53 @@ const colorized = new Set<string>(colorizedImages);
 export function getImageSrc(cantica: string, filename: string): string {
   const key = `${cantica}/${filename}`;
   return colorized.has(key) ? `/images-color/${key}` : `/images/${key}`;
+}
+
+export interface CarouselSlide {
+  imageNumber: number;
+  title: string;
+  /** Display name, e.g. "Inferno" */
+  canticaName: string;
+  canto: number;
+  href: string;
+  src: string;
+  srcSet: string;
+}
+
+const MINOR_WORDS = new Set(['a', 'an', 'and', 'of', 'the', 'to', 'in', 'on']);
+
+/** "THE WAY TO THE UPPER WORLD" becomes "The Way to the Upper World" */
+function titleCase(title: string): string {
+  return title
+    .toLowerCase()
+    .split(/(\s+|—)/)
+    .map((word, i, parts) => {
+      const startsPart = i === 0 || parts[i - 1] === '—';
+      return !startsPart && MINOR_WORDS.has(word) ? word : word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join('');
+}
+
+/**
+ * The home page carousel's plates, in the order listed in src/data/home-carousel.json.
+ * Their images are made by `npm run images:carousel`.
+ */
+export function getCarouselSlides(): CarouselSlide[] {
+  const all = imageMappingsData.images as Array<ImageData & { cantica: string; canto: number }>;
+  const canticaNames = new Map(getAllCanticas().map(c => [c.name as string, c.displayName]));
+  const [smallest] = homeCarousel.widths;
+
+  return homeCarousel.plates.map(number => {
+    const image = all.find(i => i.imageNumber === number);
+    if (!image) throw new Error(`Carousel plate ${number} isn't in image-mappings.json`);
+    return {
+      imageNumber: number,
+      title: titleCase(image.title),
+      canticaName: canticaNames.get(image.cantica) ?? image.cantica,
+      canto: image.canto,
+      href: `/${image.cantica}/${image.canto}`,
+      src: `/images-carousel/${number}-${smallest}.webp`,
+      srcSet: homeCarousel.widths.map(w => `/images-carousel/${number}-${w}.webp ${w}w`).join(', '),
+    };
+  });
 }

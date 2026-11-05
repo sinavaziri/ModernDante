@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import HeroCarousel from '@/components/HeroCarousel';
 import { getAllCanticas } from '@/lib/canticas';
-import { getImageSrc } from '@/lib/image-mappings';
+import { getCarouselSlides, getImageSrc } from '@/lib/image-mappings';
 
 export default function HomePage() {
   const canticas = getAllCanticas();
@@ -42,16 +43,9 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Right side - Image */}
-              <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
-                <div className="relative w-full">
-                  <div className="absolute -inset-4 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 rounded-sm blur-2xl" />
-                  <img 
-                    src={getImageSrc('inferno', '39.png')}
-                    alt="Gustave Doré illustration from Dante's Inferno"
-                    className="relative w-full h-auto object-contain shadow-2xl rounded-sm border border-border/20"
-                  />
-                </div>
+              {/* Right side - Illustrations */}
+              <div className="relative order-1 lg:order-2 flex justify-center">
+                <HeroCarousel slides={getCarouselSlides()} />
               </div>
             </div>
           </div>
