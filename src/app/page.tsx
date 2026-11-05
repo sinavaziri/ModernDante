@@ -26,8 +26,8 @@ export default function HomePage() {
                 </p>
 
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  Dante&apos;s poem in plain modern English, read aloud with a different voice for each character,
-                  alongside Gustave Doré&apos;s engravings in color.
+                  All 100 cantos of Dante&apos;s poem in plain modern English, read aloud with a different voice
+                  for each character, alongside Gustave Doré&apos;s 135 engravings in color.
                 </p>
 
                 <div className="pt-2">
@@ -48,34 +48,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="border-y border-border bg-card/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-border">
-              <div className="space-y-2 py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-bold text-foreground">
-                  100
-                </div>
-                <div className="text-muted-foreground text-sm uppercase tracking-wider">Total Cantos</div>
-              </div>
-              <div className="space-y-2 py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-bold text-foreground">
-                  135
-                </div>
-                <div className="text-muted-foreground text-sm uppercase tracking-wider">Doré Illustrations</div>
-              </div>
-              <div className="space-y-2 py-4 md:py-0">
-                <div className="text-4xl md:text-5xl font-bold text-foreground">
-                  14k+
-                </div>
-                <div className="text-muted-foreground text-sm uppercase tracking-wider">Lines of Poetry</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Canticas: each plate at full strength, with its text on the page below */}
-        <div id="canticas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div id="canticas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 border-t border-border">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             {canticas.map((cantica) => {
               const plate = getCanticaPlate(cantica.name);
