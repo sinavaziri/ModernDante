@@ -114,7 +114,7 @@ export default function GalleryPage() {
               Doré Gallery
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Browse all {counts.all} engravings by Gustave Doré, created for Dante&apos;s Divine Comedy between 1857–1868.
+              Gustave Doré&apos;s {counts.all} engravings for the Divine Comedy, made between 1857 and 1868, shown here in color.
             </p>
           </div>
         </div>
@@ -289,8 +289,8 @@ export default function GalleryPage() {
 
                   {/* Artist credit */}
                   <div className="pt-4 border-t border-border text-center text-sm text-muted-foreground">
-                    <p>Engraving by <span className="font-semibold">Gustave Doré</span></p>
-                    <p className="text-xs mt-1 opacity-75">Published 1857–1868</p>
+                    <p>Engraving by <span className="font-semibold">Gustave Doré</span>, 1857–1868</p>
+                    <p className="text-xs mt-1 opacity-75">Colorized for this site</p>
                   </div>
                 </div>
 

@@ -95,6 +95,9 @@ function ImageLightbox({
             <p className="text-sm font-sans tracking-widest text-white/50 uppercase">
               {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}
             </p>
+            <p className="text-sm text-white/50">
+              Engraving by Gustave Doré, colorized for this site
+            </p>
           </div>
         </div>
       </div>
