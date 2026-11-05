@@ -51,10 +51,11 @@ function ImageLightbox({
       aria-modal="true"
       aria-label={image.title}
       tabIndex={-1}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 animate-lightbox-in outline-none"
+      className="fixed inset-0 z-[60] flex items-center justify-center p-4 md:p-8 animate-lightbox-in outline-none"
       onClick={onClose}
     >
-      <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
+      {/* Above the audio player (z-50), and opaque so the page's copy of the plate doesn't show through */}
+      <div className="absolute inset-0 bg-black" />
 
       <button
         onClick={onClose}
