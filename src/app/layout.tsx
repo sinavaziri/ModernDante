@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Franklin } from "next/font/google";
 import localFont from "next/font/local";
+import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 // Sabon - elegant Renaissance serif for body text
@@ -53,6 +54,7 @@ export default function RootLayout({
     <html lang="en" className={`${sabon.variable} ${libreFranklin.variable}`}>
       <body className="antialiased min-h-screen bg-background text-foreground">
         {children}
+        <SiteFooter />
       </body>
     </html>
   );

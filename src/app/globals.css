@@ -178,6 +178,11 @@
   opacity: 0;
 }
 
+/* On canto pages the fixed audio player would cover the end of the footer */
+body:has([data-audio-player]) .site-footer {
+  padding-bottom: 7rem;
+}
+
 /* Line clamp utility */
 .line-clamp-2 {
   display: -webkit-box;
