@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { type Cantica, getNextCanto, getPreviousCanto } from '@/lib/canticas';
 import type { Canto } from '@/lib/cantos';
 import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
+import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
@@ -19,7 +20,7 @@ interface CantoDisplayProps {
 }
 
 type ContentBlock =
-  | { type: 'text'; content: string[]; lines: TokenizedLine[]; startLine: number; endLine: number; segmentId?: number }
+  | { type: 'text'; content: string[]; lines: TokenizedLine[]; startLine: number; endLine: number }
   | { type: 'image'; data: ImageData };
 
 // Lightbox Modal Component (same as before)
@@ -47,7 +48,12 @@ function ImageLightbox({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 animate-lightbox-in"
+      ref={lightboxFocus}
+      role="dialog"
+      aria-modal="true"
+      aria-label={image.title}
+      tabIndex={-1}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8 animate-lightbox-in outline-none"
       onClick={onClose}
     >
       <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" />
@@ -111,7 +117,18 @@ function InlineImage({
       className="group cursor-pointer transition-all duration-300 my-12 md:my-16 mx-auto max-w-2xl"
       onClick={onClick}
     >
-      <div className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50">
+      <div
+        role="button"
+        tabIndex={0}
+        aria-label={`View larger: ${image.title}`}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            onClick();
+          }
+        }}
+        className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+      >
         <Image
           src={getImageSrc(cantica, image.filename)}
           alt={image.title}
@@ -182,45 +199,24 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     setSelectedImage(null);
   }, []);
 
-  // Map text to segments
+  // Split the text into stanzas and place each illustration after the stanza holding its last line
   const modernContent = useMemo(() => {
     if (!canto.modern) return [];
 
+    const stanzas = canto.modern
+      .split(/\n\s*\n/)
+      .map(stanza => stanza.split('\n').map(l => l.trim()).filter(l => l))
+      .filter(lines => lines.length > 0);
+    const totalLines = stanzas.reduce((sum, lines) => sum + lines.length, 0);
+
     const blocks: ContentBlock[] = [];
-    const rawStanzas = canto.modern.split(/\n\s*\n/);
-
     let currentLine = 1;
-    let segmentIndex = 0;
 
-    rawStanzas.forEach((stanza) => {
-      const lines = stanza.split('\n').map(l => l.trim()).filter(l => l);
-      if (lines.length === 0) return;
-
+    stanzas.forEach((lines) => {
       const startLine = currentLine;
       const endLine = currentLine + lines.length - 1;
 
-      // Try to match this text block with an audio segment
-      let matchedSegmentId: number | undefined;
-      if (timingData && segmentIndex < timingData.segments.length) {
-        const segment = timingData.segments[segmentIndex];
-        // Normalize both texts: replace newlines with spaces and trim
-        const normalizeText = (t: string) => t.replace(/\n/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 100);
-        const stanzaText = normalizeText(lines.join(' '));
-        const segmentText = normalizeText(segment.text);
-        if (segmentText.includes(stanzaText.substring(0, 50)) || stanzaText.includes(segmentText.substring(0, 50))) {
-          matchedSegmentId = segment.id;
-          segmentIndex++;
-        }
-      }
-
-      blocks.push({
-        type: 'text',
-        content: lines,
-        lines: [],
-        startLine,
-        endLine,
-        segmentId: matchedSegmentId
-      });
+      blocks.push({ type: 'text', content: lines, lines: [], startLine, endLine });
 
       // Check for images
       const relevantImages = images.filter(img => {
@@ -237,6 +233,8 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
           imgEnd = parseInt(linesStr.trim(), 10);
         }
 
+        // A line number past the end of the text would otherwise drop the image entirely
+        imgEnd = Math.min(imgEnd, totalLines);
         return imgEnd >= startLine && imgEnd <= endLine;
       });
 
@@ -253,7 +251,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     });
 
     return blocks;
-  }, [canto.modern, images, timingData]);
+  }, [canto.modern, images]);
 
   // Match each spoken word to its word in the displayed text
   const timedTokens = useMemo(() => {

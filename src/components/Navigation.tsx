@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 interface NavigationProps {
   cantica?: Cantica;
-  cantoNumber?: number;
 }
 
 export default function Navigation({ cantica }: NavigationProps) {
@@ -73,7 +72,9 @@ export default function Navigation({ cantica }: NavigationProps) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-sm hover:bg-muted text-foreground transition-colors"
+            aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={mobileMenuOpen}
+            className="lg:hidden p-2 rounded-sm hover:bg-muted text-foreground transition-colors"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileMenuOpen ? (
@@ -87,7 +88,7 @@ export default function Navigation({ cantica }: NavigationProps) {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden pb-4 space-y-2 animate-fade-in border-t border-border mt-2 pt-4">
+          <div className="lg:hidden pb-4 space-y-2 animate-fade-in border-t border-border mt-2 pt-4">
             {/* Cantica Links */}
             <div className="space-y-1">
               {canticas.map((c) => (

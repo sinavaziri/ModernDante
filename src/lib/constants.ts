@@ -16,11 +16,6 @@ export const LAYOUT = {
 
   /** Bottom padding to account for audio player in pixels */
   AUDIO_PLAYER_HEIGHT: 100,
-
-  /** Combined offset for scroll calculations */
-  get TOTAL_SCROLL_OFFSET() {
-    return this.HEADER_HEIGHT + this.AUDIO_PLAYER_HEIGHT;
-  }
 } as const;
 
 // ============================================================================
@@ -34,53 +29,9 @@ export const AUDIO = {
   /** Skip forward/backward duration in seconds */
   SKIP_DURATION: 15,
 
-  /** Audio loading timeout in milliseconds */
-  LOAD_TIMEOUT: 30000,
+  /** Seek step for the arrow keys on the progress bar, in seconds */
+  ARROW_SEEK_DURATION: 5,
 
   /** Character limit for text preview in player bar */
   TEXT_PREVIEW_LENGTH: 60,
 } as const;
-
-// ============================================================================
-// ANIMATION CONSTANTS
-// ============================================================================
-
-/**
- * Animation durations and timing
- */
-export const ANIMATION = {
-  /** Hero image carousel transition duration in milliseconds */
-  CAROUSEL_TRANSITION_DURATION: 1500,
-
-  /** Hero image carousel rotation interval in milliseconds */
-  CAROUSEL_ROTATION_INTERVAL: 10000,
-
-  /** Standard UI transition duration in milliseconds */
-  TRANSITION_DURATION: 300,
-} as const;
-
-// ============================================================================
-// IMAGE CONSTANTS
-// ============================================================================
-
-/**
- * Image configuration
- */
-export const IMAGES = {
-  /** Number ranges for each cantica */
-  INFERNO_RANGE: { start: 1, end: 75 },
-  PURGATORIO_RANGE: { start: 76, end: 117 },
-  PARADISO_RANGE: { start: 118, end: 135 },
-
-  /** Total number of images */
-  TOTAL_COUNT: 135,
-} as const;
-
-// ============================================================================
-// TYPE EXPORTS
-// ============================================================================
-
-export type LayoutConstants = typeof LAYOUT;
-export type AudioConstants = typeof AUDIO;
-export type AnimationConstants = typeof ANIMATION;
-export type ImageConstants = typeof IMAGES;

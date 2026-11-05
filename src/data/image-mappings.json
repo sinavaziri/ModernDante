@@ -150,7 +150,7 @@
       "quote": "The book was our Galeotto, and so was he who wrote it. / That day we read no further.",
       "cantica": "inferno",
       "canto": 5,
-      "lines": "137, 138",
+      "lines": "132, 133",
       "filename": "17.png"
     },
     {
@@ -159,7 +159,7 @@
       "quote": "I fainted as if dying, / and fell like a dead body falls.",
       "cantica": "inferno",
       "canto": 5,
-      "lines": "141, 142",
+      "lines": "136, 137",
       "filename": "18.png"
     },
     {
@@ -1343,14 +1343,14 @@
         "filename": "17.png",
         "title": "PAOLO AND FRANCESCA",
         "quote": "The book was our Galeotto, and so was he who wrote it. / That day we read no further.",
-        "lines": "137, 138"
+        "lines": "132, 133"
       },
       {
         "imageNumber": 18,
         "filename": "18.png",
         "title": "PAOLO AND FRANCESCA",
         "quote": "I fainted as if dying, / and fell like a dead body falls.",
-        "lines": "141, 142"
+        "lines": "136, 137"
       }
     ],
     "inferno-6": [

@@ -9,7 +9,6 @@ interface AudioPlayerProps {
   cantica: string;
   cantoNumber: number;
   timingData: AudioTimingData | null;
-  onTimeUpdate?: (currentTime: number) => void;
   /** Receives the underlying audio element, for frame-accurate sync */
   onAudioElement?: (audio: HTMLAudioElement | null) => void;
   isNarrationVisible?: boolean;
@@ -20,7 +19,6 @@ export default function AudioPlayerWordLevel({
   cantica,
   cantoNumber,
   timingData,
-  onTimeUpdate,
   onAudioElement,
   isNarrationVisible = true,
   onScrollToNarration,
@@ -36,7 +34,6 @@ export default function AudioPlayerWordLevel({
     audioRef.current = audio;
     onAudioElement?.(audio);
   }, [onAudioElement]);
-  const progressRef = useRef<HTMLDivElement>(null);
 
   const hasAudio = !!timingData;
 
@@ -46,14 +43,11 @@ export default function AudioPlayerWordLevel({
     return timingData.segments.findLast(seg => currentTime >= seg.startTime) ?? null;
   }, [currentTime, timingData]);
 
-  // Handle time updates - notify parent component
   const handleTimeUpdate = useCallback(() => {
     if (audioRef.current) {
-      const time = audioRef.current.currentTime;
-      setCurrentTime(time);
-      onTimeUpdate?.(time);
+      setCurrentTime(audioRef.current.currentTime);
     }
-  }, [onTimeUpdate]);
+  }, []);
 
   // Handle metadata loaded
   const handleLoadedMetadata = useCallback(() => {
@@ -93,36 +87,42 @@ export default function AudioPlayerWordLevel({
     }
   }, []);
 
-  // Seek to position
-  const handleSeek = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+  const seekTo = useCallback((time: number) => {
     if (!audioRef.current || !duration) return;
+    const newTime = Math.min(Math.max(time, 0), duration);
+    audioRef.current.currentTime = newTime;
+    setCurrentTime(newTime);
+  }, [duration]);
 
+  const handleSeek = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const percent = (e.clientX - rect.left) / rect.width;
-    const newTime = percent * duration;
+    seekTo(((e.clientX - rect.left) / rect.width) * duration);
+  }, [duration, seekTo]);
 
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-    onTimeUpdate?.(newTime);
-  }, [duration, onTimeUpdate]);
+  const handleSeekKey = useCallback((e: React.KeyboardEvent<HTMLDivElement>) => {
+    const time = audioRef.current?.currentTime ?? 0;
+    const targets: Record<string, number> = {
+      ArrowLeft: time - AUDIO.ARROW_SEEK_DURATION,
+      ArrowDown: time - AUDIO.ARROW_SEEK_DURATION,
+      ArrowRight: time + AUDIO.ARROW_SEEK_DURATION,
+      ArrowUp: time + AUDIO.ARROW_SEEK_DURATION,
+      PageDown: time - AUDIO.SKIP_DURATION,
+      PageUp: time + AUDIO.SKIP_DURATION,
+      Home: 0,
+      End: duration,
+    };
+    if (!(e.key in targets)) return;
+    e.preventDefault();
+    seekTo(targets[e.key]);
+  }, [duration, seekTo]);
 
-  // Skip forward
   const skipForward = useCallback(() => {
-    if (!audioRef.current) return;
-    const newTime = Math.min(audioRef.current.currentTime + AUDIO.SKIP_DURATION, duration);
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-    onTimeUpdate?.(newTime);
-  }, [duration, onTimeUpdate]);
+    seekTo((audioRef.current?.currentTime ?? 0) + AUDIO.SKIP_DURATION);
+  }, [seekTo]);
 
-  // Skip backward
   const skipBackward = useCallback(() => {
-    if (!audioRef.current) return;
-    const newTime = Math.max(audioRef.current.currentTime - AUDIO.SKIP_DURATION, 0);
-    audioRef.current.currentTime = newTime;
-    setCurrentTime(newTime);
-    onTimeUpdate?.(newTime);
-  }, [onTimeUpdate]);
+    seekTo((audioRef.current?.currentTime ?? 0) - AUDIO.SKIP_DURATION);
+  }, [seekTo]);
 
   // Cycle playback rate
   const cyclePlaybackRate = useCallback(() => {
@@ -156,6 +156,7 @@ export default function AudioPlayerWordLevel({
         src={audioSrc}
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={handleLoadedMetadata}
+        onDurationChange={handleLoadedMetadata}
         onSeeked={handleTimeUpdate}
         onEnded={() => setIsPlaying(false)}
         onPlay={() => setIsPlaying(true)}
@@ -167,9 +168,16 @@ export default function AudioPlayerWordLevel({
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-card/98 backdrop-blur-lg border-t border-border shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
         {/* Progress Bar - Full Width at Top */}
         <div
-          ref={progressRef}
-          className="h-1 bg-secondary cursor-pointer group relative"
+          role="slider"
+          tabIndex={0}
+          aria-label="Seek"
+          aria-valuemin={0}
+          aria-valuemax={Math.round(duration)}
+          aria-valuenow={Math.round(currentTime)}
+          aria-valuetext={`${formatTime(currentTime)} of ${formatTime(duration)}`}
+          className="h-1 bg-secondary cursor-pointer group relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
           onClick={handleSeek}
+          onKeyDown={handleSeekKey}
         >
           <div
             className="h-full bg-primary transition-all duration-100"
@@ -177,7 +185,7 @@ export default function AudioPlayerWordLevel({
           />
           {/* Hover scrubber */}
           <div
-            className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-md"
+            className="absolute top-1/2 -translate-y-1/2 w-3 h-3 bg-primary rounded-full opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity shadow-md"
             style={{ left: `${progress}%`, transform: 'translate(-50%, -50%)' }}
           />
         </div>

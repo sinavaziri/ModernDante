@@ -92,10 +92,14 @@ function splitCantos() {
       chapterNum,
       title,
       content: lines.join('\n'),
-      lineCount: lines.length,
       position: match.index
     };
   }
+
+  // Re-running the split must not throw away translations that already exist
+  const previous = fs.existsSync(OUTPUT_PATH) ? JSON.parse(fs.readFileSync(OUTPUT_PATH, 'utf-8')) : {};
+  const existingModern = (cantica, number) =>
+    previous[cantica]?.find(c => c.number === number)?.modern ?? null;
 
   console.log('📚 Organizing by cantica...');
 
@@ -134,8 +138,7 @@ function splitCantos() {
       title: `Canto ${romanNumerals[cantoNumber]}`,
       subtitle: canto.title,
       original: canto.content,
-      modern: null, // To be filled by generate-rewrites.js
-      lineCount: canto.lineCount
+      modern: existingModern(canticaName, cantoNumber), // Filled by generate-rewrites.js when missing
     });
   });
 

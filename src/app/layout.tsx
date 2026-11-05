@@ -49,7 +49,7 @@ const libreFranklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: "The Divine Comedy - Modern Translation",
-  description: "Experience Dante's Divine Comedy with side-by-side original and modern English translations",
+  description: "Dante's Divine Comedy in modern English, with Gustave Doré's illustrations and character-voiced narration",
 };
 
 export default function RootLayout({

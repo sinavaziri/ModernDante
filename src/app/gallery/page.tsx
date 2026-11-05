@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import { getImageSrc } from '@/lib/image-mappings';
+import { lightboxFocus } from '@/lib/lightbox-focus';
 import imageMappingsData from '@/data/image-mappings.json';
 
 type Cantica = 'all' | 'inferno' | 'purgatorio' | 'paradiso';
@@ -148,8 +149,17 @@ export default function GalleryPage() {
             {images.map((image, index) => (
               <div
                 key={image.imageNumber}
-                className="group relative cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label={`View larger: ${image.title}`}
+                className="group relative cursor-pointer rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 onClick={() => setSelectedImage(image)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setSelectedImage(image);
+                  }
+                }}
                 style={{
                   animationDelay: `${Math.min(index * 50, 500)}ms`,
                 }}
@@ -206,7 +216,12 @@ export default function GalleryPage() {
         {/* Lightbox */}
         {selectedImage && (
           <div
-            className="fixed inset-0 z-50 bg-black/95 animate-lightbox-in"
+            ref={lightboxFocus}
+            role="dialog"
+            aria-modal="true"
+            aria-label={selectedImage.title}
+            tabIndex={-1}
+            className="fixed inset-0 z-50 bg-black/95 animate-lightbox-in outline-none"
             onClick={() => setSelectedImage(null)}
           >
             <div className="absolute inset-0 flex items-center justify-center p-4 md:p-8">
@@ -282,6 +297,7 @@ export default function GalleryPage() {
                 {/* Close button */}
                 <button
                   onClick={() => setSelectedImage(null)}
+                  aria-label="Close"
                   className="absolute -top-2 -right-2 lg:top-0 lg:right-0 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
                 >
                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -293,6 +309,7 @@ export default function GalleryPage() {
               {/* Navigation Arrows */}
               <button
                 onClick={(e) => { e.stopPropagation(); navigateImage('prev'); }}
+                aria-label="Previous illustration"
                 className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors hidden md:flex"
               >
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -301,6 +318,7 @@ export default function GalleryPage() {
               </button>
               <button
                 onClick={(e) => { e.stopPropagation(); navigateImage('next'); }}
+                aria-label="Next illustration"
                 className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors hidden md:flex"
               >
                 <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

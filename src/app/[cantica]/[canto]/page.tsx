@@ -48,7 +48,7 @@ export default async function CantoPage({ params }: PageProps) {
 
   return (
     <>
-      <Navigation cantica={cantica} cantoNumber={cantoNumber} />
+      <Navigation cantica={cantica} />
       <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} cantos={getCantoList(cantica)} />
       <CantoDisplay canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} />
     </>

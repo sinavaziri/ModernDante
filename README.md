@@ -87,23 +87,38 @@ This creates a static site in the `out/` directory that can be deployed anywhere
 ```
 ModernDante/
 ├── data/
-│   ├── cantos.json          # Structured canto data with translations
-│   └── raw-text.txt         # Intermediate PDF extraction
+│   ├── cantos.json              # Longfellow text and modern translation for each canto
+│   ├── speaker-mapping.json     # Narration script: segments and who speaks them
+│   └── voices.json              # ElevenLabs voices for each speaker
 ├── scripts/
-│   ├── parse-pdf.js         # Extract text from PDF
-│   ├── split-cantos.js      # Split text into cantos
-│   └── generate-rewrites.js # Generate modern versions with Claude
+│   ├── parse-pdf.js             # Extract text from the PDF (writes data/raw-text.txt)
+│   ├── split-cantos.js          # Split text into cantos, keeping existing translations
+│   └── generate-rewrites.js     # Generate modern versions with Claude
+├── tools/audio/                 # Narration pipeline: generate, check, publish (see its README)
+├── public/
+│   ├── audio/                   # Published narration MP3s
+│   ├── audio-timings/           # Word timings for each canto's narration
+│   ├── images/                  # Doré engravings
+│   └── images-color/            # Colorized versions, used when present
 ├── src/
 │   ├── app/
-│   │   ├── [cantica]/[canto]/page.tsx  # Dynamic canto pages
-│   │   ├── page.tsx                     # Homepage
-│   │   └── layout.tsx                   # Root layout
+│   │   ├── [cantica]/[canto]/page.tsx  # Canto pages, built at build time
+│   │   ├── gallery/page.tsx            # Illustration gallery
+│   │   ├── page.tsx                    # Homepage
+│   │   └── layout.tsx                  # Root layout and fonts
 │   ├── components/
-│   │   ├── CantoDisplay.tsx   # Side-by-side display
-│   │   ├── Navigation.tsx     # Header navigation
-│   │   └── CantoSelector.tsx  # Dropdown selectors
+│   │   ├── CantoDisplayWithAudio.tsx   # Canto text, illustrations and narration highlighting
+│   │   ├── AudioPlayerWordLevel.tsx    # Narration player
+│   │   ├── TextWithWordHighlighting.tsx
+│   │   ├── Navigation.tsx              # Header navigation
+│   │   └── CantoSelector.tsx           # Cantica and canto dropdowns
+│   ├── data/image-mappings.json        # Illustration captions and line positions
 │   └── lib/
-│       └── cantos.ts          # Data utilities
+│       ├── canticas.ts                 # Poem structure, safe for client code
+│       ├── cantos.ts                   # Canto text (server only)
+│       ├── image-mappings.ts           # Illustration lookups
+│       ├── narration-alignment.ts      # Matches spoken words to displayed words
+│       └── useNarrationHighlight.ts    # Highlights the current word during playback
 └── Dante-Alighieri-The-Divine-Comedy.pdf
 ```
 
@@ -158,7 +173,6 @@ Some ideas:
 - Search functionality
 - Bookmarks/favorites
 - Dark mode toggle
-- Audio narration
 - Annotations and commentary
 - Comparison with other translations
 
