@@ -16,7 +16,8 @@
     "audio:split": "node tools/audio/split-voices.mjs",
     "audio:listen": "node tools/audio/listen.mjs",
     "audio:publish": "node tools/audio/publish.mjs",
-    "audio:backup": "node tools/audio/backup.mjs"
+    "audio:backup": "node tools/audio/backup.mjs",
+    "audio:speech": "node tools/audio/speech-check.mjs"
   },
   "keywords": [],
   "author": "",
