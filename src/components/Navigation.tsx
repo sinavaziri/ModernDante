@@ -33,11 +33,12 @@ export default function Navigation({ cantica }: NavigationProps) {
                 className="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-90 transition-all duration-300"
               />
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-foreground">
+            {/* Plain text, not a heading: each page has its own main heading */}
+            <div>
+              <span className="block font-serif text-lg sm:text-xl font-bold leading-tight tracking-[-0.01em] text-foreground">
                 The Divine Comedy
-              </h1>
-              <p className="text-sm text-muted-foreground">Dante Alighieri</p>
+              </span>
+              <span className="hidden sm:block text-sm text-muted-foreground">Dante Alighieri</span>
             </div>
           </Link>
 
