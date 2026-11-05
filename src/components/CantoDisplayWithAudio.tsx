@@ -252,6 +252,12 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     return blocks;
   }, [canto.modern, images]);
 
+  // The poem's column is as wide as its longest line and centered, so it sits under the centered title
+  const poemMeasure = useMemo(() => {
+    const lengths = modernContent.flatMap(b => (b.type === 'text' ? b.content.map(line => line.length) : []));
+    return `${Math.max(0, ...lengths)}ch`;
+  }, [modernContent]);
+
   // Match each spoken word to its word in the displayed text
   const timedTokens = useMemo(() => {
     if (!timingData) return [];
@@ -293,7 +299,11 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
 
         {/* Main Content */}
         <div className="max-w-3xl mx-auto px-4 md:px-8 py-12">
-          <div ref={narrationRef} className={`space-y-8${timedTokens.length ? ' has-narration' : ''}`}>
+          <div
+            ref={narrationRef}
+            className={`space-y-8${timedTokens.length ? ' has-narration' : ''}`}
+            style={{ '--poem-measure': poemMeasure } as React.CSSProperties}
+          >
 
             {modernContent.map((block, idx) => {
               if (block.type === 'image') {
@@ -310,7 +320,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
               return (
                 <div
                   key={`stanza-${idx}`}
-                  className="poetry text-lg md:text-xl leading-relaxed text-foreground/90"
+                  className="poetry mx-auto w-full max-w-[min(100%,var(--poem-measure))] text-lg md:text-xl leading-relaxed text-foreground/90"
                 >
                   <TextWithWordHighlighting lines={block.lines} />
                   <div className="text-[10px] text-muted-foreground/30 text-right select-none" aria-hidden="true">
