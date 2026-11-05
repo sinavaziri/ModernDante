@@ -83,8 +83,8 @@ export interface CarouselSlide {
 
 const MINOR_WORDS = new Set(['a', 'an', 'and', 'of', 'the', 'to', 'in', 'on']);
 
-/** "THE WAY TO THE UPPER WORLD" becomes "The Way to the Upper World" */
-function titleCase(title: string): string {
+/** Plate titles are stored in capitals: "THE WAY TO THE UPPER WORLD" becomes "The Way to the Upper World" */
+export function titleCase(title: string): string {
   return title
     .toLowerCase()
     .split(/(\s+|—)/)

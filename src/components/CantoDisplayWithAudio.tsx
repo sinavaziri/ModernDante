@@ -88,7 +88,7 @@ function ImageLightbox({
             </h3>
             <div className="w-16 h-px bg-gradient-to-r from-rose-400/60 to-transparent mx-auto lg:mx-0" />
             <blockquote className="text-lg md:text-xl font-serif italic text-white/80 leading-relaxed">
-              &quot;{image.quote}&quot;
+              &ldquo;{image.quote}&rdquo;
             </blockquote>
             <p className="text-sm font-sans tracking-widest text-white/50 uppercase">
               {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}

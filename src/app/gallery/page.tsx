@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import { toRoman } from '@/lib/canticas';
-import { getImageSrc } from '@/lib/image-mappings';
+import { getImageSrc, titleCase } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import imageMappingsData from '@/data/image-mappings.json';
 
@@ -205,7 +205,7 @@ export default function GalleryPage() {
             ref={lightboxFocus}
             role="dialog"
             aria-modal="true"
-            aria-label={selectedImage.title}
+            aria-label={titleCase(selectedImage.title)}
             tabIndex={-1}
             className="fixed inset-0 z-50 bg-black/95 animate-lightbox-in outline-none"
             onClick={() => setSelectedImage(null)}
@@ -231,35 +231,19 @@ export default function GalleryPage() {
 
                 {/* Details Panel */}
                 <div className="lg:w-80 xl:w-96 flex-shrink-0 bg-card/95 backdrop-blur-sm rounded-sm p-6 lg:p-8 space-y-6 overflow-y-auto max-h-[40vh] lg:max-h-[80vh]">
-                  {/* Cantica badge */}
-                  <div className="flex items-center justify-between">
-                    <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${
-                      selectedImage.cantica === 'inferno' ? 'bg-red-900/20 text-red-700' :
-                      selectedImage.cantica === 'purgatorio' ? 'bg-amber-900/20 text-amber-700' :
-                      'bg-sky-900/20 text-sky-700'
-                    }`}>
-                      {canticaLabels[selectedImage.cantica as keyof typeof canticaLabels]}
-                    </span>
-                    <span className="text-muted-foreground text-sm">
-                      Illustration #{selectedImage.imageNumber}
-                    </span>
-                  </div>
-
                   {/* Title */}
                   <div>
                     <h2 className="text-2xl lg:text-3xl font-bold text-foreground leading-tight">
-                      {selectedImage.title}
+                      {titleCase(selectedImage.title)}
                     </h2>
                     <p className="text-muted-foreground mt-1">
-                      Canto {toRoman(selectedImage.canto)}, lines {selectedImage.lines}
+                      {canticaLabels[selectedImage.cantica as keyof typeof canticaLabels]}, Canto {toRoman(selectedImage.canto)}, lines {selectedImage.lines}
                     </p>
                   </div>
 
                   {/* Quote */}
-                  <blockquote className="relative pl-4 border-l-2 border-primary/50">
-                    <p className="text-foreground/90 italic text-sm lg:text-base leading-relaxed">
-                      &quot;{selectedImage.quote}&quot;
-                    </p>
+                  <blockquote className="text-foreground/90 italic text-sm lg:text-base leading-relaxed">
+                    &ldquo;{selectedImage.quote}&rdquo;
                   </blockquote>
 
                   {/* Action Button */}
@@ -270,27 +254,26 @@ export default function GalleryPage() {
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
-                    <span>Read in Context</span>
+                    <span>Read in context</span>
                   </Link>
 
                   {/* Artist credit */}
-                  <div className="pt-4 border-t border-border text-center text-sm text-muted-foreground">
-                    <p>Engraving by <span className="font-semibold">Gustave Doré</span>, 1857–1868</p>
-                    <p className="text-xs mt-1 opacity-75">Colorized for this site</p>
-                  </div>
+                  <p className="pt-4 border-t border-border text-sm text-muted-foreground">
+                    Plate {selectedImage.imageNumber}. Engraving by Gustave Doré, 1857–1868, colorized for this site.
+                  </p>
                 </div>
-
-                {/* Close button */}
-                <button
-                  onClick={() => setSelectedImage(null)}
-                  aria-label="Close"
-                  className="absolute -top-2 -right-2 lg:top-0 lg:right-0 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
-                >
-                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
               </div>
+
+              {/* Close sits on the dark backdrop, where it shows at every size */}
+              <button
+                onClick={() => setSelectedImage(null)}
+                aria-label="Close"
+                className="absolute top-4 right-4 z-10 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
 
               {/* Navigation Arrows */}
               <button
