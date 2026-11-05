@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/inferno", "destination": "/inferno/1", "permanent": false },
+    { "source": "/purgatorio", "destination": "/purgatorio/1", "permanent": false },
+    { "source": "/paradiso", "destination": "/paradiso/1", "permanent": false }
+  ]
+}
