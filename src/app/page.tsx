@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import HeroCarousel from '@/components/HeroCarousel';
 import { getAllCanticas } from '@/lib/canticas';
-import { getCarouselSlides, getImageSrc } from '@/lib/image-mappings';
+import { getCanticaPlate, getCarouselSlides } from '@/lib/image-mappings';
 
 export default function HomePage() {
   const canticas = getAllCanticas();
@@ -74,76 +74,38 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Cantica Cards */}
+        {/* Canticas: each plate at full strength, with its text on the page below */}
         <div id="canticas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {canticas.map((cantica, index) => (
-              <Link
-                key={cantica.name}
-                href={`/${cantica.name}/1`}
-                className="group relative overflow-hidden bg-card hover:bg-muted/30 transition-all duration-500 border border-border hover:border-primary/30"
-              >
-                {/* Background images for canticas */}
-                {cantica.name === 'inferno' && (
-                  <div 
-                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                    style={{
-                      backgroundImage: `url(${getImageSrc('inferno', '30.png')})`,
-                      backgroundSize: '130%',
-                      backgroundPosition: 'center',
-                    }}
-                  />
-                )}
-                {cantica.name === 'purgatorio' && (
-                  <div 
-                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                    style={{
-                      backgroundImage: `url(${getImageSrc('purgatorio', '91.png')})`,
-                      backgroundSize: '130%',
-                      backgroundPosition: 'center',
-                    }}
-                  />
-                )}
-                {cantica.name === 'paradiso' && (
-                  <div 
-                    className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                    style={{
-                      backgroundImage: `url(${getImageSrc('paradiso', '128.png')})`,
-                      backgroundSize: '130%',
-                      backgroundPosition: 'center',
-                    }}
-                  />
-                )}
-                <div className="relative p-8 md:p-10 space-y-6">
-                  <div className="flex items-center justify-between">
-                    <span className="text-6xl font-serif text-muted-foreground/20 font-bold group-hover:text-primary/20 transition-colors">
-                      {index + 1}
-                    </span>
-                    <div className="text-xs font-semibold text-primary uppercase tracking-widest border border-primary/20 px-3 py-1 rounded-full">
-                      {cantica.totalCantos} Cantos
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+            {canticas.map((cantica) => {
+              const plate = getCanticaPlate(cantica.name);
+              return (
+                <Link key={cantica.name} href={`/${cantica.name}/1`} className="group block">
+                  <div className="aspect-[4/5] overflow-hidden rounded-sm border border-border/40 bg-muted shadow-sm">
+                    <img
+                      src={plate.src}
+                      srcSet={plate.srcSet}
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      alt=""
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
                   </div>
-
-                  <div>
-                    <h3 className="text-3xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
-                      {cantica.displayName}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {cantica.name === 'inferno' && 'Descend through the nine circles of Hell.'}
-                      {cantica.name === 'purgatorio' && 'Ascend the mountain of purification.'}
-                      {cantica.name === 'paradiso' && 'Rise through the celestial spheres.'}
-                    </p>
+                  <h2 className="mt-5 text-3xl font-bold text-foreground group-hover:text-primary transition-colors">
+                    {cantica.displayName}
+                  </h2>
+                  <p className="mt-2 text-muted-foreground leading-relaxed">
+                    {cantica.name === 'inferno' && 'Descend through the nine circles of Hell.'}
+                    {cantica.name === 'purgatorio' && 'Ascend the mountain of purification.'}
+                    {cantica.name === 'paradiso' && 'Rise through the celestial spheres.'}
+                  </p>
+                  <div className="mt-3 flex items-baseline justify-between gap-4 text-sm">
+                    <span className="text-muted-foreground">{cantica.totalCantos} cantos</span>
+                    <span className="text-primary group-hover:underline underline-offset-4">Read {cantica.displayName}</span>
                   </div>
-
-                  <div className="pt-4 flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
-                    <span className="text-sm uppercase tracking-wide">Read Now</span>
-                    <svg className="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </main>

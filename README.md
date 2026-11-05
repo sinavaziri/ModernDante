@@ -95,13 +95,13 @@ ModernDante/
 │   ├── split-cantos.js          # Split text into cantos, keeping existing translations
 │   └── generate-rewrites.js     # Generate modern versions with Claude
 ├── tools/audio/                 # Narration pipeline: generate, check, publish (see its README)
-├── tools/images/                # npm run images:carousel makes the home page carousel's images
+├── tools/images/                # npm run images:carousel makes the home page's images
 ├── public/
 │   ├── audio/                   # Published narration MP3s
 │   ├── audio-timings/           # Word timings for each canto's narration
 │   ├── images/                  # Doré engravings
 │   ├── images-color/            # Colorized versions, used when present
-│   └── images-carousel/         # Lighter WebP copies of the home page carousel's plates
+│   └── images-carousel/         # Lighter WebP copies of the home page's plates
 ├── src/
 │   ├── app/
 │   │   ├── [cantica]/[canto]/page.tsx  # Canto pages, built at build time

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Makes the home page carousel's images. The plates are PNGs of about 3 MB, so each plate listed in
- * src/data/home-carousel.json gets a 4:5 WebP at each listed width, in public/images-carousel/.
+ * Makes the home page's images: the carousel's plates and one plate for each cantica. The plates are PNGs of
+ * about 3 MB, so each plate listed in src/data/home-carousel.json gets a 4:5 WebP at each listed width, in
+ * public/images-carousel/.
  *
  *   npm run images:carousel
  *
@@ -15,7 +16,8 @@ const ROOT = path.join(import.meta.dirname, '..', '..');
 const OUT = path.join(ROOT, 'public', 'images-carousel');
 const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
 
-const { widths, plates } = read('src/data/home-carousel.json');
+const { widths, plates: carousel, canticaPlates } = read('src/data/home-carousel.json');
+const plates = [...new Set([...carousel, ...Object.values(canticaPlates)])];
 const { images } = read('src/data/image-mappings.json');
 const colorized = new Set(read('src/data/colorized-images.json'));
 

@@ -95,14 +95,28 @@ function titleCase(title: string): string {
     .join('');
 }
 
+/** The lighter WebP copies of a home page plate, made by `npm run images:carousel` */
+function homePlateImage(number: number): { src: string; srcSet: string } {
+  const [smallest] = homeCarousel.widths;
+  return {
+    src: `/images-carousel/${number}-${smallest}.webp`,
+    srcSet: homeCarousel.widths.map(w => `/images-carousel/${number}-${w}.webp ${w}w`).join(', '),
+  };
+}
+
+/** The plate shown on a cantica's card on the home page */
+export function getCanticaPlate(cantica: string): { src: string; srcSet: string } {
+  const number = homeCarousel.canticaPlates[cantica as keyof typeof homeCarousel.canticaPlates];
+  if (!number) throw new Error(`No home page plate for ${cantica} in home-carousel.json`);
+  return homePlateImage(number);
+}
+
 /**
  * The home page carousel's plates, in the order listed in src/data/home-carousel.json.
- * Their images are made by `npm run images:carousel`.
  */
 export function getCarouselSlides(): CarouselSlide[] {
   const all = imageMappingsData.images as Array<ImageData & { cantica: string; canto: number }>;
   const canticaNames = new Map(getAllCanticas().map(c => [c.name as string, c.displayName]));
-  const [smallest] = homeCarousel.widths;
 
   return homeCarousel.plates.map(number => {
     const image = all.find(i => i.imageNumber === number);
@@ -113,8 +127,7 @@ export function getCarouselSlides(): CarouselSlide[] {
       canticaName: canticaNames.get(image.cantica) ?? image.cantica,
       canto: image.canto,
       href: `/${image.cantica}/${image.canto}`,
-      src: `/images-carousel/${number}-${smallest}.webp`,
-      srcSet: homeCarousel.widths.map(w => `/images-carousel/${number}-${w}.webp ${w}w`).join(', '),
+      ...homePlateImage(number),
     };
   });
 }
