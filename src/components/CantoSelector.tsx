@@ -1,17 +1,18 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { getAllCanticas, getAllCantos, type Cantica } from '@/lib/cantos';
+import { getAllCanticas, type Cantica } from '@/lib/canticas';
+import type { CantoListItem } from '@/lib/cantos';
 
 interface CantoSelectorProps {
   currentCantica: Cantica;
   currentCanto: number;
+  cantos: CantoListItem[];
 }
 
-export default function CantoSelector({ currentCantica, currentCanto }: CantoSelectorProps) {
+export default function CantoSelector({ currentCantica, currentCanto, cantos }: CantoSelectorProps) {
   const router = useRouter();
   const canticas = getAllCanticas();
-  const cantos = getAllCantos(currentCantica);
 
   const handleCanticaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newCantica = e.target.value as Cantica;

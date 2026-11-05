@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import { getAllCanticas } from '@/lib/cantos';
+import { getAllCanticas } from '@/lib/canticas';
 import { getImageSrc } from '@/lib/image-mappings';
 
 export default function HomePage() {

@@ -3,7 +3,8 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { type Canto, type Cantica, getNextCanto, getPreviousCanto } from '@/lib/cantos';
+import { type Cantica, getNextCanto, getPreviousCanto } from '@/lib/canticas';
+import type { Canto } from '@/lib/cantos';
 import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
 import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';

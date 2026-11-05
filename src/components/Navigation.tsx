@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { getAllCanticas, type Cantica } from '@/lib/cantos';
+import { getAllCanticas, type Cantica } from '@/lib/canticas';
 import { useState } from 'react';
 
 interface NavigationProps {

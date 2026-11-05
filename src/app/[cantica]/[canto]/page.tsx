@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { getCanto, getAllCanticas, getAllCantos, getCanticaInfo, type Cantica } from '@/lib/cantos';
+import { getAllCanticas, getCanticaInfo, type Cantica } from '@/lib/canticas';
+import { getCanto, getCantoList } from '@/lib/cantos';
 import Navigation from '@/components/Navigation';
 import CantoSelector from '@/components/CantoSelector';
 import CantoDisplay from '@/components/CantoDisplayWithAudio';
@@ -17,8 +18,7 @@ export async function generateStaticParams() {
   const params: { cantica: string; canto: string }[] = [];
 
   canticas.forEach((canticaInfo) => {
-    const cantos = getAllCantos(canticaInfo.name);
-    cantos.forEach((canto) => {
+    getCantoList(canticaInfo.name).forEach((canto) => {
       params.push({
         cantica: canticaInfo.name,
         canto: canto.number.toString(),
@@ -49,7 +49,7 @@ export default async function CantoPage({ params }: PageProps) {
   return (
     <>
       <Navigation cantica={cantica} cantoNumber={cantoNumber} />
-      <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} />
+      <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} cantos={getCantoList(cantica)} />
       <CantoDisplay canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} />
     </>
   );
