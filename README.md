@@ -114,6 +114,7 @@ ModernDante/
 │   │   ├── TextWithWordHighlighting.tsx
 │   │   ├── HeroCarousel.tsx            # Home page carousel of Doré plates
 │   │   ├── Navigation.tsx              # Header navigation
+│   │   ├── ThemeToggle.tsx             # The header's light and dark mode button
 │   │   └── CantoSelector.tsx           # Cantica and canto dropdowns
 │   ├── data/image-mappings.json        # Illustration captions and line positions
 │   ├── data/home-carousel.json         # Which plates the home page carousel shows
@@ -122,6 +123,7 @@ ModernDante/
 │       ├── cantos.ts                   # Canto text (server only)
 │       ├── image-mappings.ts           # Illustration lookups
 │       ├── narration-alignment.ts      # Matches spoken words to displayed words
+│       ├── theme.ts                    # Dark mode: follows the device until a visitor chooses
 │       └── useNarrationHighlight.ts    # Highlights the current word during playback
 └── Dante-Alighieri-The-Divine-Comedy.pdf
 ```

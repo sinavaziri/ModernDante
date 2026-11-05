@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { getAllCanticas, type Cantica } from '@/lib/canticas';
 import { useState } from 'react';
+import ThemeToggle from '@/components/ThemeToggle';
 
 interface NavigationProps {
   cantica?: Cantica;
@@ -24,7 +25,7 @@ export default function Navigation({ cantica }: NavigationProps) {
             href="/"
             className="flex items-center space-x-3 group"
           >
-            <div className="flex items-center justify-center w-10 h-10 rounded-sm overflow-hidden bg-primary group-hover:bg-primary/90 transition-all duration-300">
+            <div className="flex items-center justify-center w-10 h-10 rounded-sm overflow-hidden bg-brand group-hover:bg-brand/90 transition-all duration-300">
               <Image
                 src="/images/Dante Portrait.png"
                 alt="Dante Alighieri"
@@ -42,6 +43,7 @@ export default function Navigation({ cantica }: NavigationProps) {
             </div>
           </Link>
 
+          <div className="flex items-center gap-1 lg:gap-2">
           {/* Desktop Cantica Links */}
           <div className="hidden lg:flex items-center space-x-1">
             {canticas.map((c) => (
@@ -70,6 +72,8 @@ export default function Navigation({ cantica }: NavigationProps) {
             </Link>
           </div>
 
+          <ThemeToggle />
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -85,6 +89,7 @@ export default function Navigation({ cantica }: NavigationProps) {
               )}
             </svg>
           </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Libre_Franklin } from "next/font/google";
 import localFont from "next/font/local";
 import SiteFooter from "@/components/SiteFooter";
+import { THEME_SCRIPT } from "@/lib/theme";
 import "./globals.css";
 
 // Sabon - elegant Renaissance serif for body text
@@ -45,13 +46,25 @@ export const metadata: Metadata = {
   description: "Dante's Divine Comedy in modern English, with Gustave Doré's illustrations and character-voiced narration",
 };
 
+// The browser's own bars match the page background in each theme
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f9f8f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#191011" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${sabon.variable} ${libreFranklin.variable}`}>
+    // The theme script adds the dark class before React loads, so React mustn't treat it as a mismatch
+    <html lang="en" className={`${sabon.variable} ${libreFranklin.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
+      </head>
       <body className="antialiased min-h-screen bg-background text-foreground">
         {children}
         <SiteFooter />

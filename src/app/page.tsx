@@ -17,7 +17,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-8 items-center min-h-[70vh]">
               {/* Left side - Text content */}
               <div className="space-y-6 animate-fade-in order-2 lg:order-1">
-                <h1 className="text-left text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-[1.1] tracking-tight">
+                <h1 className="text-left text-4xl md:text-5xl lg:text-6xl font-bold text-title leading-[1.1] tracking-tight">
                   The Divine<br/>Comedy
                 </h1>
 
@@ -33,7 +33,7 @@ export default function HomePage() {
                 <div className="pt-2">
                   <Link
                     href="/inferno/1"
-                    className="inline-block px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground hover:text-primary-foreground text-base font-semibold rounded-sm shadow-sm transition-colors"
+                    className="inline-block px-5 py-2.5 bg-brand hover:bg-brand/90 text-primary-foreground hover:text-primary-foreground text-base font-semibold rounded-sm shadow-sm transition-colors"
                   >
                     Start with Inferno I
                   </Link>

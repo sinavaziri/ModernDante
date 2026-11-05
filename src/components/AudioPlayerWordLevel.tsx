@@ -256,7 +256,7 @@ export default function AudioPlayerWordLevel({
               {/* Play/Pause Button */}
               <button
                 onClick={togglePlay}
-                className="w-12 h-12 flex items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-primary-foreground transition-all hover:scale-105"
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-brand hover:bg-brand/90 text-primary-foreground transition-all hover:scale-105"
                 aria-label={isPlaying ? 'Pause' : 'Play'}
               >
                 {isPlaying ? (

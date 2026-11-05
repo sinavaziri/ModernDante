@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* dark: utilities follow the .dark class that src/lib/theme.ts puts on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Classical Paper Palette - Academic Aesthetic */
   --color-background: hsl(40 25% 97%);
@@ -11,7 +14,13 @@
   /* Deep Maroon - inspired by Digital Dante */
   --color-primary: hsl(355 50% 32%);
   --color-primary-foreground: hsl(40 25% 97%);
-  
+
+  /* Solid maroon fills (buttons, the play button, the logo). In light mode these match --color-primary,
+     but dark mode keeps them maroon while --color-primary lightens to a readable claret for text. */
+  --color-brand: hsl(355 50% 32%);
+  /* The large home page title */
+  --color-title: hsl(355 50% 32%);
+
   --color-secondary: hsl(40 15% 90%);
   --color-secondary-foreground: hsl(30 10% 18%);
   
@@ -29,29 +38,38 @@
   --radius: 0.25rem;
 }
 
-/* Dark mode overrides */
+:root {
+  color-scheme: light;
+}
+
+/* Dark mode, "Oxblood": a black tinted with the site's maroon. Maroon itself measures 1.8:1 as text on
+   this black, so text uses a claret (6.0:1) while solid fills stay maroon, with parchment text on them (8.1:1). */
 .dark {
-  --color-background: hsl(25 15% 10%);
-  --color-foreground: hsl(40 20% 90%);
-  
-  --color-card: hsl(25 12% 14%);
-  --color-card-foreground: hsl(40 20% 90%);
-  
-  --color-primary: hsl(355 45% 50%);
-  --color-primary-foreground: hsl(40 25% 97%);
-  
-  --color-secondary: hsl(25 12% 18%);
-  --color-secondary-foreground: hsl(40 20% 90%);
-  
-  --color-muted: hsl(25 10% 22%);
-  --color-muted-foreground: hsl(30 10% 60%);
-  
-  --color-accent: hsl(355 40% 55%);
-  --color-accent-foreground: hsl(25 15% 10%);
-  
-  --color-border: hsl(25 10% 25%);
-  --color-input: hsl(25 10% 25%);
-  --color-ring: hsl(355 45% 50%);
+  color-scheme: dark;
+
+  --color-background: hsl(355 22% 8%);
+  --color-foreground: hsl(35 25% 88%);
+
+  --color-card: hsl(355 16% 12%);
+  --color-card-foreground: hsl(35 25% 88%);
+
+  --color-primary: hsl(355 40% 64%);
+  --color-primary-foreground: hsl(35 25% 92%);
+  --color-brand: hsl(355 50% 32%);
+  --color-title: hsl(355 45% 54%);
+
+  --color-secondary: hsl(355 10% 18%);
+  --color-secondary-foreground: hsl(35 25% 88%);
+
+  --color-muted: hsl(355 10% 18%);
+  --color-muted-foreground: hsl(355 8% 68%);
+
+  --color-accent: hsl(355 40% 72%);
+  --color-accent-foreground: hsl(355 22% 8%);
+
+  --color-border: hsl(355 12% 21%);
+  --color-input: hsl(355 12% 21%);
+  --color-ring: hsl(355 40% 64%);
 }
 
 @layer base {
