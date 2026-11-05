@@ -89,7 +89,7 @@ export default function HeroCarousel({ slides }: { slides: CarouselSlide[] }) {
       <div className="relative mt-4 flex items-center justify-between gap-4">
         <div aria-live={advancing ? 'off' : 'polite'} className="min-w-0">
           <Link href={slide.href} className="group block min-w-0 rounded-sm">
-            <span className="block text-xs uppercase tracking-widest text-muted-foreground">
+            <span className="block text-sm text-muted-foreground">
               {slide.canticaName}, Canto {toRoman(slide.canto)}
             </span>
             <span className="block truncate font-serif italic text-foreground group-hover:text-primary transition-colors">

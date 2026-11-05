@@ -37,7 +37,7 @@ export default function Navigation({ cantica }: NavigationProps) {
               <h1 className="text-xl font-bold text-foreground">
                 The Divine Comedy
               </h1>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest">Dante Alighieri</p>
+              <p className="text-sm text-muted-foreground">Dante Alighieri</p>
             </div>
           </Link>
 

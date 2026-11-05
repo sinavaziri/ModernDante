@@ -3,7 +3,7 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import type { Canto } from '@/lib/cantos';
-import { getImageSrc, getImagesForCanto, type ImageData } from '@/lib/image-mappings';
+import { getImageSrc, getImagesForCanto, titleCase, type ImageData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel from './AudioPlayerWordLevel';
@@ -49,7 +49,7 @@ function ImageLightbox({
       ref={lightboxFocus}
       role="dialog"
       aria-modal="true"
-      aria-label={image.title}
+      aria-label={titleCase(image.title)}
       tabIndex={-1}
       className="fixed inset-0 z-[60] flex items-center justify-center p-4 md:p-8 animate-lightbox-in outline-none"
       onClick={onClose}
@@ -74,7 +74,7 @@ function ImageLightbox({
         <div className="relative flex-shrink-0 w-full lg:w-auto lg:max-w-[60%] max-h-[70vh] lg:max-h-[85vh]">
           <Image
             src={getImageSrc(cantica, image.filename)}
-            alt={image.title}
+            alt={titleCase(image.title)}
             width={1200}
             height={1600}
             className="w-auto h-auto max-w-full max-h-[70vh] lg:max-h-[85vh] object-contain rounded-lg shadow-2xl"
@@ -85,13 +85,13 @@ function ImageLightbox({
         <div className="flex-1 max-w-lg text-center lg:text-left px-4 lg:px-0">
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-light text-white tracking-tight">
-              {image.title}
+              {titleCase(image.title)}
             </h3>
             <div className="w-16 h-px bg-gradient-to-r from-rose-400/60 to-transparent mx-auto lg:mx-0" />
             <blockquote className="text-lg md:text-xl font-serif italic text-white/80 leading-relaxed">
               &ldquo;{image.quote}&rdquo;
             </blockquote>
-            <p className="text-sm font-sans tracking-widest text-white/50 uppercase">
+            <p className="text-sm text-white/60">
               {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}
             </p>
             <p className="text-sm text-white/50">
@@ -122,7 +122,7 @@ function InlineImage({
       <div
         role="button"
         tabIndex={0}
-        aria-label={`View larger: ${image.title}`}
+        aria-label={`View larger: ${titleCase(image.title)}`}
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -133,7 +133,7 @@ function InlineImage({
       >
         <Image
           src={getImageSrc(cantica, image.filename)}
-          alt={image.title}
+          alt={titleCase(image.title)}
           width={800}
           height={1067}
           className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
@@ -151,10 +151,10 @@ function InlineImage({
       </div>
 
       <figcaption className="mt-4 space-y-2 text-center">
-        <p className="text-sm font-sans tracking-wide text-muted-foreground/80 uppercase">
-          {image.title}
+        <p className="text-base text-foreground/80">
+          {titleCase(image.title)}
         </p>
-        <p className="text-sm font-serif italic text-muted-foreground/60 leading-relaxed">
+        <p className="text-sm font-serif italic text-muted-foreground leading-relaxed">
           &ldquo;{image.quote}&rdquo;
         </p>
       </figcaption>
@@ -282,7 +282,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
       <div className="min-h-screen bg-background transition-colors duration-500">
         {/* Hero Header */}
         <div className="pt-24 pb-12 px-4 md:px-8 max-w-7xl mx-auto text-center">
-          <span className="inline-block mb-4 text-sm font-bold tracking-[0.2em] uppercase text-primary">
+          <span className="inline-block mb-3 text-lg italic text-primary">
             {canticaName}
           </span>
           

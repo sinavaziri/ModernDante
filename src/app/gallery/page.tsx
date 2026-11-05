@@ -137,7 +137,7 @@ export default function GalleryPage() {
                 key={image.imageNumber}
                 role="button"
                 tabIndex={0}
-                aria-label={`View larger: ${image.title}`}
+                aria-label={`View larger: ${titleCase(image.title)}`}
                 className="group relative cursor-pointer rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                 onClick={() => setSelectedImage(image)}
                 onKeyDown={(e) => {
@@ -158,7 +158,7 @@ export default function GalleryPage() {
                   
                   <Image
                     src={getImageSrc(image.cantica, image.filename)}
-                    alt={image.title}
+                    alt={titleCase(image.title)}
                     fill
                     className={`object-cover transition-all duration-700 group-hover:scale-105 ${
                       imageLoaded[image.imageNumber] ? 'opacity-100' : 'opacity-0'
@@ -173,11 +173,11 @@ export default function GalleryPage() {
                   {/* Content overlay */}
                   <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
                     <div className="text-white space-y-1">
-                      <span className="text-xs font-semibold uppercase tracking-wider opacity-80">
+                      <span className="text-sm opacity-80">
                         {canticaLabels[image.cantica as keyof typeof canticaLabels]}, Canto {toRoman(image.canto)}
                       </span>
                       <h3 className="text-lg font-bold leading-tight line-clamp-2">
-                        {image.title}
+                        {titleCase(image.title)}
                       </h3>
                     </div>
                   </div>
@@ -220,7 +220,7 @@ export default function GalleryPage() {
                   <div className="relative h-[50vh] lg:h-[80vh] w-full">
                     <Image
                       src={getImageSrc(selectedImage.cantica, selectedImage.filename)}
-                      alt={selectedImage.title}
+                      alt={titleCase(selectedImage.title)}
                       fill
                       className="object-contain"
                       sizes="(max-width: 1024px) 100vw, 60vw"
