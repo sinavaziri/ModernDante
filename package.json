@@ -18,7 +18,8 @@
     "audio:publish": "node tools/audio/publish.mjs",
     "audio:backup": "node tools/audio/backup.mjs",
     "audio:speech": "node tools/audio/speech-check.mjs",
-    "images:carousel": "node tools/images/make-carousel-images.mjs"
+    "images:carousel": "node tools/images/make-carousel-images.mjs",
+    "images:icons": "node tools/images/make-icons.mjs"
   },
   "keywords": [],
   "author": "",

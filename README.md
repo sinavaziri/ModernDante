@@ -95,7 +95,7 @@ ModernDante/
 │   ├── split-cantos.js          # Split text into cantos, keeping existing translations
 │   └── generate-rewrites.js     # Generate modern versions with Claude
 ├── tools/audio/                 # Narration pipeline: generate, check, publish (see its README)
-├── tools/images/                # npm run images:carousel makes the home page's images
+├── tools/images/                # npm run images:carousel and images:icons make the home page's images and the icons
 ├── public/
 │   ├── audio/                   # Published narration MP3s
 │   ├── audio-timings/           # Word timings for each canto's narration

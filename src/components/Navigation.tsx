@@ -27,7 +27,7 @@ export default function Navigation({ cantica }: NavigationProps) {
           >
             <div className="flex items-center justify-center w-10 h-10 rounded-sm overflow-hidden bg-brand group-hover:bg-brand/90 transition-all duration-300">
               <Image
-                src="/images/Dante Portrait.png"
+                src="/images/dante-logo.webp"
                 alt="Dante Alighieri"
                 width={40}
                 height={40}
