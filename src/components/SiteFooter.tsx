@@ -10,16 +10,16 @@ export default function SiteFooter() {
           <div>
             <dt className="font-semibold text-foreground">Text</dt>
             <dd className="mt-1">
-              Rewritten in modern English with Claude, from Henry Wadsworth Longfellow&apos;s 1867 translation.
+              Rewritten in modern English from Henry Wadsworth Longfellow&apos;s 1867 translation.
             </dd>
           </div>
           <div>
             <dt className="font-semibold text-foreground">Illustrations</dt>
-            <dd className="mt-1">Gustave Doré&apos;s engravings, 1857–1868, colorized with AI image models.</dd>
+            <dd className="mt-1">Gustave Doré&apos;s engravings, 1857–1868, colorized.</dd>
           </div>
           <div>
             <dt className="font-semibold text-foreground">Narration</dt>
-            <dd className="mt-1">Voices generated with ElevenLabs, a different one for each character.</dd>
+            <dd className="mt-1">Dramatic narration, with a unique voice for every character.</dd>
           </div>
         </dl>
       </div>
