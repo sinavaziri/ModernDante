@@ -2,19 +2,20 @@
 
 import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import type { Cantica } from '@/lib/canticas';
 import type { Canto } from '@/lib/cantos';
 import { getImageSrc, getImagesForCanto, titleCase, type ImageData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
-import AudioPlayerWordLevel from './AudioPlayerWordLevel';
+import AudioPlayerWordLevel, { type NarrationControls } from './AudioPlayerWordLevel';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
-import { alignNarration, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
-import { useNarrationHighlight } from '@/lib/useNarrationHighlight';
+import { alignNarration, findTokenAt, timeForToken, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
+import { useNarrationHighlight, type FollowState } from '@/lib/useNarrationHighlight';
 
 interface CantoDisplayProps {
   canto: Canto;
   canticaName: string;
-  cantica: string;
+  cantica: Cantica;
 }
 
 type ContentBlock =
@@ -165,10 +166,10 @@ function InlineImage({
 export default function CantoDisplay({ canto, canticaName, cantica }: CantoDisplayProps) {
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
-  const [isActiveWordVisible, setIsActiveWordVisible] = useState(true);
-  const [scrollToNarration, setScrollToNarration] = useState<(() => void) | null>(null);
+  const [follow, setFollow] = useState<FollowState | null>(null);
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
   const narrationRef = useRef<HTMLDivElement>(null);
+  const controlsRef = useRef<NarrationControls>(null);
 
   const images = getImagesForCanto(cantica, canto.number);
 
@@ -184,12 +185,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     }
     loadTimingData();
   }, [cantica, canto.number]);
-
-  // Handle visibility changes from the text highlighting component
-  const handleActiveWordVisibilityChange = useCallback((isVisible: boolean, scrollFn: () => void) => {
-    setIsActiveWordVisible(isVisible);
-    setScrollToNarration(() => scrollFn);
-  }, []);
 
   const handleImageClick = useCallback((image: ImageData) => {
     setSelectedImage(image);
@@ -266,7 +261,34 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     return alignNarration(stanzas, timingData);
   }, [modernContent, timingData]);
 
-  useNarrationHighlight(narrationRef, audioElement, timedTokens, handleActiveWordVisibilityChange);
+  useNarrationHighlight(narrationRef, audioElement, timedTokens, setFollow);
+
+  // Each displayed line's text, by its index across the whole canto
+  const lineTexts = useMemo(
+    () => modernContent.flatMap(b => (b.type === 'text' ? b.content : [])),
+    [modernContent]
+  );
+
+  const lineAt = useCallback((time: number) => {
+    const index = findTokenAt(timedTokens, time);
+    return index >= 0 ? lineTexts[timedTokens[index].line] ?? null : null;
+  }, [timedTokens, lineTexts]);
+
+  // Clicking a word plays the narration from that word. Selecting text to copy it doesn't.
+  const handleNarrationClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    if (timedTokens.length === 0 || window.getSelection()?.toString()) return;
+    const target = e.target as HTMLElement;
+    const lineEl = target.closest<HTMLElement>('[data-line]');
+    if (!lineEl) return;
+    // A click between words starts the line from its first word
+    const wordEl = target.closest<HTMLElement>('[data-token]') ?? lineEl.querySelector<HTMLElement>('[data-token]');
+    if (!wordEl) return;
+    const time = timeForToken(timedTokens, Number(wordEl.dataset.token), Number(lineEl.dataset.line));
+    if (time !== null) controlsRef.current?.playFrom(time);
+  }, [timedTokens]);
+
+  // The canto's first plate, or Dante's portrait for a canto without one
+  const artwork = images[0] ? getImageSrc(cantica, images[0].filename) : '/images/Dante%20Portrait.png';
 
 
   return (
@@ -304,6 +326,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
             ref={narrationRef}
             className={`space-y-8${timedTokens.length ? ' has-narration' : ''}`}
             style={{ '--poem-measure': poemMeasure } as React.CSSProperties}
+            onClick={handleNarrationClick}
           >
 
             {modernContent.map((block, idx) => {
@@ -345,9 +368,11 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
         cantica={cantica}
         cantoNumber={canto.number}
         timingData={timingData}
+        artwork={artwork}
         onAudioElement={setAudioElement}
-        isNarrationVisible={isActiveWordVisible}
-        onScrollToNarration={scrollToNarration}
+        controlsRef={controlsRef}
+        follow={follow}
+        lineAt={lineAt}
       />
     </>
   );

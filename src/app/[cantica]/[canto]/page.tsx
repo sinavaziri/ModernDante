@@ -50,7 +50,8 @@ export default async function CantoPage({ params }: PageProps) {
     <>
       <Navigation cantica={cantica} />
       <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} cantos={getCantoList(cantica)} />
-      <CantoDisplay canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} />
+      {/* Keyed so moving between cantos starts from a fresh page, with nothing left playing */}
+      <CantoDisplay key={`${cantica}/${cantoNumber}`} canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} />
     </>
   );
 }

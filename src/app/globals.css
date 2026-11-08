@@ -266,9 +266,49 @@ body:has([data-audio-player]) .site-footer {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 14%, transparent);
 }
 
+/* Any word can be clicked to hear the narration from it */
+.has-narration .narration-word {
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .has-narration .narration-word:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: color-mix(in srgb, var(--color-primary) 45%, transparent);
+    text-underline-offset: 0.25em;
+  }
+}
+
+/* The play button's loading ring waits a moment, so quick loads don't flicker it */
+.player-spinner {
+  opacity: 0;
+  animation: playerSpin 0.9s linear infinite, playerSpinnerIn 0.2s ease-out 0.3s forwards;
+}
+
+@keyframes playerSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes playerSpinnerIn {
+  to { opacity: 1; }
+}
+
+.animate-follow-in {
+  animation: followIn 0.25s ease-out;
+}
+
+@keyframes followIn {
+  from { opacity: 0; transform: translateY(0.5rem); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .has-narration .narration-line,
   .narration-word {
     transition: none;
+  }
+
+  .animate-follow-in {
+    animation: none;
   }
 }

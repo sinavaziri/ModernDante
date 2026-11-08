@@ -105,3 +105,25 @@ export function findTokenAt(timed: TimedToken[], time: number): number {
   }
   return found;
 }
+
+/**
+ * When the narration reaches a displayed word, for clicking a word to listen from it.
+ * A word the narration skipped (a dash, or wording that differs slightly) borrows the
+ * time of the nearest spoken word on its own line, preferring the one after it.
+ */
+export function timeForToken(timed: TimedToken[], token: number, line: number): number | null {
+  if (timed.length === 0) return null;
+  // Tokens rise with time, so the first timed token at or after this one is found by bisection
+  let lo = 0;
+  let hi = timed.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (timed[mid].token < token) lo = mid + 1;
+    else hi = mid;
+  }
+  const after = timed[lo];
+  const before = timed[lo - 1];
+  if (after && (after.token === token || after.line === line)) return after.start;
+  if (before && before.line === line) return before.start;
+  return (after ?? before).start;
+}
