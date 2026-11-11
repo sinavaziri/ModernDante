@@ -42,7 +42,7 @@ export default function MapPage() {
           </p>
         </header>
 
-        <InfernoMap levels={levels} painting="/images-map/inferno-engraving.webp" />
+        <InfernoMap levels={levels} painting="/images-map/inferno-dore-b.webp" />
 
         <ol className="mt-16 space-y-10">
           {levels.map(level => (
