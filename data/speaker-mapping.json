@@ -33,7 +33,7 @@
           {
             "id": 2,
             "speaker": "virgil",
-            "text": "Not a man, though once I was,\nand my parents were both from Lombardy,\nboth Mantuans by birth.\nI was born under Julius Caesar, though late in his reign,\nand lived in Rome under good Augustus\nin the time of the false and lying gods.\nI was a poet, and I sang of that righteous\nson of Anchises who sailed from Troy\nafter proud Ilium burned.\nBut you—why do you return to such torment?\nWhy don't you climb the Mount of Joy,\nwhich is the source and cause of all happiness?",
+            "text": "Not a man, though once I was,\nand my parents were both from Lombardy,\nboth Mantuans by birth.\nI was born in the time of Julius Caesar, though late,\nand lived in Rome under good Augustus\nin the time of the false and lying gods.\nI was a poet, and I sang of that righteous\nson of Anchises who sailed from Troy\nafter proud Ilium burned.\nBut you—why do you return to such torment?\nWhy don't you climb the Mount of Joy,\nwhich is the source and cause of all happiness?",
             "isDialogue": true,
             "words": 91,
             "estimatedSeconds": 37
@@ -104,7 +104,7 @@
       "2": {
         "number": 2,
         "title": "Canto II",
-        "subtitle": "The Descent. Dante's Protest and Virgil's Appeal. The Intercession of the Three Ladies Benedight. Day was departing, and the embrowned air Released the animals that are on earth",
+        "subtitle": "The Descent. Dante's Protest and Virgil's Appeal. The Intercession of the Three Ladies Benedight.",
         "totalSegments": 21,
         "segments": [
           {
@@ -118,10 +118,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "As evening fell and all living creatures found rest from their labors,\nI alone prepared myself to endure the battle—\nboth the struggle of the journey and the anguish it would bring,\nwhich my unfailing memory will now retrace.\nO Muses, O sublime genius, help me now!\nO memory that recorded what I witnessed,\nhere your true nobility shall shine forth!\nAnd I began:",
+            "text": "from their labors;\nI alone prepared myself to endure the battle—\nboth the struggle of the journey and the anguish it would bring,\nwhich my unfailing memory will now retrace.\nO Muses, O sublime genius, help me now!\nO memory that recorded what I witnessed,\nhere your true nobility shall shine forth!\nAnd I began:",
             "isDialogue": false,
-            "words": 64,
-            "estimatedSeconds": 26
+            "words": 55,
+            "estimatedSeconds": 22
           },
           {
             "id": 3,
@@ -158,7 +158,7 @@
           {
             "id": 7,
             "speaker": "virgil",
-            "text": "your spirit is infected with cowardice,\nwhich so often burdens a person\nthat it turns him back from noble endeavors,\nthe way a startled animal shies from shadows.\nTo free you from this fear,\nI'll tell you why I came\nand what I heard the first moment I felt sorrow for you.\nI was among those who dwell in Limbo\nwhen a Lady, blessed and beautiful, called to me\nwith such authority that I begged her to command me.\nHer eyes shone brighter than stars,\nand she began to speak, gentle and soft,\nwith an angelic voice, in her own tongue:",
+            "text": "your spirit is infected with cowardice,\nwhich so often burdens a person\nthat it turns him back from noble endeavors,\nthe way a startled animal shies from shadows.\nTo free you from this fear,\nI'll tell you why I came\nand what I heard the first moment I felt sorrow for you.\nI was among those who are held suspended\nwhen a Lady, blessed and beautiful, called to me\nwith such authority that I begged her to command me.\nHer eyes shone brighter than stars,\nand she began to speak, gentle and soft,\nwith an angelic voice, in her own tongue:",
             "isDialogue": true,
             "words": 101,
             "estimatedSeconds": 41
@@ -272,7 +272,7 @@
       "3": {
         "number": 3,
         "title": "Canto III",
-        "subtitle": "The Gate of Hell. The Inefficient or Indifferent. Pope Celestine V. The Shores of Acheron. Charon. The Earthquake and the Swoon. \"",
+        "subtitle": "The Gate of Hell. The Inefficient or Indifferent. Pope Celestine V. The Shores of Acheron. Charon. The Earthquake and the Swoon.",
         "totalSegments": 27,
         "segments": [
           {
@@ -686,7 +686,7 @@
           {
             "id": 26,
             "speaker": "narrator",
-            "text": "I watched the noble school assemble\naround that master of the highest song\nwho soars above all others like an eagle.\nAfter they spoke together briefly,\nthey turned to me with welcoming gestures,\nwhich made my teacher smile.\nThey honored me still more\nby making me one of their company—\nI became the sixth among such brilliance.\nWe walked together toward the light,\nspeaking of things\nbetter left unspoken here.\nWe came to the foot of a noble castle\nsurrounded seven times by high walls\nand defended by a lovely stream.\nWe crossed over as if on solid ground.\nThrough seven gates I entered with these sages\ninto a meadow of fresh grass.\nPeople were there with grave, slow-moving eyes,\ngreat authority in their bearing.\nThey spoke rarely, in gentle voices.\nWe withdrew to one side,\nto an opening bright and high,\nwhere all of them were visible.\nThere on the green enamel\nthe mighty spirits were pointed out to me—\nI feel exalted to have seen them.\nI saw Electra with many companions,\namong them Hector and Aeneas.\nCaesar in armor with his falcon eyes.\nI saw Camilla and Penthesilea\non the other side, and King Latinus\nsitting with his daughter Lavinia.\nI saw Brutus who drove out Tarquin,\nLucretia, Julia, Marcia, and Cornelia,\nand alone, apart, Saladin.\nWhen I raised my eyes higher,\nI saw the Master of those who know\nsitting with his school of philosophy.\nAll gaze upon him, all do him honor.\nThere I saw Socrates and Plato,\nwho stand closest to him.\nDemocritus who ascribes the world to chance,\nDiogenes, Anaxagoras, Thales,\nZeno, Empedocles, Heraclitus.\nI saw the great collector of healing knowledge,\nDioscorides, and Orpheus,\nCicero, Livy, moral Seneca,\nEuclid the geometer, Ptolemy,\nGalen, Hippocrates, Avicenna,\nAverroes who wrote the great Commentary.\nI cannot describe them all in full—\nthe long journey drives me forward\nso that words often fall short of reality.\nOur company of six divides in two.\nMy wise guide leads me by another path\nout from the quiet into trembling air,\nand I come to a place where nothing shines.",
+            "text": "I watched the noble school assemble\naround that master of the highest song\nwho soars above all others like an eagle.\nAfter they spoke together briefly,\nthey turned to me with welcoming gestures,\nwhich made my teacher smile.\nThey honored me still more\nby making me one of their company—\nI became the sixth among such brilliance.\nWe walked together toward the light,\nspeaking of things\nbetter left unspoken here.\nWe came to the foot of a noble castle\nsurrounded seven times by high walls\nand defended by a lovely stream.\nWe crossed over as if on solid ground.\nThrough seven gates I entered with these sages\ninto a meadow of fresh grass.\nPeople were there with grave, slow-moving eyes,\ngreat authority in their bearing.\nThey spoke rarely, in gentle voices.\nWe withdrew to one side,\nto an opening bright and high,\nwhere all of them were visible.\nThere on the green enamel\nthe mighty spirits were pointed out to me—\nI feel exalted to have seen them.\nI saw Electra with many companions,\namong them Hector and Aeneas.\nCaesar in armor with his falcon eyes.\nI saw Camilla and Penthesilea\non the other side, and King Latinus\nsitting with his daughter Lavinia.\nI saw Brutus who drove out Tarquin,\nLucretia, Julia, Marcia, and Cornelia,\nand alone, apart, Saladin.\nWhen I raised my eyes higher,\nI saw the Master of those who know\nsitting with his school of philosophy.\nAll gaze upon him, all do him honor.\nThere I saw Socrates and Plato,\nwho stand closest to him.\nDemocritus who ascribes the world to chance,\nDiogenes, Anaxagoras, Thales,\nZeno, Empedocles, Heraclitus.\nI saw the great collector of healing knowledge,\nDioscorides, and Orpheus,\nCicero, Linus, moral Seneca,\nEuclid the geometer, Ptolemy,\nGalen, Hippocrates, Avicenna,\nAverroes who wrote the great Commentary.\nI cannot describe them all in full—\nthe long journey drives me forward\nso that words often fall short of reality.\nOur company of six divides in two.\nMy wise guide leads me by another path\nout from the quiet into trembling air,\nand I come to a place where nothing shines.",
             "isDialogue": false,
             "words": 351,
             "estimatedSeconds": 141
@@ -846,7 +846,7 @@
           {
             "id": 19,
             "speaker": "francesca",
-            "text": "Living soul, gracious and kind,\nwho travels through this purple air\nto visit us who stained the world blood-red:\nif the King of the universe were our friend\nwe would pray to him for your peace,\nsince you take pity on our twisted suffering.\nWhatever you wish to hear and speak,\nwe will hear and speak with you\nwhile the wind stays silent as it is now.\nThe city where I was born\nsits by the seashore where the Po descends\nto find peace with all its tributaries.\nLove, which quickly seizes any gentle heart,\ntook this man with passion for the beautiful body\nthat was torn from me—the manner still wounds me.\nLove, which allows no beloved not to love in return,\ngripped me with such delight in him\nthat, as you see, it never leaves me still.\nLove led us both to the same death.\nCaina awaits the one who killed us.",
+            "text": "Living soul, gracious and kind,\nwho travels through this dark air\nto visit us who stained the world blood-red:\nif the King of the universe were our friend\nwe would pray to him for your peace,\nsince you take pity on our twisted suffering.\nWhatever you wish to hear and speak,\nwe will hear and speak with you\nwhile the wind stays silent as it is now.\nThe city where I was born\nsits by the seashore where the Po descends\nto find peace with all its tributaries.\nLove, which quickly seizes any gentle heart,\ntook this man with passion for the beautiful body\nthat was torn from me—the manner still wounds me.\nLove, which allows no beloved not to love in return,\ngripped me with such delight in him\nthat, as you see, it never leaves me still.\nLove led us both to the same death.\nCaina awaits the one who killed us.",
             "isDialogue": true,
             "words": 154,
             "estimatedSeconds": 62,
@@ -930,7 +930,7 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "When consciousness returned—\nit had fled before the pity I felt\nfor those two lovers,\nleaving me overwhelmed with grief—\n\nI see new torments and new sufferers\nall around me,\nwherever I move,\nwherever I turn and look.",
+            "text": "When consciousness returned—\nit had fled before the pity I felt\nfor those two kinsfolk,\nleaving me overwhelmed with grief—\n\nI see new torments and new sufferers\nall around me,\nwherever I move,\nwherever I turn and look.",
             "isDialogue": false,
             "characterName": null,
             "words": 38
@@ -1011,10 +1011,10 @@
           {
             "id": 12,
             "speaker": "ciacco",
-            "text": "After long struggle, they'll come to bloodshed. The country party\nwill drive out the other with great violence.\nBut then within three years that side will fall,\nand the other will rise again\nthrough the power of one who now waits on the sidelines.\nThey'll hold their heads high for a long time,\nkeeping their enemies under heavy burdens,\nno matter how much the others weep and rage.\nOnly two men are just, and no one listens to them.\nEnvy and pride and greed—\nthese are the three sparks that have set every heart on fire.",
+            "text": "After long struggle, they'll come to bloodshed. The party of the woods\nwill drive out the other with great violence.\nBut then within three years that side will fall,\nand the other will rise again\nthrough the power of one who now waits on the sidelines.\nThey'll hold their heads high for a long time,\nkeeping their enemies under heavy burdens,\nno matter how much the others weep and rage.\nOnly two men are just, and no one listens to them.\nEnvy and pride and greed—\nthese are the three sparks that have set every heart on fire.",
             "isDialogue": true,
-            "words": 96,
-            "estimatedSeconds": 39
+            "words": 98,
+            "estimatedSeconds": 40
           },
           {
             "id": 13,
@@ -1094,9 +1094,9 @@
           {
             "id": 23,
             "speaker": "narrator",
-            "text": "We walked in a circle along that path,\nsaying much more than I won't repeat here,\nuntil we came to the place of descent.\nThere we found Plutus, the great enemy.",
+            "text": "We walked in a circle along that path,\nsaying much more than I repeat here,\nuntil we came to the place of descent.\nThere we found Plutus, the great enemy.",
             "isDialogue": false,
-            "words": 31,
+            "words": 30,
             "estimatedSeconds": 8
           }
         ]
@@ -1117,7 +1117,7 @@
           {
             "id": 11,
             "speaker": "narrator",
-            "text": "So Plutus began with his harsh, clucking voice.\n\nAnd my wise guide, who understood all things,\nspoke to encourage me: \"Don't let",
+            "text": "So Plutus began with his harsh, clucking voice.\n\nAnd my wise guide, who understood all things,\nspoke to encourage me:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -1196,7 +1196,7 @@
           {
             "id": 6,
             "speaker": "virgil",
-            "text": "You entertain a useless thought,\" he replied.\n\"The unthinking life that made them filthy\nnow makes them beyond all recognition.\nForever they will come to these collisions—\nthese will rise from their graves with fists clenched,\nthose others with their hair shorn off.\nPoor giving and poor keeping have stolen\nthe beautiful world from them\nand set them in this brawl—\nI won't waste pretty words describing it.\nNow you can see, my son, the fleeting comedy\nof goods entrusted to Fortune,\nfor which humanity battles one another.\nAll the gold that lies beneath the moon,\nor ever existed, could not give\na moment's rest to even one of these weary souls.",
+            "text": "You entertain a useless thought,\" he replied.\n\"The unthinking life that made them filthy\nnow makes them beyond all recognition.\nForever they will come to these collisions—\nthese will rise from their graves with fists clenched,\nthose others with their hair shorn off.\nPoor giving and poor keeping have stolen\nthe beautiful world from them\nand set them in this brawl—\nI won't waste pretty words describing it.\nNow you can see, my son, the brief mockery\nof goods entrusted to Fortune,\nfor which humanity battles one another.\nAll the gold that lies beneath the moon,\nor ever existed, could not give\na moment's rest to even one of these weary souls.",
             "isDialogue": true,
             "words": 112,
             "estimatedSeconds": 45
@@ -1377,7 +1377,7 @@
           {
             "id": 35,
             "speaker": "virgil",
-            "text": "\"Righteous soul,\nblessed is the woman who carried you.\nThat was an arrogant man in the world above.\nNo goodness adorns his memory—\nso here his shadow rages with fury.\nHow many who think themselves great kings up there\nwill wallow here like pigs in filth,\nleaving behind only horrible disgrace.",
+            "text": "\"Indignant soul,\nblessed is the woman who carried you.\nThat was an arrogant man in the world above.\nNo goodness adorns his memory—\nso here his shadow rages with fury.\nHow many who think themselves great kings up there\nwill wallow here like pigs in filth,\nleaving behind only horrible disgrace.",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -1442,7 +1442,7 @@
           {
             "id": 19,
             "speaker": "dante",
-            "text": "Master, I can already see its towers\nrising red from the valley there,\nas if they were forged in fire.",
+            "text": "Master, I can already see its mosques\nrising red from the valley there,\nas if they were forged in fire.",
             "isDialogue": true,
             "words": 20,
             "estimatedSeconds": 8
@@ -1590,17 +1590,17 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "The black air could not carry him far through that heavy fog.",
+            "text": "through the black air and that heavy fog.",
             "isDialogue": false,
-            "words": 12,
-            "estimatedSeconds": 5
+            "words": 8,
+            "estimatedSeconds": 3
           },
           {
             "id": 3,
             "speaker": "virgil",
-            "text": "We must still win this fight, Otherwise... She who offered herself to us...\nOh, how I long for someone to arrive!",
+            "text": "We must still win this fight, Otherwise... Such a one offered herself to us...\nOh, how I long for someone to arrive!",
             "isDialogue": true,
-            "words": 21,
+            "words": 22,
             "estimatedSeconds": 9
           },
           {
@@ -1630,7 +1630,7 @@
           {
             "id": 7,
             "speaker": "virgil",
-            "text": "Rarely does one of us make the journey I'm taking.\nIt's true that I came down here once before,\nconjured by that merciless sorceress Erictho,\nwho called shades back into their bodies.\nMy flesh had barely grown cold\nwhen she forced me to enter that wall\nto bring forth a spirit from Judas's circle—\nthe lowest place, the darkest,\nfarthest from the heaven that encircles all.\nI know the way well, so don't worry.\nThis marsh that breathes such a foul stench\nsurrounds the city of sorrow,\nwhere we cannot enter now without violence.",
+            "text": "Rarely does one of us make the journey I'm taking.\nIt's true that I came down here once before,\nconjured by that merciless sorceress Erictho,\nwho called shades back into their bodies.\nMy flesh had barely grown cold\nwhen she forced me to enter that wall\nto bring forth a spirit from Judas's circle—\nthe lowest place, the darkest,\nfarthest from the heaven that encircles all.\nI know the way well, so don't worry.\nThis marsh that breathes such a foul stench\nsurrounds the city of sorrow,\nwhere we cannot enter now without anger.",
             "isDialogue": true,
             "words": 94,
             "estimatedSeconds": 38
@@ -1705,7 +1705,7 @@
           {
             "id": 27,
             "speaker": "narrator",
-            "text": "He turned me around himself,\nnot trusting my hands alone,\nshielding my eyes with his own.",
+            "text": "He turned me around himself,\nnot trusting my hands alone,\nshielding my eyes with his own hands too.",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -2096,7 +2096,7 @@
       "11": {
         "number": 11,
         "title": "Canto XI",
-        "subtitle": "The Broken Rocks. Pope Anastasius. General Descrip- tion of the Inferno and its Divisions.",
+        "subtitle": "The Broken Rocks. Pope Anastasius. General Description of the Inferno and its Divisions.",
         "totalSegments": 14,
         "segments": [
           {
@@ -2166,10 +2166,10 @@
           {
             "id": 5,
             "speaker": "dante",
-            "text": "Master,\" I said, \"your explanation is clear enough\nand well distinguishes this pit\nand the people who inhabit it.\nBut tell me—those in the muddy marsh above,\ndriven by wind, beaten by rain,\nclashing with such harsh words—\nwhy aren't they punished inside the red city\nif God holds them in his wrath?\nAnd if he doesn't, why do they suffer so?",
+            "text": "Master,\" I said, \"your explanation is clear enough\nand well distinguishes this pit\nand the people who inhabit it.\nBut tell me—those in the muddy marsh above,\nthose the wind drives, those the rain beats down,\nand those who clash with such harsh words—\nwhy aren't they punished inside the red city\nif God holds them in his wrath?\nAnd if he doesn't, why do they suffer so?",
             "isDialogue": true,
-            "words": 62,
-            "estimatedSeconds": 25
+            "words": 68,
+            "estimatedSeconds": 27
           },
           {
             "id": 16,
@@ -2206,7 +2206,7 @@
       "12": {
         "number": 12,
         "title": "Canto XII",
-        "subtitle": "The Minotaur. The Seventh Circle: The Violent. The River Phlegethon. The Violent against their Neigh- bours. The Centaurs. Tyrants. The place where to descend the bank we came Was alpine, and",
+        "subtitle": "The Minotaur. The Seventh Circle: The Violent. The River Phlegethon. The Violent against their Neighbours. The Centaurs. Tyrants.",
         "totalSegments": 31,
         "segments": [
           {
@@ -2219,7 +2219,7 @@
           {
             "id": 12,
             "speaker": "narrator",
-            "text": "The destruction there was of such a kind\nthat every eye would turn away in horror.\nLike that landslide which struck the Adige's flank\non this side of Trent—whether by earthquake\nor failing foundation—where the mountainside\nshattered from peak to plain in such a way\nit might provide a path for those above,\nso was the descent of that ravine.\nAnd there upon the edge of the broken chasm\nlay stretched the infamy of Crete,\nconceived within that counterfeit cow.\nWhen he saw us, he bit himself\nlike one consumed by inner rage.\nMy guide shouted toward him:",
+            "text": "Like that landslide which struck the Adige's flank\non this side of Trent—whether by earthquake\nor failing foundation—where the mountainside\nshattered from peak to plain in such a way\nit might provide a path for those above,\nso was the descent of that ravine.\nAnd there upon the edge of the broken chasm\nlay stretched the infamy of Crete,\nconceived within that counterfeit cow.\nWhen he saw us, he bit himself\nlike one consumed by inner rage.\nMy guide shouted toward him:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -2437,7 +2437,7 @@
       "13": {
         "number": 13,
         "title": "Canto XIII",
-        "subtitle": "The Wood of Thorns. The Harpies. The Violent against themselves. Suicides. Pier della Vigna. Lano and Ja- copo da Sant' Andrea.",
+        "subtitle": "The Wood of Thorns. The Harpies. The Violent against themselves. Suicides. Pier della Vigna. Lano and Jacopo da Sant' Andrea.",
         "totalSegments": 31,
         "segments": [
           {
@@ -2678,14 +2678,14 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "Out of love for my native city\nI gathered up the scattered leaves\nand gave them back to him, who",
+            "text": "Out of love for my native city\nI gathered up the scattered leaves\nand gave them back to him, who was now hoarse.",
             "isDialogue": false,
             "characterName": null
           },
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "We reached the boundary where the second circle\nbreaks away from the third, and there\na terrible form of justice reveals itself.\nTo make these strange new things clear,\nI'll tell you we arrived upon a plain\nthat rejects every plant from its bed.\nThe sorrowful forest wraps around it\nlike a garland, as the sad moat encircles that.\nThere at the very edge we stopped.\nThe ground was dry, thick sand,\nmade no different than the desert\nonce pressed by Cato's feet.\nO vengeance of God, how much you should be feared\nby everyone who reads\nwhat was revealed before my eyes!\nI saw many flocks of naked souls,\nall weeping most wretchedly,\nand different laws seemed imposed on each.\nSome people lay flat on the ground,\nothers sat huddled together,\nand still others walked about continuously.\nThose who wandered in circles were by far the most,\nand those lying down to suffer were the fewest,\nbut their tongues were loosest in lamentation.\nOver the entire wasteland, falling slowly,\ndilated flakes of fire rained down\nlike snow on mountains without wind.\nJust as Alexander, in those burning regions\nof India, saw flames fall\nunbroken until they reached the ground,\nand had his soldiers trample the soil\nbecause the fire was better extinguished\nwhile still separate—\nso descended this eternal heat,\nsetting the sand ablaze like tinder\nunder steel, doubling the agony.\nThe dance of wretched hands never ceased,\nshaking away the fresh burning coals\nnow here, now there.",
+            "text": "We reached the boundary where the second ring\nbreaks away from the third, and there\na terrible form of justice reveals itself.\nTo make these strange new things clear,\nI'll tell you we arrived upon a plain\nthat rejects every plant from its bed.\nThe sorrowful forest wraps around it\nlike a garland, as the sad moat encircles that.\nThere at the very edge we stopped.\nThe ground was dry, thick sand,\nmade no different than the desert\nonce pressed by Cato's feet.\nO vengeance of God, how much you should be feared\nby everyone who reads\nwhat was revealed before my eyes!\nI saw many flocks of naked souls,\nall weeping most wretchedly,\nand different laws seemed imposed on each.\nSome people lay flat on the ground,\nothers sat huddled together,\nand still others walked about continuously.\nThose who wandered in circles were by far the most,\nand those lying down to suffer were the fewest,\nbut their tongues were loosest in lamentation.\nOver the entire wasteland, falling slowly,\ndilated flakes of fire rained down\nlike snow on mountains without wind.\nJust as Alexander, in those burning regions\nof India, saw flames fall\nunbroken until they reached the ground,\nand had his soldiers trample the soil\nbecause the fire was better extinguished\nwhile still separate—\nso descended this eternal heat,\nsetting the sand ablaze like tinder\nunder steel, doubling the agony.\nThe dance of wretched hands never ceased,\nshaking away the fresh burning coals\nnow here, now there.",
             "isDialogue": false,
             "words": 249,
             "estimatedSeconds": 100
@@ -2839,7 +2839,7 @@
           {
             "id": 11,
             "speaker": "narrator",
-            "text": "Now one of the hard embankments carries us forward,\nand the stream's vapor casts shadows overhead,\nshielding both water and banks from the falling fire.\nJust as the Flemings build their seawalls\nbetween Cadsand and Bruges, fearing the floods\nthat hurl themselves against their shores,\nand as the people of Padua raise dikes along the Brenta\nto protect their towns and villages\nbefore the spring thaw brings its heat—\nso these embankments had been constructed,\nthough not as high or thick as those,\nby whatever master architect had made them.\nWe had traveled so far from the dark wood\nthat even if I had turned around,\nI could not have seen where it was,\nwhen we encountered a company of souls\nwalking beside the dike. Each one\nstared at us the way people do\nin the evening light of a new moon,\nsquinting and sharpening their gaze\nlike an old tailor threading a needle.\nScrutinized by this strange family,\none of them recognized me. He seized\nthe hem of my robe and cried out,",
+            "text": "Now one of the hard embankments carries us forward,\nand the stream's vapor casts shadows overhead,\nshielding both water and banks from the falling fire.\nJust as the Flemings build their seawalls\nbetween Wissant and Bruges, fearing the floods\nthat hurl themselves against their shores,\nand as the people of Padua raise dikes along the Brenta\nto protect their towns and villages\nbefore the spring thaw brings its heat—\nso these embankments had been constructed,\nthough not as high or thick as those,\nby whatever master architect had made them.\nWe had traveled so far from the dark wood\nthat even if I had turned around,\nI could not have seen where it was,\nwhen we encountered a company of souls\nwalking beside the dike. Each one\nstared at us the way people do\nin the evening light of a new moon,\nsquinting and sharpening their gaze\nlike an old tailor threading a needle.\nScrutinized by this strange family,\none of them recognized me. He seized\nthe hem of my robe and cried out,",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -2955,7 +2955,7 @@
           {
             "id": 21,
             "speaker": "brunetto_latini",
-            "text": "\"It's good to know some of them;\nabout others it would be better to stay silent,\nfor time is too short for so much talk.\nKnow, in sum, that they were all scholars\nand great men of letters, of great fame,\nstained in the world by the same sin.\nPriscian walks there with that miserable crowd,\nand Francesco d'Accorso. You could have seen there too,\nif you had any appetite for such filth,\nthe one transferred by the Servant of Servants\nfrom the Arno to the Bacchiglione,\nwhere he left his sin-stretched body.\nI would say more, but our walking and talking\ncan go on no longer, for I see\nnew smoke rising from the sand ahead.\nPeople approach whom I cannot be with.\nLet my Treasure be commended to you—\nin it I still live, and I ask no more.\"",
+            "text": "\"It's good to know some of them;\nabout others it would be better to stay silent,\nfor time is too short for so much talk.\nKnow, in sum, that they were all clerics\nand great men of letters, of great fame,\nstained in the world by the same sin.\nPriscian walks there with that miserable crowd,\nand Francesco d'Accorso. You could have seen there too,\nif you had any appetite for such filth,\nthe one transferred by the Servant of Servants\nfrom the Arno to the Bacchiglione,\nwhere he left his sin-stretched body.\nI would say more, but our walking and talking\ncan go on no longer, for I see\nnew smoke rising from the sand ahead.\nPeople approach whom I cannot be with.\nLet my Treasure be commended to you—\nin it I still live, and I ask no more.\"",
             "isDialogue": true,
             "characterName": "brunetto_latini"
           },
@@ -3022,7 +3022,7 @@
           {
             "id": 17,
             "speaker": "three_florentines",
-            "text": "one began, \"and if our blackened, blistered appearance\nrepulses you, let our earthly fame\npersuade you to tell us who you are—\nyou who walk so safely through Hell\non living feet.\nThis man whose footsteps I follow,\nnaked and flayed though he appears,\nheld higher rank than you might think.\nHe was the grandson of noble Gualdrada,\nhis name Guidoguerra, and in life\nhe accomplished much through wisdom and sword.\nThe other treading the burning sand beside me\nis Tegghiaio Aldobrandi, whose reputation\nshould still be honored in the world above.\nAnd I, crucified here with them,\nwas Jacopo Rusticucci—and truly\nmy fierce wife harmed me more than anything else.\"",
+            "text": "one began, \"and if our blackened, blistered appearance\nrepulses you, let our earthly fame\npersuade you to tell us who you are—\nyou who walk so safely through Hell\non living feet.\nThis man whose footsteps I follow,\nnaked and flayed though he appears,\nheld higher rank than you might think.\nHe was the grandson of noble Gualdrada,\nhis name Guidoguerra, and in life\nhe accomplished much through wisdom and sword.\nThe other treading the burning sand beside me\nis Tegghiaio Aldobrandi, whose words\nshould have been heeded in the world above.\nAnd I, crucified here with them,\nwas Jacopo Rusticucci—and truly\nmy fierce wife harmed me more than anything else.\"",
             "isDialogue": true,
             "characterName": "three_florentines"
           },
@@ -3050,7 +3050,7 @@
           {
             "id": 8,
             "speaker": "dante",
-            "text": "New money and sudden wealth\nhave bred such pride and excess in you, Florence,\nthat you're already weeping for it!",
+            "text": "New people and sudden wealth\nhave bred such pride and excess in you, Florence,\nthat you're already weeping for it!",
             "isDialogue": true,
             "words": 20,
             "estimatedSeconds": 8
@@ -3195,7 +3195,7 @@
           {
             "id": 12,
             "speaker": "virgil",
-            "text": "\"Now be strong and bold.\nThis is how we descend from here—\nclimb on in front, I'll sit between us\nso the tail cannot harm you.\"",
+            "text": "\"Now be strong and bold.\nThis is how we descend from here—\nclimb on in front, I'll sit in the middle\nso the tail cannot harm you.\"",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -3230,7 +3230,7 @@
           {
             "id": 17,
             "speaker": "narrator",
-            "text": "than mine when I found myself\nsuspended in air on all sides,\nseeing nothing but the monster.\nOnward he goes, swimming slowly, slowly,\nwheeling and descending. I sense this only\nby wind on my face and from below.\nAlready I could hear on our right\nthe whirlpool making horrible sounds beneath us.\nI thrust my head out, looking downward.\nThen I was even more terrified of the abyss,\nbecause I saw fires and heard laments.\nTrembling, I clung closer still.\nI saw then—what I hadn't seen before—\nour turning and descending, by the great horrors\napproaching from all sides.\nLike a falcon long on the wing\nwho, seeing neither lure nor prey,\nmakes the falconer cry \"You're falling!\"\nand descends weary from his swift start,\nthrough a hundred circles, landing\nfar from his master, sullen and disdainful—\nso Geryon set us down at the bottom,\nclose to the foot of the jagged rock face.\nUnburdened of our bodies,\nhe shot away like an arrow from the string.",
+            "text": "than mine when I found myself\nsuspended in air on all sides,\nseeing nothing but the monster.\nOnward he goes, swimming slowly, slowly,\nwheeling and descending. I sense this only\nby wind on my face and from below.\nAlready I could hear on our right\nthe whirlpool making horrible sounds beneath us.\nI thrust my head out, looking downward.\nThen I was even more terrified of the abyss,\nbecause I saw fires and heard laments.\nTrembling, I clung closer still.\nI saw then—what I hadn't seen before—\nour turning and descending, by the great horrors\napproaching from all sides.\nLike a falcon long on the wing\nwho, seeing neither lure nor prey,\nmakes the falconer cry \"You're falling!\"\nand descends weary from his swift start,\nthrough a hundred circles, landing\nfar from his master, sullen and disdainful—\nso Geryon set us down at the bottom,\nclose to the foot of the jagged rock face.\nUnburdened of the two of us,\nhe shot away like an arrow from the string.",
             "isDialogue": false,
             "characterName": "narrator"
           }
@@ -3239,13 +3239,13 @@
       "18": {
         "number": 18,
         "title": "Canto XVIII",
-        "subtitle": "The Eighth Circle, Malebolge: The Fraudulent and the Malicious. The First Bolgia: Seducers and Panders. Ve- nedico Caccianimico. Jason. The Second Bolgia: Flat- terers. Allessio Interminelli. Thais.",
+        "subtitle": "The Eighth Circle, Malebolge: The Fraudulent and the Malicious. The First Bolgia: Seducers and Panders. Venedico Caccianemico. Jason. The Second Bolgia: Flatterers. Alessio Interminei. Thais.",
         "totalSegments": 14,
         "segments": [
           {
             "id": 7,
             "speaker": "narrator",
-            "text": "There is a place in Hell called Malebolge—\nEvil Pouches—made entirely of stone\nthe color of iron, like the circle that surrounds it.\nRight in the center of this malignant field\nyawns a well, enormously wide and deep,\nwhose structure I will describe when we reach it.\nThe remaining space between this central well\nand the foot of the high, hard cliff\nis circular, its floor divided into ten valleys.\nPicture a castle surrounded by multiple moats\nprotecting its walls—the pattern they create\nis exactly what we saw spread before us.\nAnd just as little bridges span outward\nfrom a fortress gate to the outer rampart,\nrocky ridges projected from the precipice's base,\ncutting across the ditches and embankments\nall the way to the well that gathers them\nand cuts them short.\nHere we found ourselves, shaken down\nfrom Geryon's back. The Poet\nturned left, and I followed behind.\nTo my right I saw fresh torments,\nnew anguish, new wielders of whips\nfilling this first pouch completely.\nAt the bottom, the sinners walked naked.\nOn this side of the middle they came toward us,\non the far side they moved with us, but faster—\njust like the Romans during the Jubilee year\nmanaged the crowds crossing the bridge\nover the massive Tiber:\nall on one side faced toward the Castle\nas they headed to St. Peter's,\nwhile those on the other side walked toward the Mount.\nAlong the livid stone on both sides\nI saw horned demons with enormous scourges,\nsavagely beating the sinners from behind.\nGod, how they made those legs fly up\nat the first stroke! Not one of them\nwaited around for the second, or the third.\nAs I walked on, my eyes met one of them,\nand I immediately said, \"I've definitely\nseen this one before.\"\nSo I stopped to get a better look,\nand my gentle Guide paused with me,\nallowing me to step back a little.\nThe whipped soul tried to hide himself\nby lowering his face, but it did no good.\nI said, \"You there, staring at the ground—\nif your features don't lie,\nyou're Venedico Caccianimico.\nWhat brings you to such bitter punishment?\"\nHe answered,",
+            "text": "There is a place in Hell called Malebolge—\nEvil Pouches—made entirely of stone\nthe color of iron, like the circle that surrounds it.\nRight in the center of this malignant field\nyawns a well, enormously wide and deep,\nwhose structure I will describe when we reach it.\nThe remaining space between this central well\nand the foot of the high, hard cliff\nis circular, its floor divided into ten valleys.\nPicture a castle surrounded by multiple moats\nprotecting its walls—the pattern they create\nis exactly what we saw spread before us.\nAnd just as little bridges span outward\nfrom a fortress gate to the outer rampart,\nrocky ridges projected from the precipice's base,\ncutting across the ditches and embankments\nall the way to the well that gathers them\nand cuts them short.\nHere we found ourselves, shaken down\nfrom Geryon's back. The Poet\nturned left, and I followed behind.\nTo my right I saw fresh torments,\nnew anguish, new wielders of whips\nfilling this first pouch completely.\nAt the bottom, the sinners walked naked.\nOn this side of the middle they came toward us,\non the far side they moved with us, but faster—\njust like the Romans during the Jubilee year\nmanaged the crowds crossing the bridge\nover the massive Tiber:\nall on one side faced toward the Castle\nas they headed to St. Peter's,\nwhile those on the other side walked toward the Mount.\nAlong the livid stone on both sides\nI saw horned demons with enormous scourges,\nsavagely beating the sinners from behind.\nGod, how they made those legs fly up\nat the first stroke! Not one of them\nwaited around for the second, or the third.\nAs I walked on, my eyes met one of them,\nand I immediately said, \"I've definitely\nseen this one before.\"\nSo I stopped to get a better look,\nand my gentle Guide paused with me,\nallowing me to step back a little.\nThe whipped soul tried to hide himself\nby lowering his face, but it did no good.\nI said, \"You there, staring at the ground—\nif your features don't lie,\nyou're Venedico Caccianemico.\nWhat brings you to such bitter punishment?\"\nHe answered,",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -3294,10 +3294,10 @@
           {
             "id": 2,
             "speaker": "virgil",
-            "text": "Look at that tall one coming toward us\nwho seems to shed no tears for his pain.\nWhat a royal bearing he still maintains!\nThat's Jason, who through courage and cunning\nstole the Golden Fleece from Colchis.\nHe passed by the island of Lemnos\nafter those pitiless, daring women\nhad slaughtered every male on the island.\nThere, with love tokens and elegant words,\nhe deceived young Hypsipyle—\nthe same girl who had first deceived all the others.\nHe left her pregnant and abandoned.\nSuch sin deserves such punishment,\nand here too Medea's betrayal is avenged.\nWith him march all who deceive this way.\nThat's enough about this first valley\nand the souls it devours.",
+            "text": "Look at that tall one coming toward us\nwho seems to shed no tears for his pain.\nWhat a royal bearing he still maintains!\nThat's Jason, who through courage and cunning\nstole the Golden Fleece from Colchis.\nHe passed by the island of Lemnos\nafter those pitiless, daring women\nhad slaughtered every male on the island.\nThere, with love tokens and elegant words,\nhe deceived young Hypsipyle—\nthe same girl who had first deceived all the others.\nHe left her pregnant and abandoned.\nSuch sin deserves such punishment,\nand here his betrayal of Medea is avenged too.\nWith him march all who deceive this way.\nThat's enough about this first valley\nand the souls it devours.",
             "isDialogue": true,
-            "words": 114,
-            "estimatedSeconds": 46
+            "words": 116,
+            "estimatedSeconds": 47
           },
           {
             "id": 14,
@@ -3457,7 +3457,7 @@
           {
             "id": 7,
             "speaker": "narrator",
-            "text": "And while I sang these notes to him,\nwhether anger or conscience bit him,\nhe kicked violently with both feet.\nI think it truly pleased my guide,\nfor with such satisfied expression\nhe kept listening to the sound of those true words.\nThen he took me up in both his arms,\nand when he had me completely on his chest,\nhe climbed back up the way he had descended.\nNor did he tire of holding me close,\nbut carried me to the summit of the arch\nthat crosses from the fourth ditch to the fifth.\nThere he set down his burden tenderly,\ntenderly on the rough and steep crag\nthat would be hard passage even for goats.\nFrom there another valley was revealed to me.",
+            "text": "And while I sang these notes to him,\nwhether anger or conscience bit him,\nhe kicked violently with both feet.\nI think it truly pleased my guide,\nfor with such satisfied expression\nhe kept listening to the sound of those true words.\nThen he took me up in both his arms,\nand when he had me completely on his chest,\nhe climbed back up the way he had descended.\nNor did he tire of holding me close,\nbut carried me to the summit of the arch\nthat crosses from the fourth embankment to the fifth.\nThere he set down his burden tenderly,\ntenderly on the rough and steep crag\nthat would be hard passage even for goats.\nFrom there another valley was revealed to me.",
             "isDialogue": false,
             "words": 125,
             "estimatedSeconds": 50
@@ -3467,7 +3467,7 @@
       "20": {
         "number": 20,
         "title": "Canto XX",
-        "subtitle": "The Fourth Bolgia: Soothsayers. Amphiaraus, Tiresias, Aruns, Manto, Eriphylus, Michael Scott, Guido Bonatti, and Asdente. Virgil speaks of the founding of Mantua.",
+        "subtitle": "The Fourth Bolgia: Soothsayers. Amphiaraus, Tiresias, Aruns, Manto, Eurypylus, Michael Scott, Guido Bonatti, and Asdente. Virgil speaks of the founding of Mantua.",
         "totalSegments": 7,
         "segments": [
           {
@@ -3488,9 +3488,9 @@
           {
             "id": 3,
             "speaker": "virgil",
-            "text": "Are you just another fool?\nHere pity lives only when it is dead.\nWho is more contemptible\nthan one who feels compassion for God's justice?\nLift up your head and see the one\nfor whom the earth split open before Theban eyes,\nwhile all the warriors cried: 'Where are you rushing,\nAmphiaraus? Why abandon the war?'\nHe plummeted headlong\nall the way down to Minos, who seizes everyone.\nLook how he has made his shoulders into a chest!\nBecause he tried to see too far ahead,\nnow he looks behind and walks backward.\nSee Tiresias, who changed his very nature\nfrom male to female,\nevery limb transformed.\nLater he had to strike again\nthose two entwined serpents with his staff\nbefore he could regain his masculine form.\nThe one backing against the other's belly\nis Aruns, who lived in Carrara's hills\nwhere farmers work below,\ndwelling in a cave among white marble\nfrom where his view of stars and sea\nremained unobstructed.\nThat figure there, covering her breasts\nwith loose hair flowing down—\nyou cannot see them—\nall the hair on her body turned to that side,\nwas Manto, who wandered many lands\nbefore settling where I was born.\nLet me tell you her story.\nAfter her father died\nand Bacchus's city fell into slavery,\nshe roamed the world for ages.\nHigh in beautiful Italy lies a lake\nat the foot of the Alps that wall off Germany\nabove Tyrol—they call it Lake Garda.\nA thousand springs and more\nbetween Garda and Val Camonica\nfeed Mount Pennino\nwith water that pools in that lake.\nAt the center sits a place\nwhere the bishops of Trento, Brescia, and Verona\ncould give their blessing if they passed that way.\nPeschiera sits there, fortress beautiful and strong,\nfacing the Brescians and Bergamese\nwhere the shoreline drops lowest.\nAll the water Lake Garda cannot hold\nmust overflow that spot\nand become a river flowing through green meadows.\nOnce the water begins to flow\nit is no longer called Garda but Mincio,\nuntil it reaches Governo where it joins the Po.\nBefore long it finds a plain\nwhere it spreads wide and turns marshy,\noften breeding sickness in summer.\nPassing that way, the pitiless virgin\nsaw land in the middle of the swamp,\nuntilled and empty of inhabitants.\nThere, to avoid all human contact,\nshe stayed with her servants to practice her arts.\nShe lived and died, leaving her empty body.\nThe scattered people of the region\ngathered at that place, made strong\nby the protective marsh on every side.\nThey built their city over those dead bones\nand named it Mantua after her\nwho first chose the location—no other omen.\nOnce its population was much larger,\nbefore Casalodi's stupidity\nfell for Pinamonte's deception.\nSo I warn you: if you ever hear\nmy city's origin told differently,\nlet no lie defraud the truth.",
+            "text": "Are you just another fool?\nHere pity lives only when it is dead.\nWho is more contemptible\nthan one who feels compassion for God's justice?\nLift up your head and see the one\nfor whom the earth split open before Theban eyes,\nwhile all the warriors cried: 'Where are you rushing,\nAmphiaraus? Why abandon the war?'\nHe plummeted headlong\nall the way down to Minos, who seizes everyone.\nLook how he has made his shoulders into a chest!\nBecause he tried to see too far ahead,\nnow he looks behind and walks backward.\nSee Tiresias, who changed his very nature\nfrom male to female,\nevery limb transformed.\nLater he had to strike again\nthose two entwined serpents with his staff\nbefore he could regain his masculine form.\nThe one backing against the other's belly\nis Aruns, who lived in Carrara's hills\nwhere farmers work below,\ndwelling in a cave among white marble\nfrom where his view of stars and sea\nremained unobstructed.\nThat figure there, covering her breasts\nwith loose hair flowing down—\nyou cannot see them—\nall the hair on her body turned to that side,\nwas Manto, who wandered many lands\nbefore settling where I was born.\nLet me tell you her story.\nAfter her father died\nand Bacchus's city fell into slavery,\nshe roamed the world for ages.\nHigh in beautiful Italy lies a lake\nat the foot of the Alps that wall off Germany\nabove Tyrol—its name is Benaco.\nA thousand springs and more\nbetween Garda and Val Camonica\nbathe the Pennine Alps\nwith water that pools in that lake.\nAt the center sits a place\nwhere the bishops of Trento, Brescia, and Verona\ncould give their blessing if they passed that way.\nPeschiera sits there, fortress beautiful and strong,\nfacing the Brescians and Bergamese\nwhere the shoreline drops lowest.\nAll the water Benaco cannot hold\nmust overflow that spot\nand become a river flowing through green meadows.\nOnce the water begins to flow\nit is no longer called Benaco but Mincio,\nuntil it reaches Governo where it joins the Po.\nBefore long it finds a plain\nwhere it spreads wide and turns marshy,\noften breeding sickness in summer.\nPassing that way, the pitiless virgin\nsaw land in the middle of the swamp,\nuntilled and empty of inhabitants.\nThere, to avoid all human contact,\nshe stayed with her servants to practice her arts.\nShe lived and died, leaving her empty body.\nThe scattered people of the region\ngathered at that place, made strong\nby the protective marsh on every side.\nThey built their city over those dead bones\nand named it Mantua after her\nwho first chose the location—no other omen.\nOnce its population was much larger,\nbefore Casalodi's stupidity\nfell for Pinamonte's deception.\nSo I warn you: if you ever hear\nmy city's origin told differently,\nlet no lie defraud the truth.",
             "isDialogue": true,
-            "words": 478,
+            "words": 477,
             "estimatedSeconds": 192
           },
           {
@@ -3511,7 +3511,7 @@
           {
             "id": 7,
             "speaker": "virgil",
-            "text": "\"The one whose beard\nspreads from his cheek across his dark shoulders\nwas an augur when Greece was emptied of men,\nscarcely a male child left in any cradle.\nWith Calchas he chose the moment\nat Aulis to cut the first ship's cable.\nEryphylus was his name—so my lofty Tragedy\nsings in some passage or other.\nYou know it well, knowing the whole work.\nThe next one, so thin in the flanks,\nwas Michael Scott, who truly knew\nthe tricks of magical deceptions.\nLook at Guido Bonatti, look at Asdente,\nwho now wishes he had stuck to his leather and thread\nbut repents too late.\nSee the wretched women who abandoned\nneedle, spindle, and loom to become fortune-tellers,\ncasting spells with herbs and wax images.\nBut come—Cain and his thorns\nalready straddle the boundary\nof both hemispheres, and below Seville\nthe moon touches the ocean waves.\nLast night it was already full—\nyou should remember it did you no harm\nback in the deep forest.\"",
+            "text": "\"The one whose beard\nspreads from his cheek across his dark shoulders\nwas an augur when Greece was emptied of men,\nscarcely a male child left in any cradle.\nWith Calchas he chose the moment\nat Aulis to cut the first ship's cable.\nEurypylus was his name—so my lofty Tragedy\nsings in some passage or other.\nYou know it well, knowing the whole work.\nThe next one, so thin in the flanks,\nwas Michael Scott, who truly knew\nthe tricks of magical deceptions.\nLook at Guido Bonatti, look at Asdente,\nwho now wishes he had stuck to his leather and thread\nbut repents too late.\nSee the wretched women who abandoned\nneedle, spindle, and loom to become fortune-tellers,\ncasting spells with herbs and wax images.\nBut come—Cain and his thorns\nalready straddle the boundary\nof both hemispheres, and below Seville\nthe moon touches the ocean waves.\nLast night it was already full—\nyou should remember it did you no harm\nback in the deep forest.\"",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -3533,7 +3533,7 @@
           {
             "id": 14,
             "speaker": "narrator",
-            "text": "From bridge to bridge, discussing other matters\nthat my story has no need to tell,\nwe walked along and reached the summit's edge,\nthen stopped to peer into another chasm\nof Malebolge and hear its useless wails—\nand I saw darkness there beyond all measure.\nLike the Arsenal of Venice in winter,\nwhere sticky pitch boils constantly\nto caulk the leaking ships that cannot sail—\ninstead, one builds a vessel new,\nanother patches ribs of ships\nthat have weathered countless voyages,\none hammers at the bow, one at the stern,\nthis man makes oars, that one twists rope,\nanother mends the mainsail and the jib—\nso here below, not heated by flame\nbut by divine art, a thick pitch boiled,\ncoating the banks on every side.\nI saw it all, but could make out nothing\nexcept the bubbles that the boiling raised,\nthe whole surface swelling up and sinking back.\nWhile I stood staring fixedly below,\nmy guide cried out:",
+            "text": "From bridge to bridge, discussing other matters\nthat my Comedy has no need to tell,\nwe walked along and reached the summit's edge,\nthen stopped to peer into another chasm\nof Malebolge and hear its useless wails—\nand I saw darkness there beyond all measure.\nLike the Arsenal of Venice in winter,\nwhere sticky pitch boils constantly\nto caulk the leaking ships that cannot sail—\ninstead, one builds a vessel new,\nanother patches ribs of ships\nthat have weathered countless voyages,\none hammers at the bow, one at the stern,\nthis man makes oars, that one twists rope,\nanother mends the mainsail and the jib—\nso here below, not heated by flame\nbut by divine art, a thick pitch boiled,\ncoating the banks on every side.\nI saw it all, but could make out nothing\nexcept the bubbles that the boiling raised,\nthe whole surface swelling up and sinking back.\nWhile I stood staring fixedly below,\nmy guide cried out:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -3805,7 +3805,7 @@
       "22": {
         "number": 22,
         "title": "Canto XXII",
-        "subtitle": "Ciampolo, Friar Gomita, and Michael Zanche. The Malabranche quarrel.",
+        "subtitle": "Ciampolo, Friar Gomita, and Michael Zanche. The Malebranche quarrel.",
         "totalSegments": 33,
         "segments": [
           {
@@ -3818,9 +3818,9 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "I've seen cavalry charge across Arezzo's fields when foragers advance,\nseen tournaments clash and jousts thunder past,\nsometimes with trumpets blazing, sometimes with church bells ringing,\nwith war drums beating and castle horns calling,\nwith familiar banners and foreign standards flying—\nbut never have I witnessed such grotesque music\nas the bagpipe blast that set these horsemen moving,\nthese foot soldiers marching, this ship sailing\nwithout compass of land or star to guide it.\nWe walked alongside our ten demon escorts.\nWhat savage company! Yet we must take\nsaints in the church and gluttons in the tavern—\neach fits their proper place.\nMy attention fixed entirely on the pitch,\ndesperate to understand this pouch of hell\nand study every soul who burned within it.\nLike dolphins arching their backs above the waves\nto warn sailors their vessel is in danger,\noccasionally one of the sinners would surface,\nshowing his back to ease his pain a moment\nbefore vanishing faster than lightning strikes.\nAnd like frogs squatting at a ditch's edge\nwith only their snouts breaking the water's surface,\nhiding their legs and bodies underneath,\nthese sinners crouched on every side of the pit.\nBut whenever Barbariccia approached,\nthey dove beneath the boiling tar.\nI saw—and my heart still shudders at the memory—\none soul lingering as it always happens:\none frog stays while another plunges down.\nGraffiacane, positioned closest to him,\nhooked the sinner by his pitch-soaked hair\nand hauled him up like a dripping otter.\nI already knew all their names by then,\nhaving watched carefully when they were chosen\nand listened to how they called each other.",
+            "text": "across your land, O Aretines, and foragers setting out,\nseen tournaments clash and jousts thunder past,\nsometimes with trumpets blazing, sometimes with church bells ringing,\nwith war drums beating and castle horns calling,\nwith familiar banners and foreign standards flying—\nbut never have I witnessed such grotesque music\nas the bagpipe blast that set these horsemen moving,\nthese foot soldiers marching, this ship sailing\nwithout compass of land or star to guide it.\nWe walked alongside our ten demon escorts.\nWhat savage company! Yet we must take\nsaints in the church and gluttons in the tavern—\neach fits their proper place.\nMy attention fixed entirely on the pitch,\ndesperate to understand this pouch of hell\nand study every soul who burned within it.\nLike dolphins arching their backs above the waves\nto warn sailors their vessel is in danger,\noccasionally one of the sinners would surface,\nshowing his back to ease his pain a moment\nbefore vanishing faster than lightning strikes.\nAnd like frogs squatting at a ditch's edge\nwith only their snouts breaking the water's surface,\nhiding their legs and bodies underneath,\nthese sinners crouched on every side of the pit.\nBut whenever Barbariccia approached,\nthey dove beneath the boiling tar.\nI saw—and my heart still shudders at the memory—\none soul lingering as it always happens:\none frog stays while another plunges down.\nGraffiacane, positioned closest to him,\nhooked the sinner by his pitch-soaked hair\nand hauled him up like a dripping otter.\nI already knew all their names by then,\nhaving watched carefully when they were chosen\nand listened to how they called each other.",
             "isDialogue": false,
-            "words": 269,
+            "words": 268,
             "estimatedSeconds": 108
           },
           {
@@ -3863,14 +3863,14 @@
           {
             "id": 20,
             "speaker": "narrator",
-            "text": "Ciriatto, whose mouth sprouted tusks\non either side like a wild boar's,\nlet the sinner feel how sharp they were.\nThe mouse had stumbled among vicious cats.\nBut Barbaricchia wrapped him in his arms\nand said,",
+            "text": "Ciriatto, whose mouth sprouted tusks\non either side like a wild boar's,\nlet the sinner feel how sharp they were.\nThe mouse had stumbled among vicious cats.\nBut Barbariccia wrapped him in his arms\nand said,",
             "isDialogue": false,
             "characterName": "narrator"
           },
           {
             "id": 21,
             "speaker": "demons",
-            "text": "\"Stand back while I skewer him properly.\"",
+            "text": "\"Stand back while I hold him fast.\"",
             "isDialogue": true,
             "characterName": "demons"
           },
@@ -4044,7 +4044,7 @@
           {
             "id": 39,
             "speaker": "narrator",
-            "text": "But it did no good—wings cannot outfly fear.\nThe sinner plunged under while the demon\npulled up, beating his chest in frustration.\nLike a duck diving suddenly\nwhen a falcon swoops near,\nand the bird of prey wheels back up, angry and exhausted.\nCalcabrina, furious at being mocked,\nflew close behind, hoping\nthe sinner would escape so he could start a fight.\nWhen the grafter vanished beneath the surface,\nhe turned his talons on his fellow demon\nand grappled with him right above the moat.\nBut Alichino proved a fierce hawk himself,\nclawing back viciously, and both of them\nplummeted into the middle of the boiling pond.\nThe heat separated them instantly,\nbut neither could rise again—\ntheir wings were so clogged with tar.\nBarbaricchia, lamenting with the others,\nordered four demons to fly to the far side\ncarrying all their hooks. Very quickly\nthey descended to posts on both shores,\nstretching their grapples toward the pitch-trapped pair\nwho were already baking in the crust.\nAnd that's how we left them—busy with their work.",
+            "text": "But it did no good—wings cannot outfly fear.\nThe sinner plunged under while the demon\npulled up, beating his chest in frustration.\nLike a duck diving suddenly\nwhen a falcon swoops near,\nand the bird of prey wheels back up, angry and exhausted.\nCalcabrina, furious at being mocked,\nflew close behind, hoping\nthe sinner would escape so he could start a fight.\nWhen the grafter vanished beneath the surface,\nhe turned his talons on his fellow demon\nand grappled with him right above the moat.\nBut Alichino proved a fierce hawk himself,\nclawing back viciously, and both of them\nplummeted into the middle of the boiling pond.\nThe heat separated them instantly,\nbut neither could rise again—\ntheir wings were so clogged with tar.\nBarbariccia, lamenting with the others,\nordered four demons to fly to the far side\ncarrying all their hooks. Very quickly\nthey descended to posts on both shores,\nstretching their grapples toward the pitch-trapped pair\nwho were already baking in the crust.\nAnd that's how we left them—busy with their work.",
             "isDialogue": false,
             "characterName": "narrator"
           }
@@ -4059,14 +4059,14 @@
           {
             "id": 15,
             "speaker": "narrator",
-            "text": "Silent, alone, without companions,\nwe walked single file—\none ahead, the other following behind,\nlike Franciscan friars on their way.\n\nThe present fight brought to mind\none of Aesop's fables,\nthe one about the frog and the mouse.\nThe words \"now\" and \"then\" aren't more alike\nthan that story is to our situation,\nif you compare how both begin and end.\n\nAnd as one thought leads to another,\nthis comparison sparked a new idea\nthat doubled my fear.\nI thought to myself: \"Because of us,\nthese demons have been mocked and humiliated,\nso badly injured and insulted\nthat it must really anger them.\nIf you add rage to their natural malice,\nthey'll chase us down more ruthlessly\nthan a dog attacking the rabbit it catches.\"\n\nI could already feel my hair\nstanding on end with terror.\nI kept looking back as I said,\n\"Master, unless you hide us both\nright now, I'm afraid of the Malebranche.\nThey're behind us—\nI can imagine them so clearly\nI can almost feel them coming.\"\n\nAnd he replied:",
+            "text": "Silent, alone, without companions,\nwe walked single file—\none ahead, the other following behind,\nlike Franciscan friars on their way.\n\nThe present fight brought to mind\none of Aesop's fables,\nthe one about the frog and the mouse.\nTwo words that both mean \"now\" aren't more alike\nthan that story is to our situation,\nif you compare how both begin and end.\n\nAnd as one thought leads to another,\nthis comparison sparked a new idea\nthat doubled my fear.\nI thought to myself: \"Because of us,\nthese demons have been mocked and humiliated,\nso badly injured and insulted\nthat it must really anger them.\nIf you add rage to their natural malice,\nthey'll chase us down more ruthlessly\nthan a dog attacking the rabbit it catches.\"\n\nI could already feel my hair\nstanding on end with terror.\nI kept looking back as I said,\n\"Master, unless you hide us both\nright now, I'm afraid of the Malebranche.\nThey're behind us—\nI can imagine them so clearly\nI can almost feel them coming.\"\n\nAnd he replied:",
             "isDialogue": false,
             "characterName": "narrator"
           },
           {
             "id": 16,
             "speaker": "virgil",
-            "text": "\"Even if I were made\nof polished glass,\nI couldn't reflect your appearance\nfaster than I sense your inner thoughts.\nYour thoughts just merged with mine—\nthey have the same urgency, the same concern.",
+            "text": "\"Even if I were made\nof leaded glass,\nI couldn't reflect your appearance\nfaster than I sense your inner thoughts.\nYour thoughts just merged with mine—\nthey have the same urgency, the same concern.",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -4088,7 +4088,7 @@
           {
             "id": 18,
             "speaker": "narrator",
-            "text": "He had barely finished voicing this idea\nwhen I saw them coming with outstretched wings,\nnot far away, intent on seizing us.\nMy guide suddenly swept me up,\nlike a mother wakened by crackling flames\nwho sees the fire blazing near her child—\nshe grabs her son and flees without stopping,\ncaring more for him than herself,\nnot even pausing to throw on more than her slip.\nDown from the ridge of that hard bank\nhe threw himself backward onto the hanging rock\nthat walls one side of the neighboring ditch.\nWater never ran so swiftly through a millrace\nto turn the wheel of a riverside mill\nwhen it rushes closest to the paddles\nas my master raced down that slope,\ncarrying me against his chest—\nnot like a companion, but like his own son.\nHis feet had barely touched the bottom\nwhen the demons reached the ridge above us,\nbut he felt no fear.\nHigh Providence, which made them guardians\nof the fifth ditch, strips from all of them\nthe power to leave their post.\nBelow we found a painted people\nwho walked with slow, weary steps,\nweeping, looking exhausted and defeated.\nThey wore cloaks with hoods pulled low\nover their eyes, cut in the same style\nas the monks' robes made in Cologne.\nOn the outside, they gleamed with gold that dazzled,\nbut inside they were all lead, so heavy\nthat Frederick's straw cloaks were featherweight by comparison.\nWhat an eternally exhausting garment!\nWe turned again, always to the left,\nwalking alongside them, listening to their sad laments.\nBut because of the weight, that weary crowd\nmoved so slowly that with every step\nwe found ourselves with new companions.\nSo I said to my leader: \"Try to find\nsomeone who might be known by deed or name—\nkeep your eyes moving as we walk.\"\nAnd one who recognized my Tuscan speech\ncalled out from behind:",
+            "text": "He had barely finished voicing this idea\nwhen I saw them coming with outstretched wings,\nnot far away, intent on seizing us.\nMy guide suddenly swept me up,\nlike a mother wakened by crackling flames\nwho sees the fire blazing near her child—\nshe grabs her son and flees without stopping,\ncaring more for him than herself,\nnot even pausing to throw on more than her slip.\nDown from the ridge of that hard bank\nhe threw himself backward onto the hanging rock\nthat walls one side of the neighboring ditch.\nWater never ran so swiftly through a millrace\nto turn the wheel of a riverside mill\nwhen it rushes closest to the paddles\nas my master raced down that slope,\ncarrying me against his chest—\nnot like a companion, but like his own son.\nHis feet had barely touched the bottom\nwhen the demons reached the ridge above us,\nbut he felt no fear.\nHigh Providence, which made them guardians\nof the fifth ditch, strips from all of them\nthe power to leave their post.\nBelow we found a painted people\nwho walked with slow, weary steps,\nweeping, looking exhausted and defeated.\nThey wore cloaks with hoods pulled low\nover their eyes, cut in the same style\nas the monks' robes made at Cluny.\nOn the outside, they gleamed with gold that dazzled,\nbut inside they were all lead, so heavy\nthat Frederick's straw cloaks were featherweight by comparison.\nWhat an eternally exhausting garment!\nWe turned again, always to the left,\nwalking alongside them, listening to their sad laments.\nBut because of the weight, that weary crowd\nmoved so slowly that with every step\nwe found ourselves with new companions.\nSo I said to my leader: \"Try to find\nsomeone who might be known by deed or name—\nkeep your eyes moving as we walk.\"\nAnd one who recognized my Tuscan speech\ncalled out from behind:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -4333,7 +4333,7 @@
           {
             "id": 13,
             "speaker": "narrator",
-            "text": "We climbed down from the bridge at its far end,\nwhere it connects to the eighth embankment,\nand then the chasm revealed itself to me.\nI saw within it a terrible swarm\nof serpents of such monstrous variety\nthat the memory still freezes my blood.\nLet Libya boast no more of her desert sands.\nThough she breeds Chelydri, Jaculi, and Phareans,\nCenchri and Amphisbaenas,\nnever has she displayed so many venoms,\nso malignant, not with all Ethiopia\nnor whatever lands border the Red Sea.\nThrough this cruel and wretched multitude\npeople ran naked and terrified,\nwith no hope of hiding place or protective stone.\nTheir hands were bound behind them with serpents\nthat thrust their heads and tails through at the loins,\ncoiling in knots across their chests.\nAnd look! At one soul on our side of the pit\na serpent darted forth and pierced him\nright where the neck joins the shoulders.\nNever was 'O' or 'I' written so quickly\nas he caught fire and burned,\nfalling as he was utterly reduced to ash.\nWhen he was destroyed there on the ground,\nthe ashes gathered themselves together\nand instantly reformed into his shape.\nJust so the great scholars tell us\nthe phoenix dies and is born again\nas it approaches its five-hundredth year.\nIn life it feeds on no grass or grain,\nbut only on tears of incense and amomum,\nand nard and myrrh become its funeral shroud.\nLike someone who falls but doesn't know how—\nwhether by demonic force dragging him earthward\nor some other affliction that binds mortals—\nwho rises and looks around himself,\ncompletely bewildered by the great anguish\nhe has endured, and sighs as he stares:\nsuch was that sinner after he stood up.\nO justice of God! How severe you are\nto rain down such vengeful blows!\nMy Guide then asked who he was,\nand he replied:",
+            "text": "We climbed down from the bridge at its far end,\nwhere it connects to the eighth embankment,\nand then the chasm revealed itself to me.\nI saw within it a terrible swarm\nof serpents of such monstrous variety\nthat the memory still freezes my blood.\nLet Libya boast no more of her desert sands.\nThough she breeds Chelydri, Jaculi, and Phareans,\nCenchri and Amphisbaenas,\nnever has she displayed so many venoms,\nso malignant, not with all Ethiopia\nnor whatever lands border the Red Sea.\nThrough this cruel and wretched multitude\npeople ran naked and terrified,\nwith no hope of a hiding place or a heliotrope.\nTheir hands were bound behind them with serpents\nthat thrust their heads and tails through at the loins,\ncoiling in knots across their chests.\nAnd look! At one soul on our side of the pit\na serpent darted forth and pierced him\nright where the neck joins the shoulders.\nNever was 'O' or 'I' written so quickly\nas he caught fire and burned,\nfalling as he was utterly reduced to ash.\nWhen he was destroyed there on the ground,\nthe ashes gathered themselves together\nand instantly reformed into his shape.\nJust so the great scholars tell us\nthe phoenix dies and is born again\nas it approaches its five-hundredth year.\nIn life it feeds on no grass or grain,\nbut only on tears of incense and amomum,\nand nard and myrrh become its funeral shroud.\nLike someone who falls but doesn't know how—\nwhether by demonic force dragging him earthward\nor some other affliction that binds mortals—\nwho rises and looks around himself,\ncompletely bewildered by the great anguish\nhe has endured, and sighs as he stares:\nsuch was that sinner after he stood up.\nO justice of God! How severe you are\nto rain down such vengeful blows!\nMy Guide then asked who he was,\nand he replied:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -4454,7 +4454,7 @@
           {
             "id": 17,
             "speaker": "narrator",
-            "text": "The two heads had already become one\nwhen we saw two forms blending\ninto a single face where both were lost.\nFour arms became two,\nthighs and legs, chest and belly\nmerged into limbs never seen before.\nEvery original feature was erased.\nThe twisted image appeared\nas two and yet neither, departing slowly.\nJust as a lizard darts across the road\nunder the blazing summer sun,\nquick as lightning between the hedges—\nso appeared a small fiery serpent,\nblack and livid as a peppercorn,\nracing toward the bellies of the other two.\nIt struck one of them in that place\nwhere we first receive our nourishment,\nthen fell stretched out before him.\nThe pierced man stared but said nothing,\nstanding motionless, yawning\nas if overcome by sleep or fever.\nHe gazed at the serpent, it at him.\nOne through the wound, the other through its mouth,\nthey smoked violently, the vapors mingling.\nLet Lucan fall silent when he tells\nof wretched Sabellus and Nassidius—\nwait to hear what I witnessed.\nLet Ovid be quiet about Cadmus and Arethusa.\nThough he transformed one into snake, one into fountain,\nI don't envy him—he never transmuted\ntwo natures face to face, both forms\nready to exchange their very matter.\nThey responded to each other perfectly:\nthe serpent split its tail into a fork\nwhile the wounded man drew his feet together.\nHis legs and thighs fused so completely\nthat soon no trace of the seam remained visible.\nThe cleft tail took on the shape\nthe other was losing, its skin growing soft\nwhile the man's hardened.\nI watched arms shrink into armpits\nwhile the reptile's short feet lengthened\nexactly as much as the man's contracted.\nThe serpent's hind feet twisted together,\nbecoming the organ that men conceal,\nwhile from his own the wretch sprouted two legs.\nAs smoke veiled them both,\ncoloring them with new hues,\ngrowing hair on one, stripping it from the other,\none rose up while the other fell down—\nthough neither turned away their evil eyes\nbeneath which each changed his face.\nThe standing figure drew his features toward his temples,\nand from excess matter gathering there,\nears emerged from his smooth cheeks.\nWhat didn't flow backward but remained\nformed his nose, and thickened his lips\nto their proper size.\nThe prostrate one thrust his face forward,\npulling his ears back into his skull\nlike a snail retracting its horns.\nHis tongue, once whole and fit for speech,\nsplit in two, while the other's forked tongue\njoined together. The smoke cleared.\nThe soul transformed into a reptile\nfled hissing down the valley\nwhile the other sputtered after him.\nThen the new man turned his fresh shoulders\nand called to the third:",
+            "text": "The two heads had already become one\nwhen we saw two forms blending\ninto a single face where both were lost.\nFour arms became two,\nthighs and legs, chest and belly\nmerged into limbs never seen before.\nEvery original feature was erased.\nThe twisted image appeared\nas two and yet neither, departing slowly.\nJust as a lizard darts across the road\nunder the blazing summer sun,\nquick as lightning between the hedges—\nso appeared a small fiery serpent,\nblack and livid as a peppercorn,\nracing toward the bellies of the other two.\nIt struck one of them in that place\nwhere we first receive our nourishment,\nthen fell stretched out before him.\nThe pierced man stared but said nothing,\nstanding motionless, yawning\nas if overcome by sleep or fever.\nHe gazed at the serpent, it at him.\nOne through the wound, the other through its mouth,\nthey smoked violently, the vapors mingling.\nLet Lucan fall silent when he tells\nof wretched Sabellus and Nassidius—\nwait to hear what I witnessed.\nLet Ovid be quiet about Cadmus and Arethusa.\nThough he transformed one into snake, one into fountain,\nI don't envy him—he never transmuted\ntwo natures face to face, both forms\nready to exchange their very matter.\nThey responded to each other perfectly:\nthe serpent split its tail into a fork\nwhile the wounded man drew his feet together.\nHis legs and thighs fused so completely\nthat soon no trace of the seam remained visible.\nThe cleft tail took on the shape\nthe other was losing, its skin growing soft\nwhile the man's hardened.\nI watched arms shrink into armpits\nwhile the reptile's short feet lengthened\nexactly as much as the man's contracted.\nThe serpent's hind feet twisted together,\nbecoming the organ that men conceal,\nwhile from his own the wretch sprouted two legs.\nAs smoke veiled them both,\ncoloring them with new hues,\ngrowing hair on one, stripping it from the other,\none rose up while the other fell down—\nthough neither turned away their evil eyes\nbeneath which each changed his face.\nThe standing figure drew his features toward his temples,\nand from excess matter gathering there,\nears emerged from his smooth cheeks.\nWhat didn't flow backward but remained\nformed his nose, and thickened his lips\nto their proper size.\nThe prostrate one thrust his face forward,\npulling his ears back into his skull\nlike a snail retracting its horns.\nHis tongue, once whole and fit for speech,\nsplit in two, while the other's forked tongue\njoined together. The smoke cleared.\nThe soul transformed into a reptile\nfled hissing down the valley\nwhile the other, speaking, spat after him.\nThen the new man turned his fresh shoulders\nand called to the third:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -4477,7 +4477,7 @@
       "26": {
         "number": 26,
         "title": "Canto XXVI",
-        "subtitle": "The Eighth Bolgia: Evil Counsellors. Ulysses and Diomed. Ulysses' Last Voyage. Rejoice,",
+        "subtitle": "The Eighth Bolgia: Evil Counsellors. Ulysses and Diomed. Ulysses' Last Voyage.",
         "totalSegments": 13,
         "segments": [
           {
@@ -4571,17 +4571,17 @@
           {
             "id": 11,
             "speaker": "ulysses",
-            "text": "After I left Circe, who kept me\nmore than a year near Gaeta\nbefore Aeneas gave it that name,\nneither tenderness for my son,\nnor duty to my aging father,\nnor the love I owed Penelope\nthat should have made her glad\ncould conquer the burning in me\nto experience the world\nand learn of human vice and virtue.\nI set out on the deep open sea\nwith just one ship and that small crew\nwho had never abandoned me.\nI saw both shores as far as Spain,\nas far as Morocco, and Sardinia,\nand all the other islands that sea bathes.\nMy men and I were old and slow\nwhen we reached that narrow strait\nwhere Hercules set up his pillars\nto warn that no man should go farther.\nOn my right I left Seville behind,\non my left I had already passed Ceuta.\n'Brothers,' I said, 'who through a hundred thousand\ndangers have reached the West,\ndon't deny yourselves the knowledge—\nfollowing the sun into the world without people—\nthat remains to this brief vigil\nof our senses that is left to us.\nConsider what you came from:\nyou weren't made to live like animals,\nbut to pursue virtue and knowledge.'\nI made my companions so eager\nwith this short speech\nthat I could hardly have held them back.\nTurning our stern toward the dawn,\nwe made wings of our oars\nfor that mad flight,\nalways gaining on the left side.\nNight already saw all the stars\nof the southern pole,\nand ours hung so low\nit never rose above the ocean floor.\nFive times the light beneath the moon\nhad been rekindled and quenched again\nsince we entered the deep pass,\nwhen a mountain appeared to us,\ndistant and dark,\nhigher than any I had ever seen.\nWe rejoiced, but joy quickly turned to grief,\nfor from that new land a whirlwind rose\nand struck our ship's bow.\nThree times it spun us around\nwith all the waters.\nOn the fourth, it lifted our stern high\nand plunged our prow down deep,\nas Someone willed,\nuntil the sea closed over us again.",
+            "text": "After I left Circe, who kept me\nmore than a year near Gaeta\nbefore Aeneas gave it that name,\nneither tenderness for my son,\nnor duty to my aging father,\nnor the love I owed Penelope\nthat should have made her glad\ncould conquer the burning in me\nto experience the world\nand learn of human vice and virtue.\nI set out on the deep open sea\nwith just one ship and that small crew\nwho had never abandoned me.\nI saw both shores as far as Spain,\nas far as Morocco, and Sardinia,\nand all the other islands that sea bathes.\nMy men and I were old and slow\nwhen we reached that narrow strait\nwhere Hercules set up his pillars\nto warn that no man should go farther.\nOn my right I left Seville behind,\non my left I had already passed Ceuta.\n'Brothers,' I said, 'who through a hundred thousand\ndangers have reached the West,\ndon't deny yourselves the knowledge—\nfollowing the sun into the world without people—\nthat remains to this brief vigil\nof our senses that is left to us.\nConsider what you came from:\nyou weren't made to live like animals,\nbut to pursue virtue and knowledge.'\nI made my companions so eager\nwith this short speech\nthat I could hardly have held them back.\nTurning our stern toward the dawn,\nwe made wings of our oars\nfor that mad flight,\nalways gaining on the left side.\nNight already saw all the stars\nof the southern pole,\nand ours hung so low\nit never rose above the surface of the sea.\nFive times the light beneath the moon\nhad been rekindled and quenched again\nsince we entered the deep pass,\nwhen a mountain appeared to us,\ndistant and dark,\nhigher than any I had ever seen.\nWe rejoiced, but joy quickly turned to grief,\nfor from that new land a whirlwind rose\nand struck our ship's bow.\nThree times it spun us around\nwith all the waters.\nOn the fourth, it lifted our stern high\nand plunged our prow down deep,\nas Someone willed,\nuntil the sea closed over us again.",
             "isDialogue": true,
-            "words": 355,
-            "estimatedSeconds": 142
+            "words": 357,
+            "estimatedSeconds": 143
           }
         ]
       },
       "27": {
         "number": 27,
         "title": "Canto XXVII",
-        "subtitle": "Guido da Montefeltro. His deception by Pope Boniface VIII. Already was the flame erect and quiet, To speak no more, and",
+        "subtitle": "Guido da Montefeltro. His deception by Pope Boniface VIII.",
         "totalSegments": 10,
         "segments": [
           {
@@ -4594,7 +4594,7 @@
           {
             "id": 7,
             "speaker": "narrator",
-            "text": "With the gentle Poet's permission, we had moved away from the previous soul\nwhen another flame behind it caught our attention,\ndrawing our eyes to its tip\nwhere a confused sound was emerging.\nLike the Sicilian bull—that first bellowed\nwith the cries of its creator,\nthe man who shaped it with his tools—\nso this flame roared with the voice of the damned.\nThough made of brass, that ancient torture device\nseemed pierced through with agony.\nHere too, having no other way or opening\nto escape the fire at first,\nthe sorrowful words were converted into the flame's own language.\nBut once they found their path\nup through the tip, giving it the same vibration\nthe tongue had given them as they passed out,\nwe heard it say:",
+            "text": "and was already leaving us with the gentle Poet's permission,\nwhen another flame behind it caught our attention,\ndrawing our eyes to its tip\nwhere a confused sound was emerging.\nLike the Sicilian bull—that first bellowed\nwith the cries of its creator,\nthe man who shaped it with his tools—\nso this flame roared with the voice of the damned.\nThough made of brass, that ancient torture device\nseemed pierced through with agony.\nHere too, having no other way or opening\nto escape the fire at first,\nthe sorrowful words were converted into the flame's own language.\nBut once they found their path\nup through the tip, giving it the same vibration\nthe tongue had given them as they passed out,\nwe heard it say:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -4663,7 +4663,7 @@
       "28": {
         "number": 28,
         "title": "Canto XXVIII",
-        "subtitle": "The Ninth Bolgia: Schismatics. Mahomet and Ali. Pier da Medicina, Curio, Mosca, and Bertrand de Born. Who ever could, e'en with untrammelled words, Tell of the blood and of the wounds",
+        "subtitle": "The Ninth Bolgia: Schismatics. Mahomet and Ali. Pier da Medicina, Curio, Mosca, and Bertrand de Born.",
         "totalSegments": 16,
         "segments": [
           {
@@ -4676,10 +4676,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "How could I ever tell in full what I witnessed there,\neven by telling it a thousand times over?\nEvery tongue would surely fail,\nour speech and memory too small\nto hold such vastness.\nIf all the people who once shed their blood\non Puglia's cursed ground could be gathered—\nthose who died under Roman swords\nand in that endless war\nthat left such piles of rings as spoils,\nas Livy recorded without error,\nalong with those who suffered agonizing wounds\nfighting against Robert Guiscard,\nand all the rest whose bones still lie\nat Ceperano, where every Apulian turned traitor,\nand at Tagliacozzo, where old Alardo won without weapons—\nif one showed a limb pierced through, another lopped off,\nit would be nothing compared\nto the disgusting horrors of the ninth pit.\nNever was a wine cask so completely shattered\nby losing its center plank or side board\nas I saw one soul split open\nfrom chin down to where he breaks wind.\nHis entrails hung between his legs,\nhis heart visible, and that wretched sack\nthat turns what we eat into excrement.\nWhile I stared at him in complete absorption,\nhe looked at me and with his hands\ntore open his chest, saying:",
+            "text": "that I witnessed there in full,\neven by telling it a thousand times over?\nEvery tongue would surely fail,\nour speech and memory too small\nto hold such vastness.\nIf all the people who once shed their blood\non Puglia's cursed ground could be gathered—\nthose who died under Trojan swords\nand in that endless war\nthat left such piles of rings as spoils,\nas Livy recorded without error,\nalong with those who suffered agonizing wounds\nfighting against Robert Guiscard,\nand all the rest whose bones still lie\nat Ceperano, where every Apulian turned traitor,\nand at Tagliacozzo, where old Alardo won without weapons—\nif one showed a limb pierced through, another lopped off,\nit would be nothing compared\nto the disgusting horrors of the ninth pit.\nNever was a wine cask so completely shattered\nby losing its center plank or side board\nas I saw one soul split open\nfrom chin down to where he breaks wind.\nHis entrails hung between his legs,\nhis heart visible, and that wretched sack\nthat turns what we eat into excrement.\nWhile I stared at him in complete absorption,\nhe looked at me and with his hands\ntore open his chest, saying:",
             "isDialogue": false,
-            "words": 204,
-            "estimatedSeconds": 82
+            "words": 199,
+            "estimatedSeconds": 80
           },
           {
             "id": 3,
@@ -4758,7 +4758,7 @@
           {
             "id": 17,
             "speaker": "mosca",
-            "text": "\"Remember Mosca too,\nwho said—alas!—'What's done is done!'\nThat phrase was poisonous seed for the Tuscan people.\"",
+            "text": "\"Remember Mosca too,\nwho said—alas!—'A thing done is done with!'\nThat phrase was poisonous seed for the Tuscan people.\"",
             "isDialogue": true,
             "characterName": "mosca"
           },
@@ -4987,7 +4987,7 @@
       "30": {
         "number": 30,
         "title": "Canto XXX",
-        "subtitle": "Other Falsifiers or Forgers. Gianni Schicchi, Myrrha, Adam of Brescia, Potiphar's Wife, and Sinon of Troy. 'Twas at",
+        "subtitle": "Other Falsifiers or Forgers. Gianni Schicchi, Myrrha, Adam of Brescia, Potiphar's Wife, and Sinon of Troy.",
         "totalSegments": 35,
         "segments": [
           {
@@ -5036,7 +5036,7 @@
           {
             "id": 21,
             "speaker": "griffolino",
-            "text": "\"That's the ancient spirit\nof wicked Myrrha, who became\nher father's lover, beyond all natural love.\nShe came to sin with him\nby taking another woman's form—\njust as the one running there\ncounterfeited Buoso Donati himself\nto gain the lady of the inheritance,\ndrawing up a will in proper legal form.\"",
+            "text": "\"That's the ancient spirit\nof wicked Myrrha, who became\nher father's lover, beyond all natural love.\nShe came to sin with him\nby taking another woman's form—\njust as the one running there\ncounterfeited Buoso Donati himself\nto gain the lady of the herd,\ndrawing up a will in proper legal form.\"",
             "isDialogue": true,
             "characterName": "griffolino"
           },
@@ -5254,7 +5254,7 @@
           {
             "id": 10,
             "speaker": "narrator",
-            "text": "The same tongue that wounded me first,\nstaining both my cheeks with shame,\nthen offered its own cure—\njust as Achilles' spear, his father's before him,\nwas known to wound first, then heal.\nWe turned our backs on that wretched valley,\nclimbing the bank that circles it,\ncrossing without a word.\nThe light was neither night nor day,\nso I could barely see ahead,\nbut I heard the blast of a horn so loud\nit would have drowned out thunder itself.\nFollowing that tremendous sound,\nI turned my eyes toward its source.\nAfter that crushing defeat\nwhen Charlemagne lost his holy war,\nnot even Roland's horn rang out so terribly.\nI had barely turned my head\nwhen I seemed to see many tall towers rising,\nand I asked: \"Master, what city is this?\"\nHe answered:",
+            "text": "The same tongue that wounded me first,\nstaining both my cheeks with shame,\nthen offered its own cure—\njust as Achilles' spear, his father's before him,\nwas known to wound first, then heal.\nWe turned our backs on that wretched valley,\nclimbing the bank that circles it,\ncrossing without a word.\nThe light was neither night nor day,\nso I could barely see ahead,\nbut I heard the blast of a horn so loud\nit would have drowned out thunder itself.\nFollowing that tremendous sound,\nI turned my eyes toward its source.\nAfter that crushing defeat\nwhen Charlemagne lost his holy company,\nnot even Roland's horn rang out so terribly.\nI had barely turned my head\nwhen I seemed to see many tall towers rising,\nand I asked: \"Master, what city is this?\"\nHe answered:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -5283,7 +5283,7 @@
           {
             "id": 3,
             "speaker": "narrator",
-            "text": "Like fog gradually lifting\nto reveal what mist had hidden,\nas we pushed through the thick, dark air\nand drew closer to the edge,\nmy error fled and fear took hold—\nfor just as Montereggione crowns itself\nwith towers along its circular walls,\nso the horrible giants, whom Jove still threatens\nwith thunder from the heavens,\nrose like battlements around this well,\ntowering from the waist up.\nI could already make out one giant's face,\nshoulders, chest, and most of his belly,\nand both arms hanging at his sides.\nNature did well indeed\nwhen she stopped making creatures like these,\ntaking such weapons away from Mars.\nAnd while she doesn't regret\nmaking elephants and whales,\nanyone who looks carefully\nwill find her more just and wise for this—\nfor when sharp intelligence\njoins with evil will and power,\nno defense can protect humanity.\nHis face seemed as long and broad\nas the bronze pinecone at Saint Peter's in Rome,\nand his other features matched that scale.\nThe rim of the pit, like an apron\ncovering him from the waist down,\nstill left so much visible above\nthat three tall men standing on each other's shoulders\ncouldn't have reached his hair—\nI could see thirty handspans of him\nabove where a man would wear his belt.",
+            "text": "Like fog gradually lifting\nto reveal what mist had hidden,\nas we pushed through the thick, dark air\nand drew closer to the edge,\nmy error fled and fear took hold—\nfor just as Montereggione crowns itself\nwith towers along its circular walls,\nso the horrible giants, whom Jove still threatens\nwith thunder from the heavens,\nrose like battlements around this well,\ntowering from the waist up.\nI could already make out one giant's face,\nshoulders, chest, and most of his belly,\nand both arms hanging at his sides.\nNature did well indeed\nwhen she stopped making creatures like these,\ntaking such weapons away from Mars.\nAnd while she doesn't regret\nmaking elephants and whales,\nanyone who looks carefully\nwill find her more just and wise for this—\nfor when sharp intelligence\njoins with evil will and power,\nno defense can protect humanity.\nHis face seemed as long and broad\nas the bronze pinecone at Saint Peter's in Rome,\nand his other features matched that scale.\nThe rim of the pit, like an apron\ncovering him from the waist down,\nstill left so much visible above\nthat three tall Frisians standing on each other's shoulders\ncouldn't have reached his hair—\nI could see thirty handspans of him\nabove where a man would wear his belt.",
             "isDialogue": false,
             "words": 215,
             "estimatedSeconds": 86
@@ -5421,7 +5421,7 @@
           {
             "id": 21,
             "speaker": "souls",
-            "text": "\"Watch where you step!\nBe careful not to trample with your feet\nthe heads of these exhausted, wretched souls.\"",
+            "text": "\"Watch where you step!\nBe careful not to trample with your feet\nthe heads of these weary, wretched brothers.\"",
             "isDialogue": true,
             "characterName": "souls"
           },
@@ -5443,7 +5443,7 @@
           {
             "id": 3,
             "speaker": "narrator",
-            "text": "They craned their necks toward me,\nand when they lifted up their faces,\ntheir eyes, which had been merely damp,\noverflowed, and the frost immediately\nfroze their tears and sealed them shut again.\nNo clamp ever joined wood to wood so firmly—\nand like two rams they butted heads together,\novercome by rage.\nOne soul who had lost both ears to the cold\nbut kept his face turned down, said:",
+            "text": "They craned their necks toward me,\nand when they lifted up their faces,\ntheir eyes, which had been merely damp,\noverflowed, and the frost immediately\nfroze their tears and sealed them shut again.\nNo clamp ever joined wood to wood so firmly—\nand like two he-goats they butted heads together,\novercome by rage.\nOne soul who had lost both ears to the cold\nbut kept his face turned down, said:",
             "isDialogue": false,
             "words": 70,
             "estimatedSeconds": 28
@@ -5606,14 +5606,14 @@
           {
             "id": 14,
             "speaker": "ugolino",
-            "text": "\"You want me to renew\nthis desperate grief that crushes my heart\njust to think of it, before I even speak.\nBut if my words can plant seeds\nthat will bear fruit of infamy\nfor this traitor I gnaw upon,\nyou'll see me speak and weep together.\nI don't know who you are, or how\nyou've come down to this place,\nbut you sound truly Florentine when you speak.\nKnow that I was Count Ugolino,\nand this is Archbishop Ruggieri.\nNow I'll tell you why I am his neighbor here.\nHow, through his malicious scheming,\nI trusted him and was made prisoner,\nthen put to death—this needs no telling.\nBut what you could not have heard,\nhow cruel my death was,\nyou shall hear, and know if he has wronged me.\nA narrow opening in that prison\nwhich bears my name—the Tower of Famine—\nand where others must still be locked away,\nhad already shown me many moons\nthrough its slit, when I dreamed the evil dream\nthat tore away the veil of the future.\nThis one appeared as lord and master,\nhunting the wolf and her cubs on the mountain\nthat blocks the Pisans' view of Lucca.\nWith hounds lean, eager, and well-trained—\nGualandi with Sismondi and Lanfranchi—\nhe had sent before him to the front.\nAfter a brief chase, the father and sons\nseemed to me exhausted, and I saw\nsharp fangs ripping open their flanks.\nWhen I awoke before dawn,\nI heard my sons, who were there with me,\nmoaning in their sleep and crying for bread.\nYou are cruel indeed if you don't grieve now,\nthinking what my heart foresaw—\nand if you don't weep at this, what moves you to tears?\nThey woke, and the hour approached\nwhen food was usually brought to us,\nand each was troubled by his dream.\nThen I heard them lock the door below\nof that horrible tower, and without a word\nI stared into my sons' faces.\nI did not weep—I had turned to stone within.\nThey wept, and my dear little Anselm said:\n'Father, you stare so—what's wrong?'\nStill I shed no tear and gave no answer\nall that day, nor the following night,\nuntil another sun rose on the world.\nWhen a thin ray of light\nentered that prison of sorrow, and I saw\nmy own expression reflected in four faces,\nI bit both my hands in anguish.\nAnd they, thinking I did it from hunger,\nsuddenly rose up and said:\n'Father, it would cause us much less pain\nif you ate of us instead—you clothed us\nwith this wretched flesh, now strip it away.'\nI calmed myself then, not to sadden them more.\nThat day and the next, we all stayed silent.\nCruel earth! Why didn't you open up?\nWhen the fourth day came, Gaddo\nthrew himself down at my feet,\nsaying, 'Father, why don't you help me?'\nAnd there he died. Just as you see me now,\nI watched the other three fall one by one\nbetween the fifth and sixth days.\nThen I, already blind, began\ngroping over each of them,\nand for three days called their names after they were dead.\nThen hunger accomplished what grief could not.\"",
+            "text": "\"You want me to renew\nthis desperate grief that crushes my heart\njust to think of it, before I even speak.\nBut if my words can plant seeds\nthat will bear fruit of infamy\nfor this traitor I gnaw upon,\nyou'll see me speak and weep together.\nI don't know who you are, or how\nyou've come down to this place,\nbut you sound truly Florentine when you speak.\nKnow that I was Count Ugolino,\nand this is Archbishop Ruggieri.\nNow I'll tell you why I am his neighbor here.\nHow, through his malicious scheming,\nI trusted him and was made prisoner,\nthen put to death—this needs no telling.\nBut what you could not have heard,\nhow cruel my death was,\nyou shall hear, and know if he has wronged me.\nA narrow opening in that prison\nwhich because of me is called the Tower of Famine,\nand where others must still be locked away,\nhad already shown me many moons\nthrough its slit, when I dreamed the evil dream\nthat tore away the veil of the future.\nThis one appeared as lord and master,\nhunting the wolf and his cubs on the mountain\nthat blocks the Pisans' view of Lucca.\nWith hounds lean, eager, and well-trained—\nGualandi with Sismondi and Lanfranchi—\nhe had sent before him to the front.\nAfter a brief chase, the father and sons\nseemed to me exhausted, and I saw\nsharp fangs ripping open their flanks.\nWhen I awoke before dawn,\nI heard my sons, who were there with me,\nmoaning in their sleep and crying for bread.\nYou are cruel indeed if you don't grieve now,\nthinking what my heart foresaw—\nand if you don't weep at this, what moves you to tears?\nThey woke, and the hour approached\nwhen food was usually brought to us,\nand each was troubled by his dream.\nThen I heard them nail shut the door below\nof that horrible tower, and without a word\nI stared into my sons' faces.\nI did not weep—I had turned to stone within.\nThey wept, and my dear little Anselm said:\n'Father, you stare so—what's wrong?'\nStill I shed no tear and gave no answer\nall that day, nor the following night,\nuntil another sun rose on the world.\nWhen a thin ray of light\nentered that prison of sorrow, and I saw\nmy own expression reflected in four faces,\nI bit both my hands in anguish.\nAnd they, thinking I did it from hunger,\nsuddenly rose up and said:\n'Father, it would cause us much less pain\nif you ate of us instead—you clothed us\nwith this wretched flesh, now strip it away.'\nI calmed myself then, not to sadden them more.\nThat day and the next, we all stayed silent.\nCruel earth! Why didn't you open up?\nWhen the fourth day came, Gaddo\nthrew himself down at my feet,\nsaying, 'Father, why don't you help me?'\nAnd there he died. Just as you see me now,\nI watched the other three fall one by one\nbetween the fifth and sixth days.\nThen I, already blind, began\ngroping over each of them,\nand for two days called their names after they were dead.\nThen hunger accomplished what grief could not.\"",
             "isDialogue": true,
             "characterName": "ugolino"
           },
           {
             "id": 15,
             "speaker": "narrator",
-            "text": "When he finished speaking, his eyes twisted,\nhe seized that wretched skull again with his teeth,\nwhich were strong as a dog's upon the bone.\nAh, Pisa! You shame of all the peoples\nof that fair land where 'si' is spoken—\nsince your neighbors are slow to punish you,\nlet Capraia and Gorgona drift\nand dam the mouth of the Arno\nso every person in you drowns!\nFor even if Count Ugolino was known\nfor betraying your fortresses,\nyou should not have put his sons on such a cross.\nTheir youth made Uguccione and Brigata innocent,\nand the other two my song names above,\nyou modern Thebes!\nWe moved on farther, where the ice\nroughly encases another group of people,\nnot facing downward but completely upside down.\nWeeping itself prevents them from weeping here,\nand grief that finds the eyes blocked\nturns inward to increase the anguish,\nbecause the first tears form a cluster\nand, like a crystal visor,\nfill the whole socket beneath the brow.\nAnd though all feeling had abandoned\nits post in my face because of the cold,\nas if it were callused, still it seemed\nI felt some wind stirring.",
+            "text": "When he finished speaking, his eyes twisted,\nhe seized that wretched skull again with his teeth,\nwhich were strong as a dog's upon the bone.\nAh, Pisa! You shame of all the peoples\nof that fair land where 'si' is spoken—\nsince your neighbors are slow to punish you,\nlet Capraia and Gorgona drift\nand dam the mouth of the Arno\nso every person in you drowns!\nFor even if Count Ugolino was known\nfor betraying your fortresses,\nyou should not have put his sons on such a cross.\nTheir youth made Uguccione and Brigata innocent,\nand the other two my song names above,\nyou modern Thebes!\nWe moved on farther, where the ice\nroughly encases another group of people,\nnot facing downward but thrown flat on their backs.\nWeeping itself prevents them from weeping here,\nand grief that finds the eyes blocked\nturns inward to increase the anguish,\nbecause the first tears form a cluster\nand, like a crystal visor,\nfill the whole socket beneath the brow.\nAnd though all feeling had abandoned\nits post in my face because of the cold,\nas if it were callused, still it seemed\nI felt some wind stirring.",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -5727,7 +5727,7 @@
           {
             "id": 12,
             "speaker": "virgil",
-            "text": "\"The banners of the King of Hell advance\ntoward us—so look ahead,\"",
+            "text": "\"The banners of the King of Hell advance\ntoward us.",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -5848,7 +5848,7 @@
           {
             "id": 27,
             "speaker": "virgil",
-            "text": "\"stand on your feet.\nThe way is long and the road difficult,\nand already the sun returns to mid-morning.",
+            "text": "\"stand on your feet.\nThe way is long and the road difficult,\nand the sun is already halfway to mid-morning.",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -5896,16 +5896,16 @@
       "1": {
         "number": 1,
         "title": "Canto I",
-        "subtitle": "The Shores of Purgatory. The Four Stars. Cato of Utica. The Rush. To run",
+        "subtitle": "The Shores of Purgatory. The Four Stars. Cato of Utica. The Rush.",
         "totalSegments": 10,
         "segments": [
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "Now the small vessel of my spirit hoists its sails\nover calmer waters, leaving behind\nthat cruel sea of suffering.\nI will sing of that second realm\nwhere human souls purge themselves clean\nand become worthy of heaven's ascent.\nLet poetry rise from the dead here,\nsacred Muses, for I am yours—\nand you, Calliope, lift up my song\nwith that divine music\nwhich once struck down the boastful daughters\nof Pierus, crushing their hope of pardon.\nThe sweet color of oriental sapphire\ngathered in the serene face\nof pure air, clear to the horizon,\nbrought joy flooding back to my eyes\nas soon as I emerged from that dead atmosphere\nwhich had filled my heart and sight with grief.\nVenus, that beautiful planet that kindles love,\nmade the whole eastern sky laugh with light,\nveiling the constellation Pisces in her train.\nI turned to my right and fixed my attention\non the southern pole, where I saw four stars\nnever glimpsed except by the first humans.\nThe heavens seemed to rejoice in their flames.\nO northern hemisphere, you widowed region,\nhow deprived you are, unable to see these lights!\nWhen I turned away from gazing at them,\nshifting slightly toward the other pole\nwhere the Great Bear had already vanished,\nI saw beside me a solitary old man\nwhose appearance commanded such reverence\nthat no son could owe a father more.\nHis beard was long, streaked with white hair\nthat mirrored the locks flowing\nin twin streams down his chest.\nThe rays of those four sacred stars\nilluminated his face with such radiance\nthat I saw him as clearly as if the sun shone on him.",
+            "text": "Now the small vessel of my spirit hoists its sails\nover calmer waters, leaving behind\nthat cruel sea of suffering.\nI will sing of that second realm\nwhere human souls purge themselves clean\nand become worthy of heaven's ascent.\nLet poetry rise from the dead here,\nsacred Muses, for I am yours—\nand you, Calliope, lift up my song\nwith that divine music\nwhich once struck the wretched magpies so hard\nthat they gave up all hope of pardon.\nThe sweet color of oriental sapphire\ngathered in the serene face\nof pure air, clear to the horizon,\nbrought joy flooding back to my eyes\nas soon as I emerged from that dead atmosphere\nwhich had filled my heart and sight with grief.\nVenus, that beautiful planet that kindles love,\nmade the whole eastern sky laugh with light,\nveiling the constellation Pisces in her train.\nI turned to my right and fixed my attention\non the southern pole, where I saw four stars\nnever glimpsed except by the first humans.\nThe heavens seemed to rejoice in their flames.\nO northern hemisphere, you widowed region,\nhow deprived you are, unable to see these lights!\nWhen I turned away from gazing at them,\nshifting slightly toward the other pole\nwhere the Great Bear had already vanished,\nI saw beside me a solitary old man\nwhose appearance commanded such reverence\nthat no son could owe a father more.\nHis beard was long, streaked with white hair\nthat mirrored the locks flowing\nin twin streams down his chest.\nThe rays of those four sacred stars\nilluminated his face with such radiance\nthat I saw him as clearly as if the sun shone on him.",
             "isDialogue": false,
-            "words": 277,
-            "estimatedSeconds": 111
+            "words": 279,
+            "estimatedSeconds": 112
           },
           {
             "id": 8,
@@ -5924,7 +5924,7 @@
           {
             "id": 10,
             "speaker": "cato",
-            "text": "\"who have fled the eternal prison\nagainst the current of that blind river?\nAre the laws of the abyss broken?\nHas some new decree been passed in heaven\nthat allows the damned to reach my shores?",
+            "text": "\"who have fled the eternal prison\nagainst the current of that blind river?\nWho guided you? What served as your lamp\nto bring you out of the deep night\nthat keeps the valley of hell forever black?\nAre the laws of the abyss broken?\nHas some new decree been passed in heaven\nthat allows the damned to reach my shores?",
             "isDialogue": true,
             "characterName": "cato"
           },
@@ -5977,16 +5977,16 @@
       "2": {
         "number": 2,
         "title": "Canto II",
-        "subtitle": "The Celestial Pilot. Casella. The Departure. Already had the sun the horizon reached Whose circle of meridian covers",
+        "subtitle": "The Celestial Pilot. Casella. The Departure.",
         "totalSegments": 17,
         "segments": [
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "Dawn was breaking over Jerusalem's highest peak,\nwhile on the opposite side of the earth,\nnight emerged from the Ganges bearing the Scales\nthat slip from her hands when she grows too heavy with darkness.\nHere where I stood, beautiful Aurora's white and crimson cheeks\nwere deepening to orange with the advancing day.\nWe lingered still at the ocean's edge\nlike travelers lost in thought about their journey—\nhearts ready to move forward, bodies rooted in place.\nThen suddenly—as Mars burns fiery red\nthrough morning's thick vapors,\nlow in the western sky above the sea—\nI saw a light racing across the water,\nmoving faster than any bird could fly.\nMay I see it again!\nI turned away briefly to question my guide,\nbut when I looked back, the light had grown\nbrighter and larger. White shapes appeared\non either side of it, and slowly\nanother whiteness emerged beneath.\nMy master said nothing\nuntil that first whiteness unfolded into wings.\nThen, recognizing the pilot, he cried out:",
+            "text": "The sun had reached the horizon whose meridian crowns Jerusalem,\nwhile on the opposite side of the earth,\nnight emerged from the Ganges bearing the Scales\nthat slip from her hands when she grows too heavy with darkness.\nHere where I stood, beautiful Aurora's white and crimson cheeks\nwere deepening to orange with the advancing day.\nWe lingered still at the ocean's edge\nlike travelers lost in thought about their journey—\nhearts ready to move forward, bodies rooted in place.\nThen suddenly—as Mars burns fiery red\nthrough morning's thick vapors,\nlow in the western sky above the sea—\nI saw a light racing across the water,\nmoving faster than any bird could fly.\nMay I see it again!\nI turned away briefly to question my guide,\nbut when I looked back, the light had grown\nbrighter and larger. White shapes appeared\non either side of it, and slowly\nanother whiteness emerged beneath.\nMy master said nothing\nuntil that first whiteness unfolded into wings.\nThen, recognizing the pilot, he cried out:",
             "isDialogue": false,
-            "words": 167,
-            "estimatedSeconds": 67
+            "words": 170,
+            "estimatedSeconds": 68
           },
           {
             "id": 3,
@@ -6114,7 +6114,7 @@
       "3": {
         "number": 3,
         "title": "Canto III",
-        "subtitle": "Discourse on the Limits of Reason. The Foot of the Mountain. Those who died",
+        "subtitle": "Discourse on the Limits of Reason. The Foot of the Mountain. Those who died in Contumacy of Holy Church. Manfredi.",
         "totalSegments": 24,
         "segments": [
           {
@@ -6142,7 +6142,7 @@
           {
             "id": 19,
             "speaker": "virgil",
-            "text": "\"Don't you believe I'm with you? That I guide you?\nWhere my body lies buried, evening has already fallen—\ntaken from Brindisi, now resting in Naples.\nIf I cast no shadow before me,\ndon't marvel at this any more\nthan you wonder at the heavens,\nwhere one ray doesn't prevent another\nfrom passing through.\nBodies like mine, designed\nto suffer both burning cold and searing heat—\nthis Power provides them, willing\nthat how it works remain hidden from us.\nMad is the one who hopes our reason\ncan traverse that infinite path\nwhich One Substance in Three Persons follows.\nYou mortals must be content with knowing that it is—\nfor if you could have seen everything,\nMary would not have needed to give birth.\nYou've watched the fruitless longing\nof those whose desire should have been fulfilled,\nbut which instead becomes their eternal grief.\nI speak of Aristotle and Plato,\nand many others—",
+            "text": "\"Don't you believe I'm with you? That I guide you?\nIt is already evening where the body that gave me a shadow lies buried—\ntaken from Brindisi, now resting in Naples.\nIf I cast no shadow before me,\ndon't marvel at this any more\nthan you wonder at the heavens,\nwhere one ray doesn't prevent another\nfrom passing through.\nBodies like mine, designed\nto suffer both burning cold and searing heat—\nthis Power provides them, willing\nthat how it works remain hidden from us.\nMad is the one who hopes our reason\ncan traverse that infinite path\nwhich One Substance in Three Persons follows.\nYou mortals must be content with knowing that it is—\nfor if you could have seen everything,\nMary would not have needed to give birth.\nYou've watched the fruitless longing\nof those whose desire should have been fulfilled,\nbut which instead becomes their eternal grief.\nI speak of Aristotle and Plato,\nand many others—",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -6311,10 +6311,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "One soul ignites another within us.\nAnd so, whenever we hear or see something\nthat holds our soul in rapt attention,\ntime slips away unnoticed,\nbecause one faculty listens\nwhile another keeps the soul complete—\none bound, the other free.\nI experienced this truth firsthand\nas I listened and gazed at that spirit.\nThe sun had climbed fifty full degrees\nwithout my knowing, when we reached\nthe place where those souls cried out\nin unison: \"Here is what you seek.\"\nA farmer plugs a greater gap in his hedge\nwith just a small forkful of thorns\nwhen grapes are turning brown\nthan the narrow passage we found—\none through which only my guide ascended\nwith me following behind,\nafter that company left us.\nYou can climb to San Leo, descend to Noli,\nscale the peak of Bismantova\nwith feet alone—but here you must fly\non swift wings, with feathers\nof great desire, following him\nwho gave me hope and became my light.\nWe climbed through fractured rock,\nborders pressing in on both sides,\nthe ground beneath demanding\nboth hands and feet.\nWhen we reached the upper rim\nof that high bank, out on the open slope,\nI said, \"Master, which way do we go?\"",
+            "text": "that one soul is kindled above another within us.\nAnd so, whenever we hear or see something\nthat holds our soul in rapt attention,\ntime slips away unnoticed,\nbecause one faculty listens\nwhile another keeps the soul complete—\none bound, the other free.\nI experienced this truth firsthand\nas I listened and gazed at that spirit.\nThe sun had climbed fifty full degrees\nwithout my knowing, when we reached\nthe place where those souls cried out\nin unison: \"Here is what you seek.\"\nA farmer plugs a greater gap in his hedge\nwith just a small forkful of thorns\nwhen grapes are turning brown\nthan the narrow passage we found—\none through which only my guide ascended\nwith me following behind,\nafter that company left us.\nYou can climb to San Leo, descend to Noli,\nscale the peak of Bismantova\nwith feet alone—but here you must fly\non swift wings, with feathers\nof great desire, following him\nwho gave me hope and became my light.\nWe climbed through fractured rock,\nborders pressing in on both sides,\nthe ground beneath demanding\nboth hands and feet.\nWhen we reached the upper rim\nof that high bank, out on the open slope,\nI said, \"Master, which way do we go?\"",
             "isDialogue": false,
-            "words": 204,
-            "estimatedSeconds": 82
+            "words": 207,
+            "estimatedSeconds": 83
           },
           {
             "id": 3,
@@ -6327,9 +6327,9 @@
           {
             "id": 4,
             "speaker": "narrator",
-            "text": "The summit towered beyond sight,\nthe hillside steeper by far\nthan a line from center to edge of a circle.\nExhausted, I began: \"Sweet father,\nturn and see how I'm left alone\nunless you wait for me!\"",
+            "text": "The summit towered beyond sight,\nthe hillside steeper by far\nthan a line drawn from mid-quadrant to the center.\nExhausted, I began: \"Sweet father,\nturn and see how I'm left alone\nunless you wait for me!\"",
             "isDialogue": false,
-            "words": 37,
+            "words": 36,
             "estimatedSeconds": 15
           },
           {
@@ -6351,7 +6351,7 @@
           {
             "id": 20,
             "speaker": "virgil",
-            "text": "If Castor and Pollux traveled\nwith that mirror up there\nthat conducts its light up and down,\nyou would see the jagged wheel of the zodiac\nrevolving even closer to the Bears,\nunless it strayed from its ancient path.\nTo understand how this can be,\nimagine Zion and this mountain\nstanding together on earth\nso they share one horizon\nbut different hemispheres.\nThen you'll see how the road\nthat Phaeton tragically failed to drive\nmust necessarily pass\non one side when the other passes opposite,\nif your mind grasps this clearly.",
+            "text": "If Castor and Pollux traveled\nwith that mirror up there\nthat conducts its light up and down,\nyou would see the glowing red zodiac\nrevolving even closer to the Bears,\nunless it strayed from its ancient path.\nTo understand how this can be,\nimagine Zion and this mountain\nstanding together on earth\nso they share one horizon\nbut different hemispheres.\nThen you'll see how the road\nthat Phaeton tragically failed to drive\nmust necessarily pass\non one side when the other passes opposite,\nif your mind grasps this clearly.",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -6526,7 +6526,7 @@
           {
             "id": 20,
             "speaker": "narrator",
-            "text": "What could I answer except \"I'm coming\"?\nI said it with that flush of color\nthat sometimes makes a person worthy of forgiveness.\nMeanwhile, a little ahead of us on the mountainside,\npeople approached singing the *Miserere* verse by verse.\nWhen they noticed I cast no shadow,\nthat sunlight couldn't pass through my body,\ntheir song changed to a long, hoarse \"Oh!\"\nTwo of them, like messengers,\nran toward us and asked:",
+            "text": "What could I answer except \"I'm coming\"?\nI said it with that flush of color\nthat sometimes makes a person worthy of forgiveness.\nMeanwhile, a little ahead of us on the mountainside,\npeople approached singing the *Miserere* verse by verse.\nWhen they noticed that I cast a shadow,\nthat sunlight couldn't pass through my body,\ntheir song changed to a long, hoarse \"Oh!\"\nTwo of them, like messengers,\nran toward us and asked:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -6675,7 +6675,7 @@
       "6": {
         "number": 6,
         "title": "Canto VI",
-        "subtitle": "Dante's Inquiry on Prayers for the Dead. Sordello. Italy. Whene'er is broken up the game of Zara, He who has lost remains behind despondent, The throws repeating, and",
+        "subtitle": "Dante's Inquiry on Prayers for the Dead. Sordello. Italy.",
         "totalSegments": 11,
         "segments": [
           {
@@ -6688,7 +6688,7 @@
           {
             "id": 9,
             "speaker": "narrator",
-            "text": "I was like a man leaving a crowded gathering—\none person approaches from the front, another tugs at him from behind,\nsomeone else calls out from the side to be remembered.\nHe doesn't stop, listening to this one and that one,\nno longer mobbed once he extends his hand in acknowledgment,\ndefending himself from the pressing throng.\nThat's how I moved through that dense multitude,\nturning my face this way and that toward them,\nmaking promises until I freed myself from their midst.\nThere was the man from Arezzo, killed by the savage hands\nof Ghin di Tacco, and another who drowned\nwhile fleeing in pursuit of vengeance.\nFrederick Novello stretched out his hands in supplication,\nand there was that Pisan whose death\nmade good Marzucco appear so strong in his forgiveness.\nI saw Count Orso, and a soul torn from its body—\nas it declared—not by any crime committed,\nbut by hatred and envy: Pierre de la Brosse.\nLet the Lady of Brabant take warning while still on earth,\nso she won't join an even worse flock when she dies.\nOnce I had broken free from all those shades\nwho only prayed that others might pray for them,\nhoping to speed their path to sanctity,\nI began: \"My guiding light, it seems you deny explicitly\nin one of your texts that prayer can bend Heaven's decree.\nYet these people pray for exactly that.\nIs their hope then meaningless?\nOr am I misunderstanding what you wrote?\"\nHe answered:",
+            "text": "while the whole crowd goes off with the winner—\none person approaches from the front, another tugs at him from behind,\nsomeone else calls out from the side to be remembered.\nHe doesn't stop, listening to this one and that one,\nno longer mobbed once he extends his hand in acknowledgment,\ndefending himself from the pressing throng.\nThat's how I moved through that dense multitude,\nturning my face this way and that toward them,\nmaking promises until I freed myself from their midst.\nThere was the man from Arezzo, killed by the savage hands\nof Ghin di Tacco, and another who drowned\nwhile running in the chase.\nFrederick Novello stretched out his hands in supplication,\nand there was that Pisan whose death\nmade good Marzucco appear so strong in his forgiveness.\nI saw Count Orso, and a soul torn from its body—\nas it declared—not by any crime committed,\nbut by hatred and envy: Pierre de la Brosse.\nLet the Lady of Brabant take warning while still on earth,\nso she won't join an even worse flock when she dies.\nOnce I had broken free from all those shades\nwho only prayed that others might pray for them,\nhoping to speed their path to sanctity,\nI began: \"My guiding light, it seems you deny explicitly\nin one of your texts that prayer can bend Heaven's decree.\nYet these people pray for exactly that.\nIs their hope then meaningless?\nOr am I misunderstanding what you wrote?\"\nHe answered:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -6724,7 +6724,7 @@
           {
             "id": 13,
             "speaker": "narrator",
-            "text": "We approached it. O Lombard soul,\nhow proud and disdainful you held yourself,\nnoble and slow in the movement of your eyes!\nIt said nothing to us at all,\nbut let us pass while studying us\nlike a lion lying in wait.\nVirgil drew near anyway, asking\nthat it point out the best way up.\nIt didn't answer his request,\nbut questioned us about our homeland and our lives.\nMy sweet guide began: \"Mantua—\"\nand the shade, absorbed in itself until then,\nrose toward him from where it had been sitting,\nsaying:",
+            "text": "We approached it. O Lombard soul,\nhow proud and disdainful you held yourself,\nnoble and slow in the movement of your eyes!\nIt said nothing to us at all,\nbut let us pass while studying us\nlike a lion when it rests.\nVirgil drew near anyway, asking\nthat it point out the best way up.\nIt didn't answer his request,\nbut questioned us about our homeland and our lives.\nMy sweet guide began: \"Mantua—\"\nand the shade, absorbed in itself until then,\nrose toward him from where it had been sitting,\nsaying:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -6788,15 +6788,15 @@
           },
           {
             "id": 17,
-            "speaker": "virgil",
-            "text": "not having faith.\"",
+            "speaker": "narrator",
+            "text": "This was how my guide answered.",
             "isDialogue": true,
             "characterName": "virgil"
           },
           {
             "id": 18,
             "speaker": "dante",
-            "text": "This was how my guide answered.\nLike someone who suddenly sees something that amazes him,\nwho believes and yet doesn't believe, saying \"It is! It isn't!\"—\nthat's how he appeared. Then he bowed his head\nand with humility returned to us,\nembracing him where inferiors embrace superiors.",
+            "text": "Like someone who suddenly sees something that amazes him,\nwho believes and yet doesn't believe, saying \"It is! It isn't!\"—\nthat's how he appeared. Then he bowed his head\nand with humility returned to him,\nembracing him where inferiors embrace superiors.",
             "isDialogue": true,
             "characterName": "dante"
           },
@@ -6939,17 +6939,17 @@
           {
             "id": 13,
             "speaker": "sordello",
-            "text": "don't ask me to take you down among them.\nFrom this ledge you'll better make out\nthe faces and actions of them all\nthan if you were received among them on the plain below.\nHe who sits highest and looks like someone\nwho neglected what he should have done,\nwho doesn't move his lips to the others' song—\nthat was Emperor Rudolf, who had the power\nto heal the wounds that have killed Italy,\nso that now she revives slowly through others.\nThe other one, who seems to comfort him,\nruled the land where the waters rise\nthat the Moldau carries to the Elbe, and the Elbe to the sea.\nHis name was Ottocar, and in swaddling clothes\nhe was far better than his bearded son Wenceslaus,\nwho feeds on luxury and idleness.\nAnd that small-nosed one, who appears in close council\nwith him of such kindly aspect,\ndied fleeing and deflowering the lily.\nLook there—see how he beats his breast!\nSee the other one, who has made a bed\nof his own palm for his cheek, sighing.\nThey are father and father-in-law to France's plague,\nand they know his vicious and dissolute life—\nfrom this comes the grief that pierces them so.\nHe who looks so robust and joins his voice,\nsinging with that one with the manly nose,\nwore the belt of every virtue.\nAnd if the young man sitting behind him\nhad remained king after him,\nthe virtue would have passed from vessel to vessel—\nwhich cannot be said of the other heirs.\nJames and Frederick possess the kingdoms,\nbut neither possesses the better inheritance.\nRarely does human worth rise through the branches—\nand He wills this, who gives it,\nso that we may ask it of Him.\nMy words reach the large-nosed one no less\nthan the other, Peter, who sings with him,\nfor which Provence and Apulia already grieve.\nThe plant is as inferior to its seed\nas Constance still boasts of her husband\nmore than Beatrice and Margaret can.\nSee the king of the simple life,\nHenry of England, sitting there alone—\nhe has better issue in his branches.\nHe who sits lowest on the ground among them,\nlooking upward, is Marquis William,\nfor whose sake Alessandria and her war\nmake Montferrat and Canavese weep.",
+            "text": "don't ask me to take you down among them.\nFrom this ledge you'll better make out\nthe faces and actions of them all\nthan if you were received among them on the plain below.\nHe who sits highest and looks like someone\nwho neglected what he should have done,\nwho doesn't move his lips to the others' song—\nthat was Emperor Rudolf, who had the power\nto heal the wounds that have killed Italy,\nso that another's help will come too late to revive her.\nThe other one, who seems to comfort him,\nruled the land where the waters rise\nthat the Moldau carries to the Elbe, and the Elbe to the sea.\nHis name was Ottocar, and in swaddling clothes\nhe was far better than his bearded son Wenceslaus,\nwho feeds on luxury and idleness.\nAnd that small-nosed one, who appears in close council\nwith him of such kindly aspect,\ndied fleeing and deflowering the lily.\nLook there—see how he beats his breast!\nSee the other one, who has made a bed\nof his own palm for his cheek, sighing.\nThey are father and father-in-law to France's plague,\nand they know his vicious and dissolute life—\nfrom this comes the grief that pierces them so.\nHe who looks so robust and joins his voice,\nsinging with that one with the manly nose,\nwore the belt of every virtue.\nAnd if the young man sitting behind him\nhad remained king after him,\nthe virtue would have passed from vessel to vessel—\nwhich cannot be said of the other heirs.\nJames and Frederick possess the kingdoms,\nbut neither possesses the better inheritance.\nRarely does human worth rise through the branches—\nand He wills this, who gives it,\nso that we may ask it of Him.\nMy words reach the large-nosed one no less\nthan the other, Peter, who sings with him,\nfor which Provence and Apulia already grieve.\nThe plant is as inferior to its seed\nas Constance still boasts of her husband\nmore than Beatrice and Margaret can.\nSee the king of the simple life,\nHenry of England, sitting there alone—\nhe has better issue in his branches.\nHe who sits lowest on the ground among them,\nlooking upward, is Marquis William,\nfor whose sake Alessandria and her war\nmake Montferrat and Canavese weep.",
             "isDialogue": true,
-            "words": 381,
-            "estimatedSeconds": 153
+            "words": 384,
+            "estimatedSeconds": 154
           }
         ]
       },
       "8": {
         "number": 8,
         "title": "Canto VIII",
-        "subtitle": "The Guardian Angels and the Serpent. Nino di Gal- lura. The Three Stars. Currado Malaspina. 'Twas",
+        "subtitle": "The Guardian Angels and the Serpent. Nino di Gallura. The Three Stars. Currado Malaspina.",
         "totalSegments": 25,
         "segments": [
           {
@@ -7134,16 +7134,16 @@
       "9": {
         "number": 9,
         "title": "Canto IX",
-        "subtitle": "Dante's Dream of the Eagle. The Gate of Purgatory and the Angel. Seven P's. The Keys. The concubine of old Tithonus",
+        "subtitle": "Dante's Dream of the Eagle. The Gate of Purgatory and the Angel. Seven P's. The Keys.",
         "totalSegments": 25,
         "segments": [
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "Dawn gleamed white on the eastern horizon,\nemerging from the arms of her sweet lover.\nHer forehead blazed with gems arranged\nin the shape of that cold constellation,\nthe Scorpion that strikes nations with its tail.\nNight had already climbed two of the steps\nby which she ascends, and now the third\nwas folding down its wings,\nwhen I, carrying something of Adam within me,\nconquered by sleep, stretched out upon the grass\nwhere all five of us had been sitting.\nJust at the hour when the little swallow\nbegins her mournful song near morning,\nperhaps remembering her ancient sorrows,\nand when the human mind, wandering\nfurther from flesh and less imprisoned by thought,\nbecomes almost prophetic in its visions—\nin dreams I seemed to see an eagle\nsuspended in the sky, with golden feathers,\nwings spread wide, poised to dive.\nThis was the place, it seemed to me,\nwhere Ganymede was abandoned by his people\nwhen he was swept up to the high assembly.\nI thought to myself: perhaps this eagle strikes\nonly here out of habit, and disdains elsewhere\nto carry anyone up in its talons.\nThen, wheeling somewhat more, it seemed to me\nterrible as lightning, it descended\nand snatched me upward even to the sphere of fire.\nThere it seemed that both he and I were burning,\nand the imagined flames scorched me so intensely\nthat my sleep shattered of necessity.\nNot otherwise did Achilles startle awake,\nturning his awakened eyes around him,\nnot knowing where he was,\nwhen his mother secretly carried him\nsleeping in her arms from Chiron to Scyros,\nfrom where the Greeks later retrieved him—\nso I started up when sleep fled from my face,\nand I grew pale as one who freezes with terror.\nOnly my Guide was at my side,\nthe sun was more than two hours high,\nand my face was turned toward the sea.",
+            "text": "The concubine of old Tithonus gleamed white in the east,\nemerging from the arms of her sweet lover.\nHer forehead blazed with gems arranged\nin the shape of that cold constellation,\nthe Scorpion that strikes nations with its tail.\nNight had already climbed two of the steps\nby which she ascends, and now the third\nwas folding down its wings,\nwhen I, carrying something of Adam within me,\nconquered by sleep, stretched out upon the grass\nwhere all five of us had been sitting.\nJust at the hour when the little swallow\nbegins her mournful song near morning,\nperhaps remembering her ancient sorrows,\nand when the human mind, wandering\nfurther from flesh and less imprisoned by thought,\nbecomes almost prophetic in its visions—\nin dreams I seemed to see an eagle\nsuspended in the sky, with golden feathers,\nwings spread wide, poised to dive.\nThis was the place, it seemed to me,\nwhere Ganymede was abandoned by his people\nwhen he was swept up to the high assembly.\nI thought to myself: perhaps this eagle strikes\nonly here out of habit, and disdains elsewhere\nto carry anyone up in its talons.\nThen, wheeling somewhat more, it seemed to me\nterrible as lightning, it descended\nand snatched me upward even to the sphere of fire.\nThere it seemed that both he and I were burning,\nand the imagined flames scorched me so intensely\nthat my sleep shattered of necessity.\nNot otherwise did Achilles startle awake,\nturning his awakened eyes around him,\nnot knowing where he was,\nwhen his mother secretly carried him\nsleeping in her arms from Chiron to Scyros,\nfrom where the Greeks later retrieved him—\nso I started up when sleep fled from my face,\nand I grew pale as one who freezes with terror.\nOnly my Guide was at my side,\nthe sun was more than two hours high,\nand my face was turned toward the sea.",
             "isDialogue": false,
-            "words": 316,
-            "estimatedSeconds": 127
+            "words": 319,
+            "estimatedSeconds": 128
           },
           {
             "id": 16,
@@ -7331,7 +7331,7 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "When we crossed the threshold of that gate\nwhich souls misuse through their corrupted love—\nmaking the crooked path appear straight—\nI heard it echo shut behind us.\nHad I looked back upon it then,\nwhat excuse could justify my failure?\nWe climbed upward through a fractured rock\nthat rolled and shifted side to side\nlike waves advancing and retreating.",
+            "text": "When we crossed the threshold of that gate\nwhich souls leave unused through their corrupted love—\nmaking the crooked path appear straight—\nI heard it echo shut behind us.\nHad I looked back upon it then,\nwhat excuse could justify my failure?\nWe climbed upward through a fractured rock\nthat twisted from side to side\nlike waves advancing and retreating.",
             "isDialogue": false,
             "words": 60,
             "estimatedSeconds": 24
@@ -7360,9 +7360,9 @@
           {
             "id": 3,
             "speaker": "narrator",
-            "text": "This made our steps so infrequent\nthat the moon's waning disc\nhad found its resting place and set again\nbefore we emerged from that needle's eye.\nBut when we stood free in the open air,\nwhere the mountain rises steeply back upon itself,\nI was exhausted, and both uncertain\nof our way. We stopped upon a plain\nmore desolate than desert roads.\nFrom its edge that borders on the void\nto the foot of the high bank forever rising,\nthree human bodies laid end to end would measure.\nAs far as my eyes could stretch their flight,\nleft and right along the ledge,\nthis terrace appeared the same to me.\nWe had not yet moved our feet\nwhen I noticed the embankment all around—\nwhich blocked any right of ascent—\nwas made of white marble, adorned\nwith sculptures that would shame\nnot only master artists, but nature herself.\nThe angel who descended to earth\nbearing news of peace\nwept for through many years,\nopening heaven from its long closure,\nappeared before us carved so truthfully\nin such a graceful pose\nthat he seemed no silent image.\nYou would have sworn he was saying \"Hail!\"\nFor she was portrayed there too—\nthe one who turned the key\nto open the highest love.\nHer expression bore these words\nstamped clear as any seal in wax:",
+            "text": "This made our steps so infrequent\nthat the moon's waning disc\nhad found its resting place and set again\nbefore we emerged from that needle's eye.\nBut when we stood free in the open air,\nwhere the mountain rises steeply back upon itself,\nI was exhausted, and both uncertain\nof our way. We stopped upon a plain\nmore desolate than desert roads.\nFrom its edge that borders on the void\nto the foot of the high bank forever rising,\nthree human bodies laid end to end would measure.\nAs far as my eyes could stretch their flight,\nleft and right along the ledge,\nthis terrace appeared the same to me.\nWe had not yet moved our feet\nwhen I noticed the embankment all around—\nwhich blocked any right of ascent—\nwas made of white marble, adorned\nwith sculptures that would shame\nnot only Polyclitus, but nature herself.\nThe angel who descended to earth\nbearing news of peace\nwept for through many years,\nopening heaven from its long closure,\nappeared before us carved so truthfully\nin such a graceful pose\nthat he seemed no silent image.\nYou would have sworn he was saying \"Hail!\"\nFor she was portrayed there too—\nthe one who turned the key\nto open the highest love.\nHer expression bore these words\nstamped clear as any seal in wax:",
             "isDialogue": false,
-            "words": 223,
+            "words": 222,
             "estimatedSeconds": 90
           },
           {
@@ -7491,16 +7491,16 @@
       "11": {
         "number": 11,
         "title": "Canto XI",
-        "subtitle": "The Humble Prayer. Omberto di Santafiore. Oderisi d' Agobbio. Provenzan Salvani. \"Our Father, thou who dwellest",
+        "subtitle": "The Humble Prayer. Omberto di Santafiore. Oderisi d' Agobbio. Provenzan Salvani.",
         "totalSegments": 16,
         "segments": [
           {
             "id": 2,
             "speaker": "oderisi",
-            "text": "In the heavens, not confined by space, but moved by the greater love\nyou bear for the first and highest works of creation,\nlet your name and omnipotence be praised\nby every creature, as it is fitting\nto give thanks for your sweet grace.\nLet the peace of your kingdom come to us,\nfor we cannot reach it by ourselves,\nno matter how hard we strive with all our understanding.\nJust as your Angels make sacrifice of their will to you,\nsinging Hosanna,\nso may all humanity sacrifice theirs.\nGive us this day our daily bread,\nwithout which, in this harsh wilderness,\nwhoever struggles hardest to move forward slides backward.\nAnd just as we forgive each other\nfor the wrongs we have suffered,\nforgive us graciously, and do not consider what we deserve.\nDo not test our virtue, which is easily overcome,\nagainst the ancient Enemy,\nbut deliver us from him who drives it to temptation.\nThis last request, dear Lord,\nwe make not for ourselves, who have no need,\nbut for those we have left behind us.",
+            "text": "Our Father, you who dwell in the heavens,\nnot confined by space, but moved by the greater love\nyou bear for the first and highest works of creation,\nlet your name and omnipotence be praised\nby every creature, as it is fitting\nto give thanks for your sweet grace.\nLet the peace of your kingdom come to us,\nfor we cannot reach it by ourselves,\nno matter how hard we strive with all our understanding.\nJust as your Angels make sacrifice of their will to you,\nsinging Hosanna,\nso may all humanity sacrifice theirs.\nGive us this day our daily manna,\nwithout which, in this harsh wilderness,\nwhoever struggles hardest to move forward slides backward.\nAnd just as we forgive each other\nfor the wrongs we have suffered,\nforgive us graciously, and do not consider what we deserve.\nDo not test our virtue, which is easily overcome,\nagainst the ancient Enemy,\nbut deliver us from him who drives it to temptation.\nThis last request, dear Lord,\nwe make not for ourselves, who have no need,\nbut for those we have left behind us.",
             "isDialogue": true,
-            "words": 178,
-            "estimatedSeconds": 72
+            "words": 183,
+            "estimatedSeconds": 74
           },
           {
             "id": 3,
@@ -7562,7 +7562,7 @@
           {
             "id": 19,
             "speaker": "oderisi",
-            "text": "Brother, the pages smile more brightly\nwhen touched by Franco of Bologna's brush.\nAll the honor is his now, mine only in part.\nI would not have been so generous\nwhile I lived, because of my great desire\nfor excellence, which consumed my heart.\nHere the penalty for such pride is paid.\nI would not even be here, except that\nhaving the power to sin, I turned to God.\nOh, vain glory of human powers—\nhow briefly green remains upon your crown\nunless an age of darkness follows after!\nIn painting, Cimabue thought he ruled the field;\nnow Giotto has the acclaim,\nand the other's fame grows dim.\nOne Guido has taken from the other\nthe glory of our language, and perhaps\nanother is born who will drive them both from the nest.\nThis worldly fame is nothing but a breath\nof wind, blowing now this way, now that,\nchanging its name as it changes direction.\nWhat greater fame will you have\nif you shed your flesh in old age\nthan if you had died before you stopped saying 'papa' and 'mama'—\nbefore a thousand years pass?\nThat span is shorter compared to eternity\nthan the blink of an eye\ncompared to the slowest-turning sphere in heaven.\nThe man who takes such small steps\nahead of me once made all Tuscany ring with his name,\nand now he is barely whispered of in Siena,\nwhere he was lord when Florence's mad rage\nwas overthrown—that pride which was as fierce then\nas it is corrupt today.\nYour reputation is like the color of grass:\nit comes and goes, and the same sun\nthat brings it green from earth\nbleaches it away.",
+            "text": "Brother, the pages smile more brightly\nwhen touched by Franco of Bologna's brush.\nAll the honor is his now, mine only in part.\nI would not have been so generous\nwhile I lived, because of my great desire\nfor excellence, which consumed my heart.\nHere the penalty for such pride is paid.\nI would not even be here, except that\nhaving the power to sin, I turned to God.\nOh, vain glory of human powers—\nhow briefly green remains upon your crown\nunless an age of darkness follows after!\nIn painting, Cimabue thought he ruled the field;\nnow Giotto has the acclaim,\nand the other's fame grows dim.\nOne Guido has taken from the other\nthe glory of our language, and perhaps\nanother is born who will drive them both from the nest.\nThis worldly fame is nothing but a breath\nof wind, blowing now this way, now that,\nchanging its name as it changes direction.\nWhat greater fame will you have\nif you shed your flesh in old age\nthan if you had died before you stopped saying 'pappo' and 'dindi'—\nbefore a thousand years pass?\nThat span is shorter compared to eternity\nthan the blink of an eye\ncompared to the slowest-turning sphere in heaven.\nThe man who takes such small steps\nahead of me once made all Tuscany ring with his name,\nand now he is barely whispered of in Siena,\nwhere he was lord when Florence's mad rage\nwas overthrown—that pride which was as fierce then\nas it is prostituted today.\nYour reputation is like the color of grass:\nit comes and goes, and the same sun\nthat brings it green from earth\nbleaches it away.",
             "isDialogue": true,
             "characterName": "oderisi"
           },
@@ -7614,7 +7614,7 @@
       "12": {
         "number": 12,
         "title": "Canto XII",
-        "subtitle": "The Sculptures on the Pavement. Ascent to the Second Circle. Abreast, like oxen going",
+        "subtitle": "The Sculptures on the Pavement. Ascent to the Second Circle.",
         "totalSegments": 13,
         "segments": [
           {
@@ -7648,7 +7648,7 @@
           {
             "id": 10,
             "speaker": "narrator",
-            "text": "Just as tombs above the buried dead\nbear carved upon them what those souls once were,\nso that we often weep for them anew\nwhen memory's sharp point spurs our compassion—\nso I saw there, but crafted with far greater skill,\nfigures covering whatever path jutted from the mountain.\nI saw him who was created most noble\nof all creatures, falling from heaven\nlike flaming lightning on one side.\nI saw Briareus struck by heaven's dart,\nlying on the other side,\nheavy upon the earth in mortal cold.\nI saw Thymbraeus, Pallas, and Mars,\nstill armed around their father,\ngazing at the giants' scattered limbs.\nI saw Nimrod at the foot of his great work,\nbewildered, looking at the people\nwho had shared his pride in Shinar.\nO Niobe! With what sorrowful eyes\nI saw you traced upon the path,\nbetween your seven sons and seven daughters slain!\nO Saul! How you appeared there, fallen\nlifeless upon your own sword in Gilboa,\nwhich felt no rain or dew thereafter!\nO mad Arachne! So I saw you,\nalready half-spider, grieving\nover the threads you wove in your cursed hour!\nO Rehoboam! Your image there no longer threatens—\nfilled with terror, a chariot carries it away\nthough no one pursues!\nThe adamantine pavement showed how Alcmaeon\nmade that fatal ornament costly\nto his own mother.\nIt showed how Sennacherib's own sons\nthrew themselves upon him in the temple,\nand how they left him dead there.\nIt displayed the ruin and cruel carnage\nTomyris wrought when she told Cyrus,",
+            "text": "Just as tombs above the buried dead\nbear carved upon them what those souls once were,\nso that we often weep for them anew\nwhen memory's sharp point spurs our compassion—\nso I saw there, but crafted with far greater skill,\nfigures covering whatever path jutted from the mountain.\nI saw him who was created most noble\nof all creatures, falling from heaven\nlike flaming lightning on one side.\nI saw Briareus struck by heaven's dart,\nlying on the other side,\nheavy upon the earth in mortal cold.\nI saw Thymbraeus, Pallas, and Mars,\nstill armed around their father,\ngazing at the giants' scattered limbs.\nI saw Nimrod at the foot of his great work,\nbewildered, looking at the people\nwho had shared his pride in Shinar.\nO Niobe! With what sorrowful eyes\nI saw you traced upon the path,\nbetween your seven sons and seven daughters slain!\nO Saul! How you appeared there, fallen\nlifeless upon your own sword in Gilboa,\nwhich felt no rain or dew thereafter!\nO mad Arachne! So I saw you,\nalready half-spider, grieving\nover the threads you wove in your cursed hour!\nO Rehoboam! Your image there no longer threatens—\nfilled with terror, a chariot carries it away\nthough no one pursues!\nThe hard pavement showed how Alcmaeon\nmade that fatal ornament costly\nto his own mother.\nIt showed how Sennacherib's own sons\nthrew themselves upon him in the temple,\nand how they left him dead there.\nIt displayed the ruin and cruel carnage\nTomyris wrought when she told Cyrus,",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -7690,7 +7690,7 @@
           {
             "id": 16,
             "speaker": "narrator",
-            "text": "To this invitation, how few respond!\nO human creatures, born to fly on high,\nwhy do you fall before a little wind?\nHe led us where the rock was split.\nThere he struck my forehead with his wings\nand promised me safe passage.\nAs on the right side of the mountain\nwhere the church sits that rules\nover the well-governed city, above Rubaconte,\nthe bold steepness of the ascent is broken\nby stairs built in that age\nwhen ledger and measuring rod were still safe—\nso the bank that falls sheer\nfrom the second circle here is made gentler,\nthough the high rock still scrapes both sides.\nAs we turned our bodies toward it,\nvoices sang \"Blessed are the poor in spirit\"\nso beautifully that words could not tell it.\nAh, how different these entrances are\nfrom Hell's! Here one enters with hymns,\nbelow with wild laments.\nWe were climbing the sacred stairs now,\nand it seemed far easier to me\nthan it had appeared on the plain below.\nSo I said: \"Master, tell me what heavy thing\nhas been lifted from me, that I hardly\nfeel any fatigue in walking?\"\nHe answered:",
+            "text": "To this invitation, how few respond!\nO human creatures, born to fly on high,\nwhy do you fall before a little wind?\nHe led us where the rock was split.\nThere he struck my forehead with his wings\nand promised me safe passage.\nAs on the right side of the mountain\nwhere the church sits that rules\nover the well-governed city, above Rubaconte,\nthe bold steepness of the ascent is broken\nby stairs built in that age\nwhen ledger and stave were still safe—\nso the bank that falls sheer\nfrom the second circle here is made gentler,\nthough the high rock still scrapes both sides.\nAs we turned our bodies toward it,\nvoices sang \"Blessed are the poor in spirit\"\nso beautifully that words could not tell it.\nAh, how different these entrances are\nfrom Hell's! Here one enters with hymns,\nbelow with wild laments.\nWe were climbing the sacred stairs now,\nand it seemed far easier to me\nthan it had appeared on the plain below.\nSo I said: \"Master, tell me what heavy thing\nhas been lifted from me, that I hardly\nfeel any fatigue in walking?\"\nHe answered:",
             "isDialogue": false,
             "characterName": "narrator"
           },
@@ -7713,15 +7713,15 @@
       "13": {
         "number": 13,
         "title": "Canto XIII",
-        "subtitle": "The Second Circle: The Envious. Sapia of Siena. We were",
+        "subtitle": "The Second Circle: The Envious. Sapia of Siena.",
         "totalSegments": 24,
         "segments": [
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "At the summit of the stairs,\nwhere the mountain is carved away a second time—\nthis mountain that purifies all who climb—\nanother terrace circles the steep slope\nlike the first, but with a sharper curve.\nNo shadows fall here, no carved reliefs appear.\nThe cliff face seems bare, the path smooth,\nonly the stone's gray color visible.",
+            "text": "At the summit of the stairs,\nwhere the mountain is carved away a second time—\nthis mountain that purifies all who climb—\nanother terrace circles the steep slope\nlike the first, but with a sharper curve.\nNo shade is seen here, no carved reliefs appear.\nThe cliff face seems bare, the path smooth,\nonly the stone's livid color visible.",
             "isDialogue": false,
-            "words": 58,
+            "words": 59,
             "estimatedSeconds": 24
           },
           {
@@ -7786,7 +7786,7 @@
           {
             "id": 23,
             "speaker": "virgil",
-            "text": "\"This circle punishes\nthe sin of envy, and for this reason\nthe whips of the scourge are drawn from love.\nThe bridle will sound different—\nI believe you will hear it, as I judge,\nbefore you reach the Gate of Forgiveness.\nBut look straight ahead through the air,\nand you will see people sitting before us,\neach one pressed close against the cliff.\"",
+            "text": "\"This circle punishes\nthe sin of envy, and for this reason\nthe whips of the scourge are drawn from love.\nThe bridle will sound different—\nI believe you will hear it, as I judge,\nbefore you reach the pass of pardon.\nBut look straight ahead through the air,\nand you will see people sitting before us,\neach one pressed close against the cliff.\"",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -7900,7 +7900,7 @@
       "14": {
         "number": 14,
         "title": "Canto XIV",
-        "subtitle": "Guido del Duca and Renier da Calboli. Cities of the Arno Valley. Denunciation of Stubbornness. \"Who is this",
+        "subtitle": "Guido del Duca and Renier da Calboli. Cities of the Arno Valley. Denunciation of Stubbornness.",
         "totalSegments": 18,
         "segments": [
           {
@@ -7914,10 +7914,10 @@
           {
             "id": 2,
             "speaker": "guido_del_duca",
-            "text": "One travels around our mountain while still alive,\nbefore Death has given him wings to fly,\nopening and closing his eyes at will?",
+            "text": "Who is this, traveling around our mountain while still alive,\nbefore Death has given him wings to fly,\nopening and closing his eyes at will?",
             "isDialogue": true,
-            "words": 23,
-            "estimatedSeconds": 10
+            "words": 25,
+            "estimatedSeconds": 11
           },
           {
             "id": 3,
@@ -7991,10 +7991,10 @@
           {
             "id": 10,
             "speaker": "guido_del_duca",
-            "text": "I don't know, but truly\nthe name of such a valley deserves to perish.\nFrom its source in the Alps—where that mountain range\nsplits off Peloro in Sicily\nand surpasses it in few places—\ndown to where it surrenders itself\nto restore what heaven draws up from the sea,\ngiving rivers their flow,\nvirtue is avoided like an enemy by everyone,\nfled from like a serpent,\neither through the cursed nature of the place\nor through evil customs that drive them.\nThe inhabitants of that wretched valley\nhave so transformed their nature\nit's as if Circe had them in her pasture.\nThe river first directs its meager flow\namong filthy swine, more worthy of acorns\nthan food made for human consumption.\nThen, flowing downward, it finds curs—\nmore snarling than their strength warrants—\nand turns its snout away in scorn.\nThe more it falls and grows,\nthe more it finds dogs becoming wolves\nin this cursed and ill-fated ditch.\nDescending through deep ravines,\nit discovers foxes so full of fraud\nthey fear no cunning that might trap them.\nI won't stop speaking because another hears—\nit will serve him well to remember\nwhat a truthful spirit reveals to me.\nI see your descendant becoming\na hunter of those wolves along the banks\nof that savage stream, terrorizing them all.\nHe sells their flesh while they still live,\nthen slaughters them like old cattle.\nMany he robs of life, himself of honor.\nBlood-stained, he emerges from the dark forest,\nleaving it so ravaged that a thousand years\nwon't restore its original state.",
+            "text": "I don't know, but truly\nthe name of such a valley deserves to perish.\nFrom its source—where the rugged mountain chain\nfrom which Peloro was torn is so massive\nthat in few places does it rise higher—\ndown to where it surrenders itself\nto restore what heaven draws up from the sea,\ngiving rivers their flow,\nvirtue is avoided like an enemy by everyone,\nfled from like a serpent,\neither through the cursed nature of the place\nor through evil customs that drive them.\nThe inhabitants of that wretched valley\nhave so transformed their nature\nit's as if Circe had them in her pasture.\nThe river first directs its meager flow\namong filthy swine, more worthy of acorns\nthan food made for human consumption.\nThen, flowing downward, it finds curs—\nmore snarling than their strength warrants—\nand turns its snout away in scorn.\nThe more it falls and grows,\nthe more it finds dogs becoming wolves\nin this cursed and ill-fated ditch.\nDescending through deep ravines,\nit discovers foxes so full of fraud\nthey fear no cunning that might trap them.\nI won't stop speaking because another hears—\nit will serve him well to remember\nwhat a truthful spirit reveals to me.\nI see your nephew becoming\na hunter of those wolves along the banks\nof that savage stream, terrorizing them all.\nHe sells their flesh while they still live,\nthen slaughters them like old cattle.\nMany he robs of life, himself of honor.\nBlood-stained, he emerges from the dark forest,\nleaving it so ravaged that a thousand years\nwon't restore its original state.",
             "isDialogue": true,
-            "words": 261,
-            "estimatedSeconds": 105
+            "words": 264,
+            "estimatedSeconds": 106
           },
           {
             "id": 11,
@@ -8052,10 +8052,10 @@
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "The sun had traveled through its daily arc\nuntil only as much remained of daylight\nas shows between the third hour and dawn\nof that bright sphere that plays like an eternal child.\nEvening was falling there, while here midnight held sway,\nand the sun's rays struck us full in the face\nbecause we had circled the mountain\nuntil we walked directly toward the west.\nSuddenly I felt my forehead overwhelmed\nby a brilliance far greater than before.\nThese unknown things left me stunned,\nso I raised my hands above my brow\nand made a visor of them\nto shield against the excessive glare.\nLike a sunbeam bouncing off water or a mirror,\nleaping to the opposite side\nand rising at the same angle it descended,\ndeviating from a straight line\nas far as a falling stone would drop—\nas both experiment and theory prove—\nSo it seemed that I was struck\nby light reflected there before me,\nand my sight rushed to escape it.",
+            "text": "The sun had traveled through its daily arc\nuntil only as much remained of daylight\nas shows between the third hour and dawn\nof that bright sphere that plays like an eternal child.\nEvening was falling there, while here midnight held sway,\nand the sun's rays struck us full in the face\nbecause we had circled the mountain\nuntil we walked directly toward the west.\nSuddenly I felt my forehead overwhelmed\nby a brilliance far greater than before.\nThese unknown things left me stunned,\nso I raised my hands above my brow\nand made a visor of them\nto shield against the excessive glare.\nLike a sunbeam bouncing off water or a mirror,\nleaping to the opposite side\nand rising at the same angle it descended,\ndeparting from the line of a falling stone\nby the same distance as the ray coming down—\nas both experiment and theory prove—\nSo it seemed that I was struck\nby light reflected there before me,\nand my sight rushed to escape it.",
             "isDialogue": false,
-            "words": 165,
-            "estimatedSeconds": 66
+            "words": 169,
+            "estimatedSeconds": 68
           },
           {
             "id": 2,
@@ -8186,14 +8186,14 @@
           {
             "id": 29,
             "speaker": "narrator",
-            "text": "Then I saw people burning with rage,\nkilling a young man with stones,\ncrying loudly to each other, \"Kill him! Kill him!\"\nI saw him bow down toward the earth,\nalready weighed down by approaching death,\nbut his eyes remained gates to heaven,\npraying to the Lord Most High in such great conflict\nto forgive his persecutors,\nhis face showing the look that unlocks compassion.\nAs soon as my soul returned outward\nto external things that are real,\nI recognized my true experiences.\nMy Leader, who could see me moving\nlike someone waking from sleep,\nsaid:",
+            "text": "Then I saw people burning with rage,\nkilling a young man with stones,\ncrying loudly to each other, \"Kill him! Kill him!\"\nI saw him bow down toward the earth,\nalready weighed down by approaching death,\nbut his eyes remained gates to heaven,\npraying to the Lord Most High in such great conflict\nto forgive his persecutors,\nhis face showing the look that unlocks compassion.\nAs soon as my soul returned outward\nto external things that are real,\nI recognized my not false errors.\nMy Leader, who could see me moving\nlike someone waking from sleep,\nsaid:",
             "isDialogue": false,
             "characterName": "narrator"
           },
           {
             "id": 30,
             "speaker": "virgil",
-            "text": "\"What's wrong? You can't stand upright\nbut have been walking more than half a mile\nwith your eyes veiled and legs unsteady,\nlike someone overcome by wine or sleep.\"",
+            "text": "\"What's wrong? You can't stand upright\nbut have been walking more than half a league\nwith your eyes veiled and legs unsteady,\nlike someone overcome by wine or sleep.\"",
             "isDialogue": true,
             "characterName": "virgil"
           },
@@ -8215,9 +8215,9 @@
           {
             "id": 18,
             "speaker": "narrator",
-            "text": "We continued through the twilight,\npeering forward as far as sight could reach\nagainst the late, bright sunbeams.\nAnd look—by slow degrees, smoke approached\nin our direction, dark as night,\nwith no place we could hide from it.\nThis robbed us of our sight and the pure air.",
+            "text": "We continued through the late afternoon,\npeering forward as far as sight could reach\nagainst the late, bright sunbeams.\nAnd look—by slow degrees, smoke approached\nin our direction, dark as night,\nwith no place we could hide from it.\nThis robbed us of our sight and the pure air.",
             "isDialogue": false,
-            "words": 48,
+            "words": 49,
             "estimatedSeconds": 20
           }
         ]
@@ -8225,7 +8225,7 @@
       "16": {
         "number": 16,
         "title": "Canto XVI",
-        "subtitle": "Marco Lombardo. Lament over the State of the World. Darkness of hell, and of a night deprived Of every planet under a poor sky,",
+        "subtitle": "Marco Lombardo. Lament over the State of the World.",
         "totalSegments": 24,
         "segments": [
           {
@@ -8238,10 +8238,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "The thickest cloud-darkened sky\nnever cast so dense a veil across my sight\nas that smoke which wrapped around us there,\nnor felt so coarse against the skin—\nit wouldn't let an eye stay open.\nMy faithful, wise escort drew close\nand offered me his shoulder.\nLike a blind man following his guide\nto avoid wandering astray\nor striking something that might harm or kill him,\nso I walked through that bitter, foul air,\nlistening to my Leader, who said only:",
+            "text": "as dark with cloud as a night can be,\nnever cast so dense a veil across my sight\nas that smoke which wrapped around us there,\nnor felt so coarse against the skin—\nit wouldn't let an eye stay open.\nMy faithful, wise escort drew close\nand offered me his shoulder.\nLike a blind man following his guide\nto avoid wandering astray\nor striking something that might harm or kill him,\nso I walked through that bitter, foul air,\nlistening to my Leader, who said only:",
             "isDialogue": false,
-            "words": 81,
-            "estimatedSeconds": 33
+            "words": 86,
+            "estimatedSeconds": 35
           },
           {
             "id": 19,
@@ -8392,7 +8392,7 @@
           {
             "id": 33,
             "speaker": "marco_lombardo",
-            "text": "he answered, \"for speaking Tuscan to me,\nit seems you know nothing of good Gherardo.\nI know him by no other name\nunless I take it from his daughter Gaia.\nGod be with you—I can go no farther.\nLook, the dawn already rays through the smoke,\ngrowing white. I must leave—\nthe Angel is there—before he appears.\"",
+            "text": "he answered, \"for speaking Tuscan to me,\nit seems you know nothing of good Gherardo.\nI know him by no other name\nunless I take it from his daughter Gaia.\nGod be with you—I can go no farther.\nLook, the light already rays through the smoke,\ngrowing white. I must leave—\nthe Angel is there—before he sees me.\"",
             "isDialogue": true,
             "characterName": "marco_lombardo"
           },
@@ -8408,7 +8408,7 @@
       "17": {
         "number": 17,
         "title": "Canto XVII",
-        "subtitle": "Dante's Dream of Anger. The Fourth Circle: The Sloth- ful. Virgil's Discourse of Love. Remember, Reader,",
+        "subtitle": "Dante's Dream of Anger. The Fourth Circle: The Slothful. Virgil's Discourse of Love.",
         "totalSegments": 14,
         "segments": [
           {
@@ -8519,7 +8519,7 @@
       "18": {
         "number": 18,
         "title": "Canto XVIII",
-        "subtitle": "Virgil further discourses of Love and Free Will. The Abbot of San Zeno. An end had put unto his reasoning The lofty Teacher, and attent was looking Into my face,",
+        "subtitle": "Virgil further discourses of Love and Free Will. The Abbot of San Zeno.",
         "totalSegments": 21,
         "segments": [
           {
@@ -8532,10 +8532,10 @@
           {
             "id": 2,
             "speaker": "narrator",
-            "text": "I remained silent, though I appeared content,\nfor a new thirst still drove me forward.\nWithout, I was mute, but within I said:",
+            "text": "to see if I appeared content. I stayed silent,\nfor a new thirst still drove me forward.\nWithout, I was mute, but within I said:",
             "isDialogue": false,
-            "words": 23,
-            "estimatedSeconds": 10
+            "words": 25,
+            "estimatedSeconds": 11
           },
           {
             "id": 3,
@@ -8678,16 +8678,16 @@
       "19": {
         "number": 19,
         "title": "Canto XIX",
-        "subtitle": "Dante's Dream of the Siren. The Fifth Circle: The Avaricious and Prodigal. Pope Adrian V. It was the hour",
+        "subtitle": "Dante's Dream of the Siren. The Fifth Circle: The Avaricious and Prodigal. Pope Adrian V.",
         "totalSegments": 26,
         "segments": [
           {
             "id": 1,
             "speaker": "narrator",
-            "text": "When the daily heat can no longer warm\nthe cold face of the moon,\novercome by earth's shadow, or perhaps by Saturn,\nwhen fortune-tellers see their Greater Fortune\nrising in the east before dawn\nalong a path that stays bright for long—\nthere came to me in dreams a stammering woman,\ncross-eyed and twisted in her feet,\nwith severed hands and sallow skin.\nI stared at her, and as the sun restores\nfrozen limbs that night has numbed,\nso my gaze made her tongue flow freely,\nstraightened her posture in moments,\nand colored her lost features\nwith the beauty that love desires.\nWhen she had freed her voice this way,\nshe began to sing so sweetly\nI could barely turn my thoughts away.",
+            "text": "At the hour when the day's heat, overcome\nby earth's cold, or at times by Saturn,\ncan no longer warm the cold face of the moon,\nwhen fortune-tellers see their Greater Fortune\nrising in the east before dawn\nalong a path that does not stay dark for long—\nthere came to me in dreams a stammering woman,\ncross-eyed and twisted in her feet,\nwith severed hands and sallow skin.\nI stared at her, and as the sun restores\nfrozen limbs that night has numbed,\nso my gaze made her tongue flow freely,\nstraightened her posture in moments,\nand colored her lost features\nwith the beauty that love desires.\nWhen she had freed her voice this way,\nshe began to sing so sweetly\nI could barely turn my thoughts away.",
             "isDialogue": false,
-            "words": 123,
-            "estimatedSeconds": 50
+            "words": 129,
+            "estimatedSeconds": 52
           },
           {
             "id": 2,
@@ -8715,7 +8715,7 @@
           {
             "id": 5,
             "speaker": "narrator",
-            "text": "she said sternly, and he approached\nwith eyes fixed on that modest one.\nShe seized the other and tore open her front,\nripping her clothes to show me her belly—\nI woke from the stench that poured out.\nI turned my eyes, and good Virgil said:",
+            "text": "she said sternly, and he approached\nwith eyes fixed on that modest one.\nHe seized the other and tore open her front,\nripping her clothes to show me her belly—\nI woke from the stench that poured out.\nI turned my eyes, and good Virgil said:",
             "isDialogue": false,
             "words": 46,
             "estimatedSeconds": 19
@@ -8850,9 +8850,9 @@
           {
             "id": 19,
             "speaker": "dante",
-            "text": "Your dignity\nstanding made my conscience sting with remorse.",
+            "text": "Because of your dignity\nmy conscience stung me for standing.",
             "isDialogue": true,
-            "words": 9,
+            "words": 10,
             "estimatedSeconds": 4
           },
           {
@@ -8873,7 +8873,7 @@
           {
             "id": 33,
             "speaker": "pope_adrian_v",
-            "text": "\"Do not err—I am a fellow servant\nwith you and the others under one power.\nIf you have ever heard that holy gospel sound\nthat says 'they neither marry,'\nyou can clearly see why I speak this way.\nNow go—I will not have you linger longer,\nbecause your staying hinders my weeping,\nwith which I ripen what you have described.\nI have a granddaughter on earth named Alagia,\ngood in herself, unless our house\ncorrupts her by its evil example—\nshe alone remains to me there.\"",
+            "text": "\"Do not err—I am a fellow servant\nwith you and the others under one power.\nIf you have ever heard that holy gospel sound\nthat says 'they neither marry,'\nyou can clearly see why I speak this way.\nNow go—I will not have you linger longer,\nbecause your staying hinders my weeping,\nwith which I ripen what you have described.\nI have a niece on earth named Alagia,\ngood in herself, unless our house\ncorrupts her by its evil example—\nshe alone remains to me there.\"",
             "isDialogue": true,
             "characterName": "pope_adrian_v"
           }
@@ -11687,7 +11687,7 @@
       "13": {
         "number": 13,
         "title": "Canto XIII",
-        "subtitle": "Of the Wisdom of Solomon. St. Thomas reproaches Dante's Judgement. Let him imagine, who would well conceive What",
+        "subtitle": "Of the Wisdom of Solomon. St. Thomas reproaches Dante's Judgement.",
         "totalSegments": 2,
         "segments": [
           {
@@ -12385,7 +12385,7 @@
       "23": {
         "number": 23,
         "title": "Canto XXIII",
-        "subtitle": "The Triumph of Christ. The Virgin Mary. The Apostles. Gabriel. Even",
+        "subtitle": "The Triumph of Christ. The Virgin Mary. The Apostles. Gabriel.",
         "totalSegments": 13,
         "segments": [
           {
@@ -12490,7 +12490,7 @@
       "24": {
         "number": 24,
         "title": "Canto XXIV",
-        "subtitle": "The Radiant Wheel. St. Peter examines Dante on Faith. \"",
+        "subtitle": "The Radiant Wheel. St. Peter examines Dante on Faith.",
         "totalSegments": 30,
         "segments": [
           {
