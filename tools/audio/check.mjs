@@ -11,7 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   CREDITS_PER_CHARACTER, CUT_LIMITS, MODEL, OUT_DIR, RATE, ROOT, cantoPaths, decode, isRecorded, levelAt, loadMapping, pauseBetweenWords,
-  peakDb, planSegment, probeDuration, rangeDb, readJson, segmentBase, selectCantos, speechLevel, speechPastPause, spokenTimes, voiceFor,
+  peakDb, planSegment, probeDuration, rangeDb, readJson, segmentBase, selectCantos, speechLevel, speechPastPause, spokenTimes,
 } from './lib.mjs';
 
 const LIMITS = {
@@ -129,6 +129,9 @@ function checkRecordings(cantica, n, timing, mapping, fail, warn) {
   if (plans.length !== timing.segments.length || plans.some((p, i) => p.id !== timing.segments[i].id || p.text !== timing.segments[i].text)) {
     fail.push('the built MP3 is out of date with the script: run generate --reassemble');
   }
+  // Several pieces are often cut from one recording, which is decoded once
+  const decoded = new Map();
+  const decodeOnce = file => decoded.get(file) ?? decoded.set(file, decode(file)).get(file);
   for (const plan of plans) {
     const base = segmentBase(dir, plan.id);
     if (!fs.existsSync(`${base}.json`)) continue;
@@ -163,7 +166,7 @@ function checkRecordings(cantica, n, timing, mapping, fail, warn) {
     }
 
     // A short dip inside a word can pass everything above, so the cut must be in the pause that belongs to this gap.
-    const sourceSamples = decode(`${segmentBase(dir, meta.reusedFrom)}.mp3`);
+    const sourceSamples = decodeOnce(`${segmentBase(dir, meta.reusedFrom)}.mp3`);
     const textEnd = at + meta.text.length;
     const outside = (cut, pause) => pause && (cut < pause[0] - 0.01 || cut > pause[1] + 0.01);
     if (meta.cutFrom > 0 && at > 0 && outside(meta.cutFrom, pauseBetweenWords(sourceSamples, spokenTimes(source, 0, at), spokenTimes(source, at, textEnd)))) {
@@ -181,7 +184,6 @@ function checkRecordings(cantica, n, timing, mapping, fail, warn) {
     }
   }
   if (fs.existsSync(qa)) for (const flag of readJson(qa).flags || []) warn.push(`generator: ${flag}`);
-  for (const plan of plans) if (!voiceFor(plan.speaker)) fail.push(`no voice for ${plan.speaker}`);
 }
 
 const sha = file => crypto.createHash('sha1').update(fs.readFileSync(file)).digest('hex');

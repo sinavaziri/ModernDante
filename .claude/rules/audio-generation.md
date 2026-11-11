@@ -17,4 +17,3 @@ Read `tools/audio/README.md` first. It is the process, and `/generate-canto-audi
 - Never copy audio into `public/` or stage `data/speaker-mapping.json` by hand. The file can hold unpublished work on other cantos, so use `npm run audio:publish`
 - `npm run audio:check` must pass, and someone must listen, before a canto is published. Publish only with the user's approval
 - Run `npm run audio:backup` after recording, because `scripts/narrations_v4/` is gitignored and holds the only copy of the recordings
-- Old scripts in `deprecated-scripts/` are retired. They use the old model and never produced the live audio

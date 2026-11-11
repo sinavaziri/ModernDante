@@ -24,8 +24,7 @@ Nothing reaches the site until step 5, and step 5 refuses audio that fails the c
 |---|---|
 | `data/speaker-mapping.json` | The script: each canto's segments, who speaks them, and their text |
 | `data/voices.json` | The only place voices are defined: model, voice IDs, settings, delivery tags, fallbacks |
-| `data/voice-fix-plans.json` | Who really speaks each part of a segment, from reading the poem |
-| `data/character-voice-profiles.json` | Character notes only. Nothing reads voices from it |
+| `data/voice-fix-plans.json` | Who really speaks each part of a segment, from reading the poem. Holds only plans not yet applied |
 | `data/cantos.json` | The page text, which the check compares the audio against |
 | `scripts/narrations_v4/` | Recordings and built MP3s. Gitignored, so `audio:backup` is their only copy |
 | `scripts/narrations_v4/ledger.jsonl` | Every API attempt and its cost |

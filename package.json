@@ -1,15 +1,9 @@
 {
   "name": "moderndante",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "parse": "node scripts/parse-pdf.js",
-    "split": "node scripts/split-cantos.js",
-    "generate": "node scripts/generate-rewrites.js",
-    "prepare-data": "npm run parse && npm run split && npm run generate",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "eslint",
     "audio:generate": "node tools/audio/generate.mjs",
     "audio:check": "node --experimental-strip-types --no-warnings tools/audio/check.mjs",
@@ -18,19 +12,18 @@
     "audio:publish": "node tools/audio/publish.mjs",
     "audio:backup": "node tools/audio/backup.mjs",
     "audio:speech": "node tools/audio/speech-check.mjs",
+    "notes:check": "node --experimental-strip-types --no-warnings tools/notes/check.mjs",
+    "images:plates": "node tools/images/make-plate-images.mjs",
     "images:carousel": "node tools/images/make-carousel-images.mjs",
-    "images:icons": "node tools/images/make-icons.mjs"
+    "images:notes": "node tools/images/make-note-images.mjs",    "images:icons": "node tools/images/make-icons.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.71.2",
     "@tailwindcss/postcss": "^4.1.18",
-    "dotenv": "^17.2.3",
     "next": "^16.4.5",
-    "pdf2json": "^4.0.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
@@ -38,10 +31,10 @@
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "autoprefixer": "^10.4.23",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.5",
     "postcss": "^8.5.6",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }

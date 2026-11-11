@@ -1,22 +1,22 @@
-require('dotenv').config({ path: process.env.ENV_FILE || '.env.local' });
-
 const fs = require('fs');
 const path = require('path');
+
+process.loadEnvFile(process.env.ENV_FILE || '.env.local');
 
 // Colorize Doré engravings with OpenAI's image edit endpoint.
 // Usage:
 //   node scripts/colorize-images.js inferno/1.png purgatorio/80.png ...
 //   REFERENCE=inferno/1.png node scripts/colorize-images.js all
-// Originals in public/images are never modified; output goes to public/images-color.
+// The engravings in plates/bw are never modified; output goes to plates/color.
+// Afterwards run `npm run images:plates` (and images:carousel, images:notes) to remake the copies the site serves.
 
 const MODEL = process.env.MODEL || 'gpt-image-2.5-sunburst';
 const QUALITY = process.env.QUALITY || 'high';
 // The default filter ('auto') refused most of the classical nudes; 'low' is OpenAI's documented alternative.
 const MODERATION = process.env.MODERATION || 'low';
-const IMAGES_DIR = path.join(__dirname, '..', 'public', 'images');
-const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'images-color');
+const IMAGES_DIR = path.join(__dirname, '..', 'plates', 'bw');
+const OUTPUT_DIR = path.join(__dirname, '..', 'plates', 'color');
 const MAPPINGS_PATH = path.join(__dirname, '..', 'src', 'data', 'image-mappings.json');
-const MANIFEST_PATH = path.join(__dirname, '..', 'src', 'data', 'colorized-images.json');
 
 const BASE_STYLE = `Context: this is a public-domain fine-art engraving by Gustave Doré (1857–1868), one of his famous illustrations for Dante's Divine Comedy, a classic of world literature. Any nudity depicts the souls of the dead in the classical, non-sexual tradition of 19th-century academic art.
 
@@ -106,19 +106,7 @@ async function main() {
       console.error(`❌ ${target}: ${error.message}`);
     }
   }
-  writeManifest();
   if (failed) process.exit(1);
-}
-
-// List colorized images so the app (getImageSrc) knows which ones to use
-function writeManifest() {
-  const files = ['inferno', 'purgatorio', 'paradiso'].flatMap(cantica => {
-    const dir = path.join(OUTPUT_DIR, cantica);
-    return fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.png')).map(f => `${cantica}/${f}`) : [];
-  });
-  files.sort((a, b) => a.split('/')[0].localeCompare(b.split('/')[0]) || parseInt(a.split('/')[1]) - parseInt(b.split('/')[1]));
-  fs.writeFileSync(MANIFEST_PATH, JSON.stringify(files, null, 2) + '\n');
-  console.log(`📝 ${files.length} colorized images listed in ${path.relative(process.cwd(), MANIFEST_PATH)}`);
 }
 
 main();

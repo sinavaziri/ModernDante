@@ -74,7 +74,7 @@ async function main() {
     fs.writeFileSync(liveTimings, web);
     files.push(relative(liveMp3), relative(liveTimings));
   }
-  log(`Would commit: ${relative(MAPPING_PATH)} (these cantos' entries only), ${files.length} files`);
+  log(`${dryRun ? 'Would commit' : 'Committing'}: ${relative(MAPPING_PATH)} (these cantos' entries only), ${files.length} files`);
   if (dryRun) {
     for (const file of files) log(`  ${file}`);
     return;

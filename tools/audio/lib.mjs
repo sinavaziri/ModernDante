@@ -193,7 +193,6 @@ export function speechLevel(samples, from = 0, to = samples.length) {
   return count ? 10 * Math.log10(power / count) : null;
 }
 
-/** Quiet stretches of at least 30 ms within reach of t, as [start, end], nearest first. */
 /**
  * The pause that best covers the gap between two aligned words, or null. The nearest pause won't do: a short dip inside
  * the next word can sit closer than the real pause, and cutting there moves that word to the wrong side of the cut.
@@ -224,6 +223,7 @@ export function speechPastPause(samples, from, to, minPause) {
   return speech;
 }
 
+/** Quiet stretches of at least 30 ms within reach of t, as [start, end], nearest first. */
 export function pausesNear(samples, t, reach = 0.6) {
   const step = 0.005;
   const found = [];

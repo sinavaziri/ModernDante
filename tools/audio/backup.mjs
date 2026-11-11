@@ -36,10 +36,13 @@ fs.mkdirSync(target, { recursive: true });
 execFileSync('rsync', ['-rt', `${OUT_DIR}/`, `${target}/`], { stdio: 'inherit' });
 const source = tally(OUT_DIR);
 const copy = tally(target);
-const missing = source.files - copy.files;
 log(`Source: ${source.files} files, ${(source.bytes / 1e9).toFixed(2)} GB. Backup: ${copy.files} files, ${(copy.bytes / 1e9).toFixed(2)} GB.`);
-if (missing > 0) {
-  log(`FAILED ${missing} files are missing from the backup.`);
+// A second pass that copies nothing lists whatever still differs. Counting files wouldn't do: the backup
+// never deletes, so old files left in it could make up the numbers for new ones that are missing.
+const differing = execFileSync('rsync', ['-rtn', '--out-format=%n', `${OUT_DIR}/`, `${target}/`], { encoding: 'utf8', maxBuffer: 1 << 28 })
+  .split('\n').filter(name => name && !name.endsWith('/'));
+if (differing.length > 0) {
+  log(`FAILED ${differing.length} files are missing from the backup or differ from it, such as ${differing.slice(0, 3).join(', ')}.`);
   process.exit(1);
 }
 log('A cloud-synced folder finishes uploading in the background, so check its app before deleting anything local.');

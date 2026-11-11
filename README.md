@@ -1,195 +1,79 @@
 # The Divine Comedy - Modern Translation
 
-A web application that presents Dante's Divine Comedy with modern approachable English
+Dante's Divine Comedy in plain modern English, with Gustave Doré's engravings in color and narration in a different voice for each character.
 
 ## Features
 
-- **Complete work**: All 100 cantos (Inferno, Purgatorio, Paradiso)
-- **Modern rewrites**: Clear, accessible English
-- **Easy navigation**: Browse by cantica and canto with prev/next buttons
-- **Static site**: Fast, deployable anywhere (Vercel, GitHub Pages, etc.)
+- **Complete work**: All 100 cantos (Inferno, Purgatorio, Paradiso), rewritten from Longfellow's translation
+- **Illustrations**: Doré's 135 engravings, colorized, in each canto and in a gallery
+- **Narration**: Every canto read aloud, highlighted word by word; click any word to play from it
+- **Notes**: An on/off switch for notes on people, places and ideas (Inferno I and IV so far)
+- **Dark mode**: Follows the device, with a switch in the header
+- **Static site**: Next.js static export, no server
 
 ## Setup
 
-### 1. Install Dependencies
-
 ```bash
 npm install
+npm run dev      # http://localhost:3000
+npm run build    # static site in out/
+npm run lint
 ```
 
-### 2. Process the PDF
+Node 22.6 or later, for the tools. The site itself needs no API keys. The tools read theirs from `.env.local` (copy `.env.example`).
 
-The PDF is already in the project. Run these scripts to extract and structure the text:
+## Commands
 
-```bash
-# Extract text from PDF
-npm run parse
-
-# Split into cantos
-npm run split
-```
-
-This creates `data/cantos.json` with all 100 cantos.
-
-### 3. Generate Modern Translations
-
-You'll need a Claude API key from https://console.anthropic.com/
-
-Create a `.env.local` file:
-
-```bash
-cp .env.example .env.local
-```
-
-Edit `.env.local` and add your API key:
-
-```
-ANTHROPIC_API_KEY=your_api_key_here
-```
-
-Then run the generation script:
-
-```bash
-# Test mode: Generate only Inferno Canto I
-node scripts/generate-rewrites.js
-
-# Generate all of Inferno (34 cantos)
-MODE=inferno node scripts/generate-rewrites.js
-
-# Generate everything (100 cantos - will take time and API credits)
-MODE=all node scripts/generate-rewrites.js
-```
-
-**Note**: The generation script:
-- Saves progress after each canto
-- Can be resumed if interrupted
-- Includes 2-second delays between API calls
-- Costs approximately $0.02-0.04 per canto with Claude Sonnet
-
-### 4. Run the Development Server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the app.
-
-### 5. Build for Production
-
-```bash
-npm run build
-```
-
-This creates a static site in the `out/` directory that can be deployed anywhere.
+| Command | What it does |
+|---|---|
+| `npm run audio:*` | The narration pipeline: generate, check, listen, publish, back up. See `tools/audio/README.md` |
+| `npm run notes:check` | Checks every note against the text, the glossary and its pictures |
+| `npm run images:plates` | Makes the WebP copies of the plates that the site serves, from the masters in `plates/` |
+| `npm run images:carousel` | Makes the home page's carousel and cantica images |
+| `npm run images:notes` | Makes the pictures on note cards |
+| `npm run images:icons` | Makes the favicon, touch icon and header logo |
+| `node scripts/colorize-images.js` | Colorizes engravings with OpenAI's image model (costs money; needs `OPENAI_API_KEY`) |
 
 ## Project Structure
 
 ```
 ModernDante/
 ├── data/
-│   ├── cantos.json              # Longfellow text and modern translation for each canto
+│   ├── cantos.json              # Longfellow's text and the modern translation for each canto
 │   ├── speaker-mapping.json     # Narration script: segments and who speaks them
-│   └── voices.json              # ElevenLabs voices for each speaker
-├── scripts/
-│   ├── parse-pdf.js             # Extract text from the PDF (writes data/raw-text.txt)
-│   ├── split-cantos.js          # Split text into cantos, keeping existing translations
-│   └── generate-rewrites.js     # Generate modern versions with Claude
-├── tools/audio/                 # Narration pipeline: generate, check, publish (see its README)
-├── tools/images/                # npm run images:carousel and images:icons make the home page's images and the icons
+│   ├── voices.json              # ElevenLabs voices for each speaker
+│   ├── voice-fix-plans.json     # Speaker corrections waiting to be applied
+│   ├── annotations/             # Each annotated canto's notes
+│   ├── glossary.json            # People, places and ideas the notes link to
+│   └── art.json, art/           # Public-domain art for note cards, with credits and crop settings
+├── plates/                      # Master PNGs of Doré's plates: bw/ (the engravings) and color/. Not published
+├── scripts/colorize-images.js   # Colorizes plates/bw into plates/color
+├── tools/
+│   ├── audio/                   # Narration pipeline (see its README)
+│   ├── images/                  # The images:* commands
+│   └── notes/                   # notes:check
 ├── public/
-│   ├── audio/                   # Published narration MP3s
-│   ├── audio-timings/           # Word timings for each canto's narration
-│   ├── images/                  # Doré engravings
-│   ├── images-color/            # Colorized versions, used when present
-│   └── images-carousel/         # Lighter WebP copies of the home page's plates
-├── src/
-│   ├── app/
-│   │   ├── [cantica]/[canto]/page.tsx  # Canto pages, built at build time
-│   │   ├── gallery/page.tsx            # Illustration gallery
-│   │   ├── page.tsx                    # Homepage
-│   │   └── layout.tsx                  # Root layout and fonts
-│   ├── components/
-│   │   ├── CantoDisplayWithAudio.tsx   # Canto text, illustrations and narration highlighting
-│   │   ├── AudioPlayerWordLevel.tsx    # Narration player
-│   │   ├── TextWithWordHighlighting.tsx
-│   │   ├── HeroCarousel.tsx            # Home page carousel of Doré plates
-│   │   ├── Navigation.tsx              # Header navigation
-│   │   ├── ThemeToggle.tsx             # The header's light and dark mode button
-│   │   └── CantoSelector.tsx           # Cantica and canto dropdowns
-│   ├── data/image-mappings.json        # Illustration captions and line positions
-│   ├── data/home-carousel.json         # Which plates the home page carousel shows
-│   └── lib/
-│       ├── canticas.ts                 # Poem structure, safe for client code
-│       ├── cantos.ts                   # Canto text (server only)
-│       ├── image-mappings.ts           # Illustration lookups
-│       ├── narration-alignment.ts      # Matches spoken words to displayed words
-│       ├── theme.ts                    # Dark mode: follows the device until a visitor chooses
-│       └── useNarrationHighlight.ts    # Highlights the current word during playback
-└── Dante-Alighieri-The-Divine-Comedy.pdf
+│   ├── audio/, audio-timings/   # Published narration MP3s and their word timings
+│   ├── images-plates/           # WebP copies of the plates, full size and 640px
+│   ├── images-carousel/         # 4:5 crops for the home page
+│   ├── images-notes/            # 12:5 crops for note cards
+│   └── fonts/                   # Sabon
+└── src/
+    ├── app/                     # Home page, gallery, canto pages, layout, globals.css
+    ├── components/              # Canto display, audio player, note cards, navigation
+    ├── data/                    # Plate captions and positions, image sizes, carousel list, note crops
+    └── lib/                     # Text, plates, notes, narration sync, theme, saved listening place
 ```
+
+`Dante-Alighieri-The-Divine-Comedy.pdf` is the source of Longfellow's text. The scripts that parsed it and generated the translations were one-time work and have been removed; they are in the git history. `data/cantos.json` is now edited directly.
 
 ## Deployment
 
-### Vercel (Recommended)
-
-```bash
-npm install -g vercel
-vercel
-```
-
-### GitHub Pages
-
-```bash
-npm run build
-# Deploy the out/ directory to gh-pages branch
-```
-
-### Other Static Hosts
-
-Deploy the `out/` directory to any static hosting service (Netlify, Cloudflare Pages, etc.)
-
-## Development Workflow
-
-1. **Add new features**: Modify components in `src/`
-2. **Regenerate translations**: Re-run `generate-rewrites.js` with updated prompts
-3. **Update styling**: Edit Tailwind classes or `src/app/globals.css`
-4. **Test locally**: `npm run dev`
-5. **Build**: `npm run build`
-
-## Extending the Project
-
-### Add More Canticas
-
-The architecture is already set up for all three canticas. Just ensure:
-- PDF parsing correctly identifies all parts
-- `data/cantos.json` is populated
-- Run the generation script for new canticas
-
-### Customize the Prompt
-
-Edit `scripts/generate-rewrites.js` and modify the Claude prompt to:
-- Change rhyme scheme
-- Adjust reading level
-- Add annotations
-- Change tone or style
-
-### Add Features
-
-Some ideas:
-- Search functionality
-- Bookmarks/favorites
-- Dark mode toggle
-- Annotations and commentary
-- Comparison with other translations
-
-## License
-
-This project uses public domain texts (Longfellow translation, Dante's original).
-Generated translations are created using Claude AI.
+Vercel deploys `main` on every push: commit, then `git push origin main`.
 
 ## Credits
 
-- **Original Work**: Dante Alighieri (1265-1321)
-- **Translation**: Henry Wadsworth Longfellow
-- **Modern Rewrites**: Generated using Claude (Anthropic)
-- **PDF Source**: Public domain via Wikisource
+- **Original work**: Dante Alighieri (1265–1321)
+- **Translation**: Henry Wadsworth Longfellow, rewritten in modern English with Claude (Anthropic)
+- **Illustrations**: Gustave Doré, 1857–1868, colorized for this site
+- **Narration**: ElevenLabs voices

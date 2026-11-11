@@ -1,25 +1,24 @@
 #!/usr/bin/env node
 /**
- * Makes the home page's images: the carousel's plates and one plate for each cantica. The plates are PNGs of
- * about 3 MB, so each plate listed in src/data/home-carousel.json gets a 4:5 WebP at each listed width, in
+ * Makes the home page's images: the carousel's plates and one plate for each cantica. The masters in plates/
+ * are PNGs of about 3 MB, so each plate listed in src/data/home-carousel.json gets a 4:5 WebP at each listed width, in
  * public/images-carousel/.
  *
  *   npm run images:carousel
  *
- * Re-run after changing the list, then commit the new files. Uses sharp, which Next.js installs.
+ * Re-run after changing the list, then commit the new files.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
+import { ROOT, plateMaster } from './lib.mjs';
 
-const ROOT = path.join(import.meta.dirname, '..', '..');
 const OUT = path.join(ROOT, 'public', 'images-carousel');
 const read = file => JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
 
 const { widths, plates: carousel, canticaPlates } = read('src/data/home-carousel.json');
 const plates = [...new Set([...carousel, ...Object.values(canticaPlates)])];
 const { images } = read('src/data/image-mappings.json');
-const colorized = new Set(read('src/data/colorized-images.json'));
 
 fs.mkdirSync(OUT, { recursive: true });
 const made = new Set();
@@ -27,8 +26,7 @@ let total = 0;
 for (const number of plates) {
   const image = images.find(i => i.imageNumber === number);
   if (!image) throw new Error(`Plate ${number} isn't in image-mappings.json`);
-  const key = `${image.cantica}/${image.filename}`;
-  const source = path.join(ROOT, 'public', colorized.has(key) ? 'images-color' : 'images', key);
+  const source = plateMaster(image);
   for (const width of widths) {
     const name = `${number}-${width}.webp`;
     const info = await sharp(source)

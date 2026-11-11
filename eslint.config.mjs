@@ -19,9 +19,8 @@ export default defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
-    // Retired and exploratory code, kept for reference but not maintained
+    // Exploratory code, kept for reference but not maintained
     "archive/**",
-    "deprecated-scripts/**",
     "experiments/**",
   ]),
 ]);

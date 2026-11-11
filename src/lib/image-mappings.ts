@@ -1,8 +1,7 @@
-// Mapping of cantos to Doré illustration data
-// Generated from imagecaptions.md
+// Doré's plates: which canto each one illustrates, its caption and where it sits in the text
 
 import imageMappingsData from '@/data/image-mappings.json';
-import colorizedImages from '@/data/colorized-images.json';
+import plateImages from '@/data/plate-images.json';
 import homeCarousel from '@/data/home-carousel.json';
 import { getAllCanticas } from '@/lib/canticas';
 
@@ -57,17 +56,41 @@ export function getImagesForCanto(cantica: string, cantoNumber: number): ImageDa
   return cantoMapping[key] || NO_IMAGES;
 }
 
-const colorized = new Set<string>(colorizedImages);
+/** A plate, with the canto it illustrates */
+export interface PlateData extends ImageData {
+  cantica: string;
+  canto: number;
+}
 
-/**
- * Public URL for an illustration: the colorized version when one exists,
- * otherwise the original black-and-white engraving
- * @param cantica - The cantica name
- * @param filename - The image filename, e.g. "1.png"
- */
-export function getImageSrc(cantica: string, filename: string): string {
-  const key = `${cantica}/${filename}`;
-  return colorized.has(key) ? `/images-color/${key}` : `/images/${key}`;
+/** Every plate, in order from 1 to 135 */
+export function getAllPlates(): PlateData[] {
+  return imageMappingsData.images as PlateData[];
+}
+
+/** A plate by its number, 1 to 135 */
+export function getPlate(imageNumber: number): PlateData | undefined {
+  return getAllPlates().find(i => i.imageNumber === imageNumber);
+}
+
+export interface PlateImage {
+  /** The plate at its full size, for the full-screen view */
+  src: string;
+  /** The full size and a smaller copy, for the browser to choose from */
+  srcSet: string;
+  /** The smaller copy by itself */
+  small: string;
+  width: number;
+  height: number;
+}
+
+/** The WebP copies of a plate, made by `npm run images:plates` */
+export function getPlateImage(imageNumber: number): PlateImage {
+  const size = (plateImages.sizes as Record<string, number[]>)[imageNumber];
+  if (!size) throw new Error(`Plate ${imageNumber} isn't in plate-images.json. Run npm run images:plates.`);
+  const [width, height] = size;
+  const src = `/images-plates/${imageNumber}.webp`;
+  const small = `/images-plates/${imageNumber}-${plateImages.small}.webp`;
+  return { src, small, srcSet: `${small} ${plateImages.small}w, ${src} ${width}w`, width, height };
 }
 
 export interface CarouselSlide {
@@ -115,7 +138,7 @@ export function getCanticaPlate(cantica: string): { src: string; srcSet: string 
  * The home page carousel's plates, in the order listed in src/data/home-carousel.json.
  */
 export function getCarouselSlides(): CarouselSlide[] {
-  const all = imageMappingsData.images as Array<ImageData & { cantica: string; canto: number }>;
+  const all = getAllPlates();
   const canticaNames = new Map(getAllCanticas().map(c => [c.name as string, c.displayName]));
 
   return homeCarousel.plates.map(number => {

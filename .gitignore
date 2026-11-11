@@ -44,25 +44,22 @@ next-env.d.ts
 /data/*-analysis*.json
 /data/*-log.json
 
-# scripts and tools (not needed for deployment)
-/deprecated-scripts/
-/scripts/
-/narrations/
+# narration working files: recordings, reports and transcripts (see tools/audio/README.md)
+/scripts/narrations_v4/
+/scripts/transcripts/
 
-# voice experiment folders
-/dante-voice-experiments/
-/dante-contrast-test/
-/voice-style-debug/
-/character-previews/
-/character-voices-added/
-/character-voices-created/
-/inferno-character-voices/
-/virgil-previews/
+# experiments and working images, kept on this machine only
+/experiments/
+/Map Images/
+
+# source files for the Sabon typeface (the site's copies are in public/fonts)
 /sabon/
-/assets/
 
 # IDE
 .cursor/
+
+# browser automation screenshots
+.playwright-mcp/
 
 # misc generated files
 *.mp3

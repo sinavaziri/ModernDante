@@ -1,25 +1,15 @@
 'use client';
 
 import { useState, useMemo, useEffect, useCallback } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import { toRoman } from '@/lib/canticas';
-import { getImageSrc, titleCase } from '@/lib/image-mappings';
+import { getAllPlates, getPlateImage, titleCase, type PlateData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
-import imageMappingsData from '@/data/image-mappings.json';
 
 type Cantica = 'all' | 'inferno' | 'purgatorio' | 'paradiso';
 
-interface ImageItem {
-  imageNumber: number;
-  title: string;
-  quote: string;
-  cantica: string;
-  canto: number;
-  lines: string;
-  filename: string;
-}
+type ImageItem = PlateData;
 
 const canticaColors = {
   inferno: 'from-red-900/80 to-red-950/90',
@@ -36,16 +26,15 @@ const canticaLabels = {
 export default function GalleryPage() {
   const [activeFilter, setActiveFilter] = useState<Cantica>('all');
   const [selectedImage, setSelectedImage] = useState<ImageItem | null>(null);
-  const [imageLoaded, setImageLoaded] = useState<Record<number, boolean>>({});
 
   const images = useMemo(() => {
-    return (imageMappingsData.images as ImageItem[]).filter(
+    return getAllPlates().filter(
       (img) => activeFilter === 'all' || img.cantica === activeFilter
     );
   }, [activeFilter]);
 
   const counts = useMemo(() => {
-    const all = imageMappingsData.images as ImageItem[];
+    const all = getAllPlates();
     return {
       all: all.length,
       inferno: all.filter((img) => img.cantica === 'inferno').length,
@@ -53,10 +42,6 @@ export default function GalleryPage() {
       paradiso: all.filter((img) => img.cantica === 'paradiso').length,
     };
   }, []);
-
-  const handleImageLoad = (imageNumber: number) => {
-    setImageLoaded((prev) => ({ ...prev, [imageNumber]: true }));
-  };
 
   const navigateImage = useCallback((direction: 'prev' | 'next') => {
     if (!selectedImage) return;
@@ -132,7 +117,7 @@ export default function GalleryPage() {
         {/* Gallery Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {images.map((image, index) => (
+            {images.map((image) => (
               <div
                 key={image.imageNumber}
                 role="button"
@@ -146,25 +131,13 @@ export default function GalleryPage() {
                     setSelectedImage(image);
                   }
                 }}
-                style={{
-                  animationDelay: `${Math.min(index * 50, 500)}ms`,
-                }}
               >
-                <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-muted/30 border border-border hover:border-primary/50 transition-all duration-500 shadow-sm hover:shadow-xl">
-                  {/* Skeleton loader */}
-                  {!imageLoaded[image.imageNumber] && (
-                    <div className="absolute inset-0 bg-gradient-to-br from-muted to-muted/50 animate-pulse" />
-                  )}
-                  
-                  <Image
-                    src={getImageSrc(image.cantica, image.filename)}
+                <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-muted border border-border hover:border-primary/50 transition-all duration-500 shadow-sm hover:shadow-xl">
+                  <img
+                    src={getPlateImage(image.imageNumber).small}
                     alt={titleCase(image.title)}
-                    fill
-                    className={`object-cover transition-all duration-700 group-hover:scale-105 ${
-                      imageLoaded[image.imageNumber] ? 'opacity-100' : 'opacity-0'
-                    }`}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                    onLoad={() => handleImageLoad(image.imageNumber)}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Gradient overlay */}
@@ -219,13 +192,10 @@ export default function GalleryPage() {
                 {/* Image Container */}
                 <div className="relative flex-1 min-h-0">
                   <div className="relative h-[50vh] lg:h-[80vh] w-full">
-                    <Image
-                      src={getImageSrc(selectedImage.cantica, selectedImage.filename)}
+                    <img
+                      src={getPlateImage(selectedImage.imageNumber).src}
                       alt={titleCase(selectedImage.title)}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 1024px) 100vw, 60vw"
-                      priority
+                      className="absolute inset-0 h-full w-full object-contain"
                     />
                   </div>
                 </div>

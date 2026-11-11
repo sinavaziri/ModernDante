@@ -7,14 +7,12 @@
  * down the edges, so it's cropped off first.
  *
  *   npm run images:icons
- *
- * Uses sharp, which Next.js installs.
  */
 import path from 'node:path';
 import sharp from 'sharp';
+import { ROOT } from './lib.mjs';
 
-const ROOT = path.join(import.meta.dirname, '..', '..');
-const SOURCE = path.join(ROOT, 'public', 'images', 'Dante Portrait.png');
+const SOURCE = path.join(ROOT, 'plates', 'dante-portrait.png');
 // Measured on the scan: the frame ends about 36px in on the left, 38px on the right and 29px at the top and bottom
 const FRAME = { left: 40, right: 42, top: 32, bottom: 32 };
 const MAROON = { r: 122, g: 41, b: 48 }; // --color-brand, hsl(355 50% 32%)

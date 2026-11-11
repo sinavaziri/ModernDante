@@ -263,10 +263,10 @@ async function main() {
 
   loadEnv();
   apiKey = process.env.ELEVENLABS_API_KEY;
-  if (!apiKey && !dryRun) throw new Error('ELEVENLABS_API_KEY not found in the environment or .env.local');
 
   const mapping = loadMapping();
-  const before = dryRun ? null : await getQuota();
+  // The account is only asked about once something needs recording, so rebuilding MP3s works offline and without a key
+  let before = null;
   const totals = { cap: creditCap, spent: 0, possiblyBilled: 0, characters: 0, segments: 0, assembled: 0, wouldRecord: 0, wouldCost: 0, wouldAssemble: 0 };
   const flagged = [];
 
@@ -296,7 +296,9 @@ async function main() {
       if (totals.spent + totals.possiblyBilled + estimate > creditCap) {
         throw new StopError(`Stopped before ${cantica} ${cantoNumber}: about ${estimate} credits more would pass the ${creditCap} credit cap, with ${totals.spent} recorded and about ${totals.possiblyBilled} possibly billed for no audio. Raise it with --max-credits.`);
       }
+      if (!apiKey) throw new Error('ELEVENLABS_API_KEY not found in the environment or .env.local');
       const quota = await getQuota();
+      before ??= quota;
       if (quota.remaining < estimate + QUOTA_MARGIN) {
         throw new StopError(`Stopped before ${cantica} ${cantoNumber}: needs about ${estimate} credits, ${quota.remaining} of ${quota.limit} left.`);
       }
@@ -320,9 +322,11 @@ async function main() {
     log(`Would record ${totals.wouldRecord} segments for about ${totals.wouldCost} credits, and rebuild ${totals.wouldAssemble} MP3s. Nothing was spent.`);
     return;
   }
-  const after = await getQuota();
   log(`Recorded ${totals.segments} segments, ${totals.characters} characters, ${totals.spent} credits. Rebuilt ${totals.assembled} MP3s.`);
-  log(`Account: ${after.used} of ${after.limit} used, up ${after.used - before.used} this run. It can lag by a minute. About ${totals.possiblyBilled} credits of requests got no answer and may have been billed.`);
+  if (before) {
+    const after = await getQuota();
+    log(`Account: ${after.used} of ${after.limit} used, up ${after.used - before.used} this run. It can lag by a minute. About ${totals.possiblyBilled} credits of requests got no answer and may have been billed.`);
+  }
   log(`QA flags: ${flagged.length}. Next: npm run audio:check -- --only <cantos>`);
 }
 

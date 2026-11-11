@@ -57,8 +57,15 @@ function similarity(a, b) {
   return 1 - row[y.length] / Math.max(x.length, y.length);
 }
 
-/** Longest common subsequence, as index pairs. */
+// Both checks of a canto match the same script against the same speech, and the table is costly to build
+const matched = new WeakMap();
 function matchWords(expected, heard) {
+  if (matched.get(expected)?.heard !== heard) matched.set(expected, { heard, pairs: lcsPairs(expected, heard) });
+  return matched.get(expected).pairs;
+}
+
+/** Longest common subsequence, as index pairs. */
+function lcsPairs(expected, heard) {
   const width = heard.length + 1;
   const table = new Uint16Array((expected.length + 1) * width);
   for (let i = expected.length - 1; i >= 0; i--) {
@@ -255,7 +262,7 @@ function recheck(findings) {
   log(`Listening again to ${findings.length} place(s)`);
   transcribe(pairs);
 
-  return findings.filter(finding => {
+  const kept = findings.filter(finding => {
     const heard = normalize(readJson(`${finding.clip}.json`).text);
     const isExtra = finding.kind === 'extra speech';
     const score = bestMatch((isExtra ? finding.speech : finding.script).split(' '), heard);
@@ -263,6 +270,9 @@ function recheck(findings) {
     delete finding.clip;
     return isExtra ? score >= CLIP_MATCH : score < CLIP_MATCH;
   });
+  // The clips are only needed for this second listen
+  fs.rmSync(CLIPS, { recursive: true, force: true });
+  return kept;
 }
 
 const cantos = selectCantos(process.argv.slice(2));
