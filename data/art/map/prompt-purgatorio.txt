@@ -1,0 +1,23 @@
+Two images are given. The FIRST image is a simple flat diagram: a map of the Mountain of Purgatory from Dante's Divine Comedy, a classic of world literature. It shows a mountain island rising from the sea into the sky, with eleven levels stacked from the shore at the bottom to a garden on the summit, each level a ledge narrower than the one below. The SECOND image is a reference sheet of eighteen labelled illustrations by Gustave Doré (1868) for the same poem, shown in color.
+
+Repaint the FIRST image as a finished work of art, so that the scene on each level follows Doré's own picture of that place: his figures, poses, landscape, lighting and color, as listed below. The second image is only a reference; do not reproduce the sheet, its grid or its labels.
+
+Keep the layout of the first image exactly: the same tall format, the sea along the bottom, and the eleven levels in the same order, each at the same height and the same width, each narrower than the one below. Turn the stepped shape into one real mountain: a steep, craggy, sunlit limestone peak, with each level a deep ledge or terrace cut into its face like a shelf, open to the front so the scene on it is seen clearly, and cliffs of rock between the ledges. Each scene is a wide, low panorama filling its ledge. Figures are small, as on a map. Behind the mountain: open sky, deep blue with stars at the top, turning to a rose and gold dawn at the horizon, with the calm sea all around the island.
+
+Throughout, as in Doré: the two travellers appear as a pair of small standing figures, one in a long red robe and red cap (Dante), one in a blue robe with a laurel wreath (Virgil). They appear on most ledges.
+
+Count them: the sea and shore, then ten separate ledges above it, eleven levels in all. The levels, from the BOTTOM of the picture to the TOP:
+1. The shore and sea (Plates 77 and 79): a sandy beach with reeds at dawn; on the water at the left a boat full of souls in white, steered by a tall angel with great white wings; on the beach the red and blue pair with an old man with a long white beard.
+2. The lowest and widest ledge (Plates 80, 82 and 87): green lower slopes; at the left tired figures resting in the shade of a great boulder; at the right a flowering valley where robed kings sit together on the grass; two angels in the air above it.
+3. A ledge of its own, lower and plainer than the others, with nobody on it but the three figures named here (Plate 91): in the middle a narrow gate in a cleft of the cliff, reached by three steps (one white, one dark, one red), with an angel in pale robes seated on the top step holding a sword; the red figure kneeling at the steps, the blue one beside him.
+4. The ledge above the gate, a separate ledge with no gate on it (Plate 93): naked figures creeping along the ledge bent double under huge slabs of stone on their backs; figures carved in relief on the cliff wall behind them.
+5. (Plate 95): figures in coarse grey-blue cloaks sitting huddled in a row against the bare cliff, leaning on one another like blind beggars.
+6. (Plate 98): the ledge filled with thick, rolling, dark grey smoke; figures walking through it, half seen.
+7. (Plate 100): a crowd in pale robes running at full speed along the ledge, legs striding and robes flying, at dusk.
+8. (Plate 102): many figures lying stretched face down on the ground all along the ledge.
+9. (Plates 105 and 106): thin, starved figures gathered under a tall leafy fruit tree, reaching up toward it; a second tree further along; clear water falling down the cliff.
+10. (Plate 109): a wall of flames burning all along the ledge, with figures walking inside the fire; a narrow path at the outer edge where the red and blue pair walk.
+11. The summit (Plates 111, 112 and 114): a lush, sunlit forest of tall old trees with flowers and a clear stream; a procession of elders in white with a chariot drawn by a griffin; a veiled woman in white, green and red among angels and falling flowers, and the red figure standing before her.
+
+Strict rules: no text, no letters, no numbers, no labels, no captions, no signature, no border, no frame. Do not add levels, do not merge levels, do not leave any level out. Do not crop.
+Style: a nineteenth-century steel engraving by Gustave Doré, with fine hatching and cross-hatching and strong light and shadow, glazed with translucent oil color as in the reference sheet. The engraved linework stays visible under the color. Real depth and atmosphere. Solemn and grand, not cute, not cartoonish, no flat vector shapes, no modern digital look.

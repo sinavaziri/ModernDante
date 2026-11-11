@@ -1,9 +1,11 @@
 import type { ReactNode } from 'react';
 import type { InfernoLevel } from '@/lib/inferno-map';
+import { outlineBox, outlinePoints, type MapOutline } from '@/lib/realm-maps';
 
 // A drawn cross-section of Hell: the dark wood at dawn on the surface, then the funnel cut into the
 // earth, one cavern for each level with its scene, down to Lucifer in the ice. Every cavern links to
-// that level's entry further down the page.
+// that level's entry on the page. On a wide screen the page sets those entries beside the map, so
+// the names in the drawing are hidden there.
 
 const W = 960;
 /** The funnel's center line; the names sit in the column to its right */
@@ -562,11 +564,11 @@ const linkClass =
   'outline-none transition-[filter] hover:brightness-125 focus-visible:brightness-125 [&:focus-visible_.band]:stroke-[hsl(35_25%_92%)] [&:focus-visible_.band]:[stroke-width:3]';
 
 /** An unseen shape over a painted level, so the level can be clicked; it lightens under the pointer */
-const hitClass = 'band fill-white/0 [a:hover_&]:fill-white/10 [a:focus-visible_&]:fill-white/10';
+const hitClass = 'band fill-white/0 transition-[fill] duration-150 [a:hover_&]:fill-white/15 [a:focus-visible_&]:fill-white/15';
 
 function Label({ y, children }: { y: number; children: ReactNode }) {
   return (
-    <text x={LABEL_X} y={y + 10} fontSize="29" fill={PARCHMENT} className="font-sans font-medium">
+    <text x={LABEL_X} y={y + 10} fontSize="29" fill={PARCHMENT} className="font-sans font-medium xl:hidden">
       {children}
     </text>
   );
@@ -649,9 +651,12 @@ interface InfernoMapProps {
   levels: InfernoLevel[];
   /** A painting of the same layout to show in place of the drawing, twice as tall as it is wide */
   painting?: string;
+  /** Each level's outline on the painting, in the painting's pixels (1024 by 2048) */
+  outlines?: Record<string, MapOutline>;
 }
 
-export default function InfernoMap({ levels, painting }: InfernoMapProps) {
+/** Where every level under the surface sits in the drawing */
+function layout(levels: InfernoLevel[]) {
   const [surface, ...below] = levels;
 
   let y = SKY + 16;
@@ -666,6 +671,29 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
   });
   const floor = y - GAP;
   const height = floor + 60;
+  return { surface, bands, floor, height };
+}
+
+/** How much wider the whole map, with its column of names, is than its painting */
+export function infernoMapWidthRatio(levels: InfernoLevel[]) {
+  return W / (layout(levels).height / 2);
+}
+
+export default function InfernoMap({ levels, painting, outlines }: InfernoMapProps) {
+  const { surface, bands, floor, height } = layout(levels);
+  /** From the painting's pixels to the drawing's units */
+  const k = height / 2048;
+  const paintedShape = (id: string) => {
+    const outline = painting ? outlines?.[id] : undefined;
+    if (!outline) return null;
+    const box = outlineBox(outline);
+    return {
+      polygon: <polygon className={hitClass} points={outlinePoints(outline)} transform={`scale(${k})`} filter="url(#inferno-feather)" />,
+      middle: ((box.top + box.bottom) / 2) * k,
+      right: box.right * k,
+    };
+  };
+  const surfaceShape = paintedShape(surface.id);
 
   return (
     <nav aria-label="The levels of Hell">
@@ -734,6 +762,9 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
             <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="noise" />
             <feDisplacementMap in="SourceGraphic" in2="noise" scale="9" xChannelSelector="R" yChannelSelector="G" />
           </filter>
+          <filter id="inferno-feather" x="-2%" y="-10%" width="104%" height="120%">
+            <feGaussianBlur stdDeviation="1" />
+          </filter>
           <filter id="inferno-grain" x="0" y="0" width="100%" height="100%">
             <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="3" />
             <feColorMatrix values="0 0 0 0 0.95  0 0 0 0 0.88  0 0 0 0 0.76  0 0 0 0.55 -0.2" />
@@ -748,7 +779,7 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
         {painting ? (
           <g aria-hidden="true">
             <image href={painting} width={height / 2} height={height} preserveAspectRatio="none" />
-            <rect x={height / 2 - 90} width="91" height={height} fill="url(#inferno-edge)" />
+            <rect className="xl:hidden" x={height / 2 - 90} width="91" height={height} fill="url(#inferno-edge)" />
           </g>
         ) : (
           <g aria-hidden="true">
@@ -758,7 +789,7 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
 
         <a href={`#${surface.id}`} aria-label={surface.name} className={linkClass}>
           {painting ? (
-            <rect className={hitClass} width={height / 2} height={SKY + 8} />
+            (surfaceShape?.polygon ?? <rect className={hitClass} width={height / 2} height={SKY + 8} />)
           ) : (
             <>
               <g aria-hidden="true">
@@ -771,7 +802,8 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
         </a>
 
         {bands.map(({ level, top, bottom, halfTop, halfBottom, points }) => {
-          const middle = (top + bottom) / 2;
+          const shape = paintedShape(level.id);
+          const middle = shape?.middle ?? (top + bottom) / 2;
           const left = CX - halfBottom + 12;
           const right = CX + halfBottom - 12;
           const scene = SCENES[level.id];
@@ -783,7 +815,7 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
               className={linkClass}
             >
               {painting ? (
-                <polygon className={hitClass} points={points} />
+                (shape?.polygon ?? <polygon className={hitClass} points={points} />)
               ) : (
                 <g filter="url(#inferno-rough)">
                   <polygon points={points} fill="black" opacity="0.55" transform="translate(0 5)" />
@@ -815,7 +847,8 @@ export default function InfernoMap({ levels, painting }: InfernoMapProps) {
                   </text>
                 )}
                 <line
-                  x1={CX + (halfTop + halfBottom) / 2 + 8}
+                  className="xl:hidden"
+                  x1={shape ? shape.right + 8 : CX + (halfTop + halfBottom) / 2 + 8}
                   y1={middle}
                   x2={LABEL_X - 12}
                   y2={middle}

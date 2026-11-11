@@ -1,0 +1,23 @@
+Two images are given. The FIRST image is a simple flat diagram: a map of the heavens from Dante's Divine Comedy, a classic of world literature. It shows the curve of the earth at the bottom and, above it, ten layers of sky stacked one over the other, the top one the tallest. The SECOND image is a reference sheet of fifteen labelled illustrations by Gustave Doré (1868) for the same poem, shown in color.
+
+Repaint the FIRST image as a finished work of art, so that the scene in each layer follows Doré's own picture of that heaven: his figures, clouds, rays of light and color, as listed below. The second image is only a reference; do not reproduce the sheet, its grid or its labels.
+
+Keep the layout of the first image exactly: the same tall format, the earth at the bottom, and the ten layers of sky in the same order, each at the same height and filling the full width. Do not draw the outlined panels: instead, part each layer from the next with a long bank of cloud, so the picture reads as one sky rising in ten clear storeys. In each of the nine lower layers keep the heavenly body as a glowing sphere at the far left, and fill the rest of the layer with its scene as a wide, low panorama. The sky is deep night blue at the bottom and grows steadily brighter and more golden toward the top, which is pure radiant light. Figures are small, as on a map.
+
+Throughout, as in Doré: the two travellers appear in each layer as a pair of small figures standing on a cloud, one in a long red robe and red cap (Dante), one a woman in white with a halo (Beatrice). The blessed souls are figures of light in white and gold.
+
+The layers, from the BOTTOM of the picture to the TOP:
+1. The curve of the earth with a green forested mountain top, and the red and white pair rising from it into the sky.
+2. The Moon, a pale pearl-grey sphere (Plate 118): a few faint, translucent women in white veils standing in mist, like reflections.
+3. Mercury, a small bright sphere (Plate 119): a great host of radiant figures in white streaming toward the pair in shafts of light.
+4. Venus, a soft rose-white sphere (Plate 120): shining figures on banks of cloud, one haloed figure raising his arm in a beam of light.
+5. The Sun, a blazing golden sphere (Plate 121): two great rings of radiant figures, one inside the other, circling like garlands around the pair.
+6. Mars, a red sphere (Plates 122 and 123): a vast glowing cross made of countless souls and angels, with the pair before it.
+7. Jupiter, a silver-white sphere (Plates 125 and 127): countless lights gathered into the shape of a great eagle with spread wings.
+8. Saturn, a dull gold sphere (Plate 130): a golden ladder rising out of sight, with shining figures going up and down it.
+9. The fixed stars, the sky thick with stars (Plates 131 and 132): three robed and bearded apostles speaking with the kneeling red figure; hosts of angels above.
+10. The outermost sphere, clear as crystal (Plate 133): nine wide rings of angels, one inside another, turning around one tiny, piercing point of light.
+11. The top and tallest layer (Plates 134 and 135): the celestial rose: an immense round amphitheatre of angels and blessed souls in ring upon ring around a blinding white light at its center, with a crowned queen in blue enthroned among angels; the pair, tiny, looking up at it.
+
+Strict rules: no text, no letters, no numbers, no labels, no captions, no signature, no border, no frame. Do not add levels, do not merge levels, do not leave any level out. Do not crop.
+Style: a nineteenth-century steel engraving by Gustave Doré, with fine hatching and cross-hatching and strong light and shadow, glazed with translucent oil color as in the reference sheet. The engraved linework stays visible under the color. Real depth and atmosphere. Solemn and grand, not cute, not cartoonish, no flat vector shapes, no modern digital look.

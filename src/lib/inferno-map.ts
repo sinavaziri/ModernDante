@@ -182,8 +182,3 @@ export function getInfernoLevels(): InfernoLevel[] {
 export function getInfernoLevelsForCanto(canto: number): InfernoLevel[] {
   return LEVELS.filter(level => level.cantos.includes(canto));
 }
-
-/** "Circle 7: Violence", or just the name for the places between circles */
-export function infernoLevelLabel(level: InfernoLevel): string {
-  return level.circle ? `Circle ${level.circle}: ${level.name}` : level.name;
-}

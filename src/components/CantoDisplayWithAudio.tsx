@@ -4,7 +4,8 @@ import { Fragment, useState, useMemo, useCallback, useEffect, useRef, useSyncExt
 import Link from 'next/link';
 import type { Cantica } from '@/lib/canticas';
 import type { Canto } from '@/lib/cantos';
-import { getInfernoLevelsForCanto, infernoLevelLabel } from '@/lib/inferno-map';
+import { getInfernoLevelsForCanto } from '@/lib/inferno-map';
+import { LEVEL_WORD, getRealmLevelsForCanto } from '@/lib/realm-maps';
 import { getImagesForCanto, getPlateImage, titleCase, type ImageData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
@@ -198,7 +199,8 @@ export default function CantoDisplay({ canto, canticaName, cantica, notes }: Can
 
   const images = getImagesForCanto(cantica, canto.number);
   // Where an Inferno canto is in Hell, linked to the map
-  const mapLevels = cantica === 'inferno' ? getInfernoLevelsForCanto(canto.number) : [];
+  const mapLevels = cantica === 'inferno' ? getInfernoLevelsForCanto(canto.number) : getRealmLevelsForCanto(cantica, canto.number);
+  const mapPath = cantica === 'inferno' ? '/map' : `/map/${cantica}`;
 
   // Load this canto's word-level timing data. A canto without a file has no audio.
   useEffect(() => {
@@ -493,8 +495,8 @@ export default function CantoDisplay({ canto, canticaName, cantica, notes }: Can
               {mapLevels.map((level, i) => (
                 <Fragment key={level.id}>
                   {i > 0 && ', '}
-                  <Link href={`/map#${level.id}`} className="text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary">
-                    {infernoLevelLabel(level)}
+                  <Link href={`${mapPath}#${level.id}`} className="text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary">
+                    {level.circle ? `${LEVEL_WORD[cantica]} ${level.circle}: ${level.name}` : level.name}
                   </Link>
                 </Fragment>
               ))}
