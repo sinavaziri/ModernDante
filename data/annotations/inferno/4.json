@@ -1,0 +1,360 @@
+[
+  {
+    "line": 1,
+    "quote": "A heavy thunder",
+    "note": "At the end of Canto 3, Dante fainted on the bank of the river Acheron as the ground shook. He wakes on the far side, and never says how he crossed."
+  },
+  {
+    "line": 16,
+    "quote": "his face gone pale",
+    "note": "Virgil is going home: this circle is where he spends eternity. He calls his pallor pity for the souls below, and readers have long heard his own grief in it too."
+  },
+  {
+    "line": 27,
+    "quote": "that first circle",
+    "note": "The outermost of Hell's nine circles. Each circle below is narrower and holds worse sinners."
+  },
+  {
+    "line": 41,
+    "quote": "they lacked baptism",
+    "note": "Medieval theology held that no one could be saved without baptism, \"the gateway to the faith\". Those who lived before Christ could be saved only by faith in the Christ to come, as the Hebrew patriarchs named below were."
+  },
+  {
+    "line": 45,
+    "quote": "I myself am among them",
+    "note": "Virgil's own sentence, spoken plainly. The guide who will lead Dante to the threshold of Heaven can never enter it."
+  },
+  {
+    "line": 48,
+    "quote": "living without hope in endless longing",
+    "note": "Limbo's only punishment: they long to see God, and know they never will."
+  },
+  {
+    "line": 52,
+    "quote": "limbo",
+    "entity": "limbo"
+  },
+  {
+    "line": 60,
+    "quote": "I was new to this place",
+    "note": "Virgil died in 19 BC. Christ's descent came after the Crucifixion, about fifty years later."
+  },
+  {
+    "line": 61,
+    "quote": "a Mighty One",
+    "note": "Christ, whose name is never spoken in Hell. After the Crucifixion, Christian tradition held, he descended into Hell and led the righteous of the Old Testament up to Heaven: the Harrowing of Hell. Dante's question was a way of asking whether it really happened."
+  },
+  {
+    "line": 62,
+    "quote": "crowned with the sign of victory",
+    "note": "A halo marked with the cross, Christ's sign of victory over death."
+  },
+  {
+    "line": 63,
+    "quote": "our First Father",
+    "entity": "adam"
+  },
+  {
+    "line": 64,
+    "quote": "Abel",
+    "entity": "abel"
+  },
+  {
+    "line": 64,
+    "quote": "Noah",
+    "entity": "noah"
+  },
+  {
+    "line": 65,
+    "quote": "Moses the lawgiver",
+    "entity": "moses"
+  },
+  {
+    "line": 65,
+    "quote": "obedient Abraham",
+    "entity": "abraham"
+  },
+  {
+    "line": 66,
+    "quote": "King David",
+    "entity": "david"
+  },
+  {
+    "line": 66,
+    "quote": "Israel with his father and sons",
+    "entity": "jacob",
+    "context": "Israel is Jacob. With him go his father, Isaac, and his twelve sons."
+  },
+  {
+    "line": 67,
+    "quote": "Rachel",
+    "entity": "rachel"
+  },
+  {
+    "line": 70,
+    "quote": "no human souls were ever saved",
+    "note": "Until Christ's descent, Heaven held no human souls. The saved of the Old Testament waited here."
+  },
+  {
+    "line": 76,
+    "quote": "conquering a hemisphere of darkness",
+    "note": "A glow around the noble castle ahead, the only light in Hell: the light of human reason and achievement, without grace."
+  },
+  {
+    "line": 87,
+    "quote": "the supreme Poet",
+    "entity": "virgil",
+    "context": "A voice hails Virgil on his return. He left Limbo when Beatrice came to send him to rescue Dante (Inferno 2)."
+  },
+  {
+    "line": 93,
+    "quote": "the sword in his hand",
+    "note": "Homer carries a sword as the poet of war, the singer of the Iliad."
+  },
+  {
+    "line": 95,
+    "quote": "Homer",
+    "entity": "homer"
+  },
+  {
+    "line": 96,
+    "quote": "Horace the satirist",
+    "entity": "horace"
+  },
+  {
+    "line": 97,
+    "quote": "Ovid",
+    "entity": "ovid"
+  },
+  {
+    "line": 97,
+    "quote": "Lucan",
+    "entity": "lucan"
+  },
+  {
+    "line": 99,
+    "quote": "the name that single voice proclaimed",
+    "note": "The name of poet. In honoring Virgil, the four honor what they share with him."
+  },
+  {
+    "line": 102,
+    "quote": "that master of the highest song",
+    "note": "Homer, the poet of epic, the highest kind of poetry. A few readers take it as Virgil."
+  },
+  {
+    "line": 109,
+    "quote": "the sixth among such brilliance",
+    "note": "Dante, a living poet writing in Italian rather than Latin, ranks himself with the five greatest poets of antiquity. It is an astonishing claim, and the poem he is writing is meant to earn it."
+  },
+  {
+    "line": 112,
+    "quote": "better left unspoken here",
+    "note": "Dante keeps the conversation to himself: perhaps talk of poetry, perhaps praise it would be immodest to repeat."
+  },
+  {
+    "line": 113,
+    "quote": "a noble castle",
+    "note": "The stronghold of human wisdom and fame. Its seven walls are often read as the seven virtues (prudence, justice, courage and temperance, with three virtues of the intellect), or as the parts of philosophy. The stream around it may be eloquence, which the poets cross without effort."
+  },
+  {
+    "line": 117,
+    "quote": "seven gates",
+    "note": "Often read as the seven liberal arts of a medieval education: grammar, logic and rhetoric, then arithmetic, music, geometry and astronomy. Through them one enters the meadow of wisdom."
+  },
+  {
+    "line": 125,
+    "quote": "the green enamel",
+    "note": "A meadow as bright as enamel, like the Elysian Fields where Aeneas meets the blessed dead in the Aeneid."
+  },
+  {
+    "line": 128,
+    "quote": "Electra with many companions",
+    "entity": "electra",
+    "context": "Her companions are Trojans and their heirs, Rome's ancestors, the founders of Dante's idea of empire."
+  },
+  {
+    "line": 129,
+    "quote": "Hector",
+    "entity": "hector"
+  },
+  {
+    "line": 129,
+    "quote": "Aeneas",
+    "entity": "aeneas"
+  },
+  {
+    "line": 130,
+    "quote": "Caesar in armor with his falcon eyes",
+    "entity": "julius-caesar",
+    "context": "The Roman historian Suetonius describes Caesar's eyes as dark and keen. Dante pictures him armed, as the conqueror who founded the empire."
+  },
+  {
+    "line": 131,
+    "quote": "Camilla",
+    "entity": "camilla"
+  },
+  {
+    "line": 131,
+    "quote": "Penthesilea",
+    "entity": "penthesilea"
+  },
+  {
+    "line": 132,
+    "quote": "King Latinus",
+    "entity": "latinus"
+  },
+  {
+    "line": 133,
+    "quote": "Lavinia",
+    "entity": "lavinia"
+  },
+  {
+    "line": 134,
+    "quote": "Brutus",
+    "entity": "brutus"
+  },
+  {
+    "line": 134,
+    "quote": "Tarquin",
+    "entity": "tarquin"
+  },
+  {
+    "line": 135,
+    "quote": "Lucretia",
+    "entity": "lucretia"
+  },
+  {
+    "line": 135,
+    "quote": "Julia",
+    "entity": "julia"
+  },
+  {
+    "line": 135,
+    "quote": "Marcia",
+    "entity": "marcia"
+  },
+  {
+    "line": 135,
+    "quote": "Cornelia",
+    "entity": "cornelia"
+  },
+  {
+    "line": 136,
+    "quote": "Saladin",
+    "entity": "saladin",
+    "context": "He sits alone, a medieval Muslim among the heroes of Troy and Rome, honored for his virtue though outside the faith."
+  },
+  {
+    "line": 138,
+    "quote": "the Master of those who know",
+    "entity": "aristotle",
+    "context": "Dante doesn't need to name him. Every philosopher in the meadow turns toward him."
+  },
+  {
+    "line": 141,
+    "quote": "Socrates",
+    "entity": "socrates"
+  },
+  {
+    "line": 141,
+    "quote": "Plato",
+    "entity": "plato"
+  },
+  {
+    "line": 143,
+    "quote": "Democritus",
+    "entity": "democritus"
+  },
+  {
+    "line": 144,
+    "quote": "Diogenes",
+    "entity": "diogenes"
+  },
+  {
+    "line": 144,
+    "quote": "Anaxagoras",
+    "entity": "anaxagoras"
+  },
+  {
+    "line": 144,
+    "quote": "Thales",
+    "entity": "thales"
+  },
+  {
+    "line": 145,
+    "quote": "Zeno",
+    "entity": "zeno"
+  },
+  {
+    "line": 145,
+    "quote": "Empedocles",
+    "entity": "empedocles"
+  },
+  {
+    "line": 145,
+    "quote": "Heraclitus",
+    "entity": "heraclitus"
+  },
+  {
+    "line": 147,
+    "quote": "Dioscorides",
+    "entity": "dioscorides",
+    "context": "Dante calls him the great collector of the qualities of things: the healing properties of plants."
+  },
+  {
+    "line": 147,
+    "quote": "Orpheus",
+    "entity": "orpheus"
+  },
+  {
+    "line": 148,
+    "quote": "Cicero",
+    "entity": "cicero"
+  },
+  {
+    "line": 148,
+    "quote": "Livy",
+    "note": "Dante's Italian names Lino, Linus, a legendary singer of Greek myth who fits beside Orpheus. Longfellow, following some old copies, read it as Livy, the Roman historian Dante elsewhere calls \"Livy, who does not err\" (Inferno 28)."
+  },
+  {
+    "line": 148,
+    "quote": "moral Seneca",
+    "entity": "seneca",
+    "context": "\"Moral\" may set him apart from Seneca the writer of tragedies, whom many medieval readers took for a different man."
+  },
+  {
+    "line": 149,
+    "quote": "Euclid the geometer",
+    "entity": "euclid"
+  },
+  {
+    "line": 149,
+    "quote": "Ptolemy",
+    "entity": "ptolemy"
+  },
+  {
+    "line": 150,
+    "quote": "Galen",
+    "entity": "galen"
+  },
+  {
+    "line": 150,
+    "quote": "Hippocrates",
+    "entity": "hippocrates"
+  },
+  {
+    "line": 150,
+    "quote": "Avicenna",
+    "entity": "avicenna"
+  },
+  {
+    "line": 151,
+    "quote": "Averroes who wrote the great Commentary",
+    "entity": "averroes"
+  },
+  {
+    "line": 158,
+    "quote": "a place where nothing shines",
+    "note": "The second circle, where the lustful are whirled in an endless storm: the next canto."
+  }
+]

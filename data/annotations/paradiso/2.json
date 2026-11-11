@@ -1,0 +1,188 @@
+[
+  {
+    "line": 1,
+    "quote": "your eager little boats",
+    "note": "Dante speaks to his readers. The poem is a ship, as it has been since the opening of Purgatorio, and those without the learning to follow are told to turn back before the open sea."
+  },
+  {
+    "line": 6,
+    "quote": "have never been crossed before",
+    "note": "A proud claim, and a fair one: no poet before Dante had tried to describe Heaven from the inside."
+  },
+  {
+    "line": 7,
+    "quote": "Minerva",
+    "note": "The Roman goddess of wisdom. She fills the sails, the god of poetry steers, and the Muses give the bearings: wisdom, inspiration and art."
+  },
+  {
+    "line": 7,
+    "quote": "Apollo",
+    "entity": "apollo"
+  },
+  {
+    "line": 8,
+    "quote": "nine Muses point out the stars",
+    "note": "The Muses are the nine goddesses of the arts. Dante's Italian names the stars: the Bears, the two constellations that sailors steer by because they circle the north pole. His word for nine can also mean new, and some read \"new Muses\"."
+  },
+  {
+    "line": 10,
+    "quote": "the bread of angels",
+    "note": "A phrase from the Psalms for the manna that fed Israel in the desert (Psalm 78). Dante uses it for wisdom, the knowledge of God. People can live on it in this life but never get their fill: only the blessed do."
+  },
+  {
+    "line": 14,
+    "quote": "waters that smooth themselves again",
+    "note": "A wake closes quickly. The reader must stay close behind or lose the way."
+  },
+  {
+    "line": 15,
+    "quote": "Colchos",
+    "note": "Colchis, at the eastern end of the Black Sea. The Argonauts, the heroes of Greek myth, sailed there in the first ship to fetch the Golden Fleece."
+  },
+  {
+    "line": 17,
+    "quote": "Jason",
+    "entity": "jason",
+    "context": "To win the fleece he had to yoke two fire-breathing bulls and plow a field with them, while his crew looked on amazed (Ovid, Metamorphoses 7)."
+  },
+  {
+    "line": 18,
+    "quote": "The eternal thirst born within us",
+    "note": "The desire for God, which Dante's Italian says is created together with the soul. It is the natural pull that Beatrice described at the end of Canto 1."
+  },
+  {
+    "line": 23,
+    "quote": "to strike and fly",
+    "note": "The arrow's flight is told backwards: it hits, flies, and leaves the string. The journey is so fast that the arrival seems to come first."
+  },
+  {
+    "line": 31,
+    "quote": "the first star",
+    "entity": "heaven-of-the-moon",
+    "context": "\"Star\" in Dante's time meant any heavenly body, the planets included. Dante and Beatrice do not land on the moon: they pass into it."
+  },
+  {
+    "line": 35,
+    "quote": "The eternal pearl",
+    "note": "The moon. Unlike anything on earth, the heavenly bodies were thought to be made of a perfect substance that never changes or decays."
+  },
+  {
+    "line": 38,
+    "quote": "If I was still flesh",
+    "note": "Two solid bodies cannot be in the same place. If Dante is here in his body, as he still will not say for certain, then he has entered the moon without parting it, which nature cannot explain."
+  },
+  {
+    "line": 43,
+    "quote": "how our human nature was united with God's",
+    "note": "The Incarnation: Christ as fully God and fully human in one person. If one body inside another is a wonder, this is a greater one, and in Heaven it will be seen directly."
+  },
+  {
+    "line": 46,
+    "quote": "the first truth",
+    "note": "The truths that need no proof because the mind sees them at once, such as that a whole is greater than its part. In Heaven the mysteries of faith will be as plain as that."
+  },
+  {
+    "line": 53,
+    "quote": "that fable about Cain",
+    "note": "Italian folklore saw in the moon's markings the figure of Cain, banished there for killing his brother Abel and carrying a bundle of thorns. Inferno 20 calls the moon \"Cain and his thorns\"."
+  },
+  {
+    "line": 56,
+    "quote": "the key of the senses",
+    "note": "For Aristotle and his medieval followers, all human knowledge starts from what the senses report. Where the senses cannot reach, reason has little to work with and easily goes wrong."
+  },
+  {
+    "line": 62,
+    "quote": "matter that is rare or dense",
+    "note": "The patches are dark, on this view, where the moon's substance is thinner and reflects less sunlight. Dante had argued exactly this in his earlier book, the Convivio, following the Arab philosopher Averroes. Beatrice is about to correct Dante's own published opinion."
+  },
+  {
+    "line": 66,
+    "quote": "The eighth sphere",
+    "note": "The sphere of the fixed stars, above the seven planets. Its stars differ in color and brightness and, as astrology taught, in the kind of influence they send down."
+  },
+  {
+    "line": 70,
+    "quote": "only one power",
+    "note": "Her first argument. If the stars differed only in how dense they are, they would all have the same influence, some more and some less. But they were held to have influences of different kinds, so the difference must lie deeper than matter."
+  },
+  {
+    "line": 73,
+    "quote": "formal principles",
+    "note": "A term from medieval philosophy: the inner nature that makes a thing the kind of thing it is, as distinct from the matter it is made of."
+  },
+  {
+    "line": 81,
+    "quote": "during a solar eclipse",
+    "note": "Her second argument. In a solar eclipse the moon passes in front of the sun. If parts of the moon were thin all the way through, sunlight would show through them."
+  },
+  {
+    "line": 93,
+    "quote": "that conceals lead behind it",
+    "note": "A mirror. Medieval mirrors were made of glass backed with lead."
+  },
+  {
+    "line": 98,
+    "quote": "experiment",
+    "note": "Beatrice, who stands for revealed truth, settles a point of physics with a test anyone can try. A light reflected from a mirror farther away looks smaller but no dimmer, so thin patches that reflected from deeper inside the moon would not look dark."
+  },
+  {
+    "line": 110,
+    "quote": "the foundation of snow",
+    "note": "The ground under the snow, laid bare when the sun melts it. Dante's mind has been cleared of its error and is ready for the truth."
+  },
+  {
+    "line": 117,
+    "quote": "the heaven of divine peace",
+    "entity": "empyrean",
+    "context": "Beatrice starts her own answer at the top of the universe and works down."
+  },
+  {
+    "line": 118,
+    "quote": "a sphere in whose power",
+    "entity": "primum-mobile",
+    "context": "It receives from God a single, undivided power, the source of the being of everything inside it, and passes it downward."
+  },
+  {
+    "line": 120,
+    "quote": "The following heaven, with its many stars",
+    "note": "The eighth sphere again. It splits the single power from above among its many stars, each with a nature of its own."
+  },
+  {
+    "line": 123,
+    "quote": "The other spheres",
+    "entity": "heavenly-spheres",
+    "context": "The seven spheres of the planets. Each takes what comes down from above and turns it to its own effects on the world below."
+  },
+  {
+    "line": 126,
+    "quote": "organs of the universe",
+    "note": "The heavens work like the organs of one body, each receiving from the one above and acting on the one below."
+  },
+  {
+    "line": 133,
+    "quote": "their blessed movers",
+    "entity": "angels",
+    "context": "The sphere is the hammer and the angel is the smith: the heavens have no power of their own, only what the angels work through them."
+  },
+  {
+    "line": 136,
+    "quote": "the deep Intelligence that turns it",
+    "note": "The order of angels that moves the sphere of the stars. Paradiso 28 names them: the Cherubim."
+  },
+  {
+    "line": 138,
+    "quote": "Just as the soul spreads itself",
+    "note": "One soul sees through the eye and hears through the ear. In the same way one angelic power works differently through each of the stars."
+  },
+  {
+    "line": 144,
+    "quote": "a different compound",
+    "note": "Each power from above joins with the heavenly body it moves in its own way, so each body shines in its own way."
+  },
+  {
+    "line": 149,
+    "quote": "like happiness shining through a living eye",
+    "note": "The answer. The light of a star or planet is the joy of its angelic mover showing through it, as gladness shows in a person's eye. The moon's dark patches are differences in that power, not in its matter. Dante asked a question of physics and is given a rule for the whole Paradiso: differences come from above, from spirit."
+  }
+]

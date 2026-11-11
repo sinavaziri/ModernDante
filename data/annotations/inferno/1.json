@@ -1,0 +1,211 @@
+[
+  {
+    "line": 1,
+    "quote": "the midpoint of my life's journey",
+    "note": "The Bible gives a life as seventy years (Psalm 90), so Dante is 35. Born in 1265, he sets the journey at Easter 1300. His Italian says \"our life\", not \"my life\": from the first line, his journey stands for everyone's."
+  },
+  {
+    "line": 2,
+    "quote": "a dark forest",
+    "note": "Usually read as sin and spiritual confusion, a life gone astray. Dante never says what his own straying was. In Purgatorio 30–31, Beatrice reproaches him for turning to other things after her death."
+  },
+  {
+    "line": 11,
+    "quote": "so drowsy was I",
+    "note": "Sleep as the dulling of the soul. Sin creeps up unnoticed, so Dante can't say when he left the true way."
+  },
+  {
+    "line": 13,
+    "quote": "the base of a hill",
+    "note": "The hill is the happy, virtuous life Dante hopes to climb to, and its sunlit summit a first glimpse of God's grace. He will learn that he can't climb it directly: the way up leads first down through Hell."
+  },
+  {
+    "line": 18,
+    "quote": "that star which guides all travelers true",
+    "note": "The sun. In the earth-centered astronomy Dante used, the sun was one of the planets circling the earth. It guides travelers on the road, and stands for God's light guiding the soul."
+  },
+  {
+    "line": 20,
+    "quote": "the lake of my heart",
+    "note": "Medieval medicine placed a hollow in the heart where the blood gathered, and fear was felt there. Dante makes it a lake, still troubled after the night."
+  },
+  {
+    "line": 22,
+    "quote": "Like a man who, gasping for breath",
+    "note": "The first of the poem's many extended similes: a shipwrecked man on the beach, turning back to stare at the sea that nearly drowned him. The forest was Dante's sea."
+  },
+  {
+    "line": 27,
+    "quote": "no living person has ever escaped",
+    "note": "The way of sin leads to death, of the soul as well as the body. Dante is the exception, and the poem is the story of how."
+  },
+  {
+    "line": 30,
+    "quote": "always placing my weight on the lower foot",
+    "note": "A famously puzzling line. Literally, a climber's back foot is the lower one. Many readers take it as a limp: the soul's \"firm foot\", its will, still drags behind as it tries to climb toward virtue."
+  },
+  {
+    "line": 32,
+    "quote": "a leopard",
+    "entity": "leopard",
+    "context": "Its bright spotted coat, the spring morning and the rising sun give Dante hope that he can get past it."
+  },
+  {
+    "line": 38,
+    "quote": "the sun was rising with those same stars",
+    "note": "The sun is in the constellation Aries, where medieval tradition said it stood when God created the world in spring. The journey starts on a morning like the first morning of creation."
+  },
+  {
+    "line": 41,
+    "quote": "the sweet season",
+    "note": "Spring, the week of Easter."
+  },
+  {
+    "line": 44,
+    "quote": "a lion",
+    "entity": "lion"
+  },
+  {
+    "line": 48,
+    "quote": "a she-wolf",
+    "entity": "she-wolf",
+    "context": "The beast Dante can't get past. Virgil will say she lets no one by, and grows hungrier the more she eats."
+  },
+  {
+    "line": 60,
+    "quote": "where the sun is silent",
+    "note": "Dante describes darkness as silence, mixing the senses: he is being driven back down to the forest, where no light reaches."
+  },
+  {
+    "line": 63,
+    "quote": "hoarse from long silence",
+    "note": "The Italian can mean faint or dim as well as hoarse. Read literally, it is a shade who hasn't spoken in centuries. Read as allegory, it is reason, so long ignored by Dante that its voice has grown weak."
+  },
+  {
+    "line": 66,
+    "quote": "shade",
+    "entity": "shade"
+  },
+  {
+    "line": 68,
+    "quote": "Lombardy",
+    "note": "An anachronism: the Lombards, who gave the region its name, arrived in Italy six centuries after Virgil. Dante uses the name of his own day."
+  },
+  {
+    "line": 69,
+    "quote": "Mantuans",
+    "entity": "mantua"
+  },
+  {
+    "line": 70,
+    "quote": "Julius Caesar",
+    "entity": "julius-caesar",
+    "context": "Virgil was born in 70 BC, years before Caesar came to power. \"Late\" is usually read as too late: Virgil was still young when Caesar was killed, and never wrote under him."
+  },
+  {
+    "line": 71,
+    "quote": "good Augustus",
+    "entity": "augustus"
+  },
+  {
+    "line": 72,
+    "quote": "the false and lying gods",
+    "note": "The gods of Rome, which Virgil, now in the afterlife, knows to have been false."
+  },
+  {
+    "line": 74,
+    "quote": "son of Anchises",
+    "entity": "aeneas",
+    "context": "Virgil doesn't name his hero, only his father, as the Aeneid often does. \"Righteous\" is Virgil's own word for him there."
+  },
+  {
+    "line": 75,
+    "quote": "proud Ilium",
+    "note": "Troy, called proud Ilium in the Aeneid. The Greeks burned it after ten years of war."
+  },
+  {
+    "line": 77,
+    "quote": "the Mount of Joy",
+    "note": "The sunlit hill of the opening lines."
+  },
+  {
+    "line": 79,
+    "quote": "Virgil",
+    "entity": "virgil",
+    "context": "Dante recognizes him with awe. The poet he learned his craft from will be his guide."
+  },
+  {
+    "line": 87,
+    "quote": "the noble style",
+    "note": "The high style of Dante's earlier love poems, which he says he learned from Virgil's book."
+  },
+  {
+    "line": 101,
+    "quote": "the Greyhound",
+    "entity": "greyhound"
+  },
+  {
+    "line": 105,
+    "quote": "Between Feltro and Feltro",
+    "note": "A riddle. It may mean between the towns of Feltre and Montefeltro, a region that would point to Cangrande della Scala of Verona. Or it may mean \"between felt and felt\": felt was a humble cloth, so a humble birth."
+  },
+  {
+    "line": 106,
+    "quote": "that humble Italy",
+    "note": "A phrase from the Aeneid, where Aeneas's sailors first sight Italy low on the horizon. Humble there means low-lying."
+  },
+  {
+    "line": 107,
+    "quote": "the virgin Camilla",
+    "entity": "camilla"
+  },
+  {
+    "line": 108,
+    "quote": "Euryalus, Turnus, and Nisus",
+    "note": "Fallen of the Aeneid's war in Italy. Nisus and Euryalus were young Trojan friends who died together on a night raid. Turnus was the Italian prince Aeneas killed in the poem's last lines. Dante mixes the dead of both sides, as if all died for the same Italy."
+  },
+  {
+    "line": 111,
+    "quote": "from where envy first released her",
+    "note": "The devil's envy, which brought death into the world, in the Book of Wisdom (2:24)."
+  },
+  {
+    "line": 114,
+    "quote": "the eternal realm",
+    "entity": "hell",
+    "context": "Virgil sketches the whole journey in three steps: Hell first, then Purgatory, then Heaven with another guide."
+  },
+  {
+    "line": 117,
+    "quote": "a second death",
+    "note": "The damned long for a death that would end their existence, and with it their pain. Revelation calls damnation itself the second death (20:14)."
+  },
+  {
+    "line": 118,
+    "quote": "those who are content",
+    "entity": "purgatory",
+    "context": "The souls in Purgatory suffer in fire, but gladly, because they know they will reach Heaven."
+  },
+  {
+    "line": 122,
+    "quote": "a soul worthier than I",
+    "entity": "beatrice",
+    "context": "Beatrice, not yet named. She will take Virgil's place as guide at the top of Purgatory."
+  },
+  {
+    "line": 124,
+    "quote": "that Emperor who reigns above",
+    "note": "God, described in the language of empire that Virgil, a Roman, would know. \"Everywhere he governs, but there he reigns\": God rules all things, but his throne is in Heaven."
+  },
+  {
+    "line": 125,
+    "quote": "because I rebelled against his law",
+    "note": "Virgil was no rebel. He lived before Christ and never knew God, and in Dante's theology that alone shuts him out of Heaven. Inferno 4 shows where he spends eternity."
+  },
+  {
+    "line": 134,
+    "quote": "the gate of Saint Peter",
+    "note": "Probably the gate of Purgatory, kept by an angel who holds Saint Peter's keys (Purgatorio 9). Some read it as the gate of Heaven itself.",
+    "plate": 91
+  }
+]

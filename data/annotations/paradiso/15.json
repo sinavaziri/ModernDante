@@ -1,0 +1,285 @@
+[
+  {
+    "line": 1,
+    "quote": "a benevolent will",
+    "note": "The good will of the souls in the cross. Rightly directed love always shows itself as kindness, as greed shows itself as ill will. Their kindness here is to stop singing so that Dante can speak."
+  },
+  {
+    "line": 4,
+    "quote": "that sweet lyre",
+    "note": "The cross of singing souls, pictured as a stringed instrument that God's hand tunes and plays."
+  },
+  {
+    "line": 7,
+    "quote": "deaf",
+    "note": "A reassurance about prayer. Souls who fall silent just to encourage a living man to ask will surely listen to the prayers of the living."
+  },
+  {
+    "line": 10,
+    "quote": "lament without end",
+    "note": "The damned, who gave up eternal love for the sake of things that pass away."
+  },
+  {
+    "line": 14,
+    "quote": "a sudden fire",
+    "note": "A shooting star. It looks like a star moving to a new place, except that no star is missing afterward from where it began."
+  },
+  {
+    "line": 19,
+    "quote": "the horn extending rightward",
+    "note": "The right arm of the cross. One light runs along it to the center and down to the foot, never leaving the cross, to come near Dante."
+  },
+  {
+    "line": 20,
+    "quote": "that cross",
+    "entity": "heaven-of-mars"
+  },
+  {
+    "line": 25,
+    "quote": "Anchises",
+    "entity": "anchises",
+    "context": "Dante's meeting with his ancestor is modeled on Aeneas's meeting with his father in the underworld. It casts Dante as a new Aeneas, a traveler to the world of the dead with a mission to carry back."
+  },
+  {
+    "line": 26,
+    "quote": "our greatest poet",
+    "entity": "virgil",
+    "context": "Dante's phrase is \"our greatest Muse\". The \"if\" is a reminder that the Aeneid is a poet's story, not Scripture."
+  },
+  {
+    "line": 28,
+    "quote": "O blood of mine!",
+    "note": "The soul's first words are in Latin in Dante's text, three full lines of it: O sanguis meus. It is the language of the Church and of Virgil, and of a man born two centuries earlier. Anchises uses the same words, \"my blood\", in the Aeneid."
+  },
+  {
+    "line": 30,
+    "quote": "opened twice",
+    "note": "Now, while Dante is still alive, and again after his death. The line promises his salvation. Early commentators noted that Saint Paul, too, was caught up to Heaven in his lifetime."
+  },
+  {
+    "line": 32,
+    "quote": "my lady",
+    "entity": "beatrice"
+  },
+  {
+    "line": 39,
+    "quote": "I could not understand",
+    "note": "The soul's thought for a moment runs so high that no mortal mind could follow it. It must cool before it can come down to human speech."
+  },
+  {
+    "line": 47,
+    "quote": "Trinity and One",
+    "entity": "trinity"
+  },
+  {
+    "line": 50,
+    "quote": "the great book",
+    "note": "God's foreknowledge, a book in which nothing is ever added or erased. The soul read there that Dante would come, and has been waiting for him."
+  },
+  {
+    "line": 54,
+    "quote": "clothed you with feathers",
+    "note": "Beatrice, who gave Dante the wings to fly up through the heavens."
+  },
+  {
+    "line": 57,
+    "quote": "the numbers five and six",
+    "note": "Every number is built up from the number one, so whoever truly knows one knows them all. In the same way the blessed, who see God, the First, see every thought that flows from him."
+  },
+  {
+    "line": 62,
+    "quote": "the mirror",
+    "note": "The mind of God, in which the blessed see Dante's thoughts even before he thinks them."
+  },
+  {
+    "line": 67,
+    "quote": "let your voice ring out",
+    "note": "The soul already knows the question and the answer. It asks to hear Dante speak anyway, out of love, as a father wants to hear his child's voice."
+  },
+  {
+    "line": 74,
+    "quote": "the first Equality",
+    "note": "God, in whom love, knowledge and power are all infinite and so all equal. He is also the \"Sun\" of the next lines. Since the blessed saw him, their power to express what they feel has matched the feeling exactly."
+  },
+  {
+    "line": 79,
+    "quote": "will and reasoning",
+    "note": "In the living, the wish runs ahead of the means. Dante feels more gratitude than he can find words for, so he can only give thanks inwardly."
+  },
+  {
+    "line": 85,
+    "quote": "living topaz",
+    "note": "A golden gem. The cross is a jewel and each soul is a stone set in it."
+  },
+  {
+    "line": 89,
+    "quote": "I was your root",
+    "note": "The founder of Dante's family tree. He gives his name at line 135."
+  },
+  {
+    "line": 91,
+    "quote": "The one from whom your lineage",
+    "note": "Alighiero, son of the speaker, from whom the family took the name Alighieri. Dante's father was also called Alighiero. Records show the elder Alighiero still alive in 1201, so \"a hundred years and more\" in 1300 is a little too long."
+  },
+  {
+    "line": 93,
+    "quote": "first terrace",
+    "note": "The first terrace of Mount Purgatory, where the proud walk bent double under great stones (Purgatorio 10–12). Pride runs in the family: Dante expects to spend time there himself (Purgatorio 13)."
+  },
+  {
+    "line": 95,
+    "quote": "shorten his long labor",
+    "note": "The prayers and good works of the living shorten the time souls spend in Purgatory, a rule Dante learned on the mountain."
+  },
+  {
+    "line": 97,
+    "quote": "Florence",
+    "entity": "florence",
+    "context": "The small, sober city of the early 1100s, held up against the rich and violent Florence of Dante's own day. This portrait of the good old times is one of the most famous passages of the poem."
+  },
+  {
+    "line": 97,
+    "quote": "her ancient walls",
+    "note": "The old circuit of walls, far smaller than the city of 1300, which had outgrown it twice."
+  },
+  {
+    "line": 98,
+    "quote": "tierce and nones",
+    "note": "Two of the hours of daily prayer, at mid-morning and mid-afternoon. The bells of the Badia, an abbey church standing by the old walls, still rang them and marked the city's working day."
+  },
+  {
+    "line": 100,
+    "quote": "golden chain or crown",
+    "note": "Women's finery. In Dante's time Florence passed laws again and again to limit costly dress and jewels."
+  },
+  {
+    "line": 104,
+    "quote": "neither time nor dowry",
+    "note": "Girls were not yet married off as children, and the dowry a father had to pay had not yet grown ruinous."
+  },
+  {
+    "line": 106,
+    "quote": "empty of families",
+    "note": "Read in several ways: houses built too grand for the family living in them, houses emptied by exile and party strife, or houses left childless by loose living."
+  },
+  {
+    "line": 107,
+    "quote": "debauchery",
+    "note": "Dante names a person here: Sardanapalus, a legendary king of Assyria who was a byword for luxury and soft living."
+  },
+  {
+    "line": 109,
+    "quote": "Uccellatoio",
+    "note": "A hill north of Florence, where a traveler on the road from Bologna gets his first view of the city."
+  },
+  {
+    "line": 110,
+    "quote": "Montemalo",
+    "note": "Monte Mario, the hill that gives the first view of Rome from the north. The sight of Florence had not yet outdone the sight of Rome in splendor. Florence will outdo Rome in her fall as well."
+  },
+  {
+    "line": 112,
+    "quote": "Bellincion Berti",
+    "entity": "bellincione-berti"
+  },
+  {
+    "line": 113,
+    "quote": "leather and bone",
+    "note": "A plain leather belt with a clasp of bone, on one of the first men of the city."
+  },
+  {
+    "line": 115,
+    "quote": "Nerli and Vecchio",
+    "note": "The Nerli and the Vecchietti, two old noble families of Florence. Their men wore plain skins, with no rich cloth over them."
+  },
+  {
+    "line": 119,
+    "quote": "her burial place",
+    "note": "Each woman knew she would be buried at home, in her own parish. No one feared dying in exile, as Dante's generation did."
+  },
+  {
+    "line": 120,
+    "quote": "for the sake of France",
+    "note": "By 1300 Florentine merchants spent years away trading in France, leaving their wives alone."
+  },
+  {
+    "line": 122,
+    "quote": "the language",
+    "note": "Baby talk, the first words parents delight to hear and to copy."
+  },
+  {
+    "line": 126,
+    "quote": "Fiesole",
+    "entity": "fiesole",
+    "context": "The mother spinning tells the old stories of where Florence came from: Troy, from which Rome descended, then Rome and Fiesole, the two parents of the city."
+  },
+  {
+    "line": 127,
+    "quote": "Lapo Salterello",
+    "note": "A Florentine lawyer and poet of Dante's own time, with a name for corruption and showy living. He was banished in 1302 under the same sentence as Dante."
+  },
+  {
+    "line": 127,
+    "quote": "Cianghella",
+    "note": "A Florentine woman of the della Tosa family, a contemporary of Dante, notorious for her extravagance and loose conduct."
+  },
+  {
+    "line": 129,
+    "quote": "Cincinnatus",
+    "entity": "cincinnatus",
+    "context": "The point is bitter. In old Florence a scoundrel would have been as rare a sight as a hero of Roman virtue is in the Florence of 1300."
+  },
+  {
+    "line": 129,
+    "quote": "Cornelia",
+    "entity": "cornelia"
+  },
+  {
+    "line": 133,
+    "quote": "Mary",
+    "entity": "mary",
+    "context": "Women in labor cried out to her for help. The line means simply: my mother bore me."
+  },
+  {
+    "line": 134,
+    "quote": "your ancient Baptistery",
+    "note": "The Baptistery of San Giovanni, where every Florentine child was baptized, Dante included. He calls it \"my beautiful San Giovanni\" in Inferno 19, and in Paradiso 25 he dreams of returning to it from exile to be crowned as a poet."
+  },
+  {
+    "line": 135,
+    "quote": "Cacciaguida",
+    "entity": "cacciaguida",
+    "context": "He received his name and his faith in the same moment, at the font. From what he says in Canto 16 he was born about 1091."
+  },
+  {
+    "line": 136,
+    "quote": "Moronto",
+    "note": "Nothing certain is known of either brother beyond their names."
+  },
+  {
+    "line": 137,
+    "quote": "Val di Pado",
+    "note": "The valley of the river Po, in northern Italy. Early commentators say his wife came from Ferrara, where there was a family called Aldighieri, but the city is uncertain."
+  },
+  {
+    "line": 138,
+    "quote": "your surname",
+    "note": "Alighieri, from her family name. It passed to their son Alighiero and so to Dante."
+  },
+  {
+    "line": 139,
+    "quote": "Emperor Conrad",
+    "entity": "conrad-iii",
+    "context": "Cacciaguida followed him on the Second Crusade, which set out in 1147, and died on it. Some scholars think Dante has blended him with an earlier emperor, Conrad II."
+  },
+  {
+    "line": 143,
+    "quote": "that law",
+    "note": "Islam. For Dante the \"rightful possession\" of Christians is the Holy Land, lost because the popes no longer care to win it back. The last Christian stronghold there, Acre, fell in 1291."
+  },
+  {
+    "line": 148,
+    "quote": "from martyrdom to this peace",
+    "note": "Those who died on crusade were counted as martyrs, who go straight to Heaven. The same words are used in Canto 10 of the philosopher Boethius."
+  }
+]

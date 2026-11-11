@@ -34,7 +34,14 @@
   --color-border: hsl(40 12% 82%);
   --color-input: hsl(40 12% 82%);
   --color-ring: hsl(355 50% 32%);
-  
+
+  /* Annotation cards: the site's maroon with parchment text in both modes, so a card never reads
+     as part of the page. Text and links 8.1:1, muted 6.2:1 on the card. */
+  --color-note: hsl(355 50% 32%);
+  --color-note-foreground: hsl(35 25% 92%);
+  --color-note-muted: hsl(355 40% 86%);
+  --color-note-link: hsl(35 25% 92%);
+
   --radius: 0.25rem;
 }
 
@@ -106,7 +113,7 @@
     font-weight: 500;
   }
 
-  button, .ui-text {
+  button {
     font-family: var(--font-sans), 'Libre Franklin', system-ui, sans-serif;
   }
 
@@ -201,40 +208,6 @@ body:has([data-audio-player]) .site-footer {
   padding-bottom: 7rem;
 }
 
-/* Line clamp utility */
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Gallery Grid Animation */
-@keyframes galleryItemIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.gallery-grid > * {
-  animation: galleryItemIn 0.5s ease-out forwards;
-  opacity: 0;
-}
-
-/* Masonry-like visual effect for gallery */
-@supports (grid-template-rows: masonry) {
-  .gallery-masonry {
-    display: grid;
-    grid-template-rows: masonry;
-  }
-}
-
 /* A line of verse that wraps continues indented, as in printed poetry, so it doesn't read as a new line */
 .narration-line {
   padding-left: 1.25em;
@@ -280,6 +253,68 @@ body:has([data-audio-player]) .site-footer {
   }
 }
 
+/* Notes: a dotted underline marks a phrase with a note, and turns solid while its card is open */
+.note-mark {
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: color-mix(in srgb, var(--color-primary) 60%, transparent);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 0.28em;
+  transition: background-color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.note-mark:focus-visible {
+  text-decoration-style: solid;
+  text-decoration-color: var(--color-primary);
+  background-color: color-mix(in srgb, var(--color-primary) 9%, transparent);
+}
+
+/* While its card is open the phrase takes the card's colors, so the two read as one thing */
+.note-mark.is-open {
+  text-decoration-line: none;
+  color: var(--color-note-foreground);
+  background-color: var(--color-note);
+  /* Above and below only: a phrase is marked word by word, and a shadow at the sides would cover
+     the edge of the next word */
+  box-shadow: 0 3px 0 var(--color-note), 0 -3px 0 var(--color-note);
+  border-radius: 0;
+}
+
+@media (hover: hover) {
+  .note-mark:hover {
+    text-decoration-color: var(--color-primary);
+  }
+
+  /* The click-to-play underline would sit on top of the note's own */
+  .has-narration .narration-word:has(.note-mark):hover {
+    text-decoration: none;
+  }
+}
+
+.note-mark:focus-visible {
+  outline: 2px solid var(--color-ring);
+  outline-offset: 2px;
+}
+
+.animate-note-fade {
+  animation: noteFade 0.15s ease-out;
+}
+
+.animate-note-sheet {
+  animation: noteSheet 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes noteFade {
+  from { opacity: 0; }
+}
+
+@keyframes noteSheet {
+  from { transform: translateY(100%); }
+}
+
 /* The play button's loading ring waits a moment, so quick loads don't flicker it */
 .player-spinner {
   opacity: 0;
@@ -308,7 +343,13 @@ body:has([data-audio-player]) .site-footer {
     transition: none;
   }
 
-  .animate-follow-in {
+  .animate-follow-in,
+  .animate-note-fade,
+  .animate-note-sheet {
     animation: none;
+  }
+
+  .note-mark {
+    transition: none;
   }
 }

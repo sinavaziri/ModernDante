@@ -1,0 +1,187 @@
+[
+  {
+    "line": 1,
+    "quote": "Day was ending",
+    "note": "The evening of Good Friday. Dante spent the day on the slope with the three beasts and with Virgil. The descent into Hell begins at nightfall."
+  },
+  {
+    "line": 4,
+    "quote": "I alone",
+    "note": "The one living man among the dead, and the one creature on earth not going to its rest. The loneliness of the task is what frightens him in the lines that follow."
+  },
+  {
+    "line": 7,
+    "quote": "O Muses",
+    "entity": "muses",
+    "context": "The poem's first invocation, in the manner of the ancient epics. It comes in the second canto because Canto 1 is a prologue to the whole Comedy: Inferno proper begins here. \"Sublime genius\" is probably Dante's own talent."
+  },
+  {
+    "line": 13,
+    "quote": "Silvius's father",
+    "entity": "aeneas",
+    "context": "Silvius was the son of Aeneas and Lavinia. Book 6 of the Aeneid, Virgil's own poem, tells how Aeneas went down to the underworld alive. Dante is quoting his guide's book back at him."
+  },
+  {
+    "line": 14,
+    "quote": "still mortal and corruptible",
+    "note": "Still in his body, which can decay. The souls of the dead have left theirs behind."
+  },
+  {
+    "line": 16,
+    "quote": "the Enemy of all evil",
+    "note": "God, who allowed Aeneas this favor."
+  },
+  {
+    "line": 20,
+    "quote": "highest heaven",
+    "entity": "empyrean",
+    "context": "Dante's Italian names it: the empyrean heaven. Aeneas was chosen there, by God, long before Rome existed."
+  },
+  {
+    "line": 21,
+    "quote": "noble Rome and her empire",
+    "note": "Dante believed the Roman Empire was willed by God to give the world one peaceful government, ready for the birth of Christ and for the Church to make its seat in Rome. He argues this at length in his treatise Monarchia."
+  },
+  {
+    "line": 24,
+    "quote": "the successor of great Peter",
+    "entity": "peter",
+    "context": "The pope. Rome was founded, Dante says, so that the popes could one day have their seat there."
+  },
+  {
+    "line": 26,
+    "quote": "he heard prophecies",
+    "note": "In the underworld Aeneas meets the shade of his father, Anchises, who shows him the future heroes of Rome and tells him of the wars he must fight in Italy (Aeneid 6)."
+  },
+  {
+    "line": 27,
+    "quote": "his victory",
+    "note": "Over Turnus and the peoples of Latium, in the war that fills the second half of the Aeneid. From that victory came Rome, and from Rome the seat of the popes."
+  },
+  {
+    "line": 28,
+    "quote": "the Chosen Vessel",
+    "entity": "paul",
+    "context": "The name given to Paul in the Acts of the Apostles (9:15). In his second letter to the Corinthians he tells of being caught up to the third heaven, and a popular medieval legend, the Vision of Saint Paul, sent him through Hell as well."
+  },
+  {
+    "line": 32,
+    "quote": "I am not Aeneas, I am not Paul",
+    "note": "One of the poem's best-known lines. Aeneas's journey led to the Empire and Paul's served the Church, the two powers Dante thought God had set over the world. In denying that he belongs with them, Dante names the company his poem will claim."
+  },
+  {
+    "line": 44,
+    "quote": "that shade of the great-souled one",
+    "note": "Virgil. Dante's word is magnanimo, great-souled: the exact opposite of the smallness of soul, or cowardice, that Virgil is about to charge him with."
+  },
+  {
+    "line": 52,
+    "quote": "those who dwell in Limbo",
+    "entity": "limbo",
+    "context": "Dante's Italian says only \"those who are suspended\": neither tormented nor saved, hanging between the two. He will see the place in Canto 4."
+  },
+  {
+    "line": 57,
+    "quote": "in her own tongue",
+    "note": "Perhaps only her own way of speaking. Some commentators take it to mean her native Florentine, the language of this poem, spoken to a poet of Latin."
+  },
+  {
+    "line": 58,
+    "quote": "Mantua",
+    "entity": "mantua"
+  },
+  {
+    "line": 61,
+    "quote": "a friend of mine, though no friend of fortune",
+    "note": "Read two ways. Either a friend whom fortune has treated badly, or, as many modern commentators prefer, one who loved her for herself and not for anything he could gain by it."
+  },
+  {
+    "line": 62,
+    "quote": "the desert slope",
+    "note": "The empty slope of Canto 1, between the dark forest and the hill, where the three beasts drove Dante back."
+  },
+  {
+    "line": 70,
+    "quote": "Beatrice",
+    "entity": "beatrice",
+    "context": "Her first appearance, though only in Virgil's telling. Dante won't see her until the top of Purgatory (Purgatorio 30). She is often read as divine revelation, which takes over where Virgil's human reason can go no further."
+  },
+  {
+    "line": 72,
+    "quote": "Love moved me",
+    "note": "The force behind the whole journey. The poem's last line, in Paradiso 33, names God as the love that moves the sun and the other stars."
+  },
+  {
+    "line": 78,
+    "quote": "the smallest celestial sphere",
+    "note": "The sphere of the moon. In Dante's astronomy the heavens are nested spheres around the earth, and the moon's is the nearest and so the smallest. Everything inside it is the earth: through Beatrice, or through the virtue she is lady of, humankind rises above all other earthly things."
+  },
+  {
+    "line": 83,
+    "quote": "this center of desolation",
+    "note": "Hell lies inside the earth, and the earth was the center of the universe: the lowest place there is, and the farthest from God."
+  },
+  {
+    "line": 92,
+    "quote": "your suffering cannot touch me",
+    "note": "The blessed can't be hurt by Hell, nor pained by the misery of the damned. \"Flames\" in the next line means Hell as a whole: there is no fire in Limbo."
+  },
+  {
+    "line": 94,
+    "quote": "A gentle Lady in Heaven",
+    "entity": "mary",
+    "context": "Not named here: neither she nor Christ is ever named in Hell. Her pity sets the whole rescue going, and bends the strict justice of Heaven, which would have left Dante to the fate he had earned."
+  },
+  {
+    "line": 97,
+    "quote": "Lucia",
+    "entity": "lucy",
+    "context": "Mary calls Dante her \"faithful one\", so he seems to have been specially devoted to her. He writes elsewhere of a time when his eyesight failed, and she was the saint of the eyes. Commentators often read her here as the grace that gives light to the mind."
+  },
+  {
+    "line": 102,
+    "quote": "ancient Rachel",
+    "entity": "rachel",
+    "context": "Beatrice's seat in Heaven is beside hers. Dante will see the two side by side in Paradiso 32."
+  },
+  {
+    "line": 105,
+    "quote": "he rose above the common crowd",
+    "note": "As a poet. The love poems Dante wrote for Beatrice, gathered in his Vita Nuova, made his name."
+  },
+  {
+    "line": 108,
+    "quote": "that flood where the sea holds no sway",
+    "note": "A difficult line. Most readers take the flood as a figure for the sinful life of the dark forest, a torrent more dangerous than any sea. Others take it as a real river, such as the Acheron of Canto 3, which never reaches the sea."
+  },
+  {
+    "line": 119,
+    "quote": "that savage beast",
+    "entity": "she-wolf"
+  },
+  {
+    "line": 120,
+    "quote": "the short path up the beautiful mountain",
+    "note": "The sunlit hill of Canto 1. The direct way up is closed to Dante, so he must take the long way round, through Hell and Purgatory."
+  },
+  {
+    "line": 124,
+    "quote": "three such blessed Ladies",
+    "note": "Mary, Lucia and Beatrice. Grace comes down a chain, from Mary to Lucia to Beatrice to Virgil to Dante. Many readers set the three ladies against the three beasts of Canto 1."
+  },
+  {
+    "line": 127,
+    "quote": "Like flowers",
+    "note": "One of the best-loved similes in the poem: small flowers, shut and bowed by the night frost, straightening and opening in the morning sun. Dante's courage does the same at the news that Beatrice has sent for him."
+  },
+  {
+    "line": 140,
+    "quote": "my Leader, my Lord, and my Master",
+    "note": "In Italian duca, segnore, maestro. These are the names Dante gives Virgil for the rest of the journey, \"leader\" and \"master\" most of all."
+  },
+  {
+    "line": 142,
+    "quote": "the deep and savage way",
+    "note": "The road to the gate of Hell. Dante's word for savage is close kin to his word for the forest of Canto 1: to get out of the wilderness he must first go further in."
+  }
+]

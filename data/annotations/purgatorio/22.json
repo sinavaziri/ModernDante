@@ -1,0 +1,324 @@
+[
+  {
+    "line": 1,
+    "quote": "the Angel",
+    "note": "Each terrace has an angel at its exit, who wipes one mark from Dante's forehead and speaks a blessing. This is the angel of the fifth terrace, where greed is purged. The stair it guards leads up to the sixth, the terrace of gluttony."
+  },
+  {
+    "line": 4,
+    "quote": "the last mark",
+    "note": "In Dante's Italian the angel wipes away one mark, the fifth of the seven P's cut on his forehead at the gate (Canto 9). Two are left, for gluttony and lust."
+  },
+  {
+    "line": 5,
+    "quote": "whose deepest longing was for justice",
+    "note": "In the Italian it is the angel who speaks, and those who long for justice are the people it calls blessed. The words come from the Beatitudes, Christ's blessings in the Sermon on the Mount: \"Blessed are they who hunger and thirst after justice\" (Matthew 5:6)."
+  },
+  {
+    "line": 7,
+    "quote": "who thirst",
+    "note": "The angel says only \"thirst\" and leaves out \"hunger\". Thirst for justice is the opposite of thirst for gold. The other half of the verse is kept for the angel of the next terrace, where gluttony is purged (Canto 24)."
+  },
+  {
+    "line": 8,
+    "quote": "made lighter",
+    "note": "Each mark removed is a weight of sin gone, and the climb gets easier. Virgil promised this in Canto 4, and an angel explained it in Canto 12."
+  },
+  {
+    "line": 11,
+    "quote": "Virgil",
+    "entity": "virgil",
+    "context": "This canto is his great tribute. Statius tells him that his poems made him first a poet and then a Christian, though they could not save Virgil himself."
+  },
+  {
+    "line": 12,
+    "quote": "always kindles love in another heart",
+    "note": "An answer to Francesca in Inferno 5, who said that love lets no one who is loved refuse to love in return, and used it to excuse her adultery. Virgil adds the condition she left out: the love must be kindled by virtue."
+  },
+  {
+    "line": 14,
+    "quote": "Juvenal",
+    "note": "Roman satirist, who lived from about AD 60 to about 130 and so was a younger contemporary of Statius. In his seventh Satire he describes the crowds that came to hear Statius recite the Thebaid. He brought the news of Statius's admiration to Limbo when he died."
+  },
+  {
+    "line": 15,
+    "quote": "the infernal Limbo",
+    "entity": "limbo",
+    "context": "Virgil's home, with the other poets of Greece and Rome. He lists more of them later in the canto."
+  },
+  {
+    "line": 23,
+    "quote": "avarice",
+    "note": "Virgil found Statius among the greedy on the fifth terrace and assumes he was a miser. He asks as gently as he can: how could so wise a man love money?"
+  },
+  {
+    "line": 26,
+    "quote": "Statius",
+    "entity": "statius",
+    "context": "He explains two things here: the sin that kept him on the fifth terrace, and how he came to be a Christian. Both stories turn on lines of Virgil. Both are Dante's invention."
+  },
+  {
+    "line": 36,
+    "quote": "this opposite sin",
+    "note": "Prodigality: he threw money away. For Dante, following Aristotle, virtue is the middle way between two faults, and the miser and the spendthrift both go wrong about wealth. They are punished together here, as they are in Hell (Inferno 7)."
+  },
+  {
+    "line": 37,
+    "quote": "thousands of months",
+    "note": "The \"five hundred years and more\" of Canto 21, counted in months: some six thousand."
+  },
+  {
+    "line": 41,
+    "quote": "Cursed hunger for gold",
+    "note": "From the Aeneid, Book 3, where Aeneas tells how a king murdered the young Trojan prince Polydorus for his treasure. Virgil's Latin cries out against greed. Dante's Italian is hard, and can be read as \"Why do you not govern, O holy hunger for gold, the appetite of mortals?\", as if Statius took the line as a call for a right and measured desire for wealth. Whether Dante meant the misreading is much debated."
+  },
+  {
+    "line": 44,
+    "quote": "those grim battles",
+    "note": "The punishment of misers and spendthrifts in the fourth circle of Hell. They roll great weights round in opposite directions, crash into each other, and turn back to do it again (Inferno 7). Without Virgil's line, Statius would be damned there."
+  },
+  {
+    "line": 48,
+    "quote": "cropped hair",
+    "note": "In Inferno 7, Virgil says that at the Last Judgment the misers will rise from their graves with closed fists and the spendthrifts with their hair cut short. An Italian saying had it that a spendthrift wastes everything down to his hair."
+  },
+  {
+    "line": 49,
+    "quote": "ignorance",
+    "note": "People know greed is a sin. Few think of wasteful spending as one, so they never repent of it."
+  },
+  {
+    "line": 52,
+    "quote": "withers here alongside it",
+    "note": "Dante's image is of a plant losing its green. The two opposite sins dry up together on the same terrace."
+  },
+  {
+    "line": 57,
+    "quote": "Jocasta's double sorrow",
+    "note": "Jocasta was the mother of Oedipus and, unknowingly, his wife. Their twin sons, Eteocles and Polynices, fought for the throne of Thebes and killed each other. That war is the subject of Statius's Thebaid."
+  },
+  {
+    "line": 58,
+    "quote": "of pastoral songs",
+    "note": "Virgil, named by his Eclogues, ten poems about shepherds, also called the Bucolics. The title prepares the way: it is the fourth Eclogue that Statius is about to quote."
+  },
+  {
+    "line": 59,
+    "quote": "Clio",
+    "note": "The Muse of history, whom Statius calls on in the Thebaid. Virgil's point is that the poem is pagan through and through. Nothing in it suggests a Christian author."
+  },
+  {
+    "line": 61,
+    "quote": "that faith without which good works mean nothing",
+    "note": "Virgil knows this better than anyone. It is the reason he is in Limbo."
+  },
+  {
+    "line": 64,
+    "quote": "the Fisherman",
+    "entity": "peter",
+    "context": "To set one's sails behind the Fisherman is to follow the Church, often pictured as Peter's boat."
+  },
+  {
+    "line": 66,
+    "quote": "Parnassus",
+    "entity": "parnassus",
+    "context": "To drink from its caves is to become a poet."
+  },
+  {
+    "line": 69,
+    "quote": "carries his lamp behind him",
+    "note": "One of the most famous images in the poem, and the saddest thing said about Virgil in it. His poetry lit the way to Christ for those who came after him, and he walked on in the dark."
+  },
+  {
+    "line": 71,
+    "quote": "The ages begin again",
+    "note": "From Virgil's fourth Eclogue, written about 40 BC. It foretells the birth of a child who will bring back the golden age, with the return of \"the Virgin\", meaning the goddess Justice. From the fourth century on, Christians read it as an unknowing prophecy of Christ. It earned Virgil a place almost among the prophets."
+  },
+  {
+    "line": 74,
+    "quote": "through you a Christian",
+    "note": "In Italian: \"Per te poeta fui, per te cristiano.\" No ancient or medieval source says Statius was a Christian. Dante seems to have made the story up, perhaps to show what Virgil's poetry could do for a reader, even though it could not do it for Virgil."
+  },
+  {
+    "line": 76,
+    "quote": "to fill in the colors",
+    "note": "A painter's image: he has drawn the outline, and now he will color it in."
+  },
+  {
+    "line": 79,
+    "quote": "messengers of the eternal kingdom",
+    "note": "The apostles and the first Christian preachers."
+  },
+  {
+    "line": 84,
+    "quote": "Domitian",
+    "note": "Roman emperor from AD 81 to 96, the younger brother of Titus. Christian tradition remembered him as a persecutor of the Church. The real Statius flattered him: the Thebaid opens with his praise."
+  },
+  {
+    "line": 89,
+    "quote": "Thebes' rivers",
+    "note": "The Ismenus and the Asopus. He means either the point in the Thebaid where the Greek army reaches them, or simply before he wrote the poem."
+  },
+  {
+    "line": 93,
+    "quote": "lukewarm faith",
+    "note": "He believed but hid it, out of fear. That is a failure of zeal, a kind of sloth."
+  },
+  {
+    "line": 94,
+    "quote": "the fourth terrace",
+    "note": "The terrace of sloth, where souls who were slow in love of the good run without rest (Canto 18)."
+  },
+  {
+    "line": 98,
+    "quote": "Terence",
+    "note": "Roman writer of comedies, 2nd century BC. Six of his plays survive, and they were read in medieval schools."
+  },
+  {
+    "line": 99,
+    "quote": "Caecilius",
+    "note": "Caecilius Statius, a Roman writer of comedies of the 2nd century BC, admired in antiquity. Only fragments of his plays survive."
+  },
+  {
+    "line": 99,
+    "quote": "Plautus",
+    "note": "The earliest Roman comic playwright whose work survives, active about 200 BC."
+  },
+  {
+    "line": 99,
+    "quote": "Varro",
+    "note": "The old copies of the poem read \"Varro\", who could be either of two Roman writers of that name. Many scholars think Dante wrote \"Varius\": the poet Varius Rufus, Virgil's friend, who helped prepare the Aeneid for publication after his death."
+  },
+  {
+    "line": 101,
+    "quote": "Persius",
+    "note": "Roman satirist, AD 34–62."
+  },
+  {
+    "line": 102,
+    "quote": "that Greek",
+    "entity": "homer"
+  },
+  {
+    "line": 104,
+    "quote": "the sightless prison",
+    "note": "Hell, blind because it has no light. Its first circle is Limbo."
+  },
+  {
+    "line": 105,
+    "quote": "the mountain",
+    "note": "Parnassus, home of the Muses, who are the poets' \"nurses\". The poets of Limbo still talk of poetry."
+  },
+  {
+    "line": 107,
+    "quote": "Euripides",
+    "note": "Athenian writer of tragedies, 5th century BC. Dante knew of the Greek poets named here only from mentions in Latin authors. He does not name Aeschylus or Sophocles anywhere."
+  },
+  {
+    "line": 107,
+    "quote": "Antiphon",
+    "note": "A Greek tragic poet of whom almost nothing survives. Some copies of the poem read Anacreon, the lyric poet, instead."
+  },
+  {
+    "line": 108,
+    "quote": "Simonides",
+    "note": "Greek lyric poet, about 556–468 BC."
+  },
+  {
+    "line": 108,
+    "quote": "Agathon",
+    "note": "Athenian writer of tragedies of the late 5th century BC. None of his plays survive. Plato's Symposium is set at a party celebrating his first victory."
+  },
+  {
+    "line": 110,
+    "quote": "your own characters",
+    "note": "Women from Statius's two epics. Dante places these figures of legend in Limbo beside the real poets."
+  },
+  {
+    "line": 111,
+    "quote": "Antigone, Deiphyle, and Argia",
+    "note": "Antigone was a daughter of Oedipus and Jocasta, sister of the two warring brothers. Deiphyle and Argia were daughters of Adrastus, king of Argos. Argia married Polynices. Deiphyle married his ally Tydeus and was the mother of Diomedes."
+  },
+  {
+    "line": 112,
+    "quote": "Ismene",
+    "note": "Antigone's sister. She saw her whole family destroyed, and in the Thebaid the man she was to marry is killed in the war."
+  },
+  {
+    "line": 113,
+    "quote": "she who showed Langia's spring",
+    "note": "Hypsipyle. In the Thebaid she leads the Greek army, dying of thirst, to the spring of Langia. While she is away, the baby she was nursing is killed by a serpent. She is also the woman Jason abandoned (Inferno 18)."
+  },
+  {
+    "line": 114,
+    "quote": "Tiresias' daughter",
+    "note": "A well-known puzzle. The only daughter of the Theban seer Tiresias in Statius is Manto, and Dante has already put Manto in Hell among the soothsayers (Inferno 20). Most scholars take it as a slip. Others have tried to explain it away."
+  },
+  {
+    "line": 114,
+    "quote": "Thetis",
+    "note": "Sea goddess, mother of Achilles. In the Achilleid she hides him on the island of Scyros, dressed as a girl, to keep him from the Trojan War."
+  },
+  {
+    "line": 115,
+    "quote": "Deidamia",
+    "note": "Daughter of the king of Scyros. Achilles, hidden among her sisters, became her lover and then left her for the war. In Inferno 26 she is said to mourn him even in death."
+  },
+  {
+    "line": 119,
+    "quote": "Four handmaidens of the day",
+    "note": "The hours, pictured as maidens who take turns guiding the chariot of the sun. Four have finished since sunrise at about six, and the fifth is at the pole of the chariot. It is between ten and eleven in the morning."
+  },
+  {
+    "line": 124,
+    "quote": "our right shoulders toward the edge",
+    "note": "With the outer edge on their right, they go round the mountain counterclockwise, as on every terrace. In Hell they kept turning left."
+  },
+  {
+    "line": 131,
+    "quote": "lessons in the art of poetry",
+    "note": "Dante walks behind the two ancient poets as a pupil. It recalls Inferno 4, where he joined the great poets of Limbo."
+  },
+  {
+    "line": 133,
+    "quote": "a tree",
+    "note": "The sixth terrace purges gluttony. Its souls waste away with hunger and thirst in sight of fruit and water they cannot reach, as Canto 23 explains."
+  },
+  {
+    "line": 136,
+    "quote": "this tree tapered downward",
+    "note": "The tree is upside down: its branches are widest at the top, so the fruit hangs out of reach."
+  },
+  {
+    "line": 142,
+    "quote": "a voice",
+    "note": "Each terrace teaches by examples of the virtue opposed to its sin. Here an unseen voice in the tree gives five examples of temperance in food and drink."
+  },
+  {
+    "line": 144,
+    "quote": "Mary",
+    "entity": "mary",
+    "context": "At the wedding in Cana she told Jesus, \"They have no wine\", and he turned water into wine (John 2). She was thinking of the guests, not of herself. The same scene was an example of kindness on the terrace of envy (Canto 13)."
+  },
+  {
+    "line": 147,
+    "quote": "The ancient Roman women",
+    "note": "Roman writers said that in the early days of Rome women did not drink wine. Dante probably took the example from Thomas Aquinas."
+  },
+  {
+    "line": 148,
+    "quote": "Daniel",
+    "note": "The Hebrew prophet. As a young captive in Babylon he refused the king's meat and wine and lived on vegetables and water, and God gave him understanding of visions and dreams (Daniel 1)."
+  },
+  {
+    "line": 150,
+    "quote": "The first age",
+    "note": "The Golden Age of classical myth, described by Ovid at the start of the Metamorphoses. People lived in peace on what the earth gave freely, acorns among it."
+  },
+  {
+    "line": 154,
+    "quote": "the Baptist",
+    "entity": "john-the-baptist",
+    "context": "His food in the desert was locusts and wild honey (Matthew 3:4). Christ says in the Gospel that no one born of woman is greater than John (Matthew 11:11)."
+  }
+]

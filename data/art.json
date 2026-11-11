@@ -1,0 +1,143 @@
+{
+  "aeneas": {
+    "file": "aeneas.jpg",
+    "artist": "Federico Barocci",
+    "title": "Aeneas' Flight from Troy",
+    "date": "1598",
+    "source": "https://commons.wikimedia.org/wiki/File:Barocci_-_La_fuga_di_Enea_da_Troia,_1598,_068.jpg",
+    "license": "Public domain",
+    "focus": "42% 34%",
+    "zoom": 1.7
+  },
+  "homer": {
+    "file": "homer.jpg",
+    "artist": "Rembrandt",
+    "title": "Homer",
+    "date": "1663",
+    "source": "https://commons.wikimedia.org/wiki/File:Homerus,_Rembrandt_van_Rijn,_1663,_Mauritshuis,_The_Hague.jpg",
+    "license": "Public domain",
+    "focus": "42% 26%",
+    "zoom": 1.25,
+    "brightness": 1.3
+  },
+  "horace": {
+    "file": "horace.jpg",
+    "artist": "John Faber after Rubens",
+    "title": "Horace",
+    "date": "18th century",
+    "source": "https://commons.wikimedia.org/wiki/File:Portret_van_Horatius,_RP-P-1878-A-901.jpg",
+    "license": "CC0",
+    "focus": "60% 32%",
+    "zoom": 1.4
+  },
+  "ovid": {
+    "file": "ovid.jpg",
+    "artist": "Luca Signorelli",
+    "title": "Ovid",
+    "date": "c. 1500",
+    "source": "https://commons.wikimedia.org/wiki/File:Luca_Signorelli_-_Ovid_-_WGA21240.jpg",
+    "license": "Public domain",
+    "focus": "50% 46%",
+    "zoom": 2.2
+  },
+  "lucan": {
+    "file": "lucan.jpg",
+    "artist": "José Garnelo y Alda",
+    "title": "The Death of Lucan",
+    "date": "c. 1887",
+    "source": "https://commons.wikimedia.org/wiki/File:Estudio_para_La_muerte_de_Lucano_-_José_Garnelo_y_Alda.jpg",
+    "license": "Public domain",
+    "focus": "40% 50%",
+    "zoom": 1.3,
+    "note": "study"
+  },
+  "brutus": {
+    "file": "brutus.jpg",
+    "artist": "Roman bronze",
+    "title": "Capitoline Brutus",
+    "date": "c. 300 BC",
+    "note": "traditionally identified as Brutus",
+    "source": "https://commons.wikimedia.org/wiki/File:Capitoline_Brutus_Musei_Capitolini_MC1183.jpg",
+    "license": "Public domain (photo by Jastrow)",
+    "focus": "50% 24%"
+  },
+  "saladin": {
+    "file": "saladin.jpg",
+    "artist": "Cristofano dell'Altissimo",
+    "title": "Saladin",
+    "date": "before 1568",
+    "source": "https://commons.wikimedia.org/wiki/File:Cristofano_dell'Altissimo_Saladin,_Sultan_von_Aegypten.jpg",
+    "license": "Public domain",
+    "focus": "50% 52%",
+    "zoom": 1.3
+  },
+  "aristotle": {
+    "file": "aristotle.jpg",
+    "artist": "Rembrandt",
+    "title": "Aristotle with a Bust of Homer",
+    "date": "1653",
+    "source": "https://commons.wikimedia.org/wiki/File:Aristotle_with_a_Bust_of_Homer_MET_DP319026.jpg",
+    "license": "CC0",
+    "focus": "56% 27%",
+    "zoom": 1.4,
+    "brightness": 1.6
+  },
+  "averroes": {
+    "file": "averroes.jpg",
+    "artist": "Paolo Veronese",
+    "title": "Averroës",
+    "date": "1557",
+    "source": "https://commons.wikimedia.org/wiki/File:Paolo_Veronese_-_Allegory_of_Navigation_with_a_Cross-Staff,_Averroës.jpg",
+    "license": "Public domain",
+    "focus": "50% 16%"
+  },
+  "socrates": {
+    "file": "socrates.jpg",
+    "artist": "Jacques-Louis David",
+    "title": "The Death of Socrates",
+    "date": "1787",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Death_of_Socrates_MET_DT40.jpg",
+    "license": "CC0",
+    "focus": "52% 50%",
+    "zoom": 1.5
+  },
+  "plato": {
+    "file": "plato.jpg",
+    "artist": "Justus van Gent",
+    "title": "Plato",
+    "date": "c. 1475",
+    "source": "https://commons.wikimedia.org/wiki/File:Gand,_Juste_de_-_Berruguete,_Pedro_-_Platon_(429-347_av._J._C.),_philosophe_grec,_MI_655_;_Campana_391.jpg",
+    "license": "Public domain",
+    "focus": "50% 26%"
+  },
+  "julius-caesar": {
+    "file": "julius-caesar.jpg",
+    "artist": "Peter Paul Rubens",
+    "title": "Julius Caesar",
+    "date": "c. 1625",
+    "source": "https://commons.wikimedia.org/wiki/File:Caesar_by_Rubens.jpg",
+    "license": "Public domain",
+    "focus": "47% 40%",
+    "zoom": 1.25
+  },
+  "augustus": {
+    "file": "augustus.jpg",
+    "artist": "Roman marble",
+    "title": "Augustus of Prima Porta",
+    "date": "1st century",
+    "source": "https://commons.wikimedia.org/wiki/File:Augustus_of_Prima_Porta,_inv._2290,_Roman,_from_the_Villa_of_Livia_at_Prima_Porta,_20-17_BC_-_Braccio_Nuovo,_Museo_Chiaramonti_-_Vatican_Museums_-_DSC00954.jpg",
+    "license": "CC0 (photo by Daderot)",
+    "focus": "56% 29%",
+    "zoom": 1.6
+  },
+  "cicero": {
+    "file": "cicero.png",
+    "artist": "Cesare Maccari",
+    "title": "Cicero Denounces Catiline",
+    "date": "1889",
+    "source": "https://commons.wikimedia.org/wiki/File:Cicero_Denounces_Catiline_in_the_Roman_Senate_by_Cesare_Maccari.png",
+    "license": "Public domain",
+    "focus": "17% 60%",
+    "zoom": 2.6
+  }
+}

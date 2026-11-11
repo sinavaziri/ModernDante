@@ -1,0 +1,364 @@
+[
+  {
+    "line": 1,
+    "quote": "Constantine",
+    "entity": "constantine",
+    "context": "In 330 he moved the capital east from Rome to Byzantium. The speaker, who names himself at line 10, fills the whole canto: the only one in the poem that is a single speech."
+  },
+  {
+    "line": 1,
+    "quote": "the eagle",
+    "entity": "roman-eagle",
+    "context": "The speech that follows is the eagle's history, from Troy to Dante's own day, told to show that God willed Rome's rule."
+  },
+  {
+    "line": 2,
+    "quote": "against heaven's course",
+    "note": "The sky turns from east to west, and the eagle first travelled that way, from Troy to Italy. Constantine carried it back east. Dante thought the move a mistake."
+  },
+  {
+    "line": 3,
+    "quote": "that ancient hero",
+    "entity": "aeneas",
+    "context": "He brought the eagle west from fallen Troy to Italy, where his descendants founded Rome."
+  },
+  {
+    "line": 3,
+    "quote": "Lavinia",
+    "entity": "lavinia"
+  },
+  {
+    "line": 4,
+    "quote": "more than two hundred years",
+    "note": "From the move to Constantinople in 330 to the start of Justinian's reign in 527."
+  },
+  {
+    "line": 6,
+    "quote": "the mountains where it first emerged",
+    "note": "The mountains of Troy, across the water from Constantinople. The Empire's capital was back near the place its story began."
+  },
+  {
+    "line": 10,
+    "quote": "I was Caesar",
+    "note": "A famous line: \"Cesare fui e son Iustiniano\". The title of emperor ended with his life, so it is in the past tense. The man remains, so the name is in the present."
+  },
+  {
+    "line": 10,
+    "quote": "Justinian",
+    "entity": "justinian",
+    "context": "The soul Dante questioned at the end of Canto 5. He answers first who he is, then why he is in this heaven."
+  },
+  {
+    "line": 11,
+    "quote": "that first Love",
+    "note": "The Holy Spirit, the love of God."
+  },
+  {
+    "line": 12,
+    "quote": "stripped the laws",
+    "note": "Justinian's jurists sorted a thousand years of Roman laws and legal opinions into one ordered body, known as the Corpus Juris Civilis. It was the textbook of medieval law schools such as Bologna's."
+  },
+  {
+    "line": 14,
+    "quote": "one nature, not two",
+    "note": "The Monophysite teaching, that Christ was divine only and not also fully human. The Church condemned it in 451. Dante follows a medieval tradition here: historically it was Justinian's wife, Theodora, who favored this view."
+  },
+  {
+    "line": 16,
+    "quote": "Agapetus",
+    "note": "Pope Agapetus I, who reigned in 535–536 and came to Constantinople, where he died."
+  },
+  {
+    "line": 21,
+    "quote": "contradictions cannot both be false and true",
+    "note": "A first rule of logic: of two statements that contradict each other, one must be true and the other false. Justinian now sees the two natures of Christ as plainly as that."
+  },
+  {
+    "line": 25,
+    "quote": "Belisarius",
+    "note": "Justinian's great general (died 565), who won back North Africa from the Vandals and Italy from the Goths. Later stories say the emperor repaid him with disgrace. Justinian says nothing of that."
+  },
+  {
+    "line": 28,
+    "quote": "your first question",
+    "note": "Dante asked two things at the end of Canto 5: who the soul was, and why it is in this heaven. The second answer comes at line 112."
+  },
+  {
+    "line": 31,
+    "quote": "with what poor reason",
+    "note": "Dante's Italian is ironic: \"with how much reason\". The history that follows is meant to show that both Italian parties wrong the eagle."
+  },
+  {
+    "line": 32,
+    "quote": "those who claim it falsely",
+    "note": "The Ghibellines, who use the Empire's standard as a party badge. \"Those who oppose it\" are the Guelphs. Justinian returns to both at line 100."
+  },
+  {
+    "line": 36,
+    "quote": "Pallas",
+    "note": "In the Aeneid, the young son of King Evander, who ruled on the future site of Rome. He died fighting for Aeneas in the war that won the Trojans their place in Italy."
+  },
+  {
+    "line": 37,
+    "quote": "Alba",
+    "note": "Alba Longa, the town in the hills near Rome founded by Aeneas's son. His line ruled there until Rome was founded and outgrew it."
+  },
+  {
+    "line": 39,
+    "quote": "the three brothers fought the three",
+    "note": "To settle which town should rule, three Roman brothers, the Horatii, fought three brothers from Alba, the Curiatii. The one surviving Horatius won supremacy for Rome. The story is in the Roman historian Livy."
+  },
+  {
+    "line": 40,
+    "quote": "the Sabine wrong",
+    "note": "Short of wives, Romulus's men carried off the women of the neighboring Sabines. This is the start of the age of Rome's seven kings."
+  },
+  {
+    "line": 41,
+    "quote": "Lucretia's grief",
+    "entity": "lucretia",
+    "context": "Her rape by the king's son and her suicide ended the monarchy, about 510 BC. The Republic followed."
+  },
+  {
+    "line": 44,
+    "quote": "Brennus",
+    "note": "Chieftain of the Gauls who sacked Rome about 390 BC and were then driven off."
+  },
+  {
+    "line": 44,
+    "quote": "Pyrrhus",
+    "note": "King of Epirus in Greece, who invaded Italy with elephants in 280 BC. He won battles at such cost that \"Pyrrhic victory\" is named for him, and in the end went home."
+  },
+  {
+    "line": 46,
+    "quote": "Torquatus",
+    "note": "Titus Manlius Torquatus, a commander of the 4th century BC, remembered for having his own son put to death for fighting against orders."
+  },
+  {
+    "line": 46,
+    "quote": "Quinctius",
+    "note": "Lucius Quinctius Cincinnatus, called from his plow to be dictator in a crisis. He won the war in days and went back to his farm. His surname comes from the Latin for a curl of hair, which Dante takes to mean unkempt."
+  },
+  {
+    "line": 47,
+    "quote": "the Decii and Fabii",
+    "note": "Two great families of the Republic. Men of the Decii gave their lives in battle as an offering for victory. The best known of the Fabii is Fabius Maximus, who wore Hannibal down by refusing to fight him in the open."
+  },
+  {
+    "line": 49,
+    "quote": "those Arabs",
+    "note": "The Carthaginians of North Africa. Dante gives them the name of the people who held that coast in his own day."
+  },
+  {
+    "line": 50,
+    "quote": "Hannibal",
+    "entity": "hannibal"
+  },
+  {
+    "line": 53,
+    "quote": "Pompey",
+    "entity": "pompey",
+    "context": "He was awarded a triumph, the victory parade through Rome, while still in his twenties."
+  },
+  {
+    "line": 53,
+    "quote": "Scipio",
+    "entity": "scipio-africanus",
+    "context": "He was given command of an army in Spain when he was about twenty-five."
+  },
+  {
+    "line": 54,
+    "quote": "that hill beneath which you were born",
+    "note": "Fiesole, on the hill above Florence. Florentine legend said the Romans destroyed it for sheltering the rebel Catiline, and founded Florence in the valley below."
+  },
+  {
+    "line": 55,
+    "quote": "near the time when heaven willed",
+    "note": "The birth of Christ was near. Dante held that God wanted the whole world at peace under one ruler for his Son's coming, and prepared the Empire for that purpose."
+  },
+  {
+    "line": 57,
+    "quote": "Caesar",
+    "entity": "julius-caesar",
+    "context": "For Dante he is the first emperor, and with him the eagle passes from the Republic to one man."
+  },
+  {
+    "line": 58,
+    "quote": "from the Var to the Rhine",
+    "note": "The two rivers that bounded Gaul, roughly modern France. Caesar conquered it in 58–50 BC. The rivers in the next lines are all there."
+  },
+  {
+    "line": 62,
+    "quote": "the Rubicon",
+    "note": "A small river south of Ravenna that marked the edge of Caesar's province. By crossing it with his army in 49 BC he began the civil war against Pompey and the Senate."
+  },
+  {
+    "line": 65,
+    "quote": "Durrës",
+    "note": "Ancient Dyrrachium, on the coast of modern Albania, where Caesar besieged Pompey's army. Before that he had beaten Pompey's commanders in Spain."
+  },
+  {
+    "line": 65,
+    "quote": "Pharsalus",
+    "note": "The battle in northern Greece, in 48 BC, where Caesar broke Pompey's army. Pompey fled to Egypt and was murdered as he landed, which is how the Nile felt the blow."
+  },
+  {
+    "line": 67,
+    "quote": "Antandros and the Simois",
+    "note": "A port and a river of the country around Troy. Aeneas set sail from Antandros. The poet Lucan says that Caesar, chasing Pompey, stopped to visit the ruins of Troy: the eagle sees its birthplace again."
+  },
+  {
+    "line": 68,
+    "quote": "Hector",
+    "entity": "hector",
+    "context": "His tomb was at Troy."
+  },
+  {
+    "line": 69,
+    "quote": "Ptolemy",
+    "note": "Ptolemy XIII, the boy king of Egypt. Caesar took the kingdom from him and gave it to his sister Cleopatra. He is not the astronomer Ptolemy."
+  },
+  {
+    "line": 70,
+    "quote": "Juba",
+    "note": "King of Numidia in North Africa, an ally of Pompey's party. Caesar defeated him at Thapsus in 46 BC."
+  },
+  {
+    "line": 72,
+    "quote": "Pompey's trumpet",
+    "note": "Pompey's sons raised a last army in Spain. Caesar beat them at Munda in 45 BC, his final battle."
+  },
+  {
+    "line": 73,
+    "quote": "the next standard-bearer",
+    "entity": "augustus",
+    "context": "Caesar's heir, at this time still called Octavian. The next lines follow his wars against Caesar's killers, then against Mark Antony."
+  },
+  {
+    "line": 74,
+    "quote": "Brutus and Cassius",
+    "note": "The leaders of the plot that killed Caesar in 44 BC. Octavian and Antony defeated them at Philippi two years later. Dante saw them in the pit of Hell, chewed forever in two of Satan's three mouths (Inferno 34)."
+  },
+  {
+    "line": 75,
+    "quote": "Modena and Perugia",
+    "note": "Two towns of the civil wars. Octavian defeated Mark Antony near Modena in 43 BC, then starved out Antony's brother in Perugia, which was sacked."
+  },
+  {
+    "line": 76,
+    "quote": "Cleopatra",
+    "entity": "cleopatra",
+    "context": "She and Antony fled from Octavian's fleet at Actium in 31 BC. She killed herself the next year."
+  },
+  {
+    "line": 79,
+    "quote": "the Red Sea shore",
+    "note": "The conquest of Egypt, which carried Roman rule to the Red Sea."
+  },
+  {
+    "line": 81,
+    "quote": "Janus's temple",
+    "note": "The doors of the temple of Janus in Rome stood open whenever Rome was at war, and were shut only in peace, which was rare. Augustus closed them. Into this peace, Christians noted, Christ was born."
+  },
+  {
+    "line": 86,
+    "quote": "the third Caesar",
+    "note": "Tiberius, emperor from AD 14 to 37. Christ was crucified in his reign, under his governor Pontius Pilate."
+  },
+  {
+    "line": 90,
+    "quote": "wreaking vengeance for divine wrath",
+    "note": "The Crucifixion. Dante's argument, made in his book Monarchy, is that Christ's death paid for Adam's sin only if it was a true punishment, passed by a lawful judge with authority over all mankind. So Rome's rule was lawful, and this was the eagle's greatest glory. Beatrice explains further in Canto 7."
+  },
+  {
+    "line": 92,
+    "quote": "Titus",
+    "entity": "titus",
+    "context": "The \"vengeance upon the vengeance\" is the destruction of Jerusalem in AD 70: punishment of those who put Christ to death, though his death was itself the just punishment of Adam's sin. The puzzle troubles Dante, and Canto 7 opens with it."
+  },
+  {
+    "line": 94,
+    "quote": "the Lombard tooth",
+    "note": "The Lombards, a Germanic people who ruled northern Italy, threatened the pope's lands. Justinian leaps seven centuries here in three lines."
+  },
+  {
+    "line": 96,
+    "quote": "Charlemagne",
+    "entity": "charlemagne",
+    "context": "He defeated the Lombard king Desiderius in 773–774, at the pope's call. He was not yet emperor: that came in 800."
+  },
+  {
+    "line": 101,
+    "quote": "the yellow lilies",
+    "note": "The golden fleur-de-lis, arms of the royal house of France and of its Angevin branch that ruled Naples. The Guelphs set this banner up against the eagle."
+  },
+  {
+    "line": 103,
+    "quote": "the Ghibellines",
+    "entity": "guelphs-and-ghibellines",
+    "context": "Justinian blames both: the Guelphs fight the eagle, and the Ghibellines make the standard of all into the flag of a faction."
+  },
+  {
+    "line": 106,
+    "quote": "this new Charles",
+    "entity": "charles-ii-of-anjou",
+    "context": "\"New\" to tell him from his father, the first Charles of Anjou. In 1300 he was the head of the Guelph cause in Italy."
+  },
+  {
+    "line": 108,
+    "quote": "a nobler lion",
+    "note": "The eagle has skinned stronger enemies than Charles. No particular lion is meant."
+  },
+  {
+    "line": 111,
+    "quote": "trade his coat of arms for lilies",
+    "note": "God's own emblem on earth is the eagle. He will not exchange the Empire for the house of France."
+  },
+  {
+    "line": 112,
+    "quote": "This small planet",
+    "entity": "heaven-of-mercury",
+    "context": "The answer to Dante's second question. Mercury is the smallest planet, and the hardest to see because it stays close to the sun."
+  },
+  {
+    "line": 114,
+    "quote": "so that fame and honor might follow them",
+    "note": "The flaw that sets these souls in a low heaven: they did good, but with one eye on their own glory. Love aimed partly at fame rises less strongly toward God."
+  },
+  {
+    "line": 118,
+    "quote": "our wages match exactly",
+    "note": "No soul in Heaven wants more than it has. As Piccarda explained in Canto 3, to see that their reward fits their merit is itself part of their happiness."
+  },
+  {
+    "line": 127,
+    "quote": "this very pearl",
+    "note": "The planet Mercury. Dante called the Moon a pearl too, in Canto 2."
+  },
+  {
+    "line": 128,
+    "quote": "Romeo",
+    "entity": "romeo-of-villeneuve",
+    "context": "The canto of the Empire ends with a servant wronged. Many readers hear Dante's own story in it: a just man slandered, cast out, and left to beg his bread in old age."
+  },
+  {
+    "line": 130,
+    "quote": "the Provençals who worked against him",
+    "note": "The barons who slandered Romeo. After the count's death Provence passed to Charles of Anjou, a much harder master."
+  },
+  {
+    "line": 133,
+    "quote": "Raymond Berenger",
+    "note": "Raymond Berenger IV, count of Provence (died 1245). His daughters married Louis IX of France, Henry III of England, Henry's brother Richard of Cornwall, who was elected king of Germany, and Charles of Anjou, later king of Sicily."
+  },
+  {
+    "line": 135,
+    "quote": "a pilgrim",
+    "note": "In Italian a \"romeo\" is a pilgrim, properly one bound for Rome. The legend of the wandering stranger seems to have grown out of the name. The real Romeo was a nobleman who stayed in the service of the count's family until he died."
+  },
+  {
+    "line": 138,
+    "quote": "seven and five for every ten",
+    "note": "Twelve for every ten he was given: Romeo had increased the count's wealth by a fifth."
+  }
+]

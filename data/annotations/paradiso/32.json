@@ -1,0 +1,299 @@
+[
+  {
+    "line": 1,
+    "quote": "the White Rose",
+    "entity": "celestial-rose",
+    "context": "This canto is its seating plan. A line of Hebrew women on one side and a line of saints on the other split it into two halves, and a ring halfway up splits adults above from children below."
+  },
+  {
+    "line": 2,
+    "quote": "that contemplative soul",
+    "entity": "bernard-of-clairvaux",
+    "context": "Still gazing at Mary, he begins to name the souls seated in the Rose."
+  },
+  {
+    "line": 4,
+    "quote": "The wound",
+    "note": "Original sin: the damage done to all humankind by the first disobedience in Eden. Mary healed it by giving birth to Christ."
+  },
+  {
+    "line": 4,
+    "quote": "Mary",
+    "entity": "mary",
+    "context": "She sits in the top row of the Rose. Everyone else is placed in relation to her."
+  },
+  {
+    "line": 5,
+    "quote": "she who sits so beautiful at her feet",
+    "entity": "eve",
+    "context": "She sits in the second row, directly below Mary: the woman who opened the wound beneath the woman who closed it. She is beautiful because God made her with his own hands."
+  },
+  {
+    "line": 7,
+    "quote": "Rachel",
+    "entity": "rachel",
+    "context": "Third row, below Eve. Beatrice told Virgil in Inferno 2 that her seat in Heaven was beside Rachel."
+  },
+  {
+    "line": 8,
+    "quote": "Beatrice",
+    "entity": "beatrice",
+    "context": "Her seat is in the third row from the top, where Dante saw her take her place in Canto 31."
+  },
+  {
+    "line": 10,
+    "quote": "Sarah",
+    "entity": "sarah",
+    "context": "Fourth in the line of Hebrew women that runs down from Mary."
+  },
+  {
+    "line": 10,
+    "quote": "Rebecca",
+    "entity": "rebecca",
+    "context": "Fifth in the line. Her twin sons come into Bernard's argument later in the canto."
+  },
+  {
+    "line": 10,
+    "quote": "Judith",
+    "entity": "judith",
+    "context": "Sixth in the line."
+  },
+  {
+    "line": 11,
+    "quote": "ancestor to the Singer",
+    "entity": "ruth",
+    "context": "Seventh in the line. She is named only as the great-grandmother of David."
+  },
+  {
+    "line": 12,
+    "quote": "Have mercy on me",
+    "entity": "david",
+    "context": "The opening of Psalm 51, in Latin the Miserere, the great psalm of repentance. Tradition says David wrote it after he took Bathsheba, another man's wife, and had her husband killed."
+  },
+  {
+    "line": 17,
+    "quote": "the Hebrew women",
+    "note": "The women of the Old Testament sit one below another, all the way down. Together they make a dividing wall from the top of the Rose to the bottom."
+  },
+  {
+    "line": 18,
+    "quote": "the flower's flowing hair",
+    "note": "The petals of the Rose, that is, the rows of seats."
+  },
+  {
+    "line": 19,
+    "quote": "the view that Faith",
+    "note": "The souls are seated by which way their faith looked: forward to a savior still to come, or back to one who had come."
+  },
+  {
+    "line": 24,
+    "quote": "Christ yet to come",
+    "note": "The saved who lived before Christ, mostly the faithful of the Old Testament. Their half is full, since no more can be added to it."
+  },
+  {
+    "line": 26,
+    "quote": "empty spaces",
+    "note": "The Christian half still has seats waiting for souls not yet dead or not yet born."
+  },
+  {
+    "line": 31,
+    "quote": "great John",
+    "entity": "john-the-baptist",
+    "context": "He sits at the top of the far side, facing Mary. He died about two years before Christ and waited that long in Limbo, until Christ came down to free the just."
+  },
+  {
+    "line": 35,
+    "quote": "Francis",
+    "entity": "francis-of-assisi",
+    "context": "Below the Baptist the dividing line is made of founders of the religious life, as the line below Mary is made of Hebrew women."
+  },
+  {
+    "line": 35,
+    "quote": "Benedict",
+    "entity": "benedict"
+  },
+  {
+    "line": 35,
+    "quote": "Augustine",
+    "entity": "augustine"
+  },
+  {
+    "line": 39,
+    "quote": "in equal measure",
+    "note": "When the last seat is filled, the saved from before Christ and the saved from after will be exactly equal in number. This balance gives the Rose its symmetry."
+  },
+  {
+    "line": 40,
+    "quote": "that rank which cuts",
+    "note": "A ring running all the way round the Rose, halfway up. Everyone above it is an adult. Everyone below it is a child."
+  },
+  {
+    "line": 43,
+    "quote": "another's",
+    "note": "They did nothing to earn Heaven themselves. They are saved by the merit of Christ, which reached them through their parents' faith or through baptism, as lines 76–84 explain."
+  },
+  {
+    "line": 45,
+    "quote": "before they had any true choice",
+    "note": "They died as babies or small children, before the age at which a person can choose between good and evil."
+  },
+  {
+    "line": 49,
+    "quote": "Now you doubt",
+    "note": "Dante's unspoken puzzle: the children sit in higher and lower rows, yet none of them did anything to deserve more or less than another. So why are they ranked?"
+  },
+  {
+    "line": 53,
+    "quote": "no random point",
+    "note": "Nothing in Heaven happens by chance. Every seat is where God means it to be."
+  },
+  {
+    "line": 58,
+    "quote": "hurrying toward true life",
+    "note": "The children, who reached Heaven early by dying young."
+  },
+  {
+    "line": 65,
+    "quote": "bestows grace as he pleases",
+    "note": "Bernard's answer is predestination. God gives each soul a different measure of grace when he creates it, for reasons of his own. The children are ranked by that gift alone, and Bernard tells Dante to be content with the fact."
+  },
+  {
+    "line": 68,
+    "quote": "those twins",
+    "note": "Esau and Jacob, the sons of Rebecca, who struggled with each other in her womb (Genesis 25). Saint Paul uses them as the proof that God chooses freely: before they were born or had done anything good or bad, God preferred Jacob (Romans 9)."
+  },
+  {
+    "line": 70,
+    "quote": "the color of their hair",
+    "note": "Esau was born red and hairy, Jacob was not. As the twins differed in hair from birth, with no merit in it, so souls differ from birth in the grace they are given, and are crowned with glory to match."
+  },
+  {
+    "line": 75,
+    "quote": "their first keenness",
+    "note": "The power to see God that each soul was given at its making. In Heaven, joy is measured by how deeply one sees him."
+  },
+  {
+    "line": 76,
+    "quote": "In the early centuries",
+    "note": "Three ages follow. From Adam to Abraham, a child was saved by its parents' faith. From Abraham to Christ, boys also needed circumcision, the sign of God's covenant with Abraham (Genesis 17). After Christ, a child needs baptism."
+  },
+  {
+    "line": 84,
+    "quote": "held back below",
+    "entity": "limbo",
+    "context": "Unbaptized children born after Christ go here. Dante saw them among the crowd in Inferno 4."
+  },
+  {
+    "line": 85,
+    "quote": "the face that most",
+    "note": "Mary's. She looks most like Christ because she is his mother, and he took his human features from her alone."
+  },
+  {
+    "line": 89,
+    "quote": "the holy minds",
+    "entity": "angels",
+    "context": "They carry God's joy down to Mary as they fly."
+  },
+  {
+    "line": 94,
+    "quote": "that same Love who first descended there",
+    "entity": "gabriel",
+    "context": "He hovers before Mary with his wings spread, singing the words he first spoke to her on earth. Bernard identifies him a few lines later."
+  },
+  {
+    "line": 95,
+    "quote": "Hail Mary, full of grace",
+    "note": "Gabriel's greeting to Mary at the Annunciation (Luke 1), and the opening of the best-known prayer to her. Dante gives it in Latin: Ave Maria, gratia plena."
+  },
+  {
+    "line": 108,
+    "quote": "the morning star",
+    "note": "The planet Venus before sunrise, which shines with light it takes from the sun. Bernard's face is lit in the same way by looking at Mary."
+  },
+  {
+    "line": 112,
+    "quote": "the palm",
+    "note": "At the Annunciation, when Gabriel told Mary she would bear the Son of God. The palm is a sign of victory. It is usually read as marking Mary as the one chosen above all other women."
+  },
+  {
+    "line": 116,
+    "quote": "the great nobles",
+    "note": "Dante's word is patricians, the nobility of ancient Rome. Heaven is pictured as the true empire, with God as emperor and Mary, in the Italian, as Augusta, the title of a Roman empress."
+  },
+  {
+    "line": 120,
+    "quote": "two roots of this Rose",
+    "note": "Adam, the father of the human race and so of all who believed in Christ to come, and Peter, the first head of the Church and so father of all who believed after."
+  },
+  {
+    "line": 122,
+    "quote": "the father whose bold appetite",
+    "entity": "adam",
+    "context": "He sits at Mary's left, at the top of the Old Testament half. The bitter taste is that of the forbidden fruit, which all his descendants still pay for."
+  },
+  {
+    "line": 124,
+    "quote": "that ancient father",
+    "entity": "peter",
+    "context": "He sits at Mary's right, at the top of the Christian half. The keys are those Christ promised him, the keys of the kingdom of Heaven."
+  },
+  {
+    "line": 127,
+    "quote": "the one who saw",
+    "entity": "john-the-evangelist",
+    "context": "He sits beside Peter. In the visions of Revelation he foresaw, before he died, the sufferings the Church would go through."
+  },
+  {
+    "line": 128,
+    "quote": "that beautiful bride",
+    "note": "The Church, which Christ won as his bride by dying on the cross, pierced by the nails and the soldier's spear."
+  },
+  {
+    "line": 130,
+    "quote": "that leader",
+    "entity": "moses",
+    "context": "He sits beside Adam. God fed the Israelites in the desert with manna, bread from heaven, while they complained and rebelled against him. \"Stiff-necked\" is the Bible's own word for them (Exodus 32)."
+  },
+  {
+    "line": 133,
+    "quote": "Anna",
+    "entity": "anne",
+    "context": "She sits across the Rose from Peter, next to John the Baptist, and never takes her eyes off her daughter."
+  },
+  {
+    "line": 137,
+    "quote": "Lucy",
+    "entity": "lucy",
+    "context": "She sits across from Adam. With her the poem returns to its beginning: it was Lucy who went to Beatrice when Dante was lost in the dark wood (Inferno 2)."
+  },
+  {
+    "line": 138,
+    "quote": "to rush downward",
+    "note": "In Inferno 1, when the she-wolf drove Dante back down the hill toward the dark wood."
+  },
+  {
+    "line": 139,
+    "quote": "the moments of your vision fly",
+    "note": "The time granted to Dante is running out. His Italian speaks of the time that holds him in sleep, which many readers take as a sign that the whole journey is a vision given to a sleeper. The phrase is disputed."
+  },
+  {
+    "line": 140,
+    "quote": "like a good tailor",
+    "note": "A plain workshop image at the summit of Heaven: Bernard cuts his list of names short to fit the little time left."
+  },
+  {
+    "line": 142,
+    "quote": "the Primal Love",
+    "note": "God. What remains is to look straight at him, which is the subject of the last canto."
+  },
+  {
+    "line": 146,
+    "quote": "beating wings",
+    "note": "A warning: anyone who tries to rise to God by his own effort slips backward while thinking he climbs. The last step can only be given, not taken."
+  },
+  {
+    "line": 148,
+    "quote": "her who has power to help you",
+    "note": "Mary. Bernard's prayer to her opens the next canto."
+  }
+]

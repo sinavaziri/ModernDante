@@ -1,0 +1,194 @@
+[
+  {
+    "line": 1,
+    "quote": "the heavenly forest",
+    "entity": "earthly-paradise",
+    "context": "The poem began in a dark forest that filled Dante with dread. This one is its opposite: green, full of birdsong, and entered eagerly and without a guide leading the way."
+  },
+  {
+    "line": 3,
+    "quote": "the riverbank",
+    "note": "Dante's Italian says only \"the bank\": the rim of the mountaintop, where the stair came out. He has not reached a river yet. The stream appears at line 21."
+  },
+  {
+    "line": 6,
+    "quote": "A gentle breeze that never changed",
+    "note": "A steady wind that always blows from the east. Its cause is explained at lines 97–102: the turning of the heavens carries the air round with it."
+  },
+  {
+    "line": 10,
+    "quote": "cast its first shadow",
+    "note": "Toward the west, where the mountain's shadow falls at sunrise."
+  },
+  {
+    "line": 16,
+    "quote": "Chiassi's shore",
+    "note": "Classe, the old seaport of Ravenna on the Adriatic, with a famous pine forest along the coast. Dante spent his last years in Ravenna, where he finished the poem, and died there in 1321."
+  },
+  {
+    "line": 17,
+    "quote": "the wind god",
+    "note": "Aeolus, who in the Aeneid keeps the winds shut in a cave and lets them out at will. The wind Dante names is the Scirocco, the warm wind from the southeast."
+  },
+  {
+    "line": 19,
+    "quote": "the ancient wood",
+    "note": "As old as the human race: this is the garden planted for Adam and Eve."
+  },
+  {
+    "line": 21,
+    "quote": "a stream",
+    "note": "Lethe, named at line 124. Dante will not cross it until Canto 31."
+  },
+  {
+    "line": 35,
+    "quote": "a woman walking alone",
+    "entity": "matelda",
+    "context": "She fulfills the dream of Leah in Canto 27: a young woman singing and gathering flowers. She is not named here, or anywhere until Canto 33."
+  },
+  {
+    "line": 38,
+    "quote": "who warms herself",
+    "note": "Dante greets her in the language of love poetry, and the scene recalls a kind of medieval song in which a traveler meets a shepherdess. The love that shines in her is love of God."
+  },
+  {
+    "line": 44,
+    "quote": "Proserpina",
+    "entity": "proserpina",
+    "context": "She was gathering flowers in a meadow of endless spring when she was seized. \"Lost the spring\" may mean the flowers that fell from her lap, or the springtime world she was taken from. The lost girl in the lost garden suits Eden."
+  },
+  {
+    "line": 45,
+    "quote": "her mother",
+    "note": "Ceres, goddess of grain and harvest, who searched the whole earth for her daughter."
+  },
+  {
+    "line": 59,
+    "quote": "beneath Venus's eyelids",
+    "note": "From Ovid's Metamorphoses. Cupid, kissing his mother, grazed her by accident with one of his arrows, and she fell in love with the mortal Adonis. The lady's eyes shine with a purer love."
+  },
+  {
+    "line": 63,
+    "quote": "produces without seeds",
+    "note": "Flowers spring up here unsown. She explains how at lines 103–114."
+  },
+  {
+    "line": 65,
+    "quote": "the Hellespont",
+    "note": "The narrow strait between Europe and Asia, now called the Dardanelles. Both of Dante's comparisons belong to it: a king's crossing and a lover's."
+  },
+  {
+    "line": 65,
+    "quote": "Xerxes",
+    "entity": "xerxes",
+    "context": "He crossed the Hellespont in pride with a vast army and came back across it in flight. That is the \"lesson\"."
+  },
+  {
+    "line": 67,
+    "quote": "Leander",
+    "note": "A young man of Abydos, on the Asian shore, who swam the strait every night to his lover Hero in Sestos, on the European side. He hated the rough water that kept him from her, and he drowned in it one stormy night. Dante knew the story from Ovid."
+  },
+  {
+    "line": 70,
+    "quote": "You are newcomers",
+    "note": "She speaks to all three poets. Virgil and Statius stand behind Dante and say nothing in this canto."
+  },
+  {
+    "line": 72,
+    "quote": "humanity's true home",
+    "note": "The Garden of Eden. Dante's Italian calls it the nest chosen for the human race."
+  },
+  {
+    "line": 74,
+    "quote": "You have made me glad",
+    "note": "Psalm 92 (91 in the Latin Bible), which Dante cites by its Latin word, Delectasti: \"You have made me glad, Lord, by your work; I rejoice in the works of your hands.\" Her smile is delight in what God has made."
+  },
+  {
+    "line": 80,
+    "quote": "new faith",
+    "note": "In Canto 21 Statius said that above the gate of Purgatory there is no weather: no rain, wind or other change. Yet here Dante finds a breeze and running water."
+  },
+  {
+    "line": 85,
+    "quote": "The Supreme Good",
+    "note": "God, the one being who is good in himself and enough for his own happiness."
+  },
+  {
+    "line": 88,
+    "quote": "we stayed here briefly",
+    "note": "Adam and Eve were driven from the garden when they ate the forbidden fruit. In Paradiso 26 Adam tells Dante that he was here only about six hours."
+  },
+  {
+    "line": 92,
+    "quote": "vapors from earth and water",
+    "note": "The science of Dante's time, taken from Aristotle. The sun's heat draws moist and dry vapors up from water and land, and these make rain, wind and storms."
+  },
+  {
+    "line": 96,
+    "quote": "where it is sealed",
+    "note": "The gate of Purgatory, kept locked by its angel (Canto 9). Above it the mountain rises clear of the weather."
+  },
+  {
+    "line": 98,
+    "quote": "the primal motion",
+    "note": "The Primum Mobile, the outermost of the turning heavens. It spins round the earth once a day and carries every lower sphere with it, and the upper air as well. That moving air is the breeze of the garden."
+  },
+  {
+    "line": 103,
+    "quote": "The struck plant",
+    "note": "The plants of Eden give their seed-making power to the wind, which carries it round the world. This is her account of why plants sometimes come up where nobody sowed them."
+  },
+  {
+    "line": 114,
+    "quote": "fruit never harvested elsewhere",
+    "note": "Fruit unknown in the lower world. Readers think above all of the tree of the knowledge of good and evil, which Dante sees in Canto 32."
+  },
+  {
+    "line": 115,
+    "quote": "doesn't spring from veins",
+    "note": "Rivers on earth are fed by rain, so they rise and fall. This water comes straight from a spring that God keeps full."
+  },
+  {
+    "line": 120,
+    "quote": "on two sides",
+    "note": "One spring feeds two rivers that flow opposite ways. Genesis gives Eden four rivers. Dante's two are his own design."
+  },
+  {
+    "line": 124,
+    "quote": "Lethe",
+    "entity": "lethe",
+    "context": "The stream at Dante's feet. He will be drawn through it and made to drink in Canto 31."
+  },
+  {
+    "line": 124,
+    "quote": "Eunoe",
+    "entity": "eunoe",
+    "context": "Dante drinks from it in the last lines of Purgatorio, in Canto 33."
+  },
+  {
+    "line": 125,
+    "quote": "unless first tasted",
+    "note": "The two waters work only as a pair, Lethe first and then Eunoe. Forgetting the wrong done is not enough. The good must be remembered too."
+  },
+  {
+    "line": 134,
+    "quote": "the Golden Age",
+    "note": "The classical myth of a first age when people lived in peace and plenty without work or law, under the god Saturn. Ovid describes it in the Metamorphoses, and Virgil foretells its return in his Fourth Eclogue."
+  },
+  {
+    "line": 135,
+    "quote": "Parnassus",
+    "entity": "parnassus",
+    "context": "To dream on Parnassus is to imagine as a poet. She suggests that the pagan poets, with no knowledge of Genesis, had a dim memory of Eden."
+  },
+  {
+    "line": 138,
+    "quote": "the nectar",
+    "note": "The drink of the gods. Ovid says rivers of milk and nectar ran in the Golden Age."
+  },
+  {
+    "line": 141,
+    "quote": "with smiles",
+    "note": "Virgil and Statius are two of the ancient poets she means. They smile to hear that their poems held a glimpse of the truth."
+  }
+]

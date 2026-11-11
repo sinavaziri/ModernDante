@@ -1,0 +1,273 @@
+[
+  {
+    "line": 1,
+    "quote": "this Sacred Poem",
+    "note": "Dante's own name for his work. The opening lines of this canto are among the most personal in the poem: an exile, near the end of his life and his book, lets himself hope that it will bring him home."
+  },
+  {
+    "line": 2,
+    "quote": "both heaven and earth have lent their hand",
+    "note": "The poem takes in both heaven and earth as its subject. The words can also mean that it took both God's help and a man's labor to write."
+  },
+  {
+    "line": 3,
+    "quote": "made me lean",
+    "note": "Years of work have worn him thin. Dante seems to have worked on the poem from about 1307 until shortly before his death in 1321."
+  },
+  {
+    "line": 4,
+    "quote": "the cruelty that bars me",
+    "note": "Dante's exile. In 1302, while he was away, his political enemies in Florence condemned him, and a second sentence ordered him burned alive if he was ever caught there. He never saw the city again."
+  },
+  {
+    "line": 5,
+    "quote": "the beautiful sheepfold",
+    "entity": "florence",
+    "context": "The city as a fold where he slept as a lamb, safe and innocent. The wolves are the citizens who tear it apart with their feuds, and who drove him out."
+  },
+  {
+    "line": 7,
+    "quote": "with a different voice, with different fleece",
+    "note": "He would come back changed. The fleece is his hair, gone gray, to keep up the image of the lamb. The voice is that of a poet of sacred things, no longer the young writer of love poems Florence knew."
+  },
+  {
+    "line": 8,
+    "quote": "the font",
+    "note": "The Baptistery of San Giovanni in Florence, where every child of the city was baptized. In Inferno 19 Dante calls it \"my beautiful San Giovanni\"."
+  },
+  {
+    "line": 9,
+    "quote": "the laurel crown",
+    "note": "The wreath of laurel given to great poets in ancient Rome. About 1319 a scholar of Bologna invited Dante to be crowned there, and Dante answered that he would wait to be crowned in Florence. It never happened. He died in exile at Ravenna in 1321."
+  },
+  {
+    "line": 12,
+    "quote": "Peter",
+    "entity": "peter",
+    "context": "At the end of Canto 24 Peter circled Dante three times to approve his profession of faith. Dante sets that crown from the first of the apostles beside the laurel crown his city has denied him."
+  },
+  {
+    "line": 14,
+    "quote": "the first fruits",
+    "note": "Peter, the first of Christ's vicars, his deputies on earth. The company is the ring of apostles that Peter came out of."
+  },
+  {
+    "line": 16,
+    "quote": "my Lady",
+    "entity": "beatrice",
+    "context": "She announces the second examiner, and will soon answer one of his questions on Dante's behalf."
+  },
+  {
+    "line": 17,
+    "quote": "the Baron",
+    "entity": "james-the-greater",
+    "context": "He is never named. Beatrice identifies him by the pilgrimage to his shrine, and he will examine Dante on hope."
+  },
+  {
+    "line": 18,
+    "quote": "Galicia",
+    "note": "The region of northwest Spain where the shrine of Santiago de Compostela stands. Legend said the body of Saint James was carried there after his death. With Rome and Jerusalem it was one of the three great pilgrimages of the Middle Ages."
+  },
+  {
+    "line": 22,
+    "quote": "one great Prince",
+    "note": "James, greeted by Peter. The two apostles circle each other like doves."
+  },
+  {
+    "line": 24,
+    "quote": "the food that is eaten up there",
+    "note": "The sight of God, which feeds the blessed. It continues the image of the feast from the start of Canto 24."
+  },
+  {
+    "line": 29,
+    "quote": "who wrote of the benefactions",
+    "note": "The Letter of James in the New Testament speaks of God's generosity: \"Every good gift and every perfect gift is from above\" (1:17). Like most people of his time, Dante took its author to be the apostle James of the Compostela shrine. They are now thought to be two different men."
+  },
+  {
+    "line": 33,
+    "quote": "the three apostles",
+    "note": "Peter, James and John. Jesus took only these three with him at certain great moments, such as his Transfiguration on the mountain. Commentators took them to stand for faith, hope and love, which is why these three examine Dante. Dante's Italian says James stood for hope each time."
+  },
+  {
+    "line": 36,
+    "quote": "must ripen in our radiance",
+    "note": "Dante has been dazzled and has dropped his eyes. James tells him that the light of the saints will not harm his sight but mature it."
+  },
+  {
+    "line": 38,
+    "quote": "the heights",
+    "note": "Dante's Italian says the mountains, meaning the two apostles. It echoes Psalm 121: \"I lift up my eyes to the hills, from where my help comes.\""
+  },
+  {
+    "line": 40,
+    "quote": "our Emperor",
+    "note": "God. Heaven is again a royal court: God the emperor, the apostles his nobles, and this heaven the private chamber where he receives those closest to him."
+  },
+  {
+    "line": 44,
+    "quote": "strengthen in yourself and others",
+    "note": "The purpose of the journey, stated outright. Dante has been shown Heaven so that he can go back and give hope to the living."
+  },
+  {
+    "line": 46,
+    "quote": "what Hope is",
+    "note": "Three questions: what hope is, how much of it Dante has, and where he got it. They follow the pattern of Peter's examination on faith."
+  },
+  {
+    "line": 50,
+    "quote": "the Compassionate One",
+    "note": "Beatrice. She answers the second question herself, because Dante could not say how strong his hope is without praising himself."
+  },
+  {
+    "line": 52,
+    "quote": "The Church Militant",
+    "note": "The Christians still alive on earth, who are at war with sin. The saints in Heaven are the Church Triumphant. Beatrice declares that no living Christian has more hope than Dante."
+  },
+  {
+    "line": 54,
+    "quote": "that Sun",
+    "note": "God, in whom the blessed read all things as in a book."
+  },
+  {
+    "line": 55,
+    "quote": "to come from Egypt",
+    "note": "Egypt, where the Israelites were slaves, stands for life on earth. Jerusalem, the promised city, stands for Heaven. The souls arriving in Purgatorio 2 sing the psalm of this same journey, \"When Israel went out of Egypt\"."
+  },
+  {
+    "line": 57,
+    "quote": "his warfare on earth",
+    "note": "His life. \"The life of man on earth is a warfare\", says the Book of Job in the Latin Bible (7:1)."
+  },
+  {
+    "line": 67,
+    "quote": "Hope is the assured expectation",
+    "note": "Dante quotes the standard definition from the Sentences of Peter Lombard, the textbook of theology in the medieval schools. Hope in this sense is not wishing. It is the confident waiting for Heaven, resting on God's grace and on the good a person has done with it."
+  },
+  {
+    "line": 70,
+    "quote": "many stars",
+    "note": "The many writers of the Bible, each a light to him."
+  },
+  {
+    "line": 72,
+    "quote": "the chief singer to the chief captain",
+    "entity": "david",
+    "context": "David, author of the Psalms, is the highest singer of the highest lord, God. His Psalms first taught Dante to hope."
+  },
+  {
+    "line": 73,
+    "quote": "'Let them hope in you,'",
+    "note": "Psalm 9:10: \"They that know your name will put their trust in you.\" Dante gives the opening words in Latin, Sperent in te, and calls the Psalms a teodia, a song of God, a word he seems to have made up."
+  },
+  {
+    "line": 77,
+    "quote": "the Epistle",
+    "note": "The Letter of James, which urges Christians to wait patiently for the coming of the Lord. David first, then James, filled Dante with hope."
+  },
+  {
+    "line": 78,
+    "quote": "rain your rain upon others",
+    "note": "Filled with hope by Scripture, Dante now pours it out on his readers. The poem is the rain."
+  },
+  {
+    "line": 80,
+    "quote": "trembled a radiance",
+    "note": "The light flashes with pleasure at the answer."
+  },
+  {
+    "line": 83,
+    "quote": "the virtue that followed me",
+    "note": "Hope stayed with James to his death. In Heaven no one needs hope, since the blessed already have what they hoped for. James loves the virtue still."
+  },
+  {
+    "line": 84,
+    "quote": "the palm",
+    "note": "The palm branch is the sign of a martyr's victory. King Herod Agrippa had James beheaded in Jerusalem about AD 44 (Acts 12:2). He was the first of the apostles to be killed. The field he left is the battlefield of this life."
+  },
+  {
+    "line": 86,
+    "quote": "what Hope promises you",
+    "note": "A further question: what exactly is it that Dante hopes for?"
+  },
+  {
+    "line": 90,
+    "quote": "Isaiah",
+    "note": "The prophet says of God's people, \"In their land they shall possess the double\" (Isaiah 61:7), and speaks of being clothed in garments of salvation. Dante reads the homeland as Heaven."
+  },
+  {
+    "line": 91,
+    "quote": "double garments",
+    "note": "The soul and the body. Dante's hope is for the whole of what Christians are promised: the soul's happiness in Heaven and, at the end of time, the resurrection of the body to share in it."
+  },
+  {
+    "line": 93,
+    "quote": "Your brother",
+    "entity": "john-the-evangelist",
+    "context": "James and John were brothers. In Revelation 7:9 John sees the saved as a great crowd in white robes before the throne of God."
+  },
+  {
+    "line": 97,
+    "quote": "\"Let them hope in you\"",
+    "note": "The souls sing the psalm verse Dante has just quoted, to mark the end of the examination. After the test of faith they sang the Te Deum."
+  },
+  {
+    "line": 99,
+    "quote": "a light among them brightened",
+    "note": "Saint John, the third of the three apostles, who will examine Dante on love in Canto 26."
+  },
+  {
+    "line": 100,
+    "quote": "if Cancer held such a crystal",
+    "note": "For a month in midwinter the sun is in Capricorn and the constellation Cancer, opposite it, is up all night. If Cancer had a star as bright as this soul, night would be as bright as day, and that month would be one unbroken day."
+  },
+  {
+    "line": 102,
+    "quote": "As a graceful girl rises",
+    "note": "John joins the dance of Peter and James as a girl gets up at a wedding to dance in honor of the bride, with no thought of showing herself off."
+  },
+  {
+    "line": 111,
+    "quote": "lay upon the breast",
+    "note": "At the Last Supper the disciple \"whom Jesus loved\" leaned on Jesus's breast (John 13:23). Tradition identifies him as John."
+  },
+  {
+    "line": 112,
+    "quote": "our Pelican",
+    "note": "Christ. Medieval books of animals said that the pelican tears open its own breast to feed its young, or bring them back to life, with its blood. It became a symbol of Christ, who shed his blood for mankind."
+  },
+  {
+    "line": 113,
+    "quote": "chosen from the cross for the great office",
+    "note": "Dying on the cross, Jesus gave his mother into John's care: \"Behold your mother\" (John 19:27). John took Mary into his home."
+  },
+  {
+    "line": 118,
+    "quote": "the sun's eclipse",
+    "note": "Dante stares into John's light as people squint at an eclipse of the sun, and with the same result."
+  },
+  {
+    "line": 122,
+    "quote": "what does not exist here",
+    "note": "John's body. A widespread legend said John had not died but was taken up to Heaven body and soul. It grew from Jesus's words about him, \"If I will that he remain until I come\" (John 21:22). Dante is looking for the body inside the light, and John tells him flatly that it is not there."
+  },
+  {
+    "line": 124,
+    "quote": "until our number",
+    "note": "Until the number of the saved that God has fixed is complete. Then comes the Last Judgment, when the dead will rise and souls will have their bodies again."
+  },
+  {
+    "line": 126,
+    "quote": "Only two lights",
+    "note": "Christ and Mary, the two Dante saw rise to the Empyrean in Canto 23. They alone are in Heaven with both garments, soul and body. Dante is told to report this on earth and so put the legend about John to rest."
+  },
+  {
+    "line": 131,
+    "quote": "the threefold breath",
+    "note": "The voices of Peter, James and John, who have been singing together as they danced."
+  },
+  {
+    "line": 137,
+    "quote": "could not see her",
+    "note": "John's light has blinded him. Dante stays blind through his examination on love in Canto 26, and Beatrice restores his sight when it is over."
+  }
+]

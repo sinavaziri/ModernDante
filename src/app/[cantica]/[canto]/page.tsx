@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getAllCanticas, getCanticaInfo, type Cantica } from '@/lib/canticas';
 import { getCanto, getCantoList } from '@/lib/cantos';
+import { getCantoNotes } from '@/lib/annotations';
 import Navigation from '@/components/Navigation';
 import CantoSelector from '@/components/CantoSelector';
 import CantoDisplay from '@/components/CantoDisplayWithAudio';
@@ -51,7 +52,7 @@ export default async function CantoPage({ params }: PageProps) {
       <Navigation cantica={cantica} />
       <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} cantos={getCantoList(cantica)} />
       {/* Keyed so moving between cantos starts from a fresh page, with nothing left playing */}
-      <CantoDisplay key={`${cantica}/${cantoNumber}`} canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} />
+      <CantoDisplay key={`${cantica}/${cantoNumber}`} canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} notes={getCantoNotes(cantica, cantoNumber)} />
     </>
   );
 }

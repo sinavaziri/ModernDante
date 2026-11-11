@@ -1,22 +1,41 @@
 'use client';
 
-import { useState, useMemo, useCallback, useEffect, useRef } from 'react';
-import Image from 'next/image';
+import { Fragment, useState, useMemo, useCallback, useEffect, useRef, useSyncExternalStore } from 'react';
+import Link from 'next/link';
 import type { Cantica } from '@/lib/canticas';
 import type { Canto } from '@/lib/cantos';
-import { getImageSrc, getImagesForCanto, titleCase, type ImageData } from '@/lib/image-mappings';
+import { getInfernoLevelsForCanto, infernoLevelLabel } from '@/lib/inferno-map';
+import { getImagesForCanto, getPlateImage, titleCase, type ImageData } from '@/lib/image-mappings';
 import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel, { type NarrationControls } from './AudioPlayerWordLevel';
+import NoteCard, { type OpenNote } from './NoteCard';
+import NotesToggle from './NotesToggle';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
+import type { CantoNotes, NotePlate } from '@/lib/annotations';
 import { alignNarration, findTokenAt, timeForToken, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
+import { placeNotes } from '@/lib/note-anchors';
+import { getNotesOn, setNotesOn, subscribeToNotes } from '@/lib/notes-preference';
 import { useNarrationHighlight, type FollowState } from '@/lib/useNarrationHighlight';
 
 interface CantoDisplayProps {
   canto: Canto;
   canticaName: string;
   cantica: Cantica;
+  /** The canto's notes, or null for a canto without them */
+  notes: CantoNotes | null;
 }
+
+// A note's card opens when the pointer rests on its phrase this long, and closes this long after it
+// leaves. The card sits beside the poem, so closing waits long enough for the pointer to cross to it.
+const NOTE_OPEN_DELAY = 150;
+const NOTE_CLOSE_DELAY = 500;
+const NOTE_CARD_ID = 'note-card';
+
+// Touch screens get a note as a sheet from the bottom of the screen, since nothing can hover
+const HOVER_QUERY = '(hover: hover) and (pointer: fine)';
+
+const noteAt = (target: EventTarget | null) => (target instanceof Element ? target.closest<HTMLElement>('[data-note]') : null);
 
 type ContentBlock =
   | { type: 'text'; content: string[]; lines: TokenizedLine[]; startLine: number; endLine: number }
@@ -25,13 +44,16 @@ type ContentBlock =
 // Lightbox Modal Component (same as before)
 function ImageLightbox({
   image,
-  cantica,
+  where,
   onClose
 }: {
   image: ImageData;
-  cantica: string;
+  /** The canto the plate illustrates, such as "Paradiso XXI", when it isn't the one being read */
+  where?: string;
   onClose: () => void;
 }) {
+  const picture = getPlateImage(image.imageNumber);
+  const several = image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',');
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -73,13 +95,12 @@ function ImageLightbox({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative flex-shrink-0 w-full lg:w-auto lg:max-w-[60%] max-h-[70vh] lg:max-h-[85vh]">
-          <Image
-            src={getImageSrc(cantica, image.filename)}
+          <img
+            src={picture.src}
             alt={titleCase(image.title)}
-            width={1200}
-            height={1600}
+            width={picture.width}
+            height={picture.height}
             className="w-auto h-auto max-w-full max-h-[70vh] lg:max-h-[85vh] object-contain rounded-lg shadow-2xl"
-            priority
           />
         </div>
 
@@ -93,7 +114,7 @@ function ImageLightbox({
               &ldquo;{image.quote}&rdquo;
             </blockquote>
             <p className="text-sm text-white/60">
-              {image.lines.includes('–') || image.lines.includes('-') || image.lines.includes(',') ? 'Lines' : 'Line'} {image.lines}
+              {where ? `${where}, ${several ? 'lines' : 'line'}` : several ? 'Lines' : 'Line'} {image.lines}
             </p>
             <p className="text-sm text-white/50">
               Engraving by Gustave Doré, colorized for this site
@@ -108,13 +129,12 @@ function ImageLightbox({
 // Inline Image Component
 function InlineImage({
   image,
-  cantica,
   onClick
 }: {
   image: ImageData;
-  cantica: string;
   onClick: () => void;
 }) {
+  const picture = getPlateImage(image.imageNumber);
   return (
     <figure
       className="group cursor-pointer transition-all duration-300 my-12 md:my-16 mx-auto max-w-2xl"
@@ -132,13 +152,15 @@ function InlineImage({
         }}
         className="relative overflow-hidden rounded-xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300 bg-muted/10 ring-1 ring-border/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
       >
-        <Image
-          src={getImageSrc(cantica, image.filename)}
-          alt={titleCase(image.title)}
-          width={800}
-          height={1067}
-          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+        <img
+          src={picture.src}
+          srcSet={picture.srcSet}
           sizes="(max-width: 768px) 100vw, 672px"
+          alt={titleCase(image.title)}
+          width={picture.width}
+          height={picture.height}
+          loading="lazy"
+          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
@@ -163,15 +185,20 @@ function InlineImage({
   );
 }
 
-export default function CantoDisplay({ canto, canticaName, cantica }: CantoDisplayProps) {
-  const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
+export default function CantoDisplay({ canto, canticaName, cantica, notes }: CantoDisplayProps) {
+  const [selectedImage, setSelectedImage] = useState<{ image: ImageData; where?: string } | null>(null);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
   const [follow, setFollow] = useState<FollowState | null>(null);
   const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
   const narrationRef = useRef<HTMLDivElement>(null);
   const controlsRef = useRef<NarrationControls>(null);
+  const notesOn = useSyncExternalStore(subscribeToNotes, getNotesOn, () => false) && !!notes;
+  const [openNote, setOpenNote] = useState<OpenNote | null>(null);
+  const noteTimer = useRef<number | undefined>(undefined);
 
   const images = getImagesForCanto(cantica, canto.number);
+  // Where an Inferno canto is in Hell, linked to the map
+  const mapLevels = cantica === 'inferno' ? getInfernoLevelsForCanto(canto.number) : [];
 
   // Load this canto's word-level timing data. A canto without a file has no audio.
   useEffect(() => {
@@ -187,7 +214,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
   }, [cantica, canto.number]);
 
   const handleImageClick = useCallback((image: ImageData) => {
-    setSelectedImage(image);
+    setSelectedImage({ image });
   }, []);
 
   const handleCloseLightbox = useCallback(() => {
@@ -254,6 +281,121 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     return `${Math.max(0, ...lengths)}ch`;
   }, [modernContent]);
 
+  // Where each note sits in the text, while the notes are on
+  const noteMarks = useMemo(() => {
+    if (!notes || !notesOn) return null;
+    const lines = modernContent.flatMap(b => (b.type === 'text' ? b.lines.map(l => l.tokens.map(t => t.text)) : []));
+    return placeNotes(lines, notes.notes);
+  }, [notes, notesOn, modernContent]);
+
+  const changeNotesOn = useCallback((on: boolean) => {
+    setOpenNote(null);
+    setNotesOn(on);
+  }, []);
+
+  // The open note's glossary entry, and its picture: the note's own, or else its entry's
+  const openNoteData = openNote ? notes?.notes[openNote.index] : undefined;
+  const openEntity = openNoteData?.entity ? notes?.entities[openNoteData.entity] : undefined;
+  const pictured = openNoteData?.plate || openNoteData?.art ? openNoteData : openEntity;
+  const openPlate = pictured?.plate ? notes?.plates[pictured.plate] : undefined;
+  const openArt = pictured?.art ? notes?.art[pictured.art] : undefined;
+
+  // A note's plate opens full screen in place of the note
+  const viewPlate = useCallback((plate: NotePlate) => {
+    window.clearTimeout(noteTimer.current);
+    setOpenNote(null);
+    setSelectedImage({ image: plate.image, where: plate.href ? plate.label : undefined });
+  }, []);
+
+  const closeNote = useCallback(() => {
+    window.clearTimeout(noteTimer.current);
+    setOpenNote(null);
+  }, []);
+
+  // Clicking or tapping a phrase pins its note open, and clicking it again closes it
+  const pinNote = useCallback((el: HTMLElement) => {
+    window.clearTimeout(noteTimer.current);
+    const index = Number(el.dataset.note);
+    setOpenNote(current =>
+      current?.index === index && current.mode === 'pinned'
+        ? null
+        : { index, anchor: el, mode: 'pinned', sheet: !window.matchMedia(HOVER_QUERY).matches }
+    );
+  }, []);
+
+  // Resting the mouse on a phrase previews its note. Moving straight to another phrase swaps it at once.
+  const handleNotePointerOver = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    const el = noteAt(e.target);
+    if (!el) return;
+    window.clearTimeout(noteTimer.current);
+    const index = Number(el.dataset.note);
+    if (openNote?.index === index || openNote?.sheet) return;
+    noteTimer.current = window.setTimeout(
+      () => setOpenNote({ index, anchor: el, mode: 'hover', sheet: false }),
+      openNote ? 0 : NOTE_OPEN_DELAY
+    );
+  };
+
+  const handleNotePointerOut = (e: React.PointerEvent) => {
+    if (e.pointerType !== 'mouse') return;
+    const el = noteAt(e.target);
+    if (!el || noteAt(e.relatedTarget)?.dataset.note === el.dataset.note) return;
+    window.clearTimeout(noteTimer.current);
+    if (openNote?.mode === 'hover') noteTimer.current = window.setTimeout(() => setOpenNote(null), NOTE_CLOSE_DELAY);
+  };
+
+  // Tabbing to a phrase previews its note, and Enter or Space pins it
+  const handleNoteFocus = (e: React.FocusEvent) => {
+    const el = noteAt(e.target);
+    if (!el || !el.matches(':focus-visible')) return;
+    window.clearTimeout(noteTimer.current);
+    setOpenNote({ index: Number(el.dataset.note), anchor: el, mode: 'focus', sheet: false });
+  };
+
+  const handleNoteBlur = (e: React.FocusEvent) => {
+    if (openNote?.mode === 'focus' && noteAt(e.target)) setOpenNote(null);
+  };
+
+  const handleNoteKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const el = noteAt(e.target);
+    if (!el || el !== e.target) return;
+    // Also keeps Space from playing the narration
+    e.preventDefault();
+    pinNote(el);
+  };
+
+  // Light up every piece of the open note's phrase, and point the phrase at its card
+  useEffect(() => {
+    const root = narrationRef.current;
+    if (!root || !openNote) return;
+    const pieces = root.querySelectorAll<HTMLElement>(`[data-note="${openNote.index}"]`);
+    const first = root.querySelector<HTMLElement>(`[data-note="${openNote.index}"][tabindex]`);
+    pieces.forEach(p => p.classList.add('is-open'));
+    first?.setAttribute('aria-describedby', NOTE_CARD_ID);
+    return () => {
+      pieces.forEach(p => p.classList.remove('is-open'));
+      first?.removeAttribute('aria-describedby');
+    };
+  }, [openNote, noteMarks]);
+
+  useEffect(() => () => window.clearTimeout(noteTimer.current), []);
+
+  // The A key turns the annotations on and off
+  useEffect(() => {
+    if (!notes) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'a' || e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+      const target = e.target instanceof Element ? e.target : null;
+      if (target?.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+      e.preventDefault();
+      changeNotesOn(!getNotesOn());
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  }, [notes, changeNotesOn]);
+
   // Match each spoken word to its word in the displayed text
   const timedTokens = useMemo(() => {
     if (!timingData) return [];
@@ -274,9 +416,16 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     return index >= 0 ? lineTexts[timedTokens[index].line] ?? null : null;
   }, [timedTokens, lineTexts]);
 
-  // Clicking a word plays the narration from that word. Selecting text to copy it doesn't.
+  // Clicking a word plays the narration from that word, and clicking a noted phrase opens its note.
+  // Selecting text to copy it does neither.
   const handleNarrationClick = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
-    if (timedTokens.length === 0 || window.getSelection()?.toString()) return;
+    if (window.getSelection()?.toString()) return;
+    const noteEl = noteAt(e.target);
+    if (noteEl) {
+      pinNote(noteEl);
+      return;
+    }
+    if (timedTokens.length === 0) return;
     const target = e.target as HTMLElement;
     const lineEl = target.closest<HTMLElement>('[data-line]');
     if (!lineEl) return;
@@ -285,19 +434,38 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
     if (!wordEl) return;
     const time = timeForToken(timedTokens, Number(wordEl.dataset.token), Number(lineEl.dataset.line));
     if (time !== null) controlsRef.current?.playFrom(time);
-  }, [timedTokens]);
+  }, [timedTokens, pinNote]);
 
-  // The canto's first plate, or Dante's portrait for a canto without one
-  const artwork = images[0] ? getImageSrc(cantica, images[0].filename) : '/images/Dante%20Portrait.png';
+  // The canto's first plate, or the site's icon of Dante for a canto without one
+  const artwork = images[0] ? getPlateImage(images[0].imageNumber).small : '/apple-icon.png';
 
 
   return (
     <>
       {selectedImage && (
         <ImageLightbox
-          image={selectedImage}
-          cantica={cantica}
+          image={selectedImage.image}
+          where={selectedImage.where}
           onClose={handleCloseLightbox}
+        />
+      )}
+
+      {openNote && notes?.notes[openNote.index] && (
+        <NoteCard
+          // A card and a sheet are different elements, so neither inherits the other's placement
+          key={openNote.sheet ? 'sheet' : 'card'}
+          id={NOTE_CARD_ID}
+          note={notes.notes[openNote.index]}
+          entity={openEntity}
+          plate={openPlate}
+          art={openArt}
+          onViewPlate={viewPlate}
+          open={openNote}
+          onClose={closeNote}
+          onPointerEnter={() => window.clearTimeout(noteTimer.current)}
+          onPointerLeave={() => {
+            if (openNote.mode === 'hover') noteTimer.current = window.setTimeout(() => setOpenNote(null), NOTE_CLOSE_DELAY);
+          }}
         />
       )}
 
@@ -318,6 +486,26 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
               {canto.subtitle}
             </p>
           )}
+
+          {mapLevels.length > 0 && (
+            <p className="mt-5 font-sans text-sm text-muted-foreground">
+              On the map:{' '}
+              {mapLevels.map((level, i) => (
+                <Fragment key={level.id}>
+                  {i > 0 && ', '}
+                  <Link href={`/map#${level.id}`} className="text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary">
+                    {infernoLevelLabel(level)}
+                  </Link>
+                </Fragment>
+              ))}
+            </p>
+          )}
+
+          {notes && notes.notes.length > 0 && (
+            <div className="mt-8 flex justify-center">
+              <NotesToggle on={notesOn} onChange={changeNotesOn} />
+            </div>
+          )}
         </div>
 
         {/* Main Content */}
@@ -327,6 +515,11 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
             className={`space-y-8${timedTokens.length ? ' has-narration' : ''}`}
             style={{ '--poem-measure': poemMeasure } as React.CSSProperties}
             onClick={handleNarrationClick}
+            onPointerOver={noteMarks ? handleNotePointerOver : undefined}
+            onPointerOut={noteMarks ? handleNotePointerOut : undefined}
+            onFocus={noteMarks ? handleNoteFocus : undefined}
+            onBlur={noteMarks ? handleNoteBlur : undefined}
+            onKeyDown={noteMarks ? handleNoteKeyDown : undefined}
           >
 
             {modernContent.map((block, idx) => {
@@ -335,7 +528,6 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
                   <InlineImage
                     key={`img-${idx}`}
                     image={block.data}
-                    cantica={cantica}
                     onClick={() => handleImageClick(block.data)}
                   />
                 );
@@ -346,7 +538,7 @@ export default function CantoDisplay({ canto, canticaName, cantica }: CantoDispl
                   key={`stanza-${idx}`}
                   className="poetry mx-auto w-full max-w-[min(100%,var(--poem-measure))] text-lg md:text-xl leading-relaxed text-foreground/90"
                 >
-                  <TextWithWordHighlighting lines={block.lines} />
+                  <TextWithWordHighlighting lines={block.lines} marks={noteMarks} />
                   <div className="text-[10px] text-muted-foreground/30 text-right select-none" aria-hidden="true">
                     {block.endLine}
                   </div>
