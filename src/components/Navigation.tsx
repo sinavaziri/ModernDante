@@ -70,6 +70,16 @@ export default function Navigation({ cantica }: NavigationProps) {
             >
               Illustrations
             </Link>
+            <Link
+              href="/map"
+              className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
+                pathname === '/map'
+                  ? 'text-foreground font-bold border-b-2 border-primary'
+                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+              }`}
+            >
+              Map
+            </Link>
           </div>
 
           <ThemeToggle />
@@ -122,6 +132,17 @@ export default function Navigation({ cantica }: NavigationProps) {
                 }`}
               >
                 Illustrations
+              </Link>
+              <Link
+                href="/map"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block px-4 py-3 rounded-sm font-medium transition-all ${
+                  pathname === '/map'
+                    ? 'bg-muted text-foreground'
+                    : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                }`}
+              >
+                Map
               </Link>
             </div>
 

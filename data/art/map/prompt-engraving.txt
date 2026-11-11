@@ -1,0 +1,21 @@
+This image is a simple flat diagram: a cross-section map of the underworld from Dante's Divine Comedy, a classic of world literature. Repaint it as a finished work of art in the style described at the end.
+
+Keep the layout exactly: the same tall format, the night forest and sunrise along the top, and below it twelve stacked caverns cut into dark rock, each one narrower than the one above, forming a funnel that ends in ice at the bottom. Every cavern must stay at the same height, the same width and in the same order, with the solid rock between and around them. Keep every scene in its cavern and in the same position; make each one richer and more convincing, never a flat icon.
+
+The scenes, from top to bottom:
+1. Surface: a dense dark forest of pines at night under stars; at the far right a hill with the sun rising behind it; one small figure in a red robe at the forest's edge.
+2. A stone archway on the left, a line of small robed figures waiting, and a dark river on the right with a ferryman poling a boat.
+3. A castle with towers and warmly lit windows on a green meadow, in soft golden light, with a few calm robed figures.
+4. A violent windstorm: swirling gusts carrying small robed figures through the air.
+5. Cold rain falling on mud, figures lying in the mire, and a large black three-headed hound at the right.
+6. Two groups of robed figures straining to roll huge round boulders toward each other.
+7. A dark green marsh with figures struggling in the water, a ferryman's boat, and a small tower with a signal flame at the left.
+8. A long fortified city wall of dark red iron with four towers, a central gate, and flames burning on the tower tops.
+9. Four open stone tombs, lids pushed aside, with fire rising out of each.
+10. Three layers in one cavern: at the top a red river with figures standing in it up to the chest; in the middle a row of bare, twisted, leafless trees; at the bottom a plain of hot sand under a slow rain of fire flakes.
+11. Ten deep ditches side by side in grey stone, each crossed by a small arched stone bridge; a glow of fire in two of them.
+12. Five towering giants standing in a row, bound with chains, visible from the waist up.
+13. The bottom: a frozen lake of pale blue ice with small heads at its surface, and at the center a huge dark winged figure with three faces and bat wings, frozen in the ice to the waist.
+
+Strict rules: no text, no letters, no numbers, no labels, no captions, no signature, no border, no frame. Do not add caverns, do not merge caverns, do not leave any cavern out. Do not crop.
+Style: a nineteenth-century steel engraving in the manner of Gustave Doré, with fine hatching and cross-hatching, dramatic chiaroscuro and deep blacks, then glazed with translucent oil color by an old-master hand: restrained, smoky umbers and charcoal, with fire as glowing orange light and the ice as cold blue light. The engraved linework stays visible under the color. Rugged, craggy rock with real depth inside each cavern. Solemn and grand, not cute, not cartoonish, no flat vector shapes, no modern digital look.
