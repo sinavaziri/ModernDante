@@ -27,6 +27,10 @@ interface PaintedMapProps {
   feather?: number;
   /** The painting, 1024 by 2048 */
   painting: string;
+  /** A smaller copy of the painting for narrow screens, used only with `later` */
+  small?: string;
+  /** Leave the painting for the page to fetch once its first picture is in: see JourneyScroller */
+  later?: boolean;
   /** The color behind the names, close to the painting's darkest tone */
   ground: string;
 }
@@ -34,7 +38,7 @@ interface PaintedMapProps {
 /** How much wider the whole map is than its painting */
 export const PAINTED_MAP_WIDTH_RATIO = W / PAINTING.width;
 
-export default function PaintedMap({ label, word, levels, outlines, feather = 1, painting, ground }: PaintedMapProps) {
+export default function PaintedMap({ label, word, levels, outlines, feather = 1, painting, small, later, ground }: PaintedMapProps) {
   const { width, height } = PAINTING;
   const slug = label.replace(/\W+/g, '-').toLowerCase();
   const fade = `${slug}-edge`;
@@ -56,7 +60,14 @@ export default function PaintedMap({ label, word, levels, outlines, feather = 1,
         </defs>
 
         <g aria-hidden="true">
-          <image href={painting} width={width} height={height} preserveAspectRatio="none" />
+          <image
+            href={later ? undefined : painting}
+            data-later={later ? painting : undefined}
+            data-later-small={later ? small : undefined}
+            width={width}
+            height={height}
+            preserveAspectRatio="none"
+          />
           <rect className="xl:hidden" x={width - 110} width="111" height={height} fill={`url(#${fade})`} />
         </g>
 

@@ -803,7 +803,8 @@ export default function InfernoMap({ levels, painting, outlines, closeup }: Infe
                 </defs>
                 <image
                   data-closeup
-                  href={closeup}
+                  data-later={closeup}
+                  data-later-wide
                   x={CLOSEUP.x * k}
                   y={CLOSEUP.y * k}
                   width={CLOSEUP.width * k}

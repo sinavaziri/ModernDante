@@ -61,6 +61,8 @@ export default function JourneyMapPage({ start }: { start: 'inferno' | 'purgator
             outlines={getMapOutlines('paradiso')}
             feather={14}
             painting="/images-map/paradiso-dore-2x.webp"
+            small="/images-map/paradiso-dore-1x.webp"
+            later
             ground="hsl(222 40% 14%)"
           />
         </MapBlock>
@@ -119,6 +121,8 @@ export default function JourneyMapPage({ start }: { start: 'inferno' | 'purgator
               levels={purgatorio}
               outlines={getMapOutlines('purgatorio')}
               painting="/images-map/purgatorio-dore-2x.webp"
+              small="/images-map/purgatorio-dore-1x.webp"
+              later
               ground="hsl(222 34% 13%)"
             />
           </MapBlock>
@@ -169,7 +173,7 @@ export default function JourneyMapPage({ start }: { start: 'inferno' | 'purgator
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        <JourneyScroller start={start} descent={descent} climb={climb} underIce="/images-map/inferno-under-ice.webp" />
+        <JourneyScroller start={start} descent={descent} climb={climb} underIce="/images-map/inferno-under-ice-2x.webp" />
       </main>
     </div>
   );
