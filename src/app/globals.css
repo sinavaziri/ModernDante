@@ -203,6 +203,11 @@
   opacity: 0;
 }
 
+/* The map ends at the top of Paradise: nothing follows it, so the pinned view never has to move away */
+body:has([data-journey]) .site-footer {
+  display: none;
+}
+
 /* On canto pages the fixed audio player would cover the end of the footer */
 body:has([data-audio-player]) .site-footer {
   padding-bottom: 7rem;

@@ -1,0 +1,9 @@
+Two images are given. The FIRST image is a small, low-resolution detail of a painted map: a wide, low opening in dark rock, under a wall of stone blocks, that looks into a frozen cavern. The SECOND image is an illustration by Gustave Doré (1868) of that same frozen cavern from Dante's Inferno, a classic of world literature, shown in color.
+
+Redraw the FIRST image at much higher resolution, and make the scene inside the opening follow the SECOND image closely.
+
+Keep from the first image, exactly: the framing and edges, the dark rock at the left, right and bottom in the same places, the wall of stone blocks and the figures above it across the top, and the size and position of the opening.
+
+Inside the opening, paint Doré's scene, fitted to this wide, low shape: a sheet of hard, flat, pale blue ice, not water, with no ripples; the great winged figure at the center, sunk in the ice to the chest, hunched forward with his hands at his mouth, his huge dark ribbed wings spread wide to both sides, exactly as Doré drew him; great icicles and masses of ice hanging at the left and right; broken slabs and blocks of ice in the foreground with small pale figures caught in them; on a crag of ice at the right, two very small standing figures, one in a red robe and one in blue; deep darkness behind. Doré's cold palette: black, deep blue and pale ice blue.
+
+Crisp fine hatching and cross-hatching as in a nineteenth-century steel engraving glazed with translucent oil color, with the engraved linework visible. No text, no letters, no border, no frame, no signature. Do not crop and do not zoom.

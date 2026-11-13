@@ -651,6 +651,8 @@ interface InfernoMapProps {
   levels: InfernoLevel[];
   /** A painting of the same layout to show in place of the drawing, twice as tall as it is wide */
   painting?: string;
+  /** A sharper picture of the lowest circle, laid over the painting when the page closes in on it */
+  closeup?: string;
   /** Each level's outline on the painting, in the painting's pixels (1024 by 2048) */
   outlines?: Record<string, MapOutline>;
 }
@@ -679,7 +681,10 @@ export function infernoMapWidthRatio(levels: InfernoLevel[]) {
   return W / (layout(levels).height / 2);
 }
 
-export default function InfernoMap({ levels, painting, outlines }: InfernoMapProps) {
+/** Where the sharper picture of the lowest circle lies on the painting, in the painting's pixels */
+const CLOSEUP = { x: 212, y: 1748, width: 600, height: 300 };
+
+export default function InfernoMap({ levels, painting, outlines, closeup }: InfernoMapProps) {
   const { surface, bands, floor, height } = layout(levels);
   /** From the painting's pixels to the drawing's units */
   const k = height / 2048;
@@ -779,6 +784,36 @@ export default function InfernoMap({ levels, painting, outlines }: InfernoMapPro
         {painting ? (
           <g aria-hidden="true">
             <image href={painting} width={height / 2} height={height} preserveAspectRatio="none" />
+            {closeup && (
+              <>
+                <defs>
+                  <filter id="inferno-closeup-blur" x="-10%" y="-10%" width="120%" height="120%">
+                    <feGaussianBlur stdDeviation={8 * k} />
+                  </filter>
+                  <mask id="inferno-closeup-edge">
+                    <rect
+                      x={(CLOSEUP.x + 14) * k}
+                      y={(CLOSEUP.y + 14) * k}
+                      width={(CLOSEUP.width - 28) * k}
+                      height={(CLOSEUP.height - 28) * k}
+                      fill="white"
+                      filter="url(#inferno-closeup-blur)"
+                    />
+                  </mask>
+                </defs>
+                <image
+                  data-closeup
+                  href={closeup}
+                  x={CLOSEUP.x * k}
+                  y={CLOSEUP.y * k}
+                  width={CLOSEUP.width * k}
+                  height={CLOSEUP.height * k}
+                  preserveAspectRatio="none"
+                  mask="url(#inferno-closeup-edge)"
+                  opacity="0"
+                />
+              </>
+            )}
             <rect className="xl:hidden" x={height / 2 - 90} width="91" height={height} fill="url(#inferno-edge)" />
           </g>
         ) : (
