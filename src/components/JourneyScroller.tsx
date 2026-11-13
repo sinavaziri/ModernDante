@@ -53,7 +53,7 @@ const CLOSE_UP = 3.2;
 /** Where the middle of his legs is in the picture of the cavern, as a share of its height, and how wide the pair is, as a share of its width */
 const LEGS = { middle: 0.812, width: 0.2344 };
 /** The same in the picture of him above and below the ice, which is square */
-const UNDER_ICE = { x: 0.478, y: 0.553, width: 0.1055 };
+const UNDER_ICE = { x: 0.4987, y: 0.5026, width: 0.1219 };
 /** How much closer the view presses in halfway through the roll, so the turning picture fills it */
 const ROLL_IN = 0.8;
 /** The turn's three moves, as shares of its scroll: closing in, sinking under the ice, rolling over */
