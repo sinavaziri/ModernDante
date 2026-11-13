@@ -169,7 +169,7 @@ export default function JourneyMapPage({ start }: { start: 'inferno' | 'purgator
     <div className="min-h-screen bg-background">
       <Navigation />
       <main>
-        <JourneyScroller start={start} descent={descent} climb={climb} />
+        <JourneyScroller start={start} descent={descent} climb={climb} underIce="/images-map/inferno-under-ice.webp" />
       </main>
     </div>
   );

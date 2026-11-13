@@ -22,6 +22,8 @@ interface JourneyScrollerProps {
   descent: ReactNode;
   /** The way out, Purgatory and Paradise, read from the bottom up */
   climb: ReactNode;
+  /** A picture of Lucifer above the ice and his legs below it, square, whose upper half is the map's own close-up of Treachery */
+  underIce?: string;
 }
 
 interface Measures {
@@ -37,30 +39,35 @@ interface Measures {
     lucifer: { x: number; y: number };
     /** The middle of his legs in the cavern: the point the view rolls over about */
     legs: { x: number; y: number; inClimb: { x: number; y: number } };
-    /** How far the view sinks from Lucifer to his legs */
-    dive: number;
+    /** The picture of him above and below the ice: where it lies once the view has closed in, and its width */
+    under: { left: number; top: number; width: number };
+    /** How far the view moves from Lucifer to his legs in that picture */
+    sink: { x: number; y: number };
+    /** How much larger his legs are in that picture than in the cavern at rest */
+    near: number;
   } | null;
 }
 
 /** How much larger Lucifer's legs are in the cavern than he is on the map of Hell */
 const CLOSE_UP = 3.2;
-/** Where his legs are in the picture of the cavern, as a share of its height: their middle, and how far below it the picture ends */
-const LEGS = { middle: 0.812, toFoot: 0.188 };
-/** Under the ice the cavern is seen from closer, so it fills more of the view; it draws back as the view rolls over */
-const NEAR = 1.45;
-/** How much closer still the view presses in halfway through the roll, so the turning picture fills it */
-const ROLL_IN = 1.3;
+/** Where the middle of his legs is in the picture of the cavern, as a share of its height, and how wide the pair is, as a share of its width */
+const LEGS = { middle: 0.812, width: 0.2344 };
+/** The same in the picture of him above and below the ice, which is square */
+const UNDER_ICE = { x: 0.478, y: 0.553, width: 0.1055 };
+/** How much closer the view presses in halfway through the roll, so the turning picture fills it */
+const ROLL_IN = 0.8;
 /** The turn's three moves, as shares of its scroll: closing in, sinking under the ice, rolling over */
 const MOVES = { zoom: 0.3, dive: 0.62 };
 const ease = (t: number) => t * t * (3 - 2 * t);
 const clamp = (n: number, low: number, high: number) => Math.min(Math.max(n, low), high);
 
-export default function JourneyScroller({ start, descent, climb }: JourneyScrollerProps) {
+export default function JourneyScroller({ start, descent, climb, underIce: underIceSrc }: JourneyScrollerProps) {
   const outer = useRef<HTMLDivElement>(null);
   const stage = useRef<HTMLDivElement>(null);
   const world = useRef<HTMLDivElement>(null);
   const descentLeg = useRef<HTMLDivElement>(null);
   const climbLeg = useRef<HTMLDivElement>(null);
+  const underIce = useRef<HTMLImageElement>(null);
   const measures = useRef<Measures | null>(null);
   const touched = useRef(false);
   const [current, setCurrent] = useState<Stop>(start);
@@ -132,19 +139,27 @@ export default function JourneyScroller({ start, descent, climb }: JourneyScroll
       // The turn at the center of the earth, in three moves. The view closes in on Lucifer. It sinks
       // through the ice, and under it his legs hang down: the cavern, upside down, as it is seen
       // from Hell. Then the view rolls over about his legs, as Virgil does, and down becomes up.
-      const { lucifer, legs, dive } = m.turn;
+      const { lucifer, legs, under, sink: to, near } = m.turn;
       const zoom = ease(clamp(t / MOVES.zoom, 0, 1));
       const sink = ease(clamp((t - MOVES.zoom) / (MOVES.dive - MOVES.zoom), 0, 1));
       const roll = ease(clamp((t - MOVES.dive) / (1 - MOVES.dive), 0, 1));
       const scale = 1 + (CLOSE_UP - 1) * zoom;
       const about = (point: { x: number; y: number }, what: string) =>
         `translate(${point.x}px, ${point.y}px) ${what} translate(${-point.x}px, ${-point.y}px)`;
-      show(
-        hell,
-        1 - ease(clamp((roll - 0.05) / 0.5, 0, 1)),
-        t === 0 || t === 1 ? '' : `${about(legs, `rotate(${180 * roll}deg)`)} translateY(${-dive * sink}px) ${about(lucifer, `scale(${scale})`)}`
-      );
-      show(rest, t <= MOVES.zoom ? 0 : 1, t === 0 || t === 1 ? '' : `translateY(${dive * (1 - sink)}px) ${about(legs.inClimb, `rotate(${180 + 180 * roll}deg) scale(${NEAR - (NEAR - 1) * roll + ROLL_IN * Math.sin(Math.PI * roll)})`)}`);
+      const moved = `translate(${-to.x * sink}px, ${-to.y * sink}px)`;
+      const turned = `rotate(${180 * roll}deg)`;
+      // The cavern's size through the roll: as large as the legs under the ice at first, its own at the end
+      const size = (near + (1 - near) * roll) * (1 + ROLL_IN * Math.sin(Math.PI * roll));
+      const swap = ease(clamp((roll - 0.25) / 0.5, 0, 1));
+      const still = t === 0 || t === 1;
+      show(hell, 1 - ease(clamp(roll / 0.3, 0, 1)), still ? '' : `${about(legs, turned)} ${moved} ${about(lucifer, `scale(${scale})`)}`);
+      show(rest, roll === 0 ? 0 : swap, still ? '' : about(legs.inClimb, `rotate(${180 + 180 * roll}deg) scale(${size})`));
+      if (underIce.current) {
+        // One picture carries the view from Lucifer down through the ice to his legs, then turns with it
+        const shown = t === 1 ? 0 : ease(clamp((zoom - 0.7) / 0.3, 0, 1)) * (1 - swap);
+        underIce.current.style.width = `${under.width}px`;
+        show(underIce.current, shown, `${about(legs, `${turned} scale(${size / near})`)} ${moved} translate(${under.left}px, ${under.top}px)`);
+      }
       // A sharper picture of Lucifer comes in over the map as the view closes in on him
       if (closeup) closeup.style.opacity = String(ease(clamp(zoom / 0.6, 0, 1)));
     }
@@ -172,22 +187,33 @@ export default function JourneyScroller({ start, descent, climb }: JourneyScroll
       return { left: box.left - frame.left, top: box.top - frame.top, width: box.width, height: box.height };
     };
     const luciferEl = hellLeg.querySelector('a[href="#circle-9"] polygon');
-    const mapEl = hellLeg.querySelector('nav svg');
     const cavernEl = climbing.querySelector('#way-out img');
     let turn: Measures['turn'] = null;
-    if (wide && luciferEl && mapEl && cavernEl) {
+    if (wide && underIce.current && luciferEl && cavernEl) {
       const l = within(hellLeg, luciferEl);
-      const map = within(hellLeg, mapEl);
       const cavern = within(climbing, cavernEl);
       const lucifer = { x: l.left + l.width / 2, y: l.top + l.height / 2 };
       const inClimb = { x: cavern.left + cavern.width / 2, y: cavern.top + cavern.height * LEGS.middle };
       // The climb lies over Hell with its foot level with Hell's
       const legs = { x: inClimb.x, y: inClimb.y + hell - rest, inClimb };
-      // Seen from Hell the cavern hangs upside down from the foot of the map: its floor of ice at the
-      // top. The view sinks until the legs' middle is where it will be once the view has rolled over.
-      const footOfMap = lucifer.y + CLOSE_UP * (map.top + map.height - lucifer.y);
-      const iceOverhead = legs.y - cavern.height * LEGS.toFoot * NEAR;
-      turn = { lucifer, legs, dive: footOfMap - iceOverhead };
+      // Once the view has closed in, the picture of him above and below the ice lies exactly over
+      // Treachery on the map: its upper half is that same scene
+      const sceneEl = hellLeg.querySelector('[data-closeup]');
+      const scene = sceneEl ? within(hellLeg, sceneEl) : null;
+      if (scene) {
+        const under = {
+          left: lucifer.x + CLOSE_UP * (scene.left - lucifer.x),
+          top: lucifer.y + CLOSE_UP * (scene.top - lucifer.y),
+          width: CLOSE_UP * scene.width,
+        };
+        turn = {
+          lucifer,
+          legs,
+          under,
+          sink: { x: under.left + under.width * UNDER_ICE.x - legs.x, y: under.top + under.width * UNDER_ICE.y - legs.y },
+          near: (under.width * UNDER_ICE.width) / (cavern.width * LEGS.width),
+        };
+      }
     }
     measures.current = {
       view,
@@ -292,6 +318,15 @@ export default function JourneyScroller({ start, descent, climb }: JourneyScroll
           <div ref={climbLeg} className="absolute bottom-0 left-0 w-full origin-top-left">
             {climb}
           </div>
+          {underIceSrc && (
+            <img
+              ref={underIce}
+              src={underIceSrc}
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none invisible absolute top-0 left-0 max-w-none origin-top-left [mask-composite:intersect] [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent),linear-gradient(to_bottom,black_86%,transparent)]"
+            />
+          )}
         </div>
       </div>
     </div>
