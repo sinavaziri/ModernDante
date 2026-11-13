@@ -13,7 +13,8 @@ import { LEVEL_WORD, getMapOutlines, getMapSpans, getRealmLevels } from '@/lib/r
 // under Lucifer, then up the way out, the mountain of Purgatory and the heavens of Paradise. The page
 // opens at Hell, at the cavern, or at the rising from the summit, by the address it was reached at.
 
-const LEG = 'mx-auto max-w-3xl px-4 pb-10 md:px-8 xl:max-w-7xl';
+// The legs end flush with their paintings on a wide screen, so the two meet edge to edge at the turn
+const LEG = 'mx-auto max-w-3xl px-4 pb-10 md:px-8 xl:max-w-7xl xl:pb-0';
 
 const linkClass =
   'text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring';
@@ -135,7 +136,7 @@ export default function JourneyMapPage({ start }: { start: 'inferno' | 'purgator
             />
           </div>
 
-          <div className={`mt-10 xl:top-1/2 xl:mt-0 xl:-translate-y-1/3 ${TEXT_COLUMN}`}>
+          <div data-turn-text className={`mt-10 xl:top-1/2 xl:mt-0 xl:-translate-y-1/3 ${TEXT_COLUMN}`}>
             <h2 className="mb-4 font-serif text-2xl text-foreground md:text-3xl">The way out of Hell</h2>
             <div className="space-y-4 font-serif text-base leading-relaxed text-muted-foreground">
               <p>
