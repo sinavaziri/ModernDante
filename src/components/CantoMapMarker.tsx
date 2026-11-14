@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import { useEffect, useId, useRef, useState } from 'react';
 import { toRoman, type Cantica } from '@/lib/canticas';
-import { LEVEL_WORD, PAINTING, getMapOutlines, outlineBox, outlinePoints, type MapLevel } from '@/lib/realm-maps';
+import { getInfernoLevels } from '@/lib/inferno-map';
+import { LEVEL_WORD, PAINTING, getMapOutlines, getRealmLevels, outlineBox, outlinePoints, type MapLevel } from '@/lib/realm-maps';
 
 // Where a canto takes place, shown on a small copy of its realm's map: under the canto's title, and
 // on a wide screen again in the margin once the title has scrolled away.
@@ -14,37 +15,51 @@ interface CantoMapMarkerProps {
   levels: MapLevel[];
 }
 
-/** The height of the close view of the map, in the painting's pixels: a window as wide as the painting */
-const WINDOW = 600;
+/** How many levels already passed the close view shows before the canto's own */
+const BEHIND = 2;
+const GROUND = 'hsl(24 14% 7%)';
 
-/** The realm's painting with these levels lit and the rest in shade: the whole of it, or a close view of the levels and their neighbors */
+/**
+ * The realm's painting with the canto's levels lit and the levels already passed in gray. Nothing
+ * further along the journey is shown: the whole view leaves it dark, and the close view ends at
+ * the canto's own level, with up to two of the levels before it.
+ */
 function MapThumb({ cantica, levels, close, className }: CantoMapMarkerProps & { close?: boolean; className?: string }) {
-  const shade = useId();
+  const id = useId();
   const outlines = getMapOutlines(cantica);
+  const journey = cantica === 'inferno' ? getInfernoLevels() : getRealmLevels(cantica);
   const lit = levels.map(level => outlines[level.id]).filter(Boolean);
   const { width, height } = PAINTING;
-  let top = 0;
-  let tall = height;
-  if (close && lit.length) {
-    const boxes = lit.map(outlineBox);
-    const first = Math.min(...boxes.map(box => box.top));
-    const last = Math.max(...boxes.map(box => box.bottom));
-    // Room above and below for the levels on either side
-    tall = Math.min(height, Math.max(WINDOW, (last - first) / 0.6));
-    top = Math.min(Math.max((first + last) / 2 - tall / 2, 0), height - tall);
-  }
+  const at = levels.map(level => journey.findIndex(other => other.id === level.id)).filter(n => n >= 0);
+  const reached = at.length ? Math.max(...at) : journey.length - 1;
+  const span = (from: number) => {
+    const boxes = journey.slice(from, reached + 1).map(level => outlines[level.id]).filter(Boolean).map(outlineBox);
+    return { top: Math.min(...boxes.map(box => box.top)), bottom: Math.max(...boxes.map(box => box.bottom)) };
+  };
+  // Everything from the start of the journey to the canto's level, and the part of it the close view shows
+  const passed = span(0);
+  const shown = close ? span(Math.max(0, (at.length ? Math.min(...at) : 0) - BEHIND)) : { top: 0, bottom: height };
+  const tall = shown.bottom - shown.top;
+  const picture = { href: `/images-map/${cantica}-thumb.webp`, width, height, preserveAspectRatio: 'none' };
   return (
-    <svg viewBox={`0 ${top} ${width} ${tall}`} aria-hidden="true" className={className} style={close ? { aspectRatio: `${width} / ${tall}` } : undefined}>
+    <svg
+      viewBox={`0 ${shown.top} ${width} ${tall}`}
+      aria-hidden="true"
+      className={className}
+      style={{ backgroundColor: GROUND, ...(close ? { aspectRatio: `${width} / ${tall}` } : {}) }}
+    >
       <defs>
-        <mask id={shade}>
-          <rect width={width} height={height} fill="white" />
+        <clipPath id={`${id}-passed`}>
+          <rect y={passed.top} width={width} height={passed.bottom - passed.top} />
+        </clipPath>
+        <clipPath id={`${id}-lit`}>
           {lit.map((outline, i) => (
-            <polygon key={i} points={outlinePoints(outline)} fill="black" />
+            <polygon key={i} points={outlinePoints(outline)} />
           ))}
-        </mask>
+        </clipPath>
       </defs>
-      <image href={`/images-map/${cantica}-thumb.webp`} width={width} height={height} preserveAspectRatio="none" />
-      <rect width={width} height={height} fill="hsl(24 14% 7%)" opacity={close ? 0.45 : 0.6} mask={`url(#${shade})`} />
+      <image {...picture} clipPath={`url(#${id}-passed)`} style={{ filter: 'grayscale(1) brightness(0.55)' }} />
+      <image {...picture} clipPath={`url(#${id}-lit)`} />
       {lit.map((outline, i) => (
         <polygon key={i} points={outlinePoints(outline)} fill="none" stroke="hsl(40 70% 88%)" strokeWidth="2" strokeLinejoin="round" vectorEffect="non-scaling-stroke" />
       ))}
@@ -79,7 +94,7 @@ export default function CantoMapMarker({ cantica, levels }: CantoMapMarkerProps)
 
   return (
     <>
-      <div ref={block} className="mx-auto mt-8 w-full max-w-md">
+      <div ref={block} className="mx-auto mt-8 w-full max-w-3xl">
         <Link href={`${mapPath}#${levels[0].id}`} aria-label="Open the map at this canto" className={`block overflow-hidden rounded-lg shadow-md ${ring}`}>
           <MapThumb cantica={cantica} levels={levels} close className="block w-full" />
         </Link>
