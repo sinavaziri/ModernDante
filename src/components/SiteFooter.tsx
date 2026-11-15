@@ -16,7 +16,7 @@ export default function SiteFooter() {
           <div>
             <dt className="font-semibold text-foreground">Illustrations</dt>
             <dd className="mt-1">
-              Gustave Doré&apos;s engravings, 1857–1868, colorized. The maps are new, made for this site in his style.
+              Gustave Doré&apos;s engravings, 1857–1868, colorized. The maps were created anew, inspired by Doré.
             </dd>
           </div>
           <div>
