@@ -65,7 +65,7 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
         <button
           type="button"
           onClick={toggle}
-          aria-label={playing ? 'Pause the summary' : 'Play a one-minute summary of this canto'}
+          aria-label={playing ? 'Pause the summary' : 'Play the canto summary'}
           className="inline-flex items-center gap-3 rounded-full border border-border py-2 pl-2 pr-5 font-sans text-sm text-foreground transition-colors hover:border-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-full bg-brand text-primary-foreground">
@@ -73,7 +73,7 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
               {playing ? <path d="M3.5 2h3v12h-3zM9.5 2h3v12h-3z" /> : <path d="M4.5 2.2v11.6L13.5 8z" />}
             </svg>
           </span>
-          The canto in one minute
+          Canto summary
         </button>
         {open && (
           <button
