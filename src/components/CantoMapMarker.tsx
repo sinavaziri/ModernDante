@@ -13,6 +13,8 @@ interface CantoMapMarkerProps {
   cantica: Cantica;
   /** The levels the canto passes through, in order */
   levels: MapLevel[];
+  /** Names the level without picturing it: for the poem's first canto, where there is no journey yet to show */
+  plain?: boolean;
 }
 
 /** How many levels already passed the close view shows before the canto's own */
@@ -75,7 +77,7 @@ function cantosOf(level: MapLevel) {
   return first === last ? `Canto ${toRoman(first)}` : `Cantos ${toRoman(first)}–${toRoman(last)}`;
 }
 
-export default function CantoMapMarker({ cantica, levels }: CantoMapMarkerProps) {
+export default function CantoMapMarker({ cantica, levels, plain }: CantoMapMarkerProps) {
   const block = useRef<HTMLDivElement>(null);
   const [passed, setPassed] = useState(false);
   const mapPath = cantica === 'inferno' ? '/map' : `/map/${cantica}`;
@@ -95,9 +97,11 @@ export default function CantoMapMarker({ cantica, levels }: CantoMapMarkerProps)
   return (
     <>
       <div ref={block} className="mx-auto mt-8 w-full max-w-3xl">
-        <Link href={`${mapPath}#${levels[0].id}`} aria-label="Open the map at this canto" className={`block overflow-hidden rounded-lg shadow-md ${ring}`}>
-          <MapThumb cantica={cantica} levels={levels} close className="block w-full" />
-        </Link>
+        {!plain && (
+          <Link href={`${mapPath}#${levels[0].id}`} aria-label="Open the map at this canto" className={`block overflow-hidden rounded-lg shadow-md ${ring}`}>
+            <MapThumb cantica={cantica} levels={levels} close className="block w-full" />
+          </Link>
+        )}
         <p className="mt-3 font-sans text-sm text-muted-foreground">
           On the map:{' '}
           {levels.map((level, i) => (
@@ -112,19 +116,21 @@ export default function CantoMapMarker({ cantica, levels }: CantoMapMarkerProps)
         </p>
       </div>
 
-      <Link
-        href={`${mapPath}#${levels[0].id}`}
-        aria-label={`On the map: ${levels.map(level => nameOf(cantica, level)).join(', ')}`}
-        tabIndex={passed ? 0 : -1}
-        className={`fixed top-1/2 left-[calc(50%-36rem)] z-30 hidden w-32 -translate-y-1/2 transition-opacity duration-300 xl:block ${ring} ${
-          passed ? 'opacity-100' : 'pointer-events-none opacity-0'
-        }`}
-      >
-        <MapThumb cantica={cantica} levels={levels} className="block h-64 w-32 rounded-md shadow-md" />
-        <span className="mt-2 block text-center font-sans text-sm leading-snug text-muted-foreground">
-          {levels.map(level => (level.circle ? `${LEVEL_WORD[cantica]} ${level.circle}` : (level.shortName ?? level.name))).join(', ')}
-        </span>
-      </Link>
+      {!plain && (
+        <Link
+          href={`${mapPath}#${levels[0].id}`}
+          aria-label={`On the map: ${levels.map(level => nameOf(cantica, level)).join(', ')}`}
+          tabIndex={passed ? 0 : -1}
+          className={`fixed top-1/2 left-[calc(50%-36rem)] z-30 hidden w-32 -translate-y-1/2 transition-opacity duration-300 xl:block ${ring} ${
+            passed ? 'opacity-100' : 'pointer-events-none opacity-0'
+          }`}
+        >
+          <MapThumb cantica={cantica} levels={levels} className="block h-64 w-32 rounded-md shadow-md" />
+          <span className="mt-2 block text-center font-sans text-sm leading-snug text-muted-foreground">
+            {levels.map(level => (level.circle ? `${LEVEL_WORD[cantica]} ${level.circle}` : (level.shortName ?? level.name))).join(', ')}
+          </span>
+        </Link>
+      )}
     </>
   );
 }

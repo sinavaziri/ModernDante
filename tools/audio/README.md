@@ -59,3 +59,13 @@ Nothing reaches the site until step 5, and step 5 refuses audio that fails the c
 - **Repo size:** the MP3s are in git, so republishing a canto adds about 6 MB to the history permanently. Only publish what changed.
 - **What the checks can't do:** neither can tell whether the right character is speaking or how a line was performed, so listening is a required step. `check.mjs` doesn't compare speech with text, which is what `speech-check.mjs` is for.
 - **Speech-to-text blind spots:** it tidies repeats and stutters away as it writes, so a repeated passage never shows in its words, only in its timing. It also drops words at the edges of its 30-second windows, so `speech-check.mjs` listens to each word difference again from a clip before reporting it.
+
+## One-minute summaries
+
+`npm run audio:summaries` (`tools/audio/summaries.mjs`) records the short spoken summaries in `data/canto-summaries.json`, one request each, in the `summary` voice from `data/voices.json`. It takes `--only`, `--all`, `--dry-run` and `--max-credits` like the generator.
+
+- Each summary is built twice in `scripts/narrations_v4/summaries/<cantica>/`: `<n>.voice.mp3` is the voice alone, and `<n>.mp3` has quiet sound effects under it. The site serves the second.
+- `data/summary-effects.json` names each canto's background and any timed effects (placed by a phrase of the summary), the prompts the sounds are generated from, and the mix levels. A canto with no entry gets the voice alone.
+- Sounds are generated once with `eleven_text_to_sound_v3` into `scripts/narrations_v4/sfx/` and reused. The account was billed about 12 credits a second.
+- `--remix` mixes again over the existing recordings without recording anything. `--publish` copies the built MP3s into `public/audio-summaries/`, where the canto page finds them.
+

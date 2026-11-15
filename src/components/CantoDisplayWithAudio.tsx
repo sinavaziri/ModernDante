@@ -11,9 +11,11 @@ import { lightboxFocus } from '@/lib/lightbox-focus';
 import type { AudioTimingData } from '@/types/audio';
 import AudioPlayerWordLevel, { type NarrationControls } from './AudioPlayerWordLevel';
 import NoteCard, { type OpenNote } from './NoteCard';
+import CantoSummaryPlayer from './CantoSummaryPlayer';
 import NotesToggle from './NotesToggle';
 import { TextWithWordHighlighting } from './TextWithWordHighlighting';
 import type { CantoNotes, NotePlate } from '@/lib/annotations';
+import type { CantoSummary } from '@/lib/summaries';
 import { alignNarration, findTokenAt, timeForToken, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
 import { placeNotes } from '@/lib/note-anchors';
 import { getNotesOn, setNotesOn, subscribeToNotes } from '@/lib/notes-preference';
@@ -25,6 +27,8 @@ interface CantoDisplayProps {
   cantica: Cantica;
   /** The canto's notes, or null for a canto without them */
   notes: CantoNotes | null;
+  /** The canto's one-minute spoken summary, or null until it has one */
+  summary: CantoSummary | null;
 }
 
 // A note's card opens when the pointer rests on its phrase this long, and closes this long after it
@@ -186,7 +190,7 @@ function InlineImage({
   );
 }
 
-export default function CantoDisplay({ canto, canticaName, cantica, notes }: CantoDisplayProps) {
+export default function CantoDisplay({ canto, canticaName, cantica, notes, summary }: CantoDisplayProps) {
   const [selectedImage, setSelectedImage] = useState<{ image: ImageData; where?: string } | null>(null);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
   const [follow, setFollow] = useState<FollowState | null>(null);
@@ -488,7 +492,9 @@ export default function CantoDisplay({ canto, canticaName, cantica, notes }: Can
             </p>
           )}
 
-          <CantoMapMarker cantica={cantica} levels={mapLevels} />
+          {summary && <CantoSummaryPlayer summary={summary} narration={audioElement} />}
+
+          <CantoMapMarker cantica={cantica} levels={mapLevels} plain={cantica === 'inferno' && canto.number === 1} />
 
           {notes && notes.notes.length > 0 && (
             <div className="mt-8 flex justify-center">

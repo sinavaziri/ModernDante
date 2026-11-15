@@ -11,6 +11,7 @@
     "audio:listen": "node tools/audio/listen.mjs",
     "audio:publish": "node tools/audio/publish.mjs",
     "audio:backup": "node tools/audio/backup.mjs",
+    "audio:summaries": "node tools/audio/summaries.mjs",
     "audio:speech": "node tools/audio/speech-check.mjs",
     "notes:check": "node --experimental-strip-types --no-warnings tools/notes/check.mjs",
     "images:plates": "node tools/images/make-plate-images.mjs",

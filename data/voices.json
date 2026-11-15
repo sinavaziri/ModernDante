@@ -3,6 +3,7 @@
   "creditsPerCharacter": 0.44,
   "tags": {
     "narrator": "[measured, reflective storytelling]",
+    "summary": "[measured, reflective storytelling]",
     "dante": "[conversational, speaking directly to someone]"
   },
   "fallback": {
@@ -20,6 +21,7 @@
   ],
   "voices": {
     "narrator": { "voiceId": "ceRvMsBhZbUSQgH59yxg", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0, "use_speaker_boost": true, "speed": 1 } },
+    "summary": { "voiceId": "3hRIL1WxT72dO2f7hGIz", "name": "Summary narrator A (designed)", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0, "use_speaker_boost": true, "speed": 1 } },
     "dante": { "voiceId": "ceRvMsBhZbUSQgH59yxg", "voice_settings": { "stability": 0.2, "similarity_boost": 0.72, "style": 0.8, "use_speaker_boost": true, "speed": 1.05 } },
     "virgil": { "voiceId": "gboKmrCOkZe6tMznPb9w", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0, "use_speaker_boost": true, "speed": 1 } },
     "beatrice": { "voiceId": "ctchwNfHTCRKIQdDzY3J", "voice_settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 0.95 } },
