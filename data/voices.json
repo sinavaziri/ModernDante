@@ -28,7 +28,7 @@
     "lucia": { "voiceId": "pFZP5JQG7iQjIQuC4Bku", "voice_settings": { "stability": 0.5, "similarity_boost": 0.75, "style": 0.4, "use_speaker_boost": true, "speed": 0.95 } },
     "character": { "voiceId": "lPoFhC6uDtaciSWzm2sI", "voice_settings": { "stability": 0.55, "similarity_boost": 0.7, "style": 0, "use_speaker_boost": true, "speed": 0.98 } },
     "gate_inscription": { "voiceId": "Zp3wsYfVfi3BCNHzkseK", "voice_settings": { "stability": 0.55, "similarity_boost": 0.7, "style": 0, "use_speaker_boost": true, "speed": 0.98 } },
-    "charon": { "voiceId": "YQMlHwsBtm3nMiSqx4cp", "voice_settings": { "stability": 0.35, "similarity_boost": 0.65, "style": 0.4, "use_speaker_boost": true, "speed": 0.92 } },
+    "charon": { "voiceId": "YQMlHwsBtm3nMiSqx4cp", "voice_settings": { "stability": 0.55, "similarity_boost": 0.65, "style": 0.4, "use_speaker_boost": true, "speed": 0.92 } },
     "minos": { "voiceId": "SO1p7GQGvKBDbOZGBg2P", "voice_settings": { "stability": 0.4, "similarity_boost": 0.7, "style": 0.3, "use_speaker_boost": true, "speed": 0.95 } },
     "homer": { "voiceId": "Rwyaq4BOCfdHv7tL6TIj", "voice_settings": { "stability": 0.55, "similarity_boost": 0.8, "style": 0.25, "use_speaker_boost": true, "speed": 0.92 } },
     "francesca": { "voiceId": "twUwFnpNJ2G0x7FlsmI5", "voice_settings": { "stability": 0.45, "similarity_boost": 0.75, "style": 0.5, "use_speaker_boost": true, "speed": 0.95 } },

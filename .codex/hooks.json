@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "'/Users/Sina/ModernDante/.codex/hooks/eslint-on-edit.sh'"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -f /Users/Sina/ModernDante/.env.local && source /Users/Sina/ModernDante/.env.local; echo 'Checking API keys...' && (test -n \"$ELEVENLABS_API_KEY\" && echo '  ELEVENLABS_API_KEY: set' || echo '  WARNING: ELEVENLABS_API_KEY not set') && (test -n \"$ANTHROPIC_API_KEY\" && echo '  ANTHROPIC_API_KEY: set' || echo '  WARNING: ANTHROPIC_API_KEY not set')"
+          }
+        ]
+      }
+    ]
+  }
+}

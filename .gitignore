@@ -66,3 +66,6 @@ next-env.d.ts
 !public/**/*.mp3
 *.html
 !public/**/*.html
+
+# session hand-off notes, kept on this machine only
+/SESSION_STATUS.md
