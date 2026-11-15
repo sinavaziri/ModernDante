@@ -14,11 +14,13 @@ interface CantoSummaryPlayerProps {
   label?: string;
   /** Whether playing opens the words under the button. Off where the page itself is what is read */
   words?: boolean;
+  /** Hands the recording's audio element to the page, for a page that highlights its own words */
+  onAudio?: (audio: HTMLAudioElement | null) => void;
 }
 
 const clock = (seconds: number) => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 
-export default function CantoSummaryPlayer({ summary, narration = null, label = 'Canto summary', words = true }: CantoSummaryPlayerProps) {
+export default function CantoSummaryPlayer({ summary, narration = null, label = 'Canto summary', words = true, onAudio }: CantoSummaryPlayerProps) {
   const audio = useRef<HTMLAudioElement>(null);
   const panel = useId();
   const [playing, setPlaying] = useState(false);
@@ -33,6 +35,10 @@ export default function CantoSummaryPlayer({ summary, narration = null, label = 
     narration.addEventListener('play', stop);
     return () => narration.removeEventListener('play', stop);
   }, [narration]);
+
+  useEffect(() => {
+    onAudio?.(audio.current);
+  }, [onAudio]);
 
   const toggle = () => {
     const el = audio.current;

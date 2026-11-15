@@ -151,6 +151,26 @@ function build(p) {
   return probeDuration(`${p.base}.mp3`);
 }
 
+/**
+ * When each word of the Start here page is spoken, for the page's highlighting and click-to-listen:
+ * data/start-here-timings.json holds the recorded text and, per paragraph, each word's start in seconds.
+ * The recording is the voice alone with nothing added in front, so the alignment's times hold for the live file.
+ */
+function writeIntroTimings(p) {
+  const meta = readJson(`${p.base}.json`);
+  const starts = meta.alignment.character_start_times_seconds;
+  const lead = meta.sent.length - meta.text.length;
+  let at = 0;
+  const paragraphs = meta.text.split('\n\n').map(paragraph => {
+    const from = meta.text.indexOf(paragraph, at);
+    at = from + paragraph.length;
+    return [...paragraph.matchAll(/\S+/g)].map(word => Math.round(starts[lead + from + word.index] * 100) / 100);
+  });
+  const file = path.join(ROOT, 'data', 'start-here-timings.json');
+  fs.writeFileSync(file, `${JSON.stringify({ text: meta.text, starts: paragraphs })}\n`);
+  log(`${p.label}: word timings written to ${path.relative(ROOT, file)}`);
+}
+
 const plans = args.includes('--intro') ? [introPlan()] : selectCantos(args).map(([cantica, n]) => plan(cantica, n)).filter(Boolean);
 if (!plans.length) throw new Error('None of those cantos has a summary in data/canto-summaries.json');
 
@@ -161,6 +181,7 @@ if (publish) {
     fs.mkdirSync(path.dirname(p.live), { recursive: true });
     fs.copyFileSync(`${p.base}.mp3`, p.live);
     log(`${p.label}: copied to ${path.relative(ROOT, p.live)}`);
+    if (!p.cantica) writeIntroTimings(p);
   }
   process.exit(0);
 }

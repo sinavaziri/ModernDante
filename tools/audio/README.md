@@ -68,7 +68,7 @@ Nothing reaches the site until step 5, and step 5 refuses audio that fails the c
 - Sound effects are off (`"enabled": false` in `data/summary-effects.json`), so the two are the same. The user tried quiet backgrounds and timed effects under the summaries and decided against both.
 - `data/summary-effects.json` names each canto's background and any timed effects (placed by a phrase of the summary), the prompts the sounds are generated from, and the mix levels. A canto with no entry gets the voice alone.
 - Sounds are generated once with `eleven_text_to_sound_v3` into `scripts/narrations_v4/sfx/` and reused. The account was billed about 12 credits a second.
-- `--intro` records the narration of the Start here page (`/start`): every paragraph of `data/start-here.json`, in the same voice. `--intro --publish` copies it to `public/audio-summaries/start-here.mp3`. Record it again whenever that file's words change.
+- `--intro` records the narration of the Start here page (`/start`): every paragraph of `data/start-here.json`, in the same voice. `--intro --publish` copies it to `public/audio-summaries/start-here.mp3`. Record it again whenever that file's words change. With `--publish` it also writes `data/start-here-timings.json`, the word times the page uses to highlight each word as it is spoken; the page ignores them if its text has changed since the recording.
 - `--remix` mixes again over the existing recordings without recording anything. `--publish` copies the built MP3s into `public/audio-summaries/`, where the canto page finds them.
 
 
