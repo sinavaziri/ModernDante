@@ -3,6 +3,7 @@ import { getAllCanticas, getCanticaInfo, type Cantica } from '@/lib/canticas';
 import { getCanto, getCantoList } from '@/lib/cantos';
 import { getCantoNotes } from '@/lib/annotations';
 import { getCantoSummary } from '@/lib/summaries';
+import { getNarrationEffects } from '@/lib/narration-effects';
 import Navigation from '@/components/Navigation';
 import CantoSelector from '@/components/CantoSelector';
 import CantoDisplay from '@/components/CantoDisplayWithAudio';
@@ -53,7 +54,7 @@ export default async function CantoPage({ params }: PageProps) {
       <Navigation cantica={cantica} />
       <CantoSelector currentCantica={cantica} currentCanto={cantoNumber} cantos={getCantoList(cantica)} />
       {/* Keyed so moving between cantos starts from a fresh page, with nothing left playing */}
-      <CantoDisplay key={`${cantica}/${cantoNumber}`} canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} notes={getCantoNotes(cantica, cantoNumber)} summary={getCantoSummary(cantica, cantoNumber)} />
+      <CantoDisplay key={`${cantica}/${cantoNumber}`} canto={canto} canticaName={canticaInfo.displayName} cantica={cantica} notes={getCantoNotes(cantica, cantoNumber)} summary={getCantoSummary(cantica, cantoNumber)} effects={getNarrationEffects(cantica, cantoNumber)} />
     </>
   );
 }

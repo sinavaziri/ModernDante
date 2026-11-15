@@ -19,6 +19,7 @@ import type { CantoSummary } from '@/lib/summaries';
 import { alignNarration, findTokenAt, timeForToken, tokenizeStanzas, type TokenizedLine } from '@/lib/narration-alignment';
 import { placeNotes } from '@/lib/note-anchors';
 import { getNotesOn, setNotesOn, subscribeToNotes } from '@/lib/notes-preference';
+import type { NarrationEffects } from '@/lib/useNarrationEffects';
 import { useNarrationHighlight, type FollowState } from '@/lib/useNarrationHighlight';
 
 interface CantoDisplayProps {
@@ -29,6 +30,8 @@ interface CantoDisplayProps {
   notes: CantoNotes | null;
   /** The canto's one-minute spoken summary, or null until it has one */
   summary: CantoSummary | null;
+  /** The quiet sounds played under the full reading, or null for a canto read with the voice alone */
+  effects: NarrationEffects | null;
 }
 
 // A note's card opens when the pointer rests on its phrase this long, and closes this long after it
@@ -190,7 +193,7 @@ function InlineImage({
   );
 }
 
-export default function CantoDisplay({ canto, canticaName, cantica, notes, summary }: CantoDisplayProps) {
+export default function CantoDisplay({ canto, canticaName, cantica, notes, summary, effects }: CantoDisplayProps) {
   const [selectedImage, setSelectedImage] = useState<{ image: ImageData; where?: string } | null>(null);
   const [timingData, setTimingData] = useState<AudioTimingData | null>(null);
   const [follow, setFollow] = useState<FollowState | null>(null);
@@ -560,6 +563,7 @@ export default function CantoDisplay({ canto, canticaName, cantica, notes, summa
         controlsRef={controlsRef}
         follow={follow}
         lineAt={lineAt}
+        effects={effects}
       />
     </>
   );

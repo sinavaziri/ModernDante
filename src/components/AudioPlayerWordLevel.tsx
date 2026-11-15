@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useRef, useCallback, useMemo, useEffect, useImperativeHandle, type Ref } from 'react';
+import { useState, useRef, useCallback, useMemo, useEffect, useImperativeHandle, useSyncExternalStore, type Ref } from 'react';
 import { useRouter } from 'next/navigation';
 import { getCanticaInfo, getNextCanto, toRoman, type Cantica } from '@/lib/canticas';
 import { AUDIO } from '@/lib/constants';
+import { getEffectsOn, setEffectsOn, subscribeToEffects } from '@/lib/effects-preference';
 import {
   clearAutoplay,
   getSavedPosition,
@@ -16,6 +17,7 @@ import {
   saveShowRemaining,
 } from '@/lib/listening-progress';
 import { speakerLabel } from '@/lib/speaker-label';
+import { useNarrationEffects, type NarrationEffects } from '@/lib/useNarrationEffects';
 import type { FollowState } from '@/lib/useNarrationHighlight';
 import type { AudioTimingData } from '@/types/audio';
 
@@ -38,6 +40,8 @@ interface AudioPlayerProps {
   follow?: FollowState | null;
   /** The displayed line spoken at a time, shown when hovering over or dragging the progress bar */
   lineAt?: (time: number) => string | null;
+  /** The quiet sounds played under the reading, or null for a canto read with the voice alone */
+  effects?: NarrationEffects | null;
 }
 
 // Save the listener's place at most this often while playing, in seconds
@@ -79,6 +83,7 @@ function NarrationPlayer({
   controlsRef,
   follow,
   lineAt,
+  effects,
 }: AudioPlayerProps & { timingData: AudioTimingData }) {
   const router = useRouter();
   const canticaName = getCanticaInfo(cantica)?.displayName ?? cantica;
@@ -116,10 +121,16 @@ function NarrationPlayer({
   const barRef = useRef<HTMLDivElement>(null);
   const draggingRef = useRef(false);
 
+  const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
   const setAudioRef = useCallback((audio: HTMLAudioElement | null) => {
     audioRef.current = audio;
+    setAudioElement(audio);
     onAudioElement?.(audio);
   }, [onAudioElement]);
+
+  // Quiet sounds under the reading, which the listener can turn off
+  const effectsOn = useSyncExternalStore(subscribeToEffects, getEffectsOn, () => true);
+  useNarrationEffects(audioElement, effects ?? null, effectsOn);
 
   // The default rate survives the browser reloading the file, which resets the rate itself
   useEffect(() => {
@@ -646,6 +657,23 @@ function NarrationPlayer({
               >
                 {playbackRate}x
               </button>
+
+              {effects && (
+                <button
+                  onClick={() => setEffectsOn(!effectsOn)}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full hover:bg-secondary transition-colors ${effectsOn ? 'text-brand' : 'text-muted-foreground hover:text-foreground'}`}
+                  role="switch"
+                  aria-checked={effectsOn}
+                  aria-label="Sound effects under the reading"
+                  title={effectsOn ? 'Sound effects are on. Turn off' : 'Sound effects are off. Turn on'}
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" aria-hidden="true">
+                    <path d="M3 9c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                    <path d="M3 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0" />
+                    {!effectsOn && <path d="M4 20 20 4" />}
+                  </svg>
+                </button>
+              )}
             </div>
 
             <div className="col-start-2 row-start-1 sm:col-start-3 justify-self-end">

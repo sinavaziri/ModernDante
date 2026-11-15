@@ -1,0 +1,1035 @@
+{
+ "note": "Quiet sound effects the page plays under the full canto readings (never under the summaries). Each canto's plan is a list in the order heard: {\"bed\": name or null} starts a background (null is silence), {\"cue\": name} plays a one-off sound. \"at\" is a few words exactly as spoken in the recording; the sound starts when they are spoken. Checked and published with tools/audio/effects.mjs.",
+ "levels": {
+  "bedLufs": -41,
+  "cueLufs": -33,
+  "fade": 2.5
+ },
+ "sounds": {
+  "forest": {
+   "loop": true,
+   "lufs": -41.8
+  },
+  "wolf": {
+   "loop": false,
+   "lufs": -28.5
+  },
+  "wails": {
+   "loop": true,
+   "lufs": -34.1
+  },
+  "rain": {
+   "loop": true,
+   "lufs": -32.4
+  },
+  "cerberus": {
+   "loop": false,
+   "lufs": -23.7
+  },
+  "fire": {
+   "loop": true,
+   "lufs": -45.3
+  },
+  "shore": {
+   "loop": true,
+   "lufs": -46
+  },
+  "garden": {
+   "loop": true,
+   "lufs": -43.7
+  },
+  "dusk": {
+   "loop": true,
+   "lufs": -45.5
+  },
+  "hush": {
+   "loop": true,
+   "lufs": -49.5
+  },
+  "storm": {
+   "loop": true,
+   "lufs": -13.5
+  },
+  "boulders": {
+   "loop": true,
+   "lufs": -16.9
+  },
+  "marsh": {
+   "loop": true,
+   "lufs": -30.3
+  },
+  "boiling": {
+   "loop": true,
+   "lufs": -38.9
+  },
+  "deadwood": {
+   "loop": true,
+   "lufs": -40.9
+  },
+  "abyss": {
+   "loop": true,
+   "lufs": -29.3
+  },
+  "snakes": {
+   "loop": true,
+   "lufs": -31.4
+  },
+  "ice": {
+   "loop": true,
+   "lufs": -32.2
+  },
+  "mountain": {
+   "loop": true,
+   "lufs": -43.3
+  },
+  "ledge": {
+   "loop": true,
+   "lufs": -34
+  },
+  "firewall": {
+   "loop": true,
+   "lufs": -39.2
+  },
+  "heavens": {
+   "loop": true,
+   "lufs": -20.2
+  },
+  "radiance": {
+   "loop": true,
+   "lufs": -12.3
+  },
+  "choir": {
+   "loop": true,
+   "lufs": -35.2
+  },
+  "horn": {
+   "loop": false,
+   "lufs": -8
+  },
+  "rumble": {
+   "loop": false,
+   "lufs": -21
+  }
+ },
+ "cantos": {
+  "inferno:1": [
+   {
+    "bed": "forest"
+   },
+   {
+    "bed": "mountain",
+    "at": "I resumed my way up the deserted slope"
+   },
+   {
+    "cue": "wolf",
+    "at": "And then a she-wolf, who appeared",
+    "offset": 0.5
+   }
+  ],
+  "inferno:2": [
+   {
+    "bed": "dusk"
+   }
+  ],
+  "inferno:3": [
+   {
+    "bed": null
+   },
+   {
+    "bed": "wails",
+    "at": "Here sighs, lamentations, and piercing screams"
+   },
+   {
+    "cue": "rumble",
+    "at": "Trembled so violently that the memory"
+   }
+  ],
+  "inferno:4": [
+   {
+    "bed": "abyss"
+   },
+   {
+    "bed": "hush",
+    "at": "into that first circle"
+   }
+  ],
+  "inferno:5": [
+   {
+    "bed": "wails"
+   },
+   {
+    "bed": "storm",
+    "at": "I entered a place stripped of all light"
+   }
+  ],
+  "inferno:6": [
+   {
+    "bed": "rain"
+   },
+   {
+    "cue": "cerberus",
+    "at": "barks with three throats like a rabid dog"
+   }
+  ],
+  "inferno:7": [
+   {
+    "bed": "abyss"
+   },
+   {
+    "bed": "boulders",
+    "at": "Thus we descended into the fourth circle"
+   },
+   {
+    "bed": "marsh",
+    "at": "This melancholy stream forms a marsh"
+   }
+  ],
+  "inferno:8": [
+   {
+    "bed": "marsh"
+   }
+  ],
+  "inferno:9": [
+   {
+    "bed": "marsh"
+   },
+   {
+    "cue": "rumble",
+    "at": "came the crash of a terrifying sound"
+   },
+   {
+    "bed": "fire",
+    "at": "We entered without any struggle."
+   }
+  ],
+  "inferno:10": [
+   {
+    "bed": "fire"
+   }
+  ],
+  "inferno:11": [
+   {
+    "bed": "abyss"
+   }
+  ],
+  "inferno:12": [
+   {
+    "bed": "abyss"
+   },
+   {
+    "bed": "boiling",
+    "at": "the river of blood draws near"
+   }
+  ],
+  "inferno:13": [
+   {
+    "bed": "deadwood"
+   }
+  ],
+  "inferno:14": [
+   {
+    "bed": "deadwood"
+   },
+   {
+    "bed": "fire",
+    "at": "Over the entire wasteland, falling slowly"
+   }
+  ],
+  "inferno:15": [
+   {
+    "bed": "fire"
+   }
+  ],
+  "inferno:16": [
+   {
+    "bed": "fire"
+   },
+   {
+    "bed": "abyss",
+    "at": "when the sound of water grew so loud"
+   }
+  ],
+  "inferno:17": [
+   {
+    "bed": "abyss"
+   },
+   {
+    "bed": "fire",
+    "at": "So I continued alone along the outermost"
+   },
+   {
+    "bed": "abyss",
+    "at": "I found my Guide already mounted"
+   }
+  ],
+  "inferno:18": [
+   {
+    "bed": "wails"
+   }
+  ],
+  "inferno:19": [
+   {
+    "bed": null
+   },
+   {
+    "bed": "fire",
+    "at": "The soles of all their feet were aflame"
+   }
+  ],
+  "inferno:20": [
+   {
+    "bed": null
+   }
+  ],
+  "inferno:21": [
+   {
+    "bed": "boiling"
+   }
+  ],
+  "inferno:22": [
+   {
+    "bed": "boiling"
+   }
+  ],
+  "inferno:23": [
+   {
+    "bed": "boiling"
+   },
+   {
+    "bed": "wails",
+    "at": "Below we found a painted people"
+   }
+  ],
+  "inferno:24": [
+   {
+    "bed": null
+   },
+   {
+    "bed": "snakes",
+    "at": "I saw within it a terrible swarm"
+   }
+  ],
+  "inferno:25": [
+   {
+    "bed": "snakes"
+   }
+  ],
+  "inferno:26": [
+   {
+    "bed": null
+   },
+   {
+    "bed": "fire",
+    "at": "the eighth ditch blazed"
+   }
+  ],
+  "inferno:27": [
+   {
+    "bed": "fire"
+   }
+  ],
+  "inferno:28": [
+   {
+    "bed": "wails"
+   }
+  ],
+  "inferno:29": [
+   {
+    "bed": "wails"
+   }
+  ],
+  "inferno:30": [
+   {
+    "bed": "wails"
+   }
+  ],
+  "inferno:31": [
+   {
+    "bed": null
+   },
+   {
+    "cue": "horn",
+    "at": "but I heard the blast of a horn",
+    "offset": 0.5
+   },
+   {
+    "bed": "abyss",
+    "at": "and drew closer to the edge"
+   }
+  ],
+  "inferno:32": [
+   {
+    "bed": "abyss"
+   },
+   {
+    "bed": "ice",
+    "at": "a lake so frozen it looked like glass"
+   }
+  ],
+  "inferno:33": [
+   {
+    "bed": "ice"
+   }
+  ],
+  "inferno:34": [
+   {
+    "bed": "ice"
+   },
+   {
+    "bed": null,
+    "at": "Then he emerged through a rock's opening"
+   }
+  ],
+  "purgatorio:1": [
+   {
+    "bed": "shore"
+   }
+  ],
+  "purgatorio:2": [
+   {
+    "bed": "shore"
+   }
+  ],
+  "purgatorio:3": [
+   {
+    "bed": "mountain"
+   }
+  ],
+  "purgatorio:4": [
+   {
+    "bed": "mountain"
+   }
+  ],
+  "purgatorio:5": [
+   {
+    "bed": "mountain"
+   }
+  ],
+  "purgatorio:6": [
+   {
+    "bed": "mountain"
+   }
+  ],
+  "purgatorio:7": [
+   {
+    "bed": "mountain"
+   },
+   {
+    "bed": "dusk",
+    "at": "led us to the edge of that dell"
+   }
+  ],
+  "purgatorio:8": [
+   {
+    "bed": "dusk"
+   }
+  ],
+  "purgatorio:9": [
+   {
+    "bed": "dusk"
+   },
+   {
+    "bed": "mountain",
+    "at": "Only my Guide was at my side"
+   }
+  ],
+  "purgatorio:10": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:11": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:12": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:13": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:14": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:15": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:16": [
+   {
+    "bed": "ledge"
+   },
+   {
+    "bed": "choir",
+    "at": "Their opening was always"
+   },
+   {
+    "bed": "ledge",
+    "at": "He let out a deep sigh"
+   }
+  ],
+  "purgatorio:17": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:18": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:19": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:20": [
+   {
+    "bed": "ledge"
+   },
+   {
+    "cue": "rumble",
+    "at": "when I felt the mountain tremble",
+    "offset": 0.4
+   }
+  ],
+  "purgatorio:21": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:22": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:23": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:24": [
+   {
+    "bed": "ledge"
+   }
+  ],
+  "purgatorio:25": [
+   {
+    "bed": "ledge"
+   },
+   {
+    "bed": "firewall",
+    "at": "Here the bank shoots forth flames"
+   }
+  ],
+  "purgatorio:26": [
+   {
+    "bed": "firewall"
+   }
+  ],
+  "purgatorio:27": [
+   {
+    "bed": "firewall"
+   },
+   {
+    "bed": "ledge",
+    "at": "emerged where the ascent began"
+   },
+   {
+    "bed": "garden",
+    "at": "When the entire stairway lay beneath us"
+   }
+  ],
+  "purgatorio:28": [
+   {
+    "bed": "garden"
+   }
+  ],
+  "purgatorio:29": [
+   {
+    "bed": "garden"
+   },
+   {
+    "bed": "choir",
+    "at": "A ravishing melody flowed"
+   },
+   {
+    "bed": "garden",
+    "at": "After the flowers and tender grasses"
+   }
+  ],
+  "purgatorio:30": [
+   {
+    "bed": "garden"
+   },
+   {
+    "bed": "choir",
+    "at": "Blessed is he who comes"
+   },
+   {
+    "bed": "garden",
+    "at": "Dante, do not weep because Virgil"
+   }
+  ],
+  "purgatorio:31": [
+   {
+    "bed": "garden"
+   },
+   {
+    "bed": "choir",
+    "at": "I heard \"Cleanse me\" sung so sweetly"
+   }
+  ],
+  "purgatorio:32": [
+   {
+    "bed": "garden"
+   },
+   {
+    "bed": "choir",
+    "at": "angelic music kept time with our steps"
+   },
+   {
+    "bed": "garden",
+    "at": "Therefore I skip to when I awoke"
+   }
+  ],
+  "purgatorio:33": [
+   {
+    "bed": "garden"
+   }
+  ],
+  "paradiso:1": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "choir",
+    "at": "with the harmony you tune and measure"
+   },
+   {
+    "bed": null,
+    "at": "All things, whatever they may be,"
+   }
+  ],
+  "paradiso:2": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "radiance",
+    "at": "I found myself arrived where something wondrous"
+   },
+   {
+    "bed": null,
+    "at": "When mortal opinion goes astray"
+   }
+  ],
+  "paradiso:3": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Brother, the virtue of love quiets our will,"
+   },
+   {
+    "bed": "radiance",
+    "at": "This other splendor revealing herself"
+   }
+  ],
+  "paradiso:4": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "\"I see clearly how both desires"
+   },
+   {
+    "bed": "radiance",
+    "at": "Such was the flowing of that holy river"
+   }
+  ],
+  "paradiso:5": [
+   {
+    "bed": "radiance"
+   },
+   {
+    "bed": null,
+    "at": "The greatest gift God made in his abundance,"
+   },
+   {
+    "bed": "heavens",
+    "at": "we sped into the second sphere."
+   }
+  ],
+  "paradiso:6": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Here ends my answer to your first question,"
+   },
+   {
+    "bed": "heavens",
+    "at": "This small planet adorns itself"
+   }
+  ],
+  "paradiso:7": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "By refusing to accept the limits"
+   }
+  ],
+  "paradiso:8": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "choir",
+    "at": "came \"Hosanna!\" so beautiful"
+   },
+   {
+    "bed": null,
+    "at": "The world possessed me briefly below;"
+   }
+  ],
+  "paradiso:9": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "In that corrupted region of Italy"
+   },
+   {
+    "bed": "radiance",
+    "at": "Here the spirit fell silent and seemed"
+   },
+   {
+    "bed": null,
+    "at": "The greatest valley where waters spread themselves,"
+   }
+  ],
+  "paradiso:10": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "radiance",
+    "at": "I was with him, but I felt no sense"
+   },
+   {
+    "bed": "choir",
+    "at": "I saw many lights, brilliant and triumphant,"
+   },
+   {
+    "bed": null,
+    "at": "Since the radiance of grace that kindles"
+   }
+  ],
+  "paradiso:11": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Just as I am kindled by this ray,"
+   }
+  ],
+  "paradiso:12": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "\"The love that makes me beautiful"
+   }
+  ],
+  "paradiso:13": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "Now that one sheaf is threshed,"
+   }
+  ],
+  "paradiso:14": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "choir",
+    "at": "Like dancers in a ring who, urged by greater joy,"
+   },
+   {
+    "bed": "radiance",
+    "at": "And look! All around, of equal brightness,"
+   },
+   {
+    "bed": "choir",
+    "at": "a melody gathered through the cross,"
+   }
+  ],
+  "paradiso:15": [
+   {
+    "bed": "radiance"
+   },
+   {
+    "bed": null,
+    "at": "\"A long and welcome hunger"
+   }
+  ],
+  "paradiso:16": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "From the speaking of the 'Ave' to the birth"
+   }
+  ],
+  "paradiso:17": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "than the boundaries of your material world"
+   },
+   {
+    "bed": "radiance",
+    "at": "The light in which my treasure was smiling"
+   }
+  ],
+  "paradiso:18": [
+   {
+    "bed": "radiance"
+   },
+   {
+    "bed": "choir",
+    "at": "so the holy creatures sang"
+   },
+   {
+    "bed": null,
+    "at": "So I pray to the Mind in which"
+   }
+  ],
+  "paradiso:19": [
+   {
+    "bed": "radiance"
+   },
+   {
+    "bed": null,
+    "at": "He who traced the compass"
+   },
+   {
+    "bed": "choir",
+    "at": "Like a stork circling above her nest"
+   },
+   {
+    "bed": null,
+    "at": "What might the Persians say to your kings"
+   }
+  ],
+  "paradiso:20": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "The part of me that sees and endures"
+   },
+   {
+    "bed": "heavens",
+    "at": "O predestination! How remote"
+   }
+  ],
+  "paradiso:21": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Your hearing is mortal, like your sight"
+   }
+  ],
+  "paradiso:22": [
+   {
+    "bed": null
+   },
+   {
+    "bed": "heavens",
+    "at": "So he spoke to me; then withdrew"
+   }
+  ],
+  "paradiso:23": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "radiance",
+    "at": "the hosts of Christ's triumph"
+   },
+   {
+    "bed": "choir",
+    "at": "a little torch descended through the heavens"
+   }
+  ],
+  "paradiso:24": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "Speak, good Christian, reveal yourself"
+   },
+   {
+    "bed": "choir",
+    "at": "When this was finished, the high holy court"
+   }
+  ],
+  "paradiso:25": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Since through his grace our Emperor wills"
+   },
+   {
+    "bed": "choir",
+    "at": "and all the choirs responded"
+   },
+   {
+    "bed": null,
+    "at": "At these words the flaming circle"
+   }
+  ],
+  "paradiso:26": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "You must sift with a finer mesh"
+   },
+   {
+    "bed": "choir",
+    "at": "As soon as I finished speaking"
+   },
+   {
+    "bed": null,
+    "at": "I perceive your desire better"
+   }
+  ],
+  "paradiso:27": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "Do not marvel if I change color"
+   },
+   {
+    "bed": "heavens",
+    "at": "As our atmosphere falls downward"
+   },
+   {
+    "bed": null,
+    "at": "O Covetousness, you engulf mortals"
+   }
+  ],
+  "paradiso:28": [
+   {
+    "bed": "radiance"
+   },
+   {
+    "bed": null,
+    "at": "If the world were arranged"
+   },
+   {
+    "bed": "choir",
+    "at": "As soon as her words came to a stop"
+   }
+  ],
+  "paradiso:29": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "Matter and Form, separate yet joined"
+   },
+   {
+    "bed": "radiance",
+    "at": "This angelic nature multiplies itself"
+   }
+  ],
+  "paradiso:30": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "radiance",
+    "at": "into the heaven that is pure light"
+   },
+   {
+    "bed": null,
+    "at": "On that great throne where your eyes are fixed"
+   }
+  ],
+  "paradiso:31": [
+   {
+    "bed": "choir"
+   },
+   {
+    "bed": null,
+    "at": "I expected one thing, but another answered me"
+   },
+   {
+    "bed": "radiance",
+    "at": "I raised my eyes, and as at dawn"
+   }
+  ],
+  "paradiso:32": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": null,
+    "at": "According to the view that Faith"
+   },
+   {
+    "bed": "choir",
+    "at": "I saw such great joy rain down upon her"
+   },
+   {
+    "bed": null,
+    "at": "All the gallantry and grace"
+   }
+  ],
+  "paradiso:33": [
+   {
+    "bed": "heavens"
+   },
+   {
+    "bed": "radiance",
+    "at": "Then they turned toward the Eternal Light"
+   }
+  ]
+ }
+}
