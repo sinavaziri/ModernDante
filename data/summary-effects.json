@@ -1,6 +1,7 @@
 {
   "model": "eleven_text_to_sound_v3",
   "creditsPerSecond": 12.1,
+  "enabled": false,
   "levels": {"bedDb": -17, "cueDb": -9, "leadIn": 1.5, "tail": 2.5},
   "sounds": {
     "forest": {"seconds": 20, "loop": true, "prompt": "Ambience of a dark forest at night: wind moving through tall trees, branches creaking softly, a distant owl. No music, no voices."},

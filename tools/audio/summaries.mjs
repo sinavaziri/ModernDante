@@ -12,8 +12,8 @@
  *   node tools/audio/summaries.mjs --only inferno:1 --remix     mix the effects again over the existing recording
  *
  * A rerun skips a summary whose text, voice and settings are unchanged. Each summary is built twice: <n>.voice.mp3 is
- * the voice alone, and <n>.mp3, the one the site serves, has the quiet sound effects named in data/summary-effects.json
- * under it. Effects are generated once into scripts/narrations_v4/sfx/ and reused.
+ * the voice alone, and <n>.mp3 is the one the site serves. The two are the same while "enabled" is false in
+ * data/summary-effects.json; turned on, <n>.mp3 gets that file's background and timed effects mixed in. Effects are generated once into scripts/narrations_v4/sfx/ and reused.
  */
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -58,7 +58,11 @@ function isRecorded(p) {
   }
 }
 
-const effectsFor = p => EFFECTS.cantos[`${p.cantica}:${p.n}`] || null;
+// With "enabled": false in the effects file, every summary is the voice alone
+const effectsFor = p => {
+  const effects = EFFECTS.enabled === false ? null : EFFECTS.cantos[`${p.cantica}:${p.n}`];
+  return effects && (effects.bed || effects.cues?.length) ? { bed: effects.bed, cues: effects.cues || [] } : null;
+};
 const soundsFor = p => {
   const effects = effectsFor(p);
   return effects ? [effects.bed, ...(effects.cues || []).map(cue => cue.sound)].filter(Boolean) : [];
@@ -112,8 +116,10 @@ function build(p) {
     fs.copyFileSync(`${p.base}.voice.mp3`, `${p.base}.mp3`);
     return probeDuration(`${p.base}.mp3`);
   }
-  const { bedDb, cueDb, leadIn, tail } = EFFECTS.levels;
-  const total = leadIn + length + tail;
+  const { bedDb, cueDb } = EFFECTS.levels;
+  // A background starts a moment before the voice and outlasts it. Without one the voice starts at once.
+  const leadIn = effects.bed ? EFFECTS.levels.leadIn : 0;
+  const total = leadIn + length + (effects.bed ? EFFECTS.levels.tail : 0);
   const inputs = ['-i', `${p.base}.raw.mp3`];
   const chains = [`[0:a]${voice},adelay=${Math.round(leadIn * 1000)}:all=1,apad=whole_dur=${total}[voice]`];
   const mixed = ['[voice]'];
