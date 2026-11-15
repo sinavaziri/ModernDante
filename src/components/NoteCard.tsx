@@ -37,7 +37,7 @@ interface NoteCardProps {
 const ALSO_IN_LIMIT = 6;
 const GAP = 10;
 const MARGIN = 16;
-// Beside the poem: how far the card sits from the end of the line, and how far above its phrase it starts
+// Beside the poem: how far the card sits from the ends of the lines next to it, and how far above its phrase it starts
 const SIDE_GAP = 24;
 const SIDE_RISE = 14;
 
@@ -63,17 +63,27 @@ export default function NoteCard({ id, note, entity, plate, art, open, onClose, 
       // The card's full height, even while its maximum height cuts it short
       const natural = card.scrollHeight;
       const width = card.offsetWidth;
-      const line = open.anchor.closest('.narration-line')?.getBoundingClientRect();
       const furthestRight = window.innerWidth - MARGIN - width;
-      const beside = Math.min((line?.right ?? phrase.right) + SIDE_GAP, furthestRight);
+      // Beside the poem it lies level with the phrase, moved up only as far as it takes to fit above the player
+      const sideRoom = Math.max(bottom - top - 2 * MARGIN, 120);
+      const sideHeight = Math.min(natural, sideRoom);
+      const sideY = Math.max(Math.min(phrase.top - SIDE_RISE, bottom - MARGIN - sideHeight), top + MARGIN);
+      // Just past the longest of the lines it lies next to, so it is near its phrase and covers no verse
+      let textEnd = phrase.right;
+      const words = document.createRange();
+      for (const line of document.querySelectorAll('.narration-line')) {
+        const box = line.getBoundingClientRect();
+        if (box.bottom <= sideY || box.top >= sideY + sideHeight) continue;
+        words.selectNodeContents(line);
+        for (const rect of words.getClientRects()) textEnd = Math.max(textEnd, rect.right);
+      }
+      const beside = Math.min(textEnd + SIDE_GAP, furthestRight);
       let x: number;
       let y: number;
       if (beside >= phrase.right + GAP) {
-        const room = Math.max(bottom - top - 2 * MARGIN, 120);
-        card.style.maxHeight = `${room}px`;
+        card.style.maxHeight = `${sideRoom}px`;
         x = beside;
-        // Level with the phrase, moved up only as far as it takes to fit above the player
-        y = Math.max(Math.min(phrase.top - SIDE_RISE, bottom - MARGIN - Math.min(natural, room)), top + MARGIN);
+        y = sideY;
       } else {
         const roomBelow = bottom - MARGIN - (phrase.bottom + GAP);
         const roomAbove = phrase.top - GAP - (top + MARGIN);
