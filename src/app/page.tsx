@@ -37,6 +37,9 @@ export default function HomePage() {
                   >
                     Start with Inferno I
                   </Link>
+                  <Link href="/start" className="ml-5 text-base text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
+                    New to Dante? Start here
+                  </Link>
                 </div>
               </div>
 

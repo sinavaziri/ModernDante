@@ -9,12 +9,16 @@ import type { CantoSummary } from '@/lib/summaries';
 interface CantoSummaryPlayerProps {
   summary: CantoSummary;
   /** The full narration's audio, which stops when the summary starts and stops the summary when it starts */
-  narration: HTMLAudioElement | null;
+  narration?: HTMLAudioElement | null;
+  /** The button's words. A canto's summary is the default */
+  label?: string;
+  /** Whether playing opens the words under the button. Off where the page itself is what is read */
+  words?: boolean;
 }
 
 const clock = (seconds: number) => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
 
-export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryPlayerProps) {
+export default function CantoSummaryPlayer({ summary, narration = null, label = 'Canto summary', words = true }: CantoSummaryPlayerProps) {
   const audio = useRef<HTMLAudioElement>(null);
   const panel = useId();
   const [playing, setPlaying] = useState(false);
@@ -35,7 +39,7 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
     if (!el) return;
     if (!el.paused) return el.pause();
     narration?.pause();
-    setOpen(true);
+    if (words) setOpen(true);
     if (el.error) el.load();
     el.play().then(() => setFailed(false), error => {
       if ((error as DOMException).name !== 'AbortError') setFailed(true);
@@ -65,7 +69,7 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
         <button
           type="button"
           onClick={toggle}
-          aria-label={playing ? 'Pause the summary' : 'Play the canto summary'}
+          aria-label={playing ? `Pause: ${label}` : `Play: ${label}`}
           className="inline-flex items-center gap-3 rounded-full border border-border py-2 pl-2 pr-5 font-sans text-sm text-foreground transition-colors hover:border-primary/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-full bg-brand text-primary-foreground">
@@ -73,7 +77,7 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
               {playing ? <path d="M3.5 2h3v12h-3zM9.5 2h3v12h-3z" /> : <path d="M4.5 2.2v11.6L13.5 8z" />}
             </svg>
           </span>
-          Canto summary
+          {label}
         </button>
         {open && (
           <button
@@ -97,14 +101,14 @@ export default function CantoSummaryPlayer({ summary, narration }: CantoSummaryP
             step={0.1}
             value={time}
             onChange={seek}
-            aria-label="Place in the summary"
+            aria-label="Place in the recording"
             className="h-1 flex-1 cursor-pointer accent-[var(--color-brand)]"
           />
           <span>{length ? clock(length) : ''}</span>
         </div>
       )}
 
-      {failed && <p className="mt-3 font-sans text-sm text-muted-foreground">The summary couldn&rsquo;t be played. Check your connection and press play again.</p>}
+      {failed && <p className="mt-3 font-sans text-sm text-muted-foreground">The recording couldn&rsquo;t be played. Check your connection and press play again.</p>}
 
       {open && (
         <div id={panel} className="mt-5 space-y-3 border-l-2 border-primary/30 pl-5 text-left font-serif text-base leading-relaxed text-foreground/90">

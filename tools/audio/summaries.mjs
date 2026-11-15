@@ -9,6 +9,7 @@
  *   node tools/audio/summaries.mjs --only inferno:1 --publish   copy the built MP3 into public/
  *   node tools/audio/summaries.mjs --all --max-credits 40000    a run above the default 1,500 credit cap
  *
+ *   node tools/audio/summaries.mjs --intro                     the narration of the Start here page (data/start-here.json)
  *   node tools/audio/summaries.mjs --only inferno:1 --remix     mix the effects again over the existing recording
  *
  * A rerun skips a summary whose text, voice and settings are unchanged. Each summary is built twice: <n>.voice.mp3 is
@@ -47,7 +48,17 @@ function plan(cantica, n) {
   const tag = tagFor('summary');
   const sent = tag ? `${tag} ${text}` : text;
   const base = path.join(WORK, cantica, String(n));
-  return { cantica, n, label: `${cantica} ${n} summary`, text, sent, voiceId, voice_settings, base, fingerprint: fingerprint(voiceId, voice_settings, sent) };
+  const live = path.join(LIVE, cantica, `${n}.mp3`);
+  return { cantica, n, label: `${cantica} ${n} summary`, text, sent, voiceId, voice_settings, base, live, fingerprint: fingerprint(voiceId, voice_settings, sent) };
+}
+
+/** The narration of the Start here page: every paragraph of data/start-here.json, in the summary voice */
+function introPlan() {
+  const text = readJson(path.join(ROOT, 'data', 'start-here.json')).sections.flatMap(section => section.paragraphs).join('\n\n');
+  const { voiceId, voice_settings } = voiceFor('summary');
+  const tag = tagFor('summary');
+  const sent = tag ? `${tag} ${text}` : text;
+  return { label: 'start here page', text, sent, voiceId, voice_settings, base: path.join(WORK, 'start-here'), live: path.join(LIVE, 'start-here.mp3'), fingerprint: fingerprint(voiceId, voice_settings, sent) };
 }
 
 function isRecorded(p) {
@@ -60,7 +71,7 @@ function isRecorded(p) {
 
 // With "enabled": false in the effects file, every summary is the voice alone
 const effectsFor = p => {
-  const effects = EFFECTS.enabled === false ? null : EFFECTS.cantos[`${p.cantica}:${p.n}`];
+  const effects = EFFECTS.enabled === false || !p.cantica ? null : EFFECTS.cantos[`${p.cantica}:${p.n}`];
   return effects && (effects.bed || effects.cues?.length) ? { bed: effects.bed, cues: effects.cues || [] } : null;
 };
 const soundsFor = p => {
@@ -140,16 +151,16 @@ function build(p) {
   return probeDuration(`${p.base}.mp3`);
 }
 
-const plans = selectCantos(args).map(([cantica, n]) => plan(cantica, n)).filter(Boolean);
+const plans = args.includes('--intro') ? [introPlan()] : selectCantos(args).map(([cantica, n]) => plan(cantica, n)).filter(Boolean);
 if (!plans.length) throw new Error('None of those cantos has a summary in data/canto-summaries.json');
 
 if (publish) {
   for (const p of plans) {
     if (!fs.existsSync(`${p.base}.mp3`) || readJson(`${p.base}.json`).text !== p.text) throw new Error(`${p.label}: not recorded, or its text changed since it was`);
     if (!isRecorded(p)) log(`${p.label}: note, this recording is not in the voice data/voices.json now names for summaries`);
-    fs.mkdirSync(path.join(LIVE, p.cantica), { recursive: true });
-    fs.copyFileSync(`${p.base}.mp3`, path.join(LIVE, p.cantica, `${p.n}.mp3`));
-    log(`${p.label}: copied to public/audio-summaries/${p.cantica}/${p.n}.mp3`);
+    fs.mkdirSync(path.dirname(p.live), { recursive: true });
+    fs.copyFileSync(`${p.base}.mp3`, p.live);
+    log(`${p.label}: copied to ${path.relative(ROOT, p.live)}`);
   }
   process.exit(0);
 }
@@ -214,6 +225,6 @@ if (missing.length || sounds.length) {
 // Build what was just recorded, or with --remix every summary that has a recording
 for (const p of remix ? plans.filter(p => fs.existsSync(`${p.base}.raw.mp3`)) : missing) {
   const seconds = build(p);
-  log(`${p.label}: built, ${seconds.toFixed(1)}s${seconds > 85 || seconds < 40 ? ' (outside 40 to 85 seconds)' : ''}`);
+  log(`${p.label}: built, ${seconds.toFixed(1)}s${p.cantica && (seconds > 85 || seconds < 40) ? ' (outside 40 to 85 seconds)' : ''}`);
 }
 log(`Done. ${spent} credits spent.`);

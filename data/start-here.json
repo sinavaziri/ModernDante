@@ -1,0 +1,32 @@
+{
+  "note": "The words of the Start here page (/start). Its narration reads every paragraph in order, without the headings, in the summary voice: node tools/audio/summaries.mjs --intro",
+  "sections": [
+    {
+      "heading": "The poem",
+      "paragraphs": [
+        "The Divine Comedy is an epic poem by Dante Alighieri, a poet from Florence. He wrote it in exile, banished from his city for life, and finished it shortly before he died in 1321. He wrote it in the Italian people spoke, not in Latin, so that anyone could read it. It is one of the greatest works of art ever made. It tells the story of one journey. Dante, lost in the middle of his life, travels through the three realms of the dead: down through Hell, up the mountain of Purgatory, and out through the heavens of Paradise. The Roman poet Virgil guides him through the first two, and Beatrice, the woman he loved, leads him through the last.",
+        "Dante called it a comedy because it begins in misery and ends in joy. Hell is the most famous part, and many readers stop there. But if you only read the Inferno, you turn a comedy into a tragedy. The journey is meant to be taken all the way to the stars.",
+        "The poem has one hundred short chapters called cantos. Inferno has thirty-four, and Purgatorio and Paradiso have thirty-three each. The first canto introduces the whole poem, and each of the three parts ends on the same word: stars."
+      ]
+    },
+    {
+      "heading": "A way through",
+      "paragraphs": [
+        "For all its greatness, the Comedy can be hard to approach. It is seven hundred years old, and it is crowded with popes, poets and Florentine politicians whose names once needed no explaining. Dante wrote in the language of his own day so that anyone could read him. This site is made in the same spirit: to help you get all the way through and enjoy it, because the deeper you go into the Comedy, the more rewarding it becomes. The words are plain modern English, rewritten line by line from Longfellow's translation of 1867. Every canto is read aloud, and each character speaks in a voice of their own. Under the reading there is quiet sound that follows the scene: wind, rain, fire, the sea.",
+        "Gustave Doré's engravings from the 1860s appear in color beside the lines they picture, and all 135 are on the Illustrations page. The Map shows the whole journey, and each canto's page shows where you are on it."
+      ]
+    },
+    {
+      "heading": "Reading and listening",
+      "paragraphs": [
+        "On a canto's page, press play at the bottom to hear it. The words light up as they are spoken, and you can click any word to listen from there. If you would like to know what happens first, press Canto summary at the top for the story in about a minute. A few cantos also have notes that explain the names and references. The Annotations switch turns them on."
+      ]
+    },
+    {
+      "heading": "Where to begin",
+      "paragraphs": [
+        "You don't need to know anything before you begin. Start with the first canto of Inferno, where Dante wakes in a dark wood."
+      ]
+    }
+  ]
+}
