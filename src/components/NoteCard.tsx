@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Fragment, useEffect, useLayoutEffect, useRef } from 'react';
 import type { Entity, Note, NoteArt, NotePlate } from '@/lib/annotations';
-import { LAYOUT } from '@/lib/constants';
+import { menuBottom } from '@/lib/constants';
 
 export interface OpenNote {
   /** The note's index in the canto's list of notes */
@@ -58,7 +58,7 @@ export default function NoteCard({ id, note, entity, plate, art, open, onClose, 
     const place = () => {
       const phrase = open.anchor.getBoundingClientRect();
       const player = document.querySelector('[data-audio-player]');
-      const top = LAYOUT.HEADER_HEIGHT;
+      const top = menuBottom();
       const bottom = window.innerHeight - (player?.getBoundingClientRect().height ?? 0);
       // The card's full height, even while its maximum height cuts it short
       const natural = card.scrollHeight;

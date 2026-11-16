@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { getAllCanticas, type Cantica } from '@/lib/canticas';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ThemeToggle from '@/components/ThemeToggle';
 
 interface NavigationProps {
@@ -15,10 +15,29 @@ export default function Navigation({ cantica }: NavigationProps) {
   const pathname = usePathname();
   const canticas = getAllCanticas();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menu = useRef<HTMLElement>(null);
+
+  // Close the menu on Escape or a click anywhere else
+  useEffect(() => {
+    if (!mobileMenuOpen) return;
+    const onKey = (event: KeyboardEvent) => event.key === 'Escape' && setMobileMenuOpen(false);
+    const onClick = (event: MouseEvent) => !menu.current?.contains(event.target as Node) && setMobileMenuOpen(false);
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('click', onClick);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('click', onClick);
+    };
+  }, [mobileMenuOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    // On a canto page the menu scrolls away with the page, to leave the whole window for reading
+    <nav
+      ref={menu}
+      data-site-menu
+      className={`${cantica ? 'relative' : 'sticky top-0'} z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm`}
+    >
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo / Home */}
           <Link
@@ -44,66 +63,16 @@ export default function Navigation({ cantica }: NavigationProps) {
           </Link>
 
           <div className="flex items-center gap-1 lg:gap-2">
-          {/* Desktop Cantica Links */}
-          <div className="hidden lg:flex items-center space-x-1">
-{/* The home page's own button leads to Start here, so the menu doesn't repeat it there */}
-            {pathname !== '/' && (
-                        <Link
-                href="/start"
-                className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
-                  pathname === '/start'
-                    ? 'text-foreground font-bold border-b-2 border-primary'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                }`}
-              >
-                Start here
-              </Link>
-            )}
-            {canticas.map((c) => (
-              <Link
-                key={c.name}
-                href={`/${c.name}/1`}
-                className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
-                  cantica === c.name
-                    ? 'text-foreground font-bold border-b-2 border-primary'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                }`}
-              >
-                {c.displayName}
-              </Link>
-            ))}
-            {/* Illustrations Link */}
-            <Link
-              href="/gallery"
-              className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
-                pathname === '/gallery'
-                  ? 'text-foreground font-bold border-b-2 border-primary'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-              }`}
-            >
-              Illustrations
-            </Link>
-            <Link
-              href="/map"
-              className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
-                pathname.startsWith('/map')
-                  ? 'text-foreground font-bold border-b-2 border-primary'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-              }`}
-            >
-              Map
-            </Link>
-          </div>
-
           <ThemeToggle />
 
-          {/* Mobile Menu Button */}
+          {/* The menu button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
-            className="lg:hidden p-2 rounded-sm hover:bg-muted text-foreground transition-colors"
+            className="flex items-center gap-2 rounded-sm p-2 text-foreground transition-colors hover:bg-muted sm:px-3"
           >
+            <span className="hidden font-medium sm:inline">Menu</span>
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {mobileMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
@@ -115,13 +84,14 @@ export default function Navigation({ cantica }: NavigationProps) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* The menu: a list that drops down over the page */}
         {mobileMenuOpen && (
-          <div className="lg:hidden pb-4 space-y-2 animate-fade-in border-t border-border mt-2 pt-4">
+          <div className="absolute inset-x-0 top-full animate-fade-in border-b border-border bg-background p-3 shadow-lg sm:inset-x-auto sm:right-6 sm:w-64 sm:rounded-b-sm sm:border-x lg:right-8">
             {/* Cantica Links */}
             <div className="space-y-1">
-{pathname !== '/' && (
-                            <Link
+{/* The home page's own gate leads to Start here, so the menu doesn't repeat it there */}
+              {pathname !== '/' && (
+                <Link
                   href="/start"
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block px-4 py-3 rounded-sm font-medium transition-all ${

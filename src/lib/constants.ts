@@ -8,12 +8,13 @@
 // ============================================================================
 
 /**
- * Layout dimensions and spacing
+ * How far down the window the site menu reaches right now, in pixels.
+ * The menu stays at the top on most pages, but on canto pages it scrolls away with the page, and then this is 0.
  */
-export const LAYOUT = {
-  /** Height of the sticky header in pixels */
-  HEADER_HEIGHT: 80,
-} as const;
+export function menuBottom(): number {
+  const menu = document.querySelector('[data-site-menu]');
+  return menu ? Math.max(0, menu.getBoundingClientRect().bottom) : 0;
+}
 
 // ============================================================================
 // AUDIO PLAYER CONSTANTS

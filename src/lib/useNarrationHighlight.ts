@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type RefObject } from 'react';
-import { LAYOUT } from '@/lib/constants';
+import { menuBottom } from '@/lib/constants';
 import { findTokenAt, type TimedToken } from '@/lib/narration-alignment';
 
 // Keep the last word lit this long after it ends (covers pauses between segments)
@@ -62,11 +62,11 @@ export function useNarrationHighlight(
     let readerScrolling = false;
     let reported = '';
 
-    // The part of the window between the sticky header and the audio player
+    // The part of the window between the site menu, while it is in view, and the audio player
     const viewport = () => {
       const player = document.querySelector('[data-audio-player]');
       return {
-        top: LAYOUT.HEADER_HEIGHT,
+        top: menuBottom(),
         bottom: window.innerHeight - (player?.getBoundingClientRect().height ?? 0),
       };
     };
