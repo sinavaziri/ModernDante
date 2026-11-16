@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import GateButton from '@/components/GateButton';
 import HeroCarousel from '@/components/HeroCarousel';
 import { getAllCanticas } from '@/lib/canticas';
 import { getCanticaPlate, getCarouselSlides } from '@/lib/image-mappings';
@@ -12,7 +13,7 @@ export default function HomePage() {
       <Navigation />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <div className="relative overflow-hidden pt-20 pb-16 md:pt-24 md:pb-20 lg:pt-28 lg:pb-24">
+        <div className="relative overflow-hidden pt-10 pb-16 md:pt-12 md:pb-20 lg:pt-12 lg:pb-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-8 items-center min-h-[70vh]">
               {/* Left side - Text content */}
@@ -25,13 +26,8 @@ export default function HomePage() {
                   by Dante Alighieri
                 </p>
 
-                <div className="pt-4">
-                  <Link
-                    href="/start"
-                    className="inline-block px-8 py-4 bg-brand hover:bg-brand/90 text-primary-foreground hover:text-primary-foreground font-serif text-xl md:text-2xl italic rounded-sm shadow-sm transition-colors"
-                  >
-                    Enter here
-                  </Link>
+                <div className="pt-2">
+                  <GateButton href="/start">Enter here</GateButton>
                 </div>
               </div>
 
