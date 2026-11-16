@@ -46,16 +46,19 @@ export default function Navigation({ cantica }: NavigationProps) {
           <div className="flex items-center gap-1 lg:gap-2">
           {/* Desktop Cantica Links */}
           <div className="hidden lg:flex items-center space-x-1">
-            <Link
-              href="/start"
-              className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
-                pathname === '/start'
-                  ? 'text-foreground font-bold border-b-2 border-primary'
-                  : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-              }`}
-            >
-              Start here
-            </Link>
+{/* The home page's own button leads to Start here, so the menu doesn't repeat it there */}
+            {pathname !== '/' && (
+                        <Link
+                href="/start"
+                className={`px-5 py-2.5 rounded-sm font-medium transition-all duration-200 ${
+                  pathname === '/start'
+                    ? 'text-foreground font-bold border-b-2 border-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                }`}
+              >
+                Start here
+              </Link>
+            )}
             {canticas.map((c) => (
               <Link
                 key={c.name}
@@ -117,17 +120,19 @@ export default function Navigation({ cantica }: NavigationProps) {
           <div className="lg:hidden pb-4 space-y-2 animate-fade-in border-t border-border mt-2 pt-4">
             {/* Cantica Links */}
             <div className="space-y-1">
-              <Link
-                href="/start"
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-3 rounded-sm font-medium transition-all ${
-                  pathname === '/start'
-                    ? 'bg-muted text-foreground'
-                    : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
-                }`}
-              >
-                Start here
-              </Link>
+{pathname !== '/' && (
+                            <Link
+                  href="/start"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block px-4 py-3 rounded-sm font-medium transition-all ${
+                    pathname === '/start'
+                      ? 'bg-muted text-foreground'
+                      : 'text-muted-foreground hover:bg-muted/50 hover:text-foreground'
+                  }`}
+                >
+                  Start here
+                </Link>
+              )}
               {canticas.map((c) => (
                 <Link
                   key={c.name}

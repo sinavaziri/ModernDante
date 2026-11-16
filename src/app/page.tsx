@@ -16,29 +16,21 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-8 items-center min-h-[70vh]">
               {/* Left side - Text content */}
-              <div className="space-y-6 animate-fade-in order-2 lg:order-1">
-                <h1 className="text-left text-4xl md:text-5xl lg:text-6xl font-bold text-title leading-[1.1] tracking-tight">
+              <div className="space-y-8 animate-fade-in order-2 lg:order-1">
+                <h1 className="text-left text-5xl md:text-6xl lg:text-[4.25rem] xl:text-[5.5rem] font-bold text-title leading-[1.05] tracking-tight">
                   The Divine<br/>Comedy
                 </h1>
 
-                <p className="text-xl md:text-2xl text-muted-foreground font-serif italic">
+                <p className="text-2xl md:text-3xl xl:text-4xl text-muted-foreground font-serif italic">
                   by Dante Alighieri
                 </p>
 
-                <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-lg">
-                  All 100 cantos of Dante&apos;s poem in plain modern English, read aloud with a different voice
-                  for each character, alongside Gustave Doré&apos;s 135 engravings in color.
-                </p>
-
-                <div className="pt-2">
+                <div className="pt-4">
                   <Link
-                    href="/inferno/1"
-                    className="inline-block px-5 py-2.5 bg-brand hover:bg-brand/90 text-primary-foreground hover:text-primary-foreground text-base font-semibold rounded-sm shadow-sm transition-colors"
+                    href="/start"
+                    className="inline-block px-8 py-4 bg-brand hover:bg-brand/90 text-primary-foreground hover:text-primary-foreground font-serif text-xl md:text-2xl italic rounded-sm shadow-sm transition-colors"
                   >
-                    Start with Inferno I
-                  </Link>
-                  <Link href="/start" className="ml-5 text-base text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary">
-                    New to Dante? Start here
+                    Enter here
                   </Link>
                 </div>
               </div>
