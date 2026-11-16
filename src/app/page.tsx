@@ -17,8 +17,8 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-8 items-center min-h-[70vh]">
               {/* Left side - Text content */}
-              <div className="space-y-8 animate-fade-in order-2 lg:order-1">
-                <h1 className="text-left text-5xl md:text-6xl lg:text-[4.25rem] xl:text-[5.5rem] font-bold text-title leading-[1.05] tracking-tight">
+              <div className="space-y-8 text-center animate-fade-in order-2 lg:order-1">
+                <h1 className="text-5xl md:text-6xl lg:text-[4.25rem] xl:text-[5.5rem] font-bold text-title leading-[1.05] tracking-tight">
                   The Divine<br/>Comedy
                 </h1>
 
@@ -26,7 +26,8 @@ export default function HomePage() {
                   by Dante Alighieri
                 </p>
 
-                <div className="pt-2">
+                {/* Title, author and gate share one centre line, like a title page */}
+                <div className="flex justify-center pt-2">
                   <GateButton href="/start">Enter here</GateButton>
                 </div>
               </div>
