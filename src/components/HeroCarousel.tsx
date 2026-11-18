@@ -108,9 +108,6 @@ export default function HeroCarousel({ slides }: { slides: CarouselSlide[] }) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <span className="w-12 text-center text-xs tabular-nums">
-            {index + 1} / {count}
-          </span>
           <button
             onClick={() => goTo(index + 1)}
             aria-label="Next illustration"
